@@ -1,6 +1,18 @@
 {
-  "subjects": ["Xác suất thống kê", "Giải tích", "Đại số", "Hình học"],
+  "subjects": [
+    "Xác suất thống kê",
+    "Giải tích",
+    "Đại số",
+    "Hình học"
+  ],
   "exercises": [
+    {
+      "id": "1773420835184",
+      "subject": "Xác suất thống kê",
+      "question": "Hai xạ thủ $A$ và $B$, mỗi người bắn $2$ viên đạn vào cùng một tấm bia một cách độc lập. Xác suất bắn trúng hồng tâm của $A, B$ ở mỗi lần bắn tương ứng là $0,6; 0,7$. Tính xác suất xạ thủ $A$ bắn trúng hồng tâm nhiều hơn xạ thủ $B$.",
+      "solution": "Gọi $X$ là số lần bắn trúng hồng tâm của xạ thủ $A$ và $Y$ là số lần bắn trúng hồng tâm của xạ thủ $B$. <br>\nĐối với xạ thủ $A$: \n<ul style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>$P(X=0) = C^0_2 \\cdot 0,6^0 (1-0,6)^2 = 0,16$</li><li>$P(X=1) = C^1_2 \\cdot 0,6^1 (1-0,6)^1 = 0,48$</li><li>$P(X=2) = C^2_2 \\cdot 0,6^2 (1-0,6)^0 = 0,36$</li></ul>\nĐối với xạ thủ $B$: \n<ul style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>$P(X=0) = C^0_2 \\cdot 0,7^0 (1-0,7)^2 = 0,09$</li><li>$P(X=1) = C^1_2 \\cdot 0,7^1 (1-0,7)^1 = 0,42$</li><li>$P(X=2) = C^2_2 \\cdot 0,7^2 (1-0,7)^0 = 0,49$</li></ul>\nCác trường hợp $(X,Y)$ với $X>Y$ thỏa mãn là $(1,0), (2,1), (2,0)$. Vì $A,B$ bắn độc lập nên \n<ul style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>$P(X=1, Y=0) = P(X=1) \\cdot P(Y=0) = 0,48 \\cdot 0,09 = 0,0432$</li><li>$P(X=2, Y=0) = P(X=2) \\cdot P(Y=0) = 0,36 \\cdot 0,09 = 0,0324$</li><li>$P(X=2, Y=1) = P(X=2) \\cdot P(Y=1) = 0,36 \\cdot 0,42 = 0,1512$</li></ul>\nXác suất cần tìm là:\n$P(X > Y) = 0,0432 + 0,0324 + 0,1512 = 0,2268$",
+      "createdAt": "2026-03-13T16:53:55.186Z"
+    },
     {
       "id": "seed1",
       "subject": "Xác suất thống kê",
