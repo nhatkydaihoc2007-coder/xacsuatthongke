@@ -1,0 +1,12 @@
+{
+  "subjects": ["Xác suất thống kê", "Giải tích", "Đại số", "Hình học"],
+  "exercises": [
+    {
+      "id": "seed1",
+      "subject": "Xác suất thống kê",
+      "question": "Giải thích tại sao biến cố \"Tung 4 lần một con xúc sắc cân đối, có ít nhất 1 lần xuất hiện mặt 6 chấm\" có khả năng xảy ra cao hơn biến cố \"Tung 24 lần một cặp xúc sắc cân đối, có ít nhất 1 lần xuất hiện cặp 6 chấm\".",
+      "solution": "Biến cố $A$: \"Tung 4 lần một con xúc sắc, có ít nhất 1 lần mặt 6 chấm\".<br>Xác suất không xuất hiện mặt 6 trong 1 lần tung là $\\dfrac{5}{6}$.<br>Xác suất không xuất hiện mặt 6 trong cả 4 lần tung là: $$P(\\bar{A}) = \\left(\\dfrac{5}{6}\\right)^4 = \\dfrac{625}{1296} \\approx 0{,}4823$$Suy ra: $P(A) = 1 - 0{,}4823 \\approx 0{,}5177$.<br><br>Biến cố $B$: \"Tung 24 lần một cặp xúc sắc, có ít nhất 1 lần cặp 6 chấm\".<br>Có $6\\times6=36$ kết quả, chỉ 1 kết quả là $(6,6)$.<br>$$P(\\bar{B}) = \\left(\\dfrac{35}{36}\\right)^{24} \\approx 0{,}5086$$Suy ra: $P(B) \\approx 0{,}4914$.<br><br>Vì $P(A) \\approx 0{,}5177 > P(B) \\approx 0{,}4914$ nên biến cố $A$ có khả năng xảy ra cao hơn biến cố $B$.",
+      "createdAt": "2026-03-13T00:00:00.000Z"
+    }
+  ]
+}
