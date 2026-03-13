@@ -13,7 +13,8 @@ window.MathJax = {
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 /* ── THEME VARS ── */
 :root {
@@ -54,7 +55,7 @@ window.MathJax = {
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -228,12 +229,12 @@ body {
   transition: background 0.25s, border-color 0.25s;
 }
 .stat-icon { width:36px; height:36px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:17px; flex-shrink:0; }
-.stat-n { font-size: 24px; font-weight: 700; font-family: 'Lora', serif; line-height: 1; }
+.stat-n { font-size: 24px; font-weight: 700; font-family: 'Lora', 'Georgia', serif; line-height: 1; }
 .stat-l { font-size: 11px; color: var(--muted); margin-top: 2px; }
 
 /* ── PAGE HEADER ── */
 .page-hdr { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
-.page-title { font-family: 'Lora', serif; font-size: 22px; font-weight: 400; }
+.page-title { font-family: 'Lora', 'Georgia', serif; font-size: 22px; font-weight: 400; }
 .page-title em { color: var(--accent); font-style: italic; }
 .page-cnt { font-size:12px; color:var(--faint); font-family:'Fira Code',monospace; }
 
@@ -270,7 +271,7 @@ body {
 .ex-date { font-size:11px; color:var(--faint); font-family:'Fira Code',monospace; margin-left:auto; }
 
 .ex-question {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', 'Georgia', 'Times New Roman', serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.85;
@@ -323,7 +324,7 @@ body {
 }
 .sol-lbl::after { content:''; flex:1; height:1px; background: linear-gradient(to right, var(--border), transparent); }
 .sol-content {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', 'Georgia', 'Times New Roman', serif;
   font-size: 14.5px;
   font-weight: 300;
   line-height: 1.95;
@@ -425,8 +426,8 @@ body {
 
 <script>
 // ── CONFIG: đổi thành repo của bạn ──
-const REPO_OWNER = 'nhatkydaihoc2007-coder';
-const REPO_NAME  = 'xacsuatthongke';
+const REPO_OWNER = 'YOUR_GITHUB_USERNAME';
+const REPO_NAME  = 'YOUR_REPO_NAME';
 const DATA_FILE  = 'data/exercises.json';
 // ────────────────────────────────────
 
@@ -577,6 +578,63 @@ document.getElementById('searchInput').addEventListener('input', e => {
 });
 
 loadData();
+
+// ── LaTeX → HTML parser ──────────────────────────────────
+function ctex(raw) {
+  if (!raw) return '';
+  let t = raw;
+  const mathBlocks = [];
+  function protect(s) {
+    s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_, m) => { mathBlocks.push('$$'+m+'$$'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    s = s.replace(/\$([^\$\n]+?)\$/g,    (_, m) => { mathBlocks.push('$'+m+'$');   return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    return s;
+  }
+  function restore(s) { return s.replace(/\x00M(\d+)\x00/g, (_, i) => mathBlocks[+i]); }
+  t = protect(t);
+  t = t.replace(/\\dfrac/g, '\\frac');
+  // Text formatting
+  t = t.replace(/\\textbf\{([^}]*)\}/g, '<strong>$1</strong>');
+  t = t.replace(/\\textit\{([^}]*)\}/g, '<em>$1</em>');
+  t = t.replace(/\\emph\{([^}]*)\}/g,   '<em>$1</em>');
+  t = t.replace(/\\texttt\{([^}]*)\}/g, '<code style="font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px">$1</code>');
+  t = t.replace(/\\underline\{([^}]*)\}/g, '<u>$1</u>');
+  t = t.replace(/\\textcolor\{[^}]*\}\{([^}]*)\}/g, '$1');
+  // \begin{itemize}
+  t = t.replace(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/g, (_, inner) => {
+    const items = inner.split(/\\item\s*/).filter(s => s.trim());
+    return '<ul style="margin:8px 0 8px 22px;line-height:1.85">' + items.map(i => '<li>'+i.trim()+'</li>').join('') + '</ul>';
+  });
+  // \begin{enumerate}
+  t = t.replace(/\\begin\{enumerate\}([\s\S]*?)\\end\{enumerate\}/g, (_, inner) => {
+    const items = inner.split(/\\item\s*/).filter(s => s.trim());
+    return '<ol style="margin:8px 0 8px 22px;line-height:1.85">' + items.map(i => '<li>'+i.trim()+'</li>').join('') + '</ol>';
+  });
+  // \begin{center}
+  t = t.replace(/\\begin\{center\}([\s\S]*?)\\end\{center\}/g, '<div style="text-align:center;margin:8px 0">$1</div>');
+  // \begin{tabular} / table
+  t = t.replace(/\\begin\{(?:table|tabular)\}(?:\[.*?\])?\{[^}]*\}([\s\S]*?)\\end\{(?:table|tabular)\}/g, (_, inner) => {
+    const rows = inner.split(/\\\\/).map(r => r.replace(/\\hline/g,'').trim()).filter(r => r);
+    const html = rows.map(row => {
+      const cells = row.split('&').map(c => c.trim());
+      return '<tr>' + cells.map(c => '<td style="padding:5px 12px;border:1px solid var(--border)">'+c+'</td>').join('') + '</tr>';
+    }).join('');
+    return '<div style="overflow-x:auto;margin:10px 0"><table style="border-collapse:collapse;font-size:14px">'+html+'</table></div>';
+  });
+  // Spacing
+  t = t.replace(/\\medskip/g, '<div style="height:10px"></div>');
+  t = t.replace(/\\bigskip/g, '<div style="height:18px"></div>');
+  t = t.replace(/\\smallskip/g, '<div style="height:5px"></div>');
+  t = t.replace(/\\noindent\s*/g, '');
+  t = t.replace(/\\newline/g, '<br>');
+  t = t.replace(/\\par\b/g, '<br>');
+  // \\ newline (after table processing)
+  t = t.replace(/\\\\/g, '<br>');
+  // Leftover commands: \cmd{text} → text, \cmd → ''
+  t = t.replace(/\\[a-zA-Z]+\*?\{([^}]*)\}/g, '$1');
+  t = t.replace(/\\[a-zA-Z]+\*?\s*/g, ' ');
+  t = restore(t);
+  return t.trim();
+}
 </script>
 </body>
 </html>
