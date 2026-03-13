@@ -484,14 +484,18 @@ function render() {
 
 function renderSubjects() {
   const list = document.getElementById('subjList');
-  let html = `<li class="sitem ${curSubj==='all'?'active':''}" onclick="setSubj('all',this)">
+  let html = `<li class="sitem ${curSubj==='all'?'active':''}" data-subj="all">
     <span>Tất cả</span><span class="scnt">${allExercises.length}</span></li>`;
   allSubjects.forEach(s => {
     const c = allExercises.filter(e => e.subject === s).length;
-    html += `<li class="sitem ${curSubj===s?'active':''}" onclick="setSubj(${JSON.stringify(s)},this)">
+    const esc = s.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+    html += `<li class="sitem ${curSubj===s?'active':''}" data-subj="${esc}">
       <span>${s}</span><span class="scnt">${c}</span></li>`;
   });
   list.innerHTML = html;
+  list.querySelectorAll('.sitem').forEach(li => {
+    li.addEventListener('click', () => setSubj(li.dataset.subj, li));
+  });
 }
 
 function renderStats() {
