@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kho Bài Tập Tự Luận</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath:[["$","$"],["\\(","\\)"]], displayMath:[["$$","$$"],["\\[","\\]"]] },
+  options: { skipHtmlTags:["script","noscript","style","textarea","pre"] },
+  startup: { typeset: false }
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ── THEME VARS ── */
+:root {
+  --bg:       #f7f5f0;
+  --surface:  #ffffff;
+  --card:     #ffffff;
+  --border:   #e8e3d9;
+  --border2:  #cfc8b8;
+  --text:     #1c1a16;
+  --muted:    #7a7264;
+  --faint:    #b5afa3;
+  --accent:   #2a5fd8;
+  --acc-lt:   #eaf0fc;
+  --acc-dk:   #1d44a8;
+  --green:    #1f8c6b;
+  --grn-lt:   #eaf7f2;
+  --shadow:   0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.04);
+  --radius:   12px;
+}
+
+[data-theme="dark"] {
+  --bg:       #111318;
+  --surface:  #181c24;
+  --card:     #1e2230;
+  --border:   #282f3e;
+  --border2:  #3a4258;
+  --text:     #e4e8f0;
+  --muted:    #8892a8;
+  --faint:    #4a5268;
+  --accent:   #6b8fff;
+  --acc-lt:   #0e1630;
+  --acc-dk:   #8aa4ff;
+  --green:    #3ecfa0;
+  --grn-lt:   #071f16;
+  --shadow:   0 1px 4px rgba(0,0,0,0.3);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.25s, color 0.25s;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── HEADER ── */
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.logo-mark {
+  width: 36px; height: 36px;
+  background: var(--accent);
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.logo-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+.logo-name em { color: var(--accent); font-style: normal; }
+
+.hright { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+/* Theme toggle */
+.theme-btn {
+  width: 38px; height: 38px;
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 17px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.theme-btn:hover { background: var(--border); }
+
+.admin-link {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.admin-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── LAYOUT ── */
+.layout {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+}
+
+/* ── SIDEBAR ── */
+.sidebar { position: sticky; top: 88px; height: fit-content; }
+
+.sblock {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.slabel {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 10px;
+}
+
+.search-wrap { position: relative; }
+.search-wrap::before {
+  content: '⌕';
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--faint); font-size: 16px; pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px 8px 32px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.15s;
+}
+.search-input:focus { border-color: var(--accent); background: var(--surface); }
+.search-input::placeholder { color: var(--faint); }
+
+.subjlist { list-style: none; }
+.sitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--muted);
+  transition: all 0.12s;
+  margin-bottom: 2px;
+}
+.sitem:hover { background: var(--bg); color: var(--text); }
+.sitem.active { background: var(--acc-lt); color: var(--accent); font-weight: 500; }
+
+.scnt {
+  font-family: 'Fira Code', monospace;
+  font-size: 10px;
+  background: var(--bg);
+  color: var(--faint);
+  padding: 2px 7px;
+  border-radius: 10px;
+  min-width: 22px;
+  text-align: center;
+  transition: all 0.12s;
+}
+.sitem.active .scnt { background: var(--surface); color: var(--accent); }
+
+/* ── STATS ── */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+  transition: background 0.25s, border-color 0.25s;
+}
+.stat-icon { width:36px; height:36px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:17px; flex-shrink:0; }
+.stat-n { font-size: 24px; font-weight: 700; font-family: 'Lora', serif; line-height: 1; }
+.stat-l { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* ── PAGE HEADER ── */
+.page-hdr { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
+.page-title { font-family: 'Lora', serif; font-size: 22px; font-weight: 400; }
+.page-title em { color: var(--accent); font-style: italic; }
+.page-cnt { font-size:12px; color:var(--faint); font-family:'Fira Code',monospace; }
+
+/* ── EXERCISE CARD ── */
+.ex-list { display: flex; flex-direction: column; gap: 12px; }
+
+.ex-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.25s;
+}
+.ex-card:hover { border-color: var(--border2); }
+
+.ex-meta { display:flex; align-items:center; gap:8px; margin-bottom:12px; }
+
+.ex-num {
+  font-family: 'Fira Code', monospace;
+  font-size: 10px; font-weight: 500;
+  color: var(--accent);
+  background: var(--acc-lt);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.ex-tag {
+  font-size: 11px; font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 5px;
+}
+
+.ex-date { font-size:11px; color:var(--faint); font-family:'Fira Code',monospace; margin-left:auto; }
+
+.ex-question {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.ex-footer { display: flex; align-items: center; gap: 8px; }
+
+/* ── SOLUTION TOGGLE ── */
+.sol-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.sol-btn:hover, .sol-btn.open {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--grn-lt);
+}
+.sol-btn .arr { transition: transform 0.25s; font-size: 10px; display: inline-block; }
+.sol-btn.open .arr { transform: rotate(180deg); }
+
+/* ── SOLUTION PANEL ── */
+.sol-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s ease, margin-top 0.2s ease;
+  overflow: hidden;
+  margin-top: 0;
+}
+.sol-wrap.open { grid-template-rows: 1fr; margin-top: 14px; }
+.sol-inner { min-height: 0; overflow: hidden; }
+.sol-body {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+.sol-lbl {
+  font-family: 'Fira Code', monospace;
+  font-size: 9px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 10px;
+  display: flex; align-items: center; gap: 6px;
+}
+.sol-lbl::after { content:''; flex:1; height:1px; background: linear-gradient(to right, var(--border), transparent); }
+.sol-content {
+  font-family: 'Lora', serif;
+  font-size: 14.5px;
+  font-weight: 300;
+  line-height: 1.95;
+  background: var(--grn-lt);
+  border-left: 3px solid var(--green);
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  transition: background 0.25s;
+}
+
+/* ── EMPTY / LOADING ── */
+.empty { text-align:center; padding:60px 20px; }
+.empty-ico { font-size:44px; opacity:.3; margin-bottom:12px; }
+.empty-txt { font-family:'Lora',serif; font-size:18px; font-style:italic; color:var(--faint); }
+
+.loading-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--green));
+  animation: loadbar 1.2s ease infinite;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+@keyframes loadbar { 0%{width:0%} 60%{width:80%} 100%{width:100%} }
+
+/* ── TAG COLORS ── */
+.tag-xstk { background: var(--grn-lt); color: var(--green); }
+.tag-gt   { background: var(--acc-lt); color: var(--accent); }
+.tag-ds   { background: #fef3e8; color: #b85c10; }
+.tag-hh   { background: #f3efff; color: #6b21d8; }
+.tag-other{ background: var(--bg); color: var(--muted); }
+
+[data-theme="dark"] .tag-ds { background: #2a1600; color: #f0a040; }
+[data-theme="dark"] .tag-hh { background: #1a0840; color: #c09cff; }
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.ex-card { animation: fadeUp 0.3s ease both; }
+
+@media (max-width: 720px) {
+  .layout { grid-template-columns: 1fr; padding: 16px; }
+  .sidebar { position: static; }
+  .stats-row { grid-template-columns: repeat(2,1fr); }
+  .header { padding: 0 16px; }
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-mark">∑</div>
+  <div class="logo-name">Kho <em>Bài Tập</em></div>
+  <div class="hright">
+    <button class="theme-btn" id="themeBtn" title="Đổi giao diện">🌙</button>
+    <a href="admin.html" class="admin-link">🔑 Admin</a>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sblock">
+      <div class="slabel">Tìm kiếm</div>
+      <div class="search-wrap">
+        <input type="text" class="search-input" id="searchInput" placeholder="Tìm bài tập…">
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="slabel">Môn học</div>
+      <ul class="subjlist" id="subjList"></ul>
+    </div>
+  </aside>
+
+  <main>
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-icon" style="background:var(--acc-lt)">📝</div>
+        <div><div class="stat-n" id="sTot">–</div><div class="stat-l">Bài tập</div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:var(--grn-lt)">📚</div>
+        <div><div class="stat-n" id="sSubj">–</div><div class="stat-l">Môn học</div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#fef3e8">✨</div>
+        <div><div class="stat-n" id="sNew">–</div><div class="stat-l">Tuần này</div></div>
+      </div>
+    </div>
+
+    <div class="page-hdr">
+      <h2 class="page-title" id="pageTitle">Tất cả <em>bài tập</em></h2>
+      <span class="page-cnt" id="pageCnt"></span>
+    </div>
+    <div id="loadingBar" class="loading-bar"></div>
+    <div class="ex-list" id="exList"></div>
+  </main>
+</div>
+
+<script>
+// ── CONFIG: đổi thành repo của bạn ──
+const REPO_OWNER = 'YOUR_GITHUB_USERNAME';
+const REPO_NAME  = 'YOUR_REPO_NAME';
+const DATA_FILE  = 'data/exercises.json';
+// ────────────────────────────────────
+
+const RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${DATA_FILE}`;
+
+let allExercises = [], allSubjects = [];
+let curSubj = 'all', searchQ = '';
+
+// ── Theme ──
+const saved = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', saved);
+const themeBtn = document.getElementById('themeBtn');
+themeBtn.textContent = saved === 'dark' ? '☀️' : '🌙';
+themeBtn.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  themeBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+});
+
+// ── Load data ──
+async function loadData() {
+  try {
+    const res = await fetch(RAW_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('fetch failed');
+    const json = await res.json();
+    allExercises = json.exercises || [];
+    allSubjects  = json.subjects  || [];
+  } catch (e) {
+    allExercises = [];
+    allSubjects  = [];
+    document.getElementById('exList').innerHTML = `<div class="empty"><div class="empty-ico">⚠️</div><div class="empty-txt">Không thể tải dữ liệu. Kiểm tra cấu hình REPO_OWNER và REPO_NAME.</div></div>`;
+  }
+  document.getElementById('loadingBar').style.display = 'none';
+  render();
+}
+
+// ── Tag class ──
+const TAG_MAP = {
+  'Xác suất thống kê': 'tag-xstk',
+  'Giải tích': 'tag-gt',
+  'Đại số': 'tag-ds',
+  'Hình học': 'tag-hh',
+};
+function tagClass(s) { return TAG_MAP[s] || 'tag-other'; }
+
+// ── Render ──
+function render() {
+  renderSubjects();
+  renderStats();
+  renderExercises();
+}
+
+function renderSubjects() {
+  const list = document.getElementById('subjList');
+  let html = `<li class="sitem ${curSubj==='all'?'active':''}" onclick="setSubj('all',this)">
+    <span>Tất cả</span><span class="scnt">${allExercises.length}</span></li>`;
+  allSubjects.forEach(s => {
+    const c = allExercises.filter(e => e.subject === s).length;
+    html += `<li class="sitem ${curSubj===s?'active':''}" onclick="setSubj(${JSON.stringify(s)},this)">
+      <span>${s}</span><span class="scnt">${c}</span></li>`;
+  });
+  list.innerHTML = html;
+}
+
+function renderStats() {
+  const w = new Date(); w.setDate(w.getDate()-7);
+  document.getElementById('sTot').textContent  = allExercises.length;
+  document.getElementById('sSubj').textContent = allSubjects.length;
+  document.getElementById('sNew').textContent  = allExercises.filter(e => new Date(e.createdAt) > w).length;
+}
+
+function getFiltered() {
+  return allExercises.filter(e => {
+    const ms = curSubj === 'all' || e.subject === curSubj;
+    const q  = searchQ.toLowerCase();
+    return ms && (!q || e.question.toLowerCase().includes(q) || (e.solution||'').toLowerCase().includes(q));
+  });
+}
+
+function renderExercises() {
+  const list = document.getElementById('exList');
+  const data = getFiltered();
+
+  document.getElementById('pageCnt').textContent = `${data.length} bài`;
+  document.getElementById('pageTitle').innerHTML = curSubj === 'all'
+    ? 'Tất cả <em>bài tập</em>'
+    : `Môn: <em>${curSubj}</em>`;
+
+  if (!data.length) {
+    list.innerHTML = `<div class="empty"><div class="empty-ico">🔍</div><div class="empty-txt">Không tìm thấy bài tập nào.</div></div>`;
+    return;
+  }
+
+  list.innerHTML = data.map((ex, i) => {
+    const gi = allExercises.findIndex(e => e.id === ex.id) + 1;
+    const d  = new Date(ex.createdAt).toLocaleDateString('vi-VN');
+    return `
+    <div class="ex-card" style="animation-delay:${i*0.04}s" id="card-${ex.id}">
+      <div class="ex-meta">
+        <span class="ex-num">#${String(gi).padStart(3,'0')}</span>
+        <span class="ex-tag ${tagClass(ex.subject)}">${ex.subject}</span>
+        <span class="ex-date">${d}</span>
+      </div>
+      <div class="ex-question" id="eq-${ex.id}">${ex.question}</div>
+      <div class="ex-footer">
+        <button class="sol-btn" id="sb-${ex.id}" onclick="toggleSol('${ex.id}')">
+          📖 <span id="sbtxt-${ex.id}">Xem lời giải</span> <span class="arr">▾</span>
+        </button>
+      </div>
+      <div class="sol-wrap" id="sw-${ex.id}">
+        <div class="sol-inner">
+          <div class="sol-body">
+            <div class="sol-lbl">Lời giải</div>
+            <div class="sol-content" id="sc-${ex.id}">${ex.solution || '<em style="opacity:.5">Chưa có lời giải.</em>'}</div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  if (window.MathJax) MathJax.typesetPromise([list]).catch(()=>{});
+}
+
+function toggleSol(id) {
+  const wrap = document.getElementById('sw-'+id);
+  const btn  = document.getElementById('sb-'+id);
+  const txt  = document.getElementById('sbtxt-'+id);
+  const open = wrap.classList.contains('open');
+  wrap.classList.toggle('open', !open);
+  btn.classList.toggle('open', !open);
+  txt.textContent = open ? 'Xem lời giải' : 'Ẩn lời giải';
+  if (!open && window.MathJax) MathJax.typesetPromise([document.getElementById('sc-'+id)]).catch(()=>{});
+}
+
+function setSubj(s, el) {
+  curSubj = s;
+  document.querySelectorAll('.sitem').forEach(li => li.classList.remove('active'));
+  if (el) el.classList.add('active');
+  renderExercises();
+  renderSubjects();
+}
+
+document.getElementById('searchInput').addEventListener('input', e => {
+  searchQ = e.target.value;
+  renderExercises();
+});
+
+loadData();
+</script>
+</body>
+</html>

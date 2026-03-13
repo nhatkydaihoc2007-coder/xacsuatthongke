@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Kho Bài Tập</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath:[["$","$"],["\\(","\\)"]], displayMath:[["$$","$$"],["\\[","\\]"]] },
+  options: { skipHtmlTags:["script","noscript","style","textarea","pre"] },
+  startup: { typeset: false }
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#f7f5f0; --surface:#fff; --card:#fff; --border:#e8e3d9; --border2:#cfc8b8;
+  --text:#1c1a16; --muted:#7a7264; --faint:#b5afa3;
+  --accent:#2a5fd8; --acc-lt:#eaf0fc; --acc-dk:#1d44a8;
+  --green:#1f8c6b; --grn-lt:#eaf7f2;
+  --red:#c0392b; --red-lt:#fdf0ef;
+  --orange:#d97706; --org-lt:#fef9ec;
+  --shadow:0 1px 4px rgba(0,0,0,0.07),0 4px 16px rgba(0,0,0,0.04);
+  --radius:12px;
+}
+[data-theme="dark"] {
+  --bg:#111318; --surface:#181c24; --card:#1e2230; --border:#282f3e; --border2:#3a4258;
+  --text:#e4e8f0; --muted:#8892a8; --faint:#4a5268;
+  --accent:#6b8fff; --acc-lt:#0e1630; --acc-dk:#8aa4ff;
+  --green:#3ecfa0; --grn-lt:#071f16;
+  --red:#f87171; --red-lt:#1f0808;
+  --orange:#fbbf24; --org-lt:#1c1200;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .25s,color .25s;font-size:14px;}
+
+/* ── HEADER ── */
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:0 32px;height:60px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:100;box-shadow:var(--shadow);transition:background .25s,border-color .25s;}
+.logo-mark{width:36px;height:36px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-family:'Lora',serif;font-size:18px;font-weight:600;}
+.logo-name{font-size:16px;font-weight:600;color:var(--text);}
+.logo-name em{color:var(--accent);font-style:normal;}
+.admin-badge{font-size:11px;font-weight:500;background:var(--org-lt);color:var(--orange);border:1px solid;border-color:var(--orange);padding:3px 10px;border-radius:20px;opacity:.7;}
+.hright{margin-left:auto;display:flex;align-items:center;gap:8px;}
+.theme-btn{width:38px;height:38px;border-radius:9px;border:1px solid var(--border);background:transparent;color:var(--text);cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+.theme-btn:hover{background:var(--border);}
+.back-link{font-size:12px;color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:7px;border:1px solid var(--border);transition:all .15s;}
+.back-link:hover{color:var(--accent);border-color:var(--accent);}
+
+/* ── MAIN LAYOUT ── */
+.page{max-width:860px;margin:0 auto;padding:32px;}
+
+/* ── SETUP CARD (token entry) ── */
+.setup-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);margin-bottom:24px;}
+.setup-title{font-family:'Lora',serif;font-size:20px;font-weight:400;margin-bottom:6px;}
+.setup-sub{font-size:12px;color:var(--muted);margin-bottom:22px;line-height:1.6;}
+.setup-sub a{color:var(--accent);text-decoration:none;}
+.setup-sub a:hover{text-decoration:underline;}
+
+.field-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;}
+
+.form-label{font-size:11px;font-weight:600;color:var(--muted);display:block;margin-bottom:6px;letter-spacing:.04em;}
+.form-input{width:100%;padding:9px 12px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Fira Code',monospace;font-size:12px;outline:none;transition:all .15s;}
+.form-input:focus{border-color:var(--accent);background:var(--surface);box-shadow:0 0 0 3px rgba(107,143,255,.1);}
+.form-input::placeholder{color:var(--faint);}
+select.form-input{font-family:'DM Sans',sans-serif;cursor:pointer;font-size:13px;}
+textarea.form-input{min-height:100px;resize:vertical;font-family:'Fira Code',monospace;font-size:12px;line-height:1.65;}
+textarea.code-ta{min-height:180px;}
+
+/* ── BUTTONS ── */
+.btn{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:9px 18px;border-radius:8px;border:none;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+.btn-primary{background:var(--accent);color:#fff;}.btn-primary:hover{background:var(--acc-dk);}
+.btn-secondary{background:transparent;color:var(--muted);border:1px solid var(--border);}.btn-secondary:hover{color:var(--text);border-color:var(--border2);}
+.btn-danger{background:transparent;color:var(--red);border:1px solid transparent;}.btn-danger:hover{background:var(--red-lt);border-color:var(--red);}
+.btn-sm{font-size:12px;padding:6px 13px;}
+.btn-block{width:100%;justify-content:center;}
+
+/* ── STATUS BANNER ── */
+.banner{padding:12px 16px;border-radius:9px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:8px;margin-bottom:16px;}
+.banner-ok{background:var(--grn-lt);color:var(--green);}
+.banner-err{background:var(--red-lt);color:var(--red);}
+.banner-warn{background:var(--org-lt);color:var(--orange);}
+.banner-info{background:var(--acc-lt);color:var(--accent);}
+
+/* ── SECTION ── */
+.section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:20px;transition:background .25s,border-color .25s;}
+.section-title{font-size:15px;font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.section-title span{font-size:17px;}
+
+/* ── TABS ── */
+.tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:20px;gap:4px;}
+.tab{padding:8px 16px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;}
+.tab:hover{color:var(--text);}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+
+/* ── EXERCISE LIST (admin) ── */
+.admin-ex-list{display:flex;flex-direction:column;gap:10px;}
+.admin-ex-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;transition:border-color .15s;}
+.admin-ex-card:hover{border-color:var(--border2);}
+.admin-ex-meta{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.ex-num{font-family:'Fira Code',monospace;font-size:10px;font-weight:500;color:var(--accent);background:var(--acc-lt);padding:2px 8px;border-radius:4px;}
+.ex-tag{font-size:11px;font-weight:500;padding:3px 9px;border-radius:5px;}
+.tag-xstk{background:var(--grn-lt);color:var(--green);}
+.tag-gt{background:var(--acc-lt);color:var(--accent);}
+.tag-ds{background:#fef3e8;color:#b85c10;}[data-theme="dark"] .tag-ds{background:#2a1600;color:#f0a040;}
+.tag-hh{background:#f3efff;color:#6b21d8;}[data-theme="dark"] .tag-hh{background:#1a0840;color:#c09cff;}
+.tag-other{background:var(--bg);color:var(--muted);}
+.admin-ex-q{font-family:'Lora',serif;font-size:14px;font-weight:300;line-height:1.7;margin-bottom:10px;color:var(--text);}
+.admin-ex-actions{display:flex;gap:8px;}
+
+/* ── PREVIEW ── */
+.preview-box{background:var(--bg);border:1px dashed var(--border);border-radius:8px;padding:10px 14px;min-height:38px;font-family:'Lora',serif;font-size:13.5px;line-height:1.7;margin-top:6px;}
+.preview-lbl{font-size:10px;color:var(--faint);margin:6px 0 3px;font-style:italic;}
+
+/* ── SPINNER ── */
+.spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;display:inline-block;}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:24px;right:24px;background:var(--text);color:var(--surface);padding:10px 18px;border-radius:9px;font-size:13px;font-weight:500;box-shadow:var(--shadow);z-index:999;animation:fadeUp .3s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-mark">∑</div>
+  <div class="logo-name">Kho <em>Bài Tập</em></div>
+  <span class="admin-badge">ADMIN</span>
+  <div class="hright">
+    <button class="theme-btn" id="themeBtn">🌙</button>
+    <a href="index.html" class="back-link">← Xem trang công khai</a>
+  </div>
+</div>
+
+<div class="page">
+  <div id="statusBanner" style="display:none"></div>
+
+  <!-- ── SETUP ── -->
+  <div class="setup-card" id="setupCard">
+    <div class="setup-title">⚙️ Cài đặt GitHub</div>
+    <div class="setup-sub">
+      Admin dùng <strong>GitHub API</strong> để đọc/ghi file <code>data/exercises.json</code> trực tiếp trên repo.<br>
+      Tạo <a href="https://github.com/settings/tokens/new?scopes=repo&description=BaiTapAdmin" target="_blank">Personal Access Token</a>
+      với quyền <code>repo</code>. Token chỉ lưu trong trình duyệt của bạn, không gửi đi đâu khác.
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+      <div>
+        <div class="form-label">GitHub Username</div>
+        <input type="text" class="form-input" id="cfgOwner" placeholder="your-username">
+      </div>
+      <div>
+        <div class="form-label">Tên repo</div>
+        <input type="text" class="form-input" id="cfgRepo" placeholder="bai-tap">
+      </div>
+    </div>
+    <div style="margin-bottom:16px;">
+      <div class="form-label">Personal Access Token</div>
+      <div class="field-row">
+        <input type="password" class="form-input" id="cfgToken" placeholder="ghp_xxxxxxxxxxxx">
+        <button class="btn btn-primary" onclick="connectGitHub()">
+          <span id="connectSpinner" style="display:none" class="spinner"></span>
+          Kết nối
+        </button>
+      </div>
+    </div>
+    <div id="connectStatus"></div>
+  </div>
+
+  <!-- ── MAIN ADMIN (hidden until connected) ── -->
+  <div id="adminMain" style="display:none">
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('list', this)">📋 Danh sách bài tập</div>
+      <div class="tab" onclick="switchTab('add', this)">✏️ Thêm bài tập</div>
+      <div class="tab" onclick="switchTab('import', this)">↑ Nhập LaTeX</div>
+      <div class="tab" onclick="switchTab('subjects', this)">🏷️ Môn học</div>
+    </div>
+
+    <!-- LIST TAB -->
+    <div id="tabList">
+      <div class="section">
+        <div class="section-title"><span>📋</span> Bài tập hiện có</div>
+        <div class="admin-ex-list" id="adminExList"></div>
+      </div>
+    </div>
+
+    <!-- ADD TAB -->
+    <div id="tabAdd" style="display:none">
+      <div class="section">
+        <div class="section-title"><span>✏️</span> Thêm bài tập mới</div>
+        <div style="margin-bottom:14px;">
+          <div class="form-label">Môn học</div>
+          <select class="form-input" id="addSubj"></select>
+        </div>
+        <div style="margin-bottom:14px;">
+          <div class="form-label">Đề bài (hỗ trợ LaTeX)</div>
+          <textarea class="form-input" id="addQ" placeholder="Nhập đề bài…" oninput="dprev('q')"></textarea>
+          <div class="preview-lbl">Preview:</div>
+          <div class="preview-box" id="pvQ"></div>
+        </div>
+        <div style="margin-bottom:20px;">
+          <div class="form-label">Lời giải (hỗ trợ LaTeX)</div>
+          <textarea class="form-input" id="addS" placeholder="Nhập lời giải…" oninput="dprev('s')"></textarea>
+          <div class="preview-lbl">Preview:</div>
+          <div class="preview-box" id="pvS"></div>
+        </div>
+        <button class="btn btn-primary" onclick="addExercise()">
+          <span id="addSpinner" style="display:none" class="spinner"></span>
+          💾 Lưu và đăng lên GitHub
+        </button>
+      </div>
+    </div>
+
+    <!-- IMPORT TAB -->
+    <div id="tabImport" style="display:none">
+      <div class="section">
+        <div class="section-title"><span>↑</span> Nhập từ LaTeX</div>
+        <div style="margin-bottom:14px;">
+          <div class="form-label">Môn học</div>
+          <select class="form-input" id="importSubj"></select>
+        </div>
+        <div style="margin-bottom:20px;">
+          <div class="form-label">Code LaTeX</div>
+          <textarea class="form-input code-ta" id="importLatex"
+            placeholder="\begin{ex}&#10;Đề bài...&#10;\loigiai{&#10;Lời giải...&#10;}&#10;\end{ex}&#10;&#10;\begin{ex}&#10;...&#10;\end{ex}"></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="doImport()">
+          <span id="importSpinner" style="display:none" class="spinner"></span>
+          ↑ Nhập và đăng lên GitHub
+        </button>
+      </div>
+    </div>
+
+    <!-- SUBJECTS TAB -->
+    <div id="tabSubjects" style="display:none">
+      <div class="section">
+        <div class="section-title"><span>🏷️</span> Quản lý môn học</div>
+        <div id="subjectChips" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;"></div>
+        <div style="display:flex;gap:8px;">
+          <input type="text" class="form-input" id="newSubjInput" placeholder="Tên môn học mới…" style="max-width:300px">
+          <button class="btn btn-primary" onclick="addSubject()">+ Thêm môn</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── CONFIG ──────────────────────────────────────────────
+const DATA_FILE = 'data/exercises.json';
+let ghOwner = '', ghRepo = '', ghToken = '';
+let data = { subjects: [], exercises: [] };
+let fileSha = '';
+let pvT = {};
+
+// ── Theme ──
+const saved = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', saved);
+const themeBtn = document.getElementById('themeBtn');
+themeBtn.textContent = saved === 'dark' ? '☀️' : '🌙';
+themeBtn.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  themeBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+});
+
+// ── Load saved config ──
+window.addEventListener('load', () => {
+  const c = JSON.parse(localStorage.getItem('ghConfig') || '{}');
+  if (c.owner) document.getElementById('cfgOwner').value = c.owner;
+  if (c.repo)  document.getElementById('cfgRepo').value  = c.repo;
+  if (c.token) document.getElementById('cfgToken').value = c.token;
+  if (c.owner && c.repo && c.token) connectGitHub(true);
+});
+
+// ── GitHub API ──
+async function ghFetch(path, opts = {}) {
+  const res = await fetch(`https://api.github.com/repos/${ghOwner}/${ghRepo}/${path}`, {
+    ...opts,
+    headers: {
+      'Authorization': `Bearer ${ghToken}`,
+      'Content-Type': 'application/json',
+      'Accept': 'application/vnd.github+json',
+      ...(opts.headers || {}),
+    },
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.message || `HTTP ${res.status}`);
+  }
+  return res.json();
+}
+
+async function readFile() {
+  const r = await ghFetch(`contents/${DATA_FILE}`);
+  fileSha = r.sha;
+  const json = JSON.parse(atob(r.content.replace(/\n/g, '')));
+  data = json;
+}
+
+async function writeFile(commitMsg) {
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+  await ghFetch(`contents/${DATA_FILE}`, {
+    method: 'PUT',
+    body: JSON.stringify({ message: commitMsg, content, sha: fileSha }),
+  });
+  // refresh sha
+  const r = await ghFetch(`contents/${DATA_FILE}`);
+  fileSha = r.sha;
+}
+
+// ── Connect ──
+async function connectGitHub(silent = false) {
+  ghOwner = document.getElementById('cfgOwner').value.trim();
+  ghRepo  = document.getElementById('cfgRepo').value.trim();
+  ghToken = document.getElementById('cfgToken').value.trim();
+
+  if (!ghOwner || !ghRepo || !ghToken) {
+    showConnectStatus('err', '⚠️ Vui lòng điền đủ thông tin.');
+    return;
+  }
+
+  const sp = document.getElementById('connectSpinner');
+  sp.style.display = 'inline-block';
+
+  try {
+    await readFile();
+    localStorage.setItem('ghConfig', JSON.stringify({ owner: ghOwner, repo: ghRepo, token: ghToken }));
+    showConnectStatus('ok', `✓ Đã kết nối: ${ghOwner}/${ghRepo} (${data.exercises.length} bài tập)`);
+    document.getElementById('adminMain').style.display = 'block';
+    renderAdminAll();
+    if (!silent) toast('✓ Kết nối GitHub thành công!');
+  } catch (e) {
+    showConnectStatus('err', `✗ Lỗi: ${e.message}`);
+    document.getElementById('adminMain').style.display = 'none';
+  } finally {
+    sp.style.display = 'none';
+  }
+}
+
+function showConnectStatus(type, msg) {
+  const el = document.getElementById('connectStatus');
+  const cls = { ok:'banner-ok', err:'banner-err', warn:'banner-warn', info:'banner-info' }[type];
+  el.innerHTML = `<div class="banner ${cls}">${msg}</div>`;
+}
+
+// ── Render admin ──
+const TAG_MAP = {'Xác suất thống kê':'tag-xstk','Giải tích':'tag-gt','Đại số':'tag-ds','Hình học':'tag-hh'};
+function tagCls(s) { return TAG_MAP[s] || 'tag-other'; }
+
+function renderAdminAll() {
+  renderAdminList();
+  renderSubjectSelects();
+  renderSubjectChips();
+}
+
+function renderAdminList() {
+  const el = document.getElementById('adminExList');
+  if (!data.exercises.length) {
+    el.innerHTML = '<div style="text-align:center;padding:32px;color:var(--faint);font-style:italic">Chưa có bài tập nào.</div>';
+    return;
+  }
+  el.innerHTML = data.exercises.map((ex, i) => `
+    <div class="admin-ex-card" id="acard-${ex.id}">
+      <div class="admin-ex-meta">
+        <span class="ex-num">#${String(i+1).padStart(3,'0')}</span>
+        <span class="ex-tag ${tagCls(ex.subject)}">${ex.subject}</span>
+        <span style="font-size:11px;color:var(--faint);margin-left:auto;font-family:'Fira Code',monospace">${new Date(ex.createdAt).toLocaleDateString('vi-VN')}</span>
+      </div>
+      <div class="admin-ex-q" id="aeq-${ex.id}">${ex.question}</div>
+      <div class="admin-ex-actions">
+        <button class="btn btn-danger btn-sm" onclick="deleteEx('${ex.id}')">🗑 Xóa</button>
+      </div>
+    </div>`
+  ).join('');
+  if (window.MathJax) MathJax.typesetPromise([el]).catch(()=>{});
+}
+
+function renderSubjectSelects() {
+  ['addSubj','importSubj'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = data.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
+  });
+}
+
+function renderSubjectChips() {
+  const el = document.getElementById('subjectChips');
+  el.innerHTML = data.subjects.map(s => `
+    <span style="display:inline-flex;align-items:center;gap:6px;background:var(--acc-lt);color:var(--accent);border:1px solid var(--border);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;">
+      ${s}
+      <span onclick="removeSubject('${s}')" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa môn này">×</span>
+    </span>`
+  ).join('');
+}
+
+// ── Tabs ──
+function switchTab(name, el) {
+  ['List','Add','Import','Subjects'].forEach(t => {
+    document.getElementById('tab'+t).style.display = 'none';
+  });
+  document.getElementById('tab'+(name.charAt(0).toUpperCase()+name.slice(1))).style.display = 'block';
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ── Add exercise ──
+async function addExercise() {
+  const q = document.getElementById('addQ').value.trim();
+  const s = document.getElementById('addS').value.trim();
+  const subj = document.getElementById('addSubj').value;
+  if (!q) { toast('⚠️ Vui lòng nhập đề bài!'); return; }
+
+  const sp = document.getElementById('addSpinner');
+  sp.style.display = 'inline-block';
+
+  try {
+    const newEx = { id: Date.now().toString(), subject: subj, question: q, solution: s, createdAt: new Date().toISOString() };
+    data.exercises.unshift(newEx);
+    await writeFile(`Thêm bài tập: ${q.slice(0,60)}…`);
+    renderAdminAll();
+    document.getElementById('addQ').value = '';
+    document.getElementById('addS').value = '';
+    document.getElementById('pvQ').innerHTML = '';
+    document.getElementById('pvS').innerHTML = '';
+    toast('✓ Đã thêm và commit lên GitHub!');
+    switchTab('list', document.querySelector('.tab'));
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+    data.exercises.shift(); // rollback
+  } finally { sp.style.display = 'none'; }
+}
+
+// ── Delete exercise ──
+async function deleteEx(id) {
+  if (!confirm('Xóa bài tập này? Thao tác này sẽ commit lên GitHub.')) return;
+  const idx = data.exercises.findIndex(e => e.id === id);
+  if (idx === -1) return;
+  const removed = data.exercises.splice(idx, 1)[0];
+  try {
+    await writeFile('Xóa bài tập #' + id);
+    renderAdminAll();
+    toast('✓ Đã xóa và commit lên GitHub!');
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+    data.exercises.splice(idx, 0, removed); // rollback
+  }
+}
+
+// ── Import LaTeX ──
+async function doImport() {
+  const raw  = document.getElementById('importLatex').value;
+  const subj = document.getElementById('importSubj').value;
+  const reg  = /\\begin\{ex\}([\s\S]*?)\\end\{ex\}/g;
+  let m, cnt = 0, newOnes = [];
+
+  while ((m = reg.exec(raw)) !== null) {
+    const blk = m[1];
+    const li  = blk.lastIndexOf('\\loigiai{');
+    let q, sol = '';
+    if (li !== -1) {
+      q = blk.slice(0, li).trim();
+      const after = blk.slice(li + 9);
+      let d = 1, i = 0;
+      for (; i < after.length; i++) {
+        if (after[i] === '{') d++;
+        else if (after[i] === '}') { d--; if (!d) break; }
+      }
+      sol = after.slice(0, i).trim();
+    } else { q = blk.trim(); }
+    if (!q) continue;
+    newOnes.push({ id:(Date.now()+cnt).toString(), subject:subj, question:ctex(q), solution:ctex(sol), createdAt:new Date().toISOString() });
+    cnt++;
+  }
+
+  if (!cnt && raw.trim()) {
+    newOnes.push({ id:Date.now().toString(), subject:subj, question:ctex(raw.trim()), solution:'', createdAt:new Date().toISOString() });
+    cnt = 1;
+  }
+
+  if (!cnt) { toast('Không tìm thấy bài tập nào để nhập.'); return; }
+
+  const sp = document.getElementById('importSpinner');
+  sp.style.display = 'inline-block';
+  const backup = [...data.exercises];
+  data.exercises = [...newOnes, ...data.exercises];
+
+  try {
+    await writeFile(`Nhập ${cnt} bài tập (${subj})`);
+    renderAdminAll();
+    document.getElementById('importLatex').value = '';
+    toast(`✓ Đã nhập ${cnt} bài và commit lên GitHub!`);
+    switchTab('list', document.querySelector('.tab'));
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+    data.exercises = backup;
+  } finally { sp.style.display = 'none'; }
+}
+
+function ctex(t) { return t.replace(/\\\\/g,'<br>').replace(/\\dfrac/g,'\\frac').trim(); }
+
+// ── Subjects ──
+async function addSubject() {
+  const n = document.getElementById('newSubjInput').value.trim();
+  if (!n) return;
+  if (data.subjects.includes(n)) { toast('Môn học đã tồn tại!'); return; }
+  data.subjects.push(n);
+  try {
+    await writeFile('Thêm môn học: ' + n);
+    document.getElementById('newSubjInput').value = '';
+    renderAdminAll();
+    toast('✓ Đã thêm môn "' + n + '"');
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+    data.subjects.pop();
+  }
+}
+
+async function removeSubject(name) {
+  if (!confirm(`Xóa môn "${name}"? Các bài tập thuộc môn này sẽ không bị xóa.`)) return;
+  data.subjects = data.subjects.filter(s => s !== name);
+  try {
+    await writeFile('Xóa môn học: ' + name);
+    renderAdminAll();
+    toast('✓ Đã xóa môn "' + name + '"');
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+  }
+}
+
+// ── Preview ──
+function dprev(f) {
+  clearTimeout(pvT[f]);
+  pvT[f] = setTimeout(() => {
+    const v = document.getElementById(f==='q'?'addQ':'addS').value;
+    const b = document.getElementById(f==='q'?'pvQ':'pvS');
+    b.innerHTML = v;
+    if (window.MathJax) MathJax.typesetPromise([b]).catch(()=>{});
+  }, 500);
+}
+
+// ── Toast ──
+let toastTimer;
+function toast(msg) {
+  const old = document.querySelector('.toast');
+  if (old) old.remove();
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.remove(), 2800);
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.activeElement === document.getElementById('cfgToken')) connectGitHub();
+});
+</script>
+</body>
+</html>
