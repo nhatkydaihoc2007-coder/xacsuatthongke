@@ -4,6 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin — Kho Bài Tập</title>
+<!-- ── EDIT MODAL ── -->
+<div id="editOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:300;align-items:center;justify-content:center;backdrop-filter:blur(4px)">
+  <div style="background:var(--surface);border:1px solid var(--border2);border-radius:14px;width:640px;max-width:95vw;max-height:90vh;overflow-y:auto;padding:28px 32px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.2)">
+    <button onclick="closeEdit()" style="position:absolute;top:14px;right:14px;background:var(--bg);border:none;color:var(--muted);width:28px;height:28px;border-radius:6px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center">✕</button>
+    <div style="font-size:20px;font-weight:700;margin-bottom:4px">✏️ Chỉnh sửa bài tập</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)">Hỗ trợ LaTeX — $…$ inline, $$…$$ display, \[…\] display</div>
+    <div style="margin-bottom:14px">
+      <div class="form-label">Môn học</div>
+      <select class="form-input" id="editSubj" style="cursor:pointer"></select>
+    </div>
+    <div style="margin-bottom:14px">
+      <div class="form-label">Đề bài</div>
+      <textarea class="form-input" id="editQ" rows="4" oninput="dprevEdit('q')" style="min-height:90px;resize:vertical;font-family:'Fira Code',monospace;font-size:12px;line-height:1.65"></textarea>
+      <div style="font-size:10px;color:var(--faint);margin:5px 0 3px;font-style:italic">Preview:</div>
+      <div class="preview-box" id="pvEQ"></div>
+    </div>
+    <div style="margin-bottom:20px">
+      <div class="form-label">Lời giải</div>
+      <textarea class="form-input" id="editS" rows="6" oninput="dprevEdit('s')" style="min-height:130px;resize:vertical;font-family:'Fira Code',monospace;font-size:12px;line-height:1.65"></textarea>
+      <div style="font-size:10px;color:var(--faint);margin:5px 0 3px;font-style:italic">Preview:</div>
+      <div class="preview-box" id="pvES"></div>
+    </div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;padding-top:16px;border-top:1px solid var(--border)">
+      <button class="btn btn-secondary" onclick="closeEdit()">Hủy</button>
+      <button class="btn btn-primary" onclick="saveEdit()">
+        <span id="editSpinner" style="display:none" class="spinner"></span>
+        💾 Lưu thay đổi lên GitHub
+      </button>
+    </div>
+  </div>
+</div>
+
+
 <script>
 window.MathJax = {
   tex: { inlineMath:[["$","$"],["\\(","\\)"]], displayMath:[["$$","$$"],["\\[","\\]"]] },
@@ -390,6 +423,7 @@ function renderAdminList() {
       </div>
       <div class="admin-ex-q" id="aeq-${ex.id}">${ex.question}</div>
       <div class="admin-ex-actions">
+        <button class="btn btn-sm" onclick="openEdit('${ex.id}')" style="background:var(--acc-lt);color:var(--accent);border:1px solid var(--border)">✏️ Sửa</button>
         <button class="btn btn-danger btn-sm" onclick="deleteEx('${ex.id}')">🗑 Xóa</button>
       </div>
     </div>`
@@ -398,7 +432,7 @@ function renderAdminList() {
 }
 
 function renderSubjectSelects() {
-  ['addSubj','importSubj'].forEach(id => {
+  ['addSubj','importSubj','editSubj'].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
     el.innerHTML = data.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
@@ -468,6 +502,79 @@ async function deleteEx(id) {
   }
 }
 
+// ── Edit exercise ──
+let editingId = null;
+let pvEditT = {};
+
+function openEdit(id) {
+  const ex = data.exercises.find(e => e.id === id);
+  if (!ex) return;
+  editingId = id;
+  // Populate selects
+  const sel = document.getElementById('editSubj');
+  sel.innerHTML = data.subjects.map(s => `<option value="${s}" ${s===ex.subject?'selected':''}>${s}</option>`).join('');
+  // Fill raw stored HTML back — show as-is for editing
+  document.getElementById('editQ').value = ex.question;
+  document.getElementById('editS').value = ex.solution || '';
+  // Render preview immediately
+  const pvQ = document.getElementById('pvEQ');
+  const pvS = document.getElementById('pvES');
+  pvQ.innerHTML = ex.question;
+  pvS.innerHTML = ex.solution || '';
+  if (window.MathJax) MathJax.typesetPromise([pvQ, pvS]).catch(()=>{});
+  const ov = document.getElementById('editOverlay');
+  ov.style.display = 'flex';
+}
+
+function closeEdit() {
+  document.getElementById('editOverlay').style.display = 'none';
+  editingId = null;
+  clearTimeout(pvEditT.q);
+  clearTimeout(pvEditT.s);
+}
+
+function dprevEdit(f) {
+  clearTimeout(pvEditT[f]);
+  pvEditT[f] = setTimeout(() => {
+    const v = document.getElementById(f==='q'?'editQ':'editS').value;
+    const b = document.getElementById(f==='q'?'pvEQ':'pvES');
+    b.innerHTML = v;
+    if (window.MathJax) MathJax.typesetPromise([b]).catch(()=>{});
+  }, 400);
+}
+
+async function saveEdit() {
+  if (!editingId) return;
+  const q = document.getElementById('editQ').value.trim();
+  const s = document.getElementById('editS').value.trim();
+  const subj = document.getElementById('editSubj').value;
+  if (!q) { toast('⚠️ Vui lòng nhập đề bài!'); return; }
+
+  const sp = document.getElementById('editSpinner');
+  sp.style.display = 'inline-block';
+
+  const idx = data.exercises.findIndex(e => e.id === editingId);
+  const backup = { ...data.exercises[idx] };
+
+  data.exercises[idx] = {
+    ...data.exercises[idx],
+    subject: subj,
+    question: q,
+    solution: s,
+    updatedAt: new Date().toISOString(),
+  };
+
+  try {
+    await writeFile(`Sửa bài tập: ${q.slice(0,60)}…`);
+    renderAdminAll();
+    closeEdit();
+    toast('✓ Đã lưu và commit lên GitHub!');
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+    data.exercises[idx] = backup; // rollback
+  } finally { sp.style.display = 'none'; }
+}
+
 // ── Import LaTeX ──
 async function doImport() {
   const raw  = document.getElementById('importLatex').value;
@@ -523,12 +630,15 @@ function ctex(raw) {
   let t = raw;
   const mb = [];
   function protect(s) {
-    s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_,m)=>{ mb.push('$$'+m+'$$'); return '\x00M'+(mb.length-1)+'\x00'; });
-    s = s.replace(/\$([^\$\n]+?)\$/g,    (_,m)=>{ mb.push('$'+m+'$');   return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\\\[([\s\S]*?)\\\]/g, (_,m)=>{ mb.push('\\['+m+'\\]'); return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_,m)=>{ mb.push('$$'+m+'$$');       return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\\\(([\s\S]*?)\\\)/g, (_,m)=>{ mb.push('\\('+m+'\\)'); return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\$([^\$\n]+?)\$/g,    (_,m)=>{ mb.push('$'+m+'$');         return '\x00M'+(mb.length-1)+'\x00'; });
     return s;
   }
   function restore(s){ return s.replace(/\x00M(\d+)\x00/g,(_,i)=>mb[+i]); }
   t = t.replace(/\\dfrac/g,'\\frac');
+  t = t.replace(/\\displaystyle\\s*/g,'');
   t = protect(t);
   t = t.replace(/\\textbf\{([^}]*)\}/g,'<strong>$1</strong>');
   t = t.replace(/\\textit\{([^}]*)\}/g,'<em>$1</em>');
@@ -618,6 +728,7 @@ function toast(msg) {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter' && document.activeElement === document.getElementById('cfgToken')) connectGitHub();
+  if (e.key === 'Escape') closeEdit();
 });
 </script>
 </body>
