@@ -446,8 +446,8 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
 
 <script>
 // ── CONFIG: đổi thành repo của bạn ──
-const REPO_OWNER = 'nhatkydaihoc2007-coder';
-const REPO_NAME  = 'xacsuatthongke';
+const REPO_OWNER = 'YOUR_GITHUB_USERNAME';
+const REPO_NAME  = 'YOUR_REPO_NAME';
 const DATA_FILE  = 'data/exercises.json';
 // ────────────────────────────────────
 
@@ -607,12 +607,19 @@ loadData();
 function ctex(raw) {
   if (!raw) return '';
   let t = raw;
-  // Normalize \dfrac BEFORE protecting (so it survives into MathJax)
+  // Normalize commands BEFORE protecting math blocks
   t = t.replace(/\\dfrac/g, '\\frac');
+  // \displaystyle outside math: wrap what follows in display math
+  // e.g. \displaystyle P(D) = ... -> just remove the command (MathJax handles it inside math)
+  t = t.replace(/\\displaystyle\s*/g, '');
   const mathBlocks = [];
   function protect(s) {
-    s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_, m) => { mathBlocks.push('$$'+m+'$$'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
-    s = s.replace(/\$([^\$\n]+?)\$/g,    (_, m) => { mathBlocks.push('$'+m+'$');   return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    // display math: \[...\] and $$...$$
+    s = s.replace(/\\\[([\s\S]*?)\\\]/g,  (_, m) => { mathBlocks.push('\\['+m+'\\]'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    s = s.replace(/\$\$([\s\S]*?)\$\$/g,  (_, m) => { mathBlocks.push('$$'+m+'$$');        return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    // inline math: \(...\) and $...$
+    s = s.replace(/\\\(([\s\S]*?)\\\)/g,  (_, m) => { mathBlocks.push('\\('+m+'\\)'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    s = s.replace(/\$([^\$\n]+?)\$/g,      (_, m) => { mathBlocks.push('$'+m+'$');          return '\x00M'+(mathBlocks.length-1)+'\x00'; });
     return s;
   }
   function restore(s) { return s.replace(/\x00M(\d+)\x00/g, (_, i) => mathBlocks[+i]); }
