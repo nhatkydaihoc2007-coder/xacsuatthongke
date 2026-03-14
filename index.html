@@ -372,6 +372,26 @@ body {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* ── Math overflow scroll (mobile) ── */
+.ex-question, .sol-content {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* MathJax display math wrapper */
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  padding-bottom: 4px;
+}
+mjx-container {
+  max-width: 100%;
+}
+/* Scrollbar for math on mobile */
+mjx-container[display="true"]::-webkit-scrollbar { height: 4px; }
+mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
 </style>
 </head>
 <body>
@@ -426,8 +446,8 @@ body {
 
 <script>
 // ── CONFIG: đổi thành repo của bạn ──
-const REPO_OWNER = 'nhatkydaihoc2007-coder';
-const REPO_NAME  = 'xacsuatthongke';
+const REPO_OWNER = 'YOUR_GITHUB_USERNAME';
+const REPO_NAME  = 'YOUR_REPO_NAME';
 const DATA_FILE  = 'data/exercises.json';
 // ────────────────────────────────────
 
@@ -587,6 +607,8 @@ loadData();
 function ctex(raw) {
   if (!raw) return '';
   let t = raw;
+  // Normalize \dfrac BEFORE protecting (so it survives into MathJax)
+  t = t.replace(/\\dfrac/g, '\\frac');
   const mathBlocks = [];
   function protect(s) {
     s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_, m) => { mathBlocks.push('$$'+m+'$$'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
@@ -595,7 +617,6 @@ function ctex(raw) {
   }
   function restore(s) { return s.replace(/\x00M(\d+)\x00/g, (_, i) => mathBlocks[+i]); }
   t = protect(t);
-  t = t.replace(/\\dfrac/g, '\\frac');
   // Text formatting
   t = t.replace(/\\textbf\{([^}]*)\}/g, '<strong>$1</strong>');
   t = t.replace(/\\textit\{([^}]*)\}/g, '<em>$1</em>');
