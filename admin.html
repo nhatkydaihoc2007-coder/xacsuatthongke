@@ -630,6 +630,12 @@ function ctex(raw) {
   let t = raw;
   const mb = [];
   function protect(s) {
+    // align/align* environments → protect as display math for MathJax
+    s = s.replace(/\\begin\{align\*?\}([\s\S]*?)\\end\{align\*?\}/g, (_,m)=>{
+      const env = _.match(/\\begin\{(align\*?)\}/)[1];
+      mb.push('\\begin{'+env+'}'+m+'\\end{'+env+'}');
+      return '\x00M'+(mb.length-1)+'\x00';
+    });
     s = s.replace(/\\\[([\s\S]*?)\\\]/g, (_,m)=>{ mb.push('\\['+m+'\\]'); return '\x00M'+(mb.length-1)+'\x00'; });
     s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_,m)=>{ mb.push('$$'+m+'$$');       return '\x00M'+(mb.length-1)+'\x00'; });
     s = s.replace(/\\\(([\s\S]*?)\\\)/g, (_,m)=>{ mb.push('\\('+m+'\\)'); return '\x00M'+(mb.length-1)+'\x00'; });
