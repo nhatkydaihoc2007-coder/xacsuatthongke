@@ -4,6 +4,13 @@
   ],
   "exercises": [
     {
+      "id": "1773713321894",
+      "subject": "Xác suất thống kê",
+      "question": "Một đoàn tàu có $4$ toa được đánh số I, II, III, IV đỗ ở sân ga. Có $6$ hành khách từ sân ga lên tàu. Mỗi người độc lập với nhau chọn ngẫu nhiên một toa. Tính xác suất để:\n<ol style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>toa I có $3$ người, toa II có $2$ người và toa III có $1$ người;</li><li>một toa có $3$ người, một toa có $2$ người, một toa có $1$ người;</li><li>mỗi toa có ít nhất $1$ người.</li></ol>",
+      "solution": "Mỗi hành khách có 4 lựa chọn nên $n(\\Omega) = 4^6.$ <br>\n1. $A =$ \"toa I có $3$ người, toa II có $2$ người và toa III có $1$ người\". \n\\[n(A) = C^3_6 \\cdot C^2_3 \\cdot C^1_1 \\cdot 1 = 60 \\implies P(A) = \\frac{n(A)}{n(\\Omega)} = \\frac{60}{4^6} = \\frac{15}{1024} \\]\n2. $B=$ \"một toa có $3$ người, một toa có $2$ người, một toa có $1$ người\". \n\\[n(B) = n(A) \\cdot 4! = 60 \\cdot 4! = 1440 \\implies P(B) = \\frac{n(B)}{n(\\Omega)} = \\frac{1440}{4^6} = \\frac{45}{128} \\]\n3. $C=$ \"mỗi toa có ít nhất $1$ người\". <br>\n<strong>TH1.</strong> $(3, 1, 1, 1)$ - Một toa 3 người, ba toa còn lại mỗi toa 1 người. <br>\nSố cách là $C_1 = C^1_4 \\cdot C^3_6 \\cdot 3! = 480$ <br>\n<strong>TH2.</strong> ($2, 2, 1, 1)$ - Hai toa mỗi toa 2 người, hai toa còn lại mỗi toa 1 người. <br>\nSố cách là $C_2 = C^2_4 \\cdot C^2_6 \\cdot C^2_4 \\cdot 2! = 1080$ \n\\[n(C) = 480+1080 = 1560 \\implies P(C) = \\frac{n(C)}{n(\\Omega)} = \\frac{1560}{4^6} = \\frac{195}{512}  \\]\n<strong>Một hướng tiếp cận khác (Nguyên lý bù trừ)</strong> <br>\n$\\overline{C} =$ \"Có ít nhất 1 toa trống\". Gọi $A_i$ là biến cố \"Toa thứ $i$ bị bỏ trống\" (với $i = 1, 2, 3, 4$). <br>\nKhi đó $n(\\overline{C}) = n(A_1 +A_2+A_3+A_4) =S_1 - S_2 + S_3-S_4$. <br>\nCó 1 toa trống $S_1 = C^1_4 \\cdot 3^6=2916$. <br> \nCó 2 toa trống $S_2 = C^2_4 \\cdot 2^6 = 384$. <br>\nCó 3 toa trống $S_3 = C^3_4 \\cdot 1^6 = 4$. <br>\nCó 4 toa trống hiển nhiên có $S_4=0$ cách. <br>\nDo đó $n(\\overline{C}) = 2916 - 384 + 4 = 2536 \\implies P(C) = 1-P(\\overline{C}) = 1-\\frac{2536}{4^6} = \\frac{195}{512}$",
+      "createdAt": "2026-03-17T02:08:41.897Z"
+    },
+    {
       "id": "1773712962229",
       "subject": "Xác suất thống kê",
       "question": "Hai người chơi trò bắn súng một cách độc lập, mỗi người bắn $10$ phát đạn. Biết rằng xác suất người thứ nhất bắn trúng mục tiêu ở mỗi phát bắn là $0,3$ và xác suất người thứ hai bắn trúng mục tiêu ở mỗi phát bắn là $0,2$.\n<ol style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>Tính xác suất có ít nhất một người bắn trúng mục tiêu.</li><li>Tính xác suất chỉ có một người bắn trúng mục tiêu, biết rằng có ít nhất $1$ người bắn trúng mục tiêu.</li></ol>",
