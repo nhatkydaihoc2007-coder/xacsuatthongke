@@ -15,9 +15,9 @@
       "id": "1773711520204",
       "subject": "Xác suất thống kê",
       "question": "Một người bắn vào một mục tiêu $2$ phát đạn, biết rằng khả năng bắn trúng mục tiêu ở lần thứ nhất là $0,6$ và lần thứ hai là $0,8$. Biết rằng, nếu lần thứ nhất bắn trúng mục tiêu thì khả năng bắn trúng mục tiêu ở lần thứ hai là $0,9$. Tính xác suất người này bắn trúng mục tiêu ở lần thứ hai, biết rằng lần thứ nhất người đó không bắn trúng mục tiêu.",
-      "solution": "Gọi \\(A\\) là biến cố người đó bắn trúng mục tiêu ở lần thứ nhất, \\(B\\) là biến cố người đó bắn trúng mục tiêu ở lần thứ hai. \nTheo đề bài ta có \nalign*\nP(B)=0,8 & P(B  A)P(A)+ P(B  A) P(A) =0,8 <br>\n&  0,9  0,6 + P(B  A)  0,4 = 0,8 <br>\n&  P(B  A) = 0,65\nalign*",
+      "solution": "Gọi \\(A\\) là biến cố người đó bắn trúng mục tiêu ở lần thứ nhất, \\(B\\) là biến cố người đó bắn trúng mục tiêu ở lần thứ hai. \nTheo đề bài ta có \n\\begin{align*}\nP(B)=0,8 &\\iff P(B \\mid A)P(A)+ P(B \\mid \\overline{A}) P(\\overline{A}) =0,8 \\\\\n& \\iff 0,9 \\cdot 0,6 + P(B \\mid \\overline{A}) \\cdot 0,4 = 0,8 \\\\\n& \\iff P(B \\mid \\overline{A}) = 0,65\n\\end{align*}",
       "createdAt": "2026-03-17T01:38:40.204Z",
-      "updatedAt": "2026-03-17T01:39:38.495Z"
+      "updatedAt": "2026-03-17T01:54:07.153Z"
     },
     {
       "id": "1773711520206",
