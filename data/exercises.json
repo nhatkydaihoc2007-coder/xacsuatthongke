@@ -6,9 +6,10 @@
     {
       "id": "1773711520202",
       "subject": "Xác suất thống kê",
-      "question": "Có 2 hộp bi: Hộp 1 có 3 bi đỏ, 5 bi xanh và 6 bi vàng; hộp 2 có 5 bi đỏ, 4 bi xanh và 7 bi vàng. Lấy ngẫu nhiên từ mỗi hộp ra 1 bi. Giả sử lấy được 2 bi không cùng màu đỏ. Tính xác suất 2 bi đó cùng màu vàng.\n$\\frac{42}{209}$",
+      "question": "Có 2 hộp bi: Hộp 1 có 3 bi đỏ, 5 bi xanh và 6 bi vàng; hộp 2 có 5 bi đỏ, 4 bi xanh và 7 bi vàng. Lấy ngẫu nhiên từ mỗi hộp ra 1 bi. Giả sử lấy được 2 bi không cùng màu đỏ. Tính xác suất 2 bi đó cùng màu vàng.",
       "solution": "Hộp 1 có $3+5+6=14$ bi. Hộp 2 có $5+4+7=16$ bi. <br>\nGọi $A=$ \"Lấy được 2 bi không cùng màu đỏ\"; $B=$ \"2 bi cùng màu vàng\". <br>\nTa cần tính $P(B \\mid A) = \\frac{P(AB)}{P(A)}$. Ta nhận thấy nếu 2 bi cùng màu vàng thì chúng chắc chắn sẽ không cùng màu đỏ, tức là $B \\subset A \\implies A \\cap B=B \\implies P(B \\mid A) = \\frac{P(B)}{P(A)}$. <br>\nXác suất lấy được 1 bi đỏ ở hộp 1 và hộp 2 lần lượt là $P(D_1) = \\frac{3}{14}, P(D_2) = \\frac{5}{16}$. <br>\nXác suất lấy được 1 bi vàng ở hộp 1 và hộp 2 lần lượt là $P(V_1) = \\frac{3}{7}, P(D_2) = \\frac{7}{16}$. <br>\nXác suất cần tìm $P(B \\mid A) = \\frac{P(B)}{P(A)} = \\frac{P(D_1)P(D_2)}{P(V_1)P(V_2)} = \\frac{42}{209}$.",
-      "createdAt": "2026-03-17T01:38:40.203Z"
+      "createdAt": "2026-03-17T01:38:40.203Z",
+      "updatedAt": "2026-03-17T01:39:01.299Z"
     },
     {
       "id": "1773711520204",
