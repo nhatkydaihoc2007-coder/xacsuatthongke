@@ -446,8 +446,8 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
 
 <script>
 // ── CONFIG: đổi thành repo của bạn ──
-const REPO_OWNER = 'nhatkydaihoc2007-coder';
-const REPO_NAME  = 'xacsuatthongke';
+const REPO_OWNER = 'YOUR_GITHUB_USERNAME';
+const REPO_NAME  = 'YOUR_REPO_NAME';
 const DATA_FILE  = 'data/exercises.json';
 // ────────────────────────────────────
 
@@ -614,6 +614,12 @@ function ctex(raw) {
   t = t.replace(/\\displaystyle\s*/g, '');
   const mathBlocks = [];
   function protect(s) {
+    // align/align* environments → protect as display math for MathJax
+    s = s.replace(/\\begin\{align\*?\}([\s\S]*?)\\end\{align\*?\}/g, (_, m) => {
+      const env = _.match(/\\begin\{(align\*?)\}/)[1];
+      mathBlocks.push('\\begin{'+env+'}'+m+'\\end{'+env+'}');
+      return '\x00M'+(mathBlocks.length-1)+'\x00';
+    });
     // display math: \[...\] and $$...$$
     s = s.replace(/\\\[([\s\S]*?)\\\]/g,  (_, m) => { mathBlocks.push('\\['+m+'\\]'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
     s = s.replace(/\$\$([\s\S]*?)\$\$/g,  (_, m) => { mathBlocks.push('$$'+m+'$$');        return '\x00M'+(mathBlocks.length-1)+'\x00'; });
