@@ -4,6 +4,13 @@
   ],
   "exercises": [
     {
+      "id": "1773712962229",
+      "subject": "Xác suất thống kê",
+      "question": "Hai người chơi trò bắn súng một cách độc lập, mỗi người bắn $10$ phát đạn. Biết rằng xác suất người thứ nhất bắn trúng mục tiêu ở mỗi phát bắn là $0,3$ và xác suất người thứ hai bắn trúng mục tiêu ở mỗi phát bắn là $0,2$.\n<ol style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>Tính xác suất có ít nhất một người bắn trúng mục tiêu.</li><li>Tính xác suất chỉ có một người bắn trúng mục tiêu, biết rằng có ít nhất $1$ người bắn trúng mục tiêu.</li></ol>",
+      "solution": "Gọi $X$ là số phát trúng của người thứ nhất và $Y$ là số phát trúng của người thứ hai. <br> \nGọi $A$ là biến cố \"Người thứ nhất trúng ít nhất 1 phát\" và $B$ là biến cố \"Người thứ hai trúng ít nhất 1 phát\". <br>\nXác suất người 1 không trúng phát nào $P(X=0) = 0,7^{10} \\implies P(A) = 1-0,7^{10}$. <br>\nXác suất người 2 không trúng phát nào $P(Y=0) = 0,8^{10} \\implies P(B) = 1-0,8^{10}$. <br>\nXác suất có ít nhất một người bắn trúng\n$$P(A+B) = P(A)+P(B)-P(AB) = P(A)+P(B)-P(AB) \\approx 0,996$$\nhoặc ta có thể làm như sau\n$$P(A+B) = 1-P(\\overline{A+B}) = 1-P(X=0)P(Y=0)=1-0,56^{10}.$$\n2. $C=$ \"Chỉ có một người bắn trúng\". <br>\n<strong>Trường hợp 1:</strong> Người 1 trúng ít nhất một phát VÀ người 2 trượt hết: $P_1= P(A)P(Y=0) =(1-0,7^{10})0,8^{10}$. <br>\n<strong>Trường hợp 2:</strong> Người 2 trúng ít nhất một phát VÀ người 1 trượt hết: $P_2= P(B)P(X=0) =(1-0,8^{10})0,7^{10}$. <br>\nDO đó $P(C)=P_1+P_2 \\approx 0,1296$. Khi đó $P(C \\mid A+B) = \\frac{P(C)}{P(A+B)} \\approx 0,13$",
+      "createdAt": "2026-03-17T02:02:42.230Z"
+    },
+    {
       "id": "1773712829123",
       "subject": "Xác suất thống kê",
       "question": "Hai công ty cùng kinh doanh một loại mặt hàng. Xác suất để công ty $A$ và $B$ kinh doanh có lãi lần lượt là $0,6$ và $0,65$. Xác suất để cả hai công ty có lãi là $0,45$.\n<ol style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>Tính xác suất có ít nhất một công ty có lãi.</li><li>Biết công ty $A$ có lãi, tính xác suất công ty $B$ không có lãi.</li></ol>",
