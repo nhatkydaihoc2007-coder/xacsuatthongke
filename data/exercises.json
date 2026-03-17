@@ -4,6 +4,27 @@
   ],
   "exercises": [
     {
+      "id": "1773712829123",
+      "subject": "Xác suất thống kê",
+      "question": "Hai công ty cùng kinh doanh một loại mặt hàng. Xác suất để công ty $A$ và $B$ kinh doanh có lãi lần lượt là $0,6$ và $0,65$. Xác suất để cả hai công ty có lãi là $0,45$.\n<ol style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>Tính xác suất có ít nhất một công ty có lãi.</li><li>Biết công ty $A$ có lãi, tính xác suất công ty $B$ không có lãi.</li></ol>",
+      "solution": "1) $P(A+B)= P(A)+P(B)-P(AB) =0,6+0,65-0,45= 0,8$ <br>\n2) $P(\\overline{B} \\mid A) = \\frac{P(A\\overline{B})}{P(A)} = \\frac{P(A)-P(AB)}{P(A)} = \\frac{0,6-0,45}{0,6}=0,25$ <br>\nCách khác: $P(\\overline{B} \\mid A)=1-P(B \\mid A) = 1-\\frac{P(AB)}{P(A)} = 1- \\frac{0,45}{0,6}=0,25$.",
+      "createdAt": "2026-03-17T02:00:29.125Z"
+    },
+    {
+      "id": "1773712829126",
+      "subject": "Xác suất thống kê",
+      "question": "Một lô hàng có $4$ sản phẩm tốt, $6$ sản phẩm xấu. Nhân viên cửa hàng lấy ngẫu nhiên từ lô hàng ra $1$ sản phẩm, nếu được sản phẩm tốt thì đem đi trưng bày (không bỏ lại vào trong lô), nếu được sản phẩm xấu thì nhân viên này lấy thêm một sản phẩm tốt khác ở ngoài rồi bỏ $2$ sản phẩm này vào lô. Sau đó một khách hàng lấy từ lô hàng ra $2$ sản phẩm để mua. Tính xác suất khách hàng mua được $2$ sản phẩm tốt.",
+      "solution": "$A_1:$ Nhân viên lấy được sản phẩm tốt ở lần đầu. $A_2:$ Nhân viên lấy được sản phẩm xấu ở lần đầu. $B:$ khách hàng mua được $2$ sản phẩm tốt. <br>\nTổng số sản phẩm ban đầu là $4+6=10$ sản phẩm. <br>\nXác suất nhân viên lấy được sản phẩm tốt: $P(A_1) = \\frac{4}{10} = 0,4$. <br>\nXác suất nhân viên lấy được sản phẩm xấu: $P(A_2) = \\frac{6}{10} = 0,6$. <br>\n<strong>Trường hợp 1.</strong> $A_1$ xảy ra. <br>\nKhi đó lô hàng sẽ còn lại $4-1=3$ sản phẩm tốt và $6$ sản phẩm xấu. <br>\nXác suất $P(B \\mid A_1) = \\frac{C^2_3}{C^2_9} = \\frac{1}{12}$ <br>\n<strong>Trường hợp 2.</strong> $A_2$ xảy ra. <br>\nKhi đó lô hàng sẽ còn lại $4+1=5$ sản phẩm tốt và $6$ sản phẩm xấu. <br>\nXác suất $P(B \\mid A_2) = \\frac{C^2_5}{C^2_{11}} = \\frac{2}{11}$ <br>\nVậy $P(B) = P(A_1) P(B \\mid A_1) + P(A_2)P(B \\mid A_2) = 0,4 \\frac{1}{12}+ 0,6 \\frac{2}{11}=\\frac{47}{330}. $",
+      "createdAt": "2026-03-17T02:00:29.125Z"
+    },
+    {
+      "id": "1773712829127",
+      "subject": "Xác suất thống kê",
+      "question": "Một sinh viên muốn hoàn thành khóa học phải vượt qua $3$ kỳ thi với nguyên tắc: đỗ kỳ thi trước thì mới được thi kỳ thi sau. Xác suất để sinh viên đỗ kỳ thi thứ nhất, thứ hai, thứ ba lần lượt là $0,9$; $0,8$; $0,7$.\n<ol style=\"margin:8px 0 8px 22px;line-height:1.85\"><li>Tính xác suất sinh viên đó không vượt qua được kỳ thi nào.</li><li>Nếu sinh viên đó không vượt qua được tất cả $3$ kỳ thi thì xác suất anh ta bị trượt ở kỳ thi thứ hai là bao nhiêu?</li></ol>",
+      "solution": "Gọi $A_i=$ \"Sinh viên đỗ kỳ thi thứ $i$\" với $i=1,2,3$. <br>\na) Sinh viên đó không vượt qua được kỳ thi nào đồng nghĩa với việc sinh viên đó trượt ngay kỳ thi đầu tiên. \n\\[P(\\overline{A_1}) = 1-P(A_1)=1-0,9=0,1. \\]\nb) Gọi $B=$ \"sinh viên đó không vượt qua được tất cả $3$ kỳ thi\". <br>\n$\\bullet$ Trượt kì đầu $P(B_1) = P(\\overline{A_1}) = 0,1$ <br>\n$\\bullet$ Đỗ kì 1, trượt kì 2 $P(B_2) = 0,9 (1-0,8)=0,18$ <br>\n$\\bullet$ Đỗ kì 1 và 2, trượt kì 3 $P(B_3) = 0,9 \\cdot 0,8 (1-0,7) = 0,216.$ <br>\nDo đó $P(B) = P(B_1)+P(B_2) + P(B_3) = 0,496.$ <br>\nXác suất anh ta bị trượt ở kỳ thi thứ hai khi không vượt được qua 3 kỳ thi là $$P(B_2 \\mid B) = \\frac{P(B_2)}{P(B)} = \\frac{0,18}{0,496}= \\frac{45}{124}.$$",
+      "createdAt": "2026-03-17T02:00:29.125Z"
+    },
+    {
       "id": "1773711520202",
       "subject": "Xác suất thống kê",
       "question": "Có 2 hộp bi: Hộp 1 có 3 bi đỏ, 5 bi xanh và 6 bi vàng; hộp 2 có 5 bi đỏ, 4 bi xanh và 7 bi vàng. Lấy ngẫu nhiên từ mỗi hộp ra 1 bi. Giả sử lấy được 2 bi không cùng màu đỏ. Tính xác suất 2 bi đó cùng màu vàng.",
