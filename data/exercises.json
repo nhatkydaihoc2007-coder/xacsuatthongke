@@ -4,6 +4,41 @@
   ],
   "exercises": [
     {
+      "id": "1773907411061",
+      "subject": "Xác suất thống kê",
+      "question": "[1.1]\nMột hộp có 10 sản phẩm trong đó có 5 phế phẩm. Lấy 4 sản phẩm từ hộp để kiểm tra. Gọi $A=$ \" có không quá 1 phế phẩm\", $B=$ \" Có hơn 3 phế phẩm\". <br> \na) Mô tả $\\overline{A}, \\overline{B}$; $A$ và $B$ có xung khắc với nhau không? Mô tả $A+B, \\overline{A} \\setminus B$. <br>\nb) Tính $P(A), P(B), P(\\overline{A})$.",
+      "solution": "a) $\\overline{A}$: \"Có ít nhất 2 phế phẩm\". \n$\\overline{B}$: \"Có tối đa 3 phế phẩm\".  <br>\nXung khắc: Có, vì $A \\cap B = \\varnothing$ (không thể vừa có $\\le 1$ lại vừa có $> 3$ phế phẩm). <br>\n$A+B$: \"Có 0, 1 hoặc 4 phế phẩm\".\n$\\overline{A} \\setminus B$: \"Có đúng 2 hoặc 3 phế phẩm\". <br>\nb) $n(\\Omega) = C^4_{10}=210.$ <br> \n$P(A) = \\frac{C^4_5 \\cdot C^1_5 C^3_5}{210} = \\frac{11}{42} \\implies P(\\overline{A}) = \\frac{31}{42}$; $P(B) = \\frac{C^4_5}{210} = \\frac{1}{42}$.",
+      "createdAt": "2026-03-19T08:03:31.062Z"
+    },
+    {
+      "id": "1773907411064",
+      "subject": "Xác suất thống kê",
+      "question": "[1.2]\nMột khách hàng chọn mua một hộp gồm 12 sản phẩm. Ông ta chọn ngẫu nhiên 3 sản phẩm của hộp để kiểm tra, nếu không có phế phẩm thì mua hộp sản phẩm đó. Tính xác suất người đó mua hộp sản phẩm, biết rằng trong hộp có 4 phế phẩm.",
+      "solution": "Gọi $A$ là biến cố \"người đó mua hộp sản phẩm\".\nĐể mua hộp, khách hàng phải chọn được 3 sản phẩm tốt từ 8 sản phẩm tốt ($12 - 4 = 8$).\nXác suất cần tìm là:\n$$P(A) = \\frac{C_8^3}{C_{12}^3} = \\frac{56}{220} = \\frac{14}{55} \\approx 0,2545$$",
+      "createdAt": "2026-03-19T08:03:31.063Z"
+    },
+    {
+      "id": "1773907411065",
+      "subject": "Xác suất thống kê",
+      "question": "Một lớp học có 40 học sinh, trong đó có 18 nữ. Chọn ngẫu nhiên 3 học sinh của lớp để lập một ban cán sự, tính xác suất sao cho: <br>\na) cả 3 đều là nữ. <br>\nb) cả 3 đều là nữ trong đó có 1 lớp trưởng, 1 lớp phó học tập, 1 lớp phó đoàn thể. <br>\nc) Giả sử Hà là 1 học sinh nữ của lớp. Tính xác suất câu a), câu b) nếu có Hà trong ban cán sự.",
+      "solution": "a) Không xét chức vụ (chọn tổ hợp):\n$$P(A) = \\frac{C_{18}^3}{C_{40}^3} = \\frac{102}{1235} \\approx 0,0826$$ \nb) Cả 3 đều là nữ và có chức vụ khác nhau:\n$$P (B) = \\frac{A_{18}^3}{A_{40}^3} = \\frac{102}{1235} = \\approx 0,0826$$\nc) Có Hà trong ban cán sự:\nHà cố định 1 suất nữ, ta chọn 2 người còn lại từ 39 học sinh còn lại (trong đó có 17 nữ còn lại): <br>\nXác suất câu a (chọn 2 nữ từ 17 nữ còn lại):\n$$P_{c(a)} = \\frac{C_{17}^2}{C_{39}^2} = \\frac{136}{741} \\approx \\mathbf{0,1835}$$ \nXác suất câu b (Hà giữ 1 trong 3 chức vụ, 2 nữ còn lại giữ 2 chức vụ còn lại):\n$$P_{c(b)} = \\frac{3 \\cdot A_{17}^2}{A_{39}^3} = \\mathbf{\\frac{136}{9139}} \\approx 0,0149$$",
+      "createdAt": "2026-03-19T08:03:31.063Z"
+    },
+    {
+      "id": "1773907411066",
+      "subject": "Xác suất thống kê",
+      "question": "Một hộp có 10 bi trong đó có 3 bi đỏ. Lấy ngẫu nhiên ra 2 bi từ hộp. Tính xác suất để trong 2 bi lấy ra:  <br>\na) có 1 bi đỏ; <br> \nb) có bi đỏ; <br> \nc) có không quá 1 bi đỏ; <br> \nd) Xét bài toán khi lấy lần lượt từng bi có hoàn lại và lấy không hoàn lại ra 2 bi.",
+      "solution": "Tổng số bi: 10 (3 Đỏ, 7 Khác). Lấy 2 bi. <br>\n<strong>1. Trường hợp lấy không hoàn lại (Lấy cùng lúc)</strong> <br>\nKhông gian mẫu: $n(\\Omega) = C_{10}^2 = 45$. <br>\na) Có đúng 1 bi đỏ:\n$P(A) = \\frac{C_3^1 \\cdot C_7^1}{45} = \\mathbf{\\frac{7}{15}} \\approx 0,4667$. <br>\nb) Có bi đỏ (ít nhất 1 đỏ):\n$P(B) = 1 - \\frac{C_7^2}{45} =  \\mathbf{\\frac{8}{15}} \\approx 0,5333$. <br>\nc) Có không quá 1 bi đỏ (0 hoặc 1 đỏ):\n$P(C) = 1 - \\frac{C_3^2}{45} = \\mathbf{ \\frac{14}{15}} \\approx 0,9333$. <br>\n<strong>2. Trường hợp lấy lần lượt có hoàn lại</strong> <br>\nKhông gian mẫu: $n(\\Omega) = 10^2 = 100$. <br>\na) Có 1 bi đỏ: (Đỏ - Khác hoặc Khác - Đỏ)\n$P(A) = \\frac{2 \\cdot (3 \\cdot 7)}{100} = \\mathbf{0,42}$. <br>\nb) Có bi đỏ:\n$P(B) = 1 - \\left(\\frac{7}{10}\\right)^2 = \\mathbf{0,51}$. <br>\nc) Có không quá 1 bi đỏ:\n$P(C) = 1 - \\left(\\frac{3}{10}\\right)^2 = \\mathbf{0,91}$. <br>\n<strong>3. Trường hợp lấy lần lượt không hoàn lại</strong> <br>\na) $P = \\frac{3}{10} \\cdot \\frac{7}{9} + \\frac{7}{10} \\cdot \\frac{3}{9} = \\mathbf{\\frac{7}{15}}$. <br>\nb) $P = 1 - \\frac{7}{10} \\cdot \\frac{6}{9} = \\mathbf{\\frac{8}{15}}$. <br>\nc) $P = 1 - \\frac{3}{10} \\cdot \\frac{2}{9} = \\mathbf{\\frac{14}{15}}$.",
+      "createdAt": "2026-03-19T08:03:31.063Z"
+    },
+    {
+      "id": "1773907411067",
+      "subject": "Xác suất thống kê",
+      "question": "Số điện thoại ở thành phố A là một số gồm 7 chữ số, bắt đầu bằng số 8. Tính xác suất để chọn ngẫu nhiên một số điện thoại của thành phố được một số là <br>\na) số chẫn; <br>\nb) có 6 chữ số còn lại khác nhau; <br>\nc) có 6 chữ số còn lại khác nhau và là số chẵn <br>\nd) có 7 chữ số đều khác nhau; <br>\ne) có 7 chữ số khác nhau và là số chẵn. \n\nCó 3 khách hàng đi vào một ngân hàng có sáu quầy phục vụ. Tính xác suất để <br> \na) cả 3 khách cùng đến một quầy; <br> \nb) mỗi người đến một quầy khác nhau; <br>\nc) hai trong ba người đến một quầy; <br> \nd) chỉ một khách đến quầy số 1.",
+      "solution": "",
+      "createdAt": "2026-03-19T08:03:31.063Z"
+    },
+    {
       "id": "1773905974589",
       "subject": "Xác suất thống kê",
       "question": "[1.9] Một hộp có 3 bi xanh, 7 bi đỏ, 10 bi vàng; một hộp khác có 4 bi xanh, 3 bi đỏ, 6 bi vàng. Lấy ngẫu nhiên mỗi hộp 1 bi. Tính xác suất để <br> \na) hai bi lấy ra màu vàng; <br> \nb) hai bi lấy ra cùng màu; <br>\nc) hai bi lấy ra có 1 bi vàng; <br> \nd) hai bi lấy ra có bi vàng",
