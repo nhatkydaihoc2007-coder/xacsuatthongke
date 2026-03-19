@@ -37,9 +37,9 @@
       "id": "1773907411067",
       "subject": "Xác suất thống kê",
       "question": "[1.7] Số điện thoại ở thành phố A là một số gồm 7 chữ số, bắt đầu bằng số 8. Tính xác suất để chọn ngẫu nhiên một số điện thoại của thành phố được một số là <br>\na) số chẫn; <br>\nb) có 6 chữ số còn lại khác nhau; <br>\nc) có 6 chữ số còn lại khác nhau và là số chẵn <br>\nd) có 7 chữ số đều khác nhau; <br>\ne) có 7 chữ số khác nhau và là số chẵn.",
-      "solution": "",
+      "solution": "Số điện thoại có dạng $\\overline{8abcdef}$. Không gian mẫu $n(\\Omega) = 10^6$. \\\\ \na) Vì số điện thoại là số chẵn nên $f \\in \\{0,2,4,6,8\\}$ có 5 cách chọn. \\\\\nCác vị trí $a,b,c,d,e$ mỗi vị trí có 10 cách. Số các số chẵn là $5 \\cdot 10^5$. \\\\\nXác suất cần tìm $P(A) = \\dfrac{1}{2}$. \\\\\nb) Chọn 6 chữ số khác nhau từ tập $\\{0, 1, 2, ..., 9\\}$ và xếp vào 6 vị trí. \\\\\nSố các số thỏa mãn là $A_{10}^6$ số.\nXác suất: $P(B) = \\dfrac{A^6_{10}}{10^6} = \\mathbf{0,1512}$. \\\\\nc) Chữ số tận cùng $f$ có 5 cách chọn ($\\{0, 2, 4, 6, 8\\}$). \\\\\n5 vị trí còn lại chọn từ 9 chữ số khác nhau có $A_9^5 $ cách. \\\\\nSố các số thỏa mãn: $5 \\cdot A^5_9= 75600$ số.\nXác suất: $P(C) = \\dfrac{75 600}{10^6} = \\mathbf{0,0756}$. \\\\\nd) Vì chữ số đầu tiên đã là 8, nên 6 vị trí còn lại phải chọn từ tập các chữ số $\\{0, 1, 2, 3, 4, 5, 6, 7, 9\\}$. \\\\\nSố các số thỏa mãn là $A_9^6$ số.\nXác suất: $P(D) = \\dfrac{A^6_9}{10^6} = \\mathbf{0,06048}$. \\\\\ne) Chữ số đầu tiên là 8. Chữ số tận cùng $f$ phải chẵn và khác 8, nên $f \\in \\{0, 2, 4, 6\\}$ (4 cách chọn). \\\\\n5 vị trí còn lại chọn từ 8 chữ số khác nhau có $A_8^5$ cách. \\\\\nSố các số thỏa mãn là $4 \\cdot A_8^5$ số. Xác suất: $P(E) = \\dfrac{5 \\cdot A^5_8}{10^6} = \\mathbf{0,02688}$.",
       "createdAt": "2026-03-19T08:03:31.063Z",
-      "updatedAt": "2026-03-19T08:17:35.835Z"
+      "updatedAt": "2026-03-19T08:35:07.741Z"
     },
     {
       "id": "1773905974589",
