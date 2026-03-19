@@ -20,9 +20,10 @@
     {
       "id": "1773907411065",
       "subject": "Xác suất thống kê",
-      "question": "Một lớp học có 40 học sinh, trong đó có 18 nữ. Chọn ngẫu nhiên 3 học sinh của lớp để lập một ban cán sự, tính xác suất sao cho: <br>\na) cả 3 đều là nữ. <br>\nb) cả 3 đều là nữ trong đó có 1 lớp trưởng, 1 lớp phó học tập, 1 lớp phó đoàn thể. <br>\nc) Giả sử Hà là 1 học sinh nữ của lớp. Tính xác suất câu a), câu b) nếu có Hà trong ban cán sự.",
-      "solution": "a) Không xét chức vụ (chọn tổ hợp):\n$$P(A) = \\frac{C_{18}^3}{C_{40}^3} = \\frac{102}{1235} \\approx 0,0826$$ \nb) Cả 3 đều là nữ và có chức vụ khác nhau:\n$$P (B) = \\frac{A_{18}^3}{A_{40}^3} = \\frac{102}{1235} = \\approx 0,0826$$\nc) Có Hà trong ban cán sự:\nHà cố định 1 suất nữ, ta chọn 2 người còn lại từ 39 học sinh còn lại (trong đó có 17 nữ còn lại): <br>\nXác suất câu a (chọn 2 nữ từ 17 nữ còn lại):\n$$P_{c(a)} = \\frac{C_{17}^2}{C_{39}^2} = \\frac{136}{741} \\approx \\mathbf{0,1835}$$ \nXác suất câu b (Hà giữ 1 trong 3 chức vụ, 2 nữ còn lại giữ 2 chức vụ còn lại):\n$$P_{c(b)} = \\frac{3 \\cdot A_{17}^2}{A_{39}^3} = \\mathbf{\\frac{136}{9139}} \\approx 0,0149$$",
-      "createdAt": "2026-03-19T08:03:31.063Z"
+      "question": "[1.3] Một lớp học có 40 học sinh, trong đó có 18 nữ. Chọn ngẫu nhiên 3 học sinh của lớp để lập một ban cán sự, tính xác suất sao cho: <br>\na) cả 3 đều là nữ. <br>\nb) cả 3 đều là nữ trong đó có 1 lớp trưởng, 1 lớp phó học tập, 1 lớp phó đoàn thể. <br>\nc) Giả sử Hà là 1 học sinh nữ của lớp. Tính xác suất câu a), câu b) nếu có Hà trong ban cán sự.",
+      "solution": "a) Không xét chức vụ (chọn tổ hợp):\n$$P(A) = \\frac{C_{18}^3}{C_{40}^3} = \\frac{102}{1235} \\approx 0,0826$$ \nb) Cả 3 đều là nữ và có chức vụ khác nhau:\n$$P (B) = \\frac{A_{18}^3}{A_{40}^3} = \\frac{102}{1235} \\approx 0,0826$$\nc) Có Hà trong ban cán sự:\nHà cố định 1 suất nữ, ta chọn 2 người còn lại từ 39 học sinh còn lại (trong đó có 17 nữ còn lại): <br>\nXác suất câu a (chọn 2 nữ từ 17 nữ còn lại):\n$$P_{c(a)} = \\frac{C_{17}^2}{C_{39}^2} = \\frac{136}{741} \\approx \\mathbf{0,1835}$$ \nXác suất câu b (Hà giữ 1 trong 3 chức vụ, 2 nữ còn lại giữ 2 chức vụ còn lại):\n$$P_{c(b)} = \\frac{3 \\cdot A_{17}^2}{A_{39}^3} = \\mathbf{\\frac{136}{9139}} \\approx 0,0149$$",
+      "createdAt": "2026-03-19T08:03:31.063Z",
+      "updatedAt": "2026-03-19T08:13:13.941Z"
     },
     {
       "id": "1773907411066",
