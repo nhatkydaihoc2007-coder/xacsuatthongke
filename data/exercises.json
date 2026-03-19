@@ -4,6 +4,13 @@
   ],
   "exercises": [
     {
+      "id": "1773905974589",
+      "subject": "Xác suất thống kê",
+      "question": "[1.9] Một hộp có 3 bi xanh, 7 bi đỏ, 10 bi vàng; một hộp khác có 4 bi xanh, 3 bi đỏ, 6 bi vàng. Lấy ngẫu nhiên mỗi hộp 1 bi. Tính xác suất để <br> \na) hai bi lấy ra màu vàng; <br> \nb) hai bi lấy ra cùng màu; <br>\nc) hai bi lấy ra có 1 bi vàng; <br> \nd) hai bi lấy ra có bi vàng",
+      "solution": "Hộp 1 ($H_1$): 3 Xanh, 7 Đỏ, 10 Vàng (Tổng 20 bi). <br>\nHộp 2 ($H_2$): 4 Xanh, 3 Đỏ, 6 Vàng (Tổng 13 bi). <br>\nLấy mỗi hộp 1 bi $\\Rightarrow$ Không gian mẫu: $n(\\Omega) = 20 \\cdot 13 = 260$. <br>\na) Hai bi lấy ra màu vàng:\n$$P_a = \\frac{10}{20} \\cdot \\frac{6}{13} = \\mathbf{\\frac{3}{13}} \\approx 0,2308$$ \nb) Hai bi lấy ra cùng màu (Xanh-Xanh, Đỏ-Đỏ, Vàng-Vàng):\n$$P_b = \\frac{3 \\cdot 4 + 7 \\cdot 3 + 10 \\cdot 6}{260} = \\mathbf{\\frac{93}{260}} \\approx 0,3577$$ \nc) Hai bi lấy ra có đúng 1 bi vàng (Vàng $H_1$ - Không Vàng $H_2$ hoặc ngược lại): <br>\nVàng $H_1$, Không Vàng $H_2$: $10 \\cdot (4+3) = 70$. \nKhông Vàng $H_1$, Vàng $H_2$: $(3+7) \\cdot 6 = 60$\n$$P_c = \\frac{70 + 60}{260} = \\mathbf{\\frac{1}{2}} = 0,5$$ \nd) Hai bi lấy ra có bi vàng (ít nhất 1 bi vàng):\nDùng biến cố đối (không có bi vàng nào từ cả 2 hộp):\n$$P_d = 1 - \\left( \\frac{10}{20} \\cdot \\frac{7}{13} \\right) = \\mathbf{\\frac{19}{26}} \\approx 0,7308$$",
+      "createdAt": "2026-03-19T07:39:34.590Z"
+    },
+    {
       "id": "1773722534895",
       "subject": "Xác suất thống kê",
       "question": "Một khách hàng mua ngẫu nhiên 2 sản phẩm cùng loại từ một hộp có 8 sản phẩm loại A, 4 sản phẩm loại B. <br>\n1) Lập bảng phân phối xác suất của số sản phẩm loại A mà khách mua được. <br>\n2) Một sản phẩm loại A giá 15 ngàn, một sản phẩm loại B giá 10 ngàn. <br>\na) Lập bảng phân phối xác suất số tiền khách phải trả $X$ khi mua ngẫu nhiên 2 sản phẩm từ hộp. Từ đó tìm khả năng khách không mua được 2 sản phẩm khi chỉ còn lại 26 ngàn. <br>\nb) Tìm số tiền khách phải trả nhiều nhất và số tiền trung bình khách phải trả khi mua ngẫu nhiên 2 sản phẩm từ hộp. <br>\nc) Lập hàm phân phối xác suất số tiền khách phải trả khi mua 2 sản phẩm. Từ đó tìm $Med(X)$.",
