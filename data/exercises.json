@@ -35,9 +35,10 @@
     {
       "id": "1773907411067",
       "subject": "Xác suất thống kê",
-      "question": "Số điện thoại ở thành phố A là một số gồm 7 chữ số, bắt đầu bằng số 8. Tính xác suất để chọn ngẫu nhiên một số điện thoại của thành phố được một số là <br>\na) số chẫn; <br>\nb) có 6 chữ số còn lại khác nhau; <br>\nc) có 6 chữ số còn lại khác nhau và là số chẵn <br>\nd) có 7 chữ số đều khác nhau; <br>\ne) có 7 chữ số khác nhau và là số chẵn. \n\nCó 3 khách hàng đi vào một ngân hàng có sáu quầy phục vụ. Tính xác suất để <br> \na) cả 3 khách cùng đến một quầy; <br> \nb) mỗi người đến một quầy khác nhau; <br>\nc) hai trong ba người đến một quầy; <br> \nd) chỉ một khách đến quầy số 1.",
+      "question": "[1.7] Số điện thoại ở thành phố A là một số gồm 7 chữ số, bắt đầu bằng số 8. Tính xác suất để chọn ngẫu nhiên một số điện thoại của thành phố được một số là <br>\na) số chẫn; <br>\nb) có 6 chữ số còn lại khác nhau; <br>\nc) có 6 chữ số còn lại khác nhau và là số chẵn <br>\nd) có 7 chữ số đều khác nhau; <br>\ne) có 7 chữ số khác nhau và là số chẵn.",
       "solution": "",
-      "createdAt": "2026-03-19T08:03:31.063Z"
+      "createdAt": "2026-03-19T08:03:31.063Z",
+      "updatedAt": "2026-03-19T08:17:35.835Z"
     },
     {
       "id": "1773905974589",
