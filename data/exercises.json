@@ -8,9 +8,10 @@
     {
       "id": "1782228549266",
       "subject": "Kinh tế lượng",
-      "question": "Sử dụng mẫu gồm 40 quan sát thu được kết quả hồi quy lượng tiêu thụ cà phê (\\(Q\\)) phụ thuộc giá (\\(P\\)) như sau:\nalignat*{3}\n&  (Q) = {} && 1,02 - {} && 0,73 (P) + e <br>\n& (se)        && (3,87)    && (0,24)\nalignat*\na) Khi giá cà phê giảm \\(1\\%\\) thì trung bình lượng tiêu thụ cà phê thay đổi như thế nào? <br>\nb) Có ý kiến cho rằng hệ số co giãn của lượng cà phê theo giá là \\(-0,8\\). Hãy cho nhận xét về ý kiến đó với mức ý nghĩa \\(5\\%\\). Cho biết:\n\\[ t_{0,025;37}=2,026;\\quad t_{0,025;38}=2,024;\\]",
+      "question": "Sử dụng mẫu gồm 40 quan sát thu được kết quả hồi quy lượng tiêu thụ cà phê (\\(Q\\)) phụ thuộc giá (\\(P\\)) như sau:\n\\begin{align*}\n  (Q) = 1,02 \\quad -  0,73 (P) + e \\\\\n (se) \\quad (3,87) \\quad (0,24)\n\\end{align*}\na) Khi giá cà phê giảm \\(1\\%\\) thì trung bình lượng tiêu thụ cà phê thay đổi như thế nào? <br>\nb) Có ý kiến cho rằng hệ số co giãn của lượng cà phê theo giá là \\(-0,8\\). Hãy cho nhận xét về ý kiến đó với mức ý nghĩa \\(5\\%\\). Cho biết:\n\\[ t_{0,025;37}=2,026;\\quad t_{0,025;38}=2,024;\\]",
       "solution": "a) $\\widehat{\\beta_2} = -0,73$.\nTrong điều kiện các yếu tố khác không đổi, khi giá cà phê ($P$) giảm $1\\%$, thì trung bình lượng tiêu thụ cà phê ($Q$) sẽ tăng thêm $0,73\\%$. <br>\nb) Xét giả thuyết <br>\n$H_0: \\beta_2 = -0,8$ (Ý kiến đúng, hệ số co giãn thực tế bằng $-0,8$) <br>\n$H_1: \\beta_2 \\neq -0,8$ (Ý kiến sai, hệ số co giãn thực tế khác $-0,8$) \n$$T = \\frac{\\widehat{\\beta_2} - \\beta_2^*}{Se(\\widehat{\\beta}_2)} = \\frac{-0,73-(-0,8)}{0,24} = 0,2917$$\nTa có $|T| = 0,2917 < 2,024 = t_{0,025;38} \\implies$ chấp nhận $H_0$. <br>\nVới mức ý nghĩa $5\\%$, có thể cho rằng hệ số co giãn của lượng cà phê theo giá là $-0,8$.",
-      "createdAt": "2026-06-23T15:29:09.267Z"
+      "createdAt": "2026-06-23T15:29:09.267Z",
+      "updatedAt": "2026-06-23T15:35:26.893Z"
     },
     {
       "id": "1782228549268",
