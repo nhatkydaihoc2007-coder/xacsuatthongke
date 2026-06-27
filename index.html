@@ -667,6 +667,10 @@ function ctex(raw) {
   t = t.replace(/\\par\b/g, '<br>');
   // \\ newline (after table processing)
   t = t.replace(/\\\\/g, '<br>');
+  // \includegraphics[options]{url} → <img> (BEFORE leftover cleanup)
+  t = t.replace(/\\includegraphics(?:\[.*?\])?\{([^}]+)\}/g, '<img src="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow)" alt="Hình minh họa">');
+  // ![alt](url) Markdown image syntax
+  t = t.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow)">');
   // Leftover commands: \cmd{text} → text, \cmd → ''
   t = t.replace(/\\[a-zA-Z]+\*?\{([^}]*)\}/g, '$1');
   t = t.replace(/\\[a-zA-Z]+\*?\s*/g, ' ');
