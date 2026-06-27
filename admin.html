@@ -391,47 +391,53 @@ function showBanner(t,m) {
 }
 
 // ══════════════════════════════════════════════════════════════
-//  TIKZ → PNG via QuickLaTeX API
+//  TIKZ → PNG via QuickLaTeX API (qua CORS proxy)
 // ══════════════════════════════════════════════════════════════
-// QuickLaTeX wraps the code in a standalone doc and returns a PNG URL.
-// We POST to their API endpoint with the full preamble + tikz code.
 async function compileTikz(tikzCode) {
-  // Build a minimal standalone LaTeX document
-  const fullDoc = [
-    '\\documentclass[border=4pt]{standalone}',
+  // Preamble đầy đủ cho QuickLaTeX (mode=2 = dùng preamble tùy chỉnh)
+  const preamble = [
     '\\usepackage{tikz}',
     '\\usepackage{pgfplots}',
     '\\pgfplotsset{compat=1.18}',
     '\\usetikzlibrary{arrows,arrows.meta,shapes,shapes.geometric,shapes.misc,',
     '  positioning,calc,patterns,fit,backgrounds,decorations.pathmorphing,',
-    '  decorations.markings,matrix,chains,automata,trees,intersections}',
-    '\\begin{document}',
-    tikzCode.trim(),
-    '\\end{document}',
+    '  decorations.markings,matrix,chains,automata,trees,intersections,quotes,angles}',
   ].join('\n');
 
-  // QuickLaTeX API: POST form-encoded, returns "0\n<width> <height>\n<url>"
   const params = new URLSearchParams({
-    formula: fullDoc,
-    fsize:   '17px',
-    fcolor:  '000000',
-    mode:    '0',
-    out:     '1',
-    remhost: 'quicklatex.com',
-    preamble: '',
+    formula:  tikzCode.trim(),
+    fsize:    '17px',
+    fcolor:   '000000',
+    mode:     '2',          // mode=2 cho phép custom preamble + full LaTeX envs
+    out:      '1',
+    remhost:  'quicklatex.com',
+    preamble: preamble,
   });
 
-  const res = await fetch('https://www.quicklatex.com/latex3.f', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: params.toString(),
-  });
+  // Thử trực tiếp trước (đôi khi QuickLaTeX cho phép CORS)
+  let text = '';
+  try {
+    const res = await fetch('https://www.quicklatex.com/latex3.f', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: params.toString(),
+    });
+    text = await res.text();
+  } catch(corsErr) {
+    // Fallback: dùng allorigins CORS proxy
+    const encoded = encodeURIComponent(params.toString());
+    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://www.quicklatex.com/latex3.f')}`;
+    const res2 = await fetch(proxyUrl, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: params.toString(),
+    });
+    text = await res2.text();
+  }
 
-  const text = await res.text();
-  // Response format: "0\n<w> <h>\n<url>" on success, or "1\n<error>"
   const lines = text.trim().split('\n');
   if (lines[0].trim() !== '0') {
-    throw new Error(lines.slice(1).join(' ') || 'QuickLaTeX error');
+    throw new Error(lines.slice(1).join(' ').slice(0,120) || 'QuickLaTeX error');
   }
   const url = lines[2]?.trim();
   if (!url) throw new Error('Không nhận được URL ảnh');
@@ -499,8 +505,13 @@ function ctex(raw) {
   t = t.replace(/\\displaystyle\s*/g,'');
   const mb=[];
   function protect(s){
-    // align/align* etc
-    s=s.replace(/\\begin\{(align\*?|gather\*?|equation\*?|cases|multline\*?)\}([\s\S]*?)\\end\{\1\}/g,full=>{mb.push(full);return'\x00M'+(mb.length-1)+'\x00';});
+    // align/align*/gather*/equation* — standalone display math envs, wrap in \[...\]
+    s=s.replace(/\\begin\{(align\*?|gather\*?|equation\*?|multline\*?)\}([\s\S]*?)\\end\{\1\}/g,(_,env,body)=>{
+      const wrapped='\\[\\begin{'+env+'}'+body+'\\end{'+env+'}\\]';
+      mb.push(wrapped);return'\x00M'+(mb.length-1)+'\x00';
+    });
+    // cases/pmatrix/bmatrix/vmatrix — MUST be inside math, so look for them inside existing delimiters
+    // They will be caught naturally when inside $...$ or \[...\] below.
     // \[...\]
     s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>{mb.push('\\['+m+'\\]');return'\x00M'+(mb.length-1)+'\x00';});
     // $$...$$
@@ -539,6 +550,10 @@ function ctex(raw) {
   t=t.replace(/\\newline/g,'<br>');
   t=t.replace(/\\par\b/g,'<br>');
   t=t.replace(/\\\\/g,'<br>');
+  // \includegraphics[options]{url} → <img> (BEFORE leftover cleanup)
+  t=t.replace(/\\includegraphics(?:\[.*?\])?\{([^}]+)\}/g,'<img src="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow)" alt="Hình minh họa">');
+  // ![alt](url) Markdown image syntax
+  t=t.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img src="$2" alt="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow)">');
   t=t.replace(/\\[a-zA-Z]+\*?\{([^}]*)\}/g,'$1');
   t=t.replace(/\\[a-zA-Z]+\*?\s*/g,' ');
   t=restore(t);
