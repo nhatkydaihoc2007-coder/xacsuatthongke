@@ -607,29 +607,40 @@ loadData();
 function ctex(raw) {
   if (!raw) return '';
   let t = raw;
+  
   // Normalize commands BEFORE protecting math blocks
   t = t.replace(/\\dfrac/g, '\\frac');
-  // \displaystyle outside math: wrap what follows in display math
-  // e.g. \displaystyle P(D) = ... -> just remove the command (MathJax handles it inside math)
   t = t.replace(/\\displaystyle\s*/g, '');
+  
   const mathBlocks = [];
+  
   function protect(s) {
-    // align/align* environments → protect as display math for MathJax
-    s = s.replace(/\\begin\{align\*?\}([\s\S]*?)\\end\{align\*?\}/g, (_, m) => {
-      const env = _.match(/\\begin\{(align\*?)\}/)[1];
-      mathBlocks.push('\\begin{'+env+'}'+m+'\\end{'+env+'}');
-      return '\x00M'+(mathBlocks.length-1)+'\x00';
-    });
-    // display math: \[...\] and $$...$$
+    // 1. Ưu tiên bảo vệ các block math chuẩn
     s = s.replace(/\\\[([\s\S]*?)\\\]/g,  (_, m) => { mathBlocks.push('\\['+m+'\\]'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
     s = s.replace(/\$\$([\s\S]*?)\$\$/g,  (_, m) => { mathBlocks.push('$$'+m+'$$');        return '\x00M'+(mathBlocks.length-1)+'\x00'; });
-    // inline math: \(...\) and $...$
+    
+    // 2. Bảo vệ các môi trường toán học (align, cases, equation)
+    // Tự động bọc display math cho cases nếu người dùng nhập trần
+    s = s.replace(/\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\1\}/g, (match, env, inner) => {
+      let block = '\\begin{' + env + '}' + inner + '\\end{' + env + '}';
+      if (env === 'cases') {
+        block = '\\[' + block + '\\]'; 
+      }
+      mathBlocks.push(block);
+      return '\x00M' + (mathBlocks.length - 1) + '\x00';
+    });
+    
+    // 3. Bảo vệ inline math
     s = s.replace(/\\\(([\s\S]*?)\\\)/g,  (_, m) => { mathBlocks.push('\\('+m+'\\)'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
     s = s.replace(/\$([^\$\n]+?)\$/g,      (_, m) => { mathBlocks.push('$'+m+'$');          return '\x00M'+(mathBlocks.length-1)+'\x00'; });
+    
     return s;
   }
+  
   function restore(s) { return s.replace(/\x00M(\d+)\x00/g, (_, i) => mathBlocks[+i]); }
+  
   t = protect(t);
+  
   // Text formatting
   t = t.replace(/\\textbf\{([^}]*)\}/g, '<strong>$1</strong>');
   t = t.replace(/\\textit\{([^}]*)\}/g, '<em>$1</em>');
@@ -637,19 +648,24 @@ function ctex(raw) {
   t = t.replace(/\\texttt\{([^}]*)\}/g, '<code style="font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px">$1</code>');
   t = t.replace(/\\underline\{([^}]*)\}/g, '<u>$1</u>');
   t = t.replace(/\\textcolor\{[^}]*\}\{([^}]*)\}/g, '$1');
-  // \begin{itemize}
+  
+  // HỖ TRỢ CHÈN ẢNH TỪ GITHUB ISSUES
+  t = t.replace(/\\includegraphics(?:\[.*?\])?\{([^}]+)\}/g, '<img src="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow);" alt="Hình minh họa">');
+
+  // Lists
   t = t.replace(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/g, (_, inner) => {
     const items = inner.split(/\\item\s*/).filter(s => s.trim());
     return '<ul style="margin:8px 0 8px 22px;line-height:1.85">' + items.map(i => '<li>'+i.trim()+'</li>').join('') + '</ul>';
   });
-  // \begin{enumerate}
   t = t.replace(/\\begin\{enumerate\}([\s\S]*?)\\end\{enumerate\}/g, (_, inner) => {
     const items = inner.split(/\\item\s*/).filter(s => s.trim());
     return '<ol style="margin:8px 0 8px 22px;line-height:1.85">' + items.map(i => '<li>'+i.trim()+'</li>').join('') + '</ol>';
   });
-  // \begin{center}
+  
+  // Center
   t = t.replace(/\\begin\{center\}([\s\S]*?)\\end\{center\}/g, '<div style="text-align:center;margin:8px 0">$1</div>');
-  // \begin{tabular} / table
+  
+  // Tables
   t = t.replace(/\\begin\{(?:table|tabular)\}(?:\[.*?\])?\{[^}]*\}([\s\S]*?)\\end\{(?:table|tabular)\}/g, (_, inner) => {
     const rows = inner.split(/\\\\/).map(r => r.replace(/\\hline/g,'').trim()).filter(r => r);
     const html = rows.map(row => {
@@ -658,6 +674,7 @@ function ctex(raw) {
     }).join('');
     return '<div style="overflow-x:auto;margin:10px 0"><table style="border-collapse:collapse;font-size:14px">'+html+'</table></div>';
   });
+  
   // Spacing
   t = t.replace(/\\medskip/g, '<div style="height:10px"></div>');
   t = t.replace(/\\bigskip/g, '<div style="height:18px"></div>');
@@ -665,11 +682,14 @@ function ctex(raw) {
   t = t.replace(/\\noindent\s*/g, '');
   t = t.replace(/\\newline/g, '<br>');
   t = t.replace(/\\par\b/g, '<br>');
-  // \\ newline (after table processing)
+  
+  // Xử lý các dấu \\ còn sót lại (sau khi đã bảo vệ block toán)
   t = t.replace(/\\\\/g, '<br>');
-  // Leftover commands: \cmd{text} → text, \cmd → ''
+  
+  // Dọn dẹp các lệnh không hỗ trợ
   t = t.replace(/\\[a-zA-Z]+\*?\{([^}]*)\}/g, '$1');
   t = t.replace(/\\[a-zA-Z]+\*?\s*/g, ' ');
+  
   t = restore(t);
   return t.trim();
 }
