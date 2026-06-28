@@ -7,6 +7,31 @@
   ],
   "exercises": [
     {
+      "id": "1782628182956",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Trong hệ thống chi phí, khoản chi phí nào sau đây KHÔNG thay đổi dù sản lượng có tăng hay giảm (hoặc thậm chí ngưng sản xuất)?",
+      "choices": [
+        {
+          "text": "Chi phí biến đổi (VC)",
+          "correct": false
+        },
+        {
+          "text": "Chi phí biên (MC)",
+          "correct": false
+        },
+        {
+          "text": "Chi phí cố định (FC)",
+          "correct": true
+        },
+        {
+          "text": "Tổng chi phí (TC)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-06-28T06:29:42.956Z"
+    },
+    {
       "id": "1782570149100",
       "subject": "Kinh tế lượng",
       "question": "Kí hiệu $LS$ là lợi suất cổ phiếu của công ty theo tháng (đơn vị tính: $\\%$), $V$ là vốn chủ sở hữu của công\nty (đơn vị tính: trăm tỷ đồng). Có số liệu mẫu qua 33 tháng. <br>\na) Hồi quy mô hình tuyến tính $LS$ theo $V$ có hệ số chặn. Hãy nêu kết quả của các kiểm định với mức ý nghĩa $5\\%$?\n\\[\n\\begin{array}{|llll|}\n\\hline \\text{Heteroskedasticity Test: White} \\\\ \n\\hline\n\\text{F-statistic} & 1.313742 & \\text{Prob. F(1,31)} & 0.2605 \\\\\n\\text{Obs*R-squared} & 1.341642 & \\text{Prob. Chi-Square(1)} & 0.2467 \\\\\n\\text{Scaled explained} & & & \\\\\n\\text{SS} & 1.078157 & \\text{Prob. Chi-Square(1)} & 0.2991 \\\\\n\\hline\n\\end{array}\n\\]\n\n<img src=\"https://github.com/user-attachments/assets/bd9c3f32-d235-4606-9aaa-763287f4a6b5\" style=\"max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow);\" alt=\"Hình minh họa\">\n\nb) Có ý kiến cho rằng lợi suất cổ phiếu của một công ty có hiệu ứng tháng giêng, tức là lợi suất cổ phiếu vào tháng 1 thường cao hơn các tháng khác khi có cùng mức vốn. Hãy hiệu chỉnh mô hình ở câu a và nêu ý tưởng để kiểm định ý kiến này với mức ý nghĩa $\\alpha$? <br>\nc) Gọi $e$ là phần dư khi hồi quy LS theo V. Người ta tiếp tục thực hiện hồi quy $e_t$ theo $e_{t-1}$ thu được ước lượng hệ số góc là $1,248$ và sai số chuẩn là $0,025$. Mục đích của việc làm này là gì? Cho kết luận với mức ý nghĩa $5\\%$.",
