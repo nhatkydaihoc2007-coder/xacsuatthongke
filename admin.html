@@ -161,6 +161,15 @@ mjx-container{max-width:100%}
 mjx-container[display="true"]::-webkit-scrollbar{height:4px}
 mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
 .preview-box,.sol-body{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ── Multiple choice ── */
+.choice-list{list-style:none;margin:10px 0 4px 0;display:flex;flex-direction:column;gap:6px;}
+.choice-item{display:flex;align-items:baseline;gap:10px;padding:7px 11px;border-radius:8px;border:1px solid var(--border);background:var(--surface);font-family:'Lora','Georgia',serif;font-size:13.5px;font-weight:300;line-height:1.7;transition:background .15s,border-color .15s;}
+.choice-item.correct{border-color:var(--green);background:var(--grn-lt);}
+.choice-letter{font-family:'Fira Code',monospace;font-size:11px;font-weight:600;color:var(--accent);background:var(--acc-lt);padding:2px 7px;border-radius:5px;flex-shrink:0;line-height:1.6;}
+.choice-item.correct .choice-letter{background:var(--green);color:#fff;}
+.choices-hidden .choice-item.correct{border-color:var(--border);background:var(--surface);}
+.choices-hidden .choice-item.correct .choice-letter{background:var(--acc-lt);color:var(--accent);}
 </style>
 </head>
 <body>
@@ -414,7 +423,11 @@ function renderAdminList() {
     el.innerHTML = '<div style="text-align:center;padding:32px;color:var(--faint);font-style:italic">Chưa có bài tập nào.</div>';
     return;
   }
-  el.innerHTML = data.exercises.map((ex, i) => `
+  el.innerHTML = data.exercises.map((ex, i) => {
+    const choiceHtml = (ex.choices && ex.choices.length)
+      ? renderChoiceHtml(ex.choices)
+      : '';
+    return `
     <div class="admin-ex-card" id="acard-${ex.id}">
       <div class="admin-ex-meta">
         <span class="ex-num">#${String(i+1).padStart(3,'0')}</span>
@@ -422,12 +435,13 @@ function renderAdminList() {
         <span style="font-size:11px;color:var(--faint);margin-left:auto;font-family:'Fira Code',monospace">${new Date(ex.createdAt).toLocaleDateString('vi-VN')}</span>
       </div>
       <div class="admin-ex-q" id="aeq-${ex.id}">${ex.question}</div>
+      ${choiceHtml}
       <div class="admin-ex-actions">
         <button class="btn btn-sm" onclick="openEdit('${ex.id}')" style="background:var(--acc-lt);color:var(--accent);border:1px solid var(--border)">✏️ Sửa</button>
         <button class="btn btn-danger btn-sm" onclick="deleteEx('${ex.id}')">🗑 Xóa</button>
       </div>
-    </div>`
-  ).join('');
+    </div>`;
+  }).join('');
   if (window.MathJax) MathJax.typesetPromise([el]).catch(()=>{});
 }
 
@@ -461,18 +475,25 @@ function switchTab(name, el) {
 
 // ── Add exercise ──
 async function addExercise() {
-  const q = document.getElementById('addQ').value.trim();
+  const qRaw = document.getElementById('addQ').value.trim();
   const s = document.getElementById('addS').value.trim();
   const subj = document.getElementById('addSubj').value;
-  if (!q) { toast('⚠️ Vui lòng nhập đề bài!'); return; }
+  if (!qRaw) { toast('⚠️ Vui lòng nhập đề bài!'); return; }
 
   const sp = document.getElementById('addSpinner');
   sp.style.display = 'inline-block';
 
   try {
-    const newEx = { id: Date.now().toString(), subject: subj, question: q, solution: s, createdAt: new Date().toISOString() };
+    const parsed = parseChoice(qRaw);
+    const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
+    const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
+    const newEx = {
+      id: Date.now().toString(), subject: subj,
+      question: questionHtml, choices,
+      solution: ctexInner(s), createdAt: new Date().toISOString()
+    };
     data.exercises.unshift(newEx);
-    await writeFile(`Thêm bài tập: ${q.slice(0,60)}…`);
+    await writeFile(`Thêm bài tập: ${qRaw.slice(0,60)}…`);
     renderAdminAll();
     document.getElementById('addQ').value = '';
     document.getElementById('addS').value = '';
@@ -510,20 +531,33 @@ function openEdit(id) {
   const ex = data.exercises.find(e => e.id === id);
   if (!ex) return;
   editingId = id;
-  // Populate selects
   const sel = document.getElementById('editSubj');
   sel.innerHTML = data.subjects.map(s => `<option value="${s}" ${s===ex.subject?'selected':''}>${s}</option>`).join('');
-  // Fill raw stored HTML back — show as-is for editing
-  document.getElementById('editQ').value = ex.question;
+
+  // Nếu có choices, tái tạo cú pháp \choice để textarea hiển thị đúng
+  let qDisplay = ex.question;
+  if (ex.choices && ex.choices.length) {
+    const letters = ['A','B','C','D','E','F'];
+    const choicePart = '\n\\choice\n' + ex.choices.map((c,i) =>
+      c.correct ? `{\\True ${c.text}}` : `{${c.text}}`
+    ).join('\n');
+    qDisplay = ex.question + choicePart;
+  }
+
+  document.getElementById('editQ').value = qDisplay;
   document.getElementById('editS').value = ex.solution || '';
-  // Render preview immediately
+
   const pvQ = document.getElementById('pvEQ');
   const pvS = document.getElementById('pvES');
-  pvQ.innerHTML = ex.question;
+  // Preview: render choices nếu có
+  if (ex.choices && ex.choices.length) {
+    pvQ.innerHTML = ex.question + renderChoiceHtml(ex.choices);
+  } else {
+    pvQ.innerHTML = ex.question;
+  }
   pvS.innerHTML = ex.solution || '';
   if (window.MathJax) MathJax.typesetPromise([pvQ, pvS]).catch(()=>{});
-  const ov = document.getElementById('editOverlay');
-  ov.style.display = 'flex';
+  document.getElementById('editOverlay').style.display = 'flex';
 }
 
 function closeEdit() {
@@ -538,17 +572,24 @@ function dprevEdit(f) {
   pvEditT[f] = setTimeout(() => {
     const v = document.getElementById(f==='q'?'editQ':'editS').value;
     const b = document.getElementById(f==='q'?'pvEQ':'pvES');
-    b.innerHTML = v;
+    if (f === 'q') {
+      const parsed = parseChoice(v);
+      b.innerHTML = parsed
+        ? ctexInner(parsed.before) + renderChoiceHtml(parsed.choices.map(c=>({text:ctexInner(c.text),correct:c.correct})))
+        : ctexInner(v);
+    } else {
+      b.innerHTML = ctexInner(v);
+    }
     if (window.MathJax) MathJax.typesetPromise([b]).catch(()=>{});
   }, 400);
 }
 
 async function saveEdit() {
   if (!editingId) return;
-  const q = document.getElementById('editQ').value.trim();
+  const qRaw = document.getElementById('editQ').value.trim();
   const s = document.getElementById('editS').value.trim();
   const subj = document.getElementById('editSubj').value;
-  if (!q) { toast('⚠️ Vui lòng nhập đề bài!'); return; }
+  if (!qRaw) { toast('⚠️ Vui lòng nhập đề bài!'); return; }
 
   const sp = document.getElementById('editSpinner');
   sp.style.display = 'inline-block';
@@ -556,16 +597,21 @@ async function saveEdit() {
   const idx = data.exercises.findIndex(e => e.id === editingId);
   const backup = { ...data.exercises[idx] };
 
+  const parsed = parseChoice(qRaw);
+  const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
+  const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
+
   data.exercises[idx] = {
     ...data.exercises[idx],
     subject: subj,
-    question: q,
-    solution: s,
+    question: questionHtml,
+    choices,
+    solution: ctexInner(s),
     updatedAt: new Date().toISOString(),
   };
 
   try {
-    await writeFile(`Sửa bài tập: ${q.slice(0,60)}…`);
+    await writeFile(`Sửa bài tập: ${qRaw.slice(0,60)}…`);
     renderAdminAll();
     closeEdit();
     toast('✓ Đã lưu và commit lên GitHub!');
@@ -585,9 +631,9 @@ async function doImport() {
   while ((m = reg.exec(raw)) !== null) {
     const blk = m[1];
     const li  = blk.lastIndexOf('\\loigiai{');
-    let q, sol = '';
+    let qRaw, sol = '';
     if (li !== -1) {
-      q = blk.slice(0, li).trim();
+      qRaw = blk.slice(0, li).trim();
       const after = blk.slice(li + 9);
       let d = 1, i = 0;
       for (; i < after.length; i++) {
@@ -595,14 +641,24 @@ async function doImport() {
         else if (after[i] === '}') { d--; if (!d) break; }
       }
       sol = after.slice(0, i).trim();
-    } else { q = blk.trim(); }
-    if (!q) continue;
-    newOnes.push({ id:(Date.now()+cnt).toString(), subject:subj, question:ctex(q), solution:ctex(sol), createdAt:new Date().toISOString() });
+    } else { qRaw = blk.trim(); }
+    if (!qRaw) continue;
+    const parsed = parseChoice(qRaw);
+    const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
+    const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
+    newOnes.push({
+      id:(Date.now()+cnt).toString(), subject:subj,
+      question:questionHtml, choices,
+      solution:ctexInner(sol), createdAt:new Date().toISOString()
+    });
     cnt++;
   }
 
   if (!cnt && raw.trim()) {
-    newOnes.push({ id:Date.now().toString(), subject:subj, question:ctex(raw.trim()), solution:'', createdAt:new Date().toISOString() });
+    const parsed = parseChoice(raw.trim());
+    const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(raw.trim());
+    const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
+    newOnes.push({ id:Date.now().toString(), subject:subj, question:questionHtml, choices, solution:'', createdAt:new Date().toISOString() });
     cnt = 1;
   }
 
@@ -625,103 +681,106 @@ async function doImport() {
   } finally { sp.style.display = 'none'; }
 }
 
-function ctex(raw) {
+// ── Brace-counting extractor ──
+function extractBraceContent(s, start) {
+  let depth = 0, i = start;
+  for (; i < s.length; i++) {
+    if (s[i] === '{') depth++;
+    else if (s[i] === '}') { depth--; if (!depth) return { content: s.slice(start+1, i), end: i+1 }; }
+  }
+  return null;
+}
+
+// ── Parse \choice{A}{B}{\True C}{D} ──
+function parseChoice(s) {
+  const idx = s.search(/\\choice\b/);
+  if (idx === -1) return null;
+  const after = s.slice(idx + 7);
+  const choices = [];
+  let pos = 0;
+  while (pos < after.length && choices.length < 6) {
+    while (pos < after.length && /\s/.test(after[pos])) pos++;
+    if (after[pos] !== '{') break;
+    const res = extractBraceContent(after, pos);
+    if (!res) break;
+    let text = res.content.trim();
+    let correct = false;
+    if (text.startsWith('\\True') || text.startsWith('\\true')) {
+      correct = true;
+      text = text.slice(5).trim();
+    }
+    choices.push({ text, correct });
+    pos = res.end;
+  }
+  return choices.length ? { before: s.slice(0, idx), choices } : null;
+}
+
+// ── Render choice HTML (dùng chung ở admin preview) ──
+function renderChoiceHtml(choices) {
+  const letters = ['A','B','C','D','E','F'];
+  return '<ul class="choice-list">' + choices.map((c, i) =>
+    `<li class="choice-item${c.correct?' correct':''}">` +
+    `<span class="choice-letter">${letters[i]}</span>` +
+    `<span class="choice-text">${c.text}</span></li>`
+  ).join('') + '</ul>';
+}
+
+// ── ctexInner: xử lý LaTeX → HTML (không có \choice) ──
+function ctexInner(raw) {
   if (!raw) return '';
   let t = raw;
-  
-  // Chuẩn hóa một số lệnh trước khi xử lý
-  t = t.replace(/\\dfrac/g, '\\frac');
-  t = t.replace(/\\displaystyle\s*/g, '');
-  
-  const mathBlocks = [];
-  
+  const mb = [];
   function protect(s) {
-    // 1. Ưu tiên bảo vệ các khối toán chuẩn (Display & Inline math) trước
-    s = s.replace(/\\\[([\s\S]*?)\\\]/g,  (_, m) => { mathBlocks.push('\\['+m+'\\]'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
-    s = s.replace(/\$\$([\s\S]*?)\$\$/g,  (_, m) => { mathBlocks.push('$$'+m+'$$');        return '\x00M'+(mathBlocks.length-1)+'\x00'; });
-    s = s.replace(/\\\(([\s\S]*?)\\\)/g,  (_, m) => { mathBlocks.push('\\('+m+'\\)'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
-    
-    // Nâng cấp: Cho phép dấu $ bao trọn nhiều dòng để không bị đứt gãy nếu gõ cases bên trong
-    s = s.replace(/\$([^$]+?)\$/g,        (_, m) => { mathBlocks.push('$'+m+'$');          return '\x00M'+(mathBlocks.length-1)+'\x00'; });
-    
-    // 2. Bảo vệ các môi trường toán học mà người dùng quên bọc $ hoặc $$
-    s = s.replace(/\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\1\}/g, (match, env, inner) => {
-      let block = '\\begin{' + env + '}' + inner + '\\end{' + env + '}';
-      if (env === 'cases') {
-        block = '\\[' + block + '\\]'; // Ép kiểu display math để render chuẩn
-      }
-      mathBlocks.push(block);
-      return '\x00M' + (mathBlocks.length - 1) + '\x00';
+    s = s.replace(/\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\1\}/g, (match, env) => {
+      mb.push(env === 'cases' ? '\\[' + match + '\\]' : match);
+      return '\x00M'+(mb.length-1)+'\x00';
     });
-    
+    s = s.replace(/\\\[([\s\S]*?)\\\]/g, (_,m)=>{ mb.push('\\['+m+'\\]'); return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_,m)=>{ mb.push('$$'+m+'$$');   return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\\\(([\s\S]*?)\\\)/g, (_,m)=>{ mb.push('\\('+m+'\\)'); return '\x00M'+(mb.length-1)+'\x00'; });
+    s = s.replace(/\$([^$\n]+?)\$/g,     (_,m)=>{ mb.push('$'+m+'$');     return '\x00M'+(mb.length-1)+'\x00'; });
     return s;
   }
-  
-  // Nâng cấp: Chạy vòng lặp để giải nén triệt để các block lồng nhau (Sửa lỗi M0, M1, M2...)
-  function restore(s) { 
-    let prev;
-    do {
-      prev = s;
-      s = s.replace(/\x00M(\d+)\x00/g, (_, i) => mathBlocks[+i]);
-    } while (s !== prev);
-    return s;
-  }
-  
+  function restore(s){ let p; do{p=s;s=s.replace(/\x00M(\d+)\x00/g,(_,i)=>mb[+i]);}while(s!==p);return s; }
+  t = t.replace(/\\dfrac/g,'\\frac');
+  t = t.replace(/\\displaystyle\s*/g,'');
   t = protect(t);
-  
-  // Format văn bản
-  t = t.replace(/\\textbf\{([^}]*)\}/g, '<strong>$1</strong>');
-  t = t.replace(/\\textit\{([^}]*)\}/g, '<em>$1</em>');
-  t = t.replace(/\\emph\{([^}]*)\}/g,   '<em>$1</em>');
-  t = t.replace(/\\texttt\{([^}]*)\}/g, '<code style="font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px">$1</code>');
-  t = t.replace(/\\underline\{([^}]*)\}/g, '<u>$1</u>');
-  t = t.replace(/\\textcolor\{[^}]*\}\{([^}]*)\}/g, '$1');
-  
-  // Hỗ trợ chèn ảnh (từ link Github Issues)
-  t = t.replace(/\\includegraphics(?:\[.*?\])?\{([^}]+)\}/g, '<img src="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow);" alt="Hình minh họa">');
-
-  // Danh sách
-  t = t.replace(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/g, (_, inner) => {
-    const items = inner.split(/\\item\s*/).filter(s => s.trim());
-    return '<ul style="margin:8px 0 8px 22px;line-height:1.85">' + items.map(i => '<li>'+i.trim()+'</li>').join('') + '</ul>';
+  t = t.replace(/\\textbf\{([^}]*)\}/g,'<strong>$1</strong>');
+  t = t.replace(/\\textit\{([^}]*)\}/g,'<em>$1</em>');
+  t = t.replace(/\\emph\{([^}]*)\}/g,'<em>$1</em>');
+  t = t.replace(/\\texttt\{([^}]*)\}/g,'<code style="font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px">$1</code>');
+  t = t.replace(/\\underline\{([^}]*)\}/g,'<u>$1</u>');
+  t = t.replace(/\\textcolor\{[^}]*\}\{([^}]*)\}/g,'$1');
+  t = t.replace(/\\includegraphics(?:\[.*?\])?\{([^}]+)\}/g,'<img src="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow);" alt="Hình minh họa">');
+  t = t.replace(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/g,(_,inner)=>{
+    const items=inner.split(/\\item\s*/).filter(s=>s.trim());
+    return '<ul style="margin:8px 0 8px 22px;line-height:1.85">'+items.map(i=>'<li>'+i.trim()+'</li>').join('')+'</ul>';
   });
-  t = t.replace(/\\begin\{enumerate\}([\s\S]*?)\\end\{enumerate\}/g, (_, inner) => {
-    const items = inner.split(/\\item\s*/).filter(s => s.trim());
-    return '<ol style="margin:8px 0 8px 22px;line-height:1.85">' + items.map(i => '<li>'+i.trim()+'</li>').join('') + '</ol>';
+  t = t.replace(/\\begin\{enumerate\}([\s\S]*?)\\end\{enumerate\}/g,(_,inner)=>{
+    const items=inner.split(/\\item\s*/).filter(s=>s.trim());
+    return '<ol style="margin:8px 0 8px 22px;line-height:1.85">'+items.map(i=>'<li>'+i.trim()+'</li>').join('')+'</ol>';
   });
-  
-  t = t.replace(/\\begin\{center\}([\s\S]*?)\\end\{center\}/g, '<div style="text-align:center;margin:8px 0">$1</div>');
-  
-  // Bảng biểu
-  t = t.replace(/\\begin\{(?:table|tabular)\}(?:\[.*?\])?\{[^}]*\}([\s\S]*?)\\end\{(?:table|tabular)\}/g, (_, inner) => {
-    const rows = inner.split(/\\\\/).map(r => r.replace(/\\hline/g,'').trim()).filter(r => r);
-    const html = rows.map(row => {
-      const cells = row.split('&').map(c => c.trim());
-      return '<tr>' + cells.map(c => '<td style="padding:5px 12px;border:1px solid var(--border)">'+c+'</td>').join('') + '</tr>';
-    }).join('');
+  t = t.replace(/\\begin\{center\}([\s\S]*?)\\end\{center\}/g,'<div style="text-align:center;margin:8px 0">$1</div>');
+  t = t.replace(/\\begin\{(?:table|tabular)\}(?:\[.*?\])?\{[^}]*\}([\s\S]*?)\\end\{(?:table|tabular)\}/g,(_,inner)=>{
+    const rows=inner.split(/\\\\/).map(r=>r.replace(/\\hline/g,'').trim()).filter(r=>r);
+    const html=rows.map(row=>'<tr>'+row.split('&').map(c=>'<td style="padding:5px 12px;border:1px solid var(--border)">'+c.trim()+'</td>').join('')+'</tr>').join('');
     return '<div style="overflow-x:auto;margin:10px 0"><table style="border-collapse:collapse;font-size:14px">'+html+'</table></div>';
   });
-  
-  // Khoảng cách
-  t = t.replace(/\\medskip/g, '<div style="height:10px"></div>');
-  t = t.replace(/\\bigskip/g, '<div style="height:18px"></div>');
-  t = t.replace(/\\smallskip/g, '<div style="height:5px"></div>');
-  t = t.replace(/\\noindent\s*/g, '');
-  t = t.replace(/\\newline/g, '<br>');
-  t = t.replace(/\\par\b/g, '<br>');
-  
-  // Đổi dấu \\ thành thẻ <br> (nằm ngoài các block toán)
-  t = t.replace(/\\\\/g, '<br>');
-  
-  // Dọn dẹp các lệnh không được hỗ trợ
-  t = t.replace(/\\[a-zA-Z]+\*?\{([^}]*)\}/g, '$1');
-  t = t.replace(/\\[a-zA-Z]+\*?\s*/g, ' ');
-  
-  // Hoàn trả lại các block toán học
+  t = t.replace(/\\medskip/g,'<div style="height:10px"></div>');
+  t = t.replace(/\\bigskip/g,'<div style="height:18px"></div>');
+  t = t.replace(/\\smallskip/g,'<div style="height:5px"></div>');
+  t = t.replace(/\\noindent\s*/g,'');
+  t = t.replace(/\\newline/g,'<br>');
+  t = t.replace(/\\par\b/g,'<br>');
+  t = t.replace(/\\\\/g,'<br>');
+  t = t.replace(/\\[a-zA-Z]+\*?\{([^}]*)\}/g,'$1');
+  t = t.replace(/\\[a-zA-Z]+\*?\s*/g,' ');
   t = restore(t);
-  
   return t.trim();
 }
+
+// ctex: alias dùng ở các chỗ cũ (solution không có \choice nên dùng ctexInner trực tiếp)
+function ctex(raw) { return ctexInner(raw); }
 
 // ── Subjects ──
 async function addSubject() {
@@ -758,7 +817,14 @@ function dprev(f) {
   pvT[f] = setTimeout(() => {
     const v = document.getElementById(f==='q'?'addQ':'addS').value;
     const b = document.getElementById(f==='q'?'pvQ':'pvS');
-    b.innerHTML = v;
+    if (f === 'q') {
+      const parsed = parseChoice(v);
+      b.innerHTML = parsed
+        ? ctexInner(parsed.before) + renderChoiceHtml(parsed.choices.map(c=>({text:ctexInner(c.text),correct:c.correct})))
+        : ctexInner(v);
+    } else {
+      b.innerHTML = ctexInner(v);
+    }
     if (window.MathJax) MathJax.typesetPromise([b]).catch(()=>{});
   }, 500);
 }
