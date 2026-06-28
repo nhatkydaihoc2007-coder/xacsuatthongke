@@ -10,9 +10,15 @@
     <button onclick="closeEdit()" style="position:absolute;top:14px;right:14px;background:var(--bg);border:none;color:var(--muted);width:28px;height:28px;border-radius:6px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center">✕</button>
     <div style="font-size:20px;font-weight:700;margin-bottom:4px">✏️ Chỉnh sửa bài tập</div>
     <div style="font-size:12px;color:var(--muted);margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)">Hỗ trợ LaTeX — $…$ inline, $$…$$ display, \[…\] display</div>
-    <div style="margin-bottom:14px">
-      <div class="form-label">Môn học</div>
-      <select class="form-input" id="editSubj" style="cursor:pointer"></select>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+      <div>
+        <div class="form-label">Môn học</div>
+        <select class="form-input" id="editSubj" style="cursor:pointer" onchange="onEditSubjChange()"></select>
+      </div>
+      <div>
+        <div class="form-label">Chương</div>
+        <select class="form-input" id="editChap" style="cursor:pointer"></select>
+      </div>
     </div>
     <div style="margin-bottom:14px">
       <div class="form-label">Đề bài</div>
@@ -224,7 +230,7 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
       <div class="tab active" onclick="switchTab('list', this)">📋 Danh sách bài tập</div>
       <div class="tab" onclick="switchTab('add', this)">✏️ Thêm bài tập</div>
       <div class="tab" onclick="switchTab('import', this)">↑ Nhập LaTeX</div>
-      <div class="tab" onclick="switchTab('subjects', this)">🏷️ Môn học</div>
+      <div class="tab" onclick="switchTab('subjects', this)">🏷️ Môn &amp; Chương</div>
     </div>
 
     <!-- LIST TAB -->
@@ -239,9 +245,15 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
     <div id="tabAdd" style="display:none">
       <div class="section">
         <div class="section-title"><span>✏️</span> Thêm bài tập mới</div>
-        <div style="margin-bottom:14px;">
-          <div class="form-label">Môn học</div>
-          <select class="form-input" id="addSubj"></select>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;">
+          <div>
+            <div class="form-label">Môn học</div>
+            <select class="form-input" id="addSubj" onchange="onAddSubjChange()"></select>
+          </div>
+          <div>
+            <div class="form-label">Chương</div>
+            <select class="form-input" id="addChap"></select>
+          </div>
         </div>
         <div style="margin-bottom:14px;">
           <div class="form-label">Đề bài (hỗ trợ LaTeX)</div>
@@ -266,9 +278,15 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
     <div id="tabImport" style="display:none">
       <div class="section">
         <div class="section-title"><span>↑</span> Nhập từ LaTeX</div>
-        <div style="margin-bottom:14px;">
-          <div class="form-label">Môn học</div>
-          <select class="form-input" id="importSubj"></select>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;">
+          <div>
+            <div class="form-label">Môn học</div>
+            <select class="form-input" id="importSubj" onchange="onImportSubjChange()"></select>
+          </div>
+          <div>
+            <div class="form-label">Chương</div>
+            <select class="form-input" id="importChap"></select>
+          </div>
         </div>
         <div style="margin-bottom:20px;">
           <div class="form-label">Code LaTeX</div>
@@ -292,6 +310,18 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
           <button class="btn btn-primary" onclick="addSubject()">+ Thêm môn</button>
         </div>
       </div>
+      <div class="section">
+        <div class="section-title"><span>📖</span> Quản lý chương</div>
+        <div style="margin-bottom:14px;">
+          <div class="form-label">Chọn môn học để quản lý chương</div>
+          <select class="form-input" id="chapMgmtSubj" style="max-width:320px;cursor:pointer" onchange="renderChapterChips()"></select>
+        </div>
+        <div id="chapterChips" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;min-height:32px;"></div>
+        <div style="display:flex;gap:8px;">
+          <input type="text" class="form-input" id="newChapInput" placeholder="Tên chương mới…" style="max-width:300px">
+          <button class="btn btn-primary" onclick="addChapter()">+ Thêm chương</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -300,7 +330,7 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
 // ── CONFIG ──────────────────────────────────────────────
 const DATA_FILE = 'data/exercises.json';
 let ghOwner = '', ghRepo = '', ghToken = '';
-let data = { subjects: [], exercises: [] };
+let data = { subjects: [], chapters: {}, exercises: [] };
 let fileSha = '';
 let pvT = {};
 
@@ -415,6 +445,7 @@ function renderAdminAll() {
   renderAdminList();
   renderSubjectSelects();
   renderSubjectChips();
+  renderChapterChips();
 }
 
 function renderAdminList() {
@@ -424,14 +455,16 @@ function renderAdminList() {
     return;
   }
   el.innerHTML = data.exercises.map((ex, i) => {
-    const choiceHtml = (ex.choices && ex.choices.length)
-      ? renderChoiceHtml(ex.choices)
+    const choiceHtml = (ex.choices && ex.choices.length) ? renderChoiceHtml(ex.choices) : '';
+    const chapTag = ex.chapter
+      ? `<span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:5px;background:var(--bg);color:var(--muted);border:1px solid var(--border)">📖 ${ex.chapter}</span>`
       : '';
     return `
     <div class="admin-ex-card" id="acard-${ex.id}">
       <div class="admin-ex-meta">
         <span class="ex-num">#${String(i+1).padStart(3,'0')}</span>
         <span class="ex-tag ${tagCls(ex.subject)}">${ex.subject}</span>
+        ${chapTag}
         <span style="font-size:11px;color:var(--faint);margin-left:auto;font-family:'Fira Code',monospace">${new Date(ex.createdAt).toLocaleDateString('vi-VN')}</span>
       </div>
       <div class="admin-ex-q" id="aeq-${ex.id}">${ex.question}</div>
@@ -446,11 +479,29 @@ function renderAdminList() {
 }
 
 function renderSubjectSelects() {
-  ['addSubj','importSubj','editSubj'].forEach(id => {
+  ['addSubj','importSubj','chapMgmtSubj'].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
     el.innerHTML = data.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
   });
+  populateChapSelect('addChap',    document.getElementById('addSubj')?.value);
+  populateChapSelect('importChap', document.getElementById('importSubj')?.value);
+}
+
+// Populate a chapter <select> for a given subject
+function populateChapSelect(selectId, subj) {
+  const el = document.getElementById(selectId);
+  if (!el) return;
+  const chaps = (subj && data.chapters && data.chapters[subj]) ? data.chapters[subj] : [];
+  el.innerHTML = `<option value="">— Không có chương —</option>` +
+    chaps.map(c => `<option value="${c}">${c}</option>`).join('');
+}
+
+function onAddSubjChange()    { populateChapSelect('addChap',    document.getElementById('addSubj').value); }
+function onImportSubjChange() { populateChapSelect('importChap', document.getElementById('importSubj').value); }
+function onEditSubjChange()   {
+  const subj = document.getElementById('editSubj').value;
+  populateChapSelect('editChap', subj);
 }
 
 function renderSubjectChips() {
@@ -459,6 +510,29 @@ function renderSubjectChips() {
     <span style="display:inline-flex;align-items:center;gap:6px;background:var(--acc-lt);color:var(--accent);border:1px solid var(--border);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;">
       ${s}
       <span onclick="removeSubject('${s}')" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa môn này">×</span>
+    </span>`
+  ).join('');
+}
+
+function renderChapterChips() {
+  const mgmtEl = document.getElementById('chapMgmtSubj');
+  if (!mgmtEl) return;
+  // Sync chapMgmtSubj options
+  if (!mgmtEl.options.length || mgmtEl.options[0].value !== (data.subjects[0]||'')) {
+    mgmtEl.innerHTML = data.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
+  }
+  const subj = mgmtEl.value;
+  const el = document.getElementById('chapterChips');
+  if (!el) return;
+  const chaps = (subj && data.chapters && data.chapters[subj]) ? data.chapters[subj] : [];
+  if (!chaps.length) {
+    el.innerHTML = '<span style="font-size:12px;color:var(--faint);font-style:italic">Chưa có chương nào.</span>';
+    return;
+  }
+  el.innerHTML = chaps.map(c => `
+    <span style="display:inline-flex;align-items:center;gap:6px;background:var(--bg);color:var(--muted);border:1px solid var(--border);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;">
+      📖 ${c}
+      <span onclick="removeChapter('${subj.replace(/'/g,"\\'")}','${c.replace(/'/g,"\\'")}'))" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa chương này">×</span>
     </span>`
   ).join('');
 }
@@ -487,8 +561,9 @@ async function addExercise() {
     const parsed = parseChoice(qRaw);
     const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
     const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
+    const chapter = document.getElementById('addChap').value || '';
     const newEx = {
-      id: Date.now().toString(), subject: subj,
+      id: Date.now().toString(), subject: subj, chapter,
       question: questionHtml, choices,
       solution: ctexInner(s), createdAt: new Date().toISOString()
     };
