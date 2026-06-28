@@ -7,6 +7,206 @@
   ],
   "exercises": [
     {
+      "id": "1782631730126",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Đường bàng quan (Indifference Curve) dùng để biểu diễn điều gì?",
+      "choices": [
+        {
+          "text": "Các gói hàng hóa tối đa mà người tiêu dùng có thể mua với mức thu nhập cho trước",
+          "correct": false
+        },
+        {
+          "text": "Các gói hàng hóa khác nhau nhưng đem lại cùng một mức độ thỏa mãn (độ thỏa dụng) như nhau cho người tiêu dùng",
+          "correct": true
+        },
+        {
+          "text": "Mức độ thay đổi của lượng cầu khi giá hàng hóa thay đổi",
+          "correct": false
+        },
+        {
+          "text": "Chi phí cơ hội của việc tiêu dùng hàng hóa",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-06-28T07:28:50.126Z"
+    },
+    {
+      "id": "1782631730127",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Độ dốc của đường giới hạn ngân sách phản ánh điều gì trên thị trường?",
+      "choices": [
+        {
+          "text": "Tỷ lệ thay thế biên của hai hàng hóa",
+          "correct": false
+        },
+        {
+          "text": "Mức giá tương đối của hai loại hàng hóa (chi phí cơ hội của hàng hóa này tính bằng hàng hóa kia)",
+          "correct": true
+        },
+        {
+          "text": "Mức độ thỏa dụng biên của người tiêu dùng",
+          "correct": false
+        },
+        {
+          "text": "Tổng thu nhập hiện có của người tiêu dùng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-06-28T07:28:50.126Z"
+    },
+    {
+      "id": "1782631730128",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Tỷ lệ thay thế biên ($MRS$) tại một điểm trên đường bàng quan cho biết:",
+      "choices": [
+        {
+          "text": "Tốc độ tăng của độ thỏa dụng biên",
+          "correct": false
+        },
+        {
+          "text": "Số lượng hàng hóa tối đa mà thu nhập có thể mua được",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ mà người tiêu dùng sẵn lòng đánh đổi hàng hóa này để lấy hàng hóa khác nhằm giữ nguyên mức thỏa mãn",
+          "correct": true
+        },
+        {
+          "text": "Tỷ lệ mà thị trường sẵn sàng trao đổi hai loại hàng hóa với nhau",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-06-28T07:28:50.126Z"
+    },
+    {
+      "id": "1782631730129",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Khi người tiêu dùng lựa chọn gói hàng hóa tối ưu nhất cho mình, điều kiện nào sau đây mặt toán học/đồ thị sẽ xảy ra?",
+      "choices": [
+        {
+          "text": "Đường bàng quan cắt ngang đường giới hạn ngân sách",
+          "correct": false
+        },
+        {
+          "text": "Người tiêu dùng mua số lượng của hai hàng hóa bằng nhau",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ thay thế biên ($MRS$) bằng đúng với giá tương đối của hai hàng hóa, tương đương đường bàng quan tiếp xúc với đường ngân sách",
+          "correct": true
+        },
+        {
+          "text": "Độ thỏa dụng biên của tất cả các hàng hóa giảm về bằng không",
+          "correct": false
+        }
+      ],
+      "solution": "Tại điểm tối ưu, đường bàng quan tiếp xúc với đường ngân sách, do đó độ dốc của hai đường này bằng nhau $\\left( MRS_{XY} = \\frac{P_X}{P_Y} \\right)$",
+      "createdAt": "2026-06-28T07:28:50.126Z"
+    },
+    {
+      "id": "1782631730131",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Nếu hai hàng hóa là hàng hóa thay thế hoàn hảo cho nhau (ví dụ: tiền xu $5$ cent và tiền xu $10$ cent), đường bàng quan của chúng sẽ có hình dạng như thế nào?",
+      "choices": [
+        {
+          "text": "Có dạng góc vuông",
+          "correct": false
+        },
+        {
+          "text": "Là một đường cong lõm về phía gốc tọa độ",
+          "correct": false
+        },
+        {
+          "text": "Là một đường thẳng với tỷ lệ thay thế biên không đổi",
+          "correct": true
+        },
+        {
+          "text": "Có hình chữ U",
+          "correct": false
+        }
+      ],
+      "solution": "Hàng hóa thay thế hoàn hảo có tỷ lệ thay thế biên là một hằng số, do đó đường bàng quan là một đường thẳng dốc xuống",
+      "createdAt": "2026-06-28T07:28:50.127Z"
+    },
+    {
+      "id": "1782631730132",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Theo lý thuyết tiêu dùng, người tiêu dùng sẽ tối đa hóa độ thỏa dụng khi họ chi tiêu sao cho:",
+      "choices": [
+        {
+          "text": "Tổng số tiền chi cho mỗi loại hàng hóa là bằng nhau",
+          "correct": false
+        },
+        {
+          "text": "Số lượng mua vào của mỗi loại hàng hóa là bằng nhau",
+          "correct": false
+        },
+        {
+          "text": "Độ thỏa dụng biên của đơn vị tiền tệ cuối cùng chi cho các sản phẩm là bằng nhau $\\left( \\frac{MU_X}{P_X} = \\frac{MU_Y}{P_Y} \\right)$",
+          "correct": true
+        },
+        {
+          "text": "Độ thỏa dụng biên của các hàng hóa đạt mức cao nhất có thể",
+          "correct": false
+        }
+      ],
+      "solution": "Người tiêu dùng đạt thỏa dụng tối đa khi họ phân bổ ngân sách sao cho mức thỏa dụng biên trên mỗi một đô la chi tiêu cho tất cả các loại hàng hóa là bằng nhau",
+      "createdAt": "2026-06-28T07:28:50.127Z"
+    },
+    {
+      "id": "1782631730133",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Tác động làm thay đổi tiêu dùng do một sự thay đổi giá khuyến khích tiêu dùng nhiều hơn mặt hàng đang trở nên tương đối rẻ hơn, được gọi là:",
+      "choices": [
+        {
+          "text": "Tác động thu nhập",
+          "correct": false
+        },
+        {
+          "text": "Tác động thay thế",
+          "correct": true
+        },
+        {
+          "text": "Tác động cận biên",
+          "correct": false
+        },
+        {
+          "text": "Tác động ngoại tác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-06-28T07:28:50.127Z"
+    },
+    {
+      "id": "1782631730134",
+      "subject": "Kinh Tế Vi Mô",
+      "question": "Hàng hóa Giffen là một loại hàng hóa (rất) thứ cấp đặc biệt, vi phạm quy luật cầu thông thường vì:",
+      "choices": [
+        {
+          "text": "Khi thu nhập tăng, lượng cầu mua vào tăng",
+          "correct": false
+        },
+        {
+          "text": "Khi giá tăng, lượng cầu mua vào lại tăng lên (do tác động thu nhập lấn át hoàn toàn tác động thay thế)",
+          "correct": true
+        },
+        {
+          "text": "Đường cầu của nó luôn nằm ngang",
+          "correct": false
+        },
+        {
+          "text": "Người tiêu dùng luôn luôn thích nó hơn mọi hàng hóa khác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-06-28T07:28:50.127Z"
+    },
+    {
       "id": "1782628182956",
       "subject": "Kinh Tế Vi Mô",
       "question": "Trong hệ thống chi phí, khoản chi phí nào sau đây KHÔNG thay đổi dù sản lượng có tăng hay giảm (hoặc thậm chí ngưng sản xuất)?",
