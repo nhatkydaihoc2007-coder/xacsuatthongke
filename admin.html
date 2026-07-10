@@ -836,16 +836,16 @@ function ctexInner(raw) {
         else if (s[j] === '}') depth--;
       }
       const inner = s.slice(start, j - 1);
-      // Trong texttt: \\ → <br>, \{ → {, \} → }, \# → #, escape < >
+      // Trong texttt: escape < > TRƯỚC, rồi mới chèn <br>/&nbsp; để không bị escape ngược
       const rendered = inner
-        .replace(/\\\\/g, '<br>')
+        .replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/\\#/g, '#')
         .replace(/\\&/g, '&amp;')
-        .replace(/\\indent\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
-        .replace(/\\quad\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
         .replace(/\\setminus/g, '\\')
         .replace(/\\\{/g, '{').replace(/\\\}/g, '}')
-        .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        .replace(/\\indent\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
+        .replace(/\\quad\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
+        .replace(/\\\\/g, '<br>');
       out += '<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all">' + rendered + '</code>';
       i = j;
     }
