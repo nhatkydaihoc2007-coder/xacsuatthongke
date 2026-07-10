@@ -313,7 +313,7 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
       <div class="section">
         <div class="section-title"><span>📖</span> Quản lý chương</div>
         <div style="margin-bottom:14px;">
-          <div class="form-label">Chọn môn học để quản lý chương</div>
+          <div class="form-label">Chọn môn học</div>
           <select class="form-input" id="chapMgmtSubj" style="max-width:320px;cursor:pointer" onchange="renderChapterChips()"></select>
         </div>
         <div id="chapterChips" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;min-height:32px;"></div>
@@ -478,30 +478,28 @@ function renderAdminList() {
   if (window.MathJax) MathJax.typesetPromise([el]).catch(()=>{});
 }
 
-function renderSubjectSelects() {
-  ['addSubj','importSubj','chapMgmtSubj'].forEach(id => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.innerHTML = data.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
-  });
-  populateChapSelect('addChap',    document.getElementById('addSubj')?.value);
-  populateChapSelect('importChap', document.getElementById('importSubj')?.value);
-}
-
-// Populate a chapter <select> for a given subject
-function populateChapSelect(selectId, subj) {
+// ── Populate chapter <select> for a given subject ──
+function populateChapSelect(selectId, subj, currentVal) {
   const el = document.getElementById(selectId);
   if (!el) return;
   const chaps = (subj && data.chapters && data.chapters[subj]) ? data.chapters[subj] : [];
   el.innerHTML = `<option value="">— Không có chương —</option>` +
-    chaps.map(c => `<option value="${c}">${c}</option>`).join('');
+    chaps.map(c => `<option value="${c}" ${c===currentVal?'selected':''}>${c}</option>`).join('');
 }
 
 function onAddSubjChange()    { populateChapSelect('addChap',    document.getElementById('addSubj').value); }
 function onImportSubjChange() { populateChapSelect('importChap', document.getElementById('importSubj').value); }
-function onEditSubjChange()   {
-  const subj = document.getElementById('editSubj').value;
-  populateChapSelect('editChap', subj);
+function onEditSubjChange()   { populateChapSelect('editChap',   document.getElementById('editSubj').value); }
+
+function renderSubjectSelects() {
+  ['addSubj','importSubj','chapMgmtSubj'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const cur = el.value;
+    el.innerHTML = data.subjects.map(s => `<option value="${s}" ${s===cur?'selected':''}>${s}</option>`).join('');
+  });
+  populateChapSelect('addChap',    document.getElementById('addSubj')?.value);
+  populateChapSelect('importChap', document.getElementById('importSubj')?.value);
 }
 
 function renderSubjectChips() {
@@ -509,7 +507,7 @@ function renderSubjectChips() {
   el.innerHTML = data.subjects.map(s => `
     <span style="display:inline-flex;align-items:center;gap:6px;background:var(--acc-lt);color:var(--accent);border:1px solid var(--border);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;">
       ${s}
-      <span onclick="removeSubject('${s}')" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa môn này">×</span>
+      <span onclick="removeSubject('${s.replace(/'/g,"\\'")}')" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa môn này">×</span>
     </span>`
   ).join('');
 }
@@ -517,11 +515,7 @@ function renderSubjectChips() {
 function renderChapterChips() {
   const mgmtEl = document.getElementById('chapMgmtSubj');
   if (!mgmtEl) return;
-  // Sync chapMgmtSubj options
-  if (!mgmtEl.options.length || mgmtEl.options[0].value !== (data.subjects[0]||'')) {
-    mgmtEl.innerHTML = data.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
-  }
-  const subj = mgmtEl.value;
+  const subj = mgmtEl.value || data.subjects[0] || '';
   const el = document.getElementById('chapterChips');
   if (!el) return;
   const chaps = (subj && data.chapters && data.chapters[subj]) ? data.chapters[subj] : [];
@@ -532,7 +526,7 @@ function renderChapterChips() {
   el.innerHTML = chaps.map(c => `
     <span style="display:inline-flex;align-items:center;gap:6px;background:var(--bg);color:var(--muted);border:1px solid var(--border);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;">
       📖 ${c}
-      <span onclick="removeChapter('${subj.replace(/'/g,"\\'")}','${c.replace(/'/g,"\\'")}'))" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa chương này">×</span>
+      <span onclick="removeChapter('${subj.replace(/'/g,"\\'")}','${c.replace(/'/g,"\\'")}')" style="cursor:pointer;opacity:.6;font-size:14px;line-height:1;" title="Xóa chương này">×</span>
     </span>`
   ).join('');
 }
@@ -608,6 +602,7 @@ function openEdit(id) {
   editingId = id;
   const sel = document.getElementById('editSubj');
   sel.innerHTML = data.subjects.map(s => `<option value="${s}" ${s===ex.subject?'selected':''}>${s}</option>`).join('');
+  populateChapSelect('editChap', ex.subject, ex.chapter || '');
 
   // Nếu có choices, tái tạo cú pháp \choice để textarea hiển thị đúng
   let qDisplay = ex.question;
@@ -676,9 +671,10 @@ async function saveEdit() {
   const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
   const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
 
+  const chapter = document.getElementById('editChap').value || '';
   data.exercises[idx] = {
     ...data.exercises[idx],
-    subject: subj,
+    subject: subj, chapter,
     question: questionHtml,
     choices,
     solution: ctexInner(s),
@@ -698,8 +694,9 @@ async function saveEdit() {
 
 // ── Import LaTeX ──
 async function doImport() {
-  const raw  = document.getElementById('importLatex').value;
-  const subj = document.getElementById('importSubj').value;
+  const raw     = document.getElementById('importLatex').value;
+  const subj    = document.getElementById('importSubj').value;
+  const chapter = document.getElementById('importChap').value || '';
   const reg  = /\\begin\{ex\}([\s\S]*?)\\end\{ex\}/g;
   let m, cnt = 0, newOnes = [];
 
@@ -722,7 +719,7 @@ async function doImport() {
     const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
     const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
     newOnes.push({
-      id:(Date.now()+cnt).toString(), subject:subj,
+      id:(Date.now()+cnt).toString(), subject:subj, chapter,
       question:questionHtml, choices,
       solution:ctexInner(sol), createdAt:new Date().toISOString()
     });
@@ -733,7 +730,7 @@ async function doImport() {
     const parsed = parseChoice(raw.trim());
     const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(raw.trim());
     const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
-    newOnes.push({ id:Date.now().toString(), subject:subj, question:questionHtml, choices, solution:'', createdAt:new Date().toISOString() });
+    newOnes.push({ id:Date.now().toString(), subject:subj, chapter, question:questionHtml, choices, solution:'', createdAt:new Date().toISOString() });
     cnt = 1;
   }
 
@@ -881,6 +878,39 @@ async function removeSubject(name) {
     await writeFile('Xóa môn học: ' + name);
     renderAdminAll();
     toast('✓ Đã xóa môn "' + name + '"');
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+  }
+}
+
+// ── Chapters ──
+async function addChapter() {
+  const subj = document.getElementById('chapMgmtSubj').value;
+  const n    = document.getElementById('newChapInput').value.trim();
+  if (!subj) { toast('⚠️ Chọn môn học trước!'); return; }
+  if (!n)    { toast('⚠️ Nhập tên chương!'); return; }
+  if (!data.chapters) data.chapters = {};
+  if (!data.chapters[subj]) data.chapters[subj] = [];
+  if (data.chapters[subj].includes(n)) { toast('Chương đã tồn tại trong môn này!'); return; }
+  data.chapters[subj].push(n);
+  try {
+    await writeFile(`Thêm chương "${n}" vào môn ${subj}`);
+    document.getElementById('newChapInput').value = '';
+    renderAdminAll();
+    toast(`✓ Đã thêm chương "${n}"`);
+  } catch(e) {
+    toast('✗ Lỗi: ' + e.message);
+    data.chapters[subj].pop();
+  }
+}
+
+async function removeChapter(subj, name) {
+  if (!confirm(`Xóa chương "${name}" khỏi môn "${subj}"? Các bài tập thuộc chương này sẽ không bị xóa.`)) return;
+  data.chapters[subj] = data.chapters[subj].filter(c => c !== name);
+  try {
+    await writeFile(`Xóa chương "${name}" khỏi môn ${subj}`);
+    renderAdminAll();
+    toast(`✓ Đã xóa chương "${name}"`);
   } catch(e) {
     toast('✗ Lỗi: ' + e.message);
   }
