@@ -8,6 +8,32 @@
   ],
   "exercises": [
     {
+      "id": "1783661805741",
+      "subject": "Cơ sở lập trình",
+      "chapter": "",
+      "question": "Kết quả in ra màn hình của chương trình là gì? <br>\n<code style=\"font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px\">\n\\#include <stdio.h> <br>\n\\#include <string.h> <br>\nint F(char*p) \\{  <br>\n int i = 0; <br>\n while (*p != '$\\setminus$0') \\{ <br>\n  if (*p >='0' \\&\\& *p <='9') i++; p++; <br>\n \\</code> <br>\n return i; <br>\n\\} <br>\nint main() \\{ <br>\n char s[] = \"AaBb12\\#34CD\"; <br>\n printf(\"\\%d\", F(s)); <br>\n\\}\n}",
+      "choices": [
+        {
+          "text": "\"3\"",
+          "correct": false
+        },
+        {
+          "text": "\"4\"",
+          "correct": true
+        },
+        {
+          "text": "\"11\"",
+          "correct": false
+        },
+        {
+          "text": "Kết quả khác",
+          "correct": false
+        }
+      ],
+      "solution": "<code style=\"font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px\">while (*p != '$\\setminus$0')</code>: Duyệt từng ký tự cho đến khi gặp ký tự kết thúc chuỗi. <br> \nĐiều kiện trong <code style=\"font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px\">if</code>: Ký tự hiện tại có phải là chữ số từ `0' đến `9' hay không.",
+      "createdAt": "2026-07-10T05:36:45.741Z"
+    },
+    {
       "id": "1783661695944",
       "subject": "Cơ sở lập trình",
       "chapter": "",
