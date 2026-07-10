@@ -800,7 +800,35 @@ function ctexInner(raw) {
   t = t.replace(/\\textbf\{([^}]*)\}/g, '<strong>$1</strong>');
   t = t.replace(/\\textit\{([^}]*)\}/g, '<em>$1</em>');
   t = t.replace(/\\emph\{([^}]*)\}/g,   '<em>$1</em>');
-  t = t.replace(/\\texttt\{([^}]*)\}/g, '<code style="font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px">$1</code>');
+  // \texttt{...}: brace-counting để bắt nội dung nhiều dòng, xử lý \\ và escape HTML riêng
+  t = t.replace(/\\texttt\s*\{/g, '\x00TT\x00');
+  t = (function applyTexttt(s) {
+    let out = '', i = 0;
+    while (i < s.length) {
+      const idx = s.indexOf('\x00TT\x00', i);
+      if (idx === -1) { out += s.slice(i); break; }
+      out += s.slice(i, idx);
+      let start = idx + 5, depth = 1, j = start;
+      for (; j < s.length && depth > 0; j++) {
+        if      (s[j] === '\\' && (s[j+1] === '{' || s[j+1] === '}')) j++;
+        else if (s[j] === '{') depth++;
+        else if (s[j] === '}') depth--;
+      }
+      const inner = s.slice(start, j - 1);
+      const rendered = inner
+        .replace(/\\\\/g, '<br>')
+        .replace(/\\#/g, '#')
+        .replace(/\\&/g, '&amp;')
+        .replace(/\\indent\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
+        .replace(/\\quad\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
+        .replace(/\\setminus/g, '\\')
+        .replace(/\\\{/g, '{').replace(/\\\}/g, '}')
+        .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      out += '<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all">' + rendered + '</code>';
+      i = j;
+    }
+    return out;
+  })(t);
   t = t.replace(/\\underline\{([^}]*)\}/g, '<u>$1</u>');
   t = t.replace(/\\textcolor\{[^}]*\}\{([^}]*)\}/g, '$1');
   t = t.replace(/\\includegraphics(?:\[.*?\])?\{([^}]+)\}/g, '<img src="$1" style="max-width:100%;height:auto;display:block;margin:14px auto;border-radius:6px;box-shadow:var(--shadow);" alt="Hình minh họa">');
