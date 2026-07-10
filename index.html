@@ -275,10 +275,6 @@ body {
   background: var(--bg);
   color: var(--muted);
   border: 1px solid var(--border);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 160px;
 }
 
 .ex-date { font-size:11px; color:var(--faint); font-family:'Fira Code',monospace; margin-left:auto; }
@@ -596,9 +592,12 @@ function renderSubjects() {
 function renderChapters() {
   const block = document.getElementById('chapBlock');
   const list  = document.getElementById('chapList');
-  // Chỉ hiển thị khi đang chọn môn cụ thể và môn đó có chương
   const chaps = (curSubj !== 'all' && allChapters[curSubj]) ? allChapters[curSubj] : [];
-  if (!chaps.length) { block.style.display = 'none'; curChap = 'all'; return; }
+  if (!chaps.length) {
+    block.style.display = 'none';
+    curChap = 'all';
+    return;
+  }
   block.style.display = 'block';
   const exInSubj = allExercises.filter(e => e.subject === curSubj);
   let html = `<li class="sitem ${curChap==='all'?'active':''}" data-chap="all">
@@ -642,9 +641,9 @@ function renderExercises() {
 
   document.getElementById('pageCnt').textContent = `${data.length} bài`;
   document.getElementById('pageTitle').innerHTML =
-    curSubj === 'all' ? 'Tất cả <em>bài tập</em>' :
-    curChap !== 'all' ? `<em>${curSubj}</em> · ${curChap}` :
-    `Môn: <em>${curSubj}</em>`;
+    curSubj === 'all'  ? 'Tất cả <em>bài tập</em>' :
+    curChap !== 'all'  ? `<em>${curSubj}</em> · ${curChap}` :
+                         `Môn: <em>${curSubj}</em>`;
 
   if (!data.length) {
     list.innerHTML = `<div class="empty"><div class="empty-ico">🔍</div><div class="empty-txt">Không tìm thấy bài tập nào.</div></div>`;
@@ -707,11 +706,10 @@ function toggleSol(id) {
 function setSubj(s, el) {
   curSubj = s;
   curChap = 'all';
-  document.querySelectorAll('.sitem').forEach(li => li.classList.remove('active'));
+  document.querySelectorAll('#subjList .sitem').forEach(li => li.classList.remove('active'));
   if (el) el.classList.add('active');
   renderChapters();
   renderExercises();
-  renderSubjects();
 }
 
 document.getElementById('searchInput').addEventListener('input', e => {
