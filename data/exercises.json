@@ -11,7 +11,7 @@
       "id": "1783663124823",
       "subject": "Cơ sở lập trình",
       "chapter": "",
-      "question": "Kết quả của chương trình sau là gì: <br>\n<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">#include &lt;stdio.h&gt; &lt;br&gt;\nint main() { &lt;br&gt;\n&nbsp;&nbsp;&nbsp;&nbsp;int x, *p; &lt;br&gt;\n&nbsp;&nbsp;&nbsp;&nbsp;x=6; p=&amp;x; &lt;br&gt;\n&nbsp;&nbsp;&nbsp;&nbsp;*p=9; printf(“\\%d \\%d”,x, *p); &lt;br&gt;\n} </code>",
+      "question": "Kết quả của chương trình sau là gì: <br>\n<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">#include &lt;stdio.h&gt; \nint main() {\n&nbsp;&nbsp;&nbsp;&nbsp;int x, *p;\n&nbsp;&nbsp;&nbsp;&nbsp;x=6; p=&amp;x; \n&nbsp;&nbsp;&nbsp;&nbsp;*p=9; printf(“%d %d”,x, *p); \n} </code>",
       "choices": [
         {
           "text": "\"69\"",
@@ -31,7 +31,8 @@
         }
       ],
       "solution": "Giả sử hệ điều hành cấp phát \n\\[\n\\begin{array}{|l|c|c|}\n\\hline\n\\textbf{Biến} & \\textbf{địa chỉ} & \\textbf{giá trị} \\\\\n\\hline\n\\texttt{x} & \\texttt{0x00A1} & \\text{Rác} \\\\\n\\hline\n\\texttt{p} & \\texttt{0x00B2} & \\text{Rác} \\\\\n\\hline \n\\end{array}\n\\]\nCó thể xem như ánh xạ \n\\begin{align*}\nx \\longrightarrow 0x00A1 \\longrightarrow \\, ? \\\\\np \\longrightarrow 0x00B2 \\longrightarrow \\, ?\n\\end{align*}\nKhi <code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">=6</code> thì CPU ghi số 6 vào ô nhớ của x. \n\\begin{align*}\nx \\longrightarrow 0x00A1 \\longrightarrow \\, 6 \\\\\np \\longrightarrow 0x00B2 \\longrightarrow \\, ?\n\\end{align*}\nKhi <code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\"> = &amp; x</code> (= địa chỉ của <code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\"> = 0x00A1</code>) \n\\begin{align*}\n& x \\longrightarrow 0x00A1 \\longrightarrow \\, 6 \\\\\n& p \\longrightarrow 0x00B2 \\longrightarrow \\, 0x00A1\n\\end{align*}\nKhi <code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">p = 9</code> thì CPU đọc giá trị trong p được 0x00A1, xem 0x00A1 là một địa chỉ, đi đến ô nhớ 0x00A1 rồi ghi số 9 vào ô nhớ đó. Sau đó \n\\begin{align*}\n& x \\longrightarrow 0x00A1 \\longrightarrow \\, 9 \\\\\n& p \\longrightarrow 0x00B2 \\longrightarrow \\, 0x00A1\n\\end{align*} \nVì x chính là tên của ô nhớ ở địa chỉ 0x00A1, nên khi ô nhớ này đổi từ 6 thành 9, giá trị của x cũng đổi thành 9.",
-      "createdAt": "2026-07-10T05:58:44.823Z"
+      "createdAt": "2026-07-10T05:58:44.823Z",
+      "updatedAt": "2026-07-10T06:02:34.524Z"
     },
     {
       "id": "1783661805741",
