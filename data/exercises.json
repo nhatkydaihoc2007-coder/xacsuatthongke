@@ -8,6 +8,32 @@
   ],
   "exercises": [
     {
+      "id": "1783661695944",
+      "subject": "Cơ sở lập trình",
+      "chapter": "",
+      "question": "Cho đoạn mã: <br>\n<code style=\"font-family:monospace;background:rgba(128,128,128,.12);padding:1px 5px;border-radius:3px\">int c=0, a=5, b=7; <br>\nif (a>5) if (b<6) c=1; else c=2;</code> <br>\nGiá trị của c sau khi thực hiện đoạn lệnh trên là:",
+      "choices": [
+        {
+          "text": "0",
+          "correct": true
+        },
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "Đoạn lệnh lỗi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-10T05:34:55.944Z"
+    },
+    {
       "id": "1782631730126",
       "subject": "Kinh Tế Vi Mô",
       "question": "Đường bàng quan (Indifference Curve) dùng để biểu diễn điều gì?",
