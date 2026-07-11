@@ -9,6 +9,526 @@
   ],
   "exercises": [
     {
+      "id": "1783790444574",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Dịch vụ cơ sở hạ tầng nào cung cấp kết nối dữ liệu, giọng nói và video cho nhân viên, khách hàng và nhà cung cấp?",
+      "choices": [
+        {
+          "text": "Nền tảng Internet",
+          "correct": false
+        },
+        {
+          "text": "Nền tảng mạng/viễn thông",
+          "correct": true
+        },
+        {
+          "text": "Quản lý và lưu trữ dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Hệ điều hành",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.574Z"
+    },
+    {
+      "id": "1783790444576",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Công nghệ nào sau đây cho phép một tài nguyên vật lý duy nhất (chẳng hạn như một máy chủ hoặc thiết bị lưu trữ) hiển thị với người dùng như nhiều tài nguyên logic riêng biệt?",
+      "choices": [
+        {
+          "text": "Điện toán đám mây",
+          "correct": false
+        },
+        {
+          "text": "Xử lý đa lõi",
+          "correct": false
+        },
+        {
+          "text": "Ảo hóa",
+          "correct": true
+        },
+        {
+          "text": "Điện toán tự trị",
+          "correct": false
+        }
+      ],
+      "solution": "Ảo hóa cho phép một máy chủ vật lý chạy nhiều máy chủ ảo, giúp giảm chi phí phần cứng và điện năng.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444577",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Định luật Moore khẳng định điều gì?",
+      "choices": [
+        {
+          "text": "Sức mạnh tính toán (số lượng bóng bán dẫn trên chip) tăng gấp đôi sau mỗi 18-24 tháng",
+          "correct": true
+        },
+        {
+          "text": "Chi phí lưu trữ dữ liệu giảm $50\\%$ sau mỗi 18 tháng",
+          "correct": false
+        },
+        {
+          "text": "Giá trị của mạng lưới tăng theo cấp số nhân khi số người dùng tăng",
+          "correct": false
+        },
+        {
+          "text": "Sức mạnh máy tính sẽ đạt đến giới hạn và đi ngang trong 10 năm tới",
+          "correct": false
+        }
+      ],
+      "solution": "Đây là động lực chính khiến máy tính ngày càng nhỏ, mạnh và rẻ hơn.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444578",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Định luật nào phát biểu rằng giá trị hoặc sức mạnh của một mạng lưới tăng theo cấp số nhân, tỷ lệ thuận với số lượng thành viên trong mạng lưới đó?",
+      "choices": [
+        {
+          "text": "Định luật Moore",
+          "correct": false
+        },
+        {
+          "text": "Quy luật về lưu trữ kỹ thuật số hàng loạt",
+          "correct": false
+        },
+        {
+          "text": "Định luật Metcalfe",
+          "correct": true
+        },
+        {
+          "text": "Quy luật mở rộng",
+          "correct": false
+        }
+      ],
+      "solution": "Định luật Metcalfe giải thích sức mạnh của kinh tế mạng, ví dụ như giá trị của Facebook tăng vọt khi có thêm người dùng.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444579",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Đâu KHÔNG PHẢI là một trong ba mô hình dịch vụ của Điện toán đám mây (Cloud Computing)?",
+      "choices": [
+        {
+          "text": "Cơ sở hạ tầng như một dịch vụ (IaaS)",
+          "correct": false
+        },
+        {
+          "text": "Phần mềm như một dịch vụ (SaaS)",
+          "correct": false
+        },
+        {
+          "text": "Nền tảng như một dịch vụ (PaaS)",
+          "correct": false
+        },
+        {
+          "text": "Ảo hóa như một dịch vụ (Virtualization as a service)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444580",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Một máy tính khách được kết nối mạng với một máy chủ (Server), trong đó công việc xử lý được chia sẻ giữa hai loại máy này, được gọi là kiến trúc gì?",
+      "choices": [
+        {
+          "text": "Kiến trúc hướng dịch vụ (SOA)",
+          "correct": false
+        },
+        {
+          "text": "Kiến trúc máy khách/máy chủ hai tầng",
+          "correct": true
+        },
+        {
+          "text": "Kiến trúc điện toán lưới",
+          "correct": false
+        },
+        {
+          "text": "Điện toán doanh nghiệp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444581",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Đâu là một ví dụ về Hệ thống cũ (Legacy system) trong hạ tầng CNTT?",
+      "choices": [
+        {
+          "text": "Hệ thống xử lý giao dịch (TPS) đang chạy trên máy tính lớn đời cũ",
+          "correct": true
+        },
+        {
+          "text": "Một ứng dụng SaaS trên nền tảng đám mây",
+          "correct": false
+        },
+        {
+          "text": "Một hệ thống tính toán lưới có khả năng mở rộng",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống điện toán lượng tử",
+          "correct": false
+        }
+      ],
+      "solution": "Hệ thống cũ là các hệ thống được tạo ra từ kỷ nguyên mainframe, vẫn còn hoạt động vì chi phí thay thế quá đắt đỏ.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444582",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Khả năng tồn tại ở nhiều trạng thái cùng một lúc (0, 1 hoặc cả hai), giúp gia tăng đáng kể sức mạnh và tốc độ xử lý dữ liệu, là đặc điểm nổi bật của công nghệ nào?",
+      "choices": [
+        {
+          "text": "Điện toán biên",
+          "correct": false
+        },
+        {
+          "text": "Máy chủ phiến",
+          "correct": false
+        },
+        {
+          "text": "Điện toán lượng tử",
+          "correct": true
+        },
+        {
+          "text": "Điện toán xanh",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444583",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Các công ty cho phép nhân viên sử dụng thiết bị di động cá nhân (như điện thoại, laptop của chính họ) tại nơi làm việc đang áp dụng xu hướng nào sau đây?",
+      "choices": [
+        {
+          "text": "Tùy chỉnh hàng loạt",
+          "correct": false
+        },
+        {
+          "text": "BYOD",
+          "correct": true
+        },
+        {
+          "text": "Điện toán đeo được",
+          "correct": false
+        },
+        {
+          "text": "Dịch vụ Web",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444584",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Phần mềm mã nguồn mở có đặc điểm gì?",
+      "choices": [
+        {
+          "text": "Được thiết kế độc quyền cho một loại vi xử lý cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Do một công ty duy nhất phát triển và bán bản quyền",
+          "correct": false
+        },
+        {
+          "text": "Được tạo ra, cập nhật bởi một cộng đồng lập trình viên trên toàn thế giới và miễn phí",
+          "correct": true
+        },
+        {
+          "text": "Chỉ phù hợp với người dùng cá nhân, không dùng cho máy chủ doanh nghiệp",
+          "correct": false
+        }
+      ],
+      "solution": "Linux là ví dụ điển hình nhất của hệ điều hành mã nguồn mở.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444585",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Thực tiễn ký hợp đồng giao việc phát triển hoặc quản lý phần mềm/hạ tầng CNTT cho một công ty bên ngoài được gọi là gì?",
+      "choices": [
+        {
+          "text": "Kiến trúc hướng dịch vụ (SOA)",
+          "correct": false
+        },
+        {
+          "text": "Gia công phần mềm (Outsourcing)",
+          "correct": true
+        },
+        {
+          "text": "Điện toán tiện ích (Utility computing)",
+          "correct": false
+        },
+        {
+          "text": "Mở rộng quy mô (Scaling)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444586",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Khi doanh nghiệp sử dụng dịch vụ đám mây hoặc thuê ngoài, bản hợp đồng chính thức trong đó vạch ra các trách nhiệm cụ thể mà nhà cung cấp phải đáp ứng cho khách hàng được gọi là:",
+      "choices": [
+        {
+          "text": "Kiến trúc hướng dịch vụ (SOA)",
+          "correct": false
+        },
+        {
+          "text": "Thỏa thuận mức độ dịch vụ (SLA)",
+          "correct": true
+        },
+        {
+          "text": "Phân tích Tổng chi phí sở hữu (TCO)",
+          "correct": false
+        },
+        {
+          "text": "Giấy phép mã nguồn mở",
+          "correct": false
+        }
+      ],
+      "solution": "SLA - Service Level Agreement là bắt buộc để đảm bảo chất lượng dịch vụ khi thuê ngoài.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444587",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Thuật ngữ nào sau đây đề cập đến khả năng của một máy tính, phần mềm hoặc hệ thống mạng có thể mở rộng để phục vụ số lượng người dùng lớn hơn mà không bị quá tải hay hỏng hóc?",
+      "choices": [
+        {
+          "text": "Tính di động",
+          "correct": false
+        },
+        {
+          "text": "Tùy chỉnh",
+          "correct": false
+        },
+        {
+          "text": "Khả năng mở rộng",
+          "correct": true
+        },
+        {
+          "text": "Sự cộng hưởng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444588",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Trong phân tích Tổng chi phí sở hữu (TCO) của một hệ thống công nghệ, chi phí mua sắm phần cứng và phần mềm ban đầu thường chỉ chiếm khoảng bao nhiêu phần trăm?",
+      "choices": [
+        {
+          "text": "Khoảng 20%",
+          "correct": true
+        },
+        {
+          "text": "Khoảng 50%",
+          "correct": false
+        },
+        {
+          "text": "Khoảng 75%",
+          "correct": false
+        },
+        {
+          "text": "Khoảng 90%",
+          "correct": false
+        }
+      ],
+      "solution": "Tiền mua máy móc chỉ chiếm 20%. 80% còn lại là chi phí ẩn như cài đặt, đào tạo, bảo trì, hỗ trợ, nâng cấp và chi phí do thời gian ngừng hoạt động.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444589",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Các thông số kỹ thuật chung được chấp nhận trên toàn cầu (ví dụ: giao thức TCP/IP, Wi-Fi) giúp đảm bảo sự tương thích của các sản phẩm và khả năng giao tiếp trên mạng được gọi là",
+      "choices": [
+        {
+          "text": "Tiêu chuẩn mạng",
+          "correct": false
+        },
+        {
+          "text": "Tiêu chuẩn Internet",
+          "correct": false
+        },
+        {
+          "text": "Tiêu chuẩn công nghệ",
+          "correct": true
+        },
+        {
+          "text": "Tiêu chuẩn viễn thông",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444590",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Một mạch tích hợp mà trên đó có hai hoặc nhiều bộ vi xử lý được gắn vào để tăng cường hiệu suất đọc/thực hiện lệnh và giảm mức tiêu thụ điện năng được gọi là:",
+      "choices": [
+        {
+          "text": "Bộ xử lý đa lõi",
+          "correct": true
+        },
+        {
+          "text": "Mạch xanh",
+          "correct": false
+        },
+        {
+          "text": "Bộ vi xử lý kế thừa",
+          "correct": false
+        },
+        {
+          "text": "Máy chủ phiến",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444591",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "$\\_\\_\\_\\_\\_\\_\\_\\_$ là một tập hợp các dịch vụ phần mềm độc lập, tự chứa, có khả năng giao tiếp với nhau để tạo ra một ứng dụng phần mềm hoạt động (giúp lập trình viên tái sử dụng mã thay vì viết lại từ đầu).",
+      "choices": [
+        {
+          "text": "Dịch vụ Web",
+          "correct": false
+        },
+        {
+          "text": "Kiến trúc hướng dịch vụ (SOA)",
+          "correct": true
+        },
+        {
+          "text": "Phần mềm đóng gói",
+          "correct": false
+        },
+        {
+          "text": "Phần mềm mã nguồn mở",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444592",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Công nghệ/Xu hướng phần cứng nào sau đây tập trung vào các phương pháp sản xuất, sử dụng và thải bỏ máy tính/mạng nhằm mục tiêu ưu tiên hàng đầu là giảm mức tiêu thụ điện năng và bảo vệ môi trường?",
+      "choices": [
+        {
+          "text": "Điện toán lượng tử",
+          "correct": false
+        },
+        {
+          "text": "Điện toán biên",
+          "correct": false
+        },
+        {
+          "text": "Điện toán xanh",
+          "correct": true
+        },
+        {
+          "text": "Điện toán đám mây",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444593",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Ngôn ngữ/định dạng chuẩn nào được sử dụng để trao đổi dữ liệu, cho phép các dịch vụ web truyền dữ liệu từ một quy trình này sang một quy trình khác một cách trơn tru?",
+      "choices": [
+        {
+          "text": "HTML",
+          "correct": false
+        },
+        {
+          "text": "HTML5",
+          "correct": false
+        },
+        {
+          "text": "XML",
+          "correct": true
+        },
+        {
+          "text": "Java",
+          "correct": false
+        }
+      ],
+      "solution": "XML - Ngôn ngữ đánh dấu mở rộng là công nghệ nền tảng của các Dịch vụ Web.",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
+      "id": "1783790444594",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
+      "question": "Việc đặt các máy chủ ở rìa mạng, gần với nguồn dữ liệu nhất thay vì truyền toàn bộ dữ liệu về đám mây trung tâm (nhằm mục đích giảm độ trễ và lưu lượng mạng) được gọi là:",
+      "choices": [
+        {
+          "text": "Điện toán đám mây lai",
+          "correct": false
+        },
+        {
+          "text": "Tính toán trong bộ nhớ",
+          "correct": false
+        },
+        {
+          "text": "Điện toán lượng tử",
+          "correct": false
+        },
+        {
+          "text": "Điện toán biên",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:20:44.575Z"
+    },
+    {
       "id": "1783790147524",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "HTTT, Tổ chức và Chiến lược",
