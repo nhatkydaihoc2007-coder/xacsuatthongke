@@ -9,6 +9,552 @@
   ],
   "exercises": [
     {
+      "id": "1783790147524",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Tất cả những yếu tố sau đây đều là các lực lượng cạnh tranh trong mô hình của Porter NGOẠI TRỪ:",
+      "choices": [
+        {
+          "text": "Nhà cung cấp",
+          "correct": false
+        },
+        {
+          "text": "Các đối thủ mới gia nhập thị trường",
+          "correct": false
+        },
+        {
+          "text": "Môi trường bên ngoài",
+          "correct": true
+        },
+        {
+          "text": "Khách hàng",
+          "correct": false
+        }
+      ],
+      "solution": "5 lực lượng cạnh tranh của Porter là: Đối thủ truyền thống, Đối thủ mới, Sản phẩm thay thế, Khách hàng, Nhà cung cấp.",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147525",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Mô hình nào nhấn mạnh các hoạt động chính hoặc hoạt động hỗ trợ làm tăng thêm giá trị cho sản phẩm/dịch vụ của công ty, nơi mà hệ thống thông tin có thể được áp dụng tốt nhất để đạt lợi thế cạnh tranh?",
+      "choices": [
+        {
+          "text": "Mô hình các lực lượng cạnh tranh",
+          "correct": false
+        },
+        {
+          "text": "Mô hình chuỗi giá trị (Value chain)",
+          "correct": true
+        },
+        {
+          "text": "Mô hình quyền lực thương lượng",
+          "correct": false
+        },
+        {
+          "text": "Mô hình đối thủ mới",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147526",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Theo mô hình các lực lượng cạnh tranh của Porter, một công ty có thể kiểm soát và có sức mạnh thương lượng tốt hơn đối với các nhà cung cấp của mình bằng cách:",
+      "choices": [
+        {
+          "text": "Có nhiều nhà cung cấp hơn",
+          "correct": true
+        },
+        {
+          "text": "Có ít nhà cung cấp hơn",
+          "correct": false
+        },
+        {
+          "text": "Chỉ có một nhà cung cấp duy nhất",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng nhà cung cấp địa phương thay vì toàn cầu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147527",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Sự tương tác và mối quan hệ giữa CNTT và tổ chức chịu ảnh hưởng bởi yếu tố nào?",
+      "choices": [
+        {
+          "text": "Chỉ bởi các quyết định của quản lý cấp cao",
+          "correct": false
+        },
+        {
+          "text": "Chỉ bởi sự phát triển của các phần mềm và phần cứng mới",
+          "correct": false
+        },
+        {
+          "text": "Nhiều yếu tố trung gian, bao gồm cấu trúc, chính trị, văn hóa, môi trường và quy trình kinh doanh",
+          "correct": true
+        },
+        {
+          "text": "Hai lực lượng kinh tế vĩ mô chính: nguồn vốn và lao động",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147528",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Theo Lý thuyết chi phí giao dịch, khi một công ty quyết định mua trên thị trường bên ngoài những thứ mà họ không thể tự sản xuất, các chi phí phát sinh đó được gọi là gì?",
+      "choices": [
+        {
+          "text": "Chi phí chuyển đổi (Switching costs)",
+          "correct": false
+        },
+        {
+          "text": "Chi phí mạng lưới (Network costs)",
+          "correct": false
+        },
+        {
+          "text": "Chi phí đại lý (Agency costs)",
+          "correct": false
+        },
+        {
+          "text": "Chi phí giao dịch (Transaction costs)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147529",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Theo Lý thuyết đại lý, một công ty được xem như là",
+      "choices": [
+        {
+          "text": "Một thực thể thống nhất, luôn hướng tới tối đa hóa lợi nhuận",
+          "correct": false
+        },
+        {
+          "text": "Một điểm giao thoa của các hợp đồng giữa các cá nhân có tư lợi, đòi hỏi sự giám sát",
+          "correct": true
+        },
+        {
+          "text": "Một tổ chức đặc nhiệm phải phản ứng liên tục với môi trường thay đổi nhanh chóng",
+          "correct": false
+        },
+        {
+          "text": "Một cấu trúc mạng lưới phi tập trung hoàn toàn",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147530",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Trong mô hình của Porter, sản phẩm thay thế nào sau đây sẽ là mối đe dọa/lo ngại lớn nhất đối với một nhà phân phối truyền hình cáp?",
+      "choices": [
+        {
+          "text": "Truyền hình vệ tinh",
+          "correct": true
+        },
+        {
+          "text": "Truyền hình phát sóng",
+          "correct": false
+        },
+        {
+          "text": "Internet băng thông rộng",
+          "correct": false
+        },
+        {
+          "text": "Radio",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147531",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Một công ty có thể kiểm soát và có sức mạnh thương lượng tốt hơn đối với các nhà cung cấp của mình bằng cách nào?",
+      "choices": [
+        {
+          "text": "Có nhiều nhà cung cấp hơn để dễ dàng lựa chọn",
+          "correct": false
+        },
+        {
+          "text": "Có ít nhà cung cấp hơn",
+          "correct": false
+        },
+        {
+          "text": "Mở rộng thị trường bán lẻ toàn cầu",
+          "correct": false
+        },
+        {
+          "text": "Chỉ sử dụng duy nhất một nhà cung cấp độc quyền",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147532",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Khả năng cung cấp các sản phẩm hoặc dịch vụ được thiết kế riêng cho từng cá nhân bằng cách sử dụng cùng các nguồn lực như sản xuất hàng loạt được gọi là gì?",
+      "choices": [
+        {
+          "text": "Tiếp thị vi mô",
+          "correct": false
+        },
+        {
+          "text": "Tùy chỉnh quy mô nhỏ",
+          "correct": false
+        },
+        {
+          "text": "Tùy chỉnh hàng loạt",
+          "correct": true
+        },
+        {
+          "text": "Tiếp thị quy mô lớn",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147533",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Hoạt động nào sau đây đại diện cho các HOẠT ĐỘNG CHÍNH trực tiếp tạo ra giá trị cho khách hàng trong Mô hình chuỗi giá trị?",
+      "choices": [
+        {
+          "text": "Logistics đầu vào, Vận hành sản xuất, Logistics đầu ra, Bán hàng \\& tiếp thị, và Dịch vụ",
+          "correct": true
+        },
+        {
+          "text": "Logistics đầu vào, Vận hành sản xuất, Logistics đầu ra, Công nghệ, và Dịch vụ",
+          "correct": false
+        },
+        {
+          "text": "Thu mua, Logistics đầu vào, Vận hành sản xuất, Công nghệ, và Logistics đầu ra",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở hạ tầng tổ chức, Nguồn nhân lực, Công nghệ, và Thu mua",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147534",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Hoạt động nào sau đây là một HOẠT ĐỘNG HỖ TRỢ trong chuỗi giá trị của công ty?",
+      "choices": [
+        {
+          "text": "Logistics đầu vào",
+          "correct": false
+        },
+        {
+          "text": "Vận hành sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Bán hàng và tiếp thị",
+          "correct": false
+        },
+        {
+          "text": "Công nghệ",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147535",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Thuật ngữ nào dùng để chỉ việc công ty liên tục đo lường tính hiệu quả của các quy trình kinh doanh của mình và so sánh nó với các công ty giỏi nhất trong ngành?",
+      "choices": [
+        {
+          "text": "So sánh chuẩn (Benchmarking)",
+          "correct": true
+        },
+        {
+          "text": "Thực tiễn tốt nhất (Best practices)",
+          "correct": false
+        },
+        {
+          "text": "Phân tích chuỗi giá trị (Value chain analysis)",
+          "correct": false
+        },
+        {
+          "text": "Phân tích hệ thống chiến lược (Strategic systems analysis)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147536",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Chi phí về thời gian và nguồn lực mà khách hàng hoặc công ty phải gánh chịu khi chuyển từ nhà cung cấp/hệ thống hiện tại sang một nhà cung cấp/hệ thống cạnh tranh khác được gọi là",
+      "choices": [
+        {
+          "text": "Chi phí duy trì",
+          "correct": false
+        },
+        {
+          "text": "Chi phí khác biệt hóa",
+          "correct": false
+        },
+        {
+          "text": "Chi phí chuyển đổi",
+          "correct": true
+        },
+        {
+          "text": "Chi phí biến đổi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147537",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Mạng lưới nào là tập hợp các công ty độc lập sử dụng công nghệ thông tin để điều phối các chuỗi giá trị của họ, nhằm cùng nhau sản xuất ra một sản phẩm hoặc dịch vụ cho thị trường?",
+      "choices": [
+        {
+          "text": "Chuỗi cung ứng thượng nguồn",
+          "correct": false
+        },
+        {
+          "text": "Mạng lưới hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "Mạng lưới giá trị",
+          "correct": true
+        },
+        {
+          "text": "Chợ điện tử",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147538",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Lĩnh vực/Hoạt động mà một công ty đang dẫn đầu thế giới (vượt trội hơn hẳn các đối thủ khác nhờ tích lũy kiến thức và kinh nghiệm) được gọi là gì?",
+      "choices": [
+        {
+          "text": "Khu vực chuyên môn",
+          "correct": false
+        },
+        {
+          "text": "Lợi thế cạnh tranh tạm thời",
+          "correct": false
+        },
+        {
+          "text": "Động lực tăng trưởng",
+          "correct": false
+        },
+        {
+          "text": "Năng lực cốt lõi",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147539",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Khái niệm nào xảy ra khi đầu ra của một đơn vị trong công ty được sử dụng làm đầu vào cho một đơn vị khác, hoặc khi hai tổ chức sáp nhập thị trường để giảm chi phí và tạo ra nhiều lợi nhuận hơn?",
+      "choices": [
+        {
+          "text": "Năng lực cốt lõi",
+          "correct": false
+        },
+        {
+          "text": "Sự cộng hưởng",
+          "correct": true
+        },
+        {
+          "text": "Kinh tế mạng lưới",
+          "correct": false
+        },
+        {
+          "text": "Tích hợp theo chiều dọc",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147540",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Theo nguyên lý của Kinh tế mạng lưới, giá trị của một sản phẩm phần mềm (hoặc một mạng xã hội) sẽ thay đổi như thế nào?",
+      "choices": [
+        {
+          "text": "Giảm đi khi có quá nhiều người sử dụng do tắc nghẽn hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Bị chi phối bởi quy luật lợi nhuận giảm dần",
+          "correct": false
+        },
+        {
+          "text": "Tăng lên theo cấp số nhân khi số lượng người sử dụng nó tăng lên",
+          "correct": true
+        },
+        {
+          "text": "Giữ nguyên không đổi bất kể số lượng người dùng là bao nhiêu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.524Z"
+    },
+    {
+      "id": "1783790147542",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Theo góc nhìn hành vi, sự phản kháng chính trị trong tổ chức sinh ra là do đâu?",
+      "choices": [
+        {
+          "text": "Do sự khác biệt về quan điểm đối với việc phân bổ nguồn lực, dẫn đến đấu tranh và cạnh tranh",
+          "correct": true
+        },
+        {
+          "text": "Do nhân viên không được đào tạo đầy đủ về kỹ năng máy tính",
+          "correct": false
+        },
+        {
+          "text": "Do sự can thiệp của chính phủ vào môi trường kinh doanh của công ty",
+          "correct": false
+        },
+        {
+          "text": "Do công ty không có đủ ngân sách để duy trì hoạt động",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.525Z"
+    },
+    {
+      "id": "1783790147543",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Theo mô hình nghiên cứu về sự phản kháng của tổ chức đối với sự thay đổi, để triển khai thành công một hệ thống thông tin mới, 4 thành phần nào phải được thay đổi đồng thời?",
+      "choices": [
+        {
+          "text": "Môi trường, Tổ chức, Cấu trúc, và Nhiệm vụ",
+          "correct": false
+        },
+        {
+          "text": "Nhiệm vụ công việc, Công nghệ, Con người, và Cấu trúc",
+          "correct": true
+        },
+        {
+          "text": "Chi phí, Mạng lưới, Hệ thống, và Nhân sự",
+          "correct": false
+        },
+        {
+          "text": "Phần cứng, Phần mềm, Dữ liệu, và Con người",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.525Z"
+    },
+    {
+      "id": "1783790147544",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Các sản phẩm hoặc dịch vụ thay thế có hiệu suất tương đương hoặc tốt hơn, mang lại sự thay đổi sâu rộng, có khả năng hủy diệt các doanh nghiệp và ngành công nghiệp truyền thống (ví dụ: Điện thoại thông minh, Internet) được gọi chung là",
+      "choices": [
+        {
+          "text": "Công nghệ đột phá",
+          "correct": true
+        },
+        {
+          "text": "Hệ thống kế thừa",
+          "correct": false
+        },
+        {
+          "text": "Năng lực cốt lõi",
+          "correct": false
+        },
+        {
+          "text": "Nền tảng kỹ thuật số",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.525Z"
+    },
+    {
+      "id": "1783790147545",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "HTTT, Tổ chức và Chiến lược",
+      "question": "Công nghệ thông tin làm phẳng hóa (Flattening) các tổ chức bằng cách nào?",
+      "choices": [
+        {
+          "text": "Loại bỏ hoàn toàn vai trò của các nhà quản lý cấp cao",
+          "correct": false
+        },
+        {
+          "text": "Phân phối thông tin cho các cấp thấp hơn, trao quyền cho nhân viên tự ra quyết định và cắt giảm bớt lớp quản lý cấp trung",
+          "correct": true
+        },
+        {
+          "text": "Gom mọi quyền ra quyết định về một cơ sở dữ liệu trung tâm duy nhất",
+          "correct": false
+        },
+        {
+          "text": "Buộc công ty phải chuyển đổi từ sản xuất sang cung cấp dịch vụ trực tuyến",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:15:47.525Z"
+    },
+    {
       "id": "1783789707717",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
