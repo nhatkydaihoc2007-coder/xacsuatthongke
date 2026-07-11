@@ -9,6 +9,266 @@
   ],
   "exercises": [
     {
+      "id": "1783789707717",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Đâu <strong>KHÔNG PHẢI</strong> là một trong 6 mục tiêu kinh doanh chiến lược của hệ thống thông tin?",
+      "choices": [
+        {
+          "text": "Sản phẩm và dịch vụ mới",
+          "correct": false
+        },
+        {
+          "text": "Cải thiện khả năng ra quyết định",
+          "correct": false
+        },
+        {
+          "text": "Lợi thế cạnh tranh",
+          "correct": false
+        },
+        {
+          "text": "Cải thiện tinh thần của nhân viên",
+          "correct": true
+        }
+      ],
+      "solution": "6 mục tiêu chiến lược bao gồm: Sự xuất sắc trong vận hành; Sản phẩm, dịch vụ và mô hình kinh doanh mới; Sự gắn kết khách hàng/nhà cung cấp; Cải thiện ra quyết định; Lợi thế cạnh tranh; Sự sống còn",
+      "createdAt": "2026-07-11T17:08:27.717Z"
+    },
+    {
+      "id": "1783789707719",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Một công ty bắt buộc phải đầu tư vào hệ thống thông tin mới do các quy định mới của pháp luật hoặc do các đối thủ đều đã áp dụng. Công ty này đang tìm cách đạt được mục tiêu kinh doanh nào?",
+      "choices": [
+        {
+          "text": "Sự xuất sắc trong vận hành",
+          "correct": false
+        },
+        {
+          "text": "Cải thiện khả năng ra quyết định",
+          "correct": false
+        },
+        {
+          "text": "Sự sống còn",
+          "correct": true
+        },
+        {
+          "text": "Sự thân thiết với khách hàng",
+          "correct": false
+        }
+      ],
+      "solution": "Khi việc đầu tư là bắt buộc để duy trì hoạt động kinh doanh hoặc tuân thủ luật pháp, nó thuộc về mục tiêu Sự sống còn - Survival.",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707720",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Ba hoạt động cốt lõi trong một hệ thống thông tin tạo ra luồng thông tin mà các tổ chức sử dụng để kiểm soát hoạt động kinh doanh là:",
+      "choices": [
+        {
+          "text": "Đầu vào, đầu ra và phản hồi",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu, thông tin và phân tích",
+          "correct": false
+        },
+        {
+          "text": "Đầu vào, xử lý và đầu ra",
+          "correct": true
+        },
+        {
+          "text": "Phân tích dữ liệu, xử lý và phản hồi",
+          "correct": false
+        }
+      ],
+      "solution": "Ba hoạt động cơ bản nhất là Input (Đầu vào) → Processing (Xử lý) → Output (Đầu ra)",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707721",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Những nhân sự có nhiệm vụ thiết kế các sản phẩm hoặc dịch vụ mới cho công ty (ví dụ: kỹ sư, nhà khoa học) thuộc cấp độ nào trong hệ thống phân cấp tổ chức?",
+      "choices": [
+        {
+          "text": "Quản lý cấp trung (Middle management)",
+          "correct": false
+        },
+        {
+          "text": "Người lao động tri thức (Knowledge workers)",
+          "correct": true
+        },
+        {
+          "text": "Công nhân sản xuất (Production workers)",
+          "correct": false
+        },
+        {
+          "text": "Quản lý cấp cao (Senior management)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707722",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Khối lượng dữ liệu khổng lồ được tạo ra bởi các hoạt động trên Internet, chẳng hạn như lưu lượng truy cập web, email và phương tiện truyền thông xã hội, được gọi là",
+      "choices": [
+        {
+          "text": "Internet vạn vật",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu lớn",
+          "correct": true
+        },
+        {
+          "text": "Điện toán đám mây",
+          "correct": false
+        },
+        {
+          "text": "Nền tảng kỹ thuật số di động",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707723",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Tập hợp các giả định, giá trị và cách thức làm việc cơ bản đã được hầu hết các thành viên của công ty chấp nhận được gọi là:",
+      "choices": [
+        {
+          "text": "Môi trường tổ chức",
+          "correct": false
+        },
+        {
+          "text": "Quy trình kinh doanh",
+          "correct": false
+        },
+        {
+          "text": "Cấu trúc quản lý",
+          "correct": false
+        },
+        {
+          "text": "Văn hóa tổ chức",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707724",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Các công nghệ mạng và viễn thông, cùng với phần cứng máy tính, phần mềm, công nghệ quản lý dữ liệu và con người cần thiết để vận hành chúng, tạo thành yếu tố nào của một tổ chức?",
+      "choices": [
+        {
+          "text": "Môi trường quản lý dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở hạ tầng công nghệ thông tin",
+          "correct": true
+        },
+        {
+          "text": "Mạng lưới kinh doanh",
+          "correct": false
+        },
+        {
+          "text": "Cấu trúc kỹ thuật xã hội",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707725",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Ngành học nào tập trung nghiên cứu hệ thống thông tin kết hợp cả sự hiểu biết về khía cạnh hành vi (xã hội học, tâm lý học) và khía cạnh kỹ thuật (khoa học máy tính)?",
+      "choices": [
+        {
+          "text": "Khoa học quản lý (Management Science)",
+          "correct": false
+        },
+        {
+          "text": "Khoa học máy tính (Computer Science)",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống thông tin quản lý (Management Information Systems - MIS)",
+          "correct": true
+        },
+        {
+          "text": "Nghiên cứu vận hành (Operations Research)",
+          "correct": false
+        }
+      ],
+      "solution": "MIS kết hợp các phương pháp tiếp cận kỹ thuật (toán học, máy tính) với các vấn đề hành vi (tâm lý học, xã hội học) để hiểu rõ hệ thống.",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707726",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Việc theo dõi và duy trì các hồ sơ thu chi của tổ chức là mục đích trung tâm của bộ phận chức năng kinh doanh nào sau đây?",
+      "choices": [
+        {
+          "text": "Sản xuất và chế tạo",
+          "correct": false
+        },
+        {
+          "text": "Bán hàng và tiếp thị",
+          "correct": false
+        },
+        {
+          "text": "Tài chính và kế toán",
+          "correct": true
+        },
+        {
+          "text": "Nguồn nhân lực",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
+      "id": "1783789707727",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Hệ thống thông tin trong kinh doanh toàn cầu ngày nay",
+      "question": "Dữ liệu thô thu thập từ các cảm biến RFID trên các mặt hàng thực phẩm (chẳng hạn như vị trí lưu trữ, nhiệt độ) truyền về hệ thống là một ví dụ về:",
+      "choices": [
+        {
+          "text": "Đầu vào (Input)",
+          "correct": true
+        },
+        {
+          "text": "Đầu ra (Output)",
+          "correct": false
+        },
+        {
+          "text": "Phản hồi (Feedback)",
+          "correct": false
+        },
+        {
+          "text": "Thông tin có ý nghĩa (Meaningful information)",
+          "correct": false
+        }
+      ],
+      "solution": "Dữ liệu thô chưa qua xử lý được hệ thống thu nhận từ môi trường bên ngoài chính là giai đoạn Đầu vào.",
+      "createdAt": "2026-07-11T17:08:27.718Z"
+    },
+    {
       "id": "1783663124823",
       "subject": "Cơ sở lập trình",
       "chapter": "",
