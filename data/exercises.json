@@ -11,7 +11,7 @@
     {
       "id": "1784046458994",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Quá trình tinh gọn dữ liệu để giảm thiểu sự dư thừa và các mối quan hệ nhiều-nhiều phức tạp được gọi là:",
       "choices": [
         {
@@ -32,7 +32,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.994Z"
+      "createdAt": "2026-07-14T16:27:38.994Z",
+      "updatedAt": "2026-07-14T16:29:17.544Z"
     },
     {
       "id": "1784046458995",
