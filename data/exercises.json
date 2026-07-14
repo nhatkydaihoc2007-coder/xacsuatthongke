@@ -9,6 +9,604 @@
   ],
   "exercises": [
     {
+      "id": "1784050175276",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Việc bán cùng một loại hàng hóa cho các nhóm khách hàng mục tiêu khác nhau với các mức giá khác nhau được gọi là:",
+      "choices": [
+        {
+          "text": "Tùy chỉnh chi phí",
+          "correct": false
+        },
+        {
+          "text": "Tối ưu hóa chi phí",
+          "correct": false
+        },
+        {
+          "text": "Cắt cổ giá",
+          "correct": false
+        },
+        {
+          "text": "Phân biệt giá",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.276Z"
+    },
+    {
+      "id": "1784050175277",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Trong mô hình doanh thu \\_\\_\\_\\_\\_\\_\\_\\_, một công ty cung cấp một số dịch vụ miễn phí nhưng thu phí đăng ký đối với các dịch vụ cao cấp (premium).",
+      "choices": [
+        {
+          "text": "Miễn phí/Nâng cấp (Free/freemium)",
+          "correct": true
+        },
+        {
+          "text": "Đăng ký (Subscription)",
+          "correct": false
+        },
+        {
+          "text": "Phí giao dịch (Transaction fee)",
+          "correct": false
+        },
+        {
+          "text": "Liên kết (Affiliate)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.276Z"
+    },
+    {
+      "id": "1784050175279",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Chiến lược tiếp thị nào cố gắng tận dụng thực tế rằng <em>luôn có một số lượng nhu cầu nhất định, dù rất nhỏ, đối với bất kỳ sản phẩm nào</em>, thay vì chỉ tập trung vào các sản phẩm bán chạy nhất?",
+      "choices": [
+        {
+          "text": "Tiếp thị đuôi dài",
+          "correct": true
+        },
+        {
+          "text": "Nhắm mục tiêu theo hành vi",
+          "correct": false
+        },
+        {
+          "text": "Nguồn cung ứng cộng đồng",
+          "correct": false
+        },
+        {
+          "text": "Phần mềm dự đoán nhu cầu",
+          "correct": false
+        }
+      ],
+      "solution": "Thay vì chỉ tập trung bán các sản phẩm hot (best-sellers), doanh nghiệp còn khai thác rất nhiều sản phẩm ít phổ biến (niche products). Mỗi sản phẩm có thể bán với số lượng nhỏ, nhưng tổng doanh số của hàng nghìn sản phẩm ngách có thể vượt doanh số của các sản phẩm bán chạy nhất. <br>\n<strong>Nhắm mục tiêu theo hành vi:</strong> Theo dõi hành vi người dùng để hiển thị quảng cáo phù hợp, không liên quan đến việc khai thác nhu cầu nhỏ của nhiều sản phẩm. <br>\n<strong>Nguồn cung ứng cộng đồng:</strong> Huy động ý tưởng, nội dung hoặc giải pháp từ cộng đồng. <br>\n<strong>Phần mềm dự đoán nhu cầu:</strong> Dùng dữ liệu để dự báo nhu cầu thị trường, không phải chiến lược khai thác đuôi dài của danh mục sản phẩm.",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175280",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Sự kiện gì đánh dấu khởi đầu của thương mại điện tử?",
+      "choices": [
+        {
+          "text": "Các quảng cáo đầu tiên được trả tiền để đặt lên Website",
+          "correct": false
+        },
+        {
+          "text": "Các sản phẩm đầu tiên được bán trực tuyến",
+          "correct": true
+        },
+        {
+          "text": "Tên miền đăng ký đầu tiên",
+          "correct": false
+        },
+        {
+          "text": "Các e-mail đầu tiên được gửi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175281",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Sự tích hợp của video, âm thanh, tin nhắn tiếp thị vào một thông điệp tiếp thị để người tiêu dùng trải nghiệm cùng một lúc là đặc tính nào của công nghệ thương mại điện tử?",
+      "choices": [
+        {
+          "text": "Sự phong phú của thông tin",
+          "correct": true
+        },
+        {
+          "text": "Có mặt khắp nơi",
+          "correct": false
+        },
+        {
+          "text": "Cá nhân hóa/tùy biến",
+          "correct": false
+        },
+        {
+          "text": "Công nghệ xã hội",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175282",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Tiêu chuẩn nào là tiêu chuẩn phổ biến, được xem như là một tính năng độc đáo của thương mại điện tử?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ nói và viết thông thường",
+          "correct": false
+        },
+        {
+          "text": "Tiêu chuẩn công nghệ Internet",
+          "correct": true
+        },
+        {
+          "text": "Tiêu chuẩn định dạng quảng cáo và truyền thông",
+          "correct": false
+        },
+        {
+          "text": "Tiêu chuẩn dữ liệu điện tử EDI",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175283",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Nỗ lực và thời gian cần thiết để khách hàng định vị/tìm kiếm một sản phẩm phù hợp được gọi là gì?",
+      "choices": [
+        {
+          "text": "Chi phí chuyển đổi",
+          "correct": false
+        },
+        {
+          "text": "Chi phí tìm kiếm",
+          "correct": true
+        },
+        {
+          "text": "Chi phí thực đơn",
+          "correct": false
+        },
+        {
+          "text": "Chi phí giao dịch",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175284",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Trong giao dịch thương mại điện tử, khi một bên có được nhiều thông tin quan trọng hơn so với bên kia thì được gọi là gì?",
+      "choices": [
+        {
+          "text": "Thông tin bất đối xứng",
+          "correct": true
+        },
+        {
+          "text": "Thông tin minh bạch",
+          "correct": false
+        },
+        {
+          "text": "Thông tin phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Thông tin phân biệt đối xử",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175285",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Việc thay đổi giá của sản phẩm liên tục tùy thuộc vào tình hình cung và cầu tại từng thời điểm của người bán được gọi là gì?",
+      "choices": [
+        {
+          "text": "Định giá theo thực đơn",
+          "correct": false
+        },
+        {
+          "text": "Phân biệt giá",
+          "correct": false
+        },
+        {
+          "text": "Định giá động",
+          "correct": true
+        },
+        {
+          "text": "Định giá tùy chỉnh",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175286",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "So với thị trường kỹ thuật số, thị trường truyền thống có đặc điểm gì?",
+      "choices": [
+        {
+          "text": "Chi phí giao dịch cao hơn",
+          "correct": true
+        },
+        {
+          "text": "Chi phí tìm kiếm thấp hơn",
+          "correct": false
+        },
+        {
+          "text": "Hiệu ứng mạng lưới mạnh mẽ hơn",
+          "correct": false
+        },
+        {
+          "text": "Sự bất đối xứng thông tin giảm",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175287",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Đối với hàng hóa kỹ thuật số như nhạc, phim, e-book, chi phí biên để sản xuất thêm một đơn vị sản phẩm là bao nhiêu?",
+      "choices": [
+        {
+          "text": "Tương đương chi phí sản xuất ban đầu",
+          "correct": false
+        },
+        {
+          "text": "Rất cao",
+          "correct": false
+        },
+        {
+          "text": "Gần như bằng 0",
+          "correct": true
+        },
+        {
+          "text": "Bằng với chi phí tiếp thị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175288",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Việc loại bỏ các lớp quy trình kinh doanh trung gian (như nhà phân phối, cửa hàng bán lẻ) trong một kênh phân phối để bán trực tiếp sản phẩm từ nhà sản xuất đến khách hàng được gọi là gì?",
+      "choices": [
+        {
+          "text": "Loại bỏ trung gian",
+          "correct": true
+        },
+        {
+          "text": "Tái cấu trúc quy trình",
+          "correct": false
+        },
+        {
+          "text": "Phân khúc thị trường",
+          "correct": false
+        },
+        {
+          "text": "Kinh tế mạng lưới",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175289",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Một lợi ích đối với các tổ chức trong TMĐT là “Giá ... hơn, giao hàng ... hơn, đặc biệt với các sản phẩm ... được”. Chọn từ điền vào chỗ trống:",
+      "choices": [
+        {
+          "text": "thấp, nhanh, số hóa",
+          "correct": true
+        },
+        {
+          "text": "cao, lâu, số hóa",
+          "correct": false
+        },
+        {
+          "text": "cao, nhanh, đóng gói",
+          "correct": false
+        },
+        {
+          "text": "thấp, lâu, đóng gói",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175290",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Doanh nghiệp bán hàng hóa và dịch vụ qua phương tiện điện tử cho cá nhân người tiêu dùng là loại hình thương mại điện tử nào?",
+      "choices": [
+        {
+          "text": "B2C e-commerce",
+          "correct": true
+        },
+        {
+          "text": "B2B e-commerce",
+          "correct": false
+        },
+        {
+          "text": "C2C e-commerce",
+          "correct": false
+        },
+        {
+          "text": "Social e-commerce",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175291",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Dell Computers cho phép khách hàng thiết kế máy tính phù hợp với các nhu cầu cụ thể của họ. Đây là ví dụ về đặc điểm TMĐT nào?",
+      "choices": [
+        {
+          "text": "Cá biệt hóa sản phẩm và dịch vụ",
+          "correct": true
+        },
+        {
+          "text": "Tìm giá tốt nhất",
+          "correct": false
+        },
+        {
+          "text": "Marketing liên kết",
+          "correct": false
+        },
+        {
+          "text": "Mua hàng theo nhóm",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175292",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "MSN và AOL là ví dụ của mô hình kinh doanh thương mại điện tử nào?",
+      "choices": [
+        {
+          "text": "Cổng thông tin",
+          "correct": true
+        },
+        {
+          "text": "Sàn giao dịch",
+          "correct": false
+        },
+        {
+          "text": "Nhà cung cấp dịch vụ",
+          "correct": false
+        },
+        {
+          "text": "Nhà bán lẻ trực tuyến",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175293",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Một công ty vận hành trang web để bán và cung cấp nhiều sản phẩm của công ty mình trực tiếp qua Internet được gọi là gì?",
+      "choices": [
+        {
+          "text": "E-tailer",
+          "correct": true
+        },
+        {
+          "text": "Web service",
+          "correct": false
+        },
+        {
+          "text": "E-mall",
+          "correct": false
+        },
+        {
+          "text": "Nhà môi giới giao dịch",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175294",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Nội dung nào sau đây KHÔNG PHẢI là ví dụ về nhà môi giới giao dịch?",
+      "choices": [
+        {
+          "text": "Kế toán",
+          "correct": true
+        },
+        {
+          "text": "Môi giới chứng khoán",
+          "correct": false
+        },
+        {
+          "text": "Đại lý bất động sản",
+          "correct": false
+        },
+        {
+          "text": "Công ty giới thiệu việc làm",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175295",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Một site cung cấp các nội dung miễn phí, và có hiển thị các banner để thu tiền. Công ty đang sử dụng mô hình doanh thu nào?",
+      "choices": [
+        {
+          "text": "Mô hình quảng cáo",
+          "correct": true
+        },
+        {
+          "text": "Mô hình phí thuê bao",
+          "correct": false
+        },
+        {
+          "text": "Mô hình tài trợ",
+          "correct": false
+        },
+        {
+          "text": "Mô hình phí giao dịch",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175296",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "IMDB cho phép các thành viên đã đăng ký truy cập vào toàn bộ cơ sở dữ liệu phim trực tuyến với điều kiện phải đóng phí hàng tháng, đây là ví dụ của mô hình doanh thu nào?",
+      "choices": [
+        {
+          "text": "Phí thuê bao/đăng ký",
+          "correct": true
+        },
+        {
+          "text": "Phí giao dịch",
+          "correct": false
+        },
+        {
+          "text": "Phí liên kết",
+          "correct": false
+        },
+        {
+          "text": "Phí quảng cáo",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.277Z"
+    },
+    {
+      "id": "1784050175298",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Phát biểu nào là tốt nhất minh họa cho mô hình doanh thu phí giao dịch?",
+      "choices": [
+        {
+          "text": "eBay nhận một khoản phí nhỏ từ người bán nếu người bán thành công trong việc bán một món hàng",
+          "correct": true
+        },
+        {
+          "text": "Epinions nhận một khoản phí sau khi khách hàng đến một trang web thành viên và mua hàng",
+          "correct": false
+        },
+        {
+          "text": "Flickr cung cấp các dịch vụ cơ bản miễn phí, thu phí cho các dịch vụ tiên tiến",
+          "correct": false
+        },
+        {
+          "text": "Netflix thu khách hàng một khoản phí hàng tháng để truy cập vào thư viện điện tử về phim",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.278Z"
+    },
+    {
+      "id": "1784050175299",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Một chợ điện tử thuộc sở hữu độc lập, liên kết nhiều người mua và nhiều người bán với nhau trên một nền tảng kỹ thuật số duy nhất gọi là gì?",
+      "choices": [
+        {
+          "text": "Đấu giá",
+          "correct": false
+        },
+        {
+          "text": "Mua sắm trực tuyến",
+          "correct": false
+        },
+        {
+          "text": "Đấu thầu",
+          "correct": false
+        },
+        {
+          "text": "Sàn giao dịch",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T17:29:35.278Z"
+    },
+    {
+      "id": "1784050175300",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Thương mại điện tử",
+      "question": "Chọn từ thích hợp hoàn thành đúng nhận định sau: “B2B và B2C có điểm ... nhau cơ bản là khả năng thương lượng giá trong B2B ... thực hiện trong B2C”.",
+      "choices": [
+        {
+          "text": "Khác, dễ",
+          "correct": true
+        },
+        {
+          "text": "Khác, khó",
+          "correct": false
+        },
+        {
+          "text": "Giống, dễ",
+          "correct": false
+        },
+        {
+          "text": "Giống, khó",
+          "correct": false
+        }
+      ],
+      "solution": "Hai mô hình này khác nhau, và việc thương lượng/mặc cả giá là đặc trưng nổi bật dễ thực hiện ở B2B - giữa các doanh nghiệp, nhưng rất khó/không thể thực hiện ở thị trường B2C - khách hàng mua lẻ",
+      "createdAt": "2026-07-14T17:29:35.278Z"
+    },
+    {
       "id": "1784046458994",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
