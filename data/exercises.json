@@ -38,7 +38,7 @@
       "id": "1784050175277",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "Thương mại điện tử",
-      "question": "Trong mô hình doanh thu \\_\\_\\_\\_\\_\\_\\_\\_, một công ty cung cấp một số dịch vụ miễn phí nhưng thu phí đăng ký đối với các dịch vụ cao cấp (premium).",
+      "question": "Trong mô hình doanh thu $\\_\\_\\_\\_\\_\\_\\_\\_$, một công ty cung cấp một số dịch vụ miễn phí nhưng thu phí đăng ký đối với các dịch vụ cao cấp (premium).",
       "choices": [
         {
           "text": "Miễn phí/Nâng cấp (Free/freemium)",
@@ -58,7 +58,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T17:29:35.276Z"
+      "createdAt": "2026-07-14T17:29:35.276Z",
+      "updatedAt": "2026-07-14T17:31:04.396Z"
     },
     {
       "id": "1784050175279",
