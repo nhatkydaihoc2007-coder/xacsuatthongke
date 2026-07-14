@@ -92,7 +92,7 @@
     {
       "id": "1784046458998",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Hiện tượng xảy ra khi cùng một dữ liệu được sao chép/lặp lại ở nhiều tệp khác nhau trong một cơ sở dữ liệu được gọi là gì?",
       "choices": [
         {
@@ -113,7 +113,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:35:29.027Z"
     },
     {
       "id": "1784046458999",
