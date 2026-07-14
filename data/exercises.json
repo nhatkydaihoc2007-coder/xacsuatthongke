@@ -508,7 +508,7 @@
     {
       "id": "1784046459014",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Tập hợp các chính sách và quy trình nhằm thiết lập các quy tắc về việc chia sẻ, phổ biến, thu thập, tiêu chuẩn hóa và phân loại thông tin trong toàn tổ chức được gọi là",
       "choices": [
         {
@@ -529,7 +529,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:32:03.897Z"
     },
     {
       "id": "1784046459015",
