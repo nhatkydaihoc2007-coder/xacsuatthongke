@@ -534,7 +534,7 @@
     {
       "id": "1784046459015",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Quá trình phát hiện và sửa chữa dữ liệu trong cơ sở dữ liệu hoặc tệp bị sai, không đầy đủ, định dạng không đúng hoặc bị dư thừa được gọi là gì?",
       "choices": [
         {
@@ -555,7 +555,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:31:13.873Z"
     },
     {
       "id": "1784046331384",
