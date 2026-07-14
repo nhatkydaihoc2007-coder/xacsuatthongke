@@ -119,7 +119,7 @@
     {
       "id": "1784046458999",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Tình trạng xảy ra khi cùng một thuộc tính trong các tệp dữ liệu có liên quan lại chứa các giá trị khác nhau (ví dụ: cùng một người nhưng phòng ban này ghi tên là \"Nguyễn Văn A\", phòng ban khác lại ghi \"Nguyễn V. A\") được gọi là gì?",
       "choices": [
         {
@@ -140,7 +140,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:35:44.736Z"
     },
     {
       "id": "1784046459000",
