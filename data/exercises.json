@@ -430,7 +430,7 @@
     {
       "id": "1784046459011",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Trong Khai thác dữ liệu, khả năng nhận diện các sự kiện liên kết với nhau theo thời gian (ví dụ: phát hiện ra người mua nhà mới thường mua thêm tủ lạnh trong vòng 1 tháng sau đó) thuộc loại thông tin nào?",
       "choices": [
         {
@@ -451,7 +451,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:33:18.660Z"
     },
     {
       "id": "1784046459012",
