@@ -38,7 +38,7 @@
     {
       "id": "1784046458995",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Trong khai thác dữ liệu (Data mining), hoạt động nào liên quan đến việc sử dụng một loạt các giá trị hiện có để xác định các giá trị khác trong tương lai sẽ là gì?",
       "choices": [
         {
@@ -59,7 +59,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.994Z"
+      "createdAt": "2026-07-14T16:27:38.994Z",
+      "updatedAt": "2026-07-14T16:29:33.000Z"
     },
     {
       "id": "1784046458997",
