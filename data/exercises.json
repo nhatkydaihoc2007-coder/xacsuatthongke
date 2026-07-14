@@ -482,7 +482,7 @@
     {
       "id": "1784046459013",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Nếu bạn muốn tìm ra các quy luật về hành vi tương tác của người dùng trên trang web của công ty (ví dụ: theo dõi xem họ thường nhấp vào đường link nào, xem trang nào lâu nhất), bạn sẽ sử dụng công nghệ nào?",
       "choices": [
         {
@@ -503,7 +503,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:32:19.453Z"
     },
     {
       "id": "1784046459014",
