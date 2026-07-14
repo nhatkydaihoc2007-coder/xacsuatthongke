@@ -146,7 +146,7 @@
     {
       "id": "1784046459000",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Hệ thống quản trị cơ sở dữ liệu (DBMS) nào sau đây biểu diễn dữ liệu dưới dạng các bảng hai chiều (gồm các cột và hàng)?",
       "choices": [
         {
@@ -172,7 +172,7 @@
     {
       "id": "1784046459001",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Trong một bảng chứa thông tin khách hàng của CSDL quan hệ, toàn bộ thông tin về MỘT khách hàng duy nhất sẽ nằm trên một:",
       "choices": [
         {
@@ -198,7 +198,7 @@
     {
       "id": "1784046459002",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Một trường (cột) được xác định trong bảng đóng vai trò là mã định danh DUY NHẤT cho từng bản ghi của bảng đó được gọi là:",
       "choices": [
         {
@@ -224,7 +224,7 @@
     {
       "id": "1784046459003",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Trong cơ sở dữ liệu quan hệ, ba thao tác cơ bản được sử dụng để trích xuất các tập dữ liệu hữu ích là:",
       "choices": [
         {
@@ -250,7 +250,7 @@
     {
       "id": "1784046459004",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Ngôn ngữ thao tác dữ liệu nổi bật và phổ biến nhất hiện nay, được sử dụng để thêm, thay đổi, xóa và truy xuất dữ liệu trong cơ sở dữ liệu quan hệ là:",
       "choices": [
         {
@@ -276,7 +276,7 @@
     {
       "id": "1784046459005",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Cơ sở dữ liệu phi quan hệ (NoSQL) có đặc điểm nổi bật nào sau đây?",
       "choices": [
         {
@@ -329,7 +329,7 @@
     {
       "id": "1784046459007",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Công nghệ nào sau đây là một khuôn khổ phần mềm mã nguồn mở được thiết kế để xử lý song song khối lượng dữ liệu khổng lồ (Big Data) trên các cụm máy tính giá rẻ?",
       "choices": [
         {
@@ -355,7 +355,7 @@
     {
       "id": "1784046459008",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Công nghệ tính toán trong bộ nhớ (In-memory computing) giúp rút ngắn đáng kể thời gian phân tích Dữ liệu lớn (từ hàng ngày xuống còn vài giây) bằng cách nào?",
       "choices": [
         {
@@ -381,7 +381,7 @@
     {
       "id": "1784046459009",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Công cụ nào sau đây cho phép người dùng đánh giá và phân tích dữ liệu theo nhiều chiều khác nhau để có được câu trả lời trực tuyến cho các câu hỏi đột xuất?",
       "choices": [
         {
@@ -407,7 +407,7 @@
     {
       "id": "1784046459010",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Điểm khác biệt lớn nhất của Khai thác dữ liệu so với OLAP là khả năng:",
       "choices": [
         {
