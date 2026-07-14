@@ -9,6 +9,630 @@
   ],
   "exercises": [
     {
+      "id": "1784046331384",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Mạng lưới các tổ chức và quy trình kinh doanh dùng để thu mua nguyên liệu thô, chuyển hóa chúng thành sản phẩm trung gian/thành phẩm và phân phối đến khách hàng được gọi là",
+      "choices": [
+        {
+          "text": "Kênh phân phối",
+          "correct": false
+        },
+        {
+          "text": "Chuỗi cung ứng",
+          "correct": true
+        },
+        {
+          "text": "Chuỗi giá trị",
+          "correct": false
+        },
+        {
+          "text": "Kênh tiếp thị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.384Z"
+    },
+    {
+      "id": "1784046331385",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hệ thống hoạch định chuỗi cung ứng thực hiện tất cả các chức năng sau NGOẠI TRỪ:",
+      "choices": [
+        {
+          "text": "Thiết lập mức tồn kho cho nguyên liệu thô và thành phẩm",
+          "correct": false
+        },
+        {
+          "text": "Xác định phương thức vận chuyển để giao sản phẩm",
+          "correct": false
+        },
+        {
+          "text": "Xác định nơi lưu trữ thành phẩm",
+          "correct": false
+        },
+        {
+          "text": "Theo dõi trạng thái vật lý của hàng hóa",
+          "correct": true
+        }
+      ],
+      "solution": "Việc theo dõi trạng thái hàng hóa là chức năng của Hệ thống thực thi chuỗi cung ứng - Supply chain execution systems, không phải hệ thống hoạch định",
+      "createdAt": "2026-07-14T16:25:31.384Z"
+    },
+    {
+      "id": "1784046331386",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Sự khác biệt cốt lõi giữa mô hình chuỗi cung ứng Đẩy (Push-based) và Kéo (Pull-based) được tóm tắt bằng khẩu hiệu nào sau đây?",
+      "choices": [
+        {
+          "text": "Bán những gì chúng ta tạo ra, không phải tạo ra những gì chúng ta bán",
+          "correct": false
+        },
+        {
+          "text": "Đẩy những gì chúng ta tạo ra, không phải kéo những gì chúng ta tạo ra",
+          "correct": false
+        },
+        {
+          "text": "Tạo ra những gì chúng ta bán, không phải bán những gì chúng ta tạo ra",
+          "correct": true
+        },
+        {
+          "text": "Kéo những gì chúng ta tạo ra, không phải đẩy những gì chúng ta bán",
+          "correct": false
+        }
+      ],
+      "solution": "Mô hình Kéo/Pull-based được thúc đẩy trực tiếp bởi nhu cầu thực tế/đơn đặt hàng của khách hàng, tức là <strong>Tạo ra những gì bán được</strong> (Make what we sell, not sell what we make).",
+      "createdAt": "2026-07-14T16:25:31.384Z"
+    },
+    {
+      "id": "1784046331387",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Chỉ số nào sau đây được tính toán dựa trên mối quan hệ giữa: doanh thu do một khách hàng cụ thể tạo ra, chi phí phát sinh để thu hút/phục vụ khách hàng đó, và vòng đời dự kiến của mối quan hệ giữa khách hàng với công ty?",
+      "choices": [
+        {
+          "text": "Tỷ lệ khách hàng rời bỏ",
+          "correct": false
+        },
+        {
+          "text": "Giá trị vòng đời của khách hàng",
+          "correct": true
+        },
+        {
+          "text": "Tỷ lệ chuyển đổi",
+          "correct": false
+        },
+        {
+          "text": "Tự động hóa lực lượng bán hàng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.384Z"
+    },
+    {
+      "id": "1784046331389",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hệ thống nào sau đây cung cấp một bộ các mô-đun phần mềm tích hợp cho phép dữ liệu được sử dụng chung bởi nhiều chức năng và quy trình kinh doanh khác nhau?",
+      "choices": [
+        {
+          "text": "Hệ thống quản lý quy trình",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống hoạch định nguồn lực doanh nghiệp",
+          "correct": true
+        },
+        {
+          "text": "Hệ thống phần mềm nhóm",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống quản lý chuỗi cung ứng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331390",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Các phần mềm doanh nghiệp được xây dựng dựa trên hàng ngàn quy trình kinh doanh được định nghĩa sẵn, các quy trình này phản ánh điều gì?",
+      "choices": [
+        {
+          "text": "Các quy định của chính phủ",
+          "correct": false
+        },
+        {
+          "text": "Cấu trúc phân cấp của công ty",
+          "correct": false
+        },
+        {
+          "text": "Các thực tiễn tốt nhất trong ngành",
+          "correct": true
+        },
+        {
+          "text": "Văn hóa đặc thù của công ty",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331391",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Điều gì sau đây KHÔNG NẰM TRONG mục đích chính của hệ thống ERP?",
+      "choices": [
+        {
+          "text": "Giảm thao tác thủ công do chuyển giao công việc qua nhiều bộ phận",
+          "correct": false
+        },
+        {
+          "text": "Tăng độ tin cậy của thông tin",
+          "correct": false
+        },
+        {
+          "text": "Tăng sự hiểu biết sâu sắc về khách hàng",
+          "correct": true
+        },
+        {
+          "text": "Chia sẻ kho dữ liệu chung cho nhiều chức năng",
+          "correct": false
+        }
+      ],
+      "solution": "Tăng sự hiểu biết về khách hàng là mục đích của hệ thống CRM, không phải ERP.",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331392",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Các tổ chức và quy trình chịu trách nhiệm phân phối và giao sản phẩm đến tay khách hàng cuối cùng thuộc về phần nào của chuỗi cung ứng?",
+      "choices": [
+        {
+          "text": "Chuỗi cung ứng thượng nguồn",
+          "correct": false
+        },
+        {
+          "text": "Chuỗi cung ứng hạ nguồn",
+          "correct": true
+        },
+        {
+          "text": "Chuỗi cung ứng nội bộ",
+          "correct": false
+        },
+        {
+          "text": "Mạng lưới giá trị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331393",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Thuật ngữ nào đề cập đến mạng lưới các nhà cung cấp của công ty, nhà cung cấp của nhà cung cấp, và các quy trình quản lý mối quan hệ với họ?",
+      "choices": [
+        {
+          "text": "Chuỗi cung ứng thượng nguồn",
+          "correct": true
+        },
+        {
+          "text": "Chuỗi cung ứng hạ nguồn",
+          "correct": false
+        },
+        {
+          "text": "Chuỗi cung ứng nội bộ",
+          "correct": false
+        },
+        {
+          "text": "Nhà phân phối trung gian",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331394",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hiện tượng thông tin về nhu cầu cho một sản phẩm bị sai lệch và phóng đại khi nó di chuyển từ thực thể này sang thực thể kế tiếp trong chuỗi cung ứng được gọi là:",
+      "choices": [
+        {
+          "text": "Hiệu ứng mạng lưới",
+          "correct": false
+        },
+        {
+          "text": "Mô hình kéo",
+          "correct": false
+        },
+        {
+          "text": "Lượng hàng dự trữ an toàn",
+          "correct": false
+        },
+        {
+          "text": "Hiệu ứng roi da",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331395",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Quản lý dòng sản phẩm thông qua các trung tâm phân phối và kho bãi để đảm bảo sản phẩm được giao đến đúng vị trí một cách hiệu quả nhất là chức năng của hệ thống nào?",
+      "choices": [
+        {
+          "text": "Hệ thống hoạch định chuỗi cung ứng (SCM Planning)",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống thực thi chuỗi cung ứng (SCM Execution)",
+          "correct": true
+        },
+        {
+          "text": "Hệ thống quản trị quan hệ khách hàng (CRM)",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống doanh nghiệp (ERP)",
+          "correct": false
+        }
+      ],
+      "solution": "SCM Planning: dùng để lập kế hoạch về nhu cầu, sản xuất, tồn kho, vận chuyển chứ không trực tiếp quản lý việc giao hàng.",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331396",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Sự khác biệt cốt lõi giữa mô hình chuỗi cung ứng đẩy (Push) và kéo (Pull) được tóm tắt bằng khẩu hiệu nào sau đây đối với mô hình Kéo?",
+      "choices": [
+        {
+          "text": "Bán những gì chúng ta tạo ra",
+          "correct": false
+        },
+        {
+          "text": "Tạo ra những gì chúng ta bán được",
+          "correct": true
+        },
+        {
+          "text": "Đẩy những gì chúng ta bán",
+          "correct": false
+        },
+        {
+          "text": "Dự báo những gì sẽ bán và sản xuất theo dự báo",
+          "correct": false
+        }
+      ],
+      "solution": "Mô hình kéo được kích hoạt dựa trên đơn đặt hàng thực tế của khách hàng.",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331397",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hệ thống Quản trị Quan hệ Khách hàng (CRM) thường cung cấp phần mềm và các công cụ trực tuyến cho Bán hàng, Dịch vụ khách hàng, và:",
+      "choices": [
+        {
+          "text": "Sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Tiếp thị",
+          "correct": true
+        },
+        {
+          "text": "Kế toán",
+          "correct": false
+        },
+        {
+          "text": "Nguồn nhân lực",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331398",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Mô-đun Tự động hóa lực lượng bán hàng (SFA) trong hệ thống CRM cung cấp các công cụ hỗ trợ cho tất cả các hoạt động sau, NGOẠI TRỪ:",
+      "choices": [
+        {
+          "text": "Quản lý khách hàng tiềm năng và thông tin liên hệ",
+          "correct": false
+        },
+        {
+          "text": "Dự báo bán hàng",
+          "correct": false
+        },
+        {
+          "text": "Quản lý các yêu cầu dịch vụ và khiếu nại của khách hàng",
+          "correct": true
+        },
+        {
+          "text": "Quản lý vùng lãnh thổ bán hàng",
+          "correct": false
+        }
+      ],
+      "solution": "Quản lý yêu cầu/khiếu nại thuộc về mô-đun Dịch vụ khách hàng, không phải mô-đun Bán hàng - SFA.",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331399",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Việc ngân hàng bán thêm một gói vay cải tạo nhà cho một khách hàng đang mở tài khoản vãng lai tại ngân hàng là ví dụ về chiến thuật gì trong CRM?",
+      "choices": [
+        {
+          "text": "Bán chéo",
+          "correct": true
+        },
+        {
+          "text": "Bán hàng gia tăng",
+          "correct": false
+        },
+        {
+          "text": "Tiếp thị trực tiếp",
+          "correct": false
+        },
+        {
+          "text": "Quản lý chiến dịch",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331400",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Ứng dụng Quản trị quan hệ khách hàng nào liên quan đến việc phân tích dữ liệu khách hàng được trích xuất từ các hệ thống tác nghiệp nhằm cung cấp thông tin giúp cải thiện hiệu suất kinh doanh?",
+      "choices": [
+        {
+          "text": "CRM vận hành",
+          "correct": false
+        },
+        {
+          "text": "CRM phân tích",
+          "correct": true
+        },
+        {
+          "text": "CRM xã hội",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống tự động hóa tiếp thị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331401",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Chỉ số nào được tính toán dựa trên mối quan hệ giữa doanh thu do một khách hàng mang lại, chi phí phát sinh để thu hút và phục vụ khách hàng đó, cùng với thời gian dự kiến của mối quan hệ?",
+      "choices": [
+        {
+          "text": "Tỷ lệ rời bỏ",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ chuyển đổi",
+          "correct": false
+        },
+        {
+          "text": "Giá trị vòng đời khách hàng",
+          "correct": true
+        },
+        {
+          "text": "Chi phí sở hữu khách hàng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331402",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Số lượng khách hàng ngừng sử dụng hoặc ngừng mua sản phẩm/dịch vụ từ một công ty được gọi là:",
+      "choices": [
+        {
+          "text": "Tỷ lệ chuyển đổi",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ giữ chân khách hàng",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ từ chối",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ khách hàng rời bỏ",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331403",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Điều nào sau đây KHÔNG PHẢI là một thách thức hoặc khó khăn phổ biến khi doanh nghiệp triển khai các ứng dụng doanh nghiệp?",
+      "choices": [
+        {
+          "text": "Tốn kém chi phí mua phần mềm và thời gian triển khai rất dài",
+          "correct": false
+        },
+        {
+          "text": "Yêu cầu doanh nghiệp phải thay đổi sâu rộng các quy trình kinh doanh",
+          "correct": false
+        },
+        {
+          "text": "Có quá nhiều công ty tư vấn trên thị trường để lựa chọn",
+          "correct": true
+        },
+        {
+          "text": "Chi phí chuyển đổi cao và sự phụ thuộc vào một nhà cung cấp phần mềm",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331404",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Điều gì sau đây KHÔNG nằm trong mục đích chính của Hệ thống Quản trị Chuỗi cung ứng?",
+      "choices": [
+        {
+          "text": "Giảm thiểu lãng phí và lượng hàng tồn kho",
+          "correct": false
+        },
+        {
+          "text": "Cân bằng cung và cầu một cách chính xác",
+          "correct": false
+        },
+        {
+          "text": "Giảm thiểu chi phí quảng cáo và tiếp thị",
+          "correct": true
+        },
+        {
+          "text": "Giảm thiểu sự sai lệch thông tin",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331405",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hệ thống Hoạch định nguồn lực doanh nghiệp hoạt động dựa trên đặc điểm cốt lõi nào?",
+      "choices": [
+        {
+          "text": "Một mạng lưới các cơ sở dữ liệu phân tán riêng biệt ở mỗi phòng ban",
+          "correct": false
+        },
+        {
+          "text": "Một bộ các mô-đun phần mềm tích hợp và một cơ sở dữ liệu trung tâm chung",
+          "correct": true
+        },
+        {
+          "text": "Một tập hợp các ứng dụng web chạy độc lập trên nền tảng đám mây",
+          "correct": false
+        },
+        {
+          "text": "Các phần mềm tự phát triển riêng lẻ cho từng chức năng nghiệp vụ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331406",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Các ứng dụng doanh nghiệp thế hệ tiếp theo đang tích hợp thêm công nghệ nào để theo dõi các tương tác của khách hàng trên nền tảng mạng xã hội và quản lý các chiến dịch trực tuyến?",
+      "choices": [
+        {
+          "text": "CRM xã hội",
+          "correct": true
+        },
+        {
+          "text": "Trí tuệ nhân tạo chuyên biệt",
+          "correct": false
+        },
+        {
+          "text": "CRM vận hành",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống hoạch định chuỗi cung ứng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331407",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Phần mềm chuỗi cung ứng được phân loại thành 2 nhóm hệ thống chính là: Hệ thống $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_$ chuỗi cung ứng và Hệ thống $\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_$ chuỗi cung ứng.",
+      "choices": [
+        {
+          "text": "Thượng nguồn/Hạ nguồn",
+          "correct": false
+        },
+        {
+          "text": "Kéo/Đẩy",
+          "correct": false
+        },
+        {
+          "text": "Hoạch định/Thực thi",
+          "correct": true
+        },
+        {
+          "text": "Nhập hàng/Xuất hàng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
+      "id": "1784046331408",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Mục đích cốt lõi của Hệ thống quản trị quan hệ khách hàng đối với doanh nghiệp là gì?",
+      "choices": [
+        {
+          "text": "Tự động hóa hoàn toàn quy trình sản xuất trong nhà máy",
+          "correct": false
+        },
+        {
+          "text": "Giúp tổ chức hiểu rõ giá trị của mỗi khách hàng",
+          "correct": true
+        },
+        {
+          "text": "Loại bỏ vai trò của các nhà phân phối trung gian",
+          "correct": false
+        },
+        {
+          "text": "Thiết lập mức tồn kho tối ưu cho nguyên vật liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:25:31.385Z"
+    },
+    {
       "id": "1783790444574",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "Cơ sở hạ tầng CNTT và các công nghệ mới nổi",
