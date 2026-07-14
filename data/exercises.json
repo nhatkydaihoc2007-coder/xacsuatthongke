@@ -9,6 +9,552 @@
   ],
   "exercises": [
     {
+      "id": "1784046458994",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Quá trình tinh gọn dữ liệu để giảm thiểu sự dư thừa và các mối quan hệ nhiều-nhiều phức tạp được gọi là:",
+      "choices": [
+        {
+          "text": "Chuẩn hóa",
+          "correct": true
+        },
+        {
+          "text": "Chà xát dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Làm sạch dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Định nghĩa dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.994Z"
+    },
+    {
+      "id": "1784046458995",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Trong khai thác dữ liệu (Data mining), hoạt động nào liên quan đến việc sử dụng một loạt các giá trị hiện có để xác định các giá trị khác trong tương lai sẽ là gì?",
+      "choices": [
+        {
+          "text": "Khám phá sự kết hợp",
+          "correct": false
+        },
+        {
+          "text": "Khám phá chuỗi",
+          "correct": false
+        },
+        {
+          "text": "Phân loại",
+          "correct": false
+        },
+        {
+          "text": "Dự báo",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.994Z"
+    },
+    {
+      "id": "1784046458997",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Một đặc điểm hoặc phẩm chất mô tả một thực thể cơ sở dữ liệu cụ thể (ví dụ: Tên, Tuổi, Địa chỉ của thực thể Khách hàng) được gọi là gì?",
+      "choices": [
+        {
+          "text": "Trường",
+          "correct": false
+        },
+        {
+          "text": "Bản ghi",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính",
+          "correct": true
+        },
+        {
+          "text": "Khóa chính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046458998",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hiện tượng xảy ra khi cùng một dữ liệu được sao chép/lặp lại ở nhiều tệp khác nhau trong một cơ sở dữ liệu được gọi là gì?",
+      "choices": [
+        {
+          "text": "Sự phụ thuộc dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu không nhất quán",
+          "correct": false
+        },
+        {
+          "text": "Khai thác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Sự dư thừa dữ liệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046458999",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Tình trạng xảy ra khi cùng một thuộc tính trong các tệp dữ liệu có liên quan lại chứa các giá trị khác nhau (ví dụ: cùng một người nhưng phòng ban này ghi tên là \"Nguyễn Văn A\", phòng ban khác lại ghi \"Nguyễn V. A\") được gọi là gì?",
+      "choices": [
+        {
+          "text": "Dữ liệu không nhất quán",
+          "correct": true
+        },
+        {
+          "text": "Sự dư thừa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Sự phụ thuộc dữ liệu - chương trình",
+          "correct": false
+        },
+        {
+          "text": "Sự phân tán dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459000",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Hệ thống quản trị cơ sở dữ liệu (DBMS) nào sau đây biểu diễn dữ liệu dưới dạng các bảng hai chiều (gồm các cột và hàng)?",
+      "choices": [
+        {
+          "text": "Hệ quản trị CSDL phi quan hệ",
+          "correct": false
+        },
+        {
+          "text": "Hệ quản trị CSDL phân cấp",
+          "correct": false
+        },
+        {
+          "text": "Hệ quản trị CSDL quan hệ",
+          "correct": true
+        },
+        {
+          "text": "Hệ quản trị CSDL hướng đối tượng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459001",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Trong một bảng chứa thông tin khách hàng của CSDL quan hệ, toàn bộ thông tin về MỘT khách hàng duy nhất sẽ nằm trên một:",
+      "choices": [
+        {
+          "text": "Trường",
+          "correct": false
+        },
+        {
+          "text": "Cột",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Hàng/Bản ghi",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459002",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Một trường (cột) được xác định trong bảng đóng vai trò là mã định danh DUY NHẤT cho từng bản ghi của bảng đó được gọi là:",
+      "choices": [
+        {
+          "text": "Khóa ngoại",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính",
+          "correct": true
+        },
+        {
+          "text": "Thuộc tính khóa",
+          "correct": false
+        },
+        {
+          "text": "Trường nhận dạng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459003",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Trong cơ sở dữ liệu quan hệ, ba thao tác cơ bản được sử dụng để trích xuất các tập dữ liệu hữu ích là:",
+      "choices": [
+        {
+          "text": "Select, Project và Join",
+          "correct": true
+        },
+        {
+          "text": "Select, Search và Join",
+          "correct": false
+        },
+        {
+          "text": "Project, Sort và Join",
+          "correct": false
+        },
+        {
+          "text": "Filter, Project và Select",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459004",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Ngôn ngữ thao tác dữ liệu nổi bật và phổ biến nhất hiện nay, được sử dụng để thêm, thay đổi, xóa và truy xuất dữ liệu trong cơ sở dữ liệu quan hệ là:",
+      "choices": [
+        {
+          "text": "Access",
+          "correct": false
+        },
+        {
+          "text": "NoSQL",
+          "correct": false
+        },
+        {
+          "text": "C++",
+          "correct": false
+        },
+        {
+          "text": "SQL",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459005",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Cơ sở dữ liệu phi quan hệ (NoSQL) có đặc điểm nổi bật nào sau đây?",
+      "choices": [
+        {
+          "text": "Luôn lưu trữ dữ liệu dưới dạng bảng hai chiều nghiêm ngặt",
+          "correct": false
+        },
+        {
+          "text": "Không thể mở rộng quy mô lưu trữ",
+          "correct": false
+        },
+        {
+          "text": "Chỉ được sử dụng cho dữ liệu giao dịch tài chính nội bộ",
+          "correct": false
+        },
+        {
+          "text": "Có mô hình dữ liệu linh hoạt, xử lý được khối lượng khổng lồ dữ liệu phi cấu trúc và bán cấu trúc",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459006",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Một kho dữ liệu (Data warehouse) chủ yếu được cấu thành từ:",
+      "choices": [
+        {
+          "text": "Chỉ dữ liệu lịch sử từ các hệ thống cũ",
+          "correct": false
+        },
+        {
+          "text": "Chỉ dữ liệu từ các nguồn bên ngoài (như mạng xã hội)",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu hiện tại và dữ liệu lịch sử từ các hệ thống vận hành nội bộ",
+          "correct": true
+        },
+        {
+          "text": "Các dữ liệu phi cấu trúc chưa qua xử lý",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459007",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Công nghệ nào sau đây là một khuôn khổ phần mềm mã nguồn mở được thiết kế để xử lý song song khối lượng dữ liệu khổng lồ (Big Data) trên các cụm máy tính giá rẻ?",
+      "choices": [
+        {
+          "text": "OLAP",
+          "correct": false
+        },
+        {
+          "text": "Chợ dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Máy chủ web",
+          "correct": false
+        },
+        {
+          "text": "Hadoop",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459008",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Công nghệ tính toán trong bộ nhớ (In-memory computing) giúp rút ngắn đáng kể thời gian phân tích Dữ liệu lớn (từ hàng ngày xuống còn vài giây) bằng cách nào?",
+      "choices": [
+        {
+          "text": "Sử dụng máy tính lượng tử",
+          "correct": false
+        },
+        {
+          "text": "Lưu trữ dữ liệu trong bộ nhớ chính (RAM) của máy tính thay vì trên đĩa cứng",
+          "correct": true
+        },
+        {
+          "text": "Lưu trữ dữ liệu vào các ổ đĩa quang học dung lượng cao",
+          "correct": false
+        },
+        {
+          "text": "Chỉ trích xuất ngẫu nhiên các mẫu dữ liệu rất nhỏ để phân tích",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459009",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Công cụ nào sau đây cho phép người dùng đánh giá và phân tích dữ liệu theo nhiều chiều khác nhau để có được câu trả lời trực tuyến cho các câu hỏi đột xuất?",
+      "choices": [
+        {
+          "text": "Khai thác dữ liệu (Data mining)",
+          "correct": false
+        },
+        {
+          "text": "Hadoop",
+          "correct": false
+        },
+        {
+          "text": "OLAP",
+          "correct": true
+        },
+        {
+          "text": "Hệ quản trị cơ sở dữ liệu phi quan hệ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459010",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Điểm khác biệt lớn nhất của Khai thác dữ liệu so với OLAP là khả năng:",
+      "choices": [
+        {
+          "text": "Phân tích dữ liệu lịch sử theo nhiều chiều khác nhau",
+          "correct": false
+        },
+        {
+          "text": "Làm sạch dữ liệu bị sai định dạng tự động",
+          "correct": false
+        },
+        {
+          "text": "Tìm ra các mẫu hình (patterns) và mối quan hệ ẩn sâu trong dữ liệu để dự báo tương lai",
+          "correct": true
+        },
+        {
+          "text": "Chuẩn hóa các bảng cơ sở dữ liệu quan hệ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459011",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Trong Khai thác dữ liệu, khả năng nhận diện các sự kiện liên kết với nhau theo thời gian (ví dụ: phát hiện ra người mua nhà mới thường mua thêm tủ lạnh trong vòng 1 tháng sau đó) thuộc loại thông tin nào?",
+      "choices": [
+        {
+          "text": "Trình tự",
+          "correct": true
+        },
+        {
+          "text": "Phân loại",
+          "correct": false
+        },
+        {
+          "text": "Phân cụm",
+          "correct": false
+        },
+        {
+          "text": "Dự báo",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459012",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Công cụ nào được sử dụng chuyên biệt để trích xuất các yếu tố chính, phân tích các tập dữ liệu lớn KHÔNG CÓ CẤU TRÚC như e-mail, bản ghi nhớ, hồ sơ pháp lý, hoặc phản hồi khảo sát?",
+      "choices": [
+        {
+          "text": "Phân tích OLAP",
+          "correct": false
+        },
+        {
+          "text": "Khai thác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Khai thác văn bản",
+          "correct": true
+        },
+        {
+          "text": "Tính toán trong bộ nhớ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459013",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Nếu bạn muốn tìm ra các quy luật về hành vi tương tác của người dùng trên trang web của công ty (ví dụ: theo dõi xem họ thường nhấp vào đường link nào, xem trang nào lâu nhất), bạn sẽ sử dụng công nghệ nào?",
+      "choices": [
+        {
+          "text": "Khai thác nội dung web",
+          "correct": false
+        },
+        {
+          "text": "Khai thác cấu trúc web",
+          "correct": false
+        },
+        {
+          "text": "Phân tích tình cảm",
+          "correct": false
+        },
+        {
+          "text": "Khai thác hành vi sử dụng web",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459014",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Tập hợp các chính sách và quy trình nhằm thiết lập các quy tắc về việc chia sẻ, phổ biến, thu thập, tiêu chuẩn hóa và phân loại thông tin trong toàn tổ chức được gọi là",
+      "choices": [
+        {
+          "text": "Quản trị dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Làm sạch dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Kiến trúc dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Chuẩn hóa dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
+      "id": "1784046459015",
+      "subject": "Hệ thống thông tin quản lý",
+      "chapter": "Ứng dụng doanh nghiệp",
+      "question": "Quá trình phát hiện và sửa chữa dữ liệu trong cơ sở dữ liệu hoặc tệp bị sai, không đầy đủ, định dạng không đúng hoặc bị dư thừa được gọi là gì?",
+      "choices": [
+        {
+          "text": "Quản trị dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Khai thác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Làm sạch dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Kiểm toán chất lượng dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-07-14T16:27:38.995Z"
+    },
+    {
       "id": "1784046331384",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "Ứng dụng doanh nghiệp",
