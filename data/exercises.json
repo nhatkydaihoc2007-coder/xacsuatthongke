@@ -456,7 +456,7 @@
     {
       "id": "1784046459012",
       "subject": "Hệ thống thông tin quản lý",
-      "chapter": "Ứng dụng doanh nghiệp",
+      "chapter": "Cơ sở dữ liệu và Quản lý thông tin",
       "question": "Công cụ nào được sử dụng chuyên biệt để trích xuất các yếu tố chính, phân tích các tập dữ liệu lớn KHÔNG CÓ CẤU TRÚC như e-mail, bản ghi nhớ, hồ sơ pháp lý, hoặc phản hồi khảo sát?",
       "choices": [
         {
@@ -477,7 +477,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-07-14T16:27:38.995Z"
+      "createdAt": "2026-07-14T16:27:38.995Z",
+      "updatedAt": "2026-07-14T16:32:58.097Z"
     },
     {
       "id": "1784046459013",
