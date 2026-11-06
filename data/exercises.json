@@ -10,6 +10,2606 @@
   ],
   "exercises": [
     {
+      "id": "1793985028483",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "choices": [
+        {
+          "text": "1610",
+          "correct": false
+        },
+        {
+          "text": "1612",
+          "correct": false
+        },
+        {
+          "text": "1615",
+          "correct": true
+        },
+        {
+          "text": "1618",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028484",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+      "choices": [
+        {
+          "text": "Antoine Montchretiên",
+          "correct": true
+        },
+        {
+          "text": "Francois Quesney",
+          "correct": false
+        },
+        {
+          "text": "Tomas Mun",
+          "correct": false
+        },
+        {
+          "text": "William Petty",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028485",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Ai là người được C. Mác coi là sáng lập ra kinh tế chính trị tư sản cổ điển?",
+      "choices": [
+        {
+          "text": "A. Smith",
+          "correct": true
+        },
+        {
+          "text": "D. Ricardo",
+          "correct": false
+        },
+        {
+          "text": "W.Petty",
+          "correct": false
+        },
+        {
+          "text": "R.T.Mathus",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028486",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Ai là người được coi là nhà kinh tế thời kỳ công trường thủ công?",
+      "choices": [
+        {
+          "text": "W. Petty",
+          "correct": true
+        },
+        {
+          "text": "A. Smith",
+          "correct": false
+        },
+        {
+          "text": "D.Ricardo",
+          "correct": false
+        },
+        {
+          "text": "R.T.Mathus",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028487",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "D.Ricardo là nhà kinh tế của thời kỳ nào?",
+      "choices": [
+        {
+          "text": "Thời kỳ tích luỹ nguyên thuỷ TBCN",
+          "correct": false
+        },
+        {
+          "text": "Thời kỳ hiệp tác giản đơn",
+          "correct": false
+        },
+        {
+          "text": "Thời kỳ công trường thủ công",
+          "correct": false
+        },
+        {
+          "text": "Thời kỳ đại công nghiệp cơ khí",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028488",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Kinh tế- chính trị Mác - Lênin đã kế thừa và phát triển trực tiếp những thành tựu của:",
+      "choices": [
+        {
+          "text": "Chủ nghĩa trọng thương",
+          "correct": false
+        },
+        {
+          "text": "Chủ nghĩa trọng nông",
+          "correct": false
+        },
+        {
+          "text": "Kinh tế chính trị cổ điển Anh",
+          "correct": true
+        },
+        {
+          "text": "Kinh tế- chính trị tầm thường",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028489",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Học thuyết kinh tế nào của C.Mác được coi là hòn đá tảng?",
+      "choices": [
+        {
+          "text": "Học thuyết giá trị lao động",
+          "correct": false
+        },
+        {
+          "text": "Học thuyết giá trị thặng dư",
+          "correct": true
+        },
+        {
+          "text": "Học thuyết tích luỹ tư sản",
+          "correct": false
+        },
+        {
+          "text": "Học thuyết tái sản xuất tư bản xã hội",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028490",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Đối tượng nghiên cứu của kinh tế- chính trị Mác-Lênin là:",
+      "choices": [
+        {
+          "text": "Sản xuất của cải vật chất",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ xã hội giữa người với người",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ sản xuất trong mối quan hệ tác động qua lại với lực lượng sản xuất và kiến trúc thượng tầng",
+          "correct": true
+        },
+        {
+          "text": "Quá trình sản xuất, phân phối, trao đổi, tiêu dùng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028491",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Hãy chọn phương án đúng về đặc điểm của quy luật kinh tế:",
+      "choices": [
+        {
+          "text": "Mang tính khách quan",
+          "correct": false
+        },
+        {
+          "text": "Mang tính chủ quan",
+          "correct": false
+        },
+        {
+          "text": "Phát huy tác dụng thông qua hoạt động kinh tế của con người",
+          "correct": false
+        },
+        {
+          "text": "Cả a và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028492",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn phương án đúng về quy luật kinh tế và chính sách kinh tế:",
+      "choices": [
+        {
+          "text": "Quy luật kinh tế là cơ sở của chính sách kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Chính sách kinh tế là hoạt động chủ quan của nhà nước trên cơ sở nhận thức và vận dụng các quy luật khách quan",
+          "correct": false
+        },
+        {
+          "text": "Quy luật kinh tế và chính sách kinh tế đều phụ thuộc vào các điều kiện khách quan",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.483Z"
+    },
+    {
+      "id": "1793985028494",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Để nghiên cứu kinh tế- chính trị Mác- Lênin có thể sử dụng nhiều phương pháp, phương pháp nào quan trọng nhất?",
+      "choices": [
+        {
+          "text": "Trừu tượng hoá khoa học",
+          "correct": true
+        },
+        {
+          "text": "Phân tích và tổng hợp",
+          "correct": false
+        },
+        {
+          "text": "Mô hình hoá",
+          "correct": false
+        },
+        {
+          "text": "Điều tra thống kê",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028495",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Khi nghiên cứu phương thức sản xuất TBCN, C.Mác bắt đầu từ:",
+      "choices": [
+        {
+          "text": "Sản xuất của cải vật chất",
+          "correct": false
+        },
+        {
+          "text": "Lưu thông hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Sản xuất giá trị thặng dư",
+          "correct": false
+        },
+        {
+          "text": "Sản xuất hàng hoá giản đơn và hàng hoá",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028496",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trừu tượng hoá khoa học là",
+      "choices": [
+        {
+          "text": "Gạt bỏ những bộ phận phức tạp của đối tượng nghiên cứu",
+          "correct": false
+        },
+        {
+          "text": "Gạt bỏ các hiện tượng ngẫu nhiên, bề ngoài, chỉ giữ lại những mối liên hệ phổ biến mang tính bản chất",
+          "correct": false
+        },
+        {
+          "text": "Quá trình đi từ cụ thể đến trừu tượng và ngược lại",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028497",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chức năng nhận thức của kinh tế- chính trị là nhằm:",
+      "choices": [
+        {
+          "text": "Phát hiện bản chất của các hiện tượng và quá trình kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Sự tác động giữa quan hệ sản xuất với lực lượng sản xuất và kiến trúc thượng tầng",
+          "correct": false
+        },
+        {
+          "text": "Tìm ra các quy luật kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028498",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chức năng phương pháp luận của kinh tế- chính trị Mác- Lênin thể hiện ở:",
+      "choices": [
+        {
+          "text": "Trang bị phương pháp để xem xét thế giới nói chung",
+          "correct": false
+        },
+        {
+          "text": "Là nền tảng lý luận cho các khoa học kinh tế ngành",
+          "correct": false
+        },
+        {
+          "text": "Là cơ sở lý luận cho các khoa học nằm giáp ranh giữa các tri thức các ngành khác nhau",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028499",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chức năng tư tưởng của kinh tế- chính trị Mác – Lê nin thể hiện ở:",
+      "choices": [
+        {
+          "text": "Góp phần xây dựng thế giới quan cách mạng của giai cấp công nhân",
+          "correct": false
+        },
+        {
+          "text": "Tạo niềm tin vào thắng lợi trong cuộc đấu tranh xoá bỏ áp bức bóc lột",
+          "correct": false
+        },
+        {
+          "text": "Là vũ khí tư tưởng của giai cấp công nhân và nhân dân lao động trong công cuộc xây dựng CNXH",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028500",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Bản chất khoa học và cách mạng của kinh tế - chính trị Mác- Lênin thể hiện ở chức năng nào?",
+      "choices": [
+        {
+          "text": "Nhận thức",
+          "correct": false
+        },
+        {
+          "text": "Tư tưởng",
+          "correct": false
+        },
+        {
+          "text": "Phương pháp luận",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028501",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Hoạt động nào của con người được coi là cơ bản nhất và là cơ sở của đời sống xã hội?",
+      "choices": [
+        {
+          "text": "Hoạt động chính trị",
+          "correct": false
+        },
+        {
+          "text": "Hoạt động khoa học",
+          "correct": false
+        },
+        {
+          "text": "Hoạt động sản xuất của cải vật chất",
+          "correct": true
+        },
+        {
+          "text": "Hoạt động nghệ thuật, thể thao",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028502",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Để xem xét, giải thích nguồn gốc sâu xa của các hiện tượng kinh tế- xã hội phải xuất phát từ:",
+      "choices": [
+        {
+          "text": "Từ hệ tư tưởng của giai cấp thống trị",
+          "correct": false
+        },
+        {
+          "text": "Từ các hoạt động kinh tế",
+          "correct": true
+        },
+        {
+          "text": "Từ truyền thống lịch sử",
+          "correct": false
+        },
+        {
+          "text": "Từ ý thức xã hội",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028503",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quá trình sản xuất là sự kết hợp của các yếu tố:",
+      "choices": [
+        {
+          "text": "Sức lao động với công cụ lao động",
+          "correct": false
+        },
+        {
+          "text": "Lao động với tư liệu lao động",
+          "correct": false
+        },
+        {
+          "text": "Sức lao động với đối tượng lao động và tư liệu lao động",
+          "correct": true
+        },
+        {
+          "text": "Lao động với đối tượng lao động và tư liệu lao động",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028504",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "\"Những thời đại kinh tế khác nhau không phải ở chỗ chúng sản xuất ra cái gì, mà là ở chỗ chúng sản xuất bằng cách nào, với những tư liệu lao động nào\". Câu nói trên là của ai?",
+      "choices": [
+        {
+          "text": "A. Smith",
+          "correct": false
+        },
+        {
+          "text": "D. Ricardo",
+          "correct": false
+        },
+        {
+          "text": "C.Mác",
+          "correct": true
+        },
+        {
+          "text": "Ph.Ăng ghen",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028505",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Sức lao động là",
+      "choices": [
+        {
+          "text": "Toàn bộ thể lực và trí lực trong một con người đang sống và được vận dụng để sản xuất ra giá trị sử dụng nào đó.",
+          "correct": false
+        },
+        {
+          "text": "Khả năng lao động, được tiêu dùng trong quá trình sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Hoạt động có mục đích của con người để tạo ra của cải",
+          "correct": false
+        },
+        {
+          "text": "Cả a và b",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028506",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động sản xuất có đặc trưng cơ bản là:",
+      "choices": [
+        {
+          "text": "Hoạt động cơ bản nhất, là phẩm chất đặc biệt của con người",
+          "correct": false
+        },
+        {
+          "text": "Là hoạt động có mục đích, có ý thức của con người",
+          "correct": false
+        },
+        {
+          "text": "Là sự tiêu dùng sức lao động trong hiện thực",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028507",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động sản xuất có vai trò gì đối với con người?",
+      "choices": [
+        {
+          "text": "Tạo ra của cải vật chất để nuôi sống con người",
+          "correct": false
+        },
+        {
+          "text": "Phát triển, hoàn thiện con người cả về thể lực và trí lực",
+          "correct": false
+        },
+        {
+          "text": "Giúp con người tích luỹ kinh nghiệm, chế tạo ra công cụ sản xuất ngày càng tinh vi",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028508",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Đối tượng lao động là:",
+      "choices": [
+        {
+          "text": "Các vật có trong tự nhiên",
+          "correct": false
+        },
+        {
+          "text": "Những vật mà lao động của con người tác động vào nhằm thay đổi nó cho phù hợp với mục đích của con người",
+          "correct": true
+        },
+        {
+          "text": "Những vật dùng để truyền dẫn sức lao động của con người",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028509",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng trong các ý dưới đây:",
+      "choices": [
+        {
+          "text": "Mọi nguyên liệu đều là đối tượng lao động",
+          "correct": false
+        },
+        {
+          "text": "Mọi đối tượng lao động đều là nguyên liệu",
+          "correct": false
+        },
+        {
+          "text": "Nguyên liệu là đối tượng lao động của các ngành công nghiệp chế biến",
+          "correct": false
+        },
+        {
+          "text": "Cả a và c đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028510",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tư liệu lao động gồm có:",
+      "choices": [
+        {
+          "text": "Công cụ lao động",
+          "correct": false
+        },
+        {
+          "text": "Các vật để chứa đựng, bảo quản",
+          "correct": false
+        },
+        {
+          "text": "Kết cấu hạ tầng sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028511",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong tư liệu lao động, bộ phận nào quyết định đến năng suất lao động?",
+      "choices": [
+        {
+          "text": "Công cụ lao động",
+          "correct": true
+        },
+        {
+          "text": "Nguyên vật liệu cho sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Các vật chứa đựng, bảo quản",
+          "correct": false
+        },
+        {
+          "text": "Kết cấu hạ tầng sản xuất",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028512",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Bộ phận nào của tư liệu lao động được coi là tiêu chí phản ánh đặc trưng phát triển của một thời đại kinh tế",
+      "choices": [
+        {
+          "text": "Công cụ lao động",
+          "correct": true
+        },
+        {
+          "text": "Kết cấu hạ tầng sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Nhà cửa, kho bãi ... để chứa đựng, bảo quản",
+          "correct": false
+        },
+        {
+          "text": "Cả a và b",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028513",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng trong các ý dưới đây:",
+      "choices": [
+        {
+          "text": "Một vật là đối tượng lao động cũng có thể là tư liệu lao động",
+          "correct": false
+        },
+        {
+          "text": "Một vật là tư liệu lao động cũng có thể là đối tượng lao động",
+          "correct": false
+        },
+        {
+          "text": "Đối tượng lao động và tư liệu lao động kết hợp với nhau là tư liệu sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028514",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong tư liệu lao động, bộ phận nào cần được phát triển đi trước một bước so với đầu tư sản xuất trực tiếp?",
+      "choices": [
+        {
+          "text": "Công cụ sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Các bộ phận chứa đựng, bảo quản",
+          "correct": false
+        },
+        {
+          "text": "Kết cấu hạ tầng sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Cả a và c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028515",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong nền sản xuất lớn hiện đại, yếu tố nào giữ vai trò quyết định của quá trình lao động sản xuất?",
+      "choices": [
+        {
+          "text": "Sức lao động",
+          "correct": true
+        },
+        {
+          "text": "Tư liệu sản xuất hiện đại",
+          "correct": false
+        },
+        {
+          "text": "Công cụ sản xuất tiên tiến",
+          "correct": false
+        },
+        {
+          "text": "Đối tượng lao động",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028516",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Phương thức sản xuất là sự thống nhất của:",
+      "choices": [
+        {
+          "text": "Tồn tại xã hội và ý thức xã hội",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở hạ tầng và kiến trúc thượng tầng",
+          "correct": false
+        },
+        {
+          "text": "Lực lượng sản xuất và quan hệ sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Cơ cấu kinh tế và kết cấu giai cấp xã hội",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028517",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lực lượng sản xuất biểu hiện:",
+      "choices": [
+        {
+          "text": "Quan hệ con người với tự nhiên",
+          "correct": true
+        },
+        {
+          "text": "Quan hệ con người với con người",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ con người với tự nhiên và quan hệ người với người",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028518",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong thời đại ngày nay, lực lượng sản xuất bao gồm các yếu tố nào?",
+      "choices": [
+        {
+          "text": "Người lao động",
+          "correct": false
+        },
+        {
+          "text": "Tư liệu sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Khoa học công nghệ",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028519",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Yếu tố chủ thể của lực lượng sản xuất là:",
+      "choices": [
+        {
+          "text": "Tư liệu sản xuất hiện đại",
+          "correct": false
+        },
+        {
+          "text": "Con người với kỹ năng, kỹ xảo và tri thức được tích luỹ lại",
+          "correct": true
+        },
+        {
+          "text": "Khoa học công nghệ tiên tiến",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028520",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quan hệ sản xuất biểu hiện:",
+      "choices": [
+        {
+          "text": "Quan hệ giữa người với tự nhiên",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ kinh tế giữa người với người trong quá trình sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Quan hệ giữa người với người trong xã hội",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.484Z"
+    },
+    {
+      "id": "1793985028522",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quan hệ sản xuất bao gồm:",
+      "choices": [
+        {
+          "text": "Quan hệ về sở hữu tư liệu sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ về tổ chức quản lý sản xuất xã hội",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ về phân phối sản phẩm xã hội",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028523",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quan hệ nào giữ vai trò quyết định trong quan hệ sản xuất:",
+      "choices": [
+        {
+          "text": "Quan hệ sở hữu",
+          "correct": true
+        },
+        {
+          "text": "Quan hệ tổ chức quản lý",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ phân phối",
+          "correct": false
+        },
+        {
+          "text": "Không quan hệ nào quyết định",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028524",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quan hệ sản xuất được hình thành do:",
+      "choices": [
+        {
+          "text": "ý muốn chủ quan của con người",
+          "correct": false
+        },
+        {
+          "text": "Do giai cấp thống trị quy định thành pháp luật",
+          "correct": false
+        },
+        {
+          "text": "Do tính chất và trình độ phát triển của lực lượng sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028525",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lực lượng sản xuất và quan hệ sản xuất có quan hệ với nhau thế nào?",
+      "choices": [
+        {
+          "text": "Tác động qua lại với nhau",
+          "correct": false
+        },
+        {
+          "text": "Lực lượng sản xuất quyết định quan hệ sản xuất",
+          "correct": false
+        },
+        {
+          "text": "QHSX có tác động tích cực trở lại đối với lực lượng sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028526",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Khi nào QHSX được xem là phù hợp với tính chất và trình độ phát triển của lực lượng sản xuất?",
+      "choices": [
+        {
+          "text": "Thúc đẩy lực lượng sản xuất phát triển",
+          "correct": true
+        },
+        {
+          "text": "Cải thiện đời sống nhân dân",
+          "correct": false
+        },
+        {
+          "text": "Tạo điều kiện thực hiện công bằng xã hội",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028527",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Các phương thức sản xuất nối tiếp nhau trong lịch sử theo trình tự nào?",
+      "choices": [
+        {
+          "text": "Cộng sản nguyên thuỷ- phong kiến- chiếm hữu nô lệ- tư bản – chủ nghĩa cộng sản",
+          "correct": false
+        },
+        {
+          "text": "Cộng sản nguyên thuỷ- chiếm hữu nô lệ- phong kiến- tư bản- chủ nghĩa cộng sản",
+          "correct": true
+        },
+        {
+          "text": "Chiếm hữu nô lệ - cộng sản nguyên thuỷ - phong kiến - tư bản - chủ nghĩa cộng sản",
+          "correct": false
+        },
+        {
+          "text": "Cộng sản nguyên thuỷ - chiếm hữu nô lệ - tư bản - phong kiến - chủ nghĩa cộng sản",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028528",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tái sản xuất là:",
+      "choices": [
+        {
+          "text": "Là quá trình sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+          "correct": true
+        },
+        {
+          "text": "Là sự khôi phục lại sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028529",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Căn cứ vào đâu để phân chia thành tái sản xuất cá biệt và tái sản xuất xã hội?",
+      "choices": [
+        {
+          "text": "Căn cứ vào phạm vi sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Căn cứ vào tốc độ sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Căn cứ vào tính chất sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Căn cứ vào nội dung sản xuất",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028530",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Căn cứ vào đâu để chia ra thành tái sản xuất giản đơn và tái sản xuất mở rộng?",
+      "choices": [
+        {
+          "text": "Căn cứ vào phạm vi",
+          "correct": false
+        },
+        {
+          "text": "Căn cứ vào nội dung",
+          "correct": false
+        },
+        {
+          "text": "Căn cứ vào tính chất",
+          "correct": false
+        },
+        {
+          "text": "Căn cứ vào quy mô",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028531",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn lực?",
+      "choices": [
+        {
+          "text": "Tái sản xuất giản đơn",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất mở rộng",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất mở rộng theo chiều rộng",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất mở rộng theo chiều sâu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028532",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý sai về tái sản xuất giản đơn và tái sản xuất mở rộng?",
+      "choices": [
+        {
+          "text": "Tái sản xuất giản đơn là đặc trưng của nền sản xuất nhỏ",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất giản đơn là việc tổ chức sản xuất đơn giản, không phức tạp",
+          "correct": true
+        },
+        {
+          "text": "Tái sản xuất mở rộng là đặc trưng của nền sản xuất lớn",
+          "correct": false
+        },
+        {
+          "text": "Sản phẩm thặng dư là nguồn gốc của tái sản xuất mở rộng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028533",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý sai về tái sản xuất mở rộng theo chiều rộng và tái sản xuất mở rộng theo chiều sâu?",
+      "choices": [
+        {
+          "text": "Đều làm cho sản phẩm tăng lên",
+          "correct": false
+        },
+        {
+          "text": "Cả hai hình thức tái sản xuất đều dựa trên cơ sở tăng năng suất lao động và hiệu quả sử dụng các yếu tố đầu vào",
+          "correct": true
+        },
+        {
+          "text": "Tái sản xuất mở rộng theo chiều sâu sử dụng tài nguyên hiệu quả hơn và gây ra ô nhiễm ít hơn tái sản xuất mở rộng theo chiều rộng",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028534",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Xác định đúng trình tự các khâu của quá trình tái sản xuất",
+      "choices": [
+        {
+          "text": "Sản xuất - trao đổi - phân phối - tiêu dùng",
+          "correct": false
+        },
+        {
+          "text": "Sản xuất - phân phối - trao đổi - tiêu dùng",
+          "correct": true
+        },
+        {
+          "text": "Phân phối - trao đổi - sản xuất - tiêu dùng",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi - tiêu dùng - phân phối - sản xuất",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028535",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong 4 khâu của quá trình tái sản xuất, khâu nào giữ vai trò quyết định?",
+      "choices": [
+        {
+          "text": "Sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Phân phối",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi",
+          "correct": false
+        },
+        {
+          "text": "Tiêu dùng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028536",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong các khâu của quá trình tái sản xuất, khâu nào là mục đích và là động lực?",
+      "choices": [
+        {
+          "text": "Sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Phân phối",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi",
+          "correct": false
+        },
+        {
+          "text": "Tiêu dùng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028537",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng về quan hệ giữa sản xuất với phân phối",
+      "choices": [
+        {
+          "text": "Tồn tại độc lập với nhau",
+          "correct": false
+        },
+        {
+          "text": "Phân phối thụ động, do sản xuất quyết định",
+          "correct": false
+        },
+        {
+          "text": "Phân phối quyết định đến quy mô, cơ cấu của sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Sản xuất quyết định phân phối, phân phối có tác động tích cực đối với sản xuất",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028538",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Nội dung của tái sản xuất xã hội bao gồm:",
+      "choices": [
+        {
+          "text": "Tái sản xuất của cải vật chất và QHSX",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất sức lao động và tư liệu sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất tư liệu tiêu dùng và môi trường sinh thái",
+          "correct": false
+        },
+        {
+          "text": "Tái sản xuất sức lao động, của cải vật chất, QHSX và môi trường sinh thái",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028539",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tiêu chí nào là quan trọng nhất để phân biệt các hình thái kinh tế - xã hội?",
+      "choices": [
+        {
+          "text": "Lực lượng sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Tồn tại xã hội",
+          "correct": false
+        },
+        {
+          "text": "Kiến trúc thượng tầng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028540",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tăng trưởng kinh tế là:",
+      "choices": [
+        {
+          "text": "Tăng năng suất lao động",
+          "correct": false
+        },
+        {
+          "text": "Tăng hiệu quả của sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Tăng quy mô sản lượng của nền kinh tế trong một thời kỳ nhất định",
+          "correct": true
+        },
+        {
+          "text": "Sự phát triển kinh tế và tiến bộ xã hội",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028541",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chỉ số nào được sử dụng để tính tốc độ tăng trưởng kinh tế?",
+      "choices": [
+        {
+          "text": "Mức tăng năng suất lao động",
+          "correct": false
+        },
+        {
+          "text": "Mức tăng vốn đầu tư",
+          "correct": false
+        },
+        {
+          "text": "Mức tăng GDP/người",
+          "correct": false
+        },
+        {
+          "text": "Mức tăng GNP hoặc GDP năm sau so với năm trước",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028542",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Để tăng trưởng kinh tế cao, kinh tế học hiện đại nêu ra các nhân tố nào?",
+      "choices": [
+        {
+          "text": "Vốn, khoa học công nghệ và con người",
+          "correct": false
+        },
+        {
+          "text": "Đất đai, tư bản và cơ cấu kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Cơ cấu kinh tế, thể chế chính trị và vai trò của nhà nước",
+          "correct": false
+        },
+        {
+          "text": "Cả a và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028543",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng về phát triển kinh tế",
+      "choices": [
+        {
+          "text": "Phát triển kinh tế là tăng trưởng kinh tế bền vững",
+          "correct": false
+        },
+        {
+          "text": "Phát triển kinh tế là tăng trưởng kinh tế, hoàn thiện cơ cấu kinh tế và thể chế kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Phát triển kinh tế là tăng trưởng kinh tế và nâng cao chất lượng cuộc sống",
+          "correct": false
+        },
+        {
+          "text": "Phát triển kinh tế là tăng trưởng kinh tế gắn liền với hoàn thiện cơ cấu kinh tế, thể chế kinh tế và nâng cao chất lượng cuộc sống",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028544",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Thế nào là tăng trưởng kinh tế bền vững?",
+      "choices": [
+        {
+          "text": "Là sự tăng trưởng ổn định lâu dài và tốc độ rất cao",
+          "correct": false
+        },
+        {
+          "text": "Là sự tăng trưởng tương đối cao, ổn định trong thời gian tương đối dài",
+          "correct": false
+        },
+        {
+          "text": "Sự tăng trưởng gắn liền với bảo vệ môi trường sinh thái và tiến bộ xã hội",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028545",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Trong các nhân tố tăng trưởng kinh tế, Đảng ta xác định nhân tố nào là cơ bản của tăng trưởng nhanh và bền vững?",
+      "choices": [
+        {
+          "text": "Vốn",
+          "correct": false
+        },
+        {
+          "text": "Con người",
+          "correct": true
+        },
+        {
+          "text": "Khoa học và công nghệ",
+          "correct": false
+        },
+        {
+          "text": "Cơ cấu kinh tế, thể chế kinh tế và vai trò nhà nước",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028546",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tăng trưởng kinh tế có vai trò thế nào?",
+      "choices": [
+        {
+          "text": "Là điều kiện để khắc phục tình trạng đói nghèo, lạc hậu",
+          "correct": false
+        },
+        {
+          "text": "Để tạo thêm việc làm, giảm thất nghiệp",
+          "correct": false
+        },
+        {
+          "text": "Để củng cố an ninh, quốc phòng",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028547",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Các nhân tố nào có ảnh hưởng đến phát triển kinh tế?",
+      "choices": [
+        {
+          "text": "Lực lượng sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Kiến trúc thượng tầng",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028548",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Phát triển kinh tế bao gồm những nội dung nào dưới đây?",
+      "choices": [
+        {
+          "text": "Sự gia tăng của GNP, hoặc GDP và GNP hoặc GDP trên đầu người",
+          "correct": false
+        },
+        {
+          "text": "Cơ cấu kinh tế thay đổi theo hướng: tỷ trọng của công nghiệp và dịch vụ trong GNP tăng lên còn của nông nghiệp trong GNP giảm xuống",
+          "correct": false
+        },
+        {
+          "text": "Chất lượng cuộc sống của đại đa số dân cư tăng lên cả về mặt vật chất, tinh thần và môi trường sinh thái được bảo vệ",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028549",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tiến bộ xã hội được thể hiện ở những mặt nào?",
+      "choices": [
+        {
+          "text": "Tiến bộ về kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Tiến bộ về chính trị, xã hội",
+          "correct": false
+        },
+        {
+          "text": "Đời sống văn hoá, tinh thần ngày càng được nâng cao",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028550",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Liên hợp quốc dùng chỉ số HDI làm tiêu chí đánh giá sự phát triển, sự tiến bộ của mỗi quốc gia. Chỉ số HDI gồm những tiêu chí cơ bản nào?",
+      "choices": [
+        {
+          "text": "Mức thu nhập bình quân (GDP/người)",
+          "correct": false
+        },
+        {
+          "text": "Thành tựu giáo dục",
+          "correct": false
+        },
+        {
+          "text": "Tuổi thọ bình quân",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028551",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Phát triển kinh tế và tiến bộ xã hội có quan hệ với nhau:",
+      "choices": [
+        {
+          "text": "Phát triển kinh tế là cơ sở vật chất cho tiến bộ xã hội",
+          "correct": false
+        },
+        {
+          "text": "Tiến bộ xã hội thúc đẩy tăng trưởng và phát triển kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Thực chất là quan hệ giữa sự phát triển lực lượng sản xuất với phát triển QHSX và kiến trúc thượng tầng",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.485Z"
+    },
+    {
+      "id": "1793985028553",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng về tăng trưởng kinh tế và phát triển kinh tế",
+      "choices": [
+        {
+          "text": "Muốn phát triển kinh tế thì cần phải tăng trưởng kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Có thể có tăng trưởng kinh tế nhưng không có phát triển kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Những nhân tố làm tăng trưởng kinh tế đều làm phát triển kinh tế",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028554",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn các nội dung đúng về xã hội hoá sản xuất. Xã hội hoá sản xuất bao gồm:",
+      "choices": [
+        {
+          "text": "Xã hội hoá sản xuất về kinh tế- kỹ thuật",
+          "correct": false
+        },
+        {
+          "text": "Xã hội hoá sản xuất về kinh tế - tổ chức",
+          "correct": false
+        },
+        {
+          "text": "Xã hội hoá sản xuất về kinh tế - xã hội  nhau về TLSX",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028555",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Sản xuất hàng hoá xuất hiện dựa trên:",
+      "choices": [
+        {
+          "text": "Phân công lao động cá biệt và chế độ tư hữu về tư liệu sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Phân công lao động chung và chế độ sở hữu khác nhau về TLSX",
+          "correct": false
+        },
+        {
+          "text": "Phân công lao động và sự tách biệt về kinh tế giữa những người sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Phân công lao động xã hội và chế độ tư hữu hoặc những hình thức sở hữu khác",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028556",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Hàng hoá là:",
+      "choices": [
+        {
+          "text": "Sản phẩm của lao động để thoả mãn nhu cầu của con người",
+          "correct": false
+        },
+        {
+          "text": "Sản phẩm của lao động có thể thoả mãn nhu cầu nào đó của con người thông qua mua bán",
+          "correct": true
+        },
+        {
+          "text": "Sản phẩm ở trên thị trường",
+          "correct": false
+        },
+        {
+          "text": "Sản phẩm được sản xuất ra để đem bán",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028557",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Giá trị của hàng hoá được quyết định bởi:",
+      "choices": [
+        {
+          "text": "Sự khan hiếm của hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Sự hao phí sức lao động của con người",
+          "correct": false
+        },
+        {
+          "text": "Lao động trừu tượng của người sản xuất kết tinh trong hàng hoá",
+          "correct": true
+        },
+        {
+          "text": "Công dụng của hàng hoá",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028558",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quy luật giá trị có tác dụng:",
+      "choices": [
+        {
+          "text": "Điều tiết sản xuất và lưu thông hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Cải tiến kỹ thuật, tăng năng suất lao động và phân hoá những người sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Điều tiết sản xuất, phân hoá giàu nghèo",
+          "correct": false
+        },
+        {
+          "text": "Cả a và b",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028559",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Sản xuất hàng hoá tồn tại:",
+      "choices": [
+        {
+          "text": "Trong mọi xã hội",
+          "correct": false
+        },
+        {
+          "text": "Trong chế độ nô lệ, phong kiến, TBCN",
+          "correct": false
+        },
+        {
+          "text": "Trong các xã hội, có phân công lao động xã hội và sự tách biệt về kinh tế giữa những người sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Chỉ có trong CNTB",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028560",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Giá cả hàng hoá là:",
+      "choices": [
+        {
+          "text": "Giá trị của hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ về lượng giữa hàng và tiền",
+          "correct": false
+        },
+        {
+          "text": "Tổng của chi phí sản xuất và lợi nhuận",
+          "correct": false
+        },
+        {
+          "text": "Biểu hiện bằng tiền của giá trị hàng hoá",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028561",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Quy luật giá trị là:",
+      "choices": [
+        {
+          "text": "Quy luật riêng của CNTB",
+          "correct": false
+        },
+        {
+          "text": "Quy luật cơ bản của sản xuất và trao đổi hàng hoá",
+          "correct": true
+        },
+        {
+          "text": "Quy luật kinh tế chung của mọi xã hội",
+          "correct": false
+        },
+        {
+          "text": "Quy luật kinh tế của thời kỳ quá độ lên CNXH",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028562",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Yếu tố quyết định đến giá cả hàng hoá là",
+      "choices": [
+        {
+          "text": "Giá trị của hàng hoá",
+          "correct": true
+        },
+        {
+          "text": "Quan hệ cung cầu về hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Giá trị sử dụng của hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Mốt thời trang của hàng hoá",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028563",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động trừu tượng là:",
+      "choices": [
+        {
+          "text": "Là phạm trù riêng của CNTB",
+          "correct": false
+        },
+        {
+          "text": "Là phạm trù của mọi nền kinh tế hàng hoá",
+          "correct": true
+        },
+        {
+          "text": "Là phạm trù riêng của kinh tế thị trường",
+          "correct": false
+        },
+        {
+          "text": "Là phạm trù chung của mọi nền kinh tế",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028564",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động cụ thể là:",
+      "choices": [
+        {
+          "text": "Là phạm trù lịch sử",
+          "correct": false
+        },
+        {
+          "text": "Lao động tạo ra giá trị của hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Tạo ra giá trị sử dụng của hàng hoá",
+          "correct": true
+        },
+        {
+          "text": "Biểu hiện tính chất xã hội của người sản xuất hàng hoá",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028565",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lượng giá trị xã hội của hàng hoá được quyết định bởi:",
+      "choices": [
+        {
+          "text": "Hao phí vật tư kỹ thuật",
+          "correct": false
+        },
+        {
+          "text": "Hao phí lao động cần thiết của người sản xuất hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Hao phí lao động sống của người sản xuất hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Thời gian lao động xã hội cần thiết",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028566",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lượng giá trị của đơn vị hàng hoá thay đổi:",
+      "choices": [
+        {
+          "text": "Tỷ lệ thuận với năng suất lao động",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ nghịch với cường độ lao động",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ nghịch với năng suất lao động, không phụ thuộc vào cường độ lao động",
+          "correct": true
+        },
+        {
+          "text": "a và b",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028567",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lượng giá trị của đơn vị hàng hoá thay đổi:",
+      "choices": [
+        {
+          "text": "Tỷ lệ nghịch với thời gian lao động xã hội cần thiết và năng suất lao động",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ thuận với thời gian lao động xã hội cần thiết",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ nghịch với năng suất lao động",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028568",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lượng giá trị của đơn vị hàng hoá:",
+      "choices": [
+        {
+          "text": "Tỷ lệ thuận với cường độ lao động",
+          "correct": false
+        },
+        {
+          "text": "Tỷ lệ nghịch với cường độ lao động",
+          "correct": false
+        },
+        {
+          "text": "Không phụ thuộc vào cường độ lao động",
+          "correct": true
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028569",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng về tăng năng suất lao động: Khi tăng năng suất lao động thì:",
+      "choices": [
+        {
+          "text": "Số lượng hàng hoá làm ra trong 1 đơn vị thời gian tăng",
+          "correct": false
+        },
+        {
+          "text": "Tổng giá trị của hàng hoá không thay đổi",
+          "correct": false
+        },
+        {
+          "text": "Giá trị 1 đơn vị hàng hoá giảm xuống",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028570",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Chọn ý đúng về tăng cường độ lao động: khi cường độ lao động tăng lên thì:",
+      "choices": [
+        {
+          "text": "Số lượng hàng hoá làm ra trong một đơn vị thời gian tăng lên",
+          "correct": true
+        },
+        {
+          "text": "Số lượng lao động hao phí trong thời gian đó không thay đổi",
+          "correct": false
+        },
+        {
+          "text": "Giá trị 1 đơn vị hàng hoá giảm đi",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028571",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Khi đồng thời tăng năng suất lao động và cường độ lao động lên 2 lần thì ý nào dưới đây là đúng?",
+      "choices": [
+        {
+          "text": "Tổng số hàng hoá tăng lên 4 lần, tổng số giá trị hàng hoá tăng lên 4 lần",
+          "correct": false
+        },
+        {
+          "text": "Tổng số giá trị hàng hoá tăng 2 lần, tổng số hàng hoá tăng 2 lần",
+          "correct": false
+        },
+        {
+          "text": "Giá trị 1 hàng hoá giảm 2 lần, tổng số giá trị hàng hoá tăng 2 lần",
+          "correct": true
+        },
+        {
+          "text": "Tổng số hàng hoá tăng lên 2 lần, giá trị 1 hàng hoá giảm 2 lần",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028572",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Hai hàng hoá trao đổi được với nhau vì:",
+      "choices": [
+        {
+          "text": "Chúng cùng là sản phẩm của lao động",
+          "correct": false
+        },
+        {
+          "text": "Có lượng thời gian hao phí lao động xã hội cần thiết để sản xuất ra chúng bằng nhau",
+          "correct": false
+        },
+        {
+          "text": "Có lượng hao phí vật tư kỹ thuật bằng nhau",
+          "correct": false
+        },
+        {
+          "text": "Cả a và b",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028573",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Giá trị sử dụng là gì?",
+      "choices": [
+        {
+          "text": "Là công dụng của vật có thể thoả mãn nhu cầu nào đó của con người",
+          "correct": false
+        },
+        {
+          "text": "Là tính hữu ích của vật",
+          "correct": false
+        },
+        {
+          "text": "Là thuộc tính tự nhiên của vật",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028574",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Số lượng giá trị sử dụng phụ thuộc các nhân tố nào?",
+      "choices": [
+        {
+          "text": "Những điều kiện tự nhiên",
+          "correct": false
+        },
+        {
+          "text": "Trình độ khoa học công nghệ",
+          "correct": false
+        },
+        {
+          "text": "Chuyên môn hoá sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028575",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Yếu tố nào được xác định là thực thể của giá trị hàng hoá?",
+      "choices": [
+        {
+          "text": "Lao động cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Lao động trừu tượng",
+          "correct": true
+        },
+        {
+          "text": "Lao động giản đơn",
+          "correct": false
+        },
+        {
+          "text": "Lao động phức tạp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028576",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Giá trị hàng hoá được tạo ra từ đâu?",
+      "choices": [
+        {
+          "text": "Từ sản xuất",
+          "correct": true
+        },
+        {
+          "text": "Từ phân phối",
+          "correct": false
+        },
+        {
+          "text": "Từ trao đổi",
+          "correct": false
+        },
+        {
+          "text": "Cả sản xuất, phân phối và trao đổi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028577",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Tính chất hai mặt của lao động sản xuất hàng hoá là:",
+      "choices": [
+        {
+          "text": "Lao động tư nhân và lao động xã hội",
+          "correct": false
+        },
+        {
+          "text": "Lao động giản đơn và lao động phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Lao động cụ thể và lao động trừu tượng",
+          "correct": true
+        },
+        {
+          "text": "Lao động quá khứ và lao động sống",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028578",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Ai là người phát hiện ra tính chất hai mặt của lao động sản xuất hàng hoá?",
+      "choices": [
+        {
+          "text": "A.Smith",
+          "correct": false
+        },
+        {
+          "text": "D.Ricardo",
+          "correct": false
+        },
+        {
+          "text": "C.Mác",
+          "correct": true
+        },
+        {
+          "text": "Ph. Ăng ghen",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028579",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động cụ thể là:",
+      "choices": [
+        {
+          "text": "Là những việc làm cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Là lao động có mục đích cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Là lao động ở các ngành nghề cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Là lao động ngành nghề, có mục đích riêng, đối tượng riêng, công cụ lao động riêng và kết quả riêng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028580",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động cụ thể là:",
+      "choices": [
+        {
+          "text": "Nguồn gốc của của cải",
+          "correct": true
+        },
+        {
+          "text": "Nguồn gốc của giá trị",
+          "correct": false
+        },
+        {
+          "text": "Nguồn gốc của giá trị trao đổi",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b và c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028581",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "\"Lao động là cha, còn đất là mẹ của mọi của cải\". Câu nói này là của ai?",
+      "choices": [
+        {
+          "text": "W.Petty",
+          "correct": true
+        },
+        {
+          "text": "A.Smith",
+          "correct": false
+        },
+        {
+          "text": "C.Mác",
+          "correct": false
+        },
+        {
+          "text": "D. Ricardo",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028582",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "\"Lao động là cha, còn đất là mẹ của mọi của cải\". Khái niệm lao động trong câu này là lao động gì?",
+      "choices": [
+        {
+          "text": "Lao động trừu tượng",
+          "correct": false
+        },
+        {
+          "text": "Lao động giản đơn",
+          "correct": false
+        },
+        {
+          "text": "Lao động phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Lao động cụ thể",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028583",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động trừu tượng là gì?",
+      "choices": [
+        {
+          "text": "Là lao động không cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Là lao động phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Là lao động có trình độ cao, mất nhiều công đào tạo",
+          "correct": false
+        },
+        {
+          "text": "Là sự hao phí sức lao động của người sản xuất hàng hoá nói chung không tính đến những hình thức cụ thể",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.486Z"
+    },
+    {
+      "id": "1793985028585",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Lao động trừu tượng là nguồn gốc:",
+      "choices": [
+        {
+          "text": "Của tính hữu ích của hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Của giá trị hàng hoá",
+          "correct": true
+        },
+        {
+          "text": "Của giá trị sử dụng",
+          "correct": false
+        },
+        {
+          "text": "Cả a, b, c",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.487Z"
+    },
+    {
+      "id": "1793985028586",
+      "subject": "Kinh tế chính trị",
+      "chapter": "",
+      "question": "Thế nào là lao động giản đơn?",
+      "choices": [
+        {
+          "text": "Là lao động làm công việc đơn giản",
+          "correct": false
+        },
+        {
+          "text": "Là lao động làm ra các hàng hoá chất lượng không cao",
+          "correct": false
+        },
+        {
+          "text": "Là lao động chỉ làm một công đoạn của quá trình tạo ra hàng hoá",
+          "correct": false
+        },
+        {
+          "text": "Là lao động không cần trải qua đào tạo cũng có thể làm được",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-06T17:10:28.487Z"
+    },
+    {
       "id": "1784050175276",
       "subject": "Hệ thống thông tin quản lý",
       "chapter": "Thương mại điện tử",
