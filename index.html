@@ -129,11 +129,11 @@ body {
 
 /* ── LAYOUT ── */
 .layout {
-  max-width: 1120px;
+  max-width: 1380px;
   margin: 0 auto;
   padding: 28px 32px;
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 210px minmax(0,1fr) 250px;
   gap: 24px;
 }
 
@@ -373,6 +373,9 @@ body {
 
 @media (max-width: 720px) {
   .layout { grid-template-columns: 1fr; padding: 16px; }
+  .rside { position: static !important; max-height: none !important; overflow: visible !important; order: 1; }
+  main { order: 2; }
+  .qlist { max-height: 160px; overflow-y: auto; }
   .sidebar { position: static; max-height: none; overflow: visible; padding-right: 0; }
   .subjlist { max-height: 220px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
   .prog-top { flex-direction: column; align-items: stretch !important; }
@@ -513,6 +516,23 @@ body {
 details.rv-sol { margin-top: 10px; }
 details.rv-sol summary { cursor: pointer; font-size: 12px; color: var(--green); }
 
+
+/* ── Cột phải ── */
+.rside { position: sticky; top: 76px; height: fit-content; max-height: calc(100vh - 92px); overflow-y: auto; overscroll-behavior: contain; padding-right: 4px; scrollbar-width: thin; }
+.rside .prog-wrap { padding: 16px; margin-bottom: 14px; }
+.rside .prog-top { flex-direction: column; align-items: stretch; }
+.rside .prog-btns .mini-btn { flex: 1 1 100%; text-align: left; }
+.qlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); gap: 5px; max-height: 40vh; overflow-y: auto; scrollbar-width: thin; }
+.qn { height: 32px; border-radius: 7px; border: 1px solid var(--border); background: var(--bg); color: var(--muted); font-family: 'Fira Code', monospace; font-size: 11px; cursor: pointer; padding: 0; }
+.qn:hover { border-color: var(--accent); color: var(--accent); }
+.qn.ok { background: var(--grn-lt); border-color: var(--green); color: var(--green); }
+.qn.bad { background: #fdeeee; border-color: #d64545; color: #d64545; }
+[data-theme="dark"] .qn.bad { background: #2a1214; }
+.qn.seen { background: var(--acc-lt); border-color: var(--accent); color: var(--accent); }
+.ql-legend { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 10px; font-size: 11px; color: var(--faint); }
+.lg { display: inline-block; width: 9px; height: 9px; border-radius: 3px; border: 1px solid var(--border2); margin-right: 4px; }
+.lg.ok { background: var(--green); border-color: var(--green); } .lg.bad { background: #d64545; border-color: #d64545; } .lg.seen { background: var(--accent); border-color: var(--accent); }
+
 /* MathJax display math wrapper */
 mjx-container[display="true"] {
   overflow-x: auto;
@@ -579,7 +599,13 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
       <h2 class="page-title" id="pageTitle">Tất cả <em>bài tập</em></h2>
       <span class="page-cnt" id="pageCnt"></span>
     </div>
-    <div class="prog-wrap" id="progWrap" style="display:none">
+    <div id="loadingBar" class="loading-bar"></div>
+    <div class="ex-list" id="exList"></div>
+  </main>
+
+  <aside class="rside" id="rside">
+    <div class="sblock prog-wrap" id="progWrap" style="display:none">
+      <div class="slabel">Tiến độ</div>
       <div class="prog-top">
         <div class="prog-text" id="progText"></div>
         <div class="prog-btns" id="progFilter">
@@ -595,9 +621,12 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
         <button class="mini-btn" id="resetProg">↺ Xóa tiến độ mục này</button>
       </div>
     </div>
-    <div id="loadingBar" class="loading-bar"></div>
-    <div class="ex-list" id="exList"></div>
-  </main>
+    <div class="sblock" id="qlWrap" style="display:none">
+      <div class="slabel">Danh sách câu</div>
+      <div class="qlist" id="qList"></div>
+      <div class="ql-legend"><span><i class="lg ok"></i>Đúng</span><span><i class="lg bad"></i>Sai</span><span><i class="lg seen"></i>Đã làm</span><span><i class="lg"></i>Chưa</span></div>
+    </div>
+  </aside>
 </div>
 
 <div class="ov" id="examOv" hidden><div class="ov-box" id="examBox"></div></div>
@@ -1034,6 +1063,13 @@ function updateProgress() {
     `Đã làm <b>${done}/${n}</b>` + (ok + bad ? ` · đúng <b style="color:var(--green)">${ok}</b> · sai <b style="color:#d64545">${bad}</b>` : '');
   document.getElementById('progOk').style.width  = n ? (ok / n * 100) + '%' : '0';
   document.getElementById('progBad').style.width = n ? (bad / n * 100) + '%' : '0';
+  const ql = document.getElementById('qList');
+  document.getElementById('qlWrap').style.display = n ? '' : 'none';
+  ql.innerHTML = base.map((e, i) => {
+    const pr = progress[e.id];
+    const cls = !pr ? '' : pr.ok === true ? 'ok' : pr.ok === false ? 'bad' : 'seen';
+    return `<button class="qn ${cls}" data-id="${e.id}" title="Câu ${i + 1}">${i + 1}</button>`;
+  }).join('');
   document.querySelectorAll('#progFilter .chip').forEach(c => c.classList.toggle('active', c.dataset.f === statusF));
 }
 
@@ -1057,6 +1093,12 @@ document.getElementById('exList').addEventListener('click', e => {
   answerQ(wrap.id.slice(3), +li.dataset.i);
 });
 
+document.getElementById('qList').addEventListener('click', e => {
+  const b = e.target.closest('.qn'); if (!b) return;
+  let el = document.getElementById('card-' + b.dataset.id);
+  if (!el) { statusF = 'all'; renderExercises(); el = document.getElementById('card-' + b.dataset.id); }
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.style.outline = '2px solid var(--accent)'; setTimeout(() => el.style.outline = '', 1200); }
+});
 document.getElementById('progFilter').addEventListener('click', e => {
   const c = e.target.closest('.chip'); if (!c) return;
   statusF = c.dataset.f; renderExercises();
