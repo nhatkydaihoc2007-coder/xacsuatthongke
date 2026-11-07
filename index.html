@@ -138,7 +138,7 @@ body {
 }
 
 /* ── SIDEBAR ── */
-.sidebar { position: sticky; top: 88px; height: fit-content; }
+.sidebar { position: sticky; top: 76px; height: fit-content; max-height: calc(100vh - 92px); overflow-y: auto; overscroll-behavior: contain; padding-right: 4px; scrollbar-width: thin; }
 
 .sblock {
   background: var(--surface);
@@ -373,7 +373,9 @@ body {
 
 @media (max-width: 720px) {
   .layout { grid-template-columns: 1fr; padding: 16px; }
-  .sidebar { position: static; }
+  .sidebar { position: static; max-height: none; overflow: visible; padding-right: 0; }
+  .subjlist { max-height: 220px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .prog-top { flex-direction: column; align-items: stretch !important; }
   .stats-row { grid-template-columns: repeat(2,1fr); }
   .header { padding: 0 16px; }
 }
@@ -443,6 +445,74 @@ body {
   color: var(--accent);
   font-weight: 600;
 }
+
+/* ── Chọn đáp án tức thì ── */
+.choice-item { cursor: pointer; }
+.choices-hidden .choice-item:hover { border-color: var(--accent); background: var(--acc-lt); }
+.locked .choice-item { cursor: default; }
+.choice-item.wrong { border-color: #d64545; background: #fdeeee; }
+.choice-item.wrong .choice-letter { background: #d64545; color: #fff; }
+[data-theme="dark"] .choice-item.wrong { background: #2a1214; border-color: #e0605f; }
+[data-theme="dark"] .choice-item.wrong .choice-letter { background: #e0605f; }
+.choice-item.sel { border-color: var(--accent); background: var(--acc-lt); }
+.choice-item.sel .choice-letter { background: var(--accent); color: #fff; }
+
+.ex-status { font-size: 11px; font-weight: 600; }
+.ex-card.done-ok  { border-left: 4px solid var(--green); }
+.ex-card.done-bad { border-left: 4px solid #d64545; }
+.ex-card.done-seen{ border-left: 4px solid var(--accent); }
+.ex-card.done-ok .ex-status { color: var(--green); }
+.ex-card.done-bad .ex-status { color: #d64545; }
+.ex-card.done-seen .ex-status { color: var(--accent); }
+.mini-btn {
+  font-family: inherit; font-size: 12px; padding: 6px 12px; border-radius: 7px;
+  border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer;
+}
+.mini-btn:hover { border-color: var(--accent); color: var(--accent); }
+.mini-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.mini-btn.primary:hover { background: var(--acc-dk); color:#fff; }
+
+/* ── Thanh tiến độ ── */
+.prog-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 16px; box-shadow: var(--shadow); }
+.prog-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.prog-text { font-size: 13px; color: var(--muted); }
+.prog-text b { color: var(--text); }
+.prog-track { height: 6px; background: var(--bg); border-radius: 4px; margin: 10px 0; overflow: hidden; display: flex; }
+.prog-ok { background: var(--green); transition: width .3s; }
+.prog-bad { background: #d64545; transition: width .3s; }
+.prog-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font-family: inherit; font-size: 12px; padding: 4px 11px; border-radius: 14px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; }
+.chip.active { background: var(--acc-lt); border-color: var(--accent); color: var(--accent); font-weight: 500; }
+
+/* ── Đề ngẫu nhiên ── */
+.rand-btn { font-family: inherit; font-size: 12px; font-weight: 500; padding: 8px 13px; border-radius: 8px; border: 0; background: var(--accent); color: #fff; cursor: pointer; white-space: nowrap; }
+.rand-btn:hover { background: var(--acc-dk); }
+.ov { position: fixed; inset: 0; background: var(--bg); z-index: 300; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.ov[hidden] { display: none; }
+.ov-box { max-width: 820px; margin: 0 auto; padding: 24px 18px 60px; }
+.ov h2 { font-family: 'Lora', serif; font-weight: 400; font-size: 22px; margin-bottom: 16px; }
+.field { margin-bottom: 14px; }
+.field label.fl { display: block; font-size: 12px; color: var(--muted); margin-bottom: 5px; font-weight: 500; }
+.field select, .field input[type=number] { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font-family: inherit; font-size: 14px; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.chk { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 4px 0; cursor: pointer; }
+.chaplist { border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; max-height: 190px; overflow-y: auto; background: var(--surface); }
+.pool-info { font-size: 13px; color: var(--muted); margin: 6px 0 16px; }
+.ex-bar { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 10px 0; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--border); margin-bottom: 14px; }
+.timer { font-family: 'Fira Code', monospace; font-size: 18px; font-weight: 600; }
+.timer.low { color: #d64545; }
+.qgrid { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.qdot { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--muted); font-size: 13px; cursor: pointer; font-family: 'Fira Code', monospace; }
+.qdot.ans { background: var(--acc-lt); border-color: var(--accent); color: var(--accent); }
+.qdot.cur { outline: 2px solid var(--accent); outline-offset: 1px; }
+.qdot.ok { background: var(--grn-lt); border-color: var(--green); color: var(--green); }
+.qdot.bad { background: #fdeeee; border-color: #d64545; color: #d64545; }
+.score-box { text-align: center; padding: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 18px; }
+.score-n { font-family: 'Lora', serif; font-size: 44px; font-weight: 600; }
+.rv-card { margin-bottom: 14px; }
+details.rv-sol { margin-top: 10px; }
+details.rv-sol summary { cursor: pointer; font-size: 12px; color: var(--green); }
+
 /* MathJax display math wrapper */
 mjx-container[display="true"] {
   overflow-x: auto;
@@ -465,6 +535,7 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
   <div class="logo-mark">∑</div>
   <div class="logo-name">Kho <em>Bài Tập</em></div>
   <div class="hright">
+    <button class="rand-btn" id="randBtn">🎲 Đề ngẫu nhiên</button>
     <button class="theme-btn" id="themeBtn" title="Đổi giao diện">🌙</button>
     <a href="admin.html" class="admin-link">🔑 Admin</a>
   </div>
@@ -508,10 +579,28 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
       <h2 class="page-title" id="pageTitle">Tất cả <em>bài tập</em></h2>
       <span class="page-cnt" id="pageCnt"></span>
     </div>
+    <div class="prog-wrap" id="progWrap" style="display:none">
+      <div class="prog-top">
+        <div class="prog-text" id="progText"></div>
+        <div class="prog-btns" id="progFilter">
+          <button class="chip active" data-f="all">Tất cả</button>
+          <button class="chip" data-f="todo">Chưa làm</button>
+          <button class="chip" data-f="done">Đã làm</button>
+          <button class="chip" data-f="wrong">Làm sai</button>
+        </div>
+      </div>
+      <div class="prog-track"><div class="prog-ok" id="progOk" style="width:0"></div><div class="prog-bad" id="progBad" style="width:0"></div></div>
+      <div class="prog-btns">
+        <button class="mini-btn" id="nextTodo">⏭ Tới câu chưa làm</button>
+        <button class="mini-btn" id="resetProg">↺ Xóa tiến độ mục này</button>
+      </div>
+    </div>
     <div id="loadingBar" class="loading-bar"></div>
     <div class="ex-list" id="exList"></div>
   </main>
 </div>
+
+<div class="ov" id="examOv" hidden><div class="ov-box" id="examBox"></div></div>
 
 <script>
 // ── CONFIG: đổi thành repo của bạn ──
@@ -523,7 +612,11 @@ const DATA_FILE  = 'data/exercises.json';
 const RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${DATA_FILE}`;
 
 let allExercises = [], allSubjects = [], allChapters = {};
-let curSubj = 'all', curChap = 'all', searchQ = '';
+let curSubj = 'all', curChap = 'all', searchQ = '', statusF = 'all';
+let progress = {};
+try { progress = JSON.parse(localStorage.getItem('ex_progress') || '{}') || {}; } catch (e) { progress = {}; }
+function saveProg() { try { localStorage.setItem('ex_progress', JSON.stringify(progress)); } catch (e) {} }
+const hasKey = ex => Array.isArray(ex.choices) && ex.choices.length >= 2 && ex.choices.some(c => c.correct);
 
 // ── Theme ──
 const saved = localStorage.getItem('theme') || 'light';
@@ -626,13 +719,20 @@ function renderStats() {
   document.getElementById('sNew').textContent  = allExercises.filter(e => new Date(e.createdAt) > w).length;
 }
 
-function getFiltered() {
+function getBase() {
   return allExercises.filter(e => {
     const ms = curSubj === 'all' || e.subject === curSubj;
     const mc = curChap === 'all' || e.chapter === curChap;
     const q  = searchQ.toLowerCase();
     return ms && mc && (!q || e.question.toLowerCase().includes(q) || (e.solution||'').toLowerCase().includes(q));
   });
+}
+function getFiltered() {
+  const b = getBase();
+  if (statusF === 'todo')  return b.filter(e => !progress[e.id]);
+  if (statusF === 'done')  return b.filter(e => progress[e.id]);
+  if (statusF === 'wrong') return b.filter(e => progress[e.id] && progress[e.id].ok === false);
+  return b;
 }
 
 function renderExercises() {
@@ -646,7 +746,8 @@ function renderExercises() {
                          `Môn: <em>${curSubj}</em>`;
 
   if (!data.length) {
-    list.innerHTML = `<div class="empty"><div class="empty-ico">🔍</div><div class="empty-txt">Không tìm thấy bài tập nào.</div></div>`;
+    list.innerHTML = `<div class="empty"><div class="empty-ico">🔍</div><div class="empty-txt">Không có bài tập nào.</div></div>`;
+    updateProgress();
     return;
   }
 
@@ -659,6 +760,7 @@ function renderExercises() {
         <span class="ex-num">#${String(gi).padStart(3,'0')}</span>
         <span class="ex-tag ${tagClass(ex.subject)}">${ex.subject}</span>
         ${ex.chapter ? `<span class="ex-chapter">📖 ${ex.chapter}</span>` : ''}
+        <span class="ex-status" id="st-${ex.id}"></span>
         <span class="ex-date">${d}</span>
       </div>
       <div class="ex-question" id="eq-${ex.id}">${ex.question}</div>
@@ -667,6 +769,7 @@ function renderExercises() {
         <button class="sol-btn" id="sb-${ex.id}" onclick="toggleSol('${ex.id}')">
           📖 <span id="sbtxt-${ex.id}">Xem lời giải</span> <span class="arr">▾</span>
         </button>
+        <button class="mini-btn" id="mk-${ex.id}" data-mk="${ex.id}" style="display:none"></button>
       </div>
       <div class="sol-wrap" id="sw-${ex.id}">
         <div class="sol-inner">
@@ -685,6 +788,8 @@ function renderExercises() {
     const chWrap = document.getElementById('ch-'+ex.id);
     if (chWrap) chWrap.innerHTML = renderChoiceHtml(ex.choices);
   });
+  data.forEach(ex => { applyChoice(ex.id); markCard(ex.id); });
+  updateProgress();
 
   if (window.MathJax) MathJax.typesetPromise([list]).catch(()=>{});
 }
@@ -699,7 +804,7 @@ function toggleSol(id) {
   btn.classList.toggle('open', !open);
   txt.textContent = open ? 'Xem lời giải' : 'Ẩn lời giải';
   // Reveal / hide correct answer highlight
-  if (ch) ch.classList.toggle('choices-hidden', open);
+  if (ch && !ch.classList.contains('locked')) ch.classList.toggle('choices-hidden', open);
   if (!open && window.MathJax) MathJax.typesetPromise([document.getElementById('sc-'+id)]).catch(()=>{});
 }
 
@@ -763,7 +868,7 @@ function parseChoice(s) {
 function renderChoiceHtml(choices) {
   const letters = ['A','B','C','D','E','F'];
   const items = choices.map((c, i) =>
-    `<li class="choice-item${c.correct?' correct':''}">` +
+    `<li class="choice-item${c.correct?' correct':''}" data-i="${i}">` +
     `<span class="choice-letter">${letters[i]}</span>` +
     `<span class="choice-text">${ctexInner(c.text)}</span>` +
     `</li>`
@@ -872,6 +977,261 @@ function ctex(raw) {
   ctex._lastChoiceHtml = null;
   return ctexInner(raw);
 }
+
+// ══════════ TIẾN ĐỘ & CHỌN ĐÁP ÁN ══════════
+function byId(id) { return allExercises.find(e => e.id === id); }
+
+function applyChoice(id) {
+  const wrap = document.getElementById('ch-' + id);
+  if (!wrap) return;
+  const p = progress[id], ex = byId(id);
+  const lis = wrap.querySelectorAll('.choice-item');
+  lis.forEach(li => li.classList.remove('wrong'));
+  if (ex && hasKey(ex) && p && p.c != null) {
+    wrap.classList.add('locked');
+    wrap.classList.remove('choices-hidden');
+    if (p.ok === false && lis[p.c]) lis[p.c].classList.add('wrong');
+  } else {
+    wrap.classList.remove('locked');
+    const open = document.getElementById('sw-' + id);
+    if (!(open && open.classList.contains('open'))) wrap.classList.add('choices-hidden');
+  }
+}
+
+function markCard(id) {
+  const card = document.getElementById('card-' + id);
+  if (!card) return;
+  const p = progress[id], ex = byId(id);
+  card.classList.toggle('done-ok',  !!p && p.ok === true);
+  card.classList.toggle('done-bad', !!p && p.ok === false);
+  card.classList.toggle('done-seen', !!p && p.ok == null);
+  const st = document.getElementById('st-' + id);
+  if (st) st.textContent = !p ? '' : p.ok === true ? '✓ Đúng' : p.ok === false ? '✗ Sai' : '✓ Đã làm';
+  const mk = document.getElementById('mk-' + id);
+  if (mk) {
+    if (ex && hasKey(ex)) { mk.style.display = p ? '' : 'none'; mk.textContent = '↺ Làm lại'; }
+    else { mk.style.display = ''; mk.textContent = p ? '☑ Đã làm (bỏ đánh dấu)' : '☐ Đánh dấu đã làm'; }
+  }
+}
+
+function answerQ(id, i) {
+  const ex = byId(id);
+  if (!ex || !hasKey(ex) || progress[id]) return;
+  progress[id] = { c: i, ok: !!ex.choices[i].correct, t: Date.now() };
+  saveProg(); applyChoice(id); markCard(id); updateProgress();
+}
+
+function updateProgress() {
+  const wrap = document.getElementById('progWrap');
+  const base = getBase();
+  if (!allExercises.length) { wrap.style.display = 'none'; return; }
+  wrap.style.display = '';
+  const n = base.length;
+  const done = base.filter(e => progress[e.id]).length;
+  const ok = base.filter(e => progress[e.id] && progress[e.id].ok === true).length;
+  const bad = base.filter(e => progress[e.id] && progress[e.id].ok === false).length;
+  document.getElementById('progText').innerHTML =
+    `Đã làm <b>${done}/${n}</b>` + (ok + bad ? ` · đúng <b style="color:var(--green)">${ok}</b> · sai <b style="color:#d64545">${bad}</b>` : '');
+  document.getElementById('progOk').style.width  = n ? (ok / n * 100) + '%' : '0';
+  document.getElementById('progBad').style.width = n ? (bad / n * 100) + '%' : '0';
+  document.querySelectorAll('#progFilter .chip').forEach(c => c.classList.toggle('active', c.dataset.f === statusF));
+}
+
+document.getElementById('exList').addEventListener('click', e => {
+  const mk = e.target.closest('[data-mk]');
+  if (mk) {
+    const id = mk.dataset.mk, ex = byId(id);
+    if (progress[id]) delete progress[id]; else if (!(ex && hasKey(ex))) progress[id] = { ok: null, t: Date.now() };
+    if (ex && hasKey(ex)) {
+      const sw = document.getElementById('sw-' + id), sb = document.getElementById('sb-' + id);
+      if (sw) sw.classList.remove('open'); if (sb) sb.classList.remove('open');
+      const tx = document.getElementById('sbtxt-' + id); if (tx) tx.textContent = 'Xem lời giải';
+    }
+    saveProg(); applyChoice(id); markCard(id); updateProgress();
+    return;
+  }
+  const li = e.target.closest('.choice-item');
+  if (!li) return;
+  const wrap = li.closest('[id^="ch-"]');
+  if (!wrap || wrap.classList.contains('locked')) return;
+  answerQ(wrap.id.slice(3), +li.dataset.i);
+});
+
+document.getElementById('progFilter').addEventListener('click', e => {
+  const c = e.target.closest('.chip'); if (!c) return;
+  statusF = c.dataset.f; renderExercises();
+});
+document.getElementById('nextTodo').addEventListener('click', () => {
+  const ex = getBase().find(x => !progress[x.id]);
+  if (!ex) { alert('Bạn đã làm hết các câu trong mục này 🎉'); return; }
+  if (statusF !== 'all' && statusF !== 'todo') { statusF = 'all'; renderExercises(); }
+  const el = document.getElementById('card-' + ex.id);
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+});
+document.getElementById('resetProg').addEventListener('click', () => {
+  const base = getBase();
+  if (!confirm(`Xóa tiến độ của ${base.length} bài đang hiển thị (theo môn/chương)?`)) return;
+  base.forEach(e => delete progress[e.id]);
+  saveProg(); renderExercises();
+});
+
+// ══════════ ĐỀ NGẪU NHIÊN ══════════
+const ov = document.getElementById('examOv'), box = document.getElementById('examBox');
+let EXM = null, exmTimer = null;
+const LET = ['A','B','C','D','E','F'];
+document.getElementById('randBtn').addEventListener('click', openSetup);
+function closeExam() {
+  clearInterval(exmTimer); EXM = null; ov.hidden = true; document.body.style.overflow = '';
+}
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
+function typeset(el) { if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(() => {}); }
+
+function poolFor(subj, chaps, onlyTodo) {
+  return allExercises.filter(e => hasKey(e)
+    && (subj === 'all' || e.subject === subj)
+    && (!chaps || chaps.includes(e.chapter || ''))
+    && (!onlyTodo || !progress[e.id]));
+}
+
+function openSetup() {
+  clearInterval(exmTimer); EXM = null;
+  ov.hidden = false; document.body.style.overflow = 'hidden'; ov.scrollTop = 0;
+  let cfg = {}; try { cfg = JSON.parse(localStorage.getItem('exam_cfg') || '{}'); } catch (e) {}
+  const subs = allSubjects.filter(s => poolFor(s).length);
+  const subjSel = (cfg.subj && (cfg.subj === 'all' || subs.includes(cfg.subj))) ? cfg.subj : (curSubj !== 'all' && subs.includes(curSubj) ? curSubj : 'all');
+  box.innerHTML = `
+    <h2>🎲 Tạo đề ngẫu nhiên</h2>
+    <div class="field"><label class="fl">Môn học</label>
+      <select id="xSubj"><option value="all">Tất cả môn</option>${subs.map(s => `<option value="${esc(s)}" ${s===subjSel?'selected':''}>${esc(s)} (${poolFor(s).length} câu)</option>`).join('')}</select></div>
+    <div class="field" id="xChapF" style="display:none"><label class="fl">Chương</label><div class="chaplist" id="xChaps"></div></div>
+    <div class="row2">
+      <div class="field"><label class="fl">Số câu</label><input type="number" id="xN" min="1" value="${cfg.n || 20}"></div>
+      <div class="field"><label class="fl">Thời gian (phút, 0 = không giới hạn)</label><input type="number" id="xT" min="0" value="${cfg.t != null ? cfg.t : 30}"></div>
+    </div>
+    <label class="chk"><input type="checkbox" id="xShuf" ${cfg.shuf === false ? '' : 'checked'}> Xáo trộn thứ tự đáp án</label>
+    <label class="chk"><input type="checkbox" id="xTodo" ${cfg.todo ? 'checked' : ''}> Chỉ lấy câu chưa làm</label>
+    <div class="pool-info" id="xPool"></div>
+    <div style="display:flex;gap:8px"><button class="mini-btn primary" id="xStart" style="padding:10px 20px;font-size:14px">Bắt đầu làm bài</button><button class="mini-btn" id="xCancel" style="padding:10px 16px;font-size:14px">Đóng</button></div>`;
+  const q = id => document.getElementById(id);
+  function chapsSel() {
+    const cs = [...document.querySelectorAll('#xChaps input')];
+    return cs.length ? cs.filter(c => c.checked).map(c => c.value) : null;
+  }
+  function drawChaps() {
+    const s = q('xSubj').value;
+    const list = (s !== 'all' && allChapters[s]) ? allChapters[s].slice() : [];
+    const has = list.length && poolFor(s).some(e => !e.chapter);
+    if (has) list.push('');
+    q('xChapF').style.display = list.length ? '' : 'none';
+    q('xChaps').innerHTML = list.map(c => `<label class="chk"><input type="checkbox" value="${esc(c)}" checked> ${c ? esc(c) : '(Chưa phân chương)'} <span style="color:var(--faint)">(${poolFor(s, [c]).length})</span></label>`).join('');
+    q('xChaps').querySelectorAll('input').forEach(i => i.addEventListener('change', info));
+    info();
+  }
+  function info() {
+    const n = poolFor(q('xSubj').value, chapsSel(), q('xTodo').checked).length;
+    q('xPool').textContent = `Có ${n} câu trắc nghiệm phù hợp trong kho.`;
+    q('xStart').disabled = !n; q('xStart').style.opacity = n ? 1 : .5;
+    return n;
+  }
+  q('xSubj').addEventListener('change', drawChaps);
+  q('xTodo').addEventListener('change', info);
+  q('xCancel').addEventListener('click', closeExam);
+  q('xStart').addEventListener('click', () => {
+    const pool = poolFor(q('xSubj').value, chapsSel(), q('xTodo').checked);
+    const n = Math.max(1, Math.min(pool.length, parseInt(q('xN').value) || 1));
+    const t = Math.max(0, parseInt(q('xT').value) || 0);
+    const shuf = q('xShuf').checked;
+    try { localStorage.setItem('exam_cfg', JSON.stringify({ subj: q('xSubj').value, n, t, shuf, todo: q('xTodo').checked })); } catch (e) {}
+    startExam(pool, n, t, shuf);
+  });
+  drawChaps();
+}
+
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+function startExam(pool, n, minutes, shuf) {
+  const qs = shuffle(pool).slice(0, n).map(ex => {
+    const idx = ex.choices.map((_, i) => i);
+    return { ex, order: shuf ? shuffle(idx) : idx, ans: null };
+  });
+  EXM = { qs, cur: 0, start: Date.now(), limit: minutes * 60000, done: false };
+  clearInterval(exmTimer);
+  if (minutes > 0) exmTimer = setInterval(tick, 500);
+  drawExam();
+}
+function fmt(ms) { const s = Math.max(0, Math.round(ms / 1000)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : String(m)) + ':' + String(x).padStart(2, '0'); }
+function tick() {
+  if (!EXM || EXM.done) return;
+  const rem = EXM.limit - (Date.now() - EXM.start);
+  const t = document.getElementById('xTimer');
+  if (t) { t.textContent = '⏱ ' + fmt(rem); t.classList.toggle('low', rem < 60000); }
+  if (rem <= 0) submitExam(true);
+}
+function drawExam() {
+  const E = EXM, q = E.qs[E.cur], ex = q.ex;
+  const answered = E.qs.filter(x => x.ans != null).length;
+  box.innerHTML = `
+    <div class="ex-bar">
+      <div class="timer" id="xTimer">${E.limit ? '⏱ ' + fmt(E.limit - (Date.now() - E.start)) : '⏱ Không giới hạn'}</div>
+      <div class="prog-text" style="margin-left:6px">Đã trả lời <b>${answered}/${E.qs.length}</b></div>
+      <button class="mini-btn primary" id="xSubmit" style="margin-left:auto">Nộp bài</button>
+      <button class="mini-btn" id="xQuit">Thoát</button>
+    </div>
+    <div class="qgrid">${E.qs.map((x, i) => `<button class="qdot ${x.ans != null ? 'ans' : ''} ${i === E.cur ? 'cur' : ''}" data-q="${i}">${i + 1}</button>`).join('')}</div>
+    <div class="ex-card" style="animation:none">
+      <div class="ex-meta"><span class="ex-num">Câu ${E.cur + 1}/${E.qs.length}</span><span class="ex-tag ${tagClass(ex.subject)}">${esc(ex.subject)}</span>${ex.chapter ? `<span class="ex-chapter">📖 ${esc(ex.chapter)}</span>` : ''}</div>
+      <div class="ex-question">${ex.question}</div>
+      <ul class="choice-list" id="xCh">${q.order.map((oi, k) => `<li class="choice-item${q.ans === oi ? ' sel' : ''}" data-k="${k}"><span class="choice-letter">${LET[k]}</span><span class="choice-text">${ctexInner(ex.choices[oi].text)}</span></li>`).join('')}</ul>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:14px">
+      <button class="mini-btn" id="xPrev" ${E.cur === 0 ? 'disabled style="opacity:.4"' : ''}>← Câu trước</button>
+      <button class="mini-btn" id="xNext" ${E.cur === E.qs.length - 1 ? 'disabled style="opacity:.4"' : ''}>Câu sau →</button>
+    </div>`;
+  const $ = id => document.getElementById(id);
+  box.querySelectorAll('.qdot').forEach(b => b.addEventListener('click', () => { E.cur = +b.dataset.q; drawExam(); }));
+  $('xCh').addEventListener('click', e => {
+    const li = e.target.closest('.choice-item'); if (!li) return;
+    const oi = q.order[+li.dataset.k];
+    q.ans = (q.ans === oi) ? null : oi;   // bấm lại để bỏ chọn
+    drawExam();
+  });
+  $('xPrev').addEventListener('click', () => { if (E.cur > 0) { E.cur--; drawExam(); ov.scrollTop = 0; } });
+  $('xNext').addEventListener('click', () => { if (E.cur < E.qs.length - 1) { E.cur++; drawExam(); ov.scrollTop = 0; } });
+  $('xSubmit').addEventListener('click', () => submitExam(false));
+  $('xQuit').addEventListener('click', () => { if (confirm('Thoát và bỏ bài làm hiện tại?')) closeExam(); });
+  typeset(box);
+}
+function submitExam(auto) {
+  const E = EXM; if (!E || E.done) return;
+  const un = E.qs.filter(x => x.ans == null).length;
+  if (!auto && un && !confirm(`Còn ${un} câu chưa trả lời. Vẫn nộp bài?`)) return;
+  E.done = true; clearInterval(exmTimer);
+  const used = Math.min(Date.now() - E.start, E.limit || Infinity);
+  const ok = E.qs.filter(x => x.ans != null && x.ex.choices[x.ans].correct).length;
+  const n = E.qs.length;
+  box.innerHTML = `
+    <h2>${auto ? '⏰ Hết giờ!' : 'Kết quả bài làm'}</h2>
+    <div class="score-box"><div class="score-n">${ok}/${n}</div>
+      <div class="prog-text">${(ok / n * 100).toFixed(0)}% · đúng ${ok} · sai ${E.qs.filter(x => x.ans != null).length - ok} · bỏ trống ${un} · thời gian ${fmt(used)}</div></div>
+    <div style="display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap">
+      <button class="mini-btn primary" id="rAgain">🎲 Tạo đề mới</button>
+      <button class="mini-btn" id="rClose">Đóng</button></div>
+    <div class="qgrid">${E.qs.map((x, i) => `<a class="qdot ${x.ans == null ? '' : x.ex.choices[x.ans].correct ? 'ok' : 'bad'}" href="#rv${i}" style="display:flex;align-items:center;justify-content:center;text-decoration:none">${i + 1}</a>`).join('')}</div>
+    ${E.qs.map((x, i) => `
+      <div class="ex-card rv-card ${x.ans != null && x.ex.choices[x.ans].correct ? 'done-ok' : 'done-bad'}" id="rv${i}" style="animation:none">
+        <div class="ex-meta"><span class="ex-num">Câu ${i + 1}</span><span class="ex-tag ${tagClass(x.ex.subject)}">${esc(x.ex.subject)}</span>
+          <span class="ex-status">${x.ans == null ? '— Bỏ trống' : x.ex.choices[x.ans].correct ? '✓ Đúng' : '✗ Sai'}</span></div>
+        <div class="ex-question">${x.ex.question}</div>
+        <ul class="choice-list">${x.order.map((oi, k) => `<li class="choice-item${x.ex.choices[oi].correct ? ' correct' : ''}${x.ans === oi && !x.ex.choices[oi].correct ? ' wrong' : ''}"><span class="choice-letter">${LET[k]}</span><span class="choice-text">${ctexInner(x.ex.choices[oi].text)}</span></li>`).join('')}</ul>
+        ${x.ex.solution ? `<details class="rv-sol"><summary>📖 Xem lời giải</summary><div class="sol-content" style="margin-top:8px">${x.ex.solution}</div></details>` : ''}
+      </div>`).join('')}`;
+  document.getElementById('rAgain').addEventListener('click', openSetup);
+  document.getElementById('rClose').addEventListener('click', closeExam);
+  ov.scrollTop = 0;
+  box.querySelectorAll('details.rv-sol').forEach(d => d.addEventListener('toggle', () => typeset(d)));
+  typeset(box);
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden && (!EXM || EXM.done)) closeExam(); });
 </script>
 </body>
 </html>
