@@ -11,6 +11,162 @@
   ],
   "exercises": [
     {
+      "id": "1794233861195",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Cấu trúc mạng một máy tính bao gồm:",
+      "choices": [
+        {
+          "text": "Phần ngoại biên",
+          "correct": false
+        },
+        {
+          "text": "Phần lõi",
+          "correct": false
+        },
+        {
+          "text": "Các mạng truy cập và Phương tiện kết nối vật lý",
+          "correct": false
+        },
+        {
+          "text": "Phần ngoại biên, Phần lõi, Các mạng truy cập và Phương tiện kết nối vật lý",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:17:41.195Z"
+    },
+    {
+      "id": "1794233861196",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Dịch vụ mạng thông tin toàn cầu được viết tắt với các chữ nào sau đây?",
+      "choices": [
+        {
+          "text": "NETNEWS",
+          "correct": false
+        },
+        {
+          "text": "TELNET",
+          "correct": false
+        },
+        {
+          "text": "WWW",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:17:41.195Z"
+    },
+    {
+      "id": "1794233861198",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Mô hình mạng Peer-to-Peer có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Phải có từ 2 máy server trở lên",
+          "correct": false
+        },
+        {
+          "text": "Sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với lưu lượng lớn",
+          "correct": true
+        },
+        {
+          "text": "Không có máy tính nào có trách nhiệm cung cấp, chia sẻ các tài nguyên trong mạng cho các máy khác",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:17:41.196Z"
+    },
+    {
+      "id": "1794233861199",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mô hình Client-Server, Server có chức năng là gì?",
+      "choices": [
+        {
+          "text": "Là máy tính truy xuất dữ liệu chia sẻ",
+          "correct": false
+        },
+        {
+          "text": "Yêu cầu dữ liệu và thông tin hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Đáp ứng yêu cầu thông tin của các client",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:17:41.196Z"
+    },
+    {
+      "id": "1794233861200",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hiệu suất của mạng Client-Server phụ thuộc yếu tố nào sau đây?",
+      "choices": [
+        {
+          "text": "Độ trễ tín hiệu",
+          "correct": false
+        },
+        {
+          "text": "Băng thông, độ nhiễu tín hiệu",
+          "correct": true
+        },
+        {
+          "text": "Băng thông, độ trễ tín hiệu",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:17:41.196Z"
+    },
+    {
+      "id": "1794233861201",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Khi nào thì một công ty cần đến một mạng SANs (Storage-Area Network)?",
+      "choices": [
+        {
+          "text": "Công ty cần lưu trữ dữ liệu phân bố",
+          "correct": false
+        },
+        {
+          "text": "Công ty cần lưu trữ dữ liệu tập trung",
+          "correct": false
+        },
+        {
+          "text": "Công ty có một mạng nội bộ phạm vi hẹp",
+          "correct": true
+        },
+        {
+          "text": "Công ty có một mạng nội bộ phạm vi rộng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:17:41.196Z"
+    },
+    {
       "id": "1794202097288",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Quản trị mạng",
