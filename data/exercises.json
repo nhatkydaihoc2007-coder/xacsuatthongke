@@ -928,7 +928,7 @@
       "choices": [
         {
           "text": "Thinnet",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Thicknet",
@@ -936,7 +936,7 @@
         },
         {
           "text": "Transceiver",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Receiver",
@@ -944,7 +944,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:21:34.658Z"
+      "createdAt": "2026-11-09T14:21:34.658Z",
+      "updatedAt": "2026-11-09T18:14:22.753Z"
     },
     {
       "id": "1794234094660",
