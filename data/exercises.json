@@ -11,6 +11,162 @@
   ],
   "exercises": [
     {
+      "id": "1794202033774",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong giao thức TCP, retransmission timer của bên gửi có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Được gán cố định một hằng số",
+          "correct": false
+        },
+        {
+          "text": "Được cài đặt ban đầu theo khoảng cách",
+          "correct": false
+        },
+        {
+          "text": "Được cập nhật thường xuyên theo thời gian ước lượng round trip hiện hành",
+          "correct": true
+        },
+        {
+          "text": "Được thay đổi theo số lượng kết nối được mở",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:13.774Z"
+    },
+    {
+      "id": "1794202033775",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Khi nhận thông điệp từ tầng ứng dụng, tầng vận chuyển của bên gửi sẽ",
+      "choices": [
+        {
+          "text": "Phân đoạn thông điệp thành làm nhiều phần và đặt vào các segment khác nhau rồi chuyển cho tầng mạng",
+          "correct": false
+        },
+        {
+          "text": "Tổng hợp các thông điệp thành làm một segment rồi chuyển cho tầng mạng",
+          "correct": false
+        },
+        {
+          "text": "Phân đoạn thông điệp thành làm nhiều phần và đặt vào các segment khác nhau rồi chuyển cho tầng liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Tổng hợp các thông điệp thành làm một segment rồi chuyển cho tầng liên kết dữ liệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:13.774Z"
+    },
+    {
+      "id": "1794202033777",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Các giao thức nào sau đây đều thuộc lớp vận chuyển",
+      "choices": [
+        {
+          "text": "TCP, HTTP",
+          "correct": false
+        },
+        {
+          "text": "UDP,TCP",
+          "correct": false
+        },
+        {
+          "text": "ICMP,TCP",
+          "correct": false
+        },
+        {
+          "text": "Câu 1 và 2 đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:13.775Z"
+    },
+    {
+      "id": "1794202033778",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức nào dùng để gửi dữ liệu nhưng không đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "ASP",
+          "correct": false
+        },
+        {
+          "text": "ARP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:13.775Z"
+    },
+    {
+      "id": "1794202033779",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong giao thức TCP, bên gửi thực hiện truyền lại dữ liệu dựa vào công cụ nào sau đây?",
+      "choices": [
+        {
+          "text": "Timer",
+          "correct": true
+        },
+        {
+          "text": "Bảng ARP",
+          "correct": false
+        },
+        {
+          "text": "Bảng tìm đường",
+          "correct": false
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:13.775Z"
+    },
+    {
+      "id": "1794202033780",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong kết nối TCP, thời gian đợi cho đến khi truyền lại phụ thuộc vào yếu tố nào sau đây?",
+      "choices": [
+        {
+          "text": "Khoảng cách từ host đến đích",
+          "correct": false
+        },
+        {
+          "text": "Các điều kiện lưu thông mạng hiện hành",
+          "correct": true
+        },
+        {
+          "text": "Nhiều kết nối được mở đồng thời",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:13.775Z"
+    },
+    {
       "id": "1794201994113",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
