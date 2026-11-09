@@ -2205,7 +2205,7 @@
       "choices": [
         {
           "text": "10Base2",
-          "correct": false
+          "correct": true
         },
         {
           "text": "10Base5",
@@ -2217,11 +2217,12 @@
         },
         {
           "text": "100BaseT",
-          "correct": true
+          "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T05:25:25.909Z"
+      "createdAt": "2026-11-09T05:25:25.909Z",
+      "updatedAt": "2026-11-09T18:26:43.854Z"
     },
     {
       "id": "1794201925913",
