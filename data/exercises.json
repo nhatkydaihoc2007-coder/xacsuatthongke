@@ -11,6 +11,136 @@
   ],
   "exercises": [
     {
+      "id": "1794201894562",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Tiêu chuẩn nào không được dùng để xem xét một mạng giao tiếp?",
+      "choices": [
+        {
+          "text": "Hiệu suất",
+          "correct": false
+        },
+        {
+          "text": "An toàn",
+          "correct": false
+        },
+        {
+          "text": "Tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Công suất",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:24:54.562Z"
+    },
+    {
+      "id": "1794201894563",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trong một hệ thống thực tế áp dụng mô hình OSI, các lớp nào không là bắt buộc phải có ?",
+      "choices": [
+        {
+          "text": "Lớp phiên và lớp trình bày",
+          "correct": true
+        },
+        {
+          "text": "Lớp phiên và lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp liên kết dữ liệu và lớp trình bày",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển và lớp phiên",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:24:54.562Z"
+    },
+    {
+      "id": "1794201894564",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "In ấn là một ví dụ của hướng dòng dữ liệu nào?",
+      "choices": [
+        {
+          "text": "Full-duplex",
+          "correct": true
+        },
+        {
+          "text": "Half-duplex",
+          "correct": false
+        },
+        {
+          "text": "Simplex",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:24:54.562Z"
+    },
+    {
+      "id": "1794201894565",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Mô hình chồng giao thức TCP/IP không có lớp nào sau đây?",
+      "choices": [
+        {
+          "text": "Lớp truy cập mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": true
+        },
+        {
+          "text": "Lớp ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Lớp internet",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:24:54.562Z"
+    },
+    {
+      "id": "1794201894566",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Tần suất xảy ra sự cố mạng và thời gian phục hồi mạng là độ đo tính …….. của mạng",
+      "choices": [
+        {
+          "text": "Hiệu quả",
+          "correct": false
+        },
+        {
+          "text": "Tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Bảo mật",
+          "correct": false
+        },
+        {
+          "text": "Khả thi",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:24:54.562Z"
+    },
+    {
       "id": "1794201186345",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
@@ -6395,7 +6525,7 @@
     "Mạng máy tính và truyền thông": [
       "Tổng quan về mạng",
       "các thành phần trong mạng",
-      "Tầng vật lý", 
+      "Tầng vật lý",
       "Tầng liên kết dữ liệu",
       "Tầng mạng",
       "Tầng vận chuyển",
