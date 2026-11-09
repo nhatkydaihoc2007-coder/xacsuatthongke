@@ -2232,7 +2232,7 @@
       "choices": [
         {
           "text": "185 m",
-          "correct": false
+          "correct": true
         },
         {
           "text": "190 m",
@@ -2240,7 +2240,7 @@
         },
         {
           "text": "200 m",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Cả ba câu trên đều sai",
@@ -2248,7 +2248,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T05:25:25.909Z"
+      "createdAt": "2026-11-09T05:25:25.909Z",
+      "updatedAt": "2026-11-09T18:30:16.228Z"
     },
     {
       "id": "1794201925914",
