@@ -11,6 +11,162 @@
   ],
   "exercises": [
     {
+      "id": "1794201925909",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Wireless PCI Card được sử dụng ở đâu?",
+      "choices": [
+        {
+          "text": "Sử dụng cho máy tính Laptop để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho máy tính Tablet để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho điện thoại để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho máy tính PC để truy cập mạng Wifi",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:25:25.909Z"
+    },
+    {
+      "id": "1794201925910",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Trong kênh truyền Baseband, các tín hiệu Data, Voice, Video được truyền như thế nào?",
+      "choices": [
+        {
+          "text": "Trên 1 kênh",
+          "correct": true
+        },
+        {
+          "text": "Trên nhiều kênh",
+          "correct": false
+        },
+        {
+          "text": "A, B đều đúng",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:25:25.909Z"
+    },
+    {
+      "id": "1794201925911",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu chuẩn đầu cáp RJ45?",
+      "choices": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:25:25.909Z"
+    },
+    {
+      "id": "1794201925912",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Thinnet là tên gọi khác của cáp đồng trục sử dụng chuẩn nào sau đây?",
+      "choices": [
+        {
+          "text": "10Base2",
+          "correct": false
+        },
+        {
+          "text": "10Base5",
+          "correct": false
+        },
+        {
+          "text": "10BaseT",
+          "correct": false
+        },
+        {
+          "text": "100BaseT",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:25:25.909Z"
+    },
+    {
+      "id": "1794201925913",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Cáp đồng trục 10Base2 có chiều dài tối đa thực tế cho phép là bao nhiêu?",
+      "choices": [
+        {
+          "text": "185 m",
+          "correct": false
+        },
+        {
+          "text": "190 m",
+          "correct": false
+        },
+        {
+          "text": "200 m",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:25:25.909Z"
+    },
+    {
+      "id": "1794201925914",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi nói về phương tiện truyền dẫn trong mạng máy tính?",
+      "choices": [
+        {
+          "text": "Ở dạng hữu tuyến như cáp đồng trục, cáp xoắn, cáp quang",
+          "correct": false
+        },
+        {
+          "text": "Ở dạng vô tuyến như sóng radio, sóng viba",
+          "correct": false
+        },
+        {
+          "text": "Là môi trường dùng để truyền tín hiệu từ nơi này sang nơi khác",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:25:25.909Z"
+    },
+    {
       "id": "1794201894562",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "các thành phần trong mạng",
