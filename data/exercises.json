@@ -11,6 +11,162 @@
   ],
   "exercises": [
     {
+      "id": "1794234094658",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi so sánh cáp đồng trục với cáp quang?",
+      "choices": [
+        {
+          "text": "Độ suy giảm tín hiệu của cáp đồng trục thấp hơn",
+          "correct": false
+        },
+        {
+          "text": "Cáp đồng trục có tốc độ truyền dữ liệu cao hơn",
+          "correct": false
+        },
+        {
+          "text": "Cáp quang có tính bảo mật cao hơn",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:21:34.658Z"
+    },
+    {
+      "id": "1794234094659",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Thiết bị nào được sử dụng để kết nối 2 loại thinnet và thicknet với nhau?",
+      "choices": [
+        {
+          "text": "Thinnet",
+          "correct": true
+        },
+        {
+          "text": "Thicknet",
+          "correct": false
+        },
+        {
+          "text": "Transceiver",
+          "correct": false
+        },
+        {
+          "text": "Receiver",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:21:34.658Z"
+    },
+    {
+      "id": "1794234094660",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu chân đồng trong đầu nối RJ45?",
+      "choices": [
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:21:34.658Z"
+    },
+    {
+      "id": "1794234094661",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Wireless PCI Card được sử dụng ở đâu?",
+      "choices": [
+        {
+          "text": "Sử dụng cho máy tính Laptop để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho máy tính Tablet để truy cập mạng Wifi",
+          "correct": true
+        },
+        {
+          "text": "Sử dụng cho điện thoại để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho máy tính PC để truy cập mạng Wifi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:21:34.658Z"
+    },
+    {
+      "id": "1794234094663",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Trong ruột cáp STP và UTP, các cặp dây xoắn lại với nhau để làm gì?",
+      "choices": [
+        {
+          "text": "Giúp cho dây cáp chắc chắn về cơ học",
+          "correct": false
+        },
+        {
+          "text": "Giúp giảm giá thành sản phẩm khi sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Giảm nhiễu tín hiệu trên đường truyền",
+          "correct": true
+        },
+        {
+          "text": "Giảm suy hao tín hiệu trên đường truyền",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:21:34.659Z"
+    },
+    {
+      "id": "1794234094664",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Cáp đồng trục 10Base2 có chiều dài tối đa thực tế cho phép là bao nhiêu?",
+      "choices": [
+        {
+          "text": "185 m",
+          "correct": true
+        },
+        {
+          "text": "190 m",
+          "correct": false
+        },
+        {
+          "text": "200 m",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:21:34.659Z"
+    },
+    {
       "id": "1794233941358",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "các thành phần trong mạng",
