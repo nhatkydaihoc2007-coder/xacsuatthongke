@@ -11,6 +11,162 @@
   ],
   "exercises": [
     {
+      "id": "1794235544506",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Tính năng nào sau đây được hỗ trợ trong hệ điều hành mạng?",
+      "choices": [
+        {
+          "text": "Hổ trợ các máy trạm (workstation)",
+          "correct": false
+        },
+        {
+          "text": "Chia sẻ dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Chia sẻ ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:45:44.506Z"
+    },
+    {
+      "id": "1794235544508",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Hệ điều hành mạng là gì?",
+      "choices": [
+        {
+          "text": "Là một ứng dụng phần mềm trên Windows",
+          "correct": true
+        },
+        {
+          "text": "Là một tiện ích trên các hệ điều hành",
+          "correct": false
+        },
+        {
+          "text": "Là hệ điều hành có khả năng giao tiếp mạng",
+          "correct": false
+        },
+        {
+          "text": "Tất cả câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:45:44.507Z"
+    },
+    {
+      "id": "1794235544509",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Chọn phát biểu đúng về chức năng Full Clone trong phần mềm máy ảo?",
+      "choices": [
+        {
+          "text": "Cho phép khôi phục máy ảo về một thời điểm trước đó",
+          "correct": false
+        },
+        {
+          "text": "Cho phép tạo một máy ảo mới độc lập với máy ảo hiện có",
+          "correct": false
+        },
+        {
+          "text": "Cho phép tạo một máy ảo mới chia sẻ ổ đĩa ảo với máy ảo hiện có",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 lựa chọn trên đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:45:44.507Z"
+    },
+    {
+      "id": "1794235544510",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Phần mềm nào sau đây được sử dụng để giúp phân tích và tối ưu hóa cài đặt trong mạng Wifi?",
+      "choices": [
+        {
+          "text": "Wireshark",
+          "correct": false
+        },
+        {
+          "text": "Ethereal",
+          "correct": false
+        },
+        {
+          "text": "NetSurveyor",
+          "correct": false
+        },
+        {
+          "text": "Cisco Packet Tracer",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:45:44.507Z"
+    },
+    {
+      "id": "1794235544511",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Phần mềm nào sau đây được sử dụng để thu thập thông tin các gói tin truyền trên hệ thống mạng?",
+      "choices": [
+        {
+          "text": "NetSurveyor",
+          "correct": false
+        },
+        {
+          "text": "Packet Tracer",
+          "correct": false
+        },
+        {
+          "text": "Wireshark",
+          "correct": true
+        },
+        {
+          "text": "PowerShell",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:45:44.507Z"
+    },
+    {
+      "id": "1794235544512",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Chương trình nào có thể được sử dụng để ngăn chặn việc sử dụng trái phép DHCP server?",
+      "choices": [
+        {
+          "text": "Active Directory",
+          "correct": false
+        },
+        {
+          "text": "PPP",
+          "correct": false
+        },
+        {
+          "text": "WireShark",
+          "correct": true
+        },
+        {
+          "text": "Telnet",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:45:44.507Z"
+    },
+    {
       "id": "1794234362180",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
