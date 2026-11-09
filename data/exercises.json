@@ -11,6 +11,188 @@
   ],
   "exercises": [
     {
+      "id": "1794234324548",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong giao thức TCP, bên gửi thực hiện truyền lại dữ liệu dựa vào công cụ nào sau đây?",
+      "choices": [
+        {
+          "text": "Timer",
+          "correct": true
+        },
+        {
+          "text": "Bảng ARP",
+          "correct": false
+        },
+        {
+          "text": "Bảng tìm đường",
+          "correct": false
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
+      "id": "1794234324549",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức nào dưới đây đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh ?",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "ASP",
+          "correct": false
+        },
+        {
+          "text": "PHP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
+      "id": "1794234324550",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Lớp nào sau đây trong mô hình OSI còn được gọi là lớp end-to-end?",
+      "choices": [
+        {
+          "text": "Lớp trình bày",
+          "correct": true
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
+      "id": "1794234324551",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Tấn công từ chối dịch vụ DoS TCP có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Dựa trên cách tấn công TCP “Half Open”",
+          "correct": false
+        },
+        {
+          "text": "Dựa trên cách tấn công TCP “Half Duplex”",
+          "correct": true
+        },
+        {
+          "text": "Dựa trên cách tấn công TCP “Full Open”",
+          "correct": false
+        },
+        {
+          "text": "Dựa trên cách tấn công TCP “Full Duplex”",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
+      "id": "1794234324552",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trường số thứ tự (Sequence Number field) luôn có trong header của gói tin nào sau đây?",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "TCP và UDP",
+          "correct": false
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
+      "id": "1794234324553",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức nào dùng để gửi dữ liệu nhưng không đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "ASP",
+          "correct": true
+        },
+        {
+          "text": "ARP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
+      "id": "1794234324554",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Để mở một kết nối TCP, hai máy tính sẽ trao đổi với nhau …",
+      "choices": [
+        {
+          "text": "1 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "2 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "3 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "4 thông điệp",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:25:24.548Z"
+    },
+    {
       "id": "1794234262421",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
