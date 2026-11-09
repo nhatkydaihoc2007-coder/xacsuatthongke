@@ -11,6 +11,136 @@
   ],
   "exercises": [
     {
+      "id": "1794201186345",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mô hình Client-Server, điều gì xảy ra nếu có một máy mất nguồn?",
+      "choices": [
+        {
+          "text": "Hệ thống vẫn hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống ngừng hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Tùy trường hợp mà hệ thống sẽ vẫn hoạt động hoặc ngưng hoạt động",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:13:06.345Z"
+    },
+    {
+      "id": "1794201186347",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Mô hình mạng Peer-to-Peer có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Phải có từ 2 máy server trở lên",
+          "correct": false
+        },
+        {
+          "text": "Sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với lưu lượng lớn",
+          "correct": true
+        },
+        {
+          "text": "Không có máy tính nào có trách nhiệm cung cấp, chia sẻ các tài nguyên trong mạng cho các máy khác",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:13:06.346Z"
+    },
+    {
+      "id": "1794201186348",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hiệu suất của mạng Client-Server không phụ thuộc yếu tố nào sau đây?",
+      "choices": [
+        {
+          "text": "Băng thông",
+          "correct": false
+        },
+        {
+          "text": "Bộ nhớ dữ liệu thiết bị",
+          "correct": false
+        },
+        {
+          "text": "Độ trễ tín hiệu",
+          "correct": true
+        },
+        {
+          "text": "Số lượng máy Client trong mạng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:13:06.346Z"
+    },
+    {
+      "id": "1794201186349",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Topo mạng nào cần các kết nối đa điểm?",
+      "choices": [
+        {
+          "text": "Mesh",
+          "correct": false
+        },
+        {
+          "text": "Star",
+          "correct": false
+        },
+        {
+          "text": "Bus",
+          "correct": false
+        },
+        {
+          "text": "Ring",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:13:06.346Z"
+    },
+    {
+      "id": "1794201186350",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Dịch vụ mạng thông tin toàn cầu được viết tắt với các chữ nào sau đây?",
+      "choices": [
+        {
+          "text": "NETNEWS",
+          "correct": true
+        },
+        {
+          "text": "TELNET",
+          "correct": false
+        },
+        {
+          "text": "WWW",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:13:06.346Z"
+    },
+    {
       "id": "1793985028483",
       "subject": "Kinh tế chính trị",
       "chapter": "",
