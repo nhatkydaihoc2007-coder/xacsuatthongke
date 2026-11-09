@@ -1207,32 +1207,6 @@
       "createdAt": "2026-11-09T14:17:41.195Z"
     },
     {
-      "id": "1794233861198",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Mô hình mạng Peer-to-Peer có đặc điểm nào sau đây?",
-      "choices": [
-        {
-          "text": "Phải có từ 2 máy server trở lên",
-          "correct": false
-        },
-        {
-          "text": "Sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với lưu lượng lớn",
-          "correct": true
-        },
-        {
-          "text": "Không có máy tính nào có trách nhiệm cung cấp, chia sẻ các tài nguyên trong mạng cho các máy khác",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-09T14:17:41.196Z"
-    },
-    {
       "id": "1794233861199",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
