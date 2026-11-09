@@ -11,6 +11,214 @@
   ],
   "exercises": [
     {
+      "id": "1794202077758",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Giao thức DHCP sử dụng cổng UDP nào sau đây để gửi dữ liệu cho máy chủ?",
+      "choices": [
+        {
+          "text": "66",
+          "correct": false
+        },
+        {
+          "text": "67",
+          "correct": false
+        },
+        {
+          "text": "68",
+          "correct": true
+        },
+        {
+          "text": "69",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.758Z"
+    },
+    {
+      "id": "1794202077759",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "HTML là viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "High Transfer Mobile Language",
+          "correct": false
+        },
+        {
+          "text": "High Text Marked Language",
+          "correct": false
+        },
+        {
+          "text": "Hyper Text Markup Language",
+          "correct": true
+        },
+        {
+          "text": "Hyper Text Modified Language",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.758Z"
+    },
+    {
+      "id": "1794202077760",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phát biểu nào sau đây về các ứng dụng chia sẻ video trực tiếp (live stream) là SAI?",
+      "choices": [
+        {
+          "text": "Giao thức UDP thường được sử dụng trong các ứng dụng live stream do có độ trễ thấp hơn so với TCP",
+          "correct": false
+        },
+        {
+          "text": "Các ứng dụng live stream nếu sử dụng giao thức TCP sẽ có chất lượng hình ảnh tốt hơn so với ứng dụng sử dụng UDP",
+          "correct": false
+        },
+        {
+          "text": "Nếu sử dụng giao thức TCP, trong quá trình truyền nếu có lỗi xảy ra thì video có thể bị tạm dừng để chờ truyền nhận tín hiệu ack và truyền lại",
+          "correct": false
+        },
+        {
+          "text": "Giao thức TCP không được sử dụng đối với các ứng dụng live stream",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.758Z"
+    },
+    {
+      "id": "1794202077761",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phần mềm cho phép người dùng hiển thị trang web được gọi là gì?",
+      "choices": [
+        {
+          "text": "Hệ điều hành",
+          "correct": true
+        },
+        {
+          "text": "Trình duyệt",
+          "correct": false
+        },
+        {
+          "text": "Trang web",
+          "correct": false
+        },
+        {
+          "text": "Trình biên dịch",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.758Z"
+    },
+    {
+      "id": "1794202077762",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phát biểu nào sau đây là đúng cho Web Server?",
+      "choices": [
+        {
+          "text": "Web Server quản lý lưu lượng các thông điệp email của các user trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Web Server phải hoạt động liên tục 24/24",
+          "correct": false
+        },
+        {
+          "text": "Web Server không nhất thiết phải có địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.758Z"
+    },
+    {
+      "id": "1794202077764",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Kênh điều khiển trong giao thức FTP có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Là kênh logic TCP được dùng để truyền file trong một phiên kết nối FTP",
+          "correct": true
+        },
+        {
+          "text": "Được sử dụng để truyền các thông tin điều khiển xuyên suốt phiên kết nối FTP",
+          "correct": false
+        },
+        {
+          "text": "Là kênh logic TCP được thiết lập khi cần truyền thông tin điều khiển trong phiên kết nối FTP",
+          "correct": false
+        },
+        {
+          "text": "Được sử dụng để truyền các thông tin điều khiển, dữ liệu xuyên suốt phiên kết nối FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.759Z"
+    },
+    {
+      "id": "1794202077765",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Dịch vụ DNS sử dụng cổng (port) nào sau đây?",
+      "choices": [
+        {
+          "text": "Port 53 TCP và Port 53 UDP",
+          "correct": true
+        },
+        {
+          "text": "Port 53 UDP",
+          "correct": false
+        },
+        {
+          "text": "Port 53 TCP",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.759Z"
+    },
+    {
+      "id": "1794202077766",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong URL http://www.example.com/index.html có chứa các thành phần nào sau đây?",
+      "choices": [
+        {
+          "text": "Tên giao thức, tên máy chủ",
+          "correct": false
+        },
+        {
+          "text": "Tên giao thức, tên máy chủ, cổng",
+          "correct": true
+        },
+        {
+          "text": "Tên giao thức, tên máy chủ, tên file",
+          "correct": false
+        },
+        {
+          "text": "Tên giao thức, tên file, cổng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:27:57.759Z"
+    },
+    {
       "id": "1794202033774",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
