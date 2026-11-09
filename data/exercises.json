@@ -11,6 +11,188 @@
   ],
   "exercises": [
     {
+      "id": "1794201994113",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "IP là giao thức …",
+      "choices": [
+        {
+          "text": "Đáng tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Hướng kết nối",
+          "correct": false
+        },
+        {
+          "text": "Cả 2 câu trên đều đúng",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
+      "id": "1794201994114",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Trong IPv4, giá trị của trường Total Length là bao nhiêu nếu phần Header là 28 byte và phần dữ liệu là 400 byte?",
+      "choices": [
+        {
+          "text": "428 bytes",
+          "correct": false
+        },
+        {
+          "text": "407 bytes",
+          "correct": false
+        },
+        {
+          "text": "107 bytes",
+          "correct": true
+        },
+        {
+          "text": "427 bytes",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
+      "id": "1794201994115",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Một yêu cầu ARP (ARP request) thường là",
+      "choices": [
+        {
+          "text": "Broadcast",
+          "correct": true
+        },
+        {
+          "text": "Unicast",
+          "correct": false
+        },
+        {
+          "text": "Multicast",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
+      "id": "1794201994116",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ luận lý (địa chỉ logic) trong mạng Internet còn được gọi là ……",
+      "choices": [
+        {
+          "text": "Địa chỉ port",
+          "correct": true
+        },
+        {
+          "text": "Địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ email",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
+      "id": "1794201994117",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IPv4 229.1.2.3. thuộc lớp nào?",
+      "choices": [
+        {
+          "text": "Lớp A",
+          "correct": true
+        },
+        {
+          "text": "Lớp B",
+          "correct": false
+        },
+        {
+          "text": "Lớp D",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
+      "id": "1794201994118",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Lệnh Ping là một công cụ trong mạng máy tính để làm gì?",
+      "choices": [
+        {
+          "text": "Kiểm tra xem có thể kết nối tới một máy cụ thể nào đó trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Dùng để ước lượng khoảng thời gian để gửi 1 gói dữ liệu đến máy đích",
+          "correct": false
+        },
+        {
+          "text": "Ước lượng tỉ lệ các gói dữ liệu có thể bị mất trong kết nối",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
+      "id": "1794201994119",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "OSPF là giao thức tìm đường dựa trên",
+      "choices": [
+        {
+          "text": "Distance Vector Routing",
+          "correct": false
+        },
+        {
+          "text": "Path Vector Routing",
+          "correct": false
+        },
+        {
+          "text": "Link State Routing",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T05:26:34.113Z"
+    },
+    {
       "id": "1794201960175",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
