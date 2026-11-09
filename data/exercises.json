@@ -11,6 +11,188 @@
   ],
   "exercises": [
     {
+      "id": "1794234362180",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Mô hình FTP chia quá trình truyền thông giữa Server với Client ra làm các kênh nào sau đây?",
+      "choices": [
+        {
+          "text": "Một kênh logic và một kênh vật lý",
+          "correct": false
+        },
+        {
+          "text": "Hai kênh vật lý",
+          "correct": false
+        },
+        {
+          "text": "Hai kênh logic",
+          "correct": true
+        },
+        {
+          "text": "Ba kênh logic và một kênh vật lý",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.180Z"
+    },
+    {
+      "id": "1794234362181",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Kênh điều khiển trong giao thức FTP có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Là kênh logic TCP được dùng để truyền file trong một phiên kết nối FTP",
+          "correct": false
+        },
+        {
+          "text": "Được sử dụng để truyền các thông tin điều khiển xuyên suốt phiên kết nối FTP",
+          "correct": false
+        },
+        {
+          "text": "Là kênh logic TCP được thiết lập khi cần truyền thông tin điều khiển trong phiên kết nối FTP",
+          "correct": true
+        },
+        {
+          "text": "Được sử dụng để truyền các thông tin điều khiển, dữ liệu xuyên suốt phiên kết nối FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.180Z"
+    },
+    {
+      "id": "1794234362182",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Tường lửa proxy hoạt động ở lớp nào sau đây?",
+      "choices": [
+        {
+          "text": "Lớp vật lý",
+          "correct": false
+        },
+        {
+          "text": "Lớp liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp ứng dụng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.180Z"
+    },
+    {
+      "id": "1794234362184",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Việc đảm bảo dữ liệu không bị thay đổi trên đường truyền, dữ liệu chỉ được thay đổi bởi những người được cấp quyền nhằm đảm bảo cho tính chất nào sau đây của dữ liệu?",
+      "choices": [
+        {
+          "text": "Tính bí mật",
+          "correct": false
+        },
+        {
+          "text": "Tính toàn vẹn",
+          "correct": false
+        },
+        {
+          "text": "Tính sẵn sàng",
+          "correct": false
+        },
+        {
+          "text": "Tính riêng tư",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.181Z"
+    },
+    {
+      "id": "1794234362185",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Giao thức nào sau đây KHÔNG thuộc lớp ứng dụng?",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "FPT",
+          "correct": false
+        },
+        {
+          "text": "SMTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.181Z"
+    },
+    {
+      "id": "1794234362186",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phần mềm cho phép người dùng hiển thị trang web được gọi là gì?",
+      "choices": [
+        {
+          "text": "Hệ điều hành",
+          "correct": false
+        },
+        {
+          "text": "Trình duyệt",
+          "correct": false
+        },
+        {
+          "text": "Trang web",
+          "correct": true
+        },
+        {
+          "text": "Trình biên dịch",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.181Z"
+    },
+    {
+      "id": "1794234362187",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Giao thức DHCP sử dụng cổng UDP nào sau đây để gửi dữ liệu cho máy chủ?",
+      "choices": [
+        {
+          "text": "66",
+          "correct": false
+        },
+        {
+          "text": "67",
+          "correct": false
+        },
+        {
+          "text": "68",
+          "correct": false
+        },
+        {
+          "text": "69",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-09T14:26:02.181Z"
+    },
+    {
       "id": "1794234324548",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
