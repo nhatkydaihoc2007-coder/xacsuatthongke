@@ -6395,7 +6395,12 @@
     "Mạng máy tính và truyền thông": [
       "Tổng quan về mạng",
       "các thành phần trong mạng",
-      "Tầng vật lý"
+      "Tầng vật lý", 
+      "Tầng liên kết dữ liệu",
+      "Tầng mạng",
+      "Tầng vận chuyển",
+      "Các ứng dụng mạng",
+      "Quản trị mạng"
     ]
   }
 }
