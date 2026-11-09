@@ -975,32 +975,6 @@
       "updatedAt": "2026-11-09T18:06:17.478Z"
     },
     {
-      "id": "1794234094661",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Wireless PCI Card được sử dụng ở đâu?",
-      "choices": [
-        {
-          "text": "Sử dụng cho máy tính Laptop để truy cập mạng Wifi",
-          "correct": false
-        },
-        {
-          "text": "Sử dụng cho máy tính Tablet để truy cập mạng Wifi",
-          "correct": true
-        },
-        {
-          "text": "Sử dụng cho điện thoại để truy cập mạng Wifi",
-          "correct": false
-        },
-        {
-          "text": "Sử dụng cho máy tính PC để truy cập mạng Wifi",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-09T14:21:34.658Z"
-    },
-    {
       "id": "1794234094663",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
