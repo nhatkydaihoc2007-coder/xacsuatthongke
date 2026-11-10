@@ -1783,8 +1783,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "UNKNOWN OR TRUE $\\equiv$ TRUE <br> \nUNKNOWN AND FALSE $\\equiv$ FALSE <br> \nTRUE OR FALSE $\\equiv$ TRUE",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T16:12:48.636Z"
     },
     {
       "id": "1794293941436",
