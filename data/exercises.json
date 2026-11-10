@@ -12,6 +12,292 @@
   ],
   "exercises": [
     {
+      "id": "1794336246177",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Chọn thứ tự đúng cho quy trình thiết kế cơ sở dữ liệu.",
+      "choices": [
+        {
+          "text": "Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý $\\rightarrow$ Thiết kế cơ sở dữ liệu vật lý",
+          "correct": true
+        },
+        {
+          "text": "Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu vật lý $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm",
+          "correct": false
+        },
+        {
+          "text": "Thiết kế cơ sở dữ liệu vật lý $\\rightarrow$ Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý",
+          "correct": false
+        },
+        {
+          "text": "Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm $\\rightarrow$ Thiết kế cơ sở dữ liệu vật lý",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246178",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Một quan hệ $R$ sẽ đạt dạng chuẩn 3 khi nó ở dạng chuẩn 2 và thỏa mãn điều kiện nào sau đây?",
+      "choices": [
+        {
+          "text": "Các thuộc tính chỉ chứa các giá trị nguyên tố",
+          "correct": false
+        },
+        {
+          "text": "Mọi thuộc tính không khóa của nó đều không phụ thuộc bắc cầu vào khóa chính",
+          "correct": true
+        },
+        {
+          "text": "Vế trái của mọi phụ thuộc hàm không hiển nhiên trên quan hệ đó đều phải là siêu khóa",
+          "correct": false
+        },
+        {
+          "text": "Mọi thuộc tính không khóa của $R$ phụ thuộc hàm đầy đủ vào khóa chính của nó",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246179",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Biểu thức nào sau đây thể hiện cho luật tăng trưởng trong hệ tiên đề Armstrong?",
+      "choices": [
+        {
+          "text": "Nếu $Y \\subseteq X$ thì $X \\to Y$",
+          "correct": false
+        },
+        {
+          "text": "Nếu $X \\to Y$, $Y \\to Z$ thì $X \\to Z$",
+          "correct": false
+        },
+        {
+          "text": "Nếu $X \\to Y$ thì $XZ \\to YZ$",
+          "correct": true
+        },
+        {
+          "text": "Nếu $X \\to Y$ và $X \\to Z$ thì $X \\to YZ$",
+          "correct": false
+        }
+      ],
+      "solution": "A: Luật phản xạ. <br> \nB: Luật bắc cầu. <br> \nD: Luật hợp.",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246180",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Một phụ thuộc hàm được gọi là hiển nhiên trong trường hợp nào sau đây?",
+      "choices": [
+        {
+          "text": "Vế phải của phụ thuộc hàm là tập con của vế trái",
+          "correct": true
+        },
+        {
+          "text": "Vế trái của phụ thuộc hàm là tập con của vế phải",
+          "correct": false
+        },
+        {
+          "text": "Vế trái và vế phải của phụ thuộc hàm có một số thuộc tính chung",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "Một phụ thuộc hàm \\(X \\to Y\\) được gọi là hiển nhiên khi: $Y \\subset X$",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246181",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho quan hệ $R(A, B, C, D, E)$ với các phụ thuộc hàm: $AB \\rightarrow C, C \\rightarrow D, BD \\rightarrow E$. Tập các thuộc tính nào sau đây không xác định $D$?",
+      "choices": [
+        {
+          "text": "ABD",
+          "correct": false
+        },
+        {
+          "text": "BCE",
+          "correct": false
+        },
+        {
+          "text": "ACE",
+          "correct": false
+        },
+        {
+          "text": "BE",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246182",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Ưu điểm của hướng tiếp cận cơ sở dữ liệu quan hệ so với cơ sở dữ liệu file là gì?",
+      "choices": [
+        {
+          "text": "Cung cấp sự độc lập cao giữa dữ liệu và phần mềm ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo sự nhất quán dữ liệu bởi cơ chế điều khiển tương tranh (Concurrency Control) và phục hồi (Recovery)",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo không tồn tại sự dư thừa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Chỉ câu a và b đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246183",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Quan hệ $R(A, B, C)$ gồm có 4 bộ sau $(15, 23, 31)$, $(39, 23, 31)$, $(47, 31, 31)$, và $(23, 39, 39)$. Lựa chọn nào sau đây không là một phụ thuộc hàm trong $R$?",
+      "choices": [
+        {
+          "text": "$A \\rightarrow B$",
+          "correct": false
+        },
+        {
+          "text": "$C \\rightarrow B$",
+          "correct": true
+        },
+        {
+          "text": "$B \\rightarrow C$",
+          "correct": false
+        },
+        {
+          "text": "$AB \\rightarrow C$",
+          "correct": false
+        }
+      ],
+      "solution": "Một phụ thuộc hàm \\(X \\rightarrow Y\\) đúng khi hai bộ bất kỳ có cùng giá trị ở thuộc tính \\(X\\) thì phải có cùng giá trị ở thuộc tính \\(Y\\). <br> \n\\(A\\rightarrow B\\) nghĩa là hai dòng có A giống nhau thì B phải giống nhau.",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246184",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Giả sử quan hệ $R(A, B, C)$ hiện tại có bộ $(1, 2, 3)$ và nó phải luôn thỏa mãn các phụ thuộc hàm $A \\rightarrow B$ và $C \\rightarrow B$. Bộ nào sau đây có thể được thêm vào $R$ một cách hợp lệ?",
+      "choices": [
+        {
+          "text": "$(2, 2, 3)$",
+          "correct": true
+        },
+        {
+          "text": "$(2, 3, 3)$",
+          "correct": false
+        },
+        {
+          "text": "$(1, 3, 5)$",
+          "correct": false
+        },
+        {
+          "text": "$(3, 1, 3)$",
+          "correct": false
+        }
+      ],
+      "solution": "Nếu A mới trùng A cũ $\\to$ B mới phải bằng 2. <br> \nNếu C mới trùng C cũ $\\to$ B mới phải bằng 2. <br> \nNếu cả A và C đều khác $\\to$ không bị ràng buộc bởi hai phụ thuộc hàm này.",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246185",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho quan hệ $R(A, B, C, D, E, F, G, H)$ thỏa mãn các phụ thuộc hàm sau:\n$$A \\to B, CH \\to A, B \\to E, BD \\to C, EG \\to H, DE \\to F$$\nPhụ thuộc hàm nào sau đây thỏa mãn?",
+      "choices": [
+        {
+          "text": "$BED \\to EG$",
+          "correct": false
+        },
+        {
+          "text": "$BCD \\to AB$",
+          "correct": false
+        },
+        {
+          "text": "$ADE \\to BF$",
+          "correct": true
+        },
+        {
+          "text": "$CGH \\to AD$",
+          "correct": false
+        }
+      ],
+      "solution": "Hai thuộc tính \\(D\\) và \\(G\\) không bao giờ xuất hiện ở vế phải của bất kỳ PTH nào. <br> \nNếu một thuộc tính không nằm ở vế phải của bất kỳ PTH đề bài cho, thì nó không thể tự sinh ra. 1. Muốn vế phải của một đáp án chứa thuộc tính đó (hoặc chứa thuộc tính cần nó để sinh ra), thì vế trái của đáp án đó bắt buộc phải có sẵn nó. <br> \nKhi đó ta loại nhanh ngay được đáp án A và D.  <br> \nXét (\\(BCD \\to AB\\)): Để suy ra \\(A\\), ta cần có \\(CH\\) (vì \\(CH \\to A\\)). Để có \\(H\\), ta cần có \\(EG\\) (vì \\(EG \\to H\\)). Nhưng vế trái không có \\(G\\) nên không bao giờ tạo ra \\(H\\) và \\(A\\) được \\(\\rightarrow \\) Sai.\n\\(\\Rightarrow \\)",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246186",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho quan hệ $R(A, B, C, D, E, F)$ với các phụ thuộc hàm:\n$$CDE \\to B, ACD \\to F, BEF \\to C, B \\to D$$\nLựa chọn nào sau đây là một siêu khóa?",
+      "choices": [
+        {
+          "text": "$ABEF$",
+          "correct": true
+        },
+        {
+          "text": "$ABDE$",
+          "correct": false
+        },
+        {
+          "text": "$ACD$",
+          "correct": false
+        },
+        {
+          "text": "$CDEF$",
+          "correct": false
+        }
+      ],
+      "solution": "Các thuộc tính không bao giờ xuất hiện ở vế phải: \\(\\{A, E\\}\\). <br> \nVì \\(A\\) và \\(E\\) không được sinh ra từ bất kỳ thuộc tính nào, chúng bắt buộc phải nằm trong mọi siêu khóa và khóa chính. <br> \nKhi đó, ta loại nhanh 2 tập $\\{ACD\\}$ và $\\{CDEF\\}$. <br> \n\\((ABEF)^+ = ABEF\\) <br> \n(Do \\(B \\to D\\)) \\(\\rightarrow ABEFD\\) <br> \n(Do \\(BEF \\to C\\)) \\(\\rightarrow ABEFDC = ABCDEF\\)",
+      "createdAt": "2026-11-10T18:44:06.177Z"
+    },
+    {
+      "id": "1794336246188",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho biết dạng chuẩn thấp nhất mà bảng dữ liệu sau chưa đạt được?\n<div style=\"text-align:center;margin:8px 0\">\n<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>Mã nhân viên</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>Tên nhân viên</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>Số lượng</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>Đơn giá</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>Tổng tiền</strong></td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">An</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">10</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">2.500</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">25.000</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Bình</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">50</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">4.000</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">200.000</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Chi</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">20</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">150</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3.000</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">4</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Dung</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">30</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">100</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3.000</td></tr></table></div>\n</div>",
+      "choices": [
+        {
+          "text": "Dạng chuẩn 1",
+          "correct": false
+        },
+        {
+          "text": "Dạng chuẩn 2",
+          "correct": false
+        },
+        {
+          "text": "Dạng chuẩn 3",
+          "correct": true
+        },
+        {
+          "text": "Dạng chuẩn Boyee-Codd",
+          "correct": false
+        }
+      ],
+      "solution": "1. Dạng chuẩn 1 (1NF): Bảng đã đạt được vì tất cả các thuộc tính đều là thuộc tính đơn (nguyên tố), các hàng phân biệt rõ ràng. <br>  \n2. Dạng chuẩn 2 (2NF): Khóa chính của bảng này là Mã nhân viên. Tất cả các thuộc tính không phải khóa (Tên nhân viên, Số lượng, Đơn giá, Tổng tiền) đều phụ thuộc hàm hoàn toàn vào khóa chính. Do đó, bảng đã đạt 2NF. <br> \n3. Dạng chuẩn 3 (3NF): <br> \n\t• Quy tắc của 3NF là bảng phải đạt 2NF và không có phụ thuộc hàm bắc cầu giữa các thuộc tính không phải khóa. <br> \n\t• Trong bảng này, ta có phụ thuộc hàm: Tổng tiền = Số lượng \\(\\times \\) Đơn giá. <br> \n\t• Điều này có nghĩa là Tổng tiền phụ thuộc vào Số lượng và Đơn giá (các thuộc tính không phải khóa), tạo ra một sự phụ thuộc bắc cầu từ Mã nhân viên \\(\\rightarrow \\) (Số lượng, Đơn giá) \\(\\rightarrow \\) Tổng tiền. Vì có thuộc tính tính toán dựa trên các thuộc tính khác trong cùng một hàng, bảng đã vi phạm và chưa đạt 3NF.",
+      "createdAt": "2026-11-10T18:44:06.178Z"
+    },
+    {
       "id": "1794336222340",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
