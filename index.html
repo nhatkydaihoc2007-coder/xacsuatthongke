@@ -1440,11 +1440,12 @@ function openExport() {
       <select id="eSol"><option value="none">Không kèm lời giải</option><option value="end">Gom ở cuối đề</option><option value="after">Ngay sau mỗi câu</option></select></div>
     <label class="chk"><input type="checkbox" id="eKey" ${v('key', true) ? 'checked' : ''}> Bảng đáp án ở cuối đề (câu trắc nghiệm)</label>
     <label class="chk"><input type="checkbox" id="eMark" ${v('mark', false) ? 'checked' : ''}> In đậm đáp án đúng ngay trên đề (bản dành cho giáo viên)</label>
+    <label class="chk"><input type="checkbox" id="eEq" ${v('eq', true) ? 'checked' : ''}> Công thức Word dạng Equation (sửa được; nếu không chuyển được sẽ dùng ảnh)</label>
     <label class="chk"><input type="checkbox" id="eShufQ" ${v('shufQ', false) ? 'checked' : ''}> Xáo trộn thứ tự câu</label>
     <label class="chk"><input type="checkbox" id="eShufC" ${v('shufC', false) ? 'checked' : ''}> Xáo trộn thứ tự đáp án A–D</label>
     <div class="slabel" style="margin:16px 0 6px">Thứ tự các câu đã chọn</div>
     <div class="chaplist" id="eList" style="max-height:260px"></div>
-    <div class="pool-info" id="eMsg">Hình công thức trong Word là ảnh (không sửa được như equation). File PDF: chọn “Lưu dưới dạng PDF” ở hộp thoại in.</div>
+    <div class="pool-info" id="eMsg">Công thức Word là Equation sửa được (câu nào không chuyển được thì thành ảnh). File PDF: chọn “Lưu dưới dạng PDF” ở hộp thoại in.</div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
       <button class="mini-btn primary" id="ePdf" style="padding:10px 18px;font-size:14px">🖨 In / Lưu PDF</button>
       <button class="mini-btn primary" id="eDoc" style="padding:10px 18px;font-size:14px">📄 Tải Word (.docx)</button>
@@ -1467,7 +1468,7 @@ function openExport() {
     saveSel(); updateSelUI(); drawList();
   });
   const read = () => ({ title: q('eTitle').value.trim(), sub: q('eSub').value.trim(), time: q('eTime').value.trim(), name: q('eName').checked,
-    sol: q('eSol').value, key: q('eKey').checked, mark: q('eMark').checked, shufQ: q('eShufQ').checked, shufC: q('eShufC').checked });
+    eq: q('eEq').checked, sol: q('eSol').value, key: q('eKey').checked, mark: q('eMark').checked, shufQ: q('eShufQ').checked, shufC: q('eShufC').checked });
   const keep = o => { try { localStorage.setItem('exp_cfg', JSON.stringify(o)); } catch (e) {} };
   q('eClose').addEventListener('click', closeExam);
   q('ePdf').addEventListener('click', async () => { const o = read(); keep(o); if (!selIds.length) return; await printDoc(o); });
@@ -1575,6 +1576,131 @@ async function remoteToPng(src) {
   } catch (e) { return null; }
 }
 
+
+// ── MathML → OMML (equation của Word) ──
+const NARY = new Set(['∑','∏','∐','⋃','⋂','⋁','⋀','∫','∬','∭','∮']);
+const ACC = { '^': '̂', 'ˆ': '̂', '~': '̃', '˜': '̃', '→': '⃗', '⃗': '⃗', '˙': '̇', '.': '̇', '¨': '̈', '´': '́', '`': '̀', 'ˇ': '̌', '¯': '̄' };
+const DS = { C: 'ℂ', H: 'ℍ', N: 'ℕ', P: 'ℙ', Q: 'ℚ', R: 'ℝ', Z: 'ℤ' };
+function dsMap(t) {
+  return [...t].map(ch => {
+    if (DS[ch]) return DS[ch];
+    const c = ch.codePointAt(0);
+    if (c >= 65 && c <= 90) return String.fromCodePoint(0x1D538 + c - 65);
+    if (c >= 97 && c <= 122) return String.fromCodePoint(0x1D552 + c - 97);
+    if (c >= 48 && c <= 57) return String.fromCodePoint(0x1D7D8 + c - 48);
+    return ch;
+  }).join('');
+}
+function mmlToOmml(mml) {
+  const doc = new DOMParser().parseFromString(mml, 'application/xml');
+  if (doc.querySelector('parsererror')) throw new Error('mathml');
+  let alnNext = false;
+  const kids = n => [...n.childNodes].filter(c => c.nodeType === 1);
+  const ln = n => n.localName;
+  const cls = n => n.getAttribute('data-mjx-texclass') || '';
+  const mt = n => n.textContent.replace(/[⁡-⁤\s]+/g, ' ').trim();
+  function run(n) {
+    let t = n.textContent.replace(/[⁡-⁤]/g, '');
+    if (ln(n) !== 'mtext') t = t.replace(/\s+/g, '');
+    if (!t) return '';
+    const mv = n.getAttribute('mathvariant') || '';
+    let sty = '';
+    if (ln(n) === 'mtext' || ln(n) === 'ms') sty = '<m:nor/>';
+    else if (mv === 'double-struck') { t = dsMap(t); sty = '<m:sty m:val="p"/>'; }
+    else if (mv === 'bold') sty = '<m:sty m:val="b"/>';
+    else if (mv === 'bold-italic') sty = '<m:sty m:val="bi"/>';
+    else if (mv === 'normal' || (ln(n) === 'mi' && [...t].length > 1)) sty = '<m:sty m:val="p"/>';
+    if (alnNext) { sty = '<m:aln/>' + sty; alnNext = false; }
+    return `<m:r>${sty ? '<m:rPr>' + sty + '</m:rPr>' : ''}<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/></w:rPr><m:t xml:space="preserve">${xe(t)}</m:t></m:r>`;
+  }
+  function firstMo(n) { return ln(n) === 'mo' ? n : (ln(n) === 'mrow' && kids(n)[0] && ln(kids(n)[0]) === 'mo' ? kids(n)[0] : null); }
+  function lastMo(n) { return ln(n) === 'mo' ? n : (ln(n) === 'mrow' && kids(n).length && ln(kids(n).slice(-1)[0]) === 'mo' ? kids(n).slice(-1)[0] : null); }
+  function naryInfo(n) {
+    const t = ln(n), c = kids(n);
+    if (t === 'mo' && NARY.has(mt(n))) return { chr: mt(n), kind: 'none' };
+    if (['msub', 'msup', 'msubsup', 'munder', 'mover', 'munderover'].includes(t) && c[0] && ln(c[0]) === 'mo' && NARY.has(mt(c[0]))) {
+      const under = t.startsWith('mun') || t === 'mover';
+      let sub = null, sup = null;
+      if (t === 'msub' || t === 'munder') sub = c[1];
+      else if (t === 'msup' || t === 'mover') sup = c[1];
+      else { sub = c[1]; sup = c[2]; }
+      return { chr: mt(c[0]), sub, sup, loc: (under && !'∫∬∭∮'.includes(mt(c[0]))) ? 'undOvr' : 'subSup' };
+    }
+    return null;
+  }
+  function nary(info, e) {
+    const loc = info.loc || 'subSup';
+    return `<m:nary><m:naryPr><m:chr m:val="${xe(info.chr)}"/><m:limLoc m:val="${loc}"/>${info.sub ? '' : '<m:subHide m:val="1"/>'}${info.sup ? '' : '<m:supHide m:val="1"/>'}</m:naryPr><m:sub>${info.sub ? cv(info.sub) : ''}</m:sub><m:sup>${info.sup ? cv(info.sup) : ''}</m:sup><m:e>${e}</m:e></m:nary>`;
+  }
+  function seq(nodes) {
+    let out = '';
+    for (let i = 0; i < nodes.length; i++) {
+      const info = naryInfo(nodes[i]);
+      if (info) { let e = ''; if (i + 1 < nodes.length) { e = cv(nodes[i + 1]); i++; } out += nary(info, e); }
+      else out += cv(nodes[i]);
+    }
+    return out;
+  }
+  function table(n, asEq) {
+    const rows = kids(n).filter(r => ln(r) === 'mtr' || ln(r) === 'mlabeledtr');
+    const align = (n.getAttribute('columnalign') || '');
+    if (asEq || /right\s+left/.test(align)) {
+      return '<m:eqArr>' + rows.map(r => '<m:e>' + kids(r).map((td, k) => { if (k > 0 && /right\s+left/.test(align)) alnNext = true; return seq(kids(td)) + (k < kids(r).length - 1 && !/right\s+left/.test(align) ? '<m:r><m:t xml:space="preserve">  </m:t></m:r>' : ''); }).join('') + '</m:e>').join('') + '</m:eqArr>';
+    }
+    return '<m:m>' + rows.map(r => '<m:mr>' + kids(r).map(td => '<m:e>' + seq(kids(td)) + '</m:e>').join('') + '</m:mr>').join('') + '</m:m>';
+  }
+  function delim(n) {
+    const c = kids(n), fo = firstMo(c[0]), lo = lastMo(c[c.length - 1]);
+    const b = mt(fo), e = mt(lo);
+    const mid = c.slice(1, -1);
+    const isCases = b === '{' && !e && mid.length === 1 && ln(mid[0]) === 'mtable';
+    const inner = isCases ? table(mid[0], true) : seq(mid);
+    return `<m:d><m:dPr><m:begChr m:val="${xe(b)}"/><m:endChr m:val="${xe(e)}"/></m:dPr><m:e>${inner}</m:e></m:d>`;
+  }
+  function cv(n) {
+    const t = ln(n), c = kids(n);
+    switch (t) {
+      case 'mi': case 'mn': case 'mo': case 'mtext': case 'ms': return run(n);
+      case 'mspace': case 'mglyph': return '';
+      case 'mfrac':
+        return `<m:f>${n.getAttribute('linethickness') === '0' ? '<m:fPr><m:type m:val="noBar"/></m:fPr>' : ''}<m:num>${cv(c[0])}</m:num><m:den>${cv(c[1])}</m:den></m:f>`;
+      case 'msqrt': return `<m:rad><m:radPr><m:degHide m:val="1"/></m:radPr><m:deg/><m:e>${seq(c)}</m:e></m:rad>`;
+      case 'mroot': return `<m:rad><m:radPr/><m:deg>${cv(c[1])}</m:deg><m:e>${cv(c[0])}</m:e></m:rad>`;
+      case 'msup': return `<m:sSup><m:e>${cv(c[0])}</m:e><m:sup>${cv(c[1])}</m:sup></m:sSup>`;
+      case 'msub': return `<m:sSub><m:e>${cv(c[0])}</m:e><m:sub>${cv(c[1])}</m:sub></m:sSub>`;
+      case 'msubsup': return `<m:sSubSup><m:e>${cv(c[0])}</m:e><m:sub>${cv(c[1])}</m:sub><m:sup>${cv(c[2])}</m:sup></m:sSubSup>`;
+      case 'mover': case 'munder': {
+        const top = t === 'mover', a = c[1], at = a && ln(a) === 'mo' ? mt(a) : '';
+        if (at === '¯' || at === '―' || at === '‾' || at === '_' ) return `<m:bar><m:barPr><m:pos m:val="${top ? 'top' : 'bot'}"/></m:barPr><m:e>${cv(c[0])}</m:e></m:bar>`;
+        if (top && at && (a.getAttribute('accent') === 'true' || ACC[at])) return `<m:acc><m:accPr><m:chr m:val="${xe(ACC[at] || at)}"/></m:accPr><m:e>${cv(c[0])}</m:e></m:acc>`;
+        return top ? `<m:limUpp><m:e>${cv(c[0])}</m:e><m:lim>${cv(c[1])}</m:lim></m:limUpp>` : `<m:limLow><m:e>${cv(c[0])}</m:e><m:lim>${cv(c[1])}</m:lim></m:limLow>`;
+      }
+      case 'munderover':
+        return `<m:limUpp><m:e><m:limLow><m:e>${cv(c[0])}</m:e><m:lim>${cv(c[1])}</m:lim></m:limLow></m:e><m:lim>${cv(c[2])}</m:lim></m:limUpp>`;
+      case 'mtable': return table(n, false);
+      case 'menclose': return /box|roundedbox/.test(n.getAttribute('notation') || '') ? `<m:borderBox><m:e>${seq(c)}</m:e></m:borderBox>` : seq(c);
+      case 'mrow': {
+        if (c.length >= 2) {
+          const f = firstMo(c[0]), l = lastMo(c[c.length - 1]);
+          if (f && l && cls(c[0]) === 'OPEN' && cls(c[c.length - 1]) === 'CLOSE') return delim(n);
+          if (f && l && cls(n) === 'INNER' && cls(f) === 'OPEN') return delim(n);
+        }
+        return seq(c);
+      }
+      default: return seq(c);
+    }
+  }
+  return seq(kids(doc.documentElement));
+}
+async function mathToOmml(tex, display) {
+  const w = await getSvgMJ();
+  const mml = w.MathJax.tex2mml(tex, { display });
+  if (/merror/.test(mml)) throw new Error('tex');
+  const o = mmlToOmml(mml);
+  if (!o) throw new Error('empty');
+  return o;
+}
+
 const MATH_RE = /\\begin\{(align\*?|aligned|gather\*?|equation\*?|multline\*?|cases)\}[\s\S]*?\\end\{\1\}|\\\[[\s\S]*?\\\]|\$\$[\s\S]*?\$\$|\\\([\s\S]*?\\\)|\$[^$\n]+?\$/g;
 const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -1604,9 +1730,15 @@ async function exportDocx(o, say) {
     if (el.dataset.m != null) {
       const m = maths[+el.dataset.m]; display = m.display;
       const key = (display ? 'D' : 'I') + m.tex;
-      if (!cache.has(key)) { try { cache.set(key, await mathToPng(m.tex, m.display)); } catch (e) { cache.set(key, null); } }
+      if (!cache.has(key)) {
+        let v = null;
+        if (o.eq) { try { v = { omml: await mathToOmml(m.tex, m.display) }; } catch (e) { v = null; } }
+        if (!v) { try { v = await mathToPng(m.tex, m.display); } catch (e) { v = null; } }
+        cache.set(key, v);
+      }
       r = cache.get(key);
       if (!r) { info.set(el, { text: m.tex }); continue; }
+      if (r.omml) { info.set(el, { omml: r.omml, display }); continue; }
     } else {
       const src = el.getAttribute('src') || '';
       r = await remoteToPng(src);
@@ -1640,6 +1772,11 @@ async function exportDocx(o, say) {
       if (tag === 'IMG') {
         const d = info.get(n); if (!d) return;
         if (d.text) { runs.push(run(d.text, f)); return; }
+        if (d.omml) {
+          if (d.display) { flush(); out.push(`<w:p><w:pPr><w:spacing w:before="40" w:after="80"/></w:pPr><m:oMathPara><m:oMathParaPr><m:jc m:val="center"/></m:oMathParaPr><m:oMath>${d.omml}</m:oMath></m:oMathPara></w:p>`); }
+          else runs.push(`<m:oMath>${d.omml}</m:oMath>`);
+          return;
+        }
         if (d.display) { flush(); out.push(P(imgRun(d, f), { jc: 'center', after: 80 })); return; }
         runs.push(imgRun(d, f)); return;
       }
@@ -1682,7 +1819,7 @@ async function exportDocx(o, say) {
       + '</w:tbl>' + P('', { after: 60 });
   }
   const body = conv(root, {}).join('');
-  const NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"';
+  const NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"';
   const zip = new JSZip();
   zip.file('[Content_Types].xml', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>');
   zip.file('_rels/.rels', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>');
