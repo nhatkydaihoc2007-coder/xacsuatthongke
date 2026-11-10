@@ -11,7 +11,7 @@ window.MathJax = {
   startup: { typeset: false }
 };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async onload="window.__mjReady&&window.__mjReady()"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
@@ -768,21 +768,49 @@ themeBtn.addEventListener('click', () => {
 
 // ── Load data ──
 async function loadData() {
-  try {
-    const res = await fetch(RAW_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error('fetch failed');
-    const json = await res.json();
+  // Hiện ngay từ bản lưu trong trình duyệt (lần vào sau gần như tức thì), rồi tải bản mới ở nền
+  let cached = null;
+  try { cached = localStorage.getItem('ex_data_cache'); } catch (e) {}
+  const apply = txt => {
+    const json = JSON.parse(txt);
     allExercises = json.exercises || [];
     allSubjects  = json.subjects  || [];
     allChapters  = json.chapters  || {};
-  } catch (e) {
-    allExercises = [];
-    allSubjects  = [];
-    document.getElementById('exList').innerHTML = `<div class="empty"><div class="empty-ico">⚠️</div><div class="empty-txt">Không thể tải dữ liệu. Kiểm tra cấu hình REPO_OWNER và REPO_NAME.</div></div>`;
+  };
+  const bar = document.getElementById('loadingBar');
+  if (cached) {
+    try { apply(cached); bar.style.display = 'none'; render(); } catch (e) { cached = null; }
   }
-  document.getElementById('loadingBar').style.display = 'none';
-  render();
+  try {
+    const res = await fetch(RAW_URL + '?t=' + Math.floor(Date.now() / 60000));
+    if (!res.ok) throw new Error('fetch failed');
+    const txt = await res.text();
+    if (txt !== cached) {
+      apply(txt);
+      try { localStorage.setItem('ex_data_cache', txt); } catch (e) {}
+      bar.style.display = 'none';
+      render();
+    }
+  } catch (e) {
+    if (!cached) {
+      allExercises = []; allSubjects = [];
+      document.getElementById('exList').innerHTML = `<div class="empty"><div class="empty-ico">⚠️</div><div class="empty-txt">Không thể tải dữ liệu. Kiểm tra cấu hình REPO_OWNER và REPO_NAME.</div></div>`;
+      render();
+    }
+  }
+  bar.style.display = 'none';
 }
+
+// ── MathJax: xếp hàng nếu chưa tải xong, chỉ typeset phần mới thêm ──
+const tsQueue = [];
+function tp(els) {
+  els = Array.isArray(els) ? els : [els];
+  if (window.MathJax && MathJax.typesetPromise) return MathJax.typesetPromise(els).catch(() => {});
+  tsQueue.push(...els);
+}
+window.__mjReady = function () {
+  MathJax.startup.promise.then(() => { const q = tsQueue.splice(0); if (q.length) return MathJax.typesetPromise(q).catch(() => {}); });
+};
 
 // ── Tag class ──
 const TAG_MAP = {
@@ -886,11 +914,21 @@ function renderExercises() {
     return;
   }
 
-  list.innerHTML = data.map((ex, i) => {
-    const gi = allExercises.findIndex(e => e.id === ex.id) + 1;
-    const d  = new Date(ex.createdAt).toLocaleDateString('vi-VN');
-    return `
-    <div class="ex-card" style="animation-delay:${i*0.04}s" id="card-${ex.id}">
+  giMap = new Map(allExercises.map((e, i) => [e.id, i + 1]));
+  rQueue = data; rCount = 0; list.innerHTML = '';
+  renderMore(PAGE);
+  updateSelUI();
+  updateProgress();
+}
+
+// ── Vẽ từng đợt (cuộn tới đâu vẽ tới đó) để trang không bị đơ khi kho bài lớn ──
+const PAGE = 15;
+let rQueue = [], rCount = 0, giMap = new Map(), moreIO = null;
+function cardHtml(ex, i) {
+  const gi = giMap.get(ex.id) || 0;
+  const d  = new Date(ex.createdAt).toLocaleDateString('vi-VN');
+  return `
+    <div class="ex-card" style="animation-delay:${(i % PAGE) * 0.04}s" id="card-${ex.id}">
       <div class="ex-meta">
         <span class="ex-num">#${String(gi).padStart(3,'0')}</span>
         <span class="ex-tag ${tagClass(ex.subject)}">${ex.subject}</span>
@@ -911,24 +949,45 @@ function renderExercises() {
         <div class="sol-inner">
           <div class="sol-body">
             <div class="sol-lbl">Lời giải</div>
-            <div class="sol-content" id="sc-${ex.id}">${ex.solution || '<em style="opacity:.5">Chưa có lời giải.</em>'}</div>
+            <div class="sol-content" id="sc-${ex.id}"></div>
           </div>
         </div>
       </div>
     </div>`;
-  }).join('');
-
-  // Inject choice blocks từ field ex.choices (array JSON lưu trong GitHub)
-  data.forEach(ex => {
-    if (!ex.choices || !ex.choices.length) return;
-    const chWrap = document.getElementById('ch-'+ex.id);
-    if (chWrap) chWrap.innerHTML = renderChoiceHtml(ex.choices);
+}
+function renderMore(n) {
+  const list = document.getElementById('exList');
+  const slice = rQueue.slice(rCount, rCount + n);
+  const old = document.getElementById('moreSent'); if (old) { if (moreIO) moreIO.unobserve(old); old.remove(); }
+  if (!slice.length) return;
+  const tmp = document.createElement('div');
+  tmp.innerHTML = slice.map((ex, i) => cardHtml(ex, rCount + i)).join('');
+  const nodes = [...tmp.children];
+  nodes.forEach(c => list.appendChild(c));
+  slice.forEach(ex => {
+    if (ex.choices && ex.choices.length) document.getElementById('ch-' + ex.id).innerHTML = renderChoiceHtml(ex.choices);
+    applyChoice(ex.id); markCard(ex.id); markSel(ex.id);
   });
-  data.forEach(ex => { applyChoice(ex.id); markCard(ex.id); markSel(ex.id); });
-  updateSelUI();
-  updateProgress();
-
-  if (window.MathJax) MathJax.typesetPromise([list]).catch(()=>{});
+  rCount += slice.length;
+  tp(nodes);
+  if (rCount < rQueue.length) {
+    const s = document.createElement('div');
+    s.id = 'moreSent'; s.className = 'empty'; s.style.padding = '18px';
+    s.innerHTML = `<div class="empty-txt">Đang tải thêm… (${rCount}/${rQueue.length})</div>`;
+    list.appendChild(s);
+    if ('IntersectionObserver' in window) {
+      if (!moreIO) moreIO = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) renderMore(PAGE); }, { rootMargin: '700px 0px' });
+      moreIO.observe(s);
+    } else renderMore(rQueue.length);
+  }
+}
+// Đảm bảo câu `id` đã được vẽ (dùng cho danh sách câu / nhảy tới câu chưa làm)
+function ensureRendered(id) {
+  if (document.getElementById('card-' + id)) return true;
+  const idx = rQueue.findIndex(e => e.id === id);
+  if (idx < 0) return false;
+  renderMore(idx - rCount + 1 + 4);
+  return !!document.getElementById('card-' + id);
 }
 
 function toggleSol(id) {
@@ -942,7 +1001,11 @@ function toggleSol(id) {
   txt.textContent = open ? 'Xem lời giải' : 'Ẩn lời giải';
   // Reveal / hide correct answer highlight
   if (ch && !ch.classList.contains('locked')) ch.classList.toggle('choices-hidden', open);
-  if (!open && window.MathJax) MathJax.typesetPromise([document.getElementById('sc-'+id)]).catch(()=>{});
+  if (!open) {
+    const sc = document.getElementById('sc-'+id);
+    if (!sc.dataset.f) { const ex = byId(id); sc.innerHTML = (ex && ex.solution) || '<em style="opacity:.5">Chưa có lời giải.</em>'; sc.dataset.f = '1'; }
+    tp(sc);
+  }
 }
 
 function setSubj(s, el) {
@@ -959,7 +1022,6 @@ document.getElementById('searchInput').addEventListener('input', e => {
   renderExercises();
 });
 
-loadData();
 
 // ── Brace-counting extractor: lấy nội dung bên trong {...} tiếp theo ──
 function extractBraceContent(s, start) {
@@ -1022,11 +1084,19 @@ function ctexInner(raw) {
   t = t.replace(/\\displaystyle\s*/g, '');
   const mathBlocks = [];
   function protect(s) {
-    s = s.replace(/\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\1\}/g, (match, env, inner) => {
-      let block = match;
-      if (env === 'cases') block = '\\[' + match + '\\]';
-      mathBlocks.push(block);
-      return '\x00M'+(mathBlocks.length-1)+'\x00';
+    s = s.replace(/((?:[A-Za-z0-9{}_^()\[\]+\-*\/.,<>|' ]|\\[a-zA-Z])*=[ \t]*)?\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\2\}/g, (match, lead, env) => {
+      lead = lead || '';
+      const body = match.slice(lead.length);
+      if (env === 'cases') {
+        // "R \times S= \begin{cases}…" gõ không có $ → gộp phần công thức đứng trước dấu = cùng dòng vào chung khối toán
+        let pre = '', math = lead;
+        const w = lead.match(/^((?:[A-Za-z]{2,}[ ]+)+)/);
+        if (w && lead.length > w[1].length) { pre = w[1]; math = lead.slice(pre.length); }
+        mathBlocks.push('\\[' + math + body + '\\]');
+        return pre + '\x00M' + (mathBlocks.length - 1) + '\x00';
+      }
+      mathBlocks.push(body);
+      return lead + '\x00M' + (mathBlocks.length - 1) + '\x00';
     });
     s = s.replace(/\\\[([\s\S]*?)\\\]/g,  (_, m) => { mathBlocks.push('\\['+m+'\\]'); return '\x00M'+(mathBlocks.length-1)+'\x00'; });
     s = s.replace(/\$\$([\s\S]*?)\$\$/g,  (_, m) => { mathBlocks.push('$$'+m+'$$');   return '\x00M'+(mathBlocks.length-1)+'\x00'; });
@@ -1203,8 +1273,10 @@ document.getElementById('exList').addEventListener('click', e => {
 
 document.getElementById('qList').addEventListener('click', e => {
   const b = e.target.closest('.qn'); if (!b) return;
-  let el = document.getElementById('card-' + b.dataset.id);
-  if (!el) { statusF = 'all'; renderExercises(); el = document.getElementById('card-' + b.dataset.id); }
+  const id = b.dataset.id;
+  if (!rQueue.some(e => e.id === id)) { statusF = 'all'; renderExercises(); }
+  ensureRendered(id);
+  let el = document.getElementById('card-' + id);
   if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.style.outline = '2px solid var(--accent)'; setTimeout(() => el.style.outline = '', 1200); }
 });
 document.getElementById('progFilter').addEventListener('click', e => {
@@ -1215,6 +1287,7 @@ document.getElementById('nextTodo').addEventListener('click', () => {
   const ex = getBase().find(x => !progress[x.id]);
   if (!ex) { alert('Bạn đã làm hết các câu trong mục này 🎉'); return; }
   if (statusF !== 'all' && statusF !== 'todo') { statusF = 'all'; renderExercises(); }
+  ensureRendered(ex.id);
   const el = document.getElementById('card-' + ex.id);
   if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 });
@@ -1234,7 +1307,7 @@ function closeExam() {
   clearInterval(exmTimer); EXM = null; ov.hidden = true; document.body.style.overflow = '';
 }
 function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
-function typeset(el) { if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(() => {}); }
+function typeset(el) { tp(el); }
 
 function poolFor(subj, chaps, onlyTodo) {
   return allExercises.filter(e => hasKey(e)
@@ -1836,34 +1909,9 @@ async function exportDocx(o, say) {
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden && (!EXM || EXM.done)) closeExam(); });
-</script>
 
-  <!-- ══ Nút lên đầu / xuống cuối trang ══ -->
-<style>
-.scroll-fab { position: fixed; right: 16px; bottom: 84px; z-index: 90; display: flex; flex-direction: column; gap: 8px; }
-.scroll-fab button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--border2); background: var(--surface); color: var(--text); font-size: 18px; line-height: 1; cursor: pointer; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity .2s, background .15s, color .15s; }
-.scroll-fab button.show { opacity: .95; pointer-events: auto; }
-.scroll-fab button:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-</style>
-<div class="scroll-fab">
-  <button id="goTop" title="Lên đầu trang" aria-label="Lên đầu trang">↑</button>
-  <button id="goBottom" title="Xuống cuối trang" aria-label="Xuống cuối trang">↓</button>
-</div>
-<script>
-(function () {
-  const up = document.getElementById('goTop'), down = document.getElementById('goBottom');
-  function update() {
-    const y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
-    up.classList.toggle('show', y > 300);
-    down.classList.toggle('show', max - y > 300);
-  }
-  up.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  down.addEventListener('click', () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }));
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
-  setInterval(update, 1000);   // nội dung tải/lọc xong làm trang dài ra
-  update();
-})();
+// ── Khởi động (đặt cuối để mọi biến đã được khai báo) ──
+loadData();
 </script>
 </body>
 </html>
