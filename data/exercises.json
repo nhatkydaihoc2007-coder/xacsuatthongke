@@ -581,9 +581,9 @@
           "correct": false
         }
       ],
-      "solution": "",
+      "solution": "• Một thuộc tính phức hợp sẽ được làm phẳng (flattened). Nghĩa là bản thân thuộc tính phức hợp (Địa chỉ) sẽ bị loại bỏ.<br>\n• Thay vào đó, tất cả các thuộc tính thành phần của nó sẽ được đưa trực tiếp vào làm các thuộc tính độc lập của quan hệ đó.",
       "createdAt": "2026-11-10T06:55:56.857Z",
-      "updatedAt": "2026-11-10T09:04:33.200Z"
+      "updatedAt": "2026-11-10T09:07:45.478Z"
     },
     {
       "id": "1794293756861",
