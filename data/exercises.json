@@ -1702,8 +1702,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Quy tắc SQL chuẩn quy định: Khi truy vấn có từ khóa DISTINCT, tất cả các cột xuất hiện ở ORDER BY bắt buộc phải có mặt trong danh sách SELECT để đảm bảo xác định duy nhất giá trị sắp xếp sau khi loại bỏ các bản ghi trùng lặp.",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T14:53:57.920Z"
     },
     {
       "id": "1794293941433",
