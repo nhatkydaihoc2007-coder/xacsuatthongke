@@ -301,7 +301,7 @@
       "id": "1794336270424",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "Cho câu lệnh SQL sau:\nverbatim\nselect k.TenKhoaHoc, COUNT(t.MaSinhVien) as SoLuongSVThamGia\nfrom KHOAHOC k, THAMGIA t\nwhere k.MaKhoaHoc = t.MaKhoaHoc\ngroup by k.TenKhoaHoc\norder by k.TenKhoaHoc\nverbatim\nKết quả của câu lệnh trên là bảng nào sau đây?",
+      "question": "Cho câu lệnh SQL sau: <br>\nselect k.TenKhoaHoc, COUNT(t.MaSinhVien) as SoLuongSVThamGia <br>\nfrom KHOAHOC k, THAMGIA t <br>\nwhere k.MaKhoaHoc = t.MaKhoaHoc <br>\ngroup by k.TenKhoaHoc <br>\norder by k.TenKhoaHoc <br>\nKết quả của câu lệnh trên là bảng nào sau đây?",
       "choices": [
         {
           "text": "<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>TenKhoaHoc</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>SoLuongSVThamGia</strong></td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Viet de cuong luan van</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Tieng Anh cong so</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Soan thao van ban</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td></tr></table></div>",
@@ -320,8 +320,9 @@
           "correct": false
         }
       ],
-      "solution": "<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">HERE k.MaKhoaHoc = t.MaKhoaHoc</code>: ghép hai bảng theo mã khóa học. <br> \nNhìn bảng THAMGIA ta đếm số lần xuất hiện của từng MaKhoaHoc: Khóa học 1: xuất hiện 2 lần, Khóa học 2: xuất hiện 1 lần, Khóa học 3: xuất hiện 3 lần. <br> \n<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">RDER BY k.TenKhoaHoc</code> sắp xếp tên theo thứ tự chữ cái:",
-      "createdAt": "2026-11-10T18:44:30.413Z"
+      "solution": "<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">WHERE k.MaKhoaHoc = t.MaKhoaHoc</code>: ghép hai bảng theo mã khóa học. <br> \nNhìn bảng THAMGIA ta đếm số lần xuất hiện của từng MaKhoaHoc: Khóa học 1: xuất hiện 2 lần, Khóa học 2: xuất hiện 1 lần, Khóa học 3: xuất hiện 3 lần. <br> \n<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">ORDER BY k.TenKhoaHoc</code> sắp xếp tên theo thứ tự chữ cái:",
+      "createdAt": "2026-11-10T18:44:30.413Z",
+      "updatedAt": "2026-11-10T18:46:53.050Z"
     },
     {
       "id": "1794336270425",
