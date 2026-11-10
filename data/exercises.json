@@ -2394,7 +2394,7 @@
         },
         {
           "text": "Tin cậy",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Bảo mật",
@@ -2402,11 +2402,12 @@
         },
         {
           "text": "Khả thi",
-          "correct": true
+          "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T05:24:54.562Z"
+      "createdAt": "2026-11-09T05:24:54.562Z",
+      "updatedAt": "2026-11-10T02:18:01.747Z"
     },
     {
       "id": "1794201186345",
