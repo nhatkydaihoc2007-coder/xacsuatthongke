@@ -12,6 +12,344 @@
   ],
   "exercises": [
     {
+      "id": "1794312973514",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Xét quan hệ R(A,B,C) với các thuộc tính số. Kết quả của câu lệnh sau đây là gì? DELETE FROM R WHERE A > ALL (SELECT A FROM R)",
+      "choices": [
+        {
+          "text": "Câu lệnh bị lỗi cú pháp, không thực hiện được",
+          "correct": false
+        },
+        {
+          "text": "Câu lệnh không bị lỗi cú pháp, câu lệnh không xóa bất kỳ bộ nào khỏi quan hệ R",
+          "correct": true
+        },
+        {
+          "text": "Câu lệnh không bị lỗi cú pháp, câu lệnh xóa một số bất kỳ ra khỏi quan hệ R",
+          "correct": false
+        },
+        {
+          "text": "Câu lệnh không bị lỗi cú pháp, câu lệnh xóa tất cả các bộ khỏi quan hệ R",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973515",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ R(A,B,C) với ba bộ dữ liệu (1,1,1), (2,1,1), (2,1,2) và quan hệ S(X,Y,Z) với hai bộ dữ liệu (1,1,2), (2,2,1). Kết quả trả về của câu truy vấn dưới đây là gì? SELECT R.C FROM R WHERE R.A = MAX (SELECT X FROM S)",
+      "choices": [
+        {
+          "text": "Quan hệ mới gồm thuộc tính C với giá trị đơn là 1",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ mới gồm thuộc tính C với giá trị đơn là 2",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ mới gồm thuộc tính C với hai giá trị đơn là 1 và 2",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ mới gồm thuộc tính C với hai bộ dữ liệu (1), (2)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973516",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Giả sử quan hệ EMPLOYEE có hai thuộc tính là Name và Salary. Để tìm nhân viên có lương cao nhất chúng ta không sử dụng câu truy vấn nào sau đây?",
+      "choices": [
+        {
+          "text": "SELECT Name, Salary FROM Employee WHERE Salary >= ALL (SELECT Salary FROM Employee)",
+          "correct": false
+        },
+        {
+          "text": "SELECT Name, Salary FROM Employee WHERE Salary IN (SELECT MAX(Salary) FROM Employee)",
+          "correct": false
+        },
+        {
+          "text": "SELECT Name, Salary FROM Employee WHERE Salary >=MAX (SELECT Salary FROM Employee)",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973517",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh nào sau đây liệt kê danh sách nhân viên thuộc đơn vị mã số \"TT05\" và có lương từ 1000 đến 2000?",
+      "choices": [
+        {
+          "text": "SELECT MANV, HONV, TENNV FROM NHAN\\_VIEN WHERE (LUONG BETWEEN 1000 AND 2000) AND MADV = \"TT05\"",
+          "correct": true
+        },
+        {
+          "text": "SELECT HONV, TENNV FROM NHAN\\_VIEN WHERE (1000<=LUONG<=2000) AND NV.MADV = \"TT05\"",
+          "correct": false
+        },
+        {
+          "text": "SELECT MANV, HONV, TENNV FROM NHAN\\_VIEN WHERE (LUONG IS BETWEEN 1000 AND 2000) AND MADV = \"TT05\"",
+          "correct": false
+        },
+        {
+          "text": "SELECT MANV, HONV, TENNV FROM NHAN\\_VIEN WHERE (LUONG BETWEEN 1000 AND 2000) AND MADV = TT05",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973518",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh nào sau đây được dùng để thay đổi cấu trúc bảng?",
+      "choices": [
+        {
+          "text": "CHANGE",
+          "correct": false
+        },
+        {
+          "text": "ALTER",
+          "correct": true
+        },
+        {
+          "text": "MODIFY",
+          "correct": false
+        },
+        {
+          "text": "UPDATE",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973519",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Xét hai quan hệ R(A,B,C) và S(A,B,C) với các thuộc tính số. Câu lệnh nào sau đây xóa khỏi quan hệ R các bộ t có giá trị t.A không xuất hiện tại cột B của quan hệ S?",
+      "choices": [
+        {
+          "text": "DELETE FROM R WHERE A <> ALL (SELECT B FROM S)",
+          "correct": true
+        },
+        {
+          "text": "DELETE FROM R WHERE A <> ANY (SELECT B FROM S)",
+          "correct": false
+        },
+        {
+          "text": "DELETE FROM R WHERE A != (SELECT B FROM S)",
+          "correct": false
+        },
+        {
+          "text": "DELETE FROM R WHERE A NOT IN (SELECT * FROM S)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973520",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Xét quan hệ R(A,B,C) với các thuộc tính số. Kết quả của câu lệnh sau đây là gì? DELETE FROM R WHERE A = ANY (SELECT A FROM R)",
+      "choices": [
+        {
+          "text": "Câu lệnh bị lỗi cú pháp, không thực hiện được",
+          "correct": false
+        },
+        {
+          "text": "Câu lệnh không bị lỗi cú pháp, câu lệnh không xóa bất kỳ bộ nào khỏi quan hệ R",
+          "correct": false
+        },
+        {
+          "text": "Câu lệnh không bị lỗi cú pháp, câu lệnh xóa một số bất kỳ ra khỏi quan hệ R",
+          "correct": false
+        },
+        {
+          "text": "Câu lệnh không bị lỗi cú pháp, câu lệnh xóa tất cả các bộ khỏi quan hệ R",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973521",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Để khai báo ràng buộc khóa chính, ta sử dụng cấu trúc cú pháp nào sau đây?",
+      "choices": [
+        {
+          "text": "Constraint <tên ràng buộc> Primary Key (<tên danh sách các cột >)",
+          "correct": true
+        },
+        {
+          "text": "Constraint <tên ràng buộc> Unique (<tên danh sách các cột >)",
+          "correct": false
+        },
+        {
+          "text": "Constraint <tên ràng buộc> Foreign Key (<tên danh sách các cột >) References <tên bảng được tham chiếu>[<danh sách cột khóa>]",
+          "correct": false
+        },
+        {
+          "text": "<Tên cột dữ liệu><kiểu dữ liệu> Not Null",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973522",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ HOCVIEN (MAHV, HOTEN, NGSINH, NOISINH, GIOITINH, MALOP, DIEMTB). Câu lệnh nào liệt kê học viên có điểm trung bình (DIEMTB) cao nhất?",
+      "choices": [
+        {
+          "text": "Select Mahv, Hoten From Hocvien Where DiemTB>=ANY (Select DiemTB From Hocvien)",
+          "correct": false
+        },
+        {
+          "text": "Select Mahv, Hoten From Hocvien Where DiemTB> ALL (Select DiemTB From Hocvien)",
+          "correct": false
+        },
+        {
+          "text": "Select Mahv, Hoten From Hocvien Where DiemTB>= (Select max(DiemTB) From Hocvien)",
+          "correct": true
+        },
+        {
+          "text": "Select Mahv, Hoten From Hocvien Where DiemTB = MAX (Select DiemTB From Hocvien)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973523",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ R(A,B,C) với ba bộ dữ liệu (1,1,1), (2,1,1), (3,1,2) và quan hệ S(X,Y,Z) với hai bộ dữ liệu (1,1,2), (2,2,1). Kết quả trả về của câu truy vấn dưới đây là gì? SELECT R.B, S.Y FROM R LEFT JOIN S ON R.A=S.X",
+      "choices": [
+        {
+          "text": "Quan hệ mới gồm hai thuộc tính B, Y với hai bộ dữ liệu (1,1), (1,2)",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ mới gồm hai thuộc tính B, Y với ba bộ dữ liệu (1,1), (1,2), (2,2)",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ mới gồm hai thuộc tính B, Y với ba bộ dữ liệu (1,1), (1,2), (3,null)",
+          "correct": false
+        },
+        {
+          "text": "Quan hệ mới gồm hai thuộc tính B, Y với ba bộ dữ liệu (1,1), (1,2), (1,null)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.514Z"
+    },
+    {
+      "id": "1794312973525",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Từ khóa Unique được dùng trong khai báo ràng buộc gì sau đây?",
+      "choices": [
+        {
+          "text": "Khóa chính",
+          "correct": false
+        },
+        {
+          "text": "Khóa ngoại",
+          "correct": false
+        },
+        {
+          "text": "Khóa tham chiếu",
+          "correct": false
+        },
+        {
+          "text": "Khóa duy nhất (chỉ mục)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.515Z"
+    },
+    {
+      "id": "1794312973526",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh nào sau đây thay đổi giá trị trong bảng?",
+      "choices": [
+        {
+          "text": "CHANGE",
+          "correct": false
+        },
+        {
+          "text": "ALTER",
+          "correct": false
+        },
+        {
+          "text": "MODIFY",
+          "correct": false
+        },
+        {
+          "text": "UPDATE",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.515Z"
+    },
+    {
+      "id": "1794312973527",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Thành phần nào sau đây không xuất hiện trong câu lệnh tạo bảng CREATE TABLE?",
+      "choices": [
+        {
+          "text": "Định nghĩa ràng buộc khóa chính",
+          "correct": false
+        },
+        {
+          "text": "Định nghĩa ràng buộc toàn vẹn tham chiếu",
+          "correct": false
+        },
+        {
+          "text": "Định nghĩa miền giá trị",
+          "correct": true
+        },
+        {
+          "text": "Định nghĩa ràng buộc miền giá trị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:16:13.515Z"
+    },
+    {
       "id": "1794312939181",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
