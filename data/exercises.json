@@ -12,6 +12,500 @@
   ],
   "exercises": [
     {
+      "id": "1794293941424",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh CREATE TABLE thuộc nhóm ngôn ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ định nghĩa dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Ngôn ngữ thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ điều khiển dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ truy vấn dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941425",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Trong ngôn ngữ SQL, phép toán một ngôi nào sau đây có thể làm giảm số bộ dữ liệu trong quan hệ kết quả so với quan hệ gốc?",
+      "choices": [
+        {
+          "text": "Phép chọn",
+          "correct": false
+        },
+        {
+          "text": "Phép chiếu",
+          "correct": false
+        },
+        {
+          "text": "Phép đổi tên",
+          "correct": false
+        },
+        {
+          "text": "Phép gom nhóm",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941426",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh này sau đây không cùng nhóm với các câu lệnh còn lại?",
+      "choices": [
+        {
+          "text": "CREATE",
+          "correct": false
+        },
+        {
+          "text": "ALTER",
+          "correct": false
+        },
+        {
+          "text": "DROP",
+          "correct": false
+        },
+        {
+          "text": "SELECT",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941427",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh SQL nào sau đây cho phép thay đổi lược đồ cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "CREATE",
+          "correct": false
+        },
+        {
+          "text": "ALTER",
+          "correct": false
+        },
+        {
+          "text": "DROP",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941428",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ Sinhvien(Ma,Ten,Ngaysinh). Câu lệnh DELETE FROM SINHVIEN thực hiện việc nào sau đây?",
+      "choices": [
+        {
+          "text": "Xóa bộ đầu tiên trong quan hệ Sinhvien",
+          "correct": false
+        },
+        {
+          "text": "Không xóa bộ nào trong quan hệ Sinhvien",
+          "correct": false
+        },
+        {
+          "text": "Xóa tất cả các bộ trong quan hệ Sinhvien",
+          "correct": true
+        },
+        {
+          "text": "Xóa bộ cuối cùng trong quan hệ Sinhvien",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941429",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Biểu thức điều kiện không xuất hiện trong mệnh đề nào sau đây?",
+      "choices": [
+        {
+          "text": "WHERE <điều kiện>",
+          "correct": false
+        },
+        {
+          "text": "ON <điều kiện>",
+          "correct": false
+        },
+        {
+          "text": "HAVING <điều kiện>",
+          "correct": false
+        },
+        {
+          "text": "ORDER BY <điều kiện>",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941430",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Trong SQL tồn tại các phép join nào sau đây?",
+      "choices": [
+        {
+          "text": "Inner join, outer join, inner-outer join",
+          "correct": false
+        },
+        {
+          "text": "Inner join, outer join, full-outer join",
+          "correct": false
+        },
+        {
+          "text": "Inner join, outer join, left join, right join",
+          "correct": true
+        },
+        {
+          "text": "Inner join, full-outer join, left-outer join, right-outer join",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941431",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Từ khóa nào sau đây xuất hiện trong ngôn ngữ định nghĩa dữ liệu?",
+      "choices": [
+        {
+          "text": "INSERT",
+          "correct": false
+        },
+        {
+          "text": "UPDATE",
+          "correct": false
+        },
+        {
+          "text": "DELETE",
+          "correct": false
+        },
+        {
+          "text": "DROP",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941432",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Chọn phát biểu ĐÚNG về ORDER BY trong câu lệnh SELECT không có truy vấn con?",
+      "choices": [
+        {
+          "text": "Mọi thuộc tính được liệt kê trong mệnh đề ORDER BY phải xuất hiện trong mệnh đề SELECT",
+          "correct": false
+        },
+        {
+          "text": "Nếu có thêm từ khoá DISTINCT, thì mọi thuộc tính được liệt kê trong mệnh đề ORDER BY phải xuất hiện trong mệnh đề SELECT",
+          "correct": true
+        },
+        {
+          "text": "Chỉ có thể ORDER BY trên một thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Có thể ORDER BY trên một thuộc tính không xuất hiện trong GROUP BY",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941433",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Giả sử quan hệ R có hai thuộc tính A và B. Câu truy vấn nào sau đây hợp lệ?",
+      "choices": [
+        {
+          "text": "SELECT A, B, COUNT(*) FROM R GROUP BY A",
+          "correct": false
+        },
+        {
+          "text": "SELECT A, B, COUNT(*) FROM R GROUP BY A, B",
+          "correct": true
+        },
+        {
+          "text": "SELECT A, COUNT(*) FROM R GROUP BY B",
+          "correct": false
+        },
+        {
+          "text": "SELECT A, B, COUNT(*) FROM R GROUP BY B",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941434",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ R(A int, B int) với hai bộ dữ liệu (1,1), (1,2) và quan hệ S(C int, D int) với ba bộ dữ liệu (1,1), (1,2), (1,3). Kết quả của câu truy vấn sau đây là gì? SELECT * FROM R EXCEPT SELECT * FROM S",
+      "choices": [
+        {
+          "text": "Câu truy vấn kết thúc thành công, không có kết quả trả về",
+          "correct": true
+        },
+        {
+          "text": "Câu truy vấn kết thúc thành công, ba kết quả trả về là (1,1), (1,2)",
+          "correct": false
+        },
+        {
+          "text": "Câu truy vấn kết thúc thành công, năm kết quả trả về là (1,1), (1,2), (1,3)",
+          "correct": false
+        },
+        {
+          "text": "Câu truy vấn bị lỗi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941435",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Mệnh đề điều kiện nào sau đây cho kết quả là TRUE?",
+      "choices": [
+        {
+          "text": "(UNKNOWN AND TRUE) OR (UNKNOWN AND FALSE)",
+          "correct": false
+        },
+        {
+          "text": "(UNKNOWN OR TRUE) OR (UNKNOWN AND FALSE)",
+          "correct": true
+        },
+        {
+          "text": "(UNKNOWN OR TRUE) AND (UNKNOWN OR FALSE)",
+          "correct": false
+        },
+        {
+          "text": "(UNKNOWN AND TRUE) OR (UNKNOWN OR FALSE)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941436",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh SQL nào sau đây không đúng?",
+      "choices": [
+        {
+          "text": "SELECT dept\\_id, AVG(salary) FROM Employees GROUP BY dept\\_id",
+          "correct": false
+        },
+        {
+          "text": "SELECT AVG(salary) FROM Employees GROUP BY dept\\_id",
+          "correct": false
+        },
+        {
+          "text": "SELECT dept\\_id, job\\_id, AVG(salary) FROM Employees GROUP BY dept\\_id, job\\_id",
+          "correct": false
+        },
+        {
+          "text": "SELECT dept\\_id, COUNT(name) FROM Employees",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941437",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Xét hai quan hệ R(A,B,C) và S(A,B,C) với các thuộc tính số. Câu lệnh nào sau đây xóa khỏi quan hệ R các bộ t có giá trị t.A xuất hiện tại cột B của quan hệ S?",
+      "choices": [
+        {
+          "text": "DELETE FROM R WHERE A = ALL (SELECT B FROM S)",
+          "correct": false
+        },
+        {
+          "text": "DELETE FROM R WHERE A = ANY (SELECT B FROM S)",
+          "correct": true
+        },
+        {
+          "text": "DELETE FROM R WHERE A = (SELECT B FROM S)",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941438",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ R(A int, B int, C char(1)) với hai bộ dữ liệu (1,1,’a’), (1,2,’b’) và quan hệ S(C int, D int, int E) với ba bộ dữ liệu (1,1,1), (1,2,1), (1,3,1). Câu truy vấn nào sau đây kết thúc thành công (không bị lỗi)?",
+      "choices": [
+        {
+          "text": "SELECT * FROM R UNION SELECT * FROM S",
+          "correct": false
+        },
+        {
+          "text": "SELECT A, B FROM R UNION SELECT A, B FROM S",
+          "correct": false
+        },
+        {
+          "text": "SELECT A, B FROM R UNION SELECT C, D FROM S",
+          "correct": true
+        },
+        {
+          "text": "Câu 2 và 3 đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941439",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh nào sau đây là đúng cú pháp?",
+      "choices": [
+        {
+          "text": "ALTER TABLE NHAN\\_VIEN INSERT MAPB INT REFERENCES PHONG\\_BAN(MAPB)",
+          "correct": false
+        },
+        {
+          "text": "ALTER TABLE NHAN\\_VIEN ADD MAPB INT REFERENCES PHONG\\_BAN(MAPB)",
+          "correct": true
+        },
+        {
+          "text": "ALTER TABLE NHAN\\_VIEN ADD MAPB INT FOREIGN KEY REFERENCES PHONG\\_BAN(MAPB)",
+          "correct": false
+        },
+        {
+          "text": "ALTER TABLE NHAN\\_VIEN ADD MAPB INT REFERENCES FOREIGN KEY PHONG\\_BAN(MAPB)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941440",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Xác định vị trí lỗi cú pháp của câu lệnh sau đây: CREATE TABLE DEPARTMENT ( Name varchar (50) PRIMARY KEY, Location varchar (50) NOT NULL , NumberOfEmployees int DEFAULT '0', NumberOfProjects int DEFAULT 0, LastProjectID int NULL PRIMARY KEY (Name, Location) )",
+      "choices": [
+        {
+          "text": "Location varchar(50) NOT NULL",
+          "correct": false
+        },
+        {
+          "text": "NumberOfEmployees int DEFAULT '0'",
+          "correct": false
+        },
+        {
+          "text": "NumberOfProjects int DEFAULT 0",
+          "correct": false
+        },
+        {
+          "text": "PRIMARY KEY (Name, Location)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941441",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh nào sau đây liệt kê danh sách nhân viên trong đơn vị có mã số \"TT05\"?",
+      "choices": [
+        {
+          "text": "SELECT MANV, HONV, TENNV AS \"TEN NV\" FROM NHAN\\_VIEN WHERE MAPB = \"TT05\"",
+          "correct": false
+        },
+        {
+          "text": "SELECT MANV, HONV + \" \" + TENNV AS \"HO TEN\" FROM NHAN\\_VIEN WHERE MAPB = \"TT05\"",
+          "correct": false
+        },
+        {
+          "text": "SELECT MANV, HONV AS \"HO NV\", TENNV AS \"TEN NV\" FROM NHAN\\_VIEN WHERE MAPB = \"TT05\"",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
+      "id": "1794293941442",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ THI (MAHV, MAMH, LANTHI, NGAYTHI, DIEM, KQUA). Câu lệnh nào liệt kê điểm cao nhất của mỗi học viên theo từng môn học?",
+      "choices": [
+        {
+          "text": "Select Mahv, Mamh, max(diem) as Diemthi From Thi",
+          "correct": false
+        },
+        {
+          "text": "Select Mahv, max(diem) as Diemthi From Thi Group by Mahv",
+          "correct": false
+        },
+        {
+          "text": "Select Mamh, max(diem) as Diemthi From Thi Group by Mamh",
+          "correct": false
+        },
+        {
+          "text": "Select Mahv, Mamh, max(diem) as Diemthi From Thi Group by Mahv, Mamh",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:59:01.424Z"
+    },
+    {
       "id": "1794293756857",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
