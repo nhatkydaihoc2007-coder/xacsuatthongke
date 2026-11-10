@@ -12,6 +12,344 @@
   ],
   "exercises": [
     {
+      "id": "1794336179908",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Lệnh nào sau đây thuộc nhóm ngôn ngữ thao tác dữ liệu?",
+      "choices": [
+        {
+          "text": "REVOKE",
+          "correct": false
+        },
+        {
+          "text": "GRANT",
+          "correct": false
+        },
+        {
+          "text": "CREATE TABLE",
+          "correct": false
+        },
+        {
+          "text": "INSERT",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.908Z"
+    },
+    {
+      "id": "1794336179910",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Lệnh nào sau đây thuộc nhóm ngôn ngữ định nghĩa dữ liệu?",
+      "choices": [
+        {
+          "text": "CREATE",
+          "correct": true
+        },
+        {
+          "text": "DELETE",
+          "correct": false
+        },
+        {
+          "text": "UPDATE",
+          "correct": false
+        },
+        {
+          "text": "SELECT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179911",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Ngôn ngữ nào sau đây cho phép định nghĩa và quản lý các đối tượng CSDL (bảng, khung nhìn, chỉ mục...)?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ định nghĩa dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Ngôn ngữ thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ truy vấn dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ điều khiển dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179912",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Mô hình dữ liệu bao gồm các thành phần nào sau đây?",
+      "choices": [
+        {
+          "text": "Cấu trúc, liên kết",
+          "correct": false
+        },
+        {
+          "text": "Cấu trúc, liên kết, thao tác",
+          "correct": true
+        },
+        {
+          "text": "Cấu trúc, thao tác",
+          "correct": false
+        },
+        {
+          "text": "Liên kết, thao tác, ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179913",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Lựa chọn nào sau đây không phải là đặc điểm của Hệ thống hướng cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Giảm thiểu tính dư thừa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Người dùng có ít cơ hội chia sẻ dữ liệu ngoài ứng dụng của họ",
+          "correct": true
+        },
+        {
+          "text": "Dễ thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cấu trúc dữ liệu có thể thay đổi mà không cần thay đổi các chương trình sử dụng dữ liệu đó",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179914",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Lựa chọn nào sau đây là đặc điểm của Hệ thống hướng tập tin?",
+      "choices": [
+        {
+          "text": "Dữ liệu không nhất quán",
+          "correct": false
+        },
+        {
+          "text": "Dư thừa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Khó khăn trong thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179915",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Lựa chọn nào sau đây là mục đích của việc phân thành 3 mức trong kiến trúc của mô hình Hệ quản trị cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Tách riêng ứng dụng của người sử dụng với cơ sở dữ liệu vật lý",
+          "correct": true
+        },
+        {
+          "text": "Tách riêng cơ sở dữ liệu vật lý theo từng ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Tách riêng ứng dụng theo từng cơ sở dữ liệu vật lý",
+          "correct": false
+        },
+        {
+          "text": "Tách riêng cơ sở dữ liệu vật lý của người sử dụng với ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179916",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Cấu trúc và các ràng buộc trong cơ sở dữ liệu được biểu diễn bởi lược đồ nào sau đây?",
+      "choices": [
+        {
+          "text": "Lược đồ mức khái niệm",
+          "correct": true
+        },
+        {
+          "text": "Lược đồ mức vật lý",
+          "correct": false
+        },
+        {
+          "text": "Lược đồ mức ngoài",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179917",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Chi tiết cấu trúc lưu trữ dữ liệu và cách thức truy cập dữ liệu được biểu diễn bởi lược đồ nào sau đây?",
+      "choices": [
+        {
+          "text": "Lược đồ mức khái niệm",
+          "correct": false
+        },
+        {
+          "text": "Lược đồ mức ngoài",
+          "correct": false
+        },
+        {
+          "text": "Lược đồ mức vật lý",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179918",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Độc lập dữ liệu liên quan tới kiến trúc 3 lớp của hệ thống hướng cơ sở dữ liệu là gì?",
+      "choices": [
+        {
+          "text": "Khả năng thay đổi cấu trúc lưu trữ của cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Khả năng thay đổi cấu trúc dữ liệu và ràng buộc dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Khả năng thay đổi một mức mà không ảnh hưởng đến mức cao hơn",
+          "correct": true
+        },
+        {
+          "text": "Khả năng thay đổi giao diện người dùng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179919",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Độc lập dữ liệu luận lý trong kiến trúc 3 mức của hệ thống hướng cơ sở dữ liệu cho phép xảy ra khả năng nào sau đây?",
+      "choices": [
+        {
+          "text": "Thay đổi lược đồ mức trong mà không cần thay đổi lược đồ mức khái niệm",
+          "correct": false
+        },
+        {
+          "text": "Thay đổi lược đồ mức khái niệm mà không cần thay đổi lược đồ mức ngoài",
+          "correct": true
+        },
+        {
+          "text": "Thay đổi lược đồ mức ngoài mà không cần thay đổi lược đồ mức trong",
+          "correct": false
+        },
+        {
+          "text": "Thay đổi lược đồ mức trong mà không cần thay đổi lược đồ mức ngoài",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179920",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Nhóm người dùng nào sau đây có nhiệm vụ xử lý sự cố?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên bảo trì hệ thống",
+          "correct": true
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
+      "id": "1794336179921",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Về nguyên tắc, nhân viên quản trị cơ sở dữ liệu được sử dụng ngôn ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ định nghĩa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ điều khiển dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cả ba ngôn ngữ nói trên",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:42:59.909Z"
+    },
+    {
       "id": "1794312973514",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
