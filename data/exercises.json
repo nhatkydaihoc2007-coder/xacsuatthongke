@@ -2481,11 +2481,11 @@
         },
         {
           "text": "Bộ nhớ dữ liệu thiết bị",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Độ trễ tín hiệu",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Số lượng máy Client trong mạng",
@@ -2493,7 +2493,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T05:13:06.346Z"
+      "createdAt": "2026-11-09T05:13:06.346Z",
+      "updatedAt": "2026-11-10T03:19:37.935Z"
     },
     {
       "id": "1794201186349",
