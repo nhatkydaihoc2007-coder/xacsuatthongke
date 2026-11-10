@@ -93,7 +93,7 @@
       "id": "1794293756861",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Giả sử quan hệ R(A,B,C) trong đó A là thuộc tính khóa. Tập thuộc tính \\{A,B\\} có tên gọi là gì?",
+      "question": "Giả sử quan hệ R(A,B,C) trong đó A là thuộc tính khóa. Tập thuộc tính $\\{A,B\\}$ có tên gọi là gì?",
       "choices": [
         {
           "text": "Khóa",
@@ -113,7 +113,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:55:56.858Z"
+      "createdAt": "2026-11-10T06:55:56.858Z",
+      "updatedAt": "2026-11-10T06:56:31.895Z"
     },
     {
       "id": "1794293756862",
