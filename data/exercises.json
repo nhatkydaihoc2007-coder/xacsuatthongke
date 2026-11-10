@@ -12,6 +12,344 @@
   ],
   "exercises": [
     {
+      "id": "1794293756857",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phát biểu nào sau đây là sai đối với khóa trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Khóa có thể chứa nhiều thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Tập thực thể có thể không có khóa",
+          "correct": true
+        },
+        {
+          "text": "Tập thực thể có thể có nhiều khóa",
+          "correct": false
+        },
+        {
+          "text": "Hai thực thể không thể giống nhau tại tất cả các thuộc tính của khóa",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.857Z"
+    },
+    {
+      "id": "1794293756858",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Ánh xạ lược đồ thực thể kết hợp dưới đây sang mô hình dữ liệu quan hệ:",
+      "choices": [
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ, Kĩ năng)",
+          "correct": false
+        },
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ) KĨ NĂNG KH (<u>Mã KH</u>, <u>Kĩ năng</u>)",
+          "correct": true
+        },
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ) KĨ NĂNG KH (<u>Mã KH</u>, Kĩ năng)",
+          "correct": false
+        },
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ) KĨ NĂNG KH (<u>Mã kĩ năng</u>, Tên kĩ năng)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.857Z"
+    },
+    {
+      "id": "1794293756859",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Ánh xạ lược đồ thực thể kết hợp dưới đây sang mô hình dữ liệu quan hệ:",
+      "choices": [
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ, Đường, Thành phố, Quận/huyện, Số nhà)",
+          "correct": false
+        },
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ) ĐỊA CHỈ (Đường, Thành phố, Quận/huyện, Số nhà)",
+          "correct": false
+        },
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Đường, Thành phố, Quận/huyện, Số nhà)",
+          "correct": true
+        },
+        {
+          "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ) ĐỊA CHỈ (<u>Mã địa chỉ</u>, Đường, Thành phố, Quận/huyện, Số nhà)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.857Z"
+    },
+    {
+      "id": "1794293756861",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Giả sử quan hệ R(A,B,C) trong đó A là thuộc tính khóa. Tập thuộc tính \\{A,B\\} có tên gọi là gì?",
+      "choices": [
+        {
+          "text": "Khóa",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính",
+          "correct": false
+        },
+        {
+          "text": "Khóa ngoại",
+          "correct": false
+        },
+        {
+          "text": "Siêu khóa",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756862",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Giả sử kiểu liên kết ThamGia giữa hai tập thực thể NhanVien và DuAn. Thông tin về đơn vị có nhân viên tham gia dự án được biểu diễn như thế nào?",
+      "choices": [
+        {
+          "text": "Thuộc tính của NhanVien",
+          "correct": true
+        },
+        {
+          "text": "Thuộc tính của DuAn",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính của ThamGia",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756863",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Giả sử quan hệ R(A,B,C,D) với A,B,C là các thuộc tính số, D ở dạng chuỗi, trong đó $\\{A\\}$, $\\{B,C\\}$ và $\\{D\\}$ đều là khóa. Khóa chính của quan hệ này là gì?",
+      "choices": [
+        {
+          "text": "$\\{A\\}$",
+          "correct": true
+        },
+        {
+          "text": "$\\{B,C\\}$",
+          "correct": false
+        },
+        {
+          "text": "$\\{D\\}$",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756864",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cơ chế nào sau đây được áp dụng khi việc thêm mới dữ liệu vào bảng gây ra vi phạm ràng buộc toàn vẹn tham chiếu?",
+      "choices": [
+        {
+          "text": "Cơ chế mặc định",
+          "correct": true
+        },
+        {
+          "text": "Cơ chế thay thế",
+          "correct": false
+        },
+        {
+          "text": "Cơ chế thiết lập giá trị NULL",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756865",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho hai quan hệ khả hợp R và S. Cần thực hiện phép toán gì để liệt kê các bộ dữ liệu vừa thuộc R vừa thuộc S?",
+      "choices": [
+        {
+          "text": "Phép hợp",
+          "correct": false
+        },
+        {
+          "text": "Phép giao",
+          "correct": true
+        },
+        {
+          "text": "Phép trừ",
+          "correct": false
+        },
+        {
+          "text": "Phép bù",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756866",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phép toán nào sau đây cùng loại với phép chọn?",
+      "choices": [
+        {
+          "text": "Phép chiếu",
+          "correct": false
+        },
+        {
+          "text": "Phép hợp",
+          "correct": false
+        },
+        {
+          "text": "Phép kết theta",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756867",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phép toán nào sau đây được thực hiện trên hai quan hệ có lược đồ khác nhau?",
+      "choices": [
+        {
+          "text": "Phép hợp",
+          "correct": false
+        },
+        {
+          "text": "Phép giao",
+          "correct": false
+        },
+        {
+          "text": "Phép kết",
+          "correct": true
+        },
+        {
+          "text": "Phép trừ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756868",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phép toán nào sau đây không thuộc tập đầy đủ các phép toán đại số quan hệ?",
+      "choices": [
+        {
+          "text": "Phép chọn",
+          "correct": false
+        },
+        {
+          "text": "Phép chiếu",
+          "correct": false
+        },
+        {
+          "text": "Phép nhân chéo",
+          "correct": false
+        },
+        {
+          "text": "Phép kết theta",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756869",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho tập R với bộ t xuất hiện m lần, tập S với bộ t xuất hiện n lần. Nếu trong kết quả xuất hiện min(m,n) lần bộ t thì đó là kết quả của phép toán nào?",
+      "choices": [
+        {
+          "text": "Phép trừ",
+          "correct": false
+        },
+        {
+          "text": "Phép hợp",
+          "correct": false
+        },
+        {
+          "text": "Phép giao",
+          "correct": true
+        },
+        {
+          "text": "Phép nhân chéo",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
+      "id": "1794293756870",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho hai quan hệ $R(A,B)=\\{(1,1), (1,2)\\}$ và $S(A,C)=\\{(1,3),(2,1)\\}$. Kết quả của biểu thức  \\(T = \\sigma_{R.A = S.A}(R \\times S)\\) là gì?",
+      "choices": [
+        {
+          "text": "$T(A,B,A,C)=\\{(1,1,1,3),(1,2,1,3)\\}$",
+          "correct": false
+        },
+        {
+          "text": "$T(R.A,B,A,C)=\\{(1,1,1,3),(1,2,2,1)\\}$",
+          "correct": false
+        },
+        {
+          "text": "$T(R.A,B,S.A,C)=\\{(1,1,1,3),(1,2,1,3),(1,2,2,1)\\}$",
+          "correct": false
+        },
+        {
+          "text": "$T(R.A,B,S.A,C)=\\{(1,1,1,3),(1,2,1,3)\\}$",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:55:56.858Z"
+    },
+    {
       "id": "1794293697487",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
