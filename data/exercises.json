@@ -1088,7 +1088,7 @@
       "choices": [
         {
           "text": "Simplex",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Half-duplex",
@@ -1096,7 +1096,7 @@
         },
         {
           "text": "Full-Duplex",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Cả ba câu trên đều sai",
@@ -1104,7 +1104,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:19:01.358Z"
+      "createdAt": "2026-11-09T14:19:01.358Z",
+      "updatedAt": "2026-11-10T02:31:43.572Z"
     },
     {
       "id": "1794233941361",
