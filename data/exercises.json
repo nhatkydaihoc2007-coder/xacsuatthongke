@@ -12,6 +12,344 @@
   ],
   "exercises": [
     {
+      "id": "1794336198369",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Mỗi đặc trưng của thực thể được gọi là gì?",
+      "choices": [
+        {
+          "text": "Liên kết",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính",
+          "correct": true
+        },
+        {
+          "text": "Quan hệ",
+          "correct": false
+        },
+        {
+          "text": "Miền giá trị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198370",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Thuộc tính đa trị là gì?",
+      "choices": [
+        {
+          "text": "Là thuộc tính có thể phân thành nhiều thuộc tính nhỏ hơn",
+          "correct": false
+        },
+        {
+          "text": "Là thuộc tính có thể có nhiều giá trị khác nhau",
+          "correct": true
+        },
+        {
+          "text": "Là thuộc tính được tính toán từ các thuộc tính khác",
+          "correct": false
+        },
+        {
+          "text": "Là thuộc tính nằm trên liên kết",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198371",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phát biểu nào sau đây đúng?",
+      "choices": [
+        {
+          "text": "Một tập thực thể chỉ có một khóa",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính là khóa có nhiều thuộc tính nhất dạng số nhất",
+          "correct": false
+        },
+        {
+          "text": "Khóa là tập các thuộc tính có khả năng phân biệt 2 thực thể bất kì trong tập thực thể",
+          "correct": true
+        },
+        {
+          "text": "Một tập thực thể có thể có nhiều khóa chính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198372",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Lựa chọn nào sau đây được sử dụng để biểu diễn thuộc tính đa trị trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Hình thoi",
+          "correct": false
+        },
+        {
+          "text": "Hình bầu dục nét đứt",
+          "correct": false
+        },
+        {
+          "text": "Hình bầu dục nét đôi",
+          "correct": true
+        },
+        {
+          "text": "Hình vuông",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198373",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Trong mô hình thực thể kết hợp, có tối đa bao nhiêu tập thực thể có thể xuất hiện trong một liên kết?",
+      "choices": [
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "Không giới hạn (hoặc nhiều hơn 3)",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198374",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Tổng quát hóa (Generalization) là gì?",
+      "choices": [
+        {
+          "text": "Là quá trình định nghĩa một tập các lớp con cho một tập thực thể",
+          "correct": false
+        },
+        {
+          "text": "Là quá trình tạo ra một lớp chung có tất cả các đặc điểm giống nhau của các tập thực thể hiện đang có",
+          "correct": true
+        },
+        {
+          "text": "Là quá trình xác định các thuộc tính cho một tập thực thể",
+          "correct": false
+        },
+        {
+          "text": "Là quá trình xác định khóa chính cho một tập thực thể",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198375",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Ràng buộc về tính tách biệt (disjointness) trả lời cho câu hỏi nào sau đây?",
+      "choices": [
+        {
+          "text": "Mỗi thể hiện của lớp cha có phải là thành viên của lớp con hay không",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thể hiện của lớp cha có đồng thời là thành viên của cả 2 hay nhiều lớp con hay không",
+          "correct": true
+        },
+        {
+          "text": "Có tồn tại lớp cha chung cho các tập thực thể đang có hay không",
+          "correct": false
+        },
+        {
+          "text": "Có tồn tại các lớp con cho một tập thực thể đang có hay không",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198376",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Liên kết \"Mỗi bệnh nhân có thể có nhiều lịch sử khám bệnh, mỗi lịch sử khám bệnh chỉ thuộc về một bệnh nhân.\" thuộc loại liên kết gì?",
+      "choices": [
+        {
+          "text": "Một - một",
+          "correct": false
+        },
+        {
+          "text": "Một - nhiều",
+          "correct": true
+        },
+        {
+          "text": "Nhiều - nhiều",
+          "correct": false
+        },
+        {
+          "text": "Không xác định",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198377",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Một sinh viên có thể tham gia nhiều khóa học, một khóa học có thể có nhiều sinh viên tham gia. Ngày tham gia khóa học của sinh viên được biểu diễn như thế nào trong sơ đồ ERD?",
+      "choices": [
+        {
+          "text": "Ngày tham gia là một thuộc tính trên liên kết giữa 2 tập thực thể sinh viên và khóa học",
+          "correct": true
+        },
+        {
+          "text": "Ngày tham gia là một thuộc tính của tập thực thể sinh viên",
+          "correct": false
+        },
+        {
+          "text": "Ngày tham gia là một thuộc tính của tập thực thể khóa học",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.369Z"
+    },
+    {
+      "id": "1794336198378",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Cho EERD như sau:\n\nPhát biểu nào sau đây là ĐÚNG?",
+      "choices": [
+        {
+          "text": "Nhân viên tín dụng chỉ bao gồm tín dụng cá nhân và tín dụng doanh nghiệp",
+          "correct": false
+        },
+        {
+          "text": "Một nhân viên tín dụng có thể vừa làm tín dụng cá nhân có thể vừa làm tín dụng doanh nghiệp",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên tín dụng cá nhân sẽ có tất cả những mối liên hệ mà nhân viên tín dụng có",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "Hình tròn chứa chữ d đại diện cho ràng buộc phân rã rời rạc (disjoint constraint), có nghĩa là một thực thể cha (\"Nhân viên tín dụng\") chỉ có thể thuộc tối đa một trong các thực thể con (\"Cá nhân\" hoặc \"Doanh nghiệp\"), không thể đồng thời thuộc cả hai. <br> \nKý hiệu hình cung đơn (không có đường gạch đôi nối từ thực thể cha đến vòng tròn) thể hiện chuyên biệt hóa một phần, nghĩa là có thể có những \"Nhân viên tín dụng\" không thuộc nhóm \"Cá nhân\" cũng không thuộc nhóm \"Doanh nghiệp\". <br> \nTheo tính chất thừa kế trong mô hình EERD, thực thể con (ở đây là \"Nhân viên tín dụng cá nhân\") sẽ tự động thừa kế tất cả các thuộc tính và các mối quan hệ (mối liên hệ) của thực thể cha (\"Nhân viên tín dụng\").",
+      "createdAt": "2026-11-10T18:43:18.370Z"
+    },
+    {
+      "id": "1794336198380",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Cho sơ đồ thực thể kết hợp mở rộng sau: \n\nLựa chọn nào sau đây là đúng khi ánh xạ sơ đồ trên thành lược đồ quan hệ?",
+      "choices": [
+        {
+          "text": "$\\textbf{PART}(\\underline{\\text{Part\\_no}}, \\text{Description})$ <br> <strong>MANUFACTURED\\_PART</strong>(<u>Part\\_no</u>, Drawing\\_no, Batch\\_no, Manufacture\\_date)",
+          "correct": true
+        },
+        {
+          "text": "<strong>PART</strong> (<u>Part\\_no</u>, Description) <br>\n<strong>MANUFACTURED\\_PART</strong>(<u>Part\\_no</u>, Description, Drawing\\_no, Batch\\_no, Manufacture\\_date) <br> \n<strong>PURCHASED\\_PART</strong>(<u>Part\\_no</u>, Description, Supplier\\_name, List\\_price)",
+          "correct": false
+        },
+        {
+          "text": "<strong>PART</strong> (<u>Part\\_no</u>, Description, Drawing\\_no, Batch\\_no, Manufacture\\_date, Supplier\\_name, List\\_price, Manufactured\\_Part, Purchased\\_Part)",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.370Z"
+    },
+    {
+      "id": "1794336198381",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Ràng buộc khóa ngoại cần được kiểm tra khi thực hiện thao tác nào sau đây?",
+      "choices": [
+        {
+          "text": "Truy vấn thông tin từ cơ sở dữ liệu (dùng lệnh SELECT)",
+          "correct": false
+        },
+        {
+          "text": "Thêm một mẩu tin mới vào quan hệ bị tham chiếu (referred relation)",
+          "correct": false
+        },
+        {
+          "text": "Xóa một mẩu tin từ quan hệ bị tham chiếu (referred relation)",
+          "correct": true
+        },
+        {
+          "text": "Xóa một mẩu tin từ quan hệ tham chiếu (referring relation)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:43:18.370Z"
+    },
+    {
+      "id": "1794336198382",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Cho lược đồ ER mở rộng sau: \n\nPhát biểu nào sau đây đúng?",
+      "choices": [
+        {
+          "text": "Một thực thể là thành viên của PART phải là thành viên của MANUFACTURED\\_PART hoặc PURCHASED\\_PART",
+          "correct": true
+        },
+        {
+          "text": "Một thực thể là thành viên của PART có thể đồng thời là thành viên của MANUFACTURED\\_PART và PURCHASED\\_PART",
+          "correct": false
+        },
+        {
+          "text": "Một thực thể là thành viên của MANUFACTURED\\_PART hoặc PURCHASED\\_PART sẽ có tất cả các thuộc tính của PART và thêm các thuộc tính riêng của nó",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "Ràng buộc chồng lấp (ký hiệu chữ o trong vòng tròn): Một linh kiện (PART) có thể đồng thời vừa là linh kiện tự sản xuất (MANUFACTURED\\_PART), vừa là linh kiện mua ngoài (PURCHASED\\_PART). <br> \nRàng buộc toàn phần (ký hiệu đường đôi song song nối từ PART xuống vòng tròn): Mọi thực thể thuộc lớp cha PART bắt buộc phải là thành viên của ít nhất một lớp con. <br> \nTính kế thừa thuộc tính: Các lớp con luôn kế thừa tất cả các thuộc tính từ lớp cha (như Part\\_no, Description) và sở hữu thêm các thuộc tính riêng của chính nó.",
+      "createdAt": "2026-11-10T18:43:18.370Z"
+    },
+    {
       "id": "1794336179908",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
