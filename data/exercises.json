@@ -1119,7 +1119,7 @@
         },
         {
           "text": "Các sender và receiver",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Các cách thức truyền nhận",
@@ -1127,11 +1127,12 @@
         },
         {
           "text": "Cả ba câu trên đều đúng",
-          "correct": false
+          "correct": true
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:19:01.358Z"
+      "createdAt": "2026-11-09T14:19:01.358Z",
+      "updatedAt": "2026-11-10T02:33:20.820Z"
     },
     {
       "id": "1794233861195",
