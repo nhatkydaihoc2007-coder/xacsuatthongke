@@ -1225,11 +1225,11 @@
         },
         {
           "text": "Băng thông, độ nhiễu tín hiệu",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Băng thông, độ trễ tín hiệu",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Cả ba câu trên đều sai",
@@ -1237,7 +1237,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:17:41.196Z"
+      "createdAt": "2026-11-09T14:17:41.196Z",
+      "updatedAt": "2026-11-10T03:08:14.539Z"
     },
     {
       "id": "1794233861201",
