@@ -1729,8 +1729,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Theo quy tắc gom nhóm trong SQL, bất kỳ thuộc tính nào xuất hiện ở mệnh đề SELECT mà không nằm trong hàm tổng hợp (COUNT, SUM, AVG,...) thì bắt buộc phải có mặt trong mệnh đề GROUP BY.",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T14:54:28.413Z"
     },
     {
       "id": "1794293941434",
