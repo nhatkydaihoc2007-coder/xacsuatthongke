@@ -1252,11 +1252,11 @@
         },
         {
           "text": "Công ty cần lưu trữ dữ liệu tập trung",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Công ty có một mạng nội bộ phạm vi hẹp",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Công ty có một mạng nội bộ phạm vi rộng",
@@ -1264,7 +1264,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:17:41.196Z"
+      "createdAt": "2026-11-09T14:17:41.196Z",
+      "updatedAt": "2026-11-10T03:10:31.038Z"
     },
     {
       "id": "1794202097288",
