@@ -60,9 +60,9 @@
           "correct": false
         }
       ],
-      "solution": "",
+      "solution": "Phép chọn ($\\sigma$) trong đại số quan hệ (tương ứng mệnh đề WHERE trong SQL) là phép toán một ngôi lọc các bộ (dòng dữ liệu) thỏa mãn điều kiện, do đó có thể làm giảm số lượng bộ trong kết quả so với quan hệ gốc.",
       "createdAt": "2026-11-10T06:59:01.424Z",
-      "updatedAt": "2026-11-10T09:58:09.788Z"
+      "updatedAt": "2026-11-10T09:59:31.831Z"
     },
     {
       "id": "1794293941426",
