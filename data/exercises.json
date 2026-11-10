@@ -1061,11 +1061,11 @@
       "choices": [
         {
           "text": "Open Systems Internet",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Open Systems Interconnection",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Open Standard Internet",
@@ -1077,7 +1077,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:19:01.358Z"
+      "createdAt": "2026-11-09T14:19:01.358Z",
+      "updatedAt": "2026-11-10T02:28:07.725Z"
     },
     {
       "id": "1794233941360",
