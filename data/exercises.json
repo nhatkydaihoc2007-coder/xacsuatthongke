@@ -185,15 +185,16 @@
         },
         {
           "text": "Inner join, outer join, left join, right join",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Inner join, full-outer join, left-outer join, right-outer join",
-          "correct": false
+          "correct": true
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T10:04:51.404Z"
     },
     {
       "id": "1794293941431",
