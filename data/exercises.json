@@ -12,6 +12,292 @@
   ],
   "exercises": [
     {
+      "id": "1794312899318",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Khái niệm nào sau đây không có trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Tính kế thừa",
+          "correct": true
+        },
+        {
+          "text": "Tập thực thể yếu",
+          "correct": false
+        },
+        {
+          "text": "Kiểu liên kết hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính đa trị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.318Z"
+    },
+    {
+      "id": "1794312899319",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Giả sử lớp TRỢ GIẢNG là lớp con chung của GIẢNG VIÊN và HỌC VIÊN, phát biểu nào sau đây là đúng?",
+      "choices": [
+        {
+          "text": "Lớp TRỢ GIẢNG sẽ kế thừa tất cả các thuộc tính từ lớp GIẢNG VIÊN nhưng chỉ kế thừa một số thuộc tính từ lớp HỌC VIÊN",
+          "correct": false
+        },
+        {
+          "text": "Lớp TRỢ GIẢNG sẽ kế thừa tất cả các thuộc tính của lớp GIẢNG VIÊN và lớp HỌC VIÊN",
+          "correct": true
+        },
+        {
+          "text": "Lớp TRỢ GIẢNG chỉ kế thừa các thuộc tính từ lớp GIẢNG VIÊN",
+          "correct": false
+        },
+        {
+          "text": "Lớp TRỢ GIẢNG không kế thừa thuộc tính từ lớp cha nào",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.318Z"
+    },
+    {
+      "id": "1794312899320",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Thuật ngữ nào sau đây không xuất hiện trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Tập thực thể",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc toàn vẹn",
+          "correct": true
+        },
+        {
+          "text": "Kiểu liên kết",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.318Z"
+    },
+    {
+      "id": "1794312899321",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Kiểu liên kết 1-1 giữa tập thực thể A và tập thực thể B có ý nghĩa gì?",
+      "choices": [
+        {
+          "text": "Mỗi thực thể trong B liên kết với ít nhất 1 thực thể trong A",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thực thể trong A liên kết với ít nhất 1 thực thể trong B",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thực thể trong A liên kết với ít nhất 1 thực thể trong B và ngược lại",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thực thể trong A liên kết với nhiều nhất 1 thực thể trong B và ngược lại",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.318Z"
+    },
+    {
+      "id": "1794312899323",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Lựa chọn nào sau đây có thể là thuộc tính đa trị?",
+      "choices": [
+        {
+          "text": "Địa chỉ thường trú",
+          "correct": false
+        },
+        {
+          "text": "Họ và tên",
+          "correct": false
+        },
+        {
+          "text": "Số điện thoại",
+          "correct": true
+        },
+        {
+          "text": "Ngày sinh",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
+      "id": "1794312899324",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Kiểu liên kết n-n giữa tập thực thể A và tập thực thể B có ý nghĩa gì?",
+      "choices": [
+        {
+          "text": "Mỗi thực thể kiểu A liên kết với nhiều nhất 2 thực thể kiểu B",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thực thể kiểu A bắt buộc phải liên kết với ít nhất 1 thực thể kiểu B và ngược lại",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thực thể kiểu A có thể không liên kết với bất kỳ thực thể nào kiểu B",
+          "correct": true
+        },
+        {
+          "text": "Mỗi thực thể kiểu A bắt buộc phải liên kết với ít nhất 1 thực thể kiểu B",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
+      "id": "1794312899325",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Giả sử kiểu liên kết ThamGia giữa hai tập thực thể NhanVien và DuAn. Thông tin về thời gian tham gia dự án của từng nhân viên được biểu diễn như thế nào?",
+      "choices": [
+        {
+          "text": "Thuộc tính của NhanVien",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính của DuAn",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính của ThamGia",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
+      "id": "1794312899326",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phép toán nào sau đây khác loại với các phép toán còn lại",
+      "choices": [
+        {
+          "text": "Chọn",
+          "correct": false
+        },
+        {
+          "text": "Chiếu",
+          "correct": false
+        },
+        {
+          "text": "Đổi tên",
+          "correct": false
+        },
+        {
+          "text": "Nhân chéo",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
+      "id": "1794312899327",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phát biểu nào sau đây không chính xác đối với tập thực thể yếu trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Tập thực thể yếu được xác định dựa trên tập thực thể hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "Liên kết hỗ trợ là loại liên kết nhiều-một từ tập thực thể yếu tới tập thực thể hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "Một tập thực thể yếu có thể có nhiều liên kết hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "Mọi liên kết nhiều – một từ tập thực thể yếu đều là liên kết hỗ trợ",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
+      "id": "1794312899328",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Mô hình ER hỗ trợ cho hoạt động nào sau đây?",
+      "choices": [
+        {
+          "text": "Lập trình cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Thiết kế cơ sở dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Tổ chức cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
+      "id": "1794312899329",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Khái niệm nào sau đây xuất hiện trong cả mô hình thực thể kết hợp lẫn mô hình dữ liệu quan hệ?",
+      "choices": [
+        {
+          "text": "Liên kết",
+          "correct": false
+        },
+        {
+          "text": "Lược đồ",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:59.319Z"
+    },
+    {
       "id": "1794312853420",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
