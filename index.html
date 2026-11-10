@@ -533,6 +533,52 @@ details.rv-sol summary { cursor: pointer; font-size: 12px; color: var(--green); 
 .lg { display: inline-block; width: 9px; height: 9px; border-radius: 3px; border: 1px solid var(--border2); margin-right: 4px; }
 .lg.ok { background: var(--green); border-color: var(--green); } .lg.bad { background: #d64545; border-color: #d64545; } .lg.seen { background: var(--accent); border-color: var(--accent); }
 
+
+/* ── Giới thiệu tác giả & ủng hộ ── */
+.about { max-width: 1380px; margin: 0 auto; padding: 0 32px 48px; }
+.about-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 28px; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 28px; align-items: start; }
+.about-card.no-qr { grid-template-columns: 1fr; }
+.ab-role { font-size: 12px; font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+.ab-name { font-family: 'Lora', serif; font-size: 24px; font-weight: 600; line-height: 1.25; }
+.ab-sub { font-size: 13px; color: var(--muted); margin: 2px 0 12px; }
+.ab-bio { font-size: 14px; line-height: 1.75; max-width: 62ch; }
+.ab-acc { margin-top: 14px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); max-width: 440px; }
+.ab-acc .bk { font-size: 13px; color: var(--muted); }
+.ab-acc .no { font-family: 'Fira Code', monospace; font-size: 20px; font-weight: 600; letter-spacing: .04em; margin-top: 2px; }
+.ab-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.ab-links a, .ab-links button { font-family: inherit; font-size: 13px; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); text-decoration: none; cursor: pointer; }
+.ab-links a:hover, .ab-links button:hover { border-color: var(--accent); color: var(--accent); }
+.ab-links .copy { background: var(--accent); border-color: var(--accent); color: #fff; }
+.ab-links .copy:hover { background: var(--acc-dk); color: #fff; }
+.ab-qr { text-align: center; width: 200px; }
+.ab-qr img { width: 200px; height: 200px; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid var(--border); padding: 6px; }
+.ab-qr div { font-size: 12px; color: var(--faint); margin-top: 6px; }
+@media (max-width: 720px) { .about { padding: 0 16px 32px; } .about-card { grid-template-columns: 1fr; padding: 18px; } .ab-qr { margin: 0 auto; } }
+
+
+/* ── Chọn câu & in đề ── */
+.ex-card.sel-on { box-shadow: 0 0 0 2px var(--accent), var(--shadow); }
+.tin { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font-family: inherit; font-size: 14px; }
+.sel-btns .mini-btn { flex: 1 1 100%; text-align: left; }
+#printArea { position: absolute; left: -10000px; top: 0; width: 180mm; background: #fff; color: #000; font-family: 'Times New Roman', Times, serif; font-size: 12pt; line-height: 1.5; }
+#printArea .pd-center { text-align: center; }
+#printArea .pd-t { font-size: 15pt; font-weight: bold; margin-bottom: 4px; }
+#printArea .pd-h { text-align: center; font-weight: bold; font-size: 13pt; margin: 18px 0 8px; break-after: avoid; }
+#printArea .q { margin-top: 10px; break-inside: avoid-page; }
+#printArea .c { margin-left: 18px; }
+#printArea .c.ok { font-weight: bold; }
+#printArea .sol { margin: 4px 0 8px 18px; }
+#printArea table { border-collapse: collapse; margin: 6px 0; width: 100%; text-align: center; }
+#printArea td { border: 1px solid #888; padding: 3px 6px; }
+#printArea img { max-width: 100%; height: auto; }
+#printArea mjx-container[display="true"] { overflow: visible; }
+@media print {
+  @page { size: A4; margin: 16mm 15mm; }
+  body { background: #fff !important; overflow: visible !important; }
+  body > *:not(#printArea) { display: none !important; }
+  #printArea { position: static; left: 0; width: auto; display: block !important; }
+}
+
 /* MathJax display math wrapper */
 mjx-container[display="true"] {
   overflow-x: auto;
@@ -555,6 +601,7 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
   <div class="logo-mark">∑</div>
   <div class="logo-name">Kho <em>Bài Tập</em></div>
   <div class="hright">
+    <a href="#about" class="admin-link" id="donateLink" style="display:none">☕ Ủng hộ tác giả</a>
     <button class="rand-btn" id="randBtn">🎲 Đề ngẫu nhiên</button>
     <button class="theme-btn" id="themeBtn" title="Đổi giao diện">🌙</button>
     <a href="admin.html" class="admin-link">🔑 Admin</a>
@@ -621,6 +668,15 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
         <button class="mini-btn" id="resetProg">↺ Xóa tiến độ mục này</button>
       </div>
     </div>
+    <div class="sblock" id="selWrap">
+      <div class="slabel">Xuất đề</div>
+      <div class="prog-text" id="selText" style="margin-bottom:10px"></div>
+      <div class="prog-btns sel-btns">
+        <button class="mini-btn" id="selAll">☑ Chọn hết các câu đang hiển thị</button>
+        <button class="mini-btn" id="selNone">✕ Bỏ chọn tất cả</button>
+        <button class="mini-btn primary" id="selExport">🖨 In / Xuất Word…</button>
+      </div>
+    </div>
     <div class="sblock" id="qlWrap" style="display:none">
       <div class="slabel">Danh sách câu</div>
       <div class="qlist" id="qList"></div>
@@ -628,6 +684,10 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb { background: var(--borde
     </div>
   </aside>
 </div>
+
+<footer class="about" id="about" style="display:none"><div class="about-card" id="aboutCard"></div></footer>
+
+<div id="printArea"></div>
 
 <div class="ov" id="examOv" hidden><div class="ov-box" id="examBox"></div></div>
 
@@ -637,6 +697,52 @@ const REPO_OWNER = 'nhatkydaihoc2007-coder';
 const REPO_NAME  = 'xacsuatthongke';
 const DATA_FILE  = 'data/exercises.json';
 // ────────────────────────────────────
+
+// ── THÔNG TIN TÁC GIẢ & ỦNG HỘ: điền vào đây (để trống mục nào thì mục đó ẩn) ──
+const AUTHOR = {
+  role:     'Tác giả & người duy trì kho bài tập',
+  name:     'Trà',                         // ← tên hiển thị
+  sub:      'Sinh viên ĐH Ngân hàng TP.HCM · TOÁN VUI VẺ',
+  bio:      'Kho bài tập này miễn phí cho mọi người. Nếu thấy hữu ích, bạn có thể mời mình một ly cà phê để duy trì và cập nhật thêm bài.',
+  bankName: '',                            // ← VD: 'VPBank'
+  bankCode: '',                            // ← mã ngân hàng cho VietQR, VD: 'VPB', 'MB', 'VCB', 'TCB' (có thể để trống nếu dùng qrImage)
+  accNo:    '',                            // ← số tài khoản
+  accName:  '',                            // ← tên chủ tài khoản (IN HOA, không dấu)
+  qrImage:  '',                            // ← (tùy chọn) đường dẫn ảnh QR riêng, VD: 'donate-qr.png'. Trống = tự tạo QR bằng VietQR
+  links: [                                 // ← (tùy chọn) liên kết
+    { label: 'Blog Nhật Ký Đại Học', url: 'https://nhatkydaihoc2007.blogspot.com' },
+    // { label: 'Facebook', url: 'https://facebook.com/...' },
+    // { label: 'nhatkydaihoc2007@gmail.com', url: 'mailto:nhatkydaihoc2007@gmail.com' },
+  ]
+};
+function renderAbout() {
+  const A = AUTHOR, e = x => String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+  const donate = !!A.accNo;
+  let qr = A.qrImage;
+  if (!qr && donate && A.bankCode) qr = `https://img.vietqr.io/image/${encodeURIComponent(A.bankCode)}-${encodeURIComponent(A.accNo)}-compact2.png` + (A.accName ? `?accountName=${encodeURIComponent(A.accName)}` : '');
+  const links = (A.links || []).map(l => `<a href="${e(l.url)}" target="_blank" rel="noopener">${e(l.label)}</a>`).join('');
+  if (!A.name && !donate) return;
+  const card = document.getElementById('aboutCard');
+  card.classList.toggle('no-qr', !qr);
+  card.innerHTML = `
+    <div>
+      ${A.role ? `<div class="ab-role">${e(A.role)}</div>` : ''}
+      <div class="ab-name">${e(A.name)}</div>
+      ${A.sub ? `<div class="ab-sub">${e(A.sub)}</div>` : ''}
+      ${A.bio ? `<div class="ab-bio">${e(A.bio)}</div>` : ''}
+      ${donate ? `<div class="ab-acc"><div class="bk">Ngân hàng <b>${e(A.bankName)}</b>${A.accName ? ' · ' + e(A.accName) : ''}</div><div class="no">${e(A.accNo)}</div></div>` : ''}
+      <div class="ab-links">${donate ? '<button class="copy" id="copyAcc">Chép số TK</button>' : ''}${links}</div>
+    </div>
+    ${qr ? `<div class="ab-qr"><img src="${e(qr)}" alt="Mã QR chuyển khoản" loading="lazy" onerror="this.parentNode.style.display='none'"><div>Quét bằng app ngân hàng bất kỳ</div></div>` : ''}`;
+  document.getElementById('about').style.display = '';
+  if (donate) document.getElementById('donateLink').style.display = '';
+  const cb = document.getElementById('copyAcc');
+  if (cb) cb.addEventListener('click', () => {
+    const done = () => { cb.textContent = 'Đã chép ✓'; setTimeout(() => cb.textContent = 'Chép số TK', 1500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(A.accNo).then(done, done); else done();
+  });
+}
+renderAbout();
 
 const RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${DATA_FILE}`;
 
@@ -799,6 +905,7 @@ function renderExercises() {
           📖 <span id="sbtxt-${ex.id}">Xem lời giải</span> <span class="arr">▾</span>
         </button>
         <button class="mini-btn" id="mk-${ex.id}" data-mk="${ex.id}" style="display:none"></button>
+        <button class="mini-btn" id="sl-${ex.id}" data-sel="${ex.id}" style="margin-left:auto">☐ Chọn vào đề</button>
       </div>
       <div class="sol-wrap" id="sw-${ex.id}">
         <div class="sol-inner">
@@ -817,7 +924,8 @@ function renderExercises() {
     const chWrap = document.getElementById('ch-'+ex.id);
     if (chWrap) chWrap.innerHTML = renderChoiceHtml(ex.choices);
   });
-  data.forEach(ex => { applyChoice(ex.id); markCard(ex.id); });
+  data.forEach(ex => { applyChoice(ex.id); markCard(ex.id); markSel(ex.id); });
+  updateSelUI();
   updateProgress();
 
   if (window.MathJax) MathJax.typesetPromise([list]).catch(()=>{});
@@ -1273,6 +1381,323 @@ function submitExam(auto) {
   box.querySelectorAll('details.rv-sol').forEach(d => d.addEventListener('toggle', () => typeset(d)));
   typeset(box);
 }
+
+// ══════════ CHỌN CÂU & XUẤT ĐỀ (PDF / WORD) ══════════
+let selIds = [];
+try { selIds = JSON.parse(localStorage.getItem('ex_sel') || '[]') || []; } catch (e) { selIds = []; }
+function saveSel() { try { localStorage.setItem('ex_sel', JSON.stringify(selIds)); } catch (e) {} }
+function pruneSel() { selIds = selIds.filter(id => byId(id)); }
+
+function markSel(id) {
+  const on = selIds.includes(id);
+  const card = document.getElementById('card-' + id);
+  if (card) card.classList.toggle('sel-on', on);
+  const b = document.getElementById('sl-' + id);
+  if (b) b.textContent = on ? '☑ Đã chọn' : '☐ Chọn vào đề';
+}
+function updateSelUI() {
+  const n = selIds.length;
+  document.getElementById('selText').innerHTML = n ? `Đã chọn <b>${n}</b> câu` : 'Chưa chọn câu nào';
+  document.getElementById('selExport').disabled = !n;
+  document.getElementById('selExport').style.opacity = n ? 1 : .5;
+  document.getElementById('selNone').style.display = n ? '' : 'none';
+}
+function toggleSel(id) {
+  const i = selIds.indexOf(id);
+  if (i < 0) selIds.push(id); else selIds.splice(i, 1);
+  saveSel(); markSel(id); updateSelUI();
+}
+document.getElementById('exList').addEventListener('click', e => {
+  const b = e.target.closest('[data-sel]'); if (b) toggleSel(b.dataset.sel);
+});
+document.getElementById('selAll').addEventListener('click', () => {
+  getFiltered().forEach(x => { if (!selIds.includes(x.id)) selIds.push(x.id); });
+  saveSel(); selIds.forEach(markSel); updateSelUI();
+});
+document.getElementById('selNone').addEventListener('click', () => {
+  if (!confirm('Bỏ chọn tất cả các câu?')) return;
+  const old = selIds; selIds = []; saveSel(); old.forEach(markSel); updateSelUI();
+});
+document.getElementById('selExport').addEventListener('click', openExport);
+
+// ── Hộp thoại xuất đề ──
+function openExport() {
+  pruneSel();
+  if (!selIds.length) return;
+  clearInterval(exmTimer); EXM = null;
+  ov.hidden = false; document.body.style.overflow = 'hidden'; ov.scrollTop = 0;
+  let c = {}; try { c = JSON.parse(localStorage.getItem('exp_cfg') || '{}'); } catch (e) {}
+  const v = (k, d) => c[k] != null ? c[k] : d;
+  box.innerHTML = `
+    <h2>🖨 Xuất đề (${selIds.length} câu)</h2>
+    <div class="field"><label class="fl">Tiêu đề đề thi</label><input type="text" id="eTitle" class="tin" value="${esc(v('title', 'ĐỀ ÔN TẬP'))}"></div>
+    <div class="row2">
+      <div class="field"><label class="fl">Dòng phụ (trường / lớp / môn) — tùy chọn</label><input type="text" id="eSub" class="tin" value="${esc(v('sub', ''))}"></div>
+      <div class="field"><label class="fl">Thời gian làm bài — tùy chọn</label><input type="text" id="eTime" class="tin" value="${esc(v('time', ''))}" placeholder="VD: 45 phút"></div>
+    </div>
+    <label class="chk"><input type="checkbox" id="eName" ${v('name', true) ? 'checked' : ''}> Có dòng "Họ và tên … Lớp …"</label>
+    <div class="field" style="margin-top:10px"><label class="fl">Lời giải</label>
+      <select id="eSol"><option value="none">Không kèm lời giải</option><option value="end">Gom ở cuối đề</option><option value="after">Ngay sau mỗi câu</option></select></div>
+    <label class="chk"><input type="checkbox" id="eKey" ${v('key', true) ? 'checked' : ''}> Bảng đáp án ở cuối đề (câu trắc nghiệm)</label>
+    <label class="chk"><input type="checkbox" id="eMark" ${v('mark', false) ? 'checked' : ''}> In đậm đáp án đúng ngay trên đề (bản dành cho giáo viên)</label>
+    <label class="chk"><input type="checkbox" id="eShufQ" ${v('shufQ', false) ? 'checked' : ''}> Xáo trộn thứ tự câu</label>
+    <label class="chk"><input type="checkbox" id="eShufC" ${v('shufC', false) ? 'checked' : ''}> Xáo trộn thứ tự đáp án A–D</label>
+    <div class="slabel" style="margin:16px 0 6px">Thứ tự các câu đã chọn</div>
+    <div class="chaplist" id="eList" style="max-height:260px"></div>
+    <div class="pool-info" id="eMsg">Hình công thức trong Word là ảnh (không sửa được như equation). File PDF: chọn “Lưu dưới dạng PDF” ở hộp thoại in.</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="mini-btn primary" id="ePdf" style="padding:10px 18px;font-size:14px">🖨 In / Lưu PDF</button>
+      <button class="mini-btn primary" id="eDoc" style="padding:10px 18px;font-size:14px">📄 Tải Word (.docx)</button>
+      <button class="mini-btn" id="eClose" style="padding:10px 16px;font-size:14px">Đóng</button>
+    </div>`;
+  const q = id => document.getElementById(id);
+  q('eSol').value = v('sol', 'none');
+  function drawList() {
+    q('eList').innerHTML = selIds.map((id, i) => {
+      const t = (byId(id).question || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 70);
+      return `<div style="display:flex;align-items:center;gap:6px;padding:4px 0;font-size:13px"><span class="ex-num">${i + 1}</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(t) || '(câu có hình/công thức)'}</span>
+        <button class="mini-btn" data-mv="${i}:-1" style="padding:2px 8px">↑</button><button class="mini-btn" data-mv="${i}:1" style="padding:2px 8px">↓</button><button class="mini-btn" data-rm="${i}" style="padding:2px 8px">✕</button></div>`;
+    }).join('') || '<div style="padding:8px;color:var(--faint)">Không còn câu nào.</div>';
+  }
+  q('eList').addEventListener('click', e => {
+    const mv = e.target.closest('[data-mv]'), rm = e.target.closest('[data-rm]');
+    if (mv) { const [i, d] = mv.dataset.mv.split(':').map(Number), j = i + d; if (j >= 0 && j < selIds.length) { [selIds[i], selIds[j]] = [selIds[j], selIds[i]]; } }
+    else if (rm) { const id = selIds[+rm.dataset.rm]; selIds.splice(+rm.dataset.rm, 1); markSel(id); }
+    else return;
+    saveSel(); updateSelUI(); drawList();
+  });
+  const read = () => ({ title: q('eTitle').value.trim(), sub: q('eSub').value.trim(), time: q('eTime').value.trim(), name: q('eName').checked,
+    sol: q('eSol').value, key: q('eKey').checked, mark: q('eMark').checked, shufQ: q('eShufQ').checked, shufC: q('eShufC').checked });
+  const keep = o => { try { localStorage.setItem('exp_cfg', JSON.stringify(o)); } catch (e) {} };
+  q('eClose').addEventListener('click', closeExam);
+  q('ePdf').addEventListener('click', async () => { const o = read(); keep(o); if (!selIds.length) return; await printDoc(o); });
+  q('eDoc').addEventListener('click', async () => {
+    const o = read(); keep(o); if (!selIds.length) return;
+    const b = q('eDoc'); b.disabled = true; const t0 = b.textContent; b.textContent = '⏳ Đang tạo file…';
+    try { await exportDocx(o, m => { q('eMsg').textContent = m; }); q('eMsg').textContent = '✓ Đã tải file Word.'; }
+    catch (err) { console.error(err); q('eMsg').textContent = '⚠ Không tạo được file Word: ' + err.message + ' (cần kết nối mạng để tải thư viện). Bạn vẫn có thể dùng “In / Lưu PDF”.'; }
+    b.disabled = false; b.textContent = t0;
+  });
+  drawList();
+}
+
+// ── Dựng HTML đề thi (dùng chung cho PDF và Word) ──
+function docHtml(o) {
+  pruneSel();
+  let items = selIds.map(byId).filter(Boolean);
+  if (o.shufQ) items = shuffle(items);
+  const h = [];
+  h.push('<div class="pd-center pd-t">' + esc(o.title || 'ĐỀ THI') + '</div>');
+  if (o.sub)  h.push('<div class="pd-center">' + esc(o.sub) + '</div>');
+  if (o.time) h.push('<div class="pd-center"><i>Thời gian làm bài: ' + esc(o.time) + '</i></div>');
+  if (o.name) h.push('<div class="pd-center" style="margin-top:6px">Họ và tên: ……………………………………………… Lớp: …………………</div>');
+  const keys = [], sols = [];
+  items.forEach((ex, i) => {
+    let s = `<div class="q"><b>Câu ${i + 1}.</b> ${ex.question}</div>`;
+    if (Array.isArray(ex.choices) && ex.choices.length) {
+      const idx = ex.choices.map((_, k) => k);
+      const order = o.shufC ? shuffle(idx) : idx;
+      s += order.map((oi, k) => `<div class="c${o.mark && ex.choices[oi].correct ? ' ok' : ''}"><b>${LET[k]}.</b> ${ctexInner(ex.choices[oi].text)}</div>`).join('');
+      if (hasKey(ex)) keys.push({ n: i + 1, a: order.map((oi, k) => ex.choices[oi].correct ? LET[k] : '').join('') });
+    }
+    if (ex.solution) {
+      if (o.sol === 'after') s += `<div class="sol"><i>Lời giải.</i> ${ex.solution}</div>`;
+      else if (o.sol === 'end') sols.push(`<div class="sol"><b>Câu ${i + 1}.</b> ${ex.solution}</div>`);
+    }
+    h.push(s);
+  });
+  if (o.key && keys.length) {
+    h.push('<div class="pd-h">ĐÁP ÁN</div>');
+    for (let a = 0; a < keys.length; a += 10) {
+      const ch = keys.slice(a, a + 10);
+      h.push('<table><tr>' + ch.map(k => `<td><b>${k.n}</b></td>`).join('') + '</tr><tr>' + ch.map(k => `<td>${k.a}</td>`).join('') + '</tr></table>');
+    }
+  }
+  if (sols.length) h.push('<div class="pd-h">LỜI GIẢI</div>' + sols.join(''));
+  return h.join('');
+}
+
+// ── PDF: in ──
+async function printDoc(o) {
+  const pa = document.getElementById('printArea');
+  pa.innerHTML = docHtml(o);
+  try { if (window.MathJax && MathJax.typesetPromise) await MathJax.typesetPromise([pa]); } catch (e) {}
+  setTimeout(() => window.print(), 150);
+}
+
+// ── Word (.docx) ──
+const MJ_SVG_URL = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js';
+const JSZIP_URL  = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+function loadScript(src) {
+  return new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => rej(new Error('không tải được ' + src.split('/').pop())); document.head.appendChild(s); });
+}
+let svgWin = null;
+async function getSvgMJ() {
+  if (svgWin) return svgWin;
+  const f = document.createElement('iframe');
+  f.style.cssText = 'position:absolute;left:-9999px;width:10px;height:10px;border:0';
+  f.srcdoc = `<!DOCTYPE html><html><head><script>window.MathJax={svg:{fontCache:'local'},startup:{typeset:false}}<\/script><script src="${MJ_SVG_URL}"><\/script></head><body></body></html>`;
+  document.body.appendChild(f);
+  const t0 = Date.now();
+  while (!(f.contentWindow && f.contentWindow.MathJax && f.contentWindow.MathJax.tex2svgPromise)) {
+    if (Date.now() - t0 > 20000) throw new Error('không tải được MathJax (SVG)');
+    await new Promise(r => setTimeout(r, 100));
+  }
+  await f.contentWindow.MathJax.startup.promise;
+  svgWin = f.contentWindow; return svgWin;
+}
+function decodeEnt(s) { return new DOMParser().parseFromString(s, 'text/html').documentElement.textContent; }
+function loadImg(src) { return new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => rej(new Error('img')); i.src = src; }); }
+const EX_PT = 5.4;      // 1ex ≈ 5.4pt với chữ 12pt
+async function mathToPng(tex, display) {
+  const w = await getSvgMJ();
+  const node = await w.MathJax.tex2svgPromise(tex, { display });
+  const svg = node.querySelector('svg');
+  const exW = parseFloat(svg.getAttribute('width')), exH = parseFloat(svg.getAttribute('height'));
+  const va = parseFloat((svg.getAttribute('style') || '').replace(/.*vertical-align:\s*(-?[\d.]+)ex.*/, '$1')) || 0;
+  const S = 4, pxW = exW * 8, pxH = exH * 8;
+  svg.setAttribute('width', pxW + 'px'); svg.setAttribute('height', pxH + 'px');
+  svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  let str = new XMLSerializer().serializeToString(svg).replace(/currentColor/g, '#000000');
+  const img = await loadImg('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(str));
+  const cv = document.createElement('canvas'); cv.width = Math.ceil(pxW * S); cv.height = Math.ceil(pxH * S);
+  cv.getContext('2d').drawImage(img, 0, 0, cv.width, cv.height);
+  return { png: cv.toDataURL('image/png').split(',')[1], cx: Math.round(exW * EX_PT * 12700), cy: Math.round(exH * EX_PT * 12700), pos: Math.round(va * EX_PT * 2) };
+}
+async function remoteToPng(src) {
+  try {
+    const r = await fetch(src); const b = await r.blob(); const u = URL.createObjectURL(b);
+    const img = await loadImg(u);
+    const cv = document.createElement('canvas'); cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+    cv.getContext('2d').drawImage(img, 0, 0); URL.revokeObjectURL(u);
+    const k = Math.min(1, 520 / img.naturalWidth);
+    return { png: cv.toDataURL('image/png').split(',')[1], cx: Math.round(img.naturalWidth * k * 9525), cy: Math.round(img.naturalHeight * k * 9525), pos: 0 };
+  } catch (e) { return null; }
+}
+
+const MATH_RE = /\\begin\{(align\*?|aligned|gather\*?|equation\*?|multline\*?|cases)\}[\s\S]*?\\end\{\1\}|\\\[[\s\S]*?\\\]|\$\$[\s\S]*?\$\$|\\\([\s\S]*?\\\)|\$[^$\n]+?\$/g;
+const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+async function exportDocx(o, say) {
+  say('Đang tải thư viện…');
+  if (!window.JSZip) await loadScript(JSZIP_URL);
+  let html = docHtml(o);
+  // 1) tách công thức -> <img data-m>
+  const maths = [];
+  html = html.replace(MATH_RE, m => {
+    let tex = m, display = false;
+    if (m.startsWith('\\[')) { tex = m.slice(2, -2); display = true; }
+    else if (m.startsWith('$$')) { tex = m.slice(2, -2); display = true; }
+    else if (m.startsWith('\\(')) { tex = m.slice(2, -2); }
+    else if (m.startsWith('$')) { tex = m.slice(1, -1); }
+    else display = true;
+    return `<img data-m="${maths.push({ tex: decodeEnt(tex), display }) - 1}">`;
+  });
+  const root = new DOMParser().parseFromString('<body>' + html + '</body>', 'text/html').body;
+  // 2) tạo ảnh cho công thức + ảnh ngoài
+  const media = [], info = new Map(), cache = new Map();
+  const imgs = [...root.querySelectorAll('img')];
+  let done = 0;
+  for (const el of imgs) {
+    say(`Đang xử lý công thức/hình ${++done}/${imgs.length}…`);
+    let r = null, display = false;
+    if (el.dataset.m != null) {
+      const m = maths[+el.dataset.m]; display = m.display;
+      const key = (display ? 'D' : 'I') + m.tex;
+      if (!cache.has(key)) { try { cache.set(key, await mathToPng(m.tex, m.display)); } catch (e) { cache.set(key, null); } }
+      r = cache.get(key);
+      if (!r) { info.set(el, { text: m.tex }); continue; }
+    } else {
+      const src = el.getAttribute('src') || '';
+      r = await remoteToPng(src);
+      display = true;
+      if (!r) { info.set(el, { text: '[Hình: ' + src + ']' }); continue; }
+    }
+    media.push(r.png);
+    info.set(el, { rid: 'rIdImg' + media.length, cx: r.cx, cy: r.cy, pos: r.pos, display, n: media.length });
+  }
+  // 3) HTML -> OOXML
+  say('Đang dựng file Word…');
+  let docPrId = 1;
+  const rPr = f => '<w:rPr><w:rFonts w:ascii="' + (f.mono ? 'Consolas' : 'Times New Roman') + '" w:hAnsi="' + (f.mono ? 'Consolas' : 'Times New Roman') + '" w:cs="' + (f.mono ? 'Consolas' : 'Times New Roman') + '"/>'
+    + (f.b ? '<w:b/>' : '') + (f.i ? '<w:i/>' : '') + (f.pos ? `<w:position w:val="${f.pos}"/>` : '') + (f.sz ? `<w:sz w:val="${f.sz}"/><w:szCs w:val="${f.sz}"/>` : '') + (f.u ? '<w:u w:val="single"/>' : '') + '</w:rPr>';
+  const run = (t, f) => `<w:r>${rPr(f)}<w:t xml:space="preserve">${xe(t)}</w:t></w:r>`;
+  const imgRun = (d, f) => `<w:r>${rPr({ pos: d.pos })}<w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${d.cx}" cy="${d.cy}"/><wp:docPr id="${docPrId}" name="Hinh${docPrId++}"/><a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="${d.n}" name="img${d.n}.png"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="${d.rid}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${d.cx}" cy="${d.cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>`;
+  const P = (runs, p = {}) => `<w:p><w:pPr>${p.keep ? '<w:keepNext/>' : ''}<w:spacing w:before="${p.before || 0}" w:after="${p.after != null ? p.after : 80}"/>${(p.left || p.hang) ? `<w:ind w:left="${p.left || 0}"${p.hang ? ` w:hanging="${p.hang}"` : ''}/>` : ''}${p.jc ? `<w:jc w:val="${p.jc}"/>` : ''}</w:pPr>${runs}</w:p>`;
+
+  function conv(el, base) {
+    const out = []; let runs = [], po = Object.assign({}, base);
+    const flush = () => { if (runs.length) out.push(P(runs.join(''), po)); runs = []; };
+    function walk(n, f) {
+      if (n.nodeType === 3) {
+        const t = n.nodeValue.replace(/\s+/g, ' ');
+        if (t && !(t === ' ' && !runs.length)) runs.push(run(t, f));
+        return;
+      }
+      if (n.nodeType !== 1) return;
+      const tag = n.tagName, cls = n.className || '';
+      if (tag === 'BR') { runs.push('<w:r><w:br/></w:r>'); return; }
+      if (tag === 'IMG') {
+        const d = info.get(n); if (!d) return;
+        if (d.text) { runs.push(run(d.text, f)); return; }
+        if (d.display) { flush(); out.push(P(imgRun(d, f), { jc: 'center', after: 80 })); return; }
+        runs.push(imgRun(d, f)); return;
+      }
+      if (tag === 'TABLE') { flush(); out.push(table(n)); return; }
+      if (tag === 'UL' || tag === 'OL') {
+        flush(); let k = 0;
+        [...n.children].forEach(li => {
+          const prev = po; po = Object.assign({}, base, { left: 720, hang: 360, after: 40 });
+          runs.push(run(tag === 'UL' ? '•  ' : (++k) + '. ', f));
+          [...li.childNodes].forEach(c => walk(c, f)); flush(); po = prev;
+        });
+        return;
+      }
+      if (tag === 'DIV' || tag === 'P') {
+        flush(); const prev = po; let nf = f;
+        po = Object.assign({}, base);
+        if (/\bpd-center\b/.test(cls)) po.jc = 'center';
+        if (/\bpd-t\b/.test(cls)) { nf = Object.assign({}, f, { b: true, sz: 30 }); po.after = 120; }
+        if (/\bpd-h\b/.test(cls)) { nf = Object.assign({}, f, { b: true, sz: 26 }); po.jc = 'center'; po.before = 280; po.keep = true; }
+        if (/\bq\b/.test(cls)) { po.after = 80; po.before = 120; po.keep = true; }
+        if (/\bc\b/.test(cls)) { po.left = 360; po.after = 30; if (/\bok\b/.test(cls)) nf = Object.assign({}, f, { b: true }); }
+        if (/\bsol\b/.test(cls)) { po.left = 360; po.after = 100; }
+        [...n.childNodes].forEach(c => walk(c, nf)); flush(); po = prev; return;
+      }
+      let nf = f;
+      if (tag === 'STRONG' || tag === 'B') nf = Object.assign({}, f, { b: true });
+      else if (tag === 'EM' || tag === 'I') nf = Object.assign({}, f, { i: true });
+      else if (tag === 'U') nf = Object.assign({}, f, { u: true });
+      else if (tag === 'CODE') nf = Object.assign({}, f, { mono: true });
+      [...n.childNodes].forEach(c => walk(c, nf));
+    }
+    [...el.childNodes].forEach(c => walk(c, {}));
+    flush(); return out;
+  }
+  function table(t) {
+    const rows = [...t.querySelectorAll('tr')]; const nc = Math.max(...rows.map(r => r.children.length), 1);
+    const bd = ['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map(s => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="808080"/>`).join('');
+    return `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type="pct"/><w:tblBorders>${bd}</w:tblBorders><w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${'<w:gridCol w:w="' + Math.floor(9000 / nc) + '"/>'.repeat(nc)}</w:tblGrid>`
+      + rows.map(r => '<w:tr>' + [...r.children].map(c => { const ps = conv(c, { after: 20, jc: t.querySelector('b') ? 'center' : undefined }).join('') || P('', { after: 0 }); return `<w:tc><w:tcPr><w:tcW w:w="${Math.floor(9000 / nc)}" w:type="dxa"/></w:tcPr>${ps}</w:tc>`; }).join('') + '</w:tr>').join('')
+      + '</w:tbl>' + P('', { after: 60 });
+  }
+  const body = conv(root, {}).join('');
+  const NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"';
+  const zip = new JSZip();
+  zip.file('[Content_Types].xml', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>');
+  zip.file('_rels/.rels', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>');
+  zip.file('word/styles.xml', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:eastAsia="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="vi-VN"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:after="80" w:line="276" w:lineRule="auto"/></w:pPr></w:pPrDefault></w:docDefaults></w:styles>');
+  zip.file('word/_rels/document.xml.rels', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdSt" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>'
+    + media.map((_, i) => `<Relationship Id="rIdImg${i + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/img${i + 1}.png"/>`).join('') + '</Relationships>');
+  zip.file('word/document.xml', `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ${NS}><w:body>${body}<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1417" w:header="709" w:footer="709" w:gutter="0"/></w:sectPr></w:body></w:document>`);
+  media.forEach((b, i) => zip.file(`word/media/img${i + 1}.png`, b, { base64: true }));
+  const blob = await zip.generateAsync({ type: 'blob', mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+  const name = (o.title || 'de-thi').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').replace(/[^\w\-]+/g, '_').replace(/^_+|_+$/g, '') || 'de-thi';
+  window.__lastDocx = blob;
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name + '.docx';
+  document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+}
+
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden && (!EXM || EXM.done)) closeExam(); });
 </script>
 </body>
