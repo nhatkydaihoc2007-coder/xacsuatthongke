@@ -12,6 +12,396 @@
   ],
   "exercises": [
     {
+      "id": "1794336270413",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "SQL là viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Standardized Query Language",
+          "correct": false
+        },
+        {
+          "text": "Standard Query Language",
+          "correct": false
+        },
+        {
+          "text": "Structured Query Language",
+          "correct": true
+        },
+        {
+          "text": "Structure Query Language",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270414",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Thành phần nào sau đây bắt buộc phải xuất hiện trong câu lệnh CREATE TABLE?",
+      "choices": [
+        {
+          "text": "Tên bảng, tên thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Tên các thuộc tính, miền giá trị tương ứng cho các thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Tên bảng, tên thuộc tính, miền giá trị tương ứng cho các thuộc tính",
+          "correct": true
+        },
+        {
+          "text": "Tên bảng, tên thuộc tính, miền giá trị tương ứng cho các thuộc tính, ràng buộc khóa ngoại",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270415",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Nhóm ngôn ngữ định nghĩa dữ liệu không bao gồm từ khóa nào sau đây?",
+      "choices": [
+        {
+          "text": "CHECK",
+          "correct": false
+        },
+        {
+          "text": "INSERT",
+          "correct": true
+        },
+        {
+          "text": "REFERENCES",
+          "correct": false
+        },
+        {
+          "text": "DEFAILT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270416",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Chỉ mục (Index) được tạo ra nhằm mục đích nào sau đây?",
+      "choices": [
+        {
+          "text": "Tăng tính bảo mật cho cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Giảm thiểu dư thừa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo tính toàn vẹn dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Tăng tốc độ quá trình truy vấn dữ liệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270417",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Từ khóa nào được dùng kết hợp với câu lệnh SELECT để loại bỏ các bản ghi trùng lắp và chỉ giữ lại các bản ghi duy nhất trong bảng?",
+      "choices": [
+        {
+          "text": "FIRST",
+          "correct": false
+        },
+        {
+          "text": "UNIQUE",
+          "correct": false
+        },
+        {
+          "text": "ONLY",
+          "correct": false
+        },
+        {
+          "text": "DISTINCT",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270418",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Chọn thứ tự đúng của các toán tử trong câu lệnh truy vấn trong SQL?",
+      "choices": [
+        {
+          "text": "SELECT $\\to$ FROM $\\to$ WHERE $\\to$ HAVING $\\to$ ORDER BY $\\to$ GROUP BY",
+          "correct": false
+        },
+        {
+          "text": "SELECT $\\to$ FROM $\\to$ WHERE $\\to$ GROUP BY $\\to$ ORDER BY $\\to$ HAVING",
+          "correct": false
+        },
+        {
+          "text": "SELECT $\\to$ FROM $\\to$ WHERE $\\to$ GROUP BY $\\to$ HAVING $\\to$ ORDER BY",
+          "correct": true
+        },
+        {
+          "text": "SELECT $\\to$ FROM $\\to$ WHERE $\\to$ ORDER BY $\\to$ GROUP BY $\\to$ HAVING",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270419",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu nào sau đây không phải là mục đích của việc tạo bảng ảo (view)?",
+      "choices": [
+        {
+          "text": "Bảng ảo là một cách để xem dữ liệu từ 1 hoặc nhiều bảng trong cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Bảng ảo giúp làm giảm sự phức tạp của cơ sở dữ liệu với góc nhìn người dùng cuối",
+          "correct": false
+        },
+        {
+          "text": "Bảng ảo giúp bảo vệ những dữ liệu nhạy cảm với người dùng không được phép",
+          "correct": false
+        },
+        {
+          "text": "Bảng ảo giúp truy vấn dữ liệu nhanh hơn",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270420",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Mệnh đề điều kiện nào sau đây cho kết quả là $FALSE$?",
+      "choices": [
+        {
+          "text": "(UNKNOWN AND TRUE) OR (UNKNOWN AND FALSE)",
+          "correct": false
+        },
+        {
+          "text": "(UNKNOWN OR TRUE) OR (UNKNOWN AND FALSE)",
+          "correct": false
+        },
+        {
+          "text": "(UNKNOWN AND FALSE) AND (UNKNOWN OR FALSE)",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270421",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Truy vấn con có thể xuất hiện trong câu lệnh nào sau đây?",
+      "choices": [
+        {
+          "text": "INSERT",
+          "correct": false
+        },
+        {
+          "text": "UPDATE",
+          "correct": false
+        },
+        {
+          "text": "DELETE",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270422",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Câu lệnh $\\text{SELECT } * \\text{ FROM Student WHERE FirstName LIKE `\\_o\\%n'}$ thực hiện thao tác nào sau đây?",
+      "choices": [
+        {
+          "text": "Hiển thị các dòng trong bảng Student mà giá trị tại cột FirstName có chứa kí tự 'o' ở vị trí thứ 2 và kí tự 'n' ở cuối cùng",
+          "correct": true
+        },
+        {
+          "text": "Hiển thị các dòng trong bảng Student mà giá trị tại cột FirstName có chứa kí tự 'o' ở vị trí bất kì và kí tự 'n' ở cuối cùng",
+          "correct": false
+        },
+        {
+          "text": "Hiển thị các dòng trong bảng Student mà giá trị tại cột FirstName có chứa kí tự 'o' ở trước tất cả kí tự 'n', kí tự 'o' ở vị trí thứ 2 của FirstName",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270423",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho quan hệ $\\text{PROJECT (PNum, PName, PLocation, DNumber)}$. Với các dự án có $\\text{PNum} = 17$, hãy cập nhật $\\text{PLocation} = \\text{\"Linz\"}$ và $\\text{DNumber} = 8$. Hãy chọn câu lệnh đúng trong các câu sau đây?",
+      "choices": [
+        {
+          "text": "$\\text{UPDATE PROJECT SET PLocation = 'Linz' WHERE PNum = 17 and DNumber = 8}$",
+          "correct": false
+        },
+        {
+          "text": "$\\text{UPDATE PROJECT SET PLocation = 'Linz' AND DNumber = 8 WHERE PNum = 17}$",
+          "correct": false
+        },
+        {
+          "text": "$\\text{UPDATE PROJECT SET PLocation = 'Linz', DNumber = 8 WHERE PNum = 17}$",
+          "correct": true
+        },
+        {
+          "text": "$\\text{UPDATE PROJECT SET PLocation = 'Linz' WHERE PNum = 17, DNumber = 8}$",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270424",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Cho câu lệnh SQL sau:\nverbatim\nselect k.TenKhoaHoc, COUNT(t.MaSinhVien) as SoLuongSVThamGia\nfrom KHOAHOC k, THAMGIA t\nwhere k.MaKhoaHoc = t.MaKhoaHoc\ngroup by k.TenKhoaHoc\norder by k.TenKhoaHoc\nverbatim\nKết quả của câu lệnh trên là bảng nào sau đây?",
+      "choices": [
+        {
+          "text": "<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>TenKhoaHoc</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>SoLuongSVThamGia</strong></td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Viet de cuong luan van</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Tieng Anh cong so</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Soan thao van ban</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td></tr></table></div>",
+          "correct": false
+        },
+        {
+          "text": "<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>TenKhoaHoc</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>SoLuongSVThamGia</strong></td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Soan thao van ban</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Tieng Anh cong so</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Viet de cuong luan van</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td></tr></table></div>",
+          "correct": true
+        },
+        {
+          "text": "<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>TenKhoaHoc</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>SoLuongSVThamGia</strong></td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Viet de cuong luan van</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Tieng Anh cong so</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Soan thao van ban</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td></tr></table></div>",
+          "correct": false
+        },
+        {
+          "text": "<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>TenKhoaHoc</strong></td><td style=\"padding:5px 12px;border:1px solid var(--border)\"><strong>SoLuongSVThamGia</strong></td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Soan thao van ban</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Tieng Anh cong so</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Viet de cuong luan van</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td></tr></table></div>",
+          "correct": false
+        }
+      ],
+      "solution": "<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">HERE k.MaKhoaHoc = t.MaKhoaHoc</code>: ghép hai bảng theo mã khóa học. <br> \nNhìn bảng THAMGIA ta đếm số lần xuất hiện của từng MaKhoaHoc: Khóa học 1: xuất hiện 2 lần, Khóa học 2: xuất hiện 1 lần, Khóa học 3: xuất hiện 3 lần. <br> \n<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">RDER BY k.TenKhoaHoc</code> sắp xếp tên theo thứ tự chữ cái:",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270425",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Kết quả của câu lệnh sau là bao nhiêu?\nverbatim\nselect SUM(SoGioThamGia)\nfrom THAMGIA\nwhere MaSinhVien in (select MAX(MaSinhVien) from SINHVIEN)\nverbatim",
+      "choices": [
+        {
+          "text": "10",
+          "correct": true
+        },
+        {
+          "text": "Chưa đủ thông tin để xác định",
+          "correct": false
+        },
+        {
+          "text": "Lỗi cú pháp",
+          "correct": false
+        },
+        {
+          "text": "Một giá trị khác",
+          "correct": false
+        }
+      ],
+      "solution": "Max(MaSinhVien)=4 nên SUM=10",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270426",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Kết quả của câu lệnh sau là bao nhiêu?\nverbatim\nselect SUM(SoGioThamGia)\nfrom THAMGIA\nwhere MaSinhVien in\n    (select MaSinhVien\n     from SINHVIEN\n     where TenSinhVien like '%h%')\nverbatim",
+      "choices": [
+        {
+          "text": "51",
+          "correct": false
+        },
+        {
+          "text": "42",
+          "correct": false
+        },
+        {
+          "text": "39",
+          "correct": false
+        },
+        {
+          "text": "30",
+          "correct": true
+        }
+      ],
+      "solution": "<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">IKE '\\%h\\%'</code> Có nghĩa là tên sinh viên có chứa chữ h ở bất kỳ vị trí nào. <br> \ntruy vấn con trả về MaSinhVien$=\\{2,3\\}\\implies SUM=11+12+7=30$",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
+      "id": "1794336270427",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
+      "question": "Kết quả của câu lệnh sau là gì?\nverbatim\ncreate view BangAo as\n    select MaKhoaHoc, SUM(SoGioThamGia) as TongSoGioThamGia\n    from THAMGIA\n    group by MaKhoaHoc\n\nselect TenKhoaHoc\nfrom KHOAHOC\nwhere MaKhoaHoc in\n    (select MaKhoaHoc\n     from BangAo\n     where TongSoGioThamGia in\n         (select MIN(TongSoGioThamGia)\n          from BangAo))\nverbatim",
+      "choices": [
+        {
+          "text": "Soan thao van ban",
+          "correct": false
+        },
+        {
+          "text": "Tieng Anh cong so",
+          "correct": false
+        },
+        {
+          "text": "Viet de cuong luan van",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "Bảng BangAo \n<div style=\"text-align:center;margin:8px 0\">\n<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">MaKhoaHoc</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">TongSoGioThamGia</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">22</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">12</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">27</td></tr></table></div>\n</div>\nMIN(TongSoGioThamGia) $=MIN(22,12,27)=12 \\to$ ứng với MaKhoaHoc$=2 \\to$ Viet de cuong luan van",
+      "createdAt": "2026-11-10T18:44:30.413Z"
+    },
+    {
       "id": "1794336246177",
       "subject": "Cơ sở dữ liệu",
       "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
