@@ -12,6 +12,344 @@
   ],
   "exercises": [
     {
+      "id": "1794293349985",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Bạn thuộc nhóm người dùng nào dưới đây khi dùng Internet Explorer để truy xuất vào trang web http://www.buh.edu.vn?",
+      "choices": [
+        {
+          "text": "Quản trị viên cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên phân tích hệ thống và lập trình ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.985Z"
+    },
+    {
+      "id": "1794293349986",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Đặc tả yêu cầu dữ liệu của người sử dụng là nhiệm vụ của nhóm người dùng nào sau đây?",
+      "choices": [
+        {
+          "text": "Quản trị viên cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế cơ sở dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên phân tích hệ thống và lập trình ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.985Z"
+    },
+    {
+      "id": "1794293349987",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Việc cập nhật dữ liệu vào hệ thống do nhóm người dùng nào sau đây thực hiện?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế",
+          "correct": false
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên phát triển ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.985Z"
+    },
+    {
+      "id": "1794293349989",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Việc truy vấn dữ liệu để tạo các báo cáo thống kê do nhóm người dùng nào sau đây thực hiện?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế",
+          "correct": false
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên phát triển ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349990",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Dữ liệu cần thường xuyên được theo dõi, kiểm tra, rà soát và cập nhật là nội dung của mục tiêu nào sau đây đối với hệ thống hướng cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Đảm bảo ý nghĩa của dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Đảm bảo tính riêng tư và quyền khai thác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo giải quyết xung đột dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo toàn vẹn dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349991",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Truy vấn dữ liệu, cập nhật dữ liệu, … thuộc nhiệm vụ nào sau đây của hệ quản trị cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Định nghĩa cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Xây dựng cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Thao tác cơ sở dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349992",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Mô hình là gì?",
+      "choices": [
+        {
+          "text": "Sự trừu tượng hóa đơn giản về đặc điểm và nguyên nhân của các sự kiện trong thế giới thực",
+          "correct": false
+        },
+        {
+          "text": "Sự trừu tượng hóa đơn giản về đặc điểm và kết quả của các sự kiện trong thế giới thực",
+          "correct": false
+        },
+        {
+          "text": "Sự trừu tượng hóa đơn giản về đặc điểm và mối liên hệ của các sự kiện trong thế giới thực",
+          "correct": true
+        },
+        {
+          "text": "Sự trừu tượng hóa đơn giản về các sự kiện trong thế giới thực",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349993",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Xây dựng hệ thống hướng cơ sở dữ liệu là nhiệm vụ của nhóm người dùng nào sau đây?",
+      "choices": [
+        {
+          "text": "Quản trị viên cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên phân tích hệ thống và lập trình ứng dụng",
+          "correct": true
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349994",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Phát biểu nào sau đây là đúng khi nói về an toàn dữ liệu?",
+      "choices": [
+        {
+          "text": "Dễ dàng cho công việc bảo trì dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngăn chặn các truy nhập trái phép, sai quy định từ trong ra hoặc từ ngoài vào",
+          "correct": false
+        },
+        {
+          "text": "Thống nhất các tiêu chuẩn, thủ tục và các biện pháp bảo vệ, an toàn dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Tính nhất quán và toàn vẹn dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349995",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Phát biểu nào sau đây là ưu điểm của hệ thống hướng cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Dữ liệu đồng bộ, nhất quán, hạn chế dư thừa",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu được truy xuất theo nhiều cách khác nhau",
+          "correct": false
+        },
+        {
+          "text": "Khả năng dùng chung cao",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349996",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Khó khăn khi triển khai hệ thống hướng cơ sở dữ liệu là gì?",
+      "choices": [
+        {
+          "text": "Dữ liệu bị trùng lắp",
+          "correct": false
+        },
+        {
+          "text": "Không dùng chung",
+          "correct": false
+        },
+        {
+          "text": "Truy cập hạn chế",
+          "correct": false
+        },
+        {
+          "text": "Thiết kế phức tạp",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349997",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Mục tiêu đảm bảo giải quyết xung đột dữ liệu của hệ thống hướng cơ sở dữ liệu bao gồm nội dung nào sau đây?",
+      "choices": [
+        {
+          "text": "Cấp quyền và thu hồi quyền khai thác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Theo dõi, kiểm tra, rà soát và cập nhật dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ưu tiên truy xuất và giải quyết tình trạng khóa chết",
+          "correct": true
+        },
+        {
+          "text": "Sao lưu và phục hồi dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
+      "id": "1794293349998",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Nhóm người dùng nào sau đây tham gia vào hoạt động xây dựng, triển khai và vận hành hệ thống hướng cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị, bảo trì, phát triển",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế, phát triển, người dùng cuối",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên thiết kế, bảo trì, người dùng cuối",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên phát triển, bảo trì, người dùng cuối",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:49:09.986Z"
+    },
+    {
       "id": "1794235544506",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Quản trị mạng",
