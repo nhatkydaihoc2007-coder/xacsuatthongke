@@ -1042,15 +1042,16 @@
         },
         {
           "text": "Bảo mật mạng",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Cả ba câu trên đều đúng",
-          "correct": true
+          "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T14:19:01.358Z"
+      "createdAt": "2026-11-09T14:19:01.358Z",
+      "updatedAt": "2026-11-10T02:24:56.897Z"
     },
     {
       "id": "1794233941359",
