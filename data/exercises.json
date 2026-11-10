@@ -743,14 +743,14 @@
       "id": "1794312939197",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Cho hai quan hệ $R(A int, B int)=\\{(1,1), (1,2)\\}$ và $S(A ~int, B ~int)=\\{(1,1),(2,1)\\}$. Biểu thức nào sau đây cho kết quả là quan hệ $T(A int, B int)={(1,1)}$",
+      "question": "Cho hai quan hệ $R(A int, B int)=\\{(1,1), (1,2)\\}$ và $S(A ~int, B ~int)=\\{(1,1),(2,1)\\}$. Biểu thức nào sau đây cho kết quả là quan hệ $T(A~ int, B ~int)={(1,1)}$",
       "choices": [
         {
           "text": "T=R*S",
           "correct": true
         },
         {
-          "text": "$T=(R\\cup S) - (R\\cap S)$",
+          "text": "$T=(R\\cup S) - (R \\cap S)$",
           "correct": false
         },
         {
@@ -763,7 +763,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T12:15:39.182Z"
+      "createdAt": "2026-11-10T12:15:39.182Z",
+      "updatedAt": "2026-11-10T13:49:10.571Z"
     },
     {
       "id": "1794312939198",
