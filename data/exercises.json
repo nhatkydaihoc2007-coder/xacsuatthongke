@@ -1756,8 +1756,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Phép trừ tập hợp R EXCEPT S lấy các bộ thuộc $R$ nhưng không thuộc $S$. Cả 2 bộ $(1,1)$ và $(1,2)$ của quan hệ $R$ đều xuất hiện trong $S$, do đó tập kết quả là rỗng ($\\emptyset$).",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T14:57:16.305Z"
     },
     {
       "id": "1794293941435",
