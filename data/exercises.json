@@ -2726,32 +2726,6 @@
       "createdAt": "2026-11-10T06:49:09.985Z"
     },
     {
-      "id": "1794293349987",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Việc cập nhật dữ liệu vào hệ thống do nhóm người dùng nào sau đây thực hiện?",
-      "choices": [
-        {
-          "text": "Nhân viên quản trị",
-          "correct": false
-        },
-        {
-          "text": "Nhân viên thiết kế",
-          "correct": false
-        },
-        {
-          "text": "Người dùng cuối",
-          "correct": true
-        },
-        {
-          "text": "Nhân viên phát triển ứng dụng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:49:09.985Z"
-    },
-    {
       "id": "1794293349989",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
