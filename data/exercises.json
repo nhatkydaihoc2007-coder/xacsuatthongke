@@ -1209,32 +1209,6 @@
       "createdAt": "2026-11-10T12:14:13.420Z"
     },
     {
-      "id": "1794312853422",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Nhóm người dùng nào sau đây tham gia vào hoạt động xây dựng, triển khai và vận hành hệ thống hướng cơ sở dữ liệu?",
-      "choices": [
-        {
-          "text": "Nhân viên quản trị, bảo trì, phát triển",
-          "correct": false
-        },
-        {
-          "text": "Nhân viên thiết kế, phát triển, người dùng cuối",
-          "correct": true
-        },
-        {
-          "text": "Nhân viên thiết kế, bảo trì, người dùng cuối",
-          "correct": false
-        },
-        {
-          "text": "Nhân viên phát triển, bảo trì, người dùng cuối",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:14:13.420Z"
-    },
-    {
       "id": "1794312853423",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
