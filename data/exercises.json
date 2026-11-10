@@ -12,6 +12,552 @@
   ],
   "exercises": [
     {
+      "id": "1794312939181",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Xét quan hệ WorksOn(EmployeeID, ProjectID, workHours) cho biết thông tin về thời gian tham gia mỗi dự án của từng nhân viên với ràng buộc Mỗi nhân viên được tham gia tối đa là 5 dự án. Thao tác nào sau đây không vi phạm ràng buộc này?",
+      "choices": [
+        {
+          "text": "Thêm mới một bộ vào quan hệ WorksOn",
+          "correct": false
+        },
+        {
+          "text": "Cập nhật một bộ có sẵn trong quan hệ WorksOn",
+          "correct": false
+        },
+        {
+          "text": "Xóa một bộ ra khỏi quan hệ WorksOn",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939182",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Ràng buộc \"Giới tính của một sinh viên là Nam hoặc Nữ\" thuộc loại ràng buộc nào sau đây?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc khóa",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc thực thể",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc tham chiếu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939183",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phát biểu nào sau đây là đúng về khóa ngoại?",
+      "choices": [
+        {
+          "text": "Một thuộc tính được gọi là khóa ngoại khi nó tham chiếu tới khóa chính (khóa duy nhất) của một quan hệ nào đó",
+          "correct": false
+        },
+        {
+          "text": "Khóa ngoại và khóa chính (khóa duy nhất) tương ứng phải có cùng miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Khóa ngoại có thể nhận giá trị null",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939184",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Tập đầy đủ các phép toán đại số quan hệ là gì?",
+      "choices": [
+        {
+          "text": "Tập hợp gồm tất cả các phép toán đại số quan hệ",
+          "correct": false
+        },
+        {
+          "text": "Tập hợp gồm nhiều phép toán nhất mà có thể dùng chúng để biểu diễn tất cả các phép toán còn lại",
+          "correct": false
+        },
+        {
+          "text": "Tập hợp gồm ít phép toán nhất mà có thể dùng chúng để biểu diễn tất cả các phép toán còn lại",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939185",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho tập R với bộ t xuất hiện m lần, tập S với bộ t xuất hiện n lần. Nếu trong kết quả xuất hiện min(m,n) lần bộ t thì đó là kết quả của phép toán nào?",
+      "choices": [
+        {
+          "text": "Phép trừ",
+          "correct": false
+        },
+        {
+          "text": "Phép hợp",
+          "correct": false
+        },
+        {
+          "text": "Phép giao",
+          "correct": true
+        },
+        {
+          "text": "Phép nhân chéo",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939186",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cơ chế nào sau đây được áp dụng khi việc thêm mới dữ liệu vào bảng gây ra vi phạm ràng buộc toàn vẹn tham chiếu?",
+      "choices": [
+        {
+          "text": "Cơ chế mặc định",
+          "correct": true
+        },
+        {
+          "text": "Cơ chế thay thế",
+          "correct": false
+        },
+        {
+          "text": "Cơ chế thiết lập giá trị NULL",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939187",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phát biểu \"Trưởng đơn vị phải có ít nhất 5 năm công tác trong đơn vị đó\" thuộc loại ràng buộc gì?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc thực thể",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc tham chiếu",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc ngữ nghĩa",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939188",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cơ chế mặc định khi xử lý vi phạm ràng buộc toàn vẹn là gì?",
+      "choices": [
+        {
+          "text": "Tự động từ chối mọi hành vi vi phạm ràng buộc toàn vẹn",
+          "correct": true
+        },
+        {
+          "text": "Tự động cập nhật giá trị khóa ngoại khi giá trị khóa chính tương ứng bị thay đổi",
+          "correct": false
+        },
+        {
+          "text": "Mọi giá trị vi phạm ràng buộc toàn vẹn được thiết lập giá trị là null",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.181Z"
+    },
+    {
+      "id": "1794312939190",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Kiểu liên kết cha con hay cây phân cấp trong mô hình thực thể kết hợp mở rộng được ánh xạ sang mô hình dữ liệu quan hệ như thế nào?",
+      "choices": [
+        {
+          "text": "Mỗi quan hệ ứng với một tập thực thể; quan hệ ứng với lớp con nhận khóa chính của lớp cha về làm khóa chính của nó",
+          "correct": false
+        },
+        {
+          "text": "Mỗi quan hệ ứng với một lớp con; các quan hệ này chứa tất cả thuộc tính của lớp cha và nhận khóa chính của lớp cha về làm khóa chính của nó",
+          "correct": false
+        },
+        {
+          "text": "Một quan hệ duy nhất chứa tất cả thuộc tính của tất cả các tập thực thể trong cây phân cấp; khóa chính của quan hệ này là khóa chính của lớp cha",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939191",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho lược đồ CSDL: HOCVIEN (MAHV, HOTEN, NGSINH, NOISINH, GIOITINH, MALOP, DIEMTB), LOP (MALOP, TENLOP, KHOAHOC, NGNH, LOPTRG, SISO). “Ngày nhập học (NGNH) của lớp học viên đang theo học phải lớn hơn ngày sinh (NGSINH) của học viên đó tối thiểu 18 năm”. Ràng buộc này thuộc loại nào sau đây?",
+      "choices": [
+        {
+          "text": "Liên thuộc tính trên một quan hệ",
+          "correct": false
+        },
+        {
+          "text": "Liên thuộc tính - liên quan hệ",
+          "correct": true
+        },
+        {
+          "text": "Liên bộ - liên quan hệ",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939192",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phép toán nào sau đây đòi hỏi các quan hệ phải khả hợp?",
+      "choices": [
+        {
+          "text": "Phép nhân chéo",
+          "correct": false
+        },
+        {
+          "text": "Phép kết theta",
+          "correct": false
+        },
+        {
+          "text": "Phép giao",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939193",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cơ chế nào sau đây có thể được sử dụng để xử lý trường hợp ràng buộc toàn vẹn bị vi phạm?",
+      "choices": [
+        {
+          "text": "Cơ chế mặc định",
+          "correct": false
+        },
+        {
+          "text": "Cơ chế thay thế",
+          "correct": false
+        },
+        {
+          "text": "Cơ chế giá trị NULL",
+          "correct": false
+        },
+        {
+          "text": "Cả ba đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939194",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phát biểu Trưởng đơn vị phải là nhân viên của đơn vị đó thuộc loại ràng buộc nào sau đây?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc thực thể",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc tham chiếu",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc ngữ nghĩa",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939195",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Tập thực thể là gì?",
+      "choices": [
+        {
+          "text": "Một nhóm các thực thể có cấu trúc giống nhau hoàn toàn",
+          "correct": true
+        },
+        {
+          "text": "Một nhóm các thực thể có cấu trúc giống nhau một phần",
+          "correct": false
+        },
+        {
+          "text": "Một nhóm các thực thể có liên quan với nhau",
+          "correct": false
+        },
+        {
+          "text": "Một nhóm các thực thể bất kỳ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939196",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho hai quan hệ R(A,B), S(C,D), trong đó B của R tham chiếu tới C của S và D của S tham chiếu tới C của S. Hai quan hệ này được kết với nhau theo điều kiện nào sau đây?",
+      "choices": [
+        {
+          "text": "A=C",
+          "correct": false
+        },
+        {
+          "text": "B=C",
+          "correct": true
+        },
+        {
+          "text": "A=D",
+          "correct": false
+        },
+        {
+          "text": "B=D",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939197",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho hai quan hệ $R(A int, B int)=\\{(1,1), (1,2)\\}$ và $S(A ~int, B ~int)=\\{(1,1),(2,1)\\}$. Biểu thức nào sau đây cho kết quả là quan hệ $T(A int, B int)={(1,1)}$",
+      "choices": [
+        {
+          "text": "T=R*S",
+          "correct": true
+        },
+        {
+          "text": "$T=(R\\cup S) - (R\\cap S)$",
+          "correct": false
+        },
+        {
+          "text": "$T=R|X|_{A,B}S$",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939198",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cơ chế thiết lập giá trị NULL trong trường hợp vi phạm ràng buộc toàn vẹn tham chiếu được áp dụng đối với thao tác nào sau đây?",
+      "choices": [
+        {
+          "text": "Thêm mới dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cập nhật dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Xóa dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939199",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Ràng buộc toàn vẹn khóa ngoại phát biểu như thế nào?",
+      "choices": [
+        {
+          "text": "Mỗi giá trị của thuộc tính khóa ngoại phải trùng với giá trị của thuộc tính khóa chính nào đó",
+          "correct": true
+        },
+        {
+          "text": "Mỗi giá trị của thuộc tính khóa ngoại phải trùng với giá trị của thuộc tính khóa ngoại nào đó",
+          "correct": false
+        },
+        {
+          "text": "Mỗi giá trị của thuộc tính khóa chính phải trùng với giá trị của thuộc tính khóa ngoại nào đó",
+          "correct": false
+        },
+        {
+          "text": "Mỗi giá trị của thuộc tính khóa chính phải trùng với giá trị của thuộc tính khóa chính nào đó",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939200",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Thành phần nào sau đây được gọi là thuộc tính trong mô hình dữ liệu quan hệ?",
+      "choices": [
+        {
+          "text": "Bảng",
+          "correct": false
+        },
+        {
+          "text": "Cột",
+          "correct": true
+        },
+        {
+          "text": "Dòng",
+          "correct": false
+        },
+        {
+          "text": "Miền",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939201",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Để thực hiện phép kết mà không cần khai báo tường minh điều kiện kết, chúng ta sử dụng phép toán gì sau đây?",
+      "choices": [
+        {
+          "text": "Phép nhân chéo",
+          "correct": false
+        },
+        {
+          "text": "Phép kết theta",
+          "correct": false
+        },
+        {
+          "text": "Phép kết bằng",
+          "correct": false
+        },
+        {
+          "text": "Phép kết tự nhiên",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
+      "id": "1794312939202",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Để thực hiện truy vấn \"Liệt kê danh sách nhân viên có lương từ 10 triệu trở lên theo từng phòng ban\", chúng ta cần kết hai quan hệ Employee và Department theo mã số đơn vị. Điều kiện \"có lương từ 10 triệu trở lên\" thuộc loại điều kiện nào sau đây?",
+      "choices": [
+        {
+          "text": "Điều kiện chọn",
+          "correct": true
+        },
+        {
+          "text": "Điều kiện kết",
+          "correct": false
+        },
+        {
+          "text": "Điều kiện nhóm",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:15:39.182Z"
+    },
+    {
       "id": "1794312899318",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
