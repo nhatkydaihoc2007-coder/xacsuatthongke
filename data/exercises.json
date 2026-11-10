@@ -639,32 +639,6 @@
       "createdAt": "2026-11-10T06:55:56.858Z"
     },
     {
-      "id": "1794293756863",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Giả sử quan hệ R(A,B,C,D) với A,B,C là các thuộc tính số, D ở dạng chuỗi, trong đó $\\{A\\}$, $\\{B,C\\}$ và $\\{D\\}$ đều là khóa. Khóa chính của quan hệ này là gì?",
-      "choices": [
-        {
-          "text": "$\\{A\\}$",
-          "correct": true
-        },
-        {
-          "text": "$\\{B,C\\}$",
-          "correct": false
-        },
-        {
-          "text": "$\\{D\\}$",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:55:56.858Z"
-    },
-    {
       "id": "1794293756864",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
