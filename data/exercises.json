@@ -45,7 +45,7 @@
       "choices": [
         {
           "text": "Phép chọn",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Phép chiếu",
@@ -57,11 +57,12 @@
         },
         {
           "text": "Phép gom nhóm",
-          "correct": true
+          "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T09:58:09.788Z"
     },
     {
       "id": "1794293941426",
