@@ -897,32 +897,6 @@
       "createdAt": "2026-11-10T12:15:39.182Z"
     },
     {
-      "id": "1794312899318",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
-      "question": "Khái niệm nào sau đây không có trong mô hình thực thể kết hợp?",
-      "choices": [
-        {
-          "text": "Tính kế thừa",
-          "correct": true
-        },
-        {
-          "text": "Tập thực thể yếu",
-          "correct": false
-        },
-        {
-          "text": "Kiểu liên kết hỗ trợ",
-          "correct": false
-        },
-        {
-          "text": "Thuộc tính đa trị",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:14:59.318Z"
-    },
-    {
       "id": "1794312899319",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
