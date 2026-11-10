@@ -1313,32 +1313,6 @@
       "createdAt": "2026-11-10T12:14:13.420Z"
     },
     {
-      "id": "1794312853428",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Bạn thuộc nhóm người dùng nào dưới đây khi dùng Internet Explorer để truy xuất vào trang web http://www.buh.edu.vn?",
-      "choices": [
-        {
-          "text": "Quản trị viên cơ sở dữ liệu",
-          "correct": false
-        },
-        {
-          "text": "Nhân viên thiết kế cơ sở dữ liệu",
-          "correct": false
-        },
-        {
-          "text": "Nhân viên phân tích hệ thống và lập trình ứng dụng",
-          "correct": false
-        },
-        {
-          "text": "Người dùng cuối",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:14:13.421Z"
-    },
-    {
       "id": "1794312853429",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
