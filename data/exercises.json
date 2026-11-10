@@ -554,9 +554,9 @@
           "correct": false
         }
       ],
-      "solution": "",
+      "solution": "Với thuộc tính đa trị ta <strong>bắt buộc tạo bảng mới</strong>. Bảng mới chứa khóa chính của bảng gốc và thuộc tính đa trị; khóa chính của bảng mới là tổ hợp cả hai cột đó.",
       "createdAt": "2026-11-10T06:55:56.857Z",
-      "updatedAt": "2026-11-10T08:58:50.742Z"
+      "updatedAt": "2026-11-10T09:01:25.881Z"
     },
     {
       "id": "1794293756859",
