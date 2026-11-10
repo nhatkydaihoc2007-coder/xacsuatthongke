@@ -89,7 +89,8 @@ body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(-
 .back-link:hover{color:var(--accent);border-color:var(--accent);}
 
 /* ── MAIN LAYOUT ── */
-.page{max-width:860px;margin:0 auto;padding:32px;}
+.page{max-width:1060px;margin:0 auto;padding:32px;}
+@media(max-width:720px){.page{padding:16px;}}
 
 /* ── SETUP CARD (token entry) ── */
 .setup-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);margin-bottom:24px;}
@@ -148,6 +149,37 @@ textarea.code-ta{min-height:180px;}
 .tag-other{background:var(--bg);color:var(--muted);}
 .admin-ex-q{font-family:'Lora',serif;font-size:14px;font-weight:300;line-height:1.7;margin-bottom:10px;color:var(--text);}
 .admin-ex-actions{display:flex;gap:8px;}
+
+
+/* ── Danh sách admin: thanh công cụ, lọc, phân trang, chọn nhiều ── */
+.alist-bar{position:sticky;top:60px;z-index:50;background:var(--bg);padding:10px 0 8px;margin:-6px 0 10px;border-bottom:1px solid var(--border);}
+.alist-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px;}
+.alist-row .form-input{width:auto;min-width:0;}
+.alist-search{flex:1 1 220px;min-width:180px;}
+.alist-row select{max-width:210px;}
+.alist-meta{font-size:12px;color:var(--muted);display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.alist-meta b{color:var(--text);}
+.bulkbar{display:none;background:var(--acc-lt);border:1px solid var(--accent);border-radius:10px;padding:10px 12px;margin-bottom:10px;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;}
+.bulkbar.on{display:flex;}
+.bulkbar select{width:auto;max-width:200px;}
+.pager{display:flex;gap:4px;justify-content:center;flex-wrap:wrap;margin:14px 0 4px;}
+.pager button{font-family:'Fira Code',monospace;font-size:12px;min-width:32px;height:30px;border-radius:7px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;}
+.pager button:hover{border-color:var(--accent);color:var(--accent);}
+.pager button.cur{background:var(--accent);border-color:var(--accent);color:#fff;}
+.pager button:disabled{opacity:.4;cursor:default;}
+.aex-head{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;}
+.aex-head input[type=checkbox]{width:16px;height:16px;cursor:pointer;accent-color:var(--accent);}
+.aex-warn{font-size:10px;font-weight:600;padding:2px 7px;border-radius:5px;background:var(--org-lt);color:var(--orange);}
+.aex-chap{font-size:10px;font-weight:500;padding:2px 8px;border-radius:5px;background:var(--bg);color:var(--muted);border:1px solid var(--border);}
+.admin-ex-card.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);}
+.admin-ex-card .aq{cursor:pointer;}
+.admin-ex-card:not(.open) .aq{max-height:3.4em;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent);}
+.admin-ex-card:not(.open) .aq img{display:none;}
+.aex-detail{display:none;}
+.admin-ex-card.open .aex-detail{display:block;}
+.aex-sol{margin:8px 0 10px;border-left:3px solid var(--green);background:var(--grn-lt);padding:10px 14px;border-radius:0 8px 8px 0;font-family:'Lora',serif;font-size:13.5px;line-height:1.7;overflow-x:auto;}
+.aex-sol-l{font-size:10px;font-weight:600;color:var(--green);margin-bottom:4px;}
+.aex-caret{font-size:11px;color:var(--faint);cursor:pointer;margin-left:auto;user-select:none;}
 
 /* ── PREVIEW ── */
 .preview-box{background:var(--bg);border:1px dashed var(--border);border-radius:8px;padding:10px 14px;min-height:38px;font-family:'Lora',serif;font-size:13.5px;line-height:1.7;margin-top:6px;}
@@ -237,7 +269,51 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb{background:var(--border2)
     <div id="tabList">
       <div class="section">
         <div class="section-title"><span>📋</span> Bài tập hiện có</div>
+        <div class="alist-bar">
+          <div class="alist-row">
+            <input type="text" class="form-input alist-search" id="lSearch" placeholder="🔍 Tìm trong đề, đáp án, lời giải… (gõ #12 để nhảy tới câu số 12; không cần gõ dấu)">
+            <select class="form-input" id="lSubj"></select>
+            <select class="form-input" id="lChap"></select>
+          </div>
+          <div class="alist-row">
+            <select class="form-input" id="lType">
+              <option value="">Mọi loại</option>
+              <option value="mcq">Trắc nghiệm</option>
+              <option value="essay">Tự luận</option>
+              <option value="nokey">Trắc nghiệm thiếu đáp án đúng</option>
+              <option value="nosol">Chưa có lời giải</option>
+              <option value="nochap">Chưa phân chương</option>
+              <option value="dup">Nghi trùng lặp</option>
+            </select>
+            <select class="form-input" id="lSort">
+              <option value="new">Mới nhất trước</option>
+              <option value="old">Cũ nhất trước</option>
+              <option value="subj">Theo môn → chương</option>
+            </select>
+            <select class="form-input" id="lSize">
+              <option value="20">20 bài/trang</option>
+              <option value="50">50 bài/trang</option>
+              <option value="100">100 bài/trang</option>
+            </select>
+            <label style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="lFull"> Mở rộng tất cả</label>
+            <button class="btn btn-secondary btn-sm" id="lReset">↺ Xóa lọc</button>
+          </div>
+          <div class="alist-meta" id="lMeta"></div>
+        </div>
+        <div class="bulkbar" id="bulkBar">
+          <b id="bulkN"></b>
+          <button class="btn btn-secondary btn-sm" id="bulkPage">Chọn cả trang</button>
+          <button class="btn btn-secondary btn-sm" id="bulkAll"></button>
+          <span style="margin-left:6px">Chuyển sang:</span>
+          <select class="form-input" id="bulkSubj"></select>
+          <select class="form-input" id="bulkChap"></select>
+          <button class="btn btn-primary btn-sm" id="bulkMove">Chuyển</button>
+          <button class="btn btn-danger btn-sm" id="bulkDel" style="border-color:var(--red)">🗑 Xóa</button>
+          <button class="btn btn-secondary btn-sm" id="bulkNone">Bỏ chọn</button>
+        </div>
+        <div class="pager" id="pagerTop"></div>
         <div class="admin-ex-list" id="adminExList"></div>
+        <div class="pager" id="pagerBot"></div>
       </div>
     </div>
 
@@ -442,41 +518,212 @@ const TAG_MAP = {'Xác suất thống kê':'tag-xstk','Giải tích':'tag-gt','�
 function tagCls(s) { return TAG_MAP[s] || 'tag-other'; }
 
 function renderAdminAll() {
+  hayCache.clear();
+  renderAdminToolbar();
   renderAdminList();
   renderSubjectSelects();
   renderSubjectChips();
   renderChapterChips();
 }
 
+// ══ Danh sách: lọc / tìm / phân trang / chọn nhiều ══
+const L = { q: '', subj: '', chap: '', type: '', sort: 'new', size: 20, page: 1, full: false, sel: new Set() };
+const hayCache = new Map();
+const NONE = '__none__';
+const plain = h => String(h || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+const fold = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase().replace(/\s+/g, ' ');
+function hay(ex) {
+  let h = hayCache.get(ex.id);
+  if (h == null) {
+    h = fold(plain(ex.question) + ' ' + (ex.choices || []).map(c => plain(c.text)).join(' ') + ' ' + plain(ex.solution) + ' ' + ex.subject + ' ' + (ex.chapter || ''));
+    hayCache.set(ex.id, h);
+  }
+  return h;
+}
+const isMcq = ex => Array.isArray(ex.choices) && ex.choices.length > 0;
+const noKey = ex => isMcq(ex) && !ex.choices.some(c => c.correct);
+function dupIds() {
+  const m = new Map();
+  data.exercises.forEach(ex => { const k = fold(plain(ex.question)).replace(/[^a-z0-9]/g, '').slice(0, 120); if (k.length > 15) (m.get(k) || m.set(k, []).get(k)).push(ex.id); });
+  const s = new Set(); m.forEach(v => { if (v.length > 1) v.forEach(i => s.add(i)); }); return s;
+}
+function adminFiltered() {
+  const q = fold(L.q.trim());
+  const numQ = /^#\d+$/.test(q) ? +q.slice(1) : null;
+  const dups = L.type === 'dup' ? dupIds() : null;
+  let arr = data.exercises.map((ex, i) => ({ ex, n: i + 1 })).filter(({ ex, n }) => {
+    if (L.subj && ex.subject !== L.subj) return false;
+    if (L.chap === NONE ? !!ex.chapter : (L.chap && ex.chapter !== L.chap)) return false;
+    switch (L.type) {
+      case 'mcq': if (!isMcq(ex)) return false; break;
+      case 'essay': if (isMcq(ex)) return false; break;
+      case 'nokey': if (!noKey(ex)) return false; break;
+      case 'nosol': if (plain(ex.solution).trim()) return false; break;
+      case 'nochap': if (ex.chapter || !((data.chapters || {})[ex.subject] || []).length) return false; break;
+      case 'dup': if (!dups.has(ex.id)) return false; break;
+    }
+    if (numQ != null) return n === numQ;
+    if (q) return q.split(' ').every(w => hay(ex).includes(w));
+    return true;
+  });
+  if (L.sort === 'new') arr.reverse();
+  else if (L.sort === 'subj') arr.sort((a, b) => (a.ex.subject || '').localeCompare(b.ex.subject || '', 'vi') || (a.ex.chapter || '').localeCompare(b.ex.chapter || '', 'vi', { numeric: true }) || a.n - b.n);
+  return arr;
+}
+function opt(v, t, cur) { return `<option value="${esc2(v)}" ${v === cur ? 'selected' : ''}>${t}</option>`; }
+function esc2(s) { return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+function renderAdminToolbar() {
+  const cnt = s => data.exercises.filter(e => e.subject === s).length;
+  document.getElementById('lSubj').innerHTML = opt('', `Tất cả môn (${data.exercises.length})`, L.subj) + data.subjects.map(s => opt(s, `${esc2(s)} (${cnt(s)})`, L.subj)).join('');
+  if (L.subj && !data.subjects.includes(L.subj)) L.subj = '';
+  const chaps = L.subj ? ((data.chapters || {})[L.subj] || []) : [];
+  const ce = document.getElementById('lChap');
+  ce.style.display = L.subj ? '' : 'none';
+  if (L.subj) {
+    const c2 = c => data.exercises.filter(e => e.subject === L.subj && e.chapter === c).length;
+    if (L.chap && L.chap !== NONE && !chaps.includes(L.chap)) L.chap = '';
+    ce.innerHTML = opt('', 'Tất cả chương', L.chap) + chaps.map(c => opt(c, `${esc2(c)} (${c2(c)})`, L.chap)).join('') + opt(NONE, `(Chưa phân chương) (${data.exercises.filter(e => e.subject === L.subj && !e.chapter).length})`, L.chap);
+  } else L.chap = '';
+  // bulk selects
+  const bs = document.getElementById('bulkSubj'), cur = bs.value;
+  bs.innerHTML = opt('', '— giữ môn —', cur) + data.subjects.map(s => opt(s, esc2(s), cur)).join('');
+  fillBulkChap();
+}
+function fillBulkChap() {
+  const subj = document.getElementById('bulkSubj').value;
+  const chaps = subj ? ((data.chapters || {})[subj] || []) : [];
+  document.getElementById('bulkChap').innerHTML = opt('', '— giữ chương —', '') + opt(NONE, '(bỏ phân chương)', '') + chaps.map(c => opt(c, esc2(c), '')).join('');
+}
+function pagerHtml(pages) {
+  if (pages <= 1) return '';
+  const set = new Set([1, pages, L.page - 1, L.page, L.page + 1, L.page - 2, L.page + 2].filter(p => p >= 1 && p <= pages));
+  const ps = [...set].sort((a, b) => a - b);
+  let h = `<button data-pg="${L.page - 1}" ${L.page === 1 ? 'disabled' : ''}>‹</button>`, last = 0;
+  ps.forEach(p => { if (p - last > 1) h += '<button disabled>…</button>'; h += `<button data-pg="${p}" class="${p === L.page ? 'cur' : ''}">${p}</button>`; last = p; });
+  return h + `<button data-pg="${L.page + 1}" ${L.page === pages ? 'disabled' : ''}>›</button>`;
+}
+let lastFiltered = [];
 function renderAdminList() {
   const el = document.getElementById('adminExList');
-  if (!data.exercises.length) {
+  const arr = adminFiltered(); lastFiltered = arr;
+  const total = data.exercises.length;
+  if (!total) {
     el.innerHTML = '<div style="text-align:center;padding:32px;color:var(--faint);font-style:italic">Chưa có bài tập nào.</div>';
-    return;
+    document.getElementById('lMeta').textContent = ''; document.getElementById('pagerTop').innerHTML = document.getElementById('pagerBot').innerHTML = ''; updateBulk(); return;
   }
-  el.innerHTML = data.exercises.map((ex, i) => {
-    const choiceHtml = (ex.choices && ex.choices.length) ? renderChoiceHtml(ex.choices) : '';
-    const chapTag = ex.chapter
-      ? `<span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:5px;background:var(--bg);color:var(--muted);border:1px solid var(--border)">📖 ${ex.chapter}</span>`
-      : '';
+  const pages = Math.max(1, Math.ceil(arr.length / L.size));
+  if (L.page > pages) L.page = pages;
+  const slice = arr.slice((L.page - 1) * L.size, L.page * L.size);
+  const nMcq = arr.filter(x => isMcq(x.ex)).length;
+  document.getElementById('lMeta').innerHTML = `Kết quả: <b>${arr.length}</b>/${total} bài · ${nMcq} trắc nghiệm · ${arr.length - nMcq} tự luận · trang <b>${L.page}/${pages}</b>`;
+  const pg = pagerHtml(pages);
+  document.getElementById('pagerTop').innerHTML = pg; document.getElementById('pagerBot').innerHTML = pg;
+  if (!slice.length) { el.innerHTML = '<div style="text-align:center;padding:32px;color:var(--faint);font-style:italic">Không có bài nào khớp bộ lọc.</div>'; updateBulk(); return; }
+  el.innerHTML = slice.map(({ ex, n }) => {
+    const mcq = isMcq(ex);
+    const warns = [];
+    if (noKey(ex)) warns.push('Thiếu đáp án đúng');
+    if (!plain(ex.solution).trim()) warns.push('Chưa có lời giải');
+    const open = L.full;
     return `
-    <div class="admin-ex-card" id="acard-${ex.id}">
-      <div class="admin-ex-meta">
-        <span class="ex-num">#${String(i+1).padStart(3,'0')}</span>
+    <div class="admin-ex-card ${open ? 'open' : ''} ${L.sel.has(ex.id) ? 'sel' : ''}" id="acard-${ex.id}" data-id="${ex.id}">
+      <div class="aex-head">
+        <input type="checkbox" class="aex-chk" ${L.sel.has(ex.id) ? 'checked' : ''} title="Chọn">
+        <span class="ex-num">#${String(n).padStart(3, '0')}</span>
         <span class="ex-tag ${tagCls(ex.subject)}">${ex.subject}</span>
-        ${chapTag}
+        ${ex.chapter ? `<span class="aex-chap">📖 ${ex.chapter}</span>` : ''}
+        <span class="aex-chap">${mcq ? '☑ Trắc nghiệm' : '✎ Tự luận'}</span>
+        ${warns.map(w => `<span class="aex-warn">⚠ ${w}</span>`).join('')}
         <span style="font-size:11px;color:var(--faint);margin-left:auto;font-family:'Fira Code',monospace">${new Date(ex.createdAt).toLocaleDateString('vi-VN')}</span>
+        <span class="aex-caret">${open ? '▲' : '▼'}</span>
       </div>
-      <div class="admin-ex-q" id="aeq-${ex.id}">${ex.question}</div>
-      ${choiceHtml}
+      <div class="admin-ex-q aq" id="aeq-${ex.id}">${ex.question}</div>
+      <div class="aex-detail">
+        ${mcq ? renderChoiceHtml(ex.choices) : ''}
+        ${ex.solution ? `<div class="aex-sol"><div class="aex-sol-l">LỜI GIẢI</div>${ex.solution}</div>` : ''}
+      </div>
       <div class="admin-ex-actions">
         <button class="btn btn-sm" onclick="openEdit('${ex.id}')" style="background:var(--acc-lt);color:var(--accent);border:1px solid var(--border)">✏️ Sửa</button>
         <button class="btn btn-danger btn-sm" onclick="deleteEx('${ex.id}')">🗑 Xóa</button>
       </div>
     </div>`;
   }).join('');
-  if (window.MathJax) MathJax.typesetPromise([el]).catch(()=>{});
+  updateBulk();
+  if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(() => {});
 }
+function updateBulk() {
+  L.sel.forEach(id => { if (!data.exercises.some(e => e.id === id)) L.sel.delete(id); });
+  const n = L.sel.size, bar = document.getElementById('bulkBar');
+  bar.classList.toggle('on', n > 0);
+  document.getElementById('bulkN').textContent = `Đã chọn ${n} bài`;
+  document.getElementById('bulkAll').textContent = `Chọn cả ${lastFiltered.length} kết quả lọc`;
+}
+function listChanged(resetPage) { if (resetPage) L.page = 1; renderAdminList(); }
+(function initList() {
+  const $ = id => document.getElementById(id);
+  let t;
+  $('lSearch').addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => { L.q = e.target.value; listChanged(true); }, 200); });
+  $('lSubj').addEventListener('change', e => { L.subj = e.target.value; L.chap = ''; renderAdminToolbar(); listChanged(true); });
+  $('lChap').addEventListener('change', e => { L.chap = e.target.value; listChanged(true); });
+  $('lType').addEventListener('change', e => { L.type = e.target.value; listChanged(true); });
+  $('lSort').addEventListener('change', e => { L.sort = e.target.value; listChanged(true); });
+  $('lSize').addEventListener('change', e => { L.size = +e.target.value; listChanged(true); });
+  $('lFull').addEventListener('change', e => { L.full = e.target.checked; listChanged(false); });
+  $('lReset').addEventListener('click', () => {
+    Object.assign(L, { q: '', subj: '', chap: '', type: '', sort: 'new', page: 1 });
+    $('lSearch').value = ''; $('lType').value = ''; $('lSort').value = 'new'; renderAdminToolbar(); listChanged(true);
+  });
+  const pg = e => { const b = e.target.closest('[data-pg]'); if (!b || b.disabled) return; L.page = +b.dataset.pg; renderAdminList(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  $('pagerTop').addEventListener('click', pg); $('pagerBot').addEventListener('click', pg);
+  $('adminExList').addEventListener('click', e => {
+    const card = e.target.closest('.admin-ex-card'); if (!card) return;
+    const id = card.dataset.id;
+    if (e.target.classList.contains('aex-chk')) {
+      if (e.target.checked) L.sel.add(id); else L.sel.delete(id);
+      card.classList.toggle('sel', e.target.checked); updateBulk(); return;
+    }
+    if (e.target.closest('.aq') || e.target.classList.contains('aex-caret')) {
+      const open = card.classList.toggle('open');
+      card.querySelector('.aex-caret').textContent = open ? '▲' : '▼';
+      if (open && window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([card]).catch(() => {});
+    }
+  });
+  $('bulkPage').addEventListener('click', () => {
+    document.querySelectorAll('#adminExList .admin-ex-card').forEach(c => L.sel.add(c.dataset.id)); renderAdminList();
+  });
+  $('bulkAll').addEventListener('click', () => { lastFiltered.forEach(x => L.sel.add(x.ex.id)); renderAdminList(); });
+  $('bulkNone').addEventListener('click', () => { L.sel.clear(); renderAdminList(); });
+  $('bulkSubj').addEventListener('change', fillBulkChap);
+  $('bulkMove').addEventListener('click', async () => {
+    const subj = $('bulkSubj').value, chap = $('bulkChap').value;
+    if (!subj && !chap) { toast('⚠️ Chọn môn hoặc chương muốn chuyển sang'); return; }
+    const ids = [...L.sel]; if (!ids.length) return;
+    if (!confirm(`Chuyển ${ids.length} bài sang ${subj || 'môn hiện tại'}${chap ? ' / ' + (chap === NONE ? '(không chương)' : chap) : ''}?\nThao tác này commit 1 lần lên GitHub.`)) return;
+    const backup = JSON.parse(JSON.stringify(data.exercises));
+    data.exercises.forEach(ex => {
+      if (!L.sel.has(ex.id)) return;
+      const changedSubj = subj && subj !== ex.subject;
+      if (subj) ex.subject = subj;
+      if (chap === NONE) ex.chapter = '';
+      else if (chap) ex.chapter = chap;
+      else if (changedSubj) ex.chapter = '';
+      ex.updatedAt = new Date().toISOString();
+    });
+    try { await writeFile(`Chuyển ${ids.length} bài sang ${subj || ''} ${chap && chap !== NONE ? chap : ''}`.trim()); L.sel.clear(); renderAdminAll(); toast(`✓ Đã chuyển ${ids.length} bài`); }
+    catch (e) { data.exercises = backup; toast('✗ Lỗi: ' + e.message); renderAdminAll(); }
+  });
+  $('bulkDel').addEventListener('click', async () => {
+    const ids = [...L.sel]; if (!ids.length) return;
+    if (!confirm(`XÓA ${ids.length} bài đã chọn? Không thể hoàn tác (chỉ khôi phục được qua lịch sử commit GitHub).`)) return;
+    const backup = data.exercises.slice();
+    data.exercises = data.exercises.filter(e => !L.sel.has(e.id));
+    try { await writeFile(`Xóa ${ids.length} bài tập`); L.sel.clear(); renderAdminAll(); toast(`✓ Đã xóa ${ids.length} bài`); }
+    catch (e) { data.exercises = backup; toast('✗ Lỗi: ' + e.message); renderAdminAll(); }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) && document.getElementById('tabList').style.display !== 'none') { e.preventDefault(); $('lSearch').focus(); }
+  });
+})();
 
 // ── Populate chapter <select> for a given subject ──
 function populateChapSelect(selectId, subj, currentVal) {
