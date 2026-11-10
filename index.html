@@ -1837,5 +1837,33 @@ async function exportDocx(o, say) {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden && (!EXM || EXM.done)) closeExam(); });
 </script>
+
+  <!-- ══ Nút lên đầu / xuống cuối trang ══ -->
+<style>
+.scroll-fab { position: fixed; right: 16px; bottom: 84px; z-index: 90; display: flex; flex-direction: column; gap: 8px; }
+.scroll-fab button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--border2); background: var(--surface); color: var(--text); font-size: 18px; line-height: 1; cursor: pointer; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity .2s, background .15s, color .15s; }
+.scroll-fab button.show { opacity: .95; pointer-events: auto; }
+.scroll-fab button:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+</style>
+<div class="scroll-fab">
+  <button id="goTop" title="Lên đầu trang" aria-label="Lên đầu trang">↑</button>
+  <button id="goBottom" title="Xuống cuối trang" aria-label="Xuống cuối trang">↓</button>
+</div>
+<script>
+(function () {
+  const up = document.getElementById('goTop'), down = document.getElementById('goBottom');
+  function update() {
+    const y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    up.classList.toggle('show', y > 300);
+    down.classList.toggle('show', max - y > 300);
+  }
+  up.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  down.addEventListener('click', () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }));
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  setInterval(update, 1000);   // nội dung tải/lọc xong làm trang dài ra
+  update();
+})();
+</script>
 </body>
 </html>
