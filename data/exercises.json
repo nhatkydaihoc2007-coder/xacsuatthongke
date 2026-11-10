@@ -562,7 +562,7 @@
       "id": "1794293756859",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Ánh xạ lược đồ thực thể kết hợp dưới đây sang mô hình dữ liệu quan hệ:",
+      "question": "Ánh xạ lược đồ thực thể kết hợp dưới đây sang mô hình dữ liệu quan hệ:\n<img width=\"600\" height=\"453\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/07f882e4-f710-40b8-9ef5-4a9cc169d846\" />",
       "choices": [
         {
           "text": "KHÁCH HÀNG (<u>Mã KH</u>, Tên KH, Địa chỉ, Đường, Thành phố, Quận/huyện, Số nhà)",
@@ -582,7 +582,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:55:56.857Z"
+      "createdAt": "2026-11-10T06:55:56.857Z",
+      "updatedAt": "2026-11-10T09:04:33.200Z"
     },
     {
       "id": "1794293756861",
