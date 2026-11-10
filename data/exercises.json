@@ -12,6 +12,396 @@
   ],
   "exercises": [
     {
+      "id": "1794312853420",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Truy vấn dữ liệu, cập nhật dữ liệu, … thuộc nhiệm vụ nào sau đây của hệ quản trị cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Định nghĩa cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Xây dựng cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Thao tác cơ sở dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853421",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Câu lệnh ALTER TABLE thuộc nhóm ngôn ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ định nghĩa dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Ngôn ngữ thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ điều khiển dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ truy vấn dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853422",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Nhóm người dùng nào sau đây tham gia vào hoạt động xây dựng, triển khai và vận hành hệ thống hướng cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị, bảo trì, phát triển",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế, phát triển, người dùng cuối",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên thiết kế, bảo trì, người dùng cuối",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên phát triển, bảo trì, người dùng cuối",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853423",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Khó khăn khi triển khai hệ thống hướng cơ sở dữ liệu là gì?",
+      "choices": [
+        {
+          "text": "Dữ liệu bị trùng lắp",
+          "correct": false
+        },
+        {
+          "text": "Không dùng chung",
+          "correct": false
+        },
+        {
+          "text": "Truy cập hạn chế",
+          "correct": false
+        },
+        {
+          "text": "Thiết kế phức tạp",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853424",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Sao lưu, phục hồi là nội dung của mục tiêu nào sau đây đối với hệ thống hướng cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Đảm bảo ý nghĩa của dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo tính riêng tư và quyền khai thác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo giải quyết xung đột dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo toàn vẹn dữ liệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853425",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Trách nhiệm của nhân viên quản trị CSDL là gì?",
+      "choices": [
+        {
+          "text": "Quyết định cấu trúc lưu trữ \\& chiến lược truy nhập",
+          "correct": false
+        },
+        {
+          "text": "Cho phép người sử dụng những quyền truy nhập cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Quản lý và điều khiển toàn bộ hoạt động của các hệ CSDL",
+          "correct": true
+        },
+        {
+          "text": "Xác định chiến lược lưu trữ, sao chép, phục hồi dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853426",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Việc triển khai hệ thống hướng tập tin phát sinh vấn đề gì sau đây?",
+      "choices": [
+        {
+          "text": "Tốn thời gian và kinh phí triển khai",
+          "correct": false
+        },
+        {
+          "text": "Thiết kế phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Kém an toàn",
+          "correct": false
+        },
+        {
+          "text": "Khó khăn trong việc bảo trì, nâng cấp",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.420Z"
+    },
+    {
+      "id": "1794312853428",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Bạn thuộc nhóm người dùng nào dưới đây khi dùng Internet Explorer để truy xuất vào trang web http://www.buh.edu.vn?",
+      "choices": [
+        {
+          "text": "Quản trị viên cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên phân tích hệ thống và lập trình ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853429",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Tiêu chí nào sau đây được sử dụng khi phân loại cơ sở dữ liệu tập trung, cơ sở dữ liệu phân tán?",
+      "choices": [
+        {
+          "text": "Mô hình dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Số người sử dụng hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Vị trí đặt máy chủ hệ thống",
+          "correct": true
+        },
+        {
+          "text": "Cách thức truy cập hệ thống",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853430",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Phát biểu nào sau đây là đúng khi nói về cơ sở dữ liệu?",
+      "choices": [
+        {
+          "text": "Cơ sở dữ liệu là tập hợp nhiều dữ liệu được quản lý bởi hệ quản trị cơ sở dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Cơ sở dữ liệu là một chương trình ứng dụng tồn tại độc lập với mọi chương trình ứng dụng khác trong hệ thống hướng cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở dữ liệu không cho phép nhiều người sử dụng đồng thời",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở dữ liệu là một bộ phận của hệ quản trị cơ sở dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853431",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Câu lệnh CREATE TABLE thuộc nhóm ngôn ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ định nghĩa dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Ngôn ngữ thao tác dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ điều khiển dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ truy vấn dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853432",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Ngôn ngữ nào sau đây được dùng để thêm mới, sửa, xóa dữ liệu?",
+      "choices": [
+        {
+          "text": "Ngôn ngữ định nghĩa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Ngôn ngữ thao tác dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Ngôn ngữ điều khiển dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853433",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Việc cập nhật dữ liệu vào hệ thống do nhóm người dùng nào sau đây thực hiện?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên thiết kế",
+          "correct": false
+        },
+        {
+          "text": "Người dùng cuối",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên phát triển ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853434",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Dữ liệu là gì?",
+      "choices": [
+        {
+          "text": "Sự kiện không được ghi lại, chưa xử lý và không có ý nghĩa",
+          "correct": false
+        },
+        {
+          "text": "Sự kiện được ghi lại, chưa được xử lý và không có ý nghĩa",
+          "correct": true
+        },
+        {
+          "text": "Sự kiện được ghi lại , được xử lý và không có ý nghĩa",
+          "correct": false
+        },
+        {
+          "text": "Sự kiện được ghi lại, được xử lý và có ý nghĩa",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
+      "id": "1794312853435",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
+      "question": "Giám sát quá trình vận hành cơ sở dữ liệu là nhiệm vụ của nhóm người dùng nào sau đây?",
+      "choices": [
+        {
+          "text": "Nhân viên quản trị cơ sở dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Nhân viên thiết kế cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên phân tích hệ thống và lập trình ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Nhân viên bảo trì hệ thống",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T12:14:13.421Z"
+    },
+    {
       "id": "1794293941424",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
