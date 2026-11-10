@@ -2342,7 +2342,7 @@
       "choices": [
         {
           "text": "Full-duplex",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Half-duplex",
@@ -2350,7 +2350,7 @@
         },
         {
           "text": "Simplex",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Cả ba câu trên đều sai",
@@ -2358,7 +2358,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-09T05:24:54.562Z"
+      "createdAt": "2026-11-09T05:24:54.562Z",
+      "updatedAt": "2026-11-10T02:44:51.561Z"
     },
     {
       "id": "1794201894565",
