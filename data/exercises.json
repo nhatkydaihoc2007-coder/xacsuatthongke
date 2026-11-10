@@ -698,7 +698,7 @@
       "choices": [
         {
           "text": "Phép chiếu",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Phép hợp",
@@ -710,11 +710,12 @@
         },
         {
           "text": "Cả ba câu trên đều đúng",
-          "correct": true
+          "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:55:56.858Z"
+      "createdAt": "2026-11-10T06:55:56.858Z",
+      "updatedAt": "2026-11-10T09:27:39.706Z"
     },
     {
       "id": "1794293756867",
