@@ -1157,32 +1157,6 @@
       "createdAt": "2026-11-10T12:14:59.319Z"
     },
     {
-      "id": "1794312853420",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Truy vấn dữ liệu, cập nhật dữ liệu, … thuộc nhiệm vụ nào sau đây của hệ quản trị cơ sở dữ liệu?",
-      "choices": [
-        {
-          "text": "Định nghĩa cơ sở dữ liệu",
-          "correct": false
-        },
-        {
-          "text": "Xây dựng cơ sở dữ liệu",
-          "correct": false
-        },
-        {
-          "text": "Thao tác cơ sở dữ liệu",
-          "correct": true
-        },
-        {
-          "text": "Cả ba câu trên đều đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:14:13.420Z"
-    },
-    {
       "id": "1794312853421",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
