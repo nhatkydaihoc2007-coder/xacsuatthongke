@@ -12,6 +12,396 @@
   ],
   "exercises": [
     {
+      "id": "1794293697487",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Thuộc tính đa trị là gì?",
+      "choices": [
+        {
+          "text": "Thuộc tính có thể được phân thành nhiều thuộc tính nhỏ hơn",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính có giá trị là một tập gồm nhiều giá trị khác",
+          "correct": true
+        },
+        {
+          "text": "Thuộc tính có giá trị được tính toán từ một hoặc nhiều thuộc tính khác",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính có thể kết hợp với các thuộc tính khác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.487Z"
+    },
+    {
+      "id": "1794293697488",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Giá trị NULL được sử dụng trong trường hợp sau đây?",
+      "choices": [
+        {
+          "text": "Giá trị không tồn tại",
+          "correct": false
+        },
+        {
+          "text": "Giá trị tồn tại nhưng chưa xác định",
+          "correct": false
+        },
+        {
+          "text": "Giá trị tồn tại, xác định nhưng không sử dụng được",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.487Z"
+    },
+    {
+      "id": "1794293697489",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Mô hình thực thể kết hợp không đáp ứng yêu cầu nào sau đây?",
+      "choices": [
+        {
+          "text": "Biểu diễn cấu trúc tổng thể của tổ chức",
+          "correct": false
+        },
+        {
+          "text": "Biểu diễn sự liên kết giữa các thành phần trong hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Thể hiện bản vẽ thiết kế cơ sở dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Trình bày các thao tác trên dữ liệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.487Z"
+    },
+    {
+      "id": "1794293697491",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phát biểu \"Một giá trị xuất hiện trong khung cảnh này phải xuất hiện trong khung cảnh khác\" thuộc loại ràng buộc nào sau đây?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc khóa",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc thực thể",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc tham chiếu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697492",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Ràng buộc liên bộ là gì?",
+      "choices": [
+        {
+          "text": "Ràng buộc giữa các bộ trong cùng một quan hệ",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc giữa các bộ trong các quan hệ khác nhau",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc khóa chính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697493",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Loại liên kết nào sau đây là phổ biến nhất trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Liên kết một ngôi",
+          "correct": false
+        },
+        {
+          "text": "Liên kết hai ngôi",
+          "correct": true
+        },
+        {
+          "text": "Liên kết nhiều ngôi",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697494",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Khái niệm nào sau đây không có trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Tính kế thừa",
+          "correct": true
+        },
+        {
+          "text": "Tập thực thể yếu",
+          "correct": false
+        },
+        {
+          "text": "Kiểu liên kết hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính đa trị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697495",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Điều gì xảy ra trong trường hợp tập thực thể có nhiều khóa?",
+      "choices": [
+        {
+          "text": "Khóa chính được chọn là khóa có ít thuộc tính nhất",
+          "correct": true
+        },
+        {
+          "text": "Khóa chính được chọn bất kỳ từ các khóa",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính được chọn từ tất cả các khóa",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các khóa đều trở thành khóa chính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697496",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phát biểu nào sau đây không đúng đối với mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Mô hình thực thể kết hợp biểu diễn cấu trúc của dữ liệu bằng đồ họa",
+          "correct": false
+        },
+        {
+          "text": "Mô hình thực thể kết hợp biểu diễn cả cấu trúc lẫn thao tác trên dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Ba thành phần cơ bản của mô hình thực thể kết hợp: thực thể, thuộc tính, liên kết",
+          "correct": false
+        },
+        {
+          "text": "Mô hình thực thể kết hợp được dùng để biểu diễn cấu trúc tổng thể của tổ chức",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697497",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Giả sử tồn tại một ràng buộc toàn vẹn tham chiếu từ thuộc tính A của quan hệ R đến thuộc tính B của quan hệ S. Thao tác nào sau đây không gây ra vi phạm đối với ràng buộc này?",
+      "choices": [
+        {
+          "text": "Thêm mới một bộ vào R",
+          "correct": false
+        },
+        {
+          "text": "Chỉnh sửa một bộ của R",
+          "correct": false
+        },
+        {
+          "text": "Xóa một bộ khỏi R",
+          "correct": true
+        },
+        {
+          "text": "Xóa một bộ khỏi S",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697498",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Hoạt động \"xác định các thuộc tính cho từng tập thực thể\" thuộc bước nào trong quy trình thiết kế cơ sở dữ liệu quan niệm?",
+      "choices": [
+        {
+          "text": "Xác định yêu cầu về dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Mô hình hóa các yêu cầu về dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Tích hợp sơ đồ tổng thể về tổ chức dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Hoàn thiện bản thiết kế",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697499",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Chúng ta biết gì về hai tập thực thể R và S khi có một liên kết ISA từ R đến S?",
+      "choices": [
+        {
+          "text": "R là lớp con của S",
+          "correct": true
+        },
+        {
+          "text": "S là lớp con của R",
+          "correct": false
+        },
+        {
+          "text": "R là tập thực thể yếu còn S là tập thực thể hỗ trợ",
+          "correct": false
+        },
+        {
+          "text": "S là tập thực thể yếu còn R là tập thực thể hỗ trợ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697500",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Trong giai đoạn xác định yêu cầu về dữ liệu, các hoạt động diễn ra theo trình tự nào sau đây?",
+      "choices": [
+        {
+          "text": "Xác định tập thực thể -> Xác định thuộc tính -> Xác định kiểu liên kết",
+          "correct": true
+        },
+        {
+          "text": "Xác định tập thực thể -> Xác định kiểu liên kết -> Xác định thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Xác định thuộc tính -> Xác định tập thực thể -> Xác định kiểu liên kết",
+          "correct": false
+        },
+        {
+          "text": "Xác định kiểu liên kết -> Xác định tập thực thế -> Xác định thuộc tính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697501",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phát biểu nào sau đây không đúng về thực thể yếu?",
+      "choices": [
+        {
+          "text": "Thực thể yếu chỉ được phép có quan hệ với thực thể mạnh mà nó phụ thuộc vào",
+          "correct": true
+        },
+        {
+          "text": "Thực thể yếu có thể không cần khoá riêng phần (partial key)",
+          "correct": false
+        },
+        {
+          "text": "Thực thể yếu có thể có nhiều hơn một thực thể mạnh cùng tham gia vào mối quan hệ định danh (identifying relationship) của mình",
+          "correct": false
+        },
+        {
+          "text": "Thực thể yếu được phép có mối quan hệ định danh với một thực thể yếu khác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
+      "id": "1794293697502",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Trong giai đoạn mô hình hóa yêu cầu về dữ liệu, các hoạt động diễn ra theo trình tự nào sau đây?",
+      "choices": [
+        {
+          "text": "Mô hình hóa tập thực thể -> Mô hình hóa thuộc tính -> Mô hình hóa kiểu liên kết",
+          "correct": true
+        },
+        {
+          "text": "Mô hình hóa tập thực thể -> Mô hình hóa kiểu liên kết -> Mô hình hóa thuộc tính",
+          "correct": false
+        },
+        {
+          "text": "Mô hình hóa thuộc tính -> Mô hình hóa tập thực thể -> Mô hình hóa kiểu liên kết",
+          "correct": false
+        },
+        {
+          "text": "Mô hình hóa kiểu liên kết -> Mô hình hóa tập thực thế -> Mô hình hóa thuộc tính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-10T06:54:57.488Z"
+    },
+    {
       "id": "1794293349985",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
