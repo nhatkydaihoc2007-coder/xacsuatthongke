@@ -165,8 +165,9 @@
           "correct": true
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Mệnh đề ORDER BY nhận danh sách thuộc tính/cột dùng để sắp xếp thứ tự dữ liệu, không chứa biểu thức điều kiện lọc.",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-10T10:00:55.842Z"
     },
     {
       "id": "1794293941430",
