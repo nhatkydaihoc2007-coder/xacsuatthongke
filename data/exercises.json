@@ -3443,24 +3443,25 @@
       "question": "Câu lệnh nào sau đây là đúng cú pháp?",
       "choices": [
         {
-          "text": "ALTER TABLE NHAN\\_VIEN INSERT MAPB INT REFERENCES PHONG\\_BAN(MAPB)",
+          "text": "ALTER TABLE NHAN_VIEN INSERT MAPB INT REFERENCES PHONG_BAN(MAPB)",
           "correct": false
         },
         {
-          "text": "ALTER TABLE NHAN\\_VIEN ADD MAPB INT REFERENCES PHONG\\_BAN(MAPB)",
+          "text": "ALTER TABLE NHAN_VIEN ADD MAPB INT REFERENCES PHONG_BAN(MAPB)",
           "correct": true
         },
         {
-          "text": "ALTER TABLE NHAN\\_VIEN ADD MAPB INT FOREIGN KEY REFERENCES PHONG\\_BAN(MAPB)",
+          "text": "ALTER TABLE NHAN_VIEN ADD MAPB INT FOREIGN KEY REFERENCES PHONG_BAN(MAPB)",
           "correct": false
         },
         {
-          "text": "ALTER TABLE NHAN\\_VIEN ADD MAPB INT REFERENCES FOREIGN KEY PHONG\\_BAN(MAPB)",
+          "text": "ALTER TABLE NHAN_VIEN ADD MAPB INT REFERENCES FOREIGN KEY PHONG_BAN(MAPB)",
           "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T04:44:37.167Z"
     },
     {
       "id": "1794293941440",
