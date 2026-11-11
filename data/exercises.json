@@ -3406,8 +3406,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Toán tử = ANY (hoặc IN) kiểm tra xem giá trị $A$ có bằng bất kỳ giá trị nào trong tập kết quả của cột $B$ từ $S$ hay không (tức là $A$ có xuất hiện ở cột $B$ của $S$).",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T04:39:06.159Z"
     },
     {
       "id": "1794293941438",
