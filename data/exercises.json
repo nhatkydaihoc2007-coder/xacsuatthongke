@@ -462,32 +462,6 @@
       "createdAt": "2026-11-11T09:19:19.869Z"
     },
     {
-      "id": "1794388759871",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Khác nhau giữa khóa chính (Primary Key) và khóa duy nhất (Unique Key) là gì?",
-      "choices": [
-        {
-          "text": "Khóa chính không cho phép giá trị NULL trong khi khóa duy nhất cho phép nhiều giá trị NULL",
-          "correct": false
-        },
-        {
-          "text": "Khóa chính cho phép một giá trị NULL trong khi khóa duy nhất không cho phép giá trị NULL",
-          "correct": false
-        },
-        {
-          "text": "Khóa chính không cho phép giá trị NULL trong khi khóa duy nhất cho phép một giá trị NULL",
-          "correct": true
-        },
-        {
-          "text": "Khóa chính cho phép một giá trị NULL trong khi khóa duy nhất cho phép nhiều giá trị NULL",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:19:19.869Z"
-    },
-    {
       "id": "1794388759872",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
