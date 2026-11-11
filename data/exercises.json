@@ -879,32 +879,6 @@
       "createdAt": "2026-11-11T09:18:55.114Z"
     },
     {
-      "id": "1794388735121",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
-      "question": "Ràng buộc về tính tách biệt (disjointness) trả lời cho câu hỏi nào sau đây?",
-      "choices": [
-        {
-          "text": "Mỗi thể hiện của lớp cha có phải là thành viên của lớp con hay không",
-          "correct": false
-        },
-        {
-          "text": "Mỗi thể hiện của lớp cha có đồng thời là thành viên của cả 2 hay nhiều lớp con hay không",
-          "correct": true
-        },
-        {
-          "text": "Có tồn tại lớp cha chung cho các tập thực thể đang có hay không",
-          "correct": false
-        },
-        {
-          "text": "Có tồn tại các lớp con cho một tập thực thể đang có hay không",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:18:55.114Z"
-    },
-    {
       "id": "1794388735122",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
