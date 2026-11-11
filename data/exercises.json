@@ -3433,8 +3433,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Phép hợp UNION yêu cầu 2 vế phải có cùng số lượng cột và tương thích kiểu dữ liệu: <br>\nVế 1: SELECT A, B FROM R trả về 2 cột kiểu (int, int). <br> \nVế 2: SELECT C, D FROM S trả về 2 cột kiểu (int, int). <br> \nPhương án B sai do bảng $S$ không có cột tên $A, B$. Phương án A sai do cột thứ 3 không tương thích kiểu (char vs int).",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T04:52:37.433Z"
     },
     {
       "id": "1794293941439",
