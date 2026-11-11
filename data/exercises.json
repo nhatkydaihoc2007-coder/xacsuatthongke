@@ -3468,7 +3468,7 @@
       "id": "1794293941440",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "Xác định vị trí lỗi cú pháp của câu lệnh sau đây: CREATE TABLE DEPARTMENT ( Name varchar (50) PRIMARY KEY, Location varchar (50) NOT NULL , NumberOfEmployees int DEFAULT '0', NumberOfProjects int DEFAULT 0, LastProjectID int NULL PRIMARY KEY (Name, Location) )",
+      "question": "Xác định vị trí lỗi cú pháp của câu lệnh sau đây: \n<pre style=\"background:rgba(128,128,128,.12);padding:12px 14px;border-radius:8px;overflow-x:auto;font-family:'Fira Code',monospace;font-size:.85em;line-height:1.55;white-space:pre;margin:10px 0;tab-size:4\"><code>CREATE TABLE DEPARTMENT ( \nName varchar (50) PRIMARY KEY, \nLocation varchar (50) NOT NULL, \nNumberOfEmployees int DEFAULT '0', \nNumberOfProjects int DEFAULT 0, \nLastProjectID int NULL \nPRIMARY KEY (Name, Location) \n)</code></pre>",
       "choices": [
         {
           "text": "Location varchar(50) NOT NULL",
@@ -3487,8 +3487,9 @@
           "correct": true
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Đã khai báo khóa chính đơn ở thuộc tính Name varchar(50) PRIMARY KEY. Một bảng không thể có hai định nghĩa khóa chính riêng biệt. <br>\nThiếu dấu phẩy ',' ngăn cách giữa dòng LastProjectID int NULL và ràng buộc bảng phía dưới.",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T04:57:01.960Z"
     },
     {
       "id": "1794293941441",
