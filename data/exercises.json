@@ -1165,32 +1165,6 @@
       "createdAt": "2026-11-11T09:18:21.266Z"
     },
     {
-      "id": "1794388701274",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Mô hình dữ liệu bao gồm các thành phần nào sau đây?",
-      "choices": [
-        {
-          "text": "Cấu trúc, liên kết",
-          "correct": false
-        },
-        {
-          "text": "Cấu trúc, liên kết, thao tác",
-          "correct": true
-        },
-        {
-          "text": "Cấu trúc, thao tác",
-          "correct": false
-        },
-        {
-          "text": "Liên kết, thao tác, ứng dụng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:18:21.266Z"
-    },
-    {
       "id": "1794388701275",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
