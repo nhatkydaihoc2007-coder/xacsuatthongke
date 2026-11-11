@@ -3493,15 +3493,15 @@
       "question": "Câu lệnh nào sau đây liệt kê danh sách nhân viên trong đơn vị có mã số \"TT05\"?",
       "choices": [
         {
-          "text": "SELECT MANV, HONV, TENNV AS \"TEN NV\" FROM NHAN\\_VIEN WHERE MAPB = \"TT05\"",
+          "text": "SELECT MANV, HONV, TENNV AS \"TEN NV\" FROM NHAN_VIEN WHERE MAPB = \"TT05\"",
           "correct": false
         },
         {
-          "text": "SELECT MANV, HONV + \" \" + TENNV AS \"HO TEN\" FROM NHAN\\_VIEN WHERE MAPB = \"TT05\"",
+          "text": "SELECT MANV, HONV + \" \" + TENNV AS \"HO TEN\" FROM NHAN_VIEN WHERE MAPB = \"TT05\"",
           "correct": false
         },
         {
-          "text": "SELECT MANV, HONV AS \"HO NV\", TENNV AS \"TEN NV\" FROM NHAN\\_VIEN WHERE MAPB = \"TT05\"",
+          "text": "SELECT MANV, HONV AS \"HO NV\", TENNV AS \"TEN NV\" FROM NHAN_VIEN WHERE MAPB = \"TT05\"",
           "correct": false
         },
         {
@@ -3510,7 +3510,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T03:20:06.419Z"
     },
     {
       "id": "1794293941442",
