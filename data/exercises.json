@@ -1811,8 +1811,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:16:13.514Z"
+      "solution": ">= ANY sẽ trả về những học viên có điểm lớn hơn hoặc bằng ít nhất một học viên trong danh sách  <br> \n$>$ ALL tìm học viên có điểm lớn hơn tất cả các giá trị điểm. Do điểm cao nhất bằng chính nó (không thể lớn hơn chính nó), điều kiện này trả về tập rỗng (nếu sửa thành >= ALL mới đúng). <br>\nTruy vấn con (Select max(DiemTB) From Hocvien) trả về một giá trị duy nhất là điểm trung bình cao nhất. Mệnh đề Where DiemTB >= ... sẽ lọc ra đúng học viên đạt điểm cao nhất đó. <br> \nD sai do Lỗi cú pháp SQL do không thể bọc câu truy vấn subquery trực tiếp bên trong hàm MAX().",
+      "createdAt": "2026-11-10T12:16:13.514Z",
+      "updatedAt": "2026-11-11T05:13:33.293Z"
     },
     {
       "id": "1794312973523",
