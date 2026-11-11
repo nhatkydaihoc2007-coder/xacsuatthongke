@@ -591,7 +591,7 @@
       "choices": [
         {
           "text": "Ràng buộc miền giá trị",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Ràng buộc thực thể",
@@ -599,7 +599,7 @@
         },
         {
           "text": "Ràng buộc toàn vẹn ngữ nghĩa",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Ràng buộc khóa",
@@ -607,7 +607,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:19:19.869Z"
+      "createdAt": "2026-11-11T09:19:19.869Z",
+      "updatedAt": "2026-11-11T14:12:53.116Z"
     },
     {
       "id": "1794388759875",
