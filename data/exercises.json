@@ -2180,8 +2180,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:15:39.182Z"
+      "solution": "Các phép toán đòi hỏi tính khả hợp trong đại số quan hệ gồm: Phép hợp (∪), Phép giao (∩), và Phép trừ (-).",
+      "createdAt": "2026-11-10T12:15:39.182Z",
+      "updatedAt": "2026-11-11T06:06:07.555Z"
     },
     {
       "id": "1794312939193",
