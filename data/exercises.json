@@ -2082,33 +2082,6 @@
       "createdAt": "2026-11-10T18:43:42.340Z"
     },
     {
-      "id": "1794336222345",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Cho lược đồ quan hệ $R(A, B, C, D)$ trong đó với bất kỳ cặp dòng dữ liệu (tuple) $r_1 \\neq r_2$ ta đều có $r_1[A, B, C] \\neq r_2[A, B, C]$. Phát biểu nào sau đây đúng?",
-      "choices": [
-        {
-          "text": "$\\{A\\}, \\{B\\},$ và $\\{C\\}$ là 3 khóa (key) của $R$",
-          "correct": false
-        },
-        {
-          "text": "$\\{A, B, C\\}$ là khóa của $R$",
-          "correct": false
-        },
-        {
-          "text": "$\\{A, B, C\\}$ là siêu khóa của $R$",
-          "correct": true
-        },
-        {
-          "text": "$\\{D\\}$ là khóa ngoại (foreign key) của $R$",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T18:43:42.340Z",
-      "updatedAt": "2026-11-11T05:42:37.796Z"
-    },
-    {
       "id": "1794336222347",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
