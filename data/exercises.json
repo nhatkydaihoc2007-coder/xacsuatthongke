@@ -541,32 +541,6 @@
       "updatedAt": "2026-11-11T14:12:53.116Z"
     },
     {
-      "id": "1794388759875",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Ràng buộc khóa ngoại cần được kiểm tra khi thực hiện thao tác nào sau đây?",
-      "choices": [
-        {
-          "text": "Truy vấn thông tin từ cơ sở dữ liệu (dùng lệnh SELECT)",
-          "correct": false
-        },
-        {
-          "text": "Thêm một mẫu tin mới vào quan hệ bị tham chiếu (referred relation)",
-          "correct": false
-        },
-        {
-          "text": "Xóa một mẫu tin từ quan hệ bị tham chiếu (referred relation)",
-          "correct": true
-        },
-        {
-          "text": "Xóa một mẫu tin từ quan hệ tham chiếu (referring relation)",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:19:19.869Z"
-    },
-    {
       "id": "1794388759876",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
