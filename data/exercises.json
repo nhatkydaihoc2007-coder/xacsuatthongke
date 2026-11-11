@@ -5337,11 +5337,11 @@
       "choices": [
         {
           "text": "Khóa chính được chọn là khóa có ít thuộc tính nhất",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Khóa chính được chọn bất kỳ từ các khóa",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Khóa chính được chọn từ tất cả các khóa",
@@ -5353,7 +5353,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:54:57.488Z"
+      "createdAt": "2026-11-10T06:54:57.488Z",
+      "updatedAt": "2026-11-11T15:07:28.676Z"
     },
     {
       "id": "1794293697496",
