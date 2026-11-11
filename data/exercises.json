@@ -1166,7 +1166,7 @@
       "id": "1794336198380",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
-      "question": "Cho sơ đồ thực thể kết hợp mở rộng sau: \n\nLựa chọn nào sau đây là đúng khi ánh xạ sơ đồ trên thành lược đồ quan hệ?",
+      "question": "Cho sơ đồ thực thể kết hợp mở rộng sau:  <br> \n<img width=\"800\" height=\"317\" alt=\"image\" src=\"https://github.com/user-attachments/assets/27dba4aa-bc68-40aa-8c36-69b367b64f60\" />\n<br> Lựa chọn nào sau đây là đúng khi ánh xạ sơ đồ trên thành lược đồ quan hệ?",
       "choices": [
         {
           "text": "$\\textbf{PART}(\\underline{\\text{Part\\_no}}, \\text{Description})$ <br> <strong>MANUFACTURED\\_PART</strong>(<u>Part\\_no</u>, Drawing\\_no, Batch\\_no, Manufacture\\_date)",
@@ -1186,7 +1186,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T18:43:18.370Z"
+      "createdAt": "2026-11-10T18:43:18.370Z",
+      "updatedAt": "2026-11-11T03:12:47.311Z"
     },
     {
       "id": "1794336198381",
