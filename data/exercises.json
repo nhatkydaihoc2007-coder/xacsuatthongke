@@ -14,7 +14,7 @@
     {
       "id": "1794388836740",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Thành phần nào sau đây bắt buộc phải xuất hiện trong câu lệnh CREATE TABLE?",
       "choices": [
         {
@@ -35,12 +35,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836741",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Nhóm ngôn ngữ định nghĩa dữ liệu không bao gồm từ khóa nào sau đây?",
       "choices": [
         {
@@ -61,12 +62,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836742",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Chỉ mục (Index) được tạo ra nhằm mục đích nào sau đây?",
       "choices": [
         {
@@ -87,12 +89,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836743",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Câu lệnh nào sau đây được dùng để sắp xếp các dòng trong câu lệnh SELECT?",
       "choices": [
         {
@@ -113,12 +116,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836744",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Chọn thứ tự đúng của các toán tử trong câu lệnh truy vấn trong SQL?",
       "choices": [
         {
@@ -139,12 +143,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836745",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Câu nào sau đây không phải là mục đích của việc tạo bảng ảo (view)?",
       "choices": [
         {
@@ -165,12 +170,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836746",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Mệnh đề điều kiện nào sau đây cho kết quả là TRUE?",
       "choices": [
         {
@@ -191,12 +197,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836747",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Truy vấn con không thể xuất hiện trong câu lệnh nào sau đây?",
       "choices": [
         {
@@ -217,12 +224,13 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z"
+      "createdAt": "2026-11-11T09:20:36.740Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388836748",
       "subject": "Cơ sở dữ liệu",
-      "chapter": "",
+      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
       "question": "Cho quan hệ PROJECT (PNum, PName, PLocation, DNumber). Với các dự án có PNum = 277, hãy cập nhật PLocation = \"Phu Yen\" và DNumber = 78. Hãy chọn câu lệnh đúng trong các câu sau đây?",
       "choices": [
         {
@@ -243,7 +251,8 @@
         }
       ],
       "solution": "- Các trường cần cập nhật sau từ khóa <code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">SET</code> phải được phân tách bằng dấu phẩy. <br> \n- Điều kiện lọc bản ghi cần cập nhật được đặt sau từ khóa <code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">WHERE</code>. <br> \nĐối chiếu với đề bài, câu lệnh đúng là phương án A.",
-      "createdAt": "2026-11-11T09:20:36.741Z"
+      "createdAt": "2026-11-11T09:20:36.741Z",
+      "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
       "id": "1794388792071",
