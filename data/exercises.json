@@ -12,6 +12,266 @@
   ],
   "exercises": [
     {
+      "id": "1794388735113",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "ERD là viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Entity Relationship Diagram",
+          "correct": true
+        },
+        {
+          "text": "Entity Relation Diagram",
+          "correct": false
+        },
+        {
+          "text": "Entity Related Diagram",
+          "correct": false
+        },
+        {
+          "text": "Enhanced Relationship Database",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.113Z"
+    },
+    {
+      "id": "1794388735114",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Mỗi đặc trưng của thực thể được gọi là gì?",
+      "choices": [
+        {
+          "text": "Liên kết",
+          "correct": false
+        },
+        {
+          "text": "Thuộc tính",
+          "correct": true
+        },
+        {
+          "text": "Quan hệ",
+          "correct": false
+        },
+        {
+          "text": "Miền giá trị",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.113Z"
+    },
+    {
+      "id": "1794388735115",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Thuộc tính tổ hợp là gì?",
+      "choices": [
+        {
+          "text": "Là thuộc tính có thể phân thành nhiều thuộc tính nhỏ hơn",
+          "correct": true
+        },
+        {
+          "text": "Là thuộc tính có thể có nhiều giá trị khác nhau",
+          "correct": false
+        },
+        {
+          "text": "Là thuộc tính được tính toán từ các thuộc tính khác",
+          "correct": false
+        },
+        {
+          "text": "Là thuộc tính nằm trên liên kết",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.113Z"
+    },
+    {
+      "id": "1794388735116",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Phát biểu nào sau đây sai?",
+      "choices": [
+        {
+          "text": "Một tập thực thể có thể có nhiều khóa",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính là khóa có ít thuộc tính nhất",
+          "correct": false
+        },
+        {
+          "text": "Khóa là tập các thuộc tính có khả năng phân biệt 2 thực thể bất kì trong tập thực thể",
+          "correct": false
+        },
+        {
+          "text": "Một tập thực thể có thể có nhiều khóa chính",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.113Z"
+    },
+    {
+      "id": "1794388735117",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Lựa chọn nào sau đây được sử dụng để biểu diễn thuộc tính dẫn xuất trong mô hình thực thể kết hợp?",
+      "choices": [
+        {
+          "text": "Hình thoi",
+          "correct": false
+        },
+        {
+          "text": "Hình bầu dục nét đứt",
+          "correct": true
+        },
+        {
+          "text": "Hình chữ nhật",
+          "correct": false
+        },
+        {
+          "text": "Hình vuông",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.113Z"
+    },
+    {
+      "id": "1794388735118",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Trong mô hình thực thể kết hợp, có tối đa bao nhiêu tập thực thể có thể xuất hiện trong một liên kết?",
+      "choices": [
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "Vô số",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.113Z"
+    },
+    {
+      "id": "1794388735120",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Chuyên biệt hóa (Specialization) là gì?",
+      "choices": [
+        {
+          "text": "Là quá trình định nghĩa một tập các lớp con cho một tập thực thể",
+          "correct": true
+        },
+        {
+          "text": "Là quá trình tạo ra một lớp chung có tất cả các đặc điểm giống nhau của các tập thực thể hiện đang có",
+          "correct": false
+        },
+        {
+          "text": "Là quá trình xác định các thuộc tính cho một tập thực thể",
+          "correct": false
+        },
+        {
+          "text": "Là quá trình xác định khóa chính cho một tập thực thể",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.114Z"
+    },
+    {
+      "id": "1794388735121",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Ràng buộc về tính tách biệt (disjointness) trả lời cho câu hỏi nào sau đây?",
+      "choices": [
+        {
+          "text": "Mỗi thể hiện của lớp cha có phải là thành viên của lớp con hay không",
+          "correct": false
+        },
+        {
+          "text": "Mỗi thể hiện của lớp cha có đồng thời là thành viên của cả 2 hay nhiều lớp con hay không",
+          "correct": true
+        },
+        {
+          "text": "Có tồn tại lớp cha chung cho các tập thực thể đang có hay không",
+          "correct": false
+        },
+        {
+          "text": "Có tồn tại các lớp con cho một tập thực thể đang có hay không",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.114Z"
+    },
+    {
+      "id": "1794388735122",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Liên kết \"Mỗi sinh viên có thể tham gia nhiều khóa học, mỗi khóa học có thể có nhiều sinh viên tham gia\" thuộc loại liên kết gì?",
+      "choices": [
+        {
+          "text": "Một – nhiều",
+          "correct": false
+        },
+        {
+          "text": "Một – một",
+          "correct": false
+        },
+        {
+          "text": "Nhiều – một",
+          "correct": false
+        },
+        {
+          "text": "Nhiều – nhiều",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.114Z"
+    },
+    {
+      "id": "1794388735123",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
+      "question": "Một sinh viên có thể tham gia nhiều khóa học, một khóa học có thể có nhiều sinh viên tham gia. Ngày hoàn thành khóa học của sinh viên được biểu diễn như thế nào trong sơ đồ ERD?",
+      "choices": [
+        {
+          "text": "Ngày hoàn thành là một thuộc tính của tập thực thể sinh viên",
+          "correct": false
+        },
+        {
+          "text": "Ngày hoàn thành là một thuộc tính của tập thực thể khóa học",
+          "correct": false
+        },
+        {
+          "text": "Ngày hoàn thành là một thuộc tính trên liên kết giữa 2 tập thực thể sinh viên và khóa học",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:18:55.114Z"
+    },
+    {
       "id": "1794388701265",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
