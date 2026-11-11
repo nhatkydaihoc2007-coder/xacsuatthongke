@@ -249,7 +249,7 @@
       "id": "1794336270422",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "Câu lệnh $\\text{SELECT } * \\text{ FROM Student WHERE FirstName LIKE `\\_o\\%n'}$ thực hiện thao tác nào sau đây?",
+      "question": "Câu lệnh $\\text{SELECT } * \\text{ FROM Student WHERE FirstName LIKE '\\_o\\%n'}$ thực hiện thao tác nào sau đây?",
       "choices": [
         {
           "text": "Hiển thị các dòng trong bảng Student mà giá trị tại cột FirstName có chứa kí tự 'o' ở vị trí thứ 2 và kí tự 'n' ở cuối cùng",
@@ -269,7 +269,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T18:44:30.413Z"
+      "createdAt": "2026-11-10T18:44:30.413Z",
+      "updatedAt": "2026-11-11T02:45:00.675Z"
     },
     {
       "id": "1794336270423",
