@@ -2498,7 +2498,7 @@
       "question": "Cho sơ đồ thực thể kết hợp mở rộng sau:  <br> \n<img width=\"800\" height=\"317\" alt=\"image\" src=\"https://github.com/user-attachments/assets/27dba4aa-bc68-40aa-8c36-69b367b64f60\" />\n<br> Lựa chọn nào sau đây là đúng khi ánh xạ sơ đồ trên thành lược đồ quan hệ?",
       "choices": [
         {
-          "text": "$\\textbf{PART}(\\underline{\\text{Part_no}}, \\text{Description})$ <br> <strong>MANUFACTURED_PART</strong>(<u>Part_no</u>, Drawing_no, Batch_no, Manufacture_date)",
+          "text": "$\\textbf{PART}(\\underline{\\text{Part_no}}, \\text{Description})$ <br> <strong>MANUFACTURED_PART</strong>(<u>Part_no</u>, Drawing_no, Batch_no, Manufacture_date) <br>\n<strong>PURCHASED_PART</strong>(<u>Part_no</u>, Supplier_name, List_price)",
           "correct": true
         },
         {
@@ -2516,7 +2516,7 @@
       ],
       "solution": "",
       "createdAt": "2026-11-10T18:43:18.370Z",
-      "updatedAt": "2026-11-11T03:14:57.577Z"
+      "updatedAt": "2026-11-11T15:04:47.228Z"
     },
     {
       "id": "1794336198381",
