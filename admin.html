@@ -941,7 +941,10 @@ async function saveEdit() {
 
 // ── Import LaTeX ──
 async function doImport() {
-  const raw     = document.getElementById('importLatex').value;
+  // Che các khối verbatim/\verb trước khi tách \begin{ex}/\loigiai{…} (code C/Python có thể có { } không cân bằng)
+  const VM = [];
+  const raw = document.getElementById('importLatex').value.replace(/\\begin\{(verbatim\*?|lstlisting)\}(?:\[[^\]]*\])?[\s\S]*?\\end\{\1\}|\\verb\*?([^a-zA-Z\s*])[^\n]*?\2/g, m => { VM.push(m); return '\x01V' + (VM.length - 1) + '\x01'; });
+  const unV = t => t.replace(/\x01V(\d+)\x01/g, (_, i) => VM[+i]);
   const subj    = document.getElementById('importSubj').value;
   const chapter = document.getElementById('importChap').value || '';
   const reg  = /\\begin\{ex\}([\s\S]*?)\\end\{ex\}/g;
@@ -961,6 +964,7 @@ async function doImport() {
       }
       sol = after.slice(0, i).trim();
     } else { qRaw = blk.trim(); }
+    qRaw = unV(qRaw); sol = unV(sol);
     if (!qRaw) continue;
     const parsed = parseChoice(qRaw);
     const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(qRaw);
@@ -974,8 +978,9 @@ async function doImport() {
   }
 
   if (!cnt && raw.trim()) {
-    const parsed = parseChoice(raw.trim());
-    const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(raw.trim());
+    const rawU = unV(raw.trim());
+    const parsed = parseChoice(rawU);
+    const questionHtml = parsed ? ctexInner(parsed.before) : ctexInner(rawU);
     const choices = parsed ? parsed.choices.map(c => ({ text: ctexInner(c.text), correct: c.correct })) : [];
     newOnes.push({ id:Date.now().toString(), subject:subj, chapter, question:questionHtml, choices, solution:'', createdAt:new Date().toISOString() });
     cnt = 1;
@@ -1050,9 +1055,19 @@ function ctexInner(raw) {
   let t = raw;
   const mb = [];
   function protect(s) {
-    s = s.replace(/\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\1\}/g, (match, env) => {
-      mb.push(env === 'cases' ? '\\[' + match + '\\]' : match);
-      return '\x00M'+(mb.length-1)+'\x00';
+    s = s.replace(/((?:[A-Za-z0-9{}_^()\[\]+\-*\/.,<>|' ]|\\[a-zA-Z])*=[ \t]*)?\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\2\}/g, (match, lead, env) => {
+      lead = lead || '';
+      const body = match.slice(lead.length);
+      if (env === 'cases') {
+        // "R \times S= \begin{cases}…" gõ không có $ → gộp phần công thức đứng trước dấu = cùng dòng vào chung khối toán
+        let pre = '', math = lead;
+        const w = lead.match(/^((?:[A-Za-z]{2,}[ ]+)+)/);
+        if (w && lead.length > w[1].length) { pre = w[1]; math = lead.slice(pre.length); }
+        mb.push('\\[' + math + body + '\\]');
+        return pre + '\x00M' + (mb.length - 1) + '\x00';
+      }
+      mb.push(body);
+      return lead + '\x00M' + (mb.length - 1) + '\x00';
     });
     s = s.replace(/\\\[([\s\S]*?)\\\]/g, (_,m)=>{ mb.push('\\['+m+'\\]'); return '\x00M'+(mb.length-1)+'\x00'; });
     s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_,m)=>{ mb.push('$$'+m+'$$');   return '\x00M'+(mb.length-1)+'\x00'; });
@@ -1061,6 +1076,15 @@ function ctexInner(raw) {
     return s;
   }
   function restore(s){ let p; do{p=s;s=s.replace(/\x00M(\d+)\x00/g,(_,i)=>mb[+i]);}while(s!==p);return s; }
+  // \begin{verbatim}…\end{verbatim} (cả verbatim*, lstlisting) và \verb|…| : giữ nguyên từng ký tự, không xử lý LaTeX/toán
+  const escH = c => c.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const stash = h => { mb.push(h); return '\x00M' + (mb.length - 1) + '\x00'; };
+  t = t.replace(/\\begin\{(verbatim\*?|lstlisting)\}(?:\[[^\]]*\])?([\s\S]*?)\\end\{\1\}/g, (_, env, code) => {
+    code = code.replace(/^[ \t]*\r?\n/, '').replace(/\r?\n[ \t]*$/, '');
+    return stash('<pre style="background:rgba(128,128,128,.12);padding:12px 14px;border-radius:8px;overflow-x:auto;font-family:\'Fira Code\',monospace;font-size:.85em;line-height:1.55;white-space:pre;margin:10px 0;tab-size:4"><code>' + escH(code) + '</code></pre>');
+  });
+  t = t.replace(/\\verb\*?([^a-zA-Z\s*])([^\n]*?)\1/g, (_, d, code) =>
+    stash('<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;white-space:pre-wrap">' + escH(code) + '</code>'));
   t = t.replace(/\\dfrac/g,'\\frac');
   t = t.replace(/\\displaystyle\s*/g,'');
   t = protect(t);
@@ -1076,7 +1100,7 @@ function ctexInner(raw) {
       if (idx === -1) { out += s.slice(i); break; }
       out += s.slice(i, idx);
       // brace-count từ sau marker
-      let start = idx + 5, depth = 1, j = start;
+      let start = idx + 4, depth = 1, j = start;   // '\x00TT\x00' dài 4 ký tự (trước đây +5 làm mất ký tự đầu)
       for (; j < s.length && depth > 0; j++) {
         if      (s[j] === '\\' && (s[j+1] === '{' || s[j+1] === '}')) j++; // \{ \} literal
         else if (s[j] === '{') depth++;
@@ -1086,6 +1110,7 @@ function ctexInner(raw) {
       // Trong texttt: escape < > TRƯỚC, rồi mới chèn <br>/&nbsp; để không bị escape ngược
       const rendered = inner
         .replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/\\_/g, '_').replace(/\\%/g, '%').replace(/\\textbackslash\s*(\{\})?/g, '\\')
         .replace(/\\#/g, '#')
         .replace(/\\&/g, '&amp;')
         .replace(/\\setminus/g, '\\')
@@ -1093,7 +1118,8 @@ function ctexInner(raw) {
         .replace(/\\indent\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
         .replace(/\\quad\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
         .replace(/\\\\/g, '<br>');
-      out += '<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all">' + rendered + '</code>';
+      mb.push('<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all">' + rendered + '</code>');
+      out += '\x00M' + (mb.length - 1) + '\x00';
       i = j;
     }
     return out;
@@ -1228,34 +1254,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Enter' && document.activeElement === document.getElementById('cfgToken')) connectGitHub();
   if (e.key === 'Escape') closeEdit();
 });
-</script>
-
-<!-- ══ Nút lên đầu / xuống cuối trang ══ -->
-<style>
-.scroll-fab { position: fixed; right: 16px; bottom: 84px; z-index: 90; display: flex; flex-direction: column; gap: 8px; }
-.scroll-fab button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--border2); background: var(--surface); color: var(--text); font-size: 18px; line-height: 1; cursor: pointer; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity .2s, background .15s, color .15s; }
-.scroll-fab button.show { opacity: .95; pointer-events: auto; }
-.scroll-fab button:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-</style>
-<div class="scroll-fab">
-  <button id="goTop" title="Lên đầu trang" aria-label="Lên đầu trang">↑</button>
-  <button id="goBottom" title="Xuống cuối trang" aria-label="Xuống cuối trang">↓</button>
-</div>
-<script>
-(function () {
-  const up = document.getElementById('goTop'), down = document.getElementById('goBottom');
-  function update() {
-    const y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
-    up.classList.toggle('show', y > 300);
-    down.classList.toggle('show', max - y > 300);
-  }
-  up.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  down.addEventListener('click', () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }));
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
-  setInterval(update, 1000);   // nội dung tải/lọc xong làm trang dài ra
-  update();
-})();
 </script>
 </body>
 </html>
