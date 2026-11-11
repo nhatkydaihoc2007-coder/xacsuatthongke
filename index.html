@@ -11,6 +11,7 @@ window.MathJax = {
   startup: { typeset: false }
 };
 </script>
+<script src="author-config.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async onload="window.__mjReady&&window.__mjReady()"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fira+Code:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -699,22 +700,20 @@ const DATA_FILE  = 'data/exercises.json';
 // ────────────────────────────────────
 
 // ── THÔNG TIN TÁC GIẢ & ỦNG HỘ: điền vào đây (để trống mục nào thì mục đó ẩn) ──
-const AUTHOR = {
+const AUTHOR = Object.assign({
   role:     'Tác giả & người duy trì kho bài tập',
-  name:     'NKĐH',                         // ← tên hiển thị
+  name:     'NKĐH',
   sub:      'một người rảnh rỗi',
   bio:      'Kho bài tập này miễn phí cho mọi người. Nếu thấy hữu ích, bạn có thể mời mình một ly cà phê để duy trì và cập nhật thêm bài.',
-  bankName: 'Techcombank',                            // ← VD: 'VPBank'
-  bankCode: '',                            // ← mã ngân hàng cho VietQR, VD: 'VPB', 'MB', 'VCB', 'TCB' (có thể để trống nếu dùng qrImage)
-  accNo:    '9344903836',                            // ← số tài khoản
-  accName:  '',                            // ← tên chủ tài khoản (IN HOA, không dấu)
-  qrImage:  'https://i.ibb.co/fVDX03FB/stktcb.png',                            // ← (tùy chọn) đường dẫn ảnh QR riêng, VD: 'donate-qr.png'. Trống = tự tạo QR bằng VietQR
-  links: [                                 // ← (tùy chọn) liên kết
+  bankName: 'Techcombank',
+  bankCode: '',                            // mã VietQR (VD 'TCB'); để trống nếu đã có qrImage
+  accNo:    '9344903836',
+  accName:  '',
+  qrImage:  'https://i.ibb.co/fVDX03FB/stktcb.png',
+  links: [
     { label: 'Blog Nhật Ký Đại Học', url: 'https://nhatkydaihoc2007.blogspot.com' },
-    // { label: 'Facebook', url: 'https://facebook.com/...' },
-    // { label: 'nhatkydaihoc2007@gmail.com', url: 'mailto:nhatkydaihoc2007@gmail.com' },
   ]
-};
+}, window.AUTHOR_CONFIG || {});   // (tùy chọn) file author-config.js cạnh index.html sẽ ghi đè các mục ở trên
 function renderAbout() {
   const A = AUTHOR, e = x => String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
   const donate = !!A.accNo;
@@ -1080,9 +1079,18 @@ function renderChoiceHtml(choices) {
 function ctexInner(raw) {
   if (!raw) return '';
   let t = raw;
+  const mathBlocks = [];
+  // \begin{verbatim}…\end{verbatim} (cả verbatim*, lstlisting) và \verb|…| : giữ nguyên từng ký tự, không xử lý LaTeX/toán
+  const escH = c => c.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const stash = h => { mathBlocks.push(h); return '\x00M' + (mathBlocks.length - 1) + '\x00'; };
+  t = t.replace(/\\begin\{(verbatim\*?|lstlisting)\}(?:\[[^\]]*\])?([\s\S]*?)\\end\{\1\}/g, (_, env, code) => {
+    code = code.replace(/^[ \t]*\r?\n/, '').replace(/\r?\n[ \t]*$/, '');
+    return stash('<pre style="background:rgba(128,128,128,.12);padding:12px 14px;border-radius:8px;overflow-x:auto;font-family:\'Fira Code\',monospace;font-size:.85em;line-height:1.55;white-space:pre;margin:10px 0;tab-size:4"><code>' + escH(code) + '</code></pre>');
+  });
+  t = t.replace(/\\verb\*?([^a-zA-Z\s*])([^\n]*?)\1/g, (_, d, code) =>
+    stash('<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;white-space:pre-wrap">' + escH(code) + '</code>'));
   t = t.replace(/\\dfrac/g, '\\frac');
   t = t.replace(/\\displaystyle\s*/g, '');
-  const mathBlocks = [];
   function protect(s) {
     s = s.replace(/((?:[A-Za-z0-9{}_^()\[\]+\-*\/.,<>|' ]|\\[a-zA-Z])*=[ \t]*)?\\begin\{(align\*?|cases|equation\*?)\}([\s\S]*?)\\end\{\2\}/g, (match, lead, env) => {
       lead = lead || '';
@@ -1120,7 +1128,7 @@ function ctexInner(raw) {
       const idx = s.indexOf('\x00TT\x00', i);
       if (idx === -1) { out += s.slice(i); break; }
       out += s.slice(i, idx);
-      let start = idx + 5, depth = 1, j = start;
+      let start = idx + 4, depth = 1, j = start;   // '\x00TT\x00' dài 4 ký tự (trước đây +5 làm mất ký tự đầu)
       for (; j < s.length && depth > 0; j++) {
         if      (s[j] === '\\' && (s[j+1] === '{' || s[j+1] === '}')) j++;
         else if (s[j] === '{') depth++;
@@ -1129,6 +1137,7 @@ function ctexInner(raw) {
       const inner = s.slice(start, j - 1);
       const rendered = inner
         .replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/\\_/g, '_').replace(/\\%/g, '%').replace(/\\textbackslash\s*(\{\})?/g, '\\')
         .replace(/\\#/g, '#')
         .replace(/\\&/g, '&amp;')
         .replace(/\\setminus/g, '\\')
@@ -1136,7 +1145,8 @@ function ctexInner(raw) {
         .replace(/\\indent\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
         .replace(/\\quad\s*/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
         .replace(/\\\\/g, '<br>');
-      out += '<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all">' + rendered + '</code>';
+      mathBlocks.push('<code style="font-family:\'Fira Code\',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all">' + rendered + '</code>');
+      out += '\x00M' + (mathBlocks.length - 1) + '\x00';
       i = j;
     }
     return out;
