@@ -383,7 +383,7 @@
       "id": "1794336270427",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "Kết quả của câu lệnh sau là gì?\nverbatim\ncreate view BangAo as\n    select MaKhoaHoc, SUM(SoGioThamGia) as TongSoGioThamGia\n    from THAMGIA\n    group by MaKhoaHoc\n\nselect TenKhoaHoc\nfrom KHOAHOC\nwhere MaKhoaHoc in\n    (select MaKhoaHoc\n     from BangAo\n     where TongSoGioThamGia in\n         (select MIN(TongSoGioThamGia)\n          from BangAo))\nverbatim",
+      "question": "[60] Kết quả của câu lệnh sau là gì?\n<pre style=\"background:rgba(128,128,128,.12);padding:12px 14px;border-radius:8px;overflow-x:auto;font-family:'Fira Code',monospace;font-size:.85em;line-height:1.55;white-space:pre;margin:10px 0;tab-size:4\"><code>create view BangAo as\n    select MaKhoaHoc, SUM(SoGioThamGia) as TongSoGioThamGia\n    from THAMGIA\n    group by MaKhoaHoc\n\nselect TenKhoaHoc\nfrom KHOAHOC\nwhere MaKhoaHoc in\n    (select MaKhoaHoc\n     from BangAo\n     where TongSoGioThamGia in\n         (select MIN(TongSoGioThamGia)\n          from BangAo))</code></pre>",
       "choices": [
         {
           "text": "Soan thao van ban",
@@ -403,7 +403,8 @@
         }
       ],
       "solution": "Bảng BangAo \n<div style=\"text-align:center;margin:8px 0\">\n<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">MaKhoaHoc</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">TongSoGioThamGia</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">1</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">22</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">2</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">12</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">3</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">27</td></tr></table></div>\n</div>\nMIN(TongSoGioThamGia) $=MIN(22,12,27)=12 \\to$ ứng với MaKhoaHoc$=2 \\to$ Viet de cuong luan van",
-      "createdAt": "2026-11-10T18:44:30.413Z"
+      "createdAt": "2026-11-10T18:44:30.413Z",
+      "updatedAt": "2026-11-11T03:05:04.352Z"
     },
     {
       "id": "1794336246177",
