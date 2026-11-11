@@ -1919,9 +1919,6 @@ async function exportDocx(o, say) {
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden && (!EXM || EXM.done)) closeExam(); });
-
-// ── Khởi động (đặt cuối để mọi biến đã được khai báo) ──
-loadData();
 </script>
   <!-- ══ Nút lên đầu / xuống cuối trang ══ -->
 <style>
@@ -1950,5 +1947,7 @@ loadData();
   update();
 })();
 </script>
+// ── Khởi động (đặt cuối để mọi biến đã được khai báo) ──
+loadData();
 </body>
 </html>
