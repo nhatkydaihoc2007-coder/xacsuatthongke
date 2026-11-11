@@ -637,8 +637,9 @@
           "correct": false
         }
       ],
-      "solution": "Hai thuộc tính \\(D\\) và \\(G\\) không bao giờ xuất hiện ở vế phải của bất kỳ PTH nào. <br> \nNếu một thuộc tính không nằm ở vế phải của bất kỳ PTH đề bài cho, thì nó không thể tự sinh ra. 1. Muốn vế phải của một đáp án chứa thuộc tính đó (hoặc chứa thuộc tính cần nó để sinh ra), thì vế trái của đáp án đó bắt buộc phải có sẵn nó. <br> \nKhi đó ta loại nhanh ngay được đáp án A và D.  <br> \nXét (\\(BCD \\to AB\\)): Để suy ra \\(A\\), ta cần có \\(CH\\) (vì \\(CH \\to A\\)). Để có \\(H\\), ta cần có \\(EG\\) (vì \\(EG \\to H\\)). Nhưng vế trái không có \\(G\\) nên không bao giờ tạo ra \\(H\\) và \\(A\\) được \\(\\rightarrow \\) Sai.\n\\(\\Rightarrow \\)",
-      "createdAt": "2026-11-10T18:44:06.177Z"
+      "solution": "Hai thuộc tính \\(D\\) và \\(G\\) không bao giờ xuất hiện ở vế phải của bất kỳ PTH nào. <br> \nNếu một thuộc tính không nằm ở vế phải của bất kỳ PTH đề bài cho, thì nó không thể tự sinh ra. 1. Muốn vế phải của một đáp án chứa thuộc tính đó (hoặc chứa thuộc tính cần nó để sinh ra), thì vế trái của đáp án đó bắt buộc phải có sẵn nó. <br> \nKhi đó ta loại nhanh ngay được đáp án A và D.  <br> \nXét (\\(BCD \\to AB\\)): Để suy ra \\(A\\), ta cần có \\(CH\\) (vì \\(CH \\to A\\)). Để có \\(H\\), ta cần có \\(EG\\) (vì \\(EG \\to H\\)). Nhưng vế trái không có \\(G\\) nên không bao giờ tạo ra \\(H\\) và \\(A\\) được \\(\\rightarrow \\) Sai.",
+      "createdAt": "2026-11-10T18:44:06.177Z",
+      "updatedAt": "2026-11-11T08:28:22.329Z"
     },
     {
       "id": "1794336246186",
