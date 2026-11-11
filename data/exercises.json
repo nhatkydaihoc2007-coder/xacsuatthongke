@@ -2153,8 +2153,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:15:39.182Z"
+      "solution": "NGNH (thuộc quan hệ LOP) <br> \nNGSINH (thuộc quan hệ HOCVIEN). <br> \nMối quan hệ so sánh giữa 2 thuộc tính khác nhau (NGNH và NGSINH) $\\rightarrow$ Liên thuộc tính. <br> \nHai thuộc tính này nằm ở 2 bảng khác nhau (LOP và HOCVIEN) $\\rightarrow$ Liên quan hệ.",
+      "createdAt": "2026-11-10T12:15:39.182Z",
+      "updatedAt": "2026-11-11T06:05:23.303Z"
     },
     {
       "id": "1794312939192",
