@@ -147,33 +147,6 @@
       "updatedAt": "2026-11-11T15:31:45.575Z"
     },
     {
-      "id": "1794388836746",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "Mệnh đề điều kiện nào sau đây cho kết quả là TRUE?",
-      "choices": [
-        {
-          "text": "(UNKNOWN AND TRUE) OR (UNKNOWN AND FALSE)",
-          "correct": false
-        },
-        {
-          "text": "(UNKNOWN OR TRUE) OR (UNKNOWN AND FALSE)",
-          "correct": true
-        },
-        {
-          "text": "(UNKNOWN AND FALSE) AND (UNKNOWN OR FALSE)",
-          "correct": false
-        },
-        {
-          "text": "Cả 3 câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:20:36.740Z",
-      "updatedAt": "2026-11-11T15:31:45.575Z"
-    },
-    {
       "id": "1794388836747",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
