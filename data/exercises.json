@@ -356,7 +356,7 @@
       "id": "1794336270426",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "Kết quả của câu lệnh sau là bao nhiêu?\nverbatim\nselect SUM(SoGioThamGia)\nfrom THAMGIA\nwhere MaSinhVien in\n    (select MaSinhVien\n     from SINHVIEN\n     where TenSinhVien like '%h%')\nverbatim",
+      "question": "Kết quả của câu lệnh sau là bao nhiêu?\n<pre style=\"background:rgba(128,128,128,.12);padding:12px 14px;border-radius:8px;overflow-x:auto;font-family:'Fira Code',monospace;font-size:.85em;line-height:1.55;white-space:pre;margin:10px 0;tab-size:4\"><code>select SUM(SoGioThamGia)\nfrom THAMGIA\nwhere MaSinhVien in\n    (select MaSinhVien\n     from SINHVIEN\n     where TenSinhVien like '%h%')</code></pre>",
       "choices": [
         {
           "text": "51",
@@ -375,8 +375,9 @@
           "correct": true
         }
       ],
-      "solution": "<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">IKE '\\%h\\%'</code> Có nghĩa là tên sinh viên có chứa chữ h ở bất kỳ vị trí nào. <br> \ntruy vấn con trả về MaSinhVien$=\\{2,3\\}\\implies SUM=11+12+7=30$",
-      "createdAt": "2026-11-10T18:44:30.413Z"
+      "solution": "<code style=\"font-family:'Fira Code',monospace;background:rgba(128,128,128,.10);padding:2px 6px;border-radius:4px;font-size:0.9em;display:inline;white-space:pre-wrap;word-break:break-all\">LIKE '\\%h\\%'</code> Có nghĩa là tên sinh viên có chứa chữ h ở bất kỳ vị trí nào. <br> \ntruy vấn con trả về MaSinhVien$=\\{2,3\\}\\implies SUM=11+12+7=30$",
+      "createdAt": "2026-11-10T18:44:30.413Z",
+      "updatedAt": "2026-11-11T03:03:12.683Z"
     },
     {
       "id": "1794336270427",
