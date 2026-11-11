@@ -1667,24 +1667,25 @@
       "question": "Câu lệnh nào sau đây liệt kê danh sách nhân viên thuộc đơn vị mã số \"TT05\" và có lương từ 1000 đến 2000?",
       "choices": [
         {
-          "text": "SELECT MANV, HONV, TENNV FROM NHAN\\_VIEN WHERE (LUONG BETWEEN 1000 AND 2000) AND MADV = \"TT05\"",
+          "text": "SELECT MANV, HONV, TENNV FROM NHAN_VIEN WHERE (LUONG BETWEEN 1000 AND 2000) AND MADV = \"TT05\"",
           "correct": true
         },
         {
-          "text": "SELECT HONV, TENNV FROM NHAN\\_VIEN WHERE (1000<=LUONG<=2000) AND NV.MADV = \"TT05\"",
+          "text": "SELECT HONV, TENNV FROM NHAN_VIEN WHERE (1000<=LUONG<=2000) AND NV.MADV = \"TT05\"",
           "correct": false
         },
         {
-          "text": "SELECT MANV, HONV, TENNV FROM NHAN\\_VIEN WHERE (LUONG IS BETWEEN 1000 AND 2000) AND MADV = \"TT05\"",
+          "text": "SELECT MANV, HONV, TENNV FROM NHAN_VIEN WHERE (LUONG IS BETWEEN 1000 AND 2000) AND MADV = \"TT05\"",
           "correct": false
         },
         {
-          "text": "SELECT MANV, HONV, TENNV FROM NHAN\\_VIEN WHERE (LUONG BETWEEN 1000 AND 2000) AND MADV = TT05",
+          "text": "SELECT MANV, HONV, TENNV FROM NHAN_VIEN WHERE (LUONG BETWEEN 1000 AND 2000) AND MADV = TT05",
           "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T12:16:13.514Z"
+      "createdAt": "2026-11-10T12:16:13.514Z",
+      "updatedAt": "2026-11-11T08:42:38.830Z"
     },
     {
       "id": "1794312973518",
