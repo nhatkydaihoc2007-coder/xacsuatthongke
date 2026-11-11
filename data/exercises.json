@@ -878,7 +878,7 @@
       "id": "1794336222348",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Xét quan hệ $\\text{ThamGia}(\\text{\\underline{MaSinhVien}}, \\text{\\underline{MaKhoaHoc}}, \\text{SoGioThamGia})$ cho biết thông tin về thời gian tham gia mỗi khóa học của mỗi sinh viên với ràng buộc \"Mỗi sinh viên được tham gia tối đa là $3$ khóa học\". Thao tác nào sau đây không vi phạm ràng buộc này?",
+      "question": "Xét quan hệ ThamGia(<u>MaSinhVien</u>, <u>MaKhoaHoc</u>, SoGioThamGia) cho biết thông tin về thời gian tham gia mỗi khóa học của mỗi sinh viên với ràng buộc \"Mỗi sinh viên được tham gia tối đa là $3$ khóa học\". Thao tác nào sau đây không vi phạm ràng buộc này?",
       "choices": [
         {
           "text": "Thêm mới một bộ vào quan hệ $\\text{ThamGia}$",
@@ -898,7 +898,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T18:43:42.341Z"
+      "createdAt": "2026-11-10T18:43:42.341Z",
+      "updatedAt": "2026-11-11T03:06:35.441Z"
     },
     {
       "id": "1794336198369",
