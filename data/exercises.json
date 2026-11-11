@@ -3660,32 +3660,6 @@
       "createdAt": "2026-11-10T06:55:56.858Z"
     },
     {
-      "id": "1794293756864",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Cơ chế nào sau đây được áp dụng khi việc thêm mới dữ liệu vào bảng gây ra vi phạm ràng buộc toàn vẹn tham chiếu?",
-      "choices": [
-        {
-          "text": "Cơ chế mặc định",
-          "correct": true
-        },
-        {
-          "text": "Cơ chế thay thế",
-          "correct": false
-        },
-        {
-          "text": "Cơ chế thiết lập giá trị NULL",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:55:56.858Z"
-    },
-    {
       "id": "1794293756865",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
