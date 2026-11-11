@@ -1139,7 +1139,7 @@
       "id": "1794336198378",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
-      "question": "Cho EERD như sau:\n\nPhát biểu nào sau đây là ĐÚNG?",
+      "question": "Cho EERD như sau:\n<img width=\"625\" height=\"241\" alt=\"image\" src=\"https://github.com/user-attachments/assets/f50b40bb-bde6-4b03-a7e9-8b1bf9127c6c\" />\nPhát biểu nào sau đây là ĐÚNG?",
       "choices": [
         {
           "text": "Nhân viên tín dụng chỉ bao gồm tín dụng cá nhân và tín dụng doanh nghiệp",
@@ -1159,7 +1159,8 @@
         }
       ],
       "solution": "Hình tròn chứa chữ d đại diện cho ràng buộc phân rã rời rạc (disjoint constraint), có nghĩa là một thực thể cha (\"Nhân viên tín dụng\") chỉ có thể thuộc tối đa một trong các thực thể con (\"Cá nhân\" hoặc \"Doanh nghiệp\"), không thể đồng thời thuộc cả hai. <br> \nKý hiệu hình cung đơn (không có đường gạch đôi nối từ thực thể cha đến vòng tròn) thể hiện chuyên biệt hóa một phần, nghĩa là có thể có những \"Nhân viên tín dụng\" không thuộc nhóm \"Cá nhân\" cũng không thuộc nhóm \"Doanh nghiệp\". <br> \nTheo tính chất thừa kế trong mô hình EERD, thực thể con (ở đây là \"Nhân viên tín dụng cá nhân\") sẽ tự động thừa kế tất cả các thuộc tính và các mối quan hệ (mối liên hệ) của thực thể cha (\"Nhân viên tín dụng\").",
-      "createdAt": "2026-11-10T18:43:18.370Z"
+      "createdAt": "2026-11-10T18:43:18.370Z",
+      "updatedAt": "2026-11-11T03:10:38.779Z"
     },
     {
       "id": "1794336198380",
