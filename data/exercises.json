@@ -4086,11 +4086,11 @@
       "choices": [
         {
           "text": "Xác định yêu cầu về dữ liệu",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Mô hình hóa các yêu cầu về dữ liệu",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Tích hợp sơ đồ tổng thể về tổ chức dữ liệu",
@@ -4102,7 +4102,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:54:57.488Z"
+      "createdAt": "2026-11-10T06:54:57.488Z",
+      "updatedAt": "2026-11-11T08:22:06.752Z"
     },
     {
       "id": "1794293697499",
