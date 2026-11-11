@@ -254,32 +254,6 @@
       "createdAt": "2026-11-11T09:19:52.071Z"
     },
     {
-      "id": "1794388792072",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
-      "question": "Một phụ thuộc hàm được gọi là hiển nhiên trong trường hợp nào sau đây?",
-      "choices": [
-        {
-          "text": "Vế trái của phụ thuộc hàm là tập con của vế phải",
-          "correct": false
-        },
-        {
-          "text": "Vế trái và vế phải của phụ thuộc hàm có một số thuộc tính chung",
-          "correct": false
-        },
-        {
-          "text": "Vế phải của phụ thuộc hàm là tập con của vế trái",
-          "correct": true
-        },
-        {
-          "text": "Cả 3 câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:19:52.071Z"
-    },
-    {
       "id": "1794388792073",
       "subject": "Cơ sở dữ liệu",
       "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
