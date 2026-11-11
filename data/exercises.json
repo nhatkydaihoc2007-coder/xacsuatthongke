@@ -4076,7 +4076,7 @@
       "question": "Trách nhiệm của nhân viên quản trị CSDL là gì?",
       "choices": [
         {
-          "text": "Quyết định cấu trúc lưu trữ \\& chiến lược truy nhập",
+          "text": "Quyết định cấu trúc lưu trữ & chiến lược truy nhập",
           "correct": false
         },
         {
@@ -4093,7 +4093,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T12:14:13.420Z"
+      "createdAt": "2026-11-10T12:14:13.420Z",
+      "updatedAt": "2026-11-11T16:44:43.871Z"
     },
     {
       "id": "1794312853426",
