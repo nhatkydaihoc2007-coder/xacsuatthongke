@@ -610,32 +610,6 @@
       "createdAt": "2026-11-11T09:19:19.869Z"
     },
     {
-      "id": "1794388759874",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
-      "question": "Phát biểu Trưởng đơn vị phải là nhân viên của đơn vị đó thuộc loại ràng buộc gì?",
-      "choices": [
-        {
-          "text": "Ràng buộc miền giá trị",
-          "correct": false
-        },
-        {
-          "text": "Ràng buộc toàn vẹn tham chiếu",
-          "correct": true
-        },
-        {
-          "text": "Ràng buộc toàn vẹn ngữ nghĩa",
-          "correct": false
-        },
-        {
-          "text": "Ràng buộc giá trị NULL",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:19:19.869Z"
-    },
-    {
       "id": "1794388759875",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
