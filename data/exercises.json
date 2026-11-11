@@ -4018,32 +4018,6 @@
       "createdAt": "2026-11-10T12:14:13.420Z"
     },
     {
-      "id": "1794312853423",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Khó khăn khi triển khai hệ thống hướng cơ sở dữ liệu là gì?",
-      "choices": [
-        {
-          "text": "Dữ liệu bị trùng lắp",
-          "correct": false
-        },
-        {
-          "text": "Không dùng chung",
-          "correct": false
-        },
-        {
-          "text": "Truy cập hạn chế",
-          "correct": false
-        },
-        {
-          "text": "Thiết kế phức tạp",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:14:13.420Z"
-    },
-    {
       "id": "1794312853424",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
