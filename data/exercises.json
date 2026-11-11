@@ -12,6 +12,266 @@
   ],
   "exercises": [
     {
+      "id": "1794388759869",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Khóa chính (Primary Key) là gì?",
+      "choices": [
+        {
+          "text": "Là tên duy nhất cho bảng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Là số nguyên dùng để định danh cho một dòng trong bảng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Là định danh duy nhất cho một dòng trong bảng dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759870",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Mỗi bảng có thể có nhiều kết hợp khác nhau của các cột sao cho kết hợp đó xác định duy nhất một dòng trong bảng. Mỗi kết hợp như vậy được gọi là gì?",
+      "choices": [
+        {
+          "text": "Khóa ngoại (Foreign Key)",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính (Primary Key)",
+          "correct": false
+        },
+        {
+          "text": "Khóa phức hợp (Composite Key)",
+          "correct": false
+        },
+        {
+          "text": "Khóa dự tuyển (Candidate Key)",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759871",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Khác nhau giữa khóa chính (Primary Key) và khóa duy nhất (Unique Key) là gì?",
+      "choices": [
+        {
+          "text": "Khóa chính không cho phép giá trị NULL trong khi khóa duy nhất cho phép nhiều giá trị NULL",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính cho phép một giá trị NULL trong khi khóa duy nhất không cho phép giá trị NULL",
+          "correct": false
+        },
+        {
+          "text": "Khóa chính không cho phép giá trị NULL trong khi khóa duy nhất cho phép một giá trị NULL",
+          "correct": true
+        },
+        {
+          "text": "Khóa chính cho phép một giá trị NULL trong khi khóa duy nhất cho phép nhiều giá trị NULL",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759872",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Lựa chọn nào sau đây là đúng khi nói về cơ chế mặc định trong xử lý vi phạm ràng buộc toàn vẹn tham chiếu?",
+      "choices": [
+        {
+          "text": "Hệ quản trị cơ sở dữ liệu từ chối tất cả những phép toán vi phạm ràng buộc toàn vẹn tham chiếu",
+          "correct": true
+        },
+        {
+          "text": "Những thay đổi tại giá trị thuộc tính khoá của bộ được chiếu tới vi phạm ràng buộc toàn vẹn tham chiếu sẽ tự động được cập nhật tại giá trị thuộc tính khoá ngoại của bộ chiếu đi tương ứng",
+          "correct": false
+        },
+        {
+          "text": "Nếu sự thay đổi tại giá trị thuộc tính khoá ngoại của bộ chiếu đi vi phạm ràng buộc toàn vẹn tham chiếu, thì giá trị này được thiết lập là NULL",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759873",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phát biểu thành viên câu lạc bộ phải từ 40 tuổi trở lên thuộc loại ràng buộc gì?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc thực thể",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc toàn vẹn ngữ nghĩa",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc khóa",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759874",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Phát biểu Trưởng đơn vị phải là nhân viên của đơn vị đó thuộc loại ràng buộc gì?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc toàn vẹn tham chiếu",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc toàn vẹn ngữ nghĩa",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc giá trị NULL",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759875",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Ràng buộc khóa ngoại cần được kiểm tra khi thực hiện thao tác nào sau đây?",
+      "choices": [
+        {
+          "text": "Truy vấn thông tin từ cơ sở dữ liệu (dùng lệnh SELECT)",
+          "correct": false
+        },
+        {
+          "text": "Thêm một mẫu tin mới vào quan hệ bị tham chiếu (referred relation)",
+          "correct": false
+        },
+        {
+          "text": "Xóa một mẫu tin từ quan hệ bị tham chiếu (referred relation)",
+          "correct": true
+        },
+        {
+          "text": "Xóa một mẫu tin từ quan hệ tham chiếu (referring relation)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759876",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Cho lược đồ quan hệ R(A, B, C, D) trong đó với bất kỳ cặp dòng dữ liệu (tuple) $r1 \\neq r2$ ta đều có $r1[A, B, C] \\neq r2[A, B, C]$. Phát biểu nào sau đây đúng?",
+      "choices": [
+        {
+          "text": "{A, B, C} là siêu khóa của R",
+          "correct": true
+        },
+        {
+          "text": "{A}, {B}, và {C} là 3 khóa (key) của R",
+          "correct": false
+        },
+        {
+          "text": "{A, B, C} là khóa của R",
+          "correct": false
+        },
+        {
+          "text": "{D} là khóa ngoại (foreign key) của R",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759877",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Ràng buộc \"Không xảy ra trường hợp hai dự án có cùng mã dự án.\" thuộc loại ràng buộc nào sau đây?",
+      "choices": [
+        {
+          "text": "Ràng buộc miền giá trị",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc khóa",
+          "correct": true
+        },
+        {
+          "text": "Ràng buộc thực thể",
+          "correct": false
+        },
+        {
+          "text": "Ràng buộc tham chiếu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
+      "id": "1794388759878",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
+      "question": "Xét quan hệ ThamGia (MaSinhVien, MaKhoaHoc, SoGioHoc) cho biết thông tin về thời gian tham gia mỗi khóa học của mỗi sinh viên với ràng buộc \"Mỗi sinh viên được tham gia tối đa là 3 khóa học\". Thao tác nào sau đây không vi phạm ràng buộc này?",
+      "choices": [
+        {
+          "text": "Thêm mới một bộ vào quan hệ ThamGia",
+          "correct": false
+        },
+        {
+          "text": "Cập nhật một bộ có sẵn trong quan hệ ThamGia",
+          "correct": false
+        },
+        {
+          "text": "Xóa một bộ ra khỏi quan hệ ThamGia",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:19.869Z"
+    },
+    {
       "id": "1794388735113",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
