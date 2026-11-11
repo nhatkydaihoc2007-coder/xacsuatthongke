@@ -3541,8 +3541,9 @@
           "correct": true
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "solution": "Yêu cầu lấy điểm cao nhất \"của mỗi học viên theo từng môn học\" đòi hỏi phải nhóm dữ liệu đồng thời theo cả hai thuộc tính MAHV và MAMH trong mệnh đề GROUP BY.",
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T04:58:09.944Z"
     },
     {
       "id": "1794293756857",
