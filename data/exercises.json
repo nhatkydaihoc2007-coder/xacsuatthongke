@@ -3363,24 +3363,25 @@
       "question": "Câu lệnh SQL nào sau đây không đúng?",
       "choices": [
         {
-          "text": "SELECT dept\\_id, AVG(salary) FROM Employees GROUP BY dept\\_id",
+          "text": "SELECT dept_id, AVG(salary) FROM Employees GROUP BY dept_id",
           "correct": false
         },
         {
-          "text": "SELECT AVG(salary) FROM Employees GROUP BY dept\\_id",
+          "text": "SELECT AVG(salary) FROM Employees GROUP BY dept_id",
           "correct": false
         },
         {
-          "text": "SELECT dept\\_id, job\\_id, AVG(salary) FROM Employees GROUP BY dept\\_id, job\\_id",
+          "text": "SELECT dept_id, job_id, AVG(salary) FROM Employees GROUP BY dept_id, job_id",
           "correct": false
         },
         {
-          "text": "SELECT dept\\_id, COUNT(name) FROM Employees",
+          "text": "SELECT dept_id, COUNT(name) FROM Employees",
           "correct": true
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:59:01.424Z"
+      "createdAt": "2026-11-10T06:59:01.424Z",
+      "updatedAt": "2026-11-11T04:38:17.118Z"
     },
     {
       "id": "1794293941437",
