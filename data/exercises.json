@@ -1219,18 +1219,18 @@
       "id": "1794336198382",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH THỰC THỂ KẾT HỢP",
-      "question": "Cho lược đồ ER mở rộng sau: \n\nPhát biểu nào sau đây đúng?",
+      "question": "Cho lược đồ ER mở rộng sau: <br>\n<img width=\"800\" height=\"317\" alt=\"image\" src=\"https://github.com/user-attachments/assets/27dba4aa-bc68-40aa-8c36-69b367b64f60\" />\n<br> Phát biểu nào sau đây đúng?",
       "choices": [
         {
-          "text": "Một thực thể là thành viên của PART phải là thành viên của MANUFACTURED\\_PART hoặc PURCHASED\\_PART",
+          "text": "Một thực thể là thành viên của PART phải là thành viên của MANUFACTURED_PART hoặc PURCHASED_PART",
           "correct": true
         },
         {
-          "text": "Một thực thể là thành viên của PART có thể đồng thời là thành viên của MANUFACTURED\\_PART và PURCHASED\\_PART",
+          "text": "Một thực thể là thành viên của PART có thể đồng thời là thành viên của MANUFACTURED_PART và PURCHASED_PART",
           "correct": false
         },
         {
-          "text": "Một thực thể là thành viên của MANUFACTURED\\_PART hoặc PURCHASED\\_PART sẽ có tất cả các thuộc tính của PART và thêm các thuộc tính riêng của nó",
+          "text": "Một thực thể là thành viên của MANUFACTURED_PART hoặc PURCHASED_PART sẽ có tất cả các thuộc tính của PART và thêm các thuộc tính riêng của nó",
           "correct": false
         },
         {
@@ -1238,8 +1238,9 @@
           "correct": false
         }
       ],
-      "solution": "Ràng buộc chồng lấp (ký hiệu chữ o trong vòng tròn): Một linh kiện (PART) có thể đồng thời vừa là linh kiện tự sản xuất (MANUFACTURED\\_PART), vừa là linh kiện mua ngoài (PURCHASED\\_PART). <br> \nRàng buộc toàn phần (ký hiệu đường đôi song song nối từ PART xuống vòng tròn): Mọi thực thể thuộc lớp cha PART bắt buộc phải là thành viên của ít nhất một lớp con. <br> \nTính kế thừa thuộc tính: Các lớp con luôn kế thừa tất cả các thuộc tính từ lớp cha (như Part\\_no, Description) và sở hữu thêm các thuộc tính riêng của chính nó.",
-      "createdAt": "2026-11-10T18:43:18.370Z"
+      "solution": "Ràng buộc chồng lấp (ký hiệu chữ o trong vòng tròn): Một linh kiện (PART) có thể đồng thời vừa là linh kiện tự sản xuất (MANUFACTURED_PART), vừa là linh kiện mua ngoài (PURCHASED_PART). <br> \nRàng buộc toàn phần (ký hiệu đường đôi song song nối từ PART xuống vòng tròn): Mọi thực thể thuộc lớp cha PART bắt buộc phải là thành viên của ít nhất một lớp con. <br> \nTính kế thừa thuộc tính: Các lớp con luôn kế thừa tất cả các thuộc tính từ lớp cha (như Part_no, Description) và sở hữu thêm các thuộc tính riêng của chính nó.",
+      "createdAt": "2026-11-10T18:43:18.370Z",
+      "updatedAt": "2026-11-11T03:16:36.512Z"
     },
     {
       "id": "1794336179908",
