@@ -5732,11 +5732,11 @@
         },
         {
           "text": "Ngăn chặn các truy nhập trái phép, sai quy định từ trong ra hoặc từ ngoài vào",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Thống nhất các tiêu chuẩn, thủ tục và các biện pháp bảo vệ, an toàn dữ liệu",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Tính nhất quán và toàn vẹn dữ liệu",
@@ -5744,7 +5744,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T06:49:09.986Z"
+      "createdAt": "2026-11-10T06:49:09.986Z",
+      "updatedAt": "2026-11-11T14:33:25.415Z"
     },
     {
       "id": "1794293349995",
