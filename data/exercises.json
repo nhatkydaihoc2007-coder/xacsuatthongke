@@ -329,7 +329,7 @@
       "id": "1794336270425",
       "subject": "Cơ sở dữ liệu",
       "chapter": "NGÔN NGỮ TRUY VẤN CÓ CẤU TRÚC (SQL)",
-      "question": "[58] Kết quả của câu lệnh sau là bao nhiêu?\nverbatim\nselect SUM(SoGioThamGia)\nfrom THAMGIA\nwhere MaSinhVien in (select MAX(MaSinhVien) from SINHVIEN)\nverbatim",
+      "question": "[58] Kết quả của câu lệnh sau là bao nhiêu?\n<pre style=\"background:rgba(128,128,128,.12);padding:12px 14px;border-radius:8px;overflow-x:auto;font-family:'Fira Code',monospace;font-size:.85em;line-height:1.55;white-space:pre;margin:10px 0;tab-size:4\"><code>select SUM(SoGioThamGia)\nfrom THAMGIA\nwhere MaSinhVien in (select MAX(MaSinhVien) from SINHVIEN)</code></pre>",
       "choices": [
         {
           "text": "10",
@@ -350,7 +350,7 @@
       ],
       "solution": "Max(MaSinhVien)=4 nên SUM=10",
       "createdAt": "2026-11-10T18:44:30.413Z",
-      "updatedAt": "2026-11-11T02:53:50.019Z"
+      "updatedAt": "2026-11-11T03:02:10.135Z"
     },
     {
       "id": "1794336270426",
