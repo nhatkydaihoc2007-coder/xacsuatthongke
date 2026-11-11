@@ -2226,15 +2226,16 @@
         },
         {
           "text": "Ràng buộc tham chiếu",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Ràng buộc ngữ nghĩa",
-          "correct": false
+          "correct": true
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-10T12:15:39.182Z"
+      "createdAt": "2026-11-10T12:15:39.182Z",
+      "updatedAt": "2026-11-11T06:18:50.924Z"
     },
     {
       "id": "1794312939195",
