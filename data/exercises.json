@@ -3459,9 +3459,9 @@
           "correct": false
         }
       ],
-      "solution": "",
+      "solution": "ALTER TABLE $<$Bảng$>$ ADD $<$TênCột$>$ $<$KiểuDữLiệu$>$ REFERENCES $<$BảngThamChiếu$>$($<$CộtThamChiếu$>$)",
       "createdAt": "2026-11-10T06:59:01.424Z",
-      "updatedAt": "2026-11-11T04:44:37.167Z"
+      "updatedAt": "2026-11-11T04:49:55.637Z"
     },
     {
       "id": "1794293941440",
