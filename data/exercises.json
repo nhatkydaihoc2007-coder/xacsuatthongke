@@ -4175,32 +4175,6 @@
       "createdAt": "2026-11-10T12:14:13.421Z"
     },
     {
-      "id": "1794312853431",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
-      "question": "Câu lệnh CREATE TABLE thuộc nhóm ngôn ngữ nào sau đây?",
-      "choices": [
-        {
-          "text": "Ngôn ngữ định nghĩa dữ liệu",
-          "correct": true
-        },
-        {
-          "text": "Ngôn ngữ thao tác dữ liệu",
-          "correct": false
-        },
-        {
-          "text": "Ngôn ngữ điều khiển dữ liệu",
-          "correct": false
-        },
-        {
-          "text": "Ngôn ngữ truy vấn dữ liệu",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-10T12:14:13.421Z"
-    },
-    {
       "id": "1794312853432",
       "subject": "Cơ sở dữ liệu",
       "chapter": "TỔNG QUAN VỀ HỆ THỐNG CƠ SỞ DỮ LIỆU",
