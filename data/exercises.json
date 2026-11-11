@@ -305,32 +305,6 @@
       "createdAt": "2026-11-11T09:19:52.071Z"
     },
     {
-      "id": "1794388792076",
-      "subject": "Cơ sở dữ liệu",
-      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
-      "question": "Giả sử quan hệ R(A, B, C) hiện tại có bộ $(1, 2, 3)$ và nó phải luôn thỏa mãn các phụ thuộc hàm $A \\rightarrow B$ và $C \\rightarrow B$. Bộ nào sau đây có thể được thêm vào R một cách hợp lệ?",
-      "choices": [
-        {
-          "text": "$(2, 3, 3)$",
-          "correct": false
-        },
-        {
-          "text": "$(1, 3, 5)$",
-          "correct": false
-        },
-        {
-          "text": "(2, 2, 3)",
-          "correct": true
-        },
-        {
-          "text": "(3, 1, 3)",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-11T09:19:52.071Z"
-    },
-    {
       "id": "1794388792077",
       "subject": "Cơ sở dữ liệu",
       "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
