@@ -12,6 +12,240 @@
   ],
   "exercises": [
     {
+      "id": "1794388792071",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Chọn thứ tự đúng cho quy trình thiết kế cơ sở dữ liệu.",
+      "choices": [
+        {
+          "text": "Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu vật lý $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm",
+          "correct": false
+        },
+        {
+          "text": "Thiết kế cơ sở dữ liệu vật lý $\\rightarrow$ Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý",
+          "correct": false
+        },
+        {
+          "text": "Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý $\\rightarrow$ Thiết kế cơ sở dữ liệu vật lý",
+          "correct": true
+        },
+        {
+          "text": "Đặc tả yêu cầu người sử dụng $\\rightarrow$ Thiết kế cơ sở dữ liệu luận lý $\\rightarrow$ Thiết kế cơ sở dữ liệu ý niệm $\\rightarrow$ Thiết kế cơ sở dữ liệu vật lý",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792072",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Một phụ thuộc hàm được gọi là hiển nhiên trong trường hợp nào sau đây?",
+      "choices": [
+        {
+          "text": "Vế trái của phụ thuộc hàm là tập con của vế phải",
+          "correct": false
+        },
+        {
+          "text": "Vế trái và vế phải của phụ thuộc hàm có một số thuộc tính chung",
+          "correct": false
+        },
+        {
+          "text": "Vế phải của phụ thuộc hàm là tập con của vế trái",
+          "correct": true
+        },
+        {
+          "text": "Cả 3 câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792073",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Một quan hệ R sẽ đạt dạng chuẩn 2 khi nó ở dạng chuẩn 1 và thoả mãn điều kiện nào sau đây?",
+      "choices": [
+        {
+          "text": "Các thuộc tính chỉ chứa các giá trị nguyên tố",
+          "correct": false
+        },
+        {
+          "text": "Mọi thuộc tính không khóa của nó đều không phụ thuộc bắc cầu vào khóa chính",
+          "correct": false
+        },
+        {
+          "text": "Vế trái của mọi phụ thuộc hàm không hiển nhiên trên quan hệ đó đều phải là siêu khóa",
+          "correct": false
+        },
+        {
+          "text": "Mọi thuộc tính không khóa của R phụ thuộc hàm đầy đủ vào khóa chính của nó",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792074",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho quan hệ R (A, B, C, D, E) với các phụ thuộc hàm:\n$AB \\rightarrow C, C \\rightarrow D, BD \\rightarrow E$\nTập các thuộc tính nào sau đây không xác định $E$?",
+      "choices": [
+        {
+          "text": "$ABC$",
+          "correct": false
+        },
+        {
+          "text": "$BCE$",
+          "correct": false
+        },
+        {
+          "text": "$AB$",
+          "correct": false
+        },
+        {
+          "text": "$AC$",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792075",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Quan hệ $R(A, B, C)$ gồm có 4 bộ sau $(7, 11, 15), (19, 11, 15), (23, 15, 15)$, và $(11, 19, 19)$.\nLựa chọn nào sau đây không là một phụ thuộc hàm trong R?",
+      "choices": [
+        {
+          "text": "$A \\rightarrow B$",
+          "correct": false
+        },
+        {
+          "text": "$AB \\rightarrow C$",
+          "correct": false
+        },
+        {
+          "text": "$C \\rightarrow B$",
+          "correct": true
+        },
+        {
+          "text": "$B \\rightarrow C$",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792076",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Giả sử quan hệ R(A, B, C) hiện tại có bộ $(1, 2, 3)$ và nó phải luôn thỏa mãn các phụ thuộc hàm $A \\rightarrow B$ và $C \\rightarrow B$. Bộ nào sau đây có thể được thêm vào R một cách hợp lệ?",
+      "choices": [
+        {
+          "text": "$(2, 3, 3)$",
+          "correct": false
+        },
+        {
+          "text": "$(1, 3, 5)$",
+          "correct": false
+        },
+        {
+          "text": "(2, 2, 3)",
+          "correct": true
+        },
+        {
+          "text": "(3, 1, 3)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792077",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho biết dạng chuẩn thấp nhất mà bảng dữ liệu sau chưa đạt được?\n<div style=\"text-align:center;margin:8px 0\">\n<div style=\"overflow-x:auto;margin:10px 0\"><table style=\"border-collapse:collapse;font-size:14px\"><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">Mã loại hàng</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Tên loại hàng</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Xuất xứ</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">001</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Táo xanh</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Mỹ, Úc</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">002</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Kiwi</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Úc</td></tr><tr><td style=\"padding:5px 12px;border:1px solid var(--border)\">003</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Nho xanh</td><td style=\"padding:5px 12px;border:1px solid var(--border)\">Việt Nam, Mỹ</td></tr></table></div>\n</div>",
+      "choices": [
+        {
+          "text": "Dạng chuẩn 1",
+          "correct": true
+        },
+        {
+          "text": "Dạng chuẩn 2",
+          "correct": false
+        },
+        {
+          "text": "Dạng chuẩn 3",
+          "correct": false
+        },
+        {
+          "text": "Dạng chuẩn Boyce-Codd",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792078",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho quan hệ R (A, B, C, D, E, F, G, H) thỏa mãn các phụ thuộc hàm sau:\n$$A \\rightarrow B, CH \\rightarrow A, B \\rightarrow E, BD \\rightarrow C, EG \\rightarrow H, DE \\rightarrow F$$\nPhụ thuộc hàm nào sau đây thỏa mãn?",
+      "choices": [
+        {
+          "text": "$BED \\rightarrow EG$",
+          "correct": false
+        },
+        {
+          "text": "$ADE \\rightarrow BF$",
+          "correct": true
+        },
+        {
+          "text": "$CGH \\rightarrow AD$",
+          "correct": false
+        },
+        {
+          "text": "$BCD \\rightarrow AB$",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
+      "id": "1794388792079",
+      "subject": "Cơ sở dữ liệu",
+      "chapter": "LÝ THUYẾT THIẾT KẾ CSDL QUAN HỆ & CHUẨN HÓA",
+      "question": "Cho quan hệ R (A, B, C, D, E, F) với các phụ thuộc hàm:\n$$CDE \\rightarrow B, ACD \\rightarrow F, BEF \\rightarrow C, B \\rightarrow D$$\nLựa chọn nào sau đây là một siêu khóa?",
+      "choices": [
+        {
+          "text": "ACD",
+          "correct": false
+        },
+        {
+          "text": "CDEF",
+          "correct": false
+        },
+        {
+          "text": "ABEF",
+          "correct": true
+        },
+        {
+          "text": "ABDE",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-11T09:19:52.071Z"
+    },
+    {
       "id": "1794388759869",
       "subject": "Cơ sở dữ liệu",
       "chapter": "MÔ HÌNH DỮ LIỆU QUAN HỆ & ĐẠI SỐ QUAN HỆ",
