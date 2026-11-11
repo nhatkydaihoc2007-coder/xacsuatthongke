@@ -714,6 +714,7 @@ const AUTHOR = Object.assign({
     { label: 'Blog Nhật Ký Đại Học', url: 'https://nhatkydaihoc2007.blogspot.com' },
   ]
 }, window.AUTHOR_CONFIG || {});   // (tùy chọn) file author-config.js cạnh index.html sẽ ghi đè các mục ở trên
+let aboutHtml = '', aboutNoQr = true;
 function renderAbout() {
   const A = AUTHOR, e = x => String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
   const donate = !!A.accNo;
@@ -723,24 +724,35 @@ function renderAbout() {
   if (!A.name && !donate) return;
   const card = document.getElementById('aboutCard');
   card.classList.toggle('no-qr', !qr);
-  card.innerHTML = `
+  aboutNoQr = !qr;
+  aboutHtml = `
     <div>
       ${A.role ? `<div class="ab-role">${e(A.role)}</div>` : ''}
       <div class="ab-name">${e(A.name)}</div>
       ${A.sub ? `<div class="ab-sub">${e(A.sub)}</div>` : ''}
       ${A.bio ? `<div class="ab-bio">${e(A.bio)}</div>` : ''}
       ${donate ? `<div class="ab-acc"><div class="bk">Ngân hàng <b>${e(A.bankName)}</b>${A.accName ? ' · ' + e(A.accName) : ''}</div><div class="no">${e(A.accNo)}</div></div>` : ''}
-      <div class="ab-links">${donate ? '<button class="copy" id="copyAcc">Chép số TK</button>' : ''}${links}</div>
+      <div class="ab-links">${donate ? '<button class="copy copy-acc">Chép số TK</button>' : ''}${links}</div>
     </div>
     ${qr ? `<div class="ab-qr"><img src="${e(qr)}" alt="Mã QR chuyển khoản" loading="lazy" onerror="this.parentNode.style.display='none'"><div>Quét bằng app ngân hàng bất kỳ</div></div>` : ''}`;
+  card.innerHTML = aboutHtml;
   document.getElementById('about').style.display = '';
   if (donate) document.getElementById('donateLink').style.display = '';
-  const cb = document.getElementById('copyAcc');
-  if (cb) cb.addEventListener('click', () => {
-    const done = () => { cb.textContent = 'Đã chép ✓'; setTimeout(() => cb.textContent = 'Chép số TK', 1500); };
-    if (navigator.clipboard) navigator.clipboard.writeText(A.accNo).then(done, done); else done();
-  });
 }
+// Bấm "Ủng hộ tác giả" → mở khung giới thiệu ngay (không cuộn xuống cuối trang nữa, vì danh sách bài tải dần nên vị trí cuối trang liên tục dịch chuyển)
+function openAbout() {
+  clearInterval(exmTimer); EXM = null;
+  ov.hidden = false; document.body.style.overflow = 'hidden'; ov.scrollTop = 0;
+  box.innerHTML = `<div style="display:flex;justify-content:flex-end;margin-bottom:10px"><button class="mini-btn" id="abClose" style="padding:8px 16px;font-size:14px">✕ Đóng</button></div><div class="about-card ${aboutNoQr ? 'no-qr' : ''}">${aboutHtml}</div>`;
+  document.getElementById('abClose').addEventListener('click', closeExam);
+}
+document.addEventListener('click', e => {
+  const d = e.target.closest('#donateLink');
+  if (d) { e.preventDefault(); openAbout(); return; }
+  const cb = e.target.closest('.copy-acc'); if (!cb) return;
+  const done = () => { cb.textContent = 'Đã chép ✓'; setTimeout(() => cb.textContent = 'Chép số TK', 1500); };
+  if (navigator.clipboard) navigator.clipboard.writeText(AUTHOR.accNo).then(done, done); else done();
+});
 renderAbout();
 
 const RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${DATA_FILE}`;
@@ -914,6 +926,7 @@ function renderExercises() {
   }
 
   giMap = new Map(allExercises.map((e, i) => [e.id, i + 1]));
+  if (mathIO) mathIO.disconnect();
   rQueue = data; rCount = 0; list.innerHTML = '';
   renderMore(PAGE);
   updateSelUI();
@@ -922,7 +935,14 @@ function renderExercises() {
 
 // ── Vẽ từng đợt (cuộn tới đâu vẽ tới đó) để trang không bị đơ khi kho bài lớn ──
 const PAGE = 15;
-let rQueue = [], rCount = 0, giMap = new Map(), moreIO = null;
+let rQueue = [], rCount = 0, giMap = new Map(), moreIO = null, mathIO = null;
+// Công thức chỉ được MathJax xử lý khi thẻ bài tới gần màn hình → vẽ cả nghìn bài vẫn nhẹ
+function observeMath(node) {
+  if (!('IntersectionObserver' in window)) { tp(node); return; }
+  if (!mathIO) mathIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { mathIO.unobserve(e.target); tp(e.target); } }), { rootMargin: '900px 0px' });
+  mathIO.observe(node);
+}
+function renderAll() { if (rCount < rQueue.length) renderMore(rQueue.length - rCount); }
 function cardHtml(ex, i) {
   const gi = giMap.get(ex.id) || 0;
   const d  = new Date(ex.createdAt).toLocaleDateString('vi-VN');
@@ -968,7 +988,7 @@ function renderMore(n) {
     applyChoice(ex.id); markCard(ex.id); markSel(ex.id);
   });
   rCount += slice.length;
-  tp(nodes);
+  nodes.forEach(observeMath);
   if (rCount < rQueue.length) {
     const s = document.createElement('div');
     s.id = 'moreSent'; s.className = 'empty'; s.style.padding = '18px';
@@ -1919,8 +1939,11 @@ async function exportDocx(o, say) {
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden && (!EXM || EXM.done)) closeExam(); });
+
+// ── Khởi động (đặt cuối để mọi biến đã được khai báo) ──
+loadData();
 </script>
-  <!-- ══ Nút lên đầu / xuống cuối trang ══ -->
+<!-- ══ Nút lên đầu / xuống cuối trang ══ -->
 <style>
 .scroll-fab { position: fixed; right: 16px; bottom: 84px; z-index: 90; display: flex; flex-direction: column; gap: 8px; }
 .scroll-fab button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--border2); background: var(--surface); color: var(--text); font-size: 18px; line-height: 1; cursor: pointer; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity .2s, background .15s, color .15s; }
@@ -1940,14 +1963,17 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && !ov.hidden
     down.classList.toggle('show', max - y > 300);
   }
   up.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  down.addEventListener('click', () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }));
+  down.addEventListener('click', () => {
+    if (typeof renderAll === 'function') renderAll();   // vẽ nốt các bài còn lại (công thức xử lý lười) để cuối trang không dịch chuyển nữa
+    const bottom = () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'auto' });
+    bottom(); setTimeout(bottom, 400);   // canh lại 1 lần sau khi công thức ở cuối trang vẽ xong
+  });
   window.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   setInterval(update, 1000);   // nội dung tải/lọc xong làm trang dài ra
   update();
 })();
 </script>
-// ── Khởi động (đặt cuối để mọi biến đã được khai báo) ──
-loadData();
+
 </body>
 </html>
