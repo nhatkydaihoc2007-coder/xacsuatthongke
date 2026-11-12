@@ -12,6 +12,1306 @@
   ],
   "exercises": [
     {
+      "id": "1794495828676",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Lớp nào tromg mô hình OSI đảm nhận việc đồng bộ các check-point trong việc truyền dữ liệu giữa các hệ thống.",
+      "choices": [
+        {
+          "text": "Lớp ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Lớp phiên",
+          "correct": true
+        },
+        {
+          "text": "Lớp trình diễn",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.676Z"
+    },
+    {
+      "id": "1794495828678",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phát biểu nào sau đây không phải là nhiệm vụ của lớp phiên trong mô hình OSI:",
+      "choices": [
+        {
+          "text": "Thiết lập, quản lý các phiên làm việc giữa các ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Đồng bộ",
+          "correct": false
+        },
+        {
+          "text": "Mã hóa dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Điều khiển cuộc đối thoại",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828679",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Cho biết ứng dụng nào thuộc loại Client/Server",
+      "choices": [
+        {
+          "text": "World Wide Web",
+          "correct": true
+        },
+        {
+          "text": "WinWord",
+          "correct": false
+        },
+        {
+          "text": "Excel",
+          "correct": false
+        },
+        {
+          "text": "Photoshop",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828680",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đâu là giao thức của lớp ứng dụng",
+      "choices": [
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        },
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828681",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Chức năng mã hóa dữ liệu là thuộc lớp nào trong mô hình 7 lớp OSI",
+      "choices": [
+        {
+          "text": "Lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828682",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "DNS là viết tắt của",
+      "choices": [
+        {
+          "text": "Domain Name Server",
+          "correct": false
+        },
+        {
+          "text": "Dynamic Network System",
+          "correct": false
+        },
+        {
+          "text": "Domain Name System",
+          "correct": true
+        },
+        {
+          "text": "Domain Network Service",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828683",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "dns là viết tắt của",
+      "choices": [
+        {
+          "text": "Dynamic Name System",
+          "correct": false
+        },
+        {
+          "text": "Domain Name Server",
+          "correct": false
+        },
+        {
+          "text": "Domain Name System",
+          "correct": true
+        },
+        {
+          "text": "Domain Network Service",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828684",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Người dùng có thể sử dụng các dịch vụ mail thông qua",
+      "choices": [
+        {
+          "text": "Lớp liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lớp vật lý",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Lớp ứng dụng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828685",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đâu là 1 dịch vụ của lớp ứng dụng",
+      "choices": [
+        {
+          "text": "Quản lý địa chỉ",
+          "correct": false
+        },
+        {
+          "text": "Định dạng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Chat",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các dịch vụ trên",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828686",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đâu là dịch vụ của lớp ứng dụng",
+      "choices": [
+        {
+          "text": "Mã hóa dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Email",
+          "correct": true
+        },
+        {
+          "text": "Truyền nhận frame",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các dịch vụ trên",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828687",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong mô hình OSI, mã hóa và giải mã là chức năng của lớp nào?",
+      "choices": [
+        {
+          "text": "Lớp vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp trình bày",
+          "correct": true
+        },
+        {
+          "text": "Lớp ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828688",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "DNS là một hệ cơ sở dữ liệu:",
+      "choices": [
+        {
+          "text": "Tập trung dùng để ánh xạ giữa các tên miền và các địa chỉ vật lý",
+          "correct": false
+        },
+        {
+          "text": "Phân tán dùng để ánh xạ giữa các tên miền và các địa chỉ vật lý",
+          "correct": false
+        },
+        {
+          "text": "Tập trung dùng để ánh xạ giữa các tên miền và các địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Phân tán dùng để ánh xạ giữa các tên miền và các địa chỉ IP",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828689",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Chọn phát biểu sai: DNS là",
+      "choices": [
+        {
+          "text": "Tập hợp của nhiều máy chủ quản lý tên miền theo từng khu vực, theo từng cấp trên mạng Internet",
+          "correct": false
+        },
+        {
+          "text": "Thực hiện chức nǎng chuyển đổi từ tên miền thể hiện dưới dạng chữ sang địa chỉ IP và ngược lại",
+          "correct": false
+        },
+        {
+          "text": "Giúp người dùng và thiết bị mạng dễ nhớ tên miền sử dụng",
+          "correct": true
+        },
+        {
+          "text": "Phân tán dùng để ánh xạ giữa các tên miền và các địa chỉ IP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828690",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong DNS, bên dưới Root là tên miền cấp cao nhất (Top Level Domain - TLD) được chia thành:",
+      "choices": [
+        {
+          "text": "2 loại",
+          "correct": false
+        },
+        {
+          "text": "3 loại",
+          "correct": true
+        },
+        {
+          "text": "4 loại",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828691",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Mỗi máy chủ quản lý tên miền dns phải:",
+      "choices": [
+        {
+          "text": "Đảm bảo thông tin dữ liệu riêng về địa chỉ và tên miền trong khu vực, trong cấp mà nó quản lý",
+          "correct": false
+        },
+        {
+          "text": "Có khả năng hỏi các máy chủ quản lý các khu vực khác hoặc cấp cao hơn",
+          "correct": false
+        },
+        {
+          "text": "Luôn sẵn sàng trả lời các máy chủ khác về các tên miền mà nó quản lý",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828692",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đuôi tên miền nào sau đây không thuộc hệ thống tên miền cấp cao nhất đại diện cho các lĩnh vực dùng chung",
+      "choices": [
+        {
+          "text": "BIZ",
+          "correct": false
+        },
+        {
+          "text": "INFO",
+          "correct": false
+        },
+        {
+          "text": "PRO",
+          "correct": false
+        },
+        {
+          "text": "FR",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828693",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đuôi tên miền nào sau đây không thuộc hệ thống tên miền cấp cao nhất đại diện cho các lĩnh vực dùng chung",
+      "choices": [
+        {
+          "text": "ORG",
+          "correct": false
+        },
+        {
+          "text": "INFO",
+          "correct": false
+        },
+        {
+          "text": "ARO",
+          "correct": true
+        },
+        {
+          "text": "INT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828694",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đuôi tên miền nào sau đây không thuộc hệ thống tên miền cấp cao nhất đại diện cho các lĩnh vực dùng chung",
+      "choices": [
+        {
+          "text": "AC",
+          "correct": true
+        },
+        {
+          "text": "MUSEUM",
+          "correct": false
+        },
+        {
+          "text": "COOP",
+          "correct": false
+        },
+        {
+          "text": "GOV",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828695",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Đuôi tên miền nào sau đây không thuộc hệ thống tên miền cấp cao nhất đại diện cho các lĩnh vực dùng chung",
+      "choices": [
+        {
+          "text": "EDU",
+          "correct": false
+        },
+        {
+          "text": "NET",
+          "correct": false
+        },
+        {
+          "text": "VN",
+          "correct": true
+        },
+        {
+          "text": "MIL",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828696",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Để kiểm tra hoạt động của hệ thống phân giải tên miền, ta có thể dùng lệnh",
+      "choices": [
+        {
+          "text": "nslookup",
+          "correct": true
+        },
+        {
+          "text": "ping",
+          "correct": false
+        },
+        {
+          "text": "ipconfig",
+          "correct": false
+        },
+        {
+          "text": "netstat",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828697",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Lệnh \"nslookup\" dùng để:",
+      "choices": [
+        {
+          "text": "Kiểm tra tính liên thông của hệ thống mạng",
+          "correct": false
+        },
+        {
+          "text": "Dò đường đi của gói tin",
+          "correct": false
+        },
+        {
+          "text": "Kiểm tra hoạt động của hệ thống phân giải tên miền",
+          "correct": true
+        },
+        {
+          "text": "Kiểm tra địa chỉ mạng của máy tính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828698",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Một tên miền (Domain name) có đặc điểm:",
+      "choices": [
+        {
+          "text": "Không phân biệt chữ hoa hay thường",
+          "correct": true
+        },
+        {
+          "text": "Một thành phần có thể có tối đa 64 ký tự",
+          "correct": false
+        },
+        {
+          "text": "Tên đầy đủ không quá 256 ký tự.",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828699",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Một tên miền (Domain name) có đặc điểm:",
+      "choices": [
+        {
+          "text": "Phân biệt chữ hoa hay thường",
+          "correct": false
+        },
+        {
+          "text": "Một thành phần có thể có tối đa 64 ký tự",
+          "correct": false
+        },
+        {
+          "text": "Tên đầy đủ không quá 255 ký tự.",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828700",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Một tên miền (Domain name) có đặc điểm:",
+      "choices": [
+        {
+          "text": "Phân biệt chữ hoa hay thường",
+          "correct": false
+        },
+        {
+          "text": "Một thành phần có thể có tối đa 63 ký tự",
+          "correct": true
+        },
+        {
+          "text": "Tên đầy đủ không quá 256 ký tự.",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828701",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong WWW, URL (Uniform Resource Locator) được dùng để:",
+      "choices": [
+        {
+          "text": "Định vị tài nguyên trên Internet",
+          "correct": false
+        },
+        {
+          "text": "Tham chiếu tới tài nguyên trên Internet",
+          "correct": true
+        },
+        {
+          "text": "Download tài nguyên trên Internet",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi tài nguyên trên Internet",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828702",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong ứng dụng WWW dựa trên nền tảng giao thức:",
+      "choices": [
+        {
+          "text": "HTML",
+          "correct": false
+        },
+        {
+          "text": "HTTP",
+          "correct": true
+        },
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828703",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Hầu hết các trang Web đều có file",
+      "choices": [
+        {
+          "text": "PPT",
+          "correct": false
+        },
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "HTML",
+          "correct": true
+        },
+        {
+          "text": "URLs",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828704",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Sau đây, cái nào không phải là 1 phương thức của HTTP:",
+      "choices": [
+        {
+          "text": "GET",
+          "correct": false
+        },
+        {
+          "text": "PUT",
+          "correct": false
+        },
+        {
+          "text": "POP",
+          "correct": true
+        },
+        {
+          "text": "POST",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828705",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Hãy cho biết đâu là 1 phần mềm Web server:",
+      "choices": [
+        {
+          "text": "Apache",
+          "correct": true
+        },
+        {
+          "text": "Mozilla Firefox",
+          "correct": false
+        },
+        {
+          "text": "Opera",
+          "correct": false
+        },
+        {
+          "text": "Internet Explorer",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828706",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Sau đây, cái nào là 1 phần mềm duyệt Web :",
+      "choices": [
+        {
+          "text": "Apache",
+          "correct": false
+        },
+        {
+          "text": "MSDN",
+          "correct": false
+        },
+        {
+          "text": "Opera",
+          "correct": true
+        },
+        {
+          "text": "Microsoft Office",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828707",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong WWW, một Proxy server đóng vai trò :",
+      "choices": [
+        {
+          "text": "HTTP proxy",
+          "correct": true
+        },
+        {
+          "text": "HTML server",
+          "correct": false
+        },
+        {
+          "text": "Web browser",
+          "correct": false
+        },
+        {
+          "text": "Web cache",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828708",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phương thức của HTTP hiện nay chưa được sử dụng đến:",
+      "choices": [
+        {
+          "text": "TRACE",
+          "correct": true
+        },
+        {
+          "text": "PUT",
+          "correct": false
+        },
+        {
+          "text": "POST",
+          "correct": false
+        },
+        {
+          "text": "CONNECT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828709",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phương thức của HTTP dùng để Client yêu cầu đọc nội dung 1 trang web",
+      "choices": [
+        {
+          "text": "GET",
+          "correct": true
+        },
+        {
+          "text": "PUT",
+          "correct": false
+        },
+        {
+          "text": "HEAD",
+          "correct": false
+        },
+        {
+          "text": "CONNECT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828710",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phương thức của HTTP dùng để client đặt một mục lên Server",
+      "choices": [
+        {
+          "text": "GET",
+          "correct": false
+        },
+        {
+          "text": "PUT",
+          "correct": true
+        },
+        {
+          "text": "POST",
+          "correct": false
+        },
+        {
+          "text": "CONNECT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828711",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phương thức của HTTP dùng để client gửi thông tin đến Server",
+      "choices": [
+        {
+          "text": "GET",
+          "correct": false
+        },
+        {
+          "text": "PUT",
+          "correct": false
+        },
+        {
+          "text": "POST",
+          "correct": true
+        },
+        {
+          "text": "SEND",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.677Z"
+    },
+    {
+      "id": "1794495828713",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Chỉ số Port 110 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "TELNET",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        },
+        {
+          "text": "POP3",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828714",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Chỉ số Port 143 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "IMAP",
+          "correct": true
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        },
+        {
+          "text": "POP3",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828715",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong hệ thống email, IMAP là giao thức:",
+      "choices": [
+        {
+          "text": "Đọc 1 email từ mail server",
+          "correct": false
+        },
+        {
+          "text": "Chuyển email từ client đến server và trung chuyển email giữa các server",
+          "correct": false
+        },
+        {
+          "text": "Truy tìm các email từ một MTA",
+          "correct": false
+        },
+        {
+          "text": "Cho phép truy nhập và quản lý các email từ server",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828716",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Với giao thức nào, mà người dùng có thể đọc, tạo ra, thay đổi, hay xoá các email, đồng thời tìm kiếm các nội dung trong hộp thư mà không cần phải tải các thư về?",
+      "choices": [
+        {
+          "text": "IMAP",
+          "correct": true
+        },
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "POP3",
+          "correct": false
+        },
+        {
+          "text": "SNMP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828717",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong hệ thống email, hai giao thức dùng để truy cập đọc email là:",
+      "choices": [
+        {
+          "text": "SMTP, POP3",
+          "correct": false
+        },
+        {
+          "text": "SNMP, POP4",
+          "correct": false
+        },
+        {
+          "text": "POP3, IMAP",
+          "correct": true
+        },
+        {
+          "text": "SMTP,POP4",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828718",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Các giao thức nào không phải thuộc giao thức trong ứng dụng thư điện tử:",
+      "choices": [
+        {
+          "text": "SMTP, POP3",
+          "correct": false
+        },
+        {
+          "text": "SNMP, POP4",
+          "correct": true
+        },
+        {
+          "text": "POP3, IMAP",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828719",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Phát biểu nào sau đây không đúng cho FTP:",
+      "choices": [
+        {
+          "text": "Trong FTP, kênh điều khiển logic TCP được dùng để khởi tạo một phiên kết nối.",
+          "correct": false
+        },
+        {
+          "text": "Kênh điều khiển được duy trì xuyên suốt phiên kết nối FTP và được sử dụng để truyền các thông tin điều khiển và dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Trong FTP, mỗi khi dữ liệu được truyền từ server tới client, một kênh kết nối TCP nhất định lại được khởi tạo giữa chúng. Dữ liệu được truyền đi qua kênh kết nối này.",
+          "correct": false
+        },
+        {
+          "text": "Khi file dữ liệu được truyền xong, kênh dữ liệu được ngắt.",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828720",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Giao thức FTP thường chạy trên:",
+      "choices": [
+        {
+          "text": "Hai cổng 20 và 21, trên nền TCP",
+          "correct": true
+        },
+        {
+          "text": "Hai cổng 20 và 21, trên nền UDP",
+          "correct": false
+        },
+        {
+          "text": "Hai cổng 21 và 22, trên nền TCP",
+          "correct": false
+        },
+        {
+          "text": "Hai cổng 21 và 22, trên nền UDP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828721",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Giao thức nào sau đây đòi hỏi phải có bước chứng thực người dùng gửi đến server:",
+      "choices": [
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "SMTP",
+          "correct": true
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828722",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Giao thức FTP sử dụng:",
+      "choices": [
+        {
+          "text": "Hai kênh kết nối UDP",
+          "correct": false
+        },
+        {
+          "text": "Một kênh kết nối UDP và một kênh kết nối TCP",
+          "correct": false
+        },
+        {
+          "text": "Hai kênh kết nối TCP",
+          "correct": true
+        },
+        {
+          "text": "Một kênh kết nối HTTP và một kênh kết nối TCP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828723",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Kênh điều khiển trong giao thức FTP có đặc điểm:",
+      "choices": [
+        {
+          "text": "Là kênh logic TCP được dùng để truyền file trong một phiên kết nối FTP",
+          "correct": false
+        },
+        {
+          "text": "Được sử dụng để truyền các thông tin điều khiển xuyên suốt phiên kết nối FTP",
+          "correct": true
+        },
+        {
+          "text": "Là kênh logic TCP được thiết lập khi cần truyền thông tin điều khiển trong phiên kết nối ftp",
+          "correct": false
+        },
+        {
+          "text": "Được sử dụng để truyền các thông tin điều khiển, dữ liệu xuyên suốt phiên kết nối FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828724",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Trong giao thức FTP, khi truyền xong dữ liệu một file thì:",
+      "choices": [
+        {
+          "text": "Kênh dữ liệu và điều khiển bị ngắt",
+          "correct": false
+        },
+        {
+          "text": "Kênh điều khiển bị ngắt",
+          "correct": false
+        },
+        {
+          "text": "Kênh dữ liệu bị ngắt",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828725",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Mô hình FTP chia quá trình truyền thông giữa Server với Client ra làm :",
+      "choices": [
+        {
+          "text": "Một kênh logic và một kênh vật lý",
+          "correct": false
+        },
+        {
+          "text": "Hai kênh vật lý",
+          "correct": false
+        },
+        {
+          "text": "Hai kênh logic",
+          "correct": true
+        },
+        {
+          "text": "Ba kênh logic và vật lý",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828726",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Các giao thức nào sau đây đều thực hiện trên nền TCP:",
+      "choices": [
+        {
+          "text": "DNS,HTTP,FTP",
+          "correct": false
+        },
+        {
+          "text": "FTP, SMTP,TELNET",
+          "correct": true
+        },
+        {
+          "text": "HTTP, SNMP, POP3",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
+      "id": "1794495828727",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Các ứng dụng mạng",
+      "question": "Các giao thức nào sau đây KHÔNG phải tất cả đều thực hiện trên nền TCP:",
+      "choices": [
+        {
+          "text": "DNS,HTTP,FTP",
+          "correct": true
+        },
+        {
+          "text": "FTP, SMTP,TELNET",
+          "correct": false
+        },
+        {
+          "text": "HTTP, SMTP, POP3",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:03:48.678Z"
+    },
+    {
       "id": "1794495774528",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Quản trị mạng",
