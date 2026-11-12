@@ -4406,32 +4406,6 @@
       "createdAt": "2026-11-12T14:36:50.521Z"
     },
     {
-      "id": "1794494210536",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng liên kết dữ liệu",
-      "question": "Wireless LAN là mạng thuộc chuẩn …",
-      "choices": [
-        {
-          "text": "IEEE 802.3",
-          "correct": false
-        },
-        {
-          "text": "IEEE 802.5",
-          "correct": false
-        },
-        {
-          "text": "IEEE 802.6",
-          "correct": false
-        },
-        {
-          "text": "IEEE 802.11",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:36:50.521Z"
-    },
-    {
       "id": "1794494210538",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
