@@ -12,6 +12,188 @@
   ],
   "exercises": [
     {
+      "id": "1794470323512",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Khi cài đặt Windows Server 2008 64 bits, tốc độ CPU tối thiểu cần có là bao nhiêu?",
+      "choices": [
+        {
+          "text": "2GHz",
+          "correct": false
+        },
+        {
+          "text": "1.4GHz",
+          "correct": true
+        },
+        {
+          "text": "1.3GHz",
+          "correct": false
+        },
+        {
+          "text": "1GHz",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
+      "id": "1794470323513",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Phát biểu nào sau đây là SAI khi nói về phần mềm NetSurveyor?",
+      "choices": [
+        {
+          "text": "NetSurveyor là phần mềm mã nguồn mở",
+          "correct": true
+        },
+        {
+          "text": "NetSurveyor hoạt động được trên các máy tính cài đặt nhiều Wireless Adapter",
+          "correct": false
+        },
+        {
+          "text": "NetSurveyor hỗ trợ chế độ chạy “Demo” cho các máy không có Wireless Adapter nào",
+          "correct": false
+        },
+        {
+          "text": "NetSurveyor cung cấp thông tin dưới dạng biểu đồ và cho phép tạo báo cáo dưới dạng tập tin PDF",
+          "correct": false
+        }
+      ],
+      "solution": "Đặc tính phần mềm NetSurveyor là phần mềm miễn phí nhưng không phải mã nguồn mở.",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
+      "id": "1794470323514",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Để gửi email, Windows Server 2008 phải chạy dịch vụ nào sau đây?",
+      "choices": [
+        {
+          "text": "SMB",
+          "correct": false
+        },
+        {
+          "text": "POP",
+          "correct": false
+        },
+        {
+          "text": "SMTP",
+          "correct": true
+        },
+        {
+          "text": "Dịch vụ chia sẻ và truyền tập tin",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
+      "id": "1794470323515",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Lựa chọn nào sau đây là cấu hình chia sẻ máy in (printer-sharing) mặc định trong Windows Server 2008?",
+      "choices": [
+        {
+          "text": "Mỗi máy khách (client) sử dụng một máy chủ in ấn",
+          "correct": false
+        },
+        {
+          "text": "Tài nguyên in ấn được chia sẻ giữa máy khách và máy chủ",
+          "correct": true
+        },
+        {
+          "text": "Mỗi máy khách sử dụng máy chủ và driver in ấn riêng biệt",
+          "correct": false
+        },
+        {
+          "text": "Mỗi máy khách sử dụng máy chủ in ấn riêng và một driver in ấn được chia sẻ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
+      "id": "1794470323516",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Để thử nghiệm các hệ điều hành mới trên máy tính đã có hệ điều hành, ta nên sử dụng",
+      "choices": [
+        {
+          "text": "Netware",
+          "correct": false
+        },
+        {
+          "text": "Firmware",
+          "correct": false
+        },
+        {
+          "text": "Coreware",
+          "correct": false
+        },
+        {
+          "text": "Vmware",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
+      "id": "1794470323517",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Active Directory được thiết kế nhằm mục đích nào sau đây?",
+      "choices": [
+        {
+          "text": "Bảo vệ máy tính khỏi các mối đe dọa trên mạng",
+          "correct": false
+        },
+        {
+          "text": "Để lưu trữ thông tin của các đối tượng trên mạng, bao gồm người dùng, nhóm, máy tính, máy in và phần mềm",
+          "correct": false
+        },
+        {
+          "text": "Tăng tốc độ mạng",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 lựa chọn trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
+      "id": "1794470323518",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Chức năng nào sau đây cho phép khôi phục máy ảo về một thời điểm trước đó mỗi khi máy ảo gặp sự cố?",
+      "choices": [
+        {
+          "text": "Snapshot",
+          "correct": true
+        },
+        {
+          "text": "Clone",
+          "correct": false
+        },
+        {
+          "text": "Template",
+          "correct": false
+        },
+        {
+          "text": "Full clone",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:58:43.512Z"
+    },
+    {
       "id": "1794470308788",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
