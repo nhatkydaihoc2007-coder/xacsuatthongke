@@ -12,6 +12,1826 @@
   ],
   "exercises": [
     {
+      "id": "1794494084709",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Lợi ích của việc sử dụng mạng máy tính là gì?",
+      "choices": [
+        {
+          "text": "Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích, …)",
+          "correct": false
+        },
+        {
+          "text": "Quản lý tập trung",
+          "correct": false
+        },
+        {
+          "text": "Tận dụng năng lực xử lý của các máy tính rỗi kết hợp lại để thực hiện các công việc lớn",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084710",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây cho biết đặc điểm của mạng hình vòng?",
+      "choices": [
+        {
+          "text": "Các máy tính liên kết với nhau thành hình vòng theo nguyên tắc điểm-điểm",
+          "correct": false
+        },
+        {
+          "text": "Máy tính trao đổi dữ liệu theo một chiều",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu truyền dạng gói",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084711",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây cho biết đặc điểm của mạng hình sao?",
+      "choices": [
+        {
+          "text": "Truyền dữ liệu qua cáp đồng trục",
+          "correct": false
+        },
+        {
+          "text": "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác",
+          "correct": false
+        },
+        {
+          "text": "Có một nút trung tâm và các nút mạng khác kết nối đến",
+          "correct": true
+        },
+        {
+          "text": "Các nút mạng sử dụng chung một đường cáp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084712",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Topo mạng cục bộ nào mà tất cả các trạm phân chia chung một đường truyền chính?",
+      "choices": [
+        {
+          "text": "Bus",
+          "correct": true
+        },
+        {
+          "text": "Star",
+          "correct": false
+        },
+        {
+          "text": "Ring",
+          "correct": false
+        },
+        {
+          "text": "Hybrid",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084713",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Tính phân phát của một hệ thống giao tiếp dữ liệu là gì?",
+      "choices": [
+        {
+          "text": "Phải phân phát dữ liệu đúng lúc",
+          "correct": false
+        },
+        {
+          "text": "Phải phân phát dữ liệu phù hợp",
+          "correct": false
+        },
+        {
+          "text": "Phải phân phát dữ liệu đúng đích",
+          "correct": true
+        },
+        {
+          "text": "Phải phân phát dữ liệu hiệu quả",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084714",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Server nào thường cung cấp các dịch vụ \"Lưu trữ và chuyển\"?",
+      "choices": [
+        {
+          "text": "Các server in ấn",
+          "correct": false
+        },
+        {
+          "text": "Các server giao tiếp",
+          "correct": false
+        },
+        {
+          "text": "Web server",
+          "correct": false
+        },
+        {
+          "text": "Mail server",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084715",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây cho biết đặc điểm của Mail Server?",
+      "choices": [
+        {
+          "text": "Quản lý lưu lượng các thông điệp email của các user trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Cung cấp các dịch vụ \"lưu trữ và chuyển\"",
+          "correct": false
+        },
+        {
+          "text": "Có thể được chia thành 2 lớp: mail server vào (incoming mail servers) và mail server ra (outgoing mail servers)",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084716",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là sai?",
+      "choices": [
+        {
+          "text": "Băng thông là lượng thông tin di chuyển từ nơi này sang nơi khác trong một khoảng thời gian",
+          "correct": false
+        },
+        {
+          "text": "Công nghệ ADSL có thể chia thành 2 loại: ADSL băng hẹp (N-ADSL) và ADSL băng rộng (B-ADSL)",
+          "correct": true
+        },
+        {
+          "text": "Trong khoa học máy tính, độ đo của băng thông là bps (bit per second)",
+          "correct": false
+        },
+        {
+          "text": "Trong một giây, tải một hình ảnh sẽ tốn nhiều băng thông hơn so với tải một văn bản thô (chỉ có chữ)",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084717",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng?",
+      "choices": [
+        {
+          "text": "Server giao tiếp thường cung cấp các dịch vụ \"lưu trữ và chuyển\"",
+          "correct": false
+        },
+        {
+          "text": "Web server thường cung cấp các dịch vụ \"lưu trữ và chuyển\"",
+          "correct": false
+        },
+        {
+          "text": "Directory Server xử lý các dịch vụ đăng nhập và quản lý tập hợp các máy tính, các user… trong một domain",
+          "correct": true
+        },
+        {
+          "text": "DNS server xử lý các dịch vụ đăng nhập và quản lý tập hợp các máy tính, các user… trong một domain",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084718",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đặc điểm của SANs (Storage-Area Network)?",
+      "choices": [
+        {
+          "text": "Lưu trữ phân bố",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu truyền trên các đường có tốc độ cao",
+          "correct": true
+        },
+        {
+          "text": "Phù hợp cho các mạng có phạm vi hẹp",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084719",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mạng hình sao, điều gì xảy ra khi máy tính trung tâm có sự cố?",
+      "choices": [
+        {
+          "text": "Không ảnh hưởng đến hoạt động của hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Chỉ ngừng hoạt động máy tính đó",
+          "correct": false
+        },
+        {
+          "text": "Toàn bộ hệ thống ngưng hoạt động",
+          "correct": true
+        },
+        {
+          "text": "Chỉ ngừng hoạt động một vài máy tính",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.709Z"
+    },
+    {
+      "id": "1794494084721",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mạng hình sao, điều gì xảy ra khi máy tính biên có sự cố?",
+      "choices": [
+        {
+          "text": "Không ảnh hưởng đến hoạt động của hệ thống",
+          "correct": true
+        },
+        {
+          "text": "Toàn bộ hệ thống ngưng hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Chỉ ngừng hoạt động một vài máy tính",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084722",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Cầu nối (Bridge) hoạt động ở tầng nào của mô hình OSI?",
+      "choices": [
+        {
+          "text": "Tầng ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Tầng vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Tầng mạng",
+          "correct": false
+        },
+        {
+          "text": "Tầng liên kết dữ liệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084723",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Lợi ích của mạng máy tính là gì?",
+      "choices": [
+        {
+          "text": "Chia sẻ file",
+          "correct": false
+        },
+        {
+          "text": "Dễ dàng truy cập đến các tài nguyên",
+          "correct": false
+        },
+        {
+          "text": "Cập nhật thông tin",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084724",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về mạng máy tính?",
+      "choices": [
+        {
+          "text": "Là tập hợp các thành phần phần cứng và máy tính",
+          "correct": false
+        },
+        {
+          "text": "Thực hiện kết nối bằng các kênh truyền (communication channels)",
+          "correct": false
+        },
+        {
+          "text": "Chia sẻ tài nguyên và thông tin",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084725",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Firewall trong mạng máy tính là gì?",
+      "choices": [
+        {
+          "text": "Giới hạn vật lý của mạng",
+          "correct": false
+        },
+        {
+          "text": "Hệ điều hành của mạng máy tính",
+          "correct": false
+        },
+        {
+          "text": "Một hệ thống được thiết kế để ngăn chặn các truy cập không được phép",
+          "correct": true
+        },
+        {
+          "text": "Một phần mềm duyệt web",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084726",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Ý nghĩa của băng thông trong mạng là gì?",
+      "choices": [
+        {
+          "text": "Khả năng truyền của kênh truyền",
+          "correct": true
+        },
+        {
+          "text": "Các máy tính được kết nối trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp địa chỉ IP được sử dụng trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Độ tin cậy của kênh truyền",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084727",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Các thiết bị có thể được sắp xếp dưới dạng topology nào?",
+      "choices": [
+        {
+          "text": "Bus",
+          "correct": false
+        },
+        {
+          "text": "Ring",
+          "correct": false
+        },
+        {
+          "text": "Mesh",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084728",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Mạng máy tính nào xuất hiện đầu tiên trên thế giới?",
+      "choices": [
+        {
+          "text": "ANSNET",
+          "correct": false
+        },
+        {
+          "text": "INTERNET",
+          "correct": false
+        },
+        {
+          "text": "ARPANET",
+          "correct": true
+        },
+        {
+          "text": "CSNET",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084729",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Tần suất xảy ra sự cố mạng và thời gian phục hồi mạng là độ đo tính …….. của mạng",
+      "choices": [
+        {
+          "text": "Hiệu quả",
+          "correct": false
+        },
+        {
+          "text": "Tin cậy",
+          "correct": true
+        },
+        {
+          "text": "Bảo mật",
+          "correct": false
+        },
+        {
+          "text": "Khả thi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084730",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Người dùng không được phép (unauthorized user) có liên quan đến vấn đề nào sau đây?",
+      "choices": [
+        {
+          "text": "Hiệu suất của mạng",
+          "correct": false
+        },
+        {
+          "text": "Độ tin cậy của mạng",
+          "correct": false
+        },
+        {
+          "text": "Bảo mật mạng",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084731",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Topo mạng nào cần có một điều khiển trung tâm hoặc Hub?",
+      "choices": [
+        {
+          "text": "Mesh",
+          "correct": false
+        },
+        {
+          "text": "Star",
+          "correct": true
+        },
+        {
+          "text": "Bus",
+          "correct": false
+        },
+        {
+          "text": "Ring",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084732",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Topo mạng nào cần các kết nối đa điểm?",
+      "choices": [
+        {
+          "text": "Mesh",
+          "correct": false
+        },
+        {
+          "text": "Star",
+          "correct": false
+        },
+        {
+          "text": "Bus",
+          "correct": true
+        },
+        {
+          "text": "Ring",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084733",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Giao tiếp giữa máy tính và bàn phím liên quan đến cách thức truyền nào?",
+      "choices": [
+        {
+          "text": "Simplex",
+          "correct": true
+        },
+        {
+          "text": "Half-duplex",
+          "correct": false
+        },
+        {
+          "text": "Full-Duplex",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084734",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Cách thức truyền nào cho phép kênh truyền được chia sẻ giữa 2 thiết bị tại mọi thời điểm?",
+      "choices": [
+        {
+          "text": "Simplex",
+          "correct": false
+        },
+        {
+          "text": "Half-duplex",
+          "correct": false
+        },
+        {
+          "text": "Full-Duplex",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084735",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Sự sắp xếp vật lý hoặc cấu trúc bố trí các phần tử của mạng và cách nối chúng với nhau được gọi là gì?",
+      "choices": [
+        {
+          "text": "Dòng chảy dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Mode vận hành",
+          "correct": false
+        },
+        {
+          "text": "Topology",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084736",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hệ thống truyền dữ liệu trong phạm vi một tòa nhà, khuôn viên trường học hoặc các tòa nhà gần kề nhau được gọi là gì?",
+      "choices": [
+        {
+          "text": "MAN",
+          "correct": false
+        },
+        {
+          "text": "LAN",
+          "correct": true
+        },
+        {
+          "text": "WAN",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084737",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Băng thông của một tín hiệu là 5 KHz và tần số thấp nhất là 52 KHz, tần số lớn nhất sẽ là bao nhiêu?",
+      "choices": [
+        {
+          "text": "5 KHz",
+          "correct": false
+        },
+        {
+          "text": "10 KHz",
+          "correct": false
+        },
+        {
+          "text": "47 KHz",
+          "correct": false
+        },
+        {
+          "text": "57 KHz",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084738",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Băng thông của tín hiệu có phạm vi từ 1 MHz đến 4 MHz là bao nhiêu?",
+      "choices": [
+        {
+          "text": "4 MHz",
+          "correct": false
+        },
+        {
+          "text": "1 MHz",
+          "correct": false
+        },
+        {
+          "text": "3 MHz",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084739",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Một trong những đặc điểm của Star topology ?",
+      "choices": [
+        {
+          "text": "Khi có sự cố rất khó kiểm tra phát hiện lỗi",
+          "correct": false
+        },
+        {
+          "text": "Loại hình mạng này dùng dây cáp ít nhất, dễ lắp đặt nên tiết kiệm được chi phí lắp đặt",
+          "correct": false
+        },
+        {
+          "text": "Khi cable mạng bị đứt thì thưởng chỉ làm mất kết nối của một máy, còn những máy khác vẫn hoạt động bình thường",
+          "correct": true
+        },
+        {
+          "text": "Sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với lưu lượng lớn",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084740",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Loại tín hiệu nào chỉ có thể có một số giới hạn các giá trị?",
+      "choices": [
+        {
+          "text": "Tín hiệu tương tự",
+          "correct": false
+        },
+        {
+          "text": "Tín hiệu số",
+          "correct": true
+        },
+        {
+          "text": "Tín hiệu liên tục thời gian",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084741",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mạng Pear-to-Pear có đặc điểm nào sau đây?",
+      "choices": [
+        {
+          "text": "Phải có từ 2 máy server trở lên",
+          "correct": false
+        },
+        {
+          "text": "Sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với lưu lượng lớn",
+          "correct": false
+        },
+        {
+          "text": "Không có máy tính nào có trách nhiệm cung cấp, chia sẻ các tài nguyên trong mạng cho các máy khác",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084742",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Dịch vụ mạng thông tin toàn cầu được viết tắt với các chữ nào sau đây?",
+      "choices": [
+        {
+          "text": "NETNEWS",
+          "correct": false
+        },
+        {
+          "text": "TELNET",
+          "correct": false
+        },
+        {
+          "text": "WWW",
+          "correct": true
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084743",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Lượng thông tin di chuyển từ nơi này đến nơi khác trong một khoảng thời gian được gọi là gì?",
+      "choices": [
+        {
+          "text": "Lượng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lưu lượng",
+          "correct": false
+        },
+        {
+          "text": "Băng thông",
+          "correct": true
+        },
+        {
+          "text": "Dòng dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084744",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phần ngoại biên không bao gồm thành phần nào sau đây?",
+      "choices": [
+        {
+          "text": "Các chương trình ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Các máy tính",
+          "correct": false
+        },
+        {
+          "text": "Kết nối liên mạng",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084745",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phần lõi không bao gồm thành phần nào sau đây?",
+      "choices": [
+        {
+          "text": "Các chương trình ứng dụng",
+          "correct": true
+        },
+        {
+          "text": "Kết nối liên mạng",
+          "correct": false
+        },
+        {
+          "text": "Các bộ tìm đường",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084746",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phần ngoại biên của mạng áp dụng mô hình nào sau đây?",
+      "choices": [
+        {
+          "text": "Mô hình Client/server",
+          "correct": false
+        },
+        {
+          "text": "Mô hình Peer-to-Peer",
+          "correct": false
+        },
+        {
+          "text": "A, B đều đúng",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084747",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Để thực hiện hội thảo truyền hình, người ta sử dụng mô hình nào sau đây?",
+      "choices": [
+        {
+          "text": "Mô hình Client/server",
+          "correct": false
+        },
+        {
+          "text": "Mô hình Peer-to-Peer",
+          "correct": true
+        },
+        {
+          "text": "Mô hình Hybrid",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084748",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây cho biết chức năng của phần lõi mạng?",
+      "choices": [
+        {
+          "text": "Phục vụ việc chuyển dữ liệu từ máy này sang máy khác trên mạng",
+          "correct": true
+        },
+        {
+          "text": "Phục vụ việc chuyển mạch từ máy này sang máy khác trên mạng",
+          "correct": false
+        },
+        {
+          "text": "Phục vụ việc chuyển thông tin trong các bộ phận của máy tính",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084749",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Mạng lưới gồm nhiều thiết bị tìm đường được gọi là gì?",
+      "choices": [
+        {
+          "text": "Phần lõi của mạng (Network core)",
+          "correct": true
+        },
+        {
+          "text": "Phần ngoại biên (Network edge)",
+          "correct": false
+        },
+        {
+          "text": "Các mạng truy cập (Access network)",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.710Z"
+    },
+    {
+      "id": "1794494084751",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Có bao nhiêu cấu trúc mạng?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084752",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Storage server-based là một …?",
+      "choices": [
+        {
+          "text": "Cấu trúc mạng",
+          "correct": false
+        },
+        {
+          "text": "Máy chủ (server)",
+          "correct": true
+        },
+        {
+          "text": "Máy con (client)",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084753",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Client/server là một …?",
+      "choices": [
+        {
+          "text": "Cấu trúc mạng",
+          "correct": true
+        },
+        {
+          "text": "Máy chủ (server)",
+          "correct": false
+        },
+        {
+          "text": "Máy con (client)",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084754",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Storage-area là một …?",
+      "choices": [
+        {
+          "text": "Cấu trúc mạng",
+          "correct": true
+        },
+        {
+          "text": "Máy chủ (server)",
+          "correct": false
+        },
+        {
+          "text": "Máy con (client)",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084755",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về mô hình Peer-to-Peer?",
+      "choices": [
+        {
+          "text": "Bất kỳ máy nào cũng có chức năng như là client hoặc là server",
+          "correct": false
+        },
+        {
+          "text": "Các máy có độ ưu tiên như nhau để truy xuất hoặc có trách nhiệm cung cấp, chia sẻ các tài nguyên trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Mỗi user đóng vai trò là người quản trị hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084756",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Mô hình SAN phù hợp cho các mạng có phạm vi như thế nào?",
+      "choices": [
+        {
+          "text": "Nhỏ",
+          "correct": false
+        },
+        {
+          "text": "Vừa",
+          "correct": false
+        },
+        {
+          "text": "Rộng",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084757",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về các server giao tiếp?",
+      "choices": [
+        {
+          "text": "Cung cấp khả năng truy xuất đến các tài nguyên cho các user không nối trực tiếp mạng (giao tiếp bên trong)",
+          "correct": false
+        },
+        {
+          "text": "Cho phép các user mạng truy xuất các tài nguyên bên ngoài không nối trực tiếp đến mạng (giao tiếp bên ngoài)",
+          "correct": false
+        },
+        {
+          "text": "Cả hai câu a, b đều đúng",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084758",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng cho Web Server?",
+      "choices": [
+        {
+          "text": "Web Server quản lý lưu lượng các thông điệp email của các user trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Web Server phải hoạt động liên tục 24/24",
+          "correct": true
+        },
+        {
+          "text": "Web Server không nhất thiết phải có địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084759",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Dòng thông tin truyền giữa 2 máy tính với nhau có đặc điểm gì?",
+      "choices": [
+        {
+          "text": "Full-Duplex",
+          "correct": true
+        },
+        {
+          "text": "Haft-Duplex",
+          "correct": false
+        },
+        {
+          "text": "Simplex",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084760",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hiệu suất của mạng Client-Server không phụ thuộc yếu tố nào sau đây?",
+      "choices": [
+        {
+          "text": "Băng thông",
+          "correct": false
+        },
+        {
+          "text": "Bộ nhớ dữ liệu thiết bị",
+          "correct": true
+        },
+        {
+          "text": "Độ trễ tín hiệu",
+          "correct": false
+        },
+        {
+          "text": "Số lượng máy Client trong mạng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084761",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hiệu suất của mạng Client-Server phụ thuộc yếu tố nào sau đây?",
+      "choices": [
+        {
+          "text": "Độ trễ tín hiệu",
+          "correct": false
+        },
+        {
+          "text": "Băng thông, độ nhiễu tín hiệu",
+          "correct": false
+        },
+        {
+          "text": "Băng thông, độ trễ tín hiệu",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084762",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Độ trễ vòng (round-trip latency) trong mạng máy tính là gì?",
+      "choices": [
+        {
+          "text": "Thời gian cần thiết để gói tin được truyền từ nơi gửi đến nơi nhận",
+          "correct": false
+        },
+        {
+          "text": "Thời gian cần thiết để gói tin được truyền từ nơi gửi đến nơi nhận và phản hồi lại cho nơi nhận, không bao gồm thời gian xử lý gói tin",
+          "correct": true
+        },
+        {
+          "text": "Thời gian cần thiết để gói tin được truyền từ nơi gửi đến nơi nhận và phản hồi lại cho nơi nhận, bao gồm cả thời gian xử lý gói tin",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084763",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mô hình Client-Server, Server có chức năng là gì?",
+      "choices": [
+        {
+          "text": "Là máy tính truy xuất dữ liệu chia sẻ",
+          "correct": false
+        },
+        {
+          "text": "Yêu cầu dữ liệu và thông tin hệ thống",
+          "correct": false
+        },
+        {
+          "text": "Đáp ứng yêu cầu thông tin của các client",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084764",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Internet là sản phẩm có được từ mạng nào sau đây?",
+      "choices": [
+        {
+          "text": "PAN",
+          "correct": false
+        },
+        {
+          "text": "HAN",
+          "correct": false
+        },
+        {
+          "text": "LAN",
+          "correct": false
+        },
+        {
+          "text": "ARPANET",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084765",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hãy cho biết Petabyte là đơn vị đo lường lượng thông tin nào sau đây?",
+      "choices": [
+        {
+          "text": "1024 Meg",
+          "correct": false
+        },
+        {
+          "text": "1024 Giga",
+          "correct": false
+        },
+        {
+          "text": "1024 Tera",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084766",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Hãy cho biết Terabyte là đơn vị đo lường lượng thông tin nào sau đây?",
+      "choices": [
+        {
+          "text": "1024 KB",
+          "correct": false
+        },
+        {
+          "text": "1024 MB",
+          "correct": false
+        },
+        {
+          "text": "1024 GB",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084767",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Đơn vị MB đo lường thông tin thực tế của nhà sản xuất là bao nhiêu?",
+      "choices": [
+        {
+          "text": "1000 KB",
+          "correct": true
+        },
+        {
+          "text": "1000 B",
+          "correct": false
+        },
+        {
+          "text": "1000 bits",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084768",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Nếu lấy hình tượng hệ thống ống nước nhằm so sánh với mạng máy tính, thì gói thông tin được so sánh với yếu tố nào sau đây?",
+      "choices": [
+        {
+          "text": "Khóa van",
+          "correct": false
+        },
+        {
+          "text": "Máy bơm",
+          "correct": false
+        },
+        {
+          "text": "Nước",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084769",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "IEEE 802.13 là gì?",
+      "choices": [
+        {
+          "text": "Một loại mạng",
+          "correct": false
+        },
+        {
+          "text": "Wifi",
+          "correct": false
+        },
+        {
+          "text": "LAN",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084770",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "RFC là viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Request For Comments",
+          "correct": true
+        },
+        {
+          "text": "Request For Call",
+          "correct": false
+        },
+        {
+          "text": "Request For Class",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084771",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về mô hình Client-Server?",
+      "choices": [
+        {
+          "text": "Là mô hình trong đó máy chủ sẽ gửi dữ liệu đến tất cả các máy con bất kể là máy con có cần hay không",
+          "correct": false
+        },
+        {
+          "text": "Là mô hình trong đó máy con sẽ gửi yêu cầu cho máy chủ, máy chủ sẽ trả lời các yêu cầu của máy con",
+          "correct": true
+        },
+        {
+          "text": "Là mô hình chưa được áp dụng rộng rãi",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084772",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về máy chủ tập tin (File-Server)?",
+      "choices": [
+        {
+          "text": "Máy chủ không thực hiện bất kì chức năng tính toán hay chạy chương trình nào thay mặt cho máy con",
+          "correct": false
+        },
+        {
+          "text": "Được thiết kế chủ yếu cho việc lưu trữ và lấy dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Thường thấy trong các trường học và văn phòng",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084773",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mô hình Peer-to-Peer, điều gì xảy ra nếu có một máy mất nguồn?",
+      "choices": [
+        {
+          "text": "Hệ thống vẫn hoạt động",
+          "correct": true
+        },
+        {
+          "text": "Hệ thống ngừng hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Tùy trường hợp mà hệ thống sẽ vẫn hoạt động hoặc ngưng hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084774",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong mô hình Client-Server, điều gì xảy ra nếu có một máy mất nguồn?",
+      "choices": [
+        {
+          "text": "Hệ thống vẫn hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Hệ thống ngừng hoạt động",
+          "correct": false
+        },
+        {
+          "text": "Tùy trường hợp mà hệ thống sẽ vẫn hoạt động hoặc ngưng hoạt động",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.711Z"
+    },
+    {
+      "id": "1794494084776",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về mô hình Peer-to-Peer?",
+      "choices": [
+        {
+          "text": "Không cần có quản trị mạng",
+          "correct": true
+        },
+        {
+          "text": "Khó cài đặt",
+          "correct": false
+        },
+        {
+          "text": "Chi phí cài đặt cao",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.712Z"
+    },
+    {
+      "id": "1794494084777",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về mô hình Client-Server?",
+      "choices": [
+        {
+          "text": "Phải có quản trị mạng",
+          "correct": false
+        },
+        {
+          "text": "Chi phí cài đặt cao",
+          "correct": false
+        },
+        {
+          "text": "Độ an toàn và bảo mật thông tin cao",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.712Z"
+    },
+    {
+      "id": "1794494084778",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Mô hình nào có sự xử lý và lưu trữ tập trung?",
+      "choices": [
+        {
+          "text": "Peer-to-Peer",
+          "correct": false
+        },
+        {
+          "text": "Client-Server",
+          "correct": true
+        },
+        {
+          "text": "Hybrid",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.712Z"
+    },
+    {
+      "id": "1794494084779",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Để chia sẻ thông tin, dữ liệu trong các nhóm, cộng đồng, người ta thường sử dụng mô hình nào sau đây?",
+      "choices": [
+        {
+          "text": "Peer-to-Peer",
+          "correct": false
+        },
+        {
+          "text": "Client-Server",
+          "correct": true
+        },
+        {
+          "text": "Master-Slaver",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.712Z"
+    },
+    {
+      "id": "1794494084780",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "ADSL là viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Asymmetric Digital Subscriber Line",
+          "correct": true
+        },
+        {
+          "text": "Asymmetric Digit Subscriber Line",
+          "correct": false
+        },
+        {
+          "text": "Asymmetric Digital Storage Line",
+          "correct": false
+        },
+        {
+          "text": "Asymmetric Data Storage Line",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.712Z"
+    },
+    {
+      "id": "1794494084781",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tổng quan về mạng",
+      "question": "Trong hoạt động kinh doanh truyền hình cáp Video-on-Demand, người ta sử dụng mô hình nào sau đây?",
+      "choices": [
+        {
+          "text": "Unicast",
+          "correct": true
+        },
+        {
+          "text": "Broadcast",
+          "correct": false
+        },
+        {
+          "text": "Multicast",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:34:44.712Z"
+    },
+    {
       "id": "1794474563683",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Quản trị mạng",
