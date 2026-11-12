@@ -12,6 +12,890 @@
   ],
   "exercises": [
     {
+      "id": "1794494210521",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Mục tiêu của lớp Datalink là …",
+      "choices": [
+        {
+          "text": "Cung cấp một giao tiếp tin cậy giữa hai máy",
+          "correct": false
+        },
+        {
+          "text": "Cung cấp một giao tiếp tốt giữa hai máy",
+          "correct": false
+        },
+        {
+          "text": "Cung cấp một giao tiếp hiệu quả giữa hai máy",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210522",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Một trong những công việc của lớp Datalink là …",
+      "choices": [
+        {
+          "text": "Xây dựng segment",
+          "correct": false
+        },
+        {
+          "text": "Xây dựng frame",
+          "correct": true
+        },
+        {
+          "text": "Xây dựng packet",
+          "correct": false
+        },
+        {
+          "text": "Xây dựng bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210523",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Điều khiển liên kết luận lý trong lớp Datalink gồm:",
+      "choices": [
+        {
+          "text": "Điều khiển dòng dữ liệu, kiểm soát lỗi",
+          "correct": true
+        },
+        {
+          "text": "Điều khiển băng thông",
+          "correct": false
+        },
+        {
+          "text": "Điều khiển tạo frame",
+          "correct": false
+        },
+        {
+          "text": "Điều khiển việc tạo segment",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210524",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Phương pháp nào sau đây không được sử dụng trong việc xây dựng frame?",
+      "choices": [
+        {
+          "text": "Dùng số đếm ký tự",
+          "correct": false
+        },
+        {
+          "text": "Dùng ký tự đầu và ký tự kết thúc kết hợp chèn ký tự",
+          "correct": false
+        },
+        {
+          "text": "Dùng hash",
+          "correct": true
+        },
+        {
+          "text": "Dùng mẫu bit không hợp lệ",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210525",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong cách xây dựng frame bằng phương pháp các mẫu bit không hợp lệ, người ta sử dụng cặp bit nào:",
+      "choices": [
+        {
+          "text": "high low",
+          "correct": false
+        },
+        {
+          "text": "low high",
+          "correct": false
+        },
+        {
+          "text": "low low",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210526",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Có mấy cách để điều khiển lỗi trong lớp Datalink?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "3.0",
+          "correct": true
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210527",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Điều khiển lỗi trong lớp Datalink không sử dụng phương pháp nào sau đây?",
+      "choices": [
+        {
+          "text": "Dùng timer",
+          "correct": false
+        },
+        {
+          "text": "Dùng tín hiệu ACK, NAK",
+          "correct": false
+        },
+        {
+          "text": "Dùng số thứ tự",
+          "correct": false
+        },
+        {
+          "text": "Dùng số Fibonaci",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210528",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Điều khiển truy cập lớp Datalink không quy định yêu cầu nào?",
+      "choices": [
+        {
+          "text": "Chỉ có một trạm được phát tín hiệu tại một thời điểm",
+          "correct": false
+        },
+        {
+          "text": "Các trạm sẽ thay đổi trạng thái",
+          "correct": false
+        },
+        {
+          "text": "Các giao thức xây dựng phải đảm bảo tính công bằng cho các trạm",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210529",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Có mấy cách hiện thực giao thức CSMA?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "3.0",
+          "correct": true
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210530",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Có mấy cách hiện thực giao thức ALOHA?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": true
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210531",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Cơ chế CSMA/CD có đặc điểm gì sau đây?",
+      "choices": [
+        {
+          "text": "Lắng nghe trong khi đang truyền và cho user truyền khi nào có data truyền",
+          "correct": false
+        },
+        {
+          "text": "Lắng nghe trong khi đang truyền và phát hiện khi có tín hiệu của một trạm khác can thiệp vào",
+          "correct": true
+        },
+        {
+          "text": "Lắng nghe trong khi đang truyền và không cho user truyền khi nào có data truyền",
+          "correct": false
+        },
+        {
+          "text": "Lắng nghe trong khi đang truyền và lan truyền tín hiệu đến các trạm khác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210532",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Công nghệ mạng LAN sử dụng phổ biến hiện nay là:",
+      "choices": [
+        {
+          "text": "Token ring",
+          "correct": false
+        },
+        {
+          "text": "FDDI",
+          "correct": false
+        },
+        {
+          "text": "Ethernet",
+          "correct": true
+        },
+        {
+          "text": "ADSL",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210533",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Ethernet là mạng thuộc chuẩn …",
+      "choices": [
+        {
+          "text": "IEEE 802.3",
+          "correct": true
+        },
+        {
+          "text": "IEEE 802.4",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.5",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.6",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210534",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Token bus là mạng thuộc chuẩn ….",
+      "choices": [
+        {
+          "text": "IEEE 802.3",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.4",
+          "correct": true
+        },
+        {
+          "text": "IEEE 802.5",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.6",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210535",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Token ring là mạng thuộc chuẩn …",
+      "choices": [
+        {
+          "text": "IEEE 802.3",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.4",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.5",
+          "correct": true
+        },
+        {
+          "text": "IEEE 802.6",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210536",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Wireless LAN là mạng thuộc chuẩn …",
+      "choices": [
+        {
+          "text": "IEEE 802.3",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.5",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.6",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.11",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210537",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Gigabit Ethernet có tốc độ …",
+      "choices": [
+        {
+          "text": "10 Mbps",
+          "correct": false
+        },
+        {
+          "text": "100 Mbps",
+          "correct": false
+        },
+        {
+          "text": "1000 Mbps",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210538",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Token ring là mạng có mô hình vật lý là",
+      "choices": [
+        {
+          "text": "Hình sao",
+          "correct": true
+        },
+        {
+          "text": "Hình tròn",
+          "correct": false
+        },
+        {
+          "text": "Bus chung",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210539",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Token ring ít được sử dụng là do …",
+      "choices": [
+        {
+          "text": "Giá cả",
+          "correct": false
+        },
+        {
+          "text": "Phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Chỉ có 1 nhà cung cấp",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210540",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Mô tả nào sau đây là cho mạng hình sao (star)?",
+      "choices": [
+        {
+          "text": "Truyền dữ liệu qua cáp đồng trục",
+          "correct": false
+        },
+        {
+          "text": "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác",
+          "correct": false
+        },
+        {
+          "text": "Có một nút trung tâm và các nút mạng khác kết nối đến",
+          "correct": true
+        },
+        {
+          "text": "Các nút mạng sử dụng chung một đường cáp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210541",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong phương pháp đếm số lượng ký tự, nếu bất kỳ một bit nào sai trong ký tự lưu giữ số lượng ký tự kế tiếp thì …",
+      "choices": [
+        {
+          "text": "Toàn bộ ký tự nhận sau đó sẽ sai",
+          "correct": true
+        },
+        {
+          "text": "Chỉ có ký tự ngay vi trí lưu giữ giá trị số lượng ký tự sai",
+          "correct": false
+        },
+        {
+          "text": "Chỉ có ký tự ngay trước vị trí lưu trữ giá trị số lượng ký tự sai",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210542",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Cách sử dụng cờ cần nên kết hợp với kỹ thuật …",
+      "choices": [
+        {
+          "text": "Chèn bit",
+          "correct": true
+        },
+        {
+          "text": "Chèn byte",
+          "correct": false
+        },
+        {
+          "text": "Chèn frame",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210543",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Để xem địa chỉ Ethernet của NIC, người ta có thể sử dụng lệnh gì?",
+      "choices": [
+        {
+          "text": "Lệnh nslookup",
+          "correct": false
+        },
+        {
+          "text": "Lệnh ping",
+          "correct": false
+        },
+        {
+          "text": "Lệnh netstat",
+          "correct": false
+        },
+        {
+          "text": "Lệnh ipconfig",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210544",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "WiMax là mạng thuộc chuẩn …",
+      "choices": [
+        {
+          "text": "IEEE 802.11",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.3",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.15",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.16",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210545",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "So với thiết bị hub, thì thiết bị switch có ưu điểm hơn ở điểm nào?",
+      "choices": [
+        {
+          "text": "Lưu lại bản ghi nhớ địa chỉ MAC của tất cả các thiết bị mà nó kết nối tới",
+          "correct": false
+        },
+        {
+          "text": "Khi nhận được một gói dữ liệu, switch sẽ biết đích xác cổng nào cần gửi tới",
+          "correct": false
+        },
+        {
+          "text": "Phân phối các gói dữ liệu hiệu quả hơn và tiết kiệm lưu lượng mạng",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210546",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Để có thể phát hiện lỗi của bit trong việc truyền các frame, người ta có thể sử dụng",
+      "choices": [
+        {
+          "text": "Mã Hamming",
+          "correct": true
+        },
+        {
+          "text": "Parity",
+          "correct": false
+        },
+        {
+          "text": "Bool",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210547",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Để có thể sửa lỗi của bit trong việc truyền các frame, người ta có thể sử dụng",
+      "choices": [
+        {
+          "text": "Mã Hamming",
+          "correct": true
+        },
+        {
+          "text": "Parity",
+          "correct": false
+        },
+        {
+          "text": "Bool",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.521Z"
+    },
+    {
+      "id": "1794494210549",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong việc sử dụng parity chẵn, nếu có tồn tại số lượng bit sai là số chẵn thì …",
+      "choices": [
+        {
+          "text": "Không phát hiện frame sai",
+          "correct": true
+        },
+        {
+          "text": "Phát hiện frame sai",
+          "correct": false
+        },
+        {
+          "text": "Chỉ phát hiện được duy nhất một frame sai",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
+      "id": "1794494210550",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong việc sử dụng parity chẵn, nếu có tồn tại số lượng bit sai là số lẻ thì …",
+      "choices": [
+        {
+          "text": "Không phát hiện frame sai",
+          "correct": false
+        },
+        {
+          "text": "Phát hiện frame sai",
+          "correct": true
+        },
+        {
+          "text": "Chỉ phát hiện được duy nhất một frame sai",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
+      "id": "1794494210551",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong việc sử dụng parity lẻ, nếu có tồn tại số lượng bit sai là số chẵn thì …",
+      "choices": [
+        {
+          "text": "Không phát hiện frame sai",
+          "correct": true
+        },
+        {
+          "text": "Phát hiện frame sai",
+          "correct": false
+        },
+        {
+          "text": "Chỉ phát hiện được duy nhất một frame sai",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
+      "id": "1794494210552",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong việc sử dụng parity lẻ, nếu có tồn tại số lượng bit sai là số lẻ thì …",
+      "choices": [
+        {
+          "text": "Không phát hiện frame sai",
+          "correct": false
+        },
+        {
+          "text": "Phát hiện frame sai",
+          "correct": true
+        },
+        {
+          "text": "Chỉ phát hiện được duy nhất một frame sai",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
+      "id": "1794494210553",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Bridge là thiết bị được sử dụng để kết nối 2 hay nhiều mô hình mạng LAN … lại với nhau",
+      "choices": [
+        {
+          "text": "không giống",
+          "correct": false
+        },
+        {
+          "text": "gần giống",
+          "correct": true
+        },
+        {
+          "text": "giống",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
+      "id": "1794494210554",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Để có thể khuếch đại tín hiệu khi tín hiện đã được lan truyền gần đạt chiều dài tối đa, ta sử dụng",
+      "choices": [
+        {
+          "text": "Hub",
+          "correct": false
+        },
+        {
+          "text": "Switch",
+          "correct": false
+        },
+        {
+          "text": "Bridge",
+          "correct": false
+        },
+        {
+          "text": "Repeater",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
+      "id": "1794494210555",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Switch là hub …",
+      "choices": [
+        {
+          "text": "Thông minh",
+          "correct": false
+        },
+        {
+          "text": "Ổn định, ít nghẽn",
+          "correct": false
+        },
+        {
+          "text": "Cả hai câu đều đúng",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:50.522Z"
+    },
+    {
       "id": "1794494182957",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
