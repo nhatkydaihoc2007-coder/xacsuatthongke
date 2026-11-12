@@ -12,6 +12,1540 @@
   ],
   "exercises": [
     {
+      "id": "1794495894360",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Lớp network là lớp có chức năng nào sau đây?",
+      "choices": [
+        {
+          "text": "Bảo đảm truyền nhận đúng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Truyền nhận frame, kiểm tra và sửa lỗi",
+          "correct": false
+        },
+        {
+          "text": "Kết nối vật lý và truyền các bit",
+          "correct": false
+        },
+        {
+          "text": "Quản lý địa chỉ, tìm đường và truyền nhận các packet",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894361",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Protocol nào được sử dụng cho Internet?",
+      "choices": [
+        {
+          "text": "TCP/IP",
+          "correct": true
+        },
+        {
+          "text": "Netbeui",
+          "correct": false
+        },
+        {
+          "text": "IPX/SPX",
+          "correct": false
+        },
+        {
+          "text": "DLC",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894362",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Để đóng một kết nối TCP, 2 máy phải trao đổi:",
+      "choices": [
+        {
+          "text": "2 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "3 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "4 thông điệp",
+          "correct": true
+        },
+        {
+          "text": "5 thông điệp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894363",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IP với hostID toàn bit 1 có nghĩa:",
+      "choices": [
+        {
+          "text": "Broadcast",
+          "correct": true
+        },
+        {
+          "text": "Multicast",
+          "correct": false
+        },
+        {
+          "text": "Single IP",
+          "correct": false
+        },
+        {
+          "text": "Group IP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894364",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Internet là:",
+      "choices": [
+        {
+          "text": "Mạng toàn cầu",
+          "correct": true
+        },
+        {
+          "text": "Sử dụng giao thức TCP",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng giao thức UDP",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894365",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "TCP/IP là:",
+      "choices": [
+        {
+          "text": "Bộ giao thức sử dụng trong mạng Internet",
+          "correct": true
+        },
+        {
+          "text": "Giao thức truyền nhận trên Internet",
+          "correct": false
+        },
+        {
+          "text": "Giao thức truyền nhận file",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894366",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Mỗi gói tin IP phải chứa thông tin nào sau đây?",
+      "choices": [
+        {
+          "text": "Địa chỉ nguồn",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ đích",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ nguồn hoặc địa chỉ đích",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ nguồn và địa chỉ đích",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894367",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "……….. cung cấp một dịch vụ hướng kết nối tin cậy để truyền thông điệp",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "IP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894368",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Lớp địa chỉ IP nào sau đây là multicast?",
+      "choices": [
+        {
+          "text": "Lớp A",
+          "correct": false
+        },
+        {
+          "text": "Lớp B",
+          "correct": false
+        },
+        {
+          "text": "Lớp C",
+          "correct": false
+        },
+        {
+          "text": "Lớp D",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894369",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Phát biểu nào sau đây đúng cho địa chỉ IP lớp B?",
+      "choices": [
+        {
+          "text": "Số bit dành cho Network-14, số bit dành cho Host-16",
+          "correct": true
+        },
+        {
+          "text": "Số bit dành cho Network-16, số bit dành cho Host-14",
+          "correct": false
+        },
+        {
+          "text": "Số bit dành cho Network-18, số bit dành cho Host-16",
+          "correct": false
+        },
+        {
+          "text": "Số bit dành cho Network-12, số bit dành cho Host-14",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894370",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ cuối cùng của địa chỉ IP biểu diễn",
+      "choices": [
+        {
+          "text": "Địa chỉ Unicast",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ mạng",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ Broadcast",
+          "correct": true
+        },
+        {
+          "text": "Các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894371",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ Ethernet gồm bao nhiêu bit?",
+      "choices": [
+        {
+          "text": "64 bit",
+          "correct": false
+        },
+        {
+          "text": "48 bit",
+          "correct": true
+        },
+        {
+          "text": "32 bit",
+          "correct": false
+        },
+        {
+          "text": "16 bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894372",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Kích thước lớn nhất cho phép của phần header trong gói tin IP là bao nhiêu?",
+      "choices": [
+        {
+          "text": "32 bytes",
+          "correct": false
+        },
+        {
+          "text": "64 bytes",
+          "correct": false
+        },
+        {
+          "text": "30 byte",
+          "correct": false
+        },
+        {
+          "text": "60 bytes",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894373",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Số bit dành cho host trong địa chỉ IP lớp B là bao nhiêu?",
+      "choices": [
+        {
+          "text": "4 bit",
+          "correct": false
+        },
+        {
+          "text": "8 bit",
+          "correct": false
+        },
+        {
+          "text": "16 bit",
+          "correct": true
+        },
+        {
+          "text": "32 bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.360Z"
+    },
+    {
+      "id": "1794495894375",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Số bit dành cho Network trong địa chỉ IP lớp B là bao nhiêu?",
+      "choices": [
+        {
+          "text": "4 bit",
+          "correct": false
+        },
+        {
+          "text": "8 bit",
+          "correct": false
+        },
+        {
+          "text": "14 bit",
+          "correct": true
+        },
+        {
+          "text": "16 bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894376",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Broadcasting trong mạng có nghĩa là gì?",
+      "choices": [
+        {
+          "text": "Gửi một gói tin đến tất cả các máy",
+          "correct": true
+        },
+        {
+          "text": "Gửi một gói tin đến một số máy",
+          "correct": false
+        },
+        {
+          "text": "Gửi một gói tin đến một máy cụ thể",
+          "correct": false
+        },
+        {
+          "text": "Gửi một gói tin đến tất cả các máy trừ một máy cụ thể nào đó",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894377",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ MAC gồm bao nhiêu bit?",
+      "choices": [
+        {
+          "text": "16 bit",
+          "correct": false
+        },
+        {
+          "text": "32 bit",
+          "correct": false
+        },
+        {
+          "text": "48 bit",
+          "correct": true
+        },
+        {
+          "text": "64 bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894378",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Hãy cho biết đâu là một phần mềm ứng dụng phân tích dữ liệu hệ thống mạng, với khả năng theo dõi, giám sát các gói tin theo thời gian thực?",
+      "choices": [
+        {
+          "text": "Netstat",
+          "correct": false
+        },
+        {
+          "text": "Wireshark",
+          "correct": true
+        },
+        {
+          "text": "Packet Tracer",
+          "correct": false
+        },
+        {
+          "text": "NetSurveyor",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894379",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Người ta sử dụng câu lệnh Ping để …",
+      "choices": [
+        {
+          "text": "Kiểm tra kết nối mạng",
+          "correct": true
+        },
+        {
+          "text": "Kiểm tra lỗi đĩa cứng",
+          "correct": false
+        },
+        {
+          "text": "Tìm lỗi của một ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894380",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Bảng tìm đường của Router lưu giữ",
+      "choices": [
+        {
+          "text": "Các địa chỉ MAC",
+          "correct": false
+        },
+        {
+          "text": "Các địa chỉ Port gán cho các thiết bị mạng",
+          "correct": false
+        },
+        {
+          "text": "Các địa chỉ IP phân phối cho các thiết bị mạng",
+          "correct": false
+        },
+        {
+          "text": "Các đường đi để sử dụng cho việc chuyển tiếp dữ liệu đến đích",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894381",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "DHCP là viết tắt của …",
+      "choices": [
+        {
+          "text": "Dynamic Host Control Protocol",
+          "correct": false
+        },
+        {
+          "text": "Dynamic Host Configuration Protocol",
+          "correct": true
+        },
+        {
+          "text": "Dynamic Hyper Control Protocol",
+          "correct": false
+        },
+        {
+          "text": "Dynamic Hyper Configuration Protocol",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894382",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IPv4 gồm bao nhiêu bit?",
+      "choices": [
+        {
+          "text": "8 bit",
+          "correct": false
+        },
+        {
+          "text": "16 bit",
+          "correct": false
+        },
+        {
+          "text": "32 bit",
+          "correct": true
+        },
+        {
+          "text": "48 bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894383",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Lệnh Ping là một công cụ trong mạng máy tính để làm gì?",
+      "choices": [
+        {
+          "text": "Kiểm tra xem có thể kết nối tới một máy cụ thể nào đó trong mạng",
+          "correct": false
+        },
+        {
+          "text": "Dùng để ước lượng khoảng thời gian để gửi 1 gói dữ liệu đến máy đích",
+          "correct": false
+        },
+        {
+          "text": "Ước lượng tỉ lệ các gói dữ liệu có thể bị mất trong kết nối.",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894384",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Người ta sử dụng Bridge trong mạng để …",
+      "choices": [
+        {
+          "text": "Kết nối các mạng LANs",
+          "correct": true
+        },
+        {
+          "text": "Tách biệt các mạng LANs",
+          "correct": false
+        },
+        {
+          "text": "Điều khiển tốc độ mạng",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894385",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Router hoạt động ở lớp nào của mô hình OSI?",
+      "choices": [
+        {
+          "text": "Lớp 1-Lớp vật lý",
+          "correct": false
+        },
+        {
+          "text": "Lớp 3-Lớp mạng",
+          "correct": true
+        },
+        {
+          "text": "Lớp 4-Lớp vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Lớp 7-Lớp ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894386",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Tại sao giao thức IP được xem là không đáng tin cậy?",
+      "choices": [
+        {
+          "text": "Gói tin có thể bị mất",
+          "correct": false
+        },
+        {
+          "text": "Gói tin có thể đến không có thứ tự",
+          "correct": false
+        },
+        {
+          "text": "Các gói tin lặp có thể được sinh ra",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894387",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Kích thước tối thiểu cho phần header của gói tin IP là bao nhiêu?",
+      "choices": [
+        {
+          "text": "16 bytes",
+          "correct": false
+        },
+        {
+          "text": "10 bytes",
+          "correct": false
+        },
+        {
+          "text": "20 bytes",
+          "correct": true
+        },
+        {
+          "text": "32 bytes",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894388",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Giao thức nào sau đây cung cấp giao tiếp đáng tin cậy?",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "IP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các giao thức trên",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894389",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IPv6 gồm bao nhiêu bit?",
+      "choices": [
+        {
+          "text": "32 bit",
+          "correct": false
+        },
+        {
+          "text": "64 bit",
+          "correct": false
+        },
+        {
+          "text": "128 bit",
+          "correct": true
+        },
+        {
+          "text": "256 bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894390",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Trong địa chỉ IP lớp A, số bit dành cho phần Network và phần Host lần lượt là",
+      "choices": [
+        {
+          "text": "7, 24",
+          "correct": true
+        },
+        {
+          "text": "8, 24",
+          "correct": false
+        },
+        {
+          "text": "7, 23",
+          "correct": false
+        },
+        {
+          "text": "8, 23",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894391",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Hoạt động của Router trong mạng là gì?",
+      "choices": [
+        {
+          "text": "Chuyển tiếp gói tin đến tất cả các kết nối đi ra",
+          "correct": false
+        },
+        {
+          "text": "Chuyển tiếp gói tin đến kết nối đi ra tiếp theo đang rảnh",
+          "correct": false
+        },
+        {
+          "text": "Xác định kết nối đi ra mà gói tin sẽ được chuyển tiếp",
+          "correct": true
+        },
+        {
+          "text": "Chuyển tiếp gói tin đến tất cả các kết nối đi ra ngoại trừ kết nối gốc",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894392",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Internet là một ví dụ của …",
+      "choices": [
+        {
+          "text": "Mạng chuyển mạch tế bào (Cell switched network)",
+          "correct": false
+        },
+        {
+          "text": "Mạng chuyển mạch mạch (Circuit switched network)",
+          "correct": false
+        },
+        {
+          "text": "Mạng chuyển mạch gói",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894393",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Protocol xác định …",
+      "choices": [
+        {
+          "text": "Những dữ liệu nào được truyền",
+          "correct": false
+        },
+        {
+          "text": "Dữ liệu được truyền như thế nào",
+          "correct": false
+        },
+        {
+          "text": "Khi nào dữ liệu được truyền",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894394",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Sử dụng Subnetting nhằm …",
+      "choices": [
+        {
+          "text": "Chia một mạng lớn thành nhiều mạng nhỏ hơn",
+          "correct": true
+        },
+        {
+          "text": "Chia mạng thành các lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Tăng tốc độ mạng",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894395",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Khi một host trong mạng A gửi thông điệp đến một host trong mạng B thì router sẽ nhìn vào địa chỉ nào?",
+      "choices": [
+        {
+          "text": "Địa chỉ vật lý",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ luận lý",
+          "correct": true
+        },
+        {
+          "text": "Địa chỉ port",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894396",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Để gửi một thông điệp đến chính xác chương trình ứng dụng đang chạy trên một host thì địa chỉ nào được xem xét?",
+      "choices": [
+        {
+          "text": "Địa chỉ port",
+          "correct": true
+        },
+        {
+          "text": "Địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ vật lý",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894397",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "IP là giao thức …",
+      "choices": [
+        {
+          "text": "Đáng tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Hướng kết nối",
+          "correct": false
+        },
+        {
+          "text": "Cả 2 câu trên đều đúng",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894398",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ port gồm bao nhiêu bit?",
+      "choices": [
+        {
+          "text": "32.0",
+          "correct": false
+        },
+        {
+          "text": "48.0",
+          "correct": false
+        },
+        {
+          "text": "16.0",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894399",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Trong IPv4 header, giá trị thập phân của HLEN là 10 có nghĩa là …",
+      "choices": [
+        {
+          "text": "Có 10 byte trong phần Option",
+          "correct": false
+        },
+        {
+          "text": "Có 40 byte trong phần Option",
+          "correct": false
+        },
+        {
+          "text": "Có 10 byte trong phần Header",
+          "correct": false
+        },
+        {
+          "text": "Có 40 byte trong phần Header",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894400",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Trong IPv4, giá trị của trường Total Length là bao nhiêu nếu phần Header là 28 byte và phần dữ liệu là 400 byte?",
+      "choices": [
+        {
+          "text": "428 bytes",
+          "correct": true
+        },
+        {
+          "text": "407 bytes",
+          "correct": false
+        },
+        {
+          "text": "107 bytes",
+          "correct": false
+        },
+        {
+          "text": "427 bytes",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894401",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IP lớp nào có số lượng địa chỉ lớn nhất?",
+      "choices": [
+        {
+          "text": "Lớp A",
+          "correct": true
+        },
+        {
+          "text": "Lớp B",
+          "correct": false
+        },
+        {
+          "text": "Lớp C",
+          "correct": false
+        },
+        {
+          "text": "Lớp D",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894402",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IPv4 4.5.6.7. thuộc lớp nào?",
+      "choices": [
+        {
+          "text": "Lớp A",
+          "correct": true
+        },
+        {
+          "text": "Lớp B",
+          "correct": false
+        },
+        {
+          "text": "Lớp C",
+          "correct": false
+        },
+        {
+          "text": "Lớp D",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894403",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IPv4 229.1.2.3. thuộc lớp nào?",
+      "choices": [
+        {
+          "text": "Lớp A",
+          "correct": false
+        },
+        {
+          "text": "Lớp B",
+          "correct": false
+        },
+        {
+          "text": "Lớp D",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894404",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ IPv4 191.1.2.3 thuộc lớp nào?",
+      "choices": [
+        {
+          "text": "Lớp A",
+          "correct": false
+        },
+        {
+          "text": "Lớp B",
+          "correct": true
+        },
+        {
+          "text": "Lớp C",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894405",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Số lượng địa chỉ lớp C của địa chỉ IPv4 là …",
+      "choices": [
+        {
+          "text": "65534.0",
+          "correct": false
+        },
+        {
+          "text": "16777216.0",
+          "correct": false
+        },
+        {
+          "text": "256.0",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894406",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Trong IPv6, một địa chỉ ……… xác định một máy tính đơn",
+      "choices": [
+        {
+          "text": "unicast",
+          "correct": true
+        },
+        {
+          "text": "Multicast",
+          "correct": false
+        },
+        {
+          "text": "anycast",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.361Z"
+    },
+    {
+      "id": "1794495894408",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Địa chỉ luận lý trong mạng Internet được gọi là ……",
+      "choices": [
+        {
+          "text": "Địa chỉ port",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ IP",
+          "correct": true
+        },
+        {
+          "text": "Địa chỉ email",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894409",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "………. là giao thức dùng để xác định địa chỉ vật lý khi đã biết địa chỉ luận lý",
+      "choices": [
+        {
+          "text": "ARP",
+          "correct": true
+        },
+        {
+          "text": "RARP",
+          "correct": false
+        },
+        {
+          "text": "Cả 2 câu trên đều đúng",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894410",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Một yêu cầu ARP (ARP request) thường là",
+      "choices": [
+        {
+          "text": "Broadcast",
+          "correct": true
+        },
+        {
+          "text": "unicast",
+          "correct": false
+        },
+        {
+          "text": "Multicast",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894411",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "ICMP là giao thức thuộc lớp nào?",
+      "choices": [
+        {
+          "text": "Lớp liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894412",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Một thông điệp multicast là thông điệp được gửi từ ……đến ……….",
+      "choices": [
+        {
+          "text": "Một nguồn/một đích",
+          "correct": false
+        },
+        {
+          "text": "Một nguồn/nhiều đích",
+          "correct": true
+        },
+        {
+          "text": "Nhiều nguồn/một đích",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894413",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Bảng tìm đường …….chứa các thông tin được cập nhật bằng tay",
+      "choices": [
+        {
+          "text": "Tĩnh",
+          "correct": true
+        },
+        {
+          "text": "Động",
+          "correct": false
+        },
+        {
+          "text": "Phân cấp",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894414",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Bảng tìm đường ………được cập nhật định kỳ sử dụng một trong số các giao thức tìm đường động",
+      "choices": [
+        {
+          "text": "Tĩnh",
+          "correct": false
+        },
+        {
+          "text": "Động",
+          "correct": true
+        },
+        {
+          "text": "Phân cấp",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894415",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Trong giải thuật tìm đường nào mà đường đi có chi phí thấp nhất giữa 2 node bất kì là đường đi có khoảng cách nhỏ nhất?",
+      "choices": [
+        {
+          "text": "Path Vector Routing",
+          "correct": false
+        },
+        {
+          "text": "Distance Vector Routing",
+          "correct": true
+        },
+        {
+          "text": "Link State Routing",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894416",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "RIP là giải thuật tìm đường dựa trên",
+      "choices": [
+        {
+          "text": "Distance Vector Routing",
+          "correct": true
+        },
+        {
+          "text": "Path Vector Routing",
+          "correct": false
+        },
+        {
+          "text": "Link State Routing",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894417",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "OSPF là giao thức tìm đường dựa trên",
+      "choices": [
+        {
+          "text": "Distance Vector Routing",
+          "correct": false
+        },
+        {
+          "text": "Path Vector Routing",
+          "correct": false
+        },
+        {
+          "text": "Link State Routing",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894418",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "UDP là một giao thức vận chuyển có đặc điểm",
+      "choices": [
+        {
+          "text": "Không hướng kết nối, đáng tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Hướng kết nối, không đáng tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Không hướng kết nối,, không đáng tin cậy",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894419",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "UDP là viết tắt của …..",
+      "choices": [
+        {
+          "text": "User Delivery Protocol",
+          "correct": false
+        },
+        {
+          "text": "User Datagram Procedure",
+          "correct": false
+        },
+        {
+          "text": "User Datagram Protocol",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
+      "id": "1794495894420",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng mạng",
+      "question": "Sự kết hợp của một địa chỉ IP và một port được gọi là",
+      "choices": [
+        {
+          "text": "Địa chỉ vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ mạng",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ socket",
+          "correct": true
+        },
+        {
+          "text": "Tất cả các câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:54.362Z"
+    },
+    {
       "id": "1794495859845",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
