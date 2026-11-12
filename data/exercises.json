@@ -5241,7 +5241,7 @@
       "id": "1794494182971",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
-      "question": "Phát biểu nào sau đây là đúng khi nói về cáp UDP?",
+      "question": "Phát biểu nào sau đây là đúng khi nói về cáp UTP?",
       "choices": [
         {
           "text": "Là loại cáp xoắn có vỏ bọc",
@@ -5261,7 +5261,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T14:36:22.958Z"
+      "createdAt": "2026-11-12T14:36:22.958Z",
+      "updatedAt": "2026-11-12T16:48:25.649Z"
     },
     {
       "id": "1794494182972",
