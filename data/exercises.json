@@ -12,6 +12,162 @@
   ],
   "exercises": [
     {
+      "id": "1794474134359",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong khi truyền các frame, việc sử dụng Parity bit để làm gì?",
+      "choices": [
+        {
+          "text": "Parity bit được sử dụng như là một mã phát hiện lỗi sai của frame",
+          "correct": true
+        },
+        {
+          "text": "Parity bit được sử dụng để đồng bộ các frame",
+          "correct": false
+        },
+        {
+          "text": "Parity bit được sử dụng để đánh số thứ tự frame",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T09:02:14.359Z"
+    },
+    {
+      "id": "1794474134360",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong phương pháp đếm số lượng ký tự, nếu bất kỳ một bit nào trong ký tự lưu giữ số lượng ký tự kế tiếp bị sai thì …",
+      "choices": [
+        {
+          "text": "Toàn bộ ký tự nhận sau đó sẽ sai",
+          "correct": true
+        },
+        {
+          "text": "Chỉ có ký tự ngay vi trí lưu giữ giá trị số lượng ký tự sai",
+          "correct": false
+        },
+        {
+          "text": "Chỉ có ký tự ngay trước vị trí lưu trữ giá trị số lượng ký tự sai",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T09:02:14.359Z"
+    },
+    {
+      "id": "1794474134361",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Cơ chế CSMA/CD có đặc điểm gì sau đây?",
+      "choices": [
+        {
+          "text": "Lắng nghe trong khi đang truyền và cho user truyền khi nào có data truyền",
+          "correct": false
+        },
+        {
+          "text": "Lắng nghe trong khi đang truyền và phát hiện khi có tín hiệu của một trạm khác can thiệp vào",
+          "correct": true
+        },
+        {
+          "text": "Lắng nghe trong khi đang truyền và không cho user truyền khi nào có data truyền",
+          "correct": false
+        },
+        {
+          "text": "Lắng nghe trong khi đang truyền và lan truyền tín hiệu đến các trạm khác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T09:02:14.359Z"
+    },
+    {
+      "id": "1794474134362",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Điều khiển liên kết luận lý trong lớp Datalink gồm:",
+      "choices": [
+        {
+          "text": "Điều khiển dòng dữ liệu, kiểm soát lỗi",
+          "correct": true
+        },
+        {
+          "text": "Điều khiển băng thông",
+          "correct": false
+        },
+        {
+          "text": "Điều khiển tạo frame",
+          "correct": false
+        },
+        {
+          "text": "Điều khiển việc tạo segment",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T09:02:14.359Z"
+    },
+    {
+      "id": "1794474134363",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Một trong những công việc của lớp Datalink là …",
+      "choices": [
+        {
+          "text": "Xây dựng segment",
+          "correct": false
+        },
+        {
+          "text": "Xây dựng frame",
+          "correct": true
+        },
+        {
+          "text": "Xây dựng packet",
+          "correct": false
+        },
+        {
+          "text": "Xây dựng bit",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T09:02:14.359Z"
+    },
+    {
+      "id": "1794474134364",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Gigabit Ethernet có tốc độ …",
+      "choices": [
+        {
+          "text": "10 Mbps",
+          "correct": false
+        },
+        {
+          "text": "100 Mbps",
+          "correct": false
+        },
+        {
+          "text": "1000 Mbps",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T09:02:14.359Z"
+    },
+    {
       "id": "1794474119436",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
