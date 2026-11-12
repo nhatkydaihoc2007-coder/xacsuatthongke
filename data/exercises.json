@@ -5212,32 +5212,6 @@
       "createdAt": "2026-11-12T14:36:22.958Z"
     },
     {
-      "id": "1794494182970",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Cáp đồng trục 10base2 có chiều dài tối đa thực tế cho phép là bao nhiêu?",
-      "choices": [
-        {
-          "text": "185 m",
-          "correct": true
-        },
-        {
-          "text": "190 m",
-          "correct": false
-        },
-        {
-          "text": "200 m",
-          "correct": false
-        },
-        {
-          "text": "Không có câu nào đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:36:22.958Z"
-    },
-    {
       "id": "1794494182971",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
