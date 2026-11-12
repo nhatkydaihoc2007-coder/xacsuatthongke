@@ -5239,32 +5239,6 @@
       "updatedAt": "2026-11-12T16:48:25.649Z"
     },
     {
-      "id": "1794494182972",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Có bao nhiêu chuẩn đầu cáp RJ45?",
-      "choices": [
-        {
-          "text": "1.0",
-          "correct": false
-        },
-        {
-          "text": "2.0",
-          "correct": true
-        },
-        {
-          "text": "3.0",
-          "correct": false
-        },
-        {
-          "text": "4.0",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:36:22.958Z"
-    },
-    {
       "id": "1794494182973",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
