@@ -12,6 +12,266 @@
   ],
   "exercises": [
     {
+      "id": "1794495774528",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Công cụ quản trị Server Manager trong hệ điều hành Windows Server 2012 là gì?",
+      "choices": [
+        {
+          "text": "Là công cụ mà các tương tác với hệ điều hành được thông qua các dòng lệnh",
+          "correct": false
+        },
+        {
+          "text": "Là công cụ cài đặt hệ điều hành từ xa cho các máy client",
+          "correct": false
+        },
+        {
+          "text": "Là một giao diện điều khiển được thiết kế để tổ chức và quản lý hợp nhất cho server",
+          "correct": true
+        },
+        {
+          "text": "Là công cụ triển khai các Domain Controller ở những nơi mà sự bảo mật không được đảm bảo",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774529",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Công cụ quản trị Server Manager trong hệ điều hành Windows Server 2012 cho phép làm gì?",
+      "choices": [
+        {
+          "text": "Quản lý đồng nhất trên một server",
+          "correct": false
+        },
+        {
+          "text": "Hiển thị trạng thái hiện tại của server",
+          "correct": false
+        },
+        {
+          "text": "Quản lý các role trên server",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774530",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Phần mềm nào sau đây được sử dụng để thu thập thông tin các packet truyền trên hệ thống mạng?",
+      "choices": [
+        {
+          "text": "NetSurveyor",
+          "correct": false
+        },
+        {
+          "text": "Packet Tracer",
+          "correct": false
+        },
+        {
+          "text": "Wireshark",
+          "correct": true
+        },
+        {
+          "text": "PowerShell",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774531",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Phần mềm nào sau đây được sử dụng để giúp phân tích và tối ưu hóa cài đặt trong mạng Wifi?",
+      "choices": [
+        {
+          "text": "Wireshark",
+          "correct": false
+        },
+        {
+          "text": "Ethereal",
+          "correct": false
+        },
+        {
+          "text": "NetSurveyor",
+          "correct": true
+        },
+        {
+          "text": "Cisco Packet Tracer",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774532",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Phần mềm Cisco Packet Tracer mang lợi ích gì cho người sử dùng?",
+      "choices": [
+        {
+          "text": "Giúp giả lập hệ thống mạng",
+          "correct": false
+        },
+        {
+          "text": "Giúp biết cách thiết lập nhiều kiểu mạng khác nhau",
+          "correct": false
+        },
+        {
+          "text": "Giúp biết cách thiết lập, cài đặt, tổ chức thiết bị mạng",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774533",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Các tương tác với Server Core trong hệ điều hành Windows Server 2012 được thông qua ….",
+      "choices": [
+        {
+          "text": "giao diện điều khiển đồ họa",
+          "correct": false
+        },
+        {
+          "text": "các dòng lệnh",
+          "correct": true
+        },
+        {
+          "text": "chương trình điều khiển từ xa",
+          "correct": false
+        },
+        {
+          "text": "phần mềm chuyên dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774534",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Để quản trị máy chủ từ xa được cài đặt Windows Server 2012 R2, với Server Manager ta có thể thực hiện thông qua phương thức nào?",
+      "choices": [
+        {
+          "text": "Server to server",
+          "correct": false
+        },
+        {
+          "text": "Client to server",
+          "correct": false
+        },
+        {
+          "text": "Server to Server Core",
+          "correct": false
+        },
+        {
+          "text": "Cả 3 câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774535",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Trong Windows Server 2012, khi cấu hình cài đặt DHCP cần phải làm gì?",
+      "choices": [
+        {
+          "text": "Khai báo danh sách địa chỉ IP sẽ được gán cho các máy trạm",
+          "correct": false
+        },
+        {
+          "text": "Khai báo các địa chỉ IP sẽ được gán cho các máy trạm",
+          "correct": false
+        },
+        {
+          "text": "Khai báo vùng địa chỉ IP sẽ dùng cấp phát cho các máy trạm",
+          "correct": true
+        },
+        {
+          "text": "Khai báo danh sách subnet mask sẽ được cấp phát các máy trạm",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774536",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Để cài đặt hệ điều hành Windows Server 2012 trên phần mềm Vmware 9, phần cứng máy tính cần có dung lượng bộ nhớ trống được đề nghị cần có là bao nhiêu?",
+      "choices": [
+        {
+          "text": "2 GB RAM và 40 GB HDD",
+          "correct": true
+        },
+        {
+          "text": "1 GB RAM và 20 GB HDD",
+          "correct": false
+        },
+        {
+          "text": "4 GB RAM và 40 GB HDD",
+          "correct": false
+        },
+        {
+          "text": "512 MB RAM và 10 GB HDD",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
+      "id": "1794495774537",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Quản trị mạng",
+      "question": "Công nghệ Failover Clustering trong Windows Server 2012 là công nghệ cho phép sử dụng hai hay nhiều server kết hợp với nhau để làm gì?",
+      "choices": [
+        {
+          "text": "Để tăng cường bộ nhớ lưu trữ của một cụm server",
+          "correct": false
+        },
+        {
+          "text": "Để tạo thành một cụm server với tốc độ xử lý nhanh và mạnh mẽ hơn",
+          "correct": false
+        },
+        {
+          "text": "Để tạo thành một cụm server nhằm tăng cường tính ổn định trong vận hành",
+          "correct": true
+        },
+        {
+          "text": "Để tạo thành một cụm server nhằm tăng cường tốc độ xử lý trong vận hành",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:02:54.528Z"
+    },
+    {
       "id": "1794494210521",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
