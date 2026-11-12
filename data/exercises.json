@@ -5421,32 +5421,6 @@
       "createdAt": "2026-11-12T14:36:22.958Z"
     },
     {
-      "id": "1794494182980",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Thinnet là tên gọi khác của cáp đồng trục sử dụng chuẩn nào sau đây?",
-      "choices": [
-        {
-          "text": "10Base2",
-          "correct": true
-        },
-        {
-          "text": "10Base5",
-          "correct": false
-        },
-        {
-          "text": "10BaseT",
-          "correct": false
-        },
-        {
-          "text": "100BaseT",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:36:22.958Z"
-    },
-    {
       "id": "1794494182981",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
