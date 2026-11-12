@@ -1806,32 +1806,6 @@
       "createdAt": "2026-11-12T15:04:19.845Z"
     },
     {
-      "id": "1794495859855",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vận chuyển",
-      "question": "Giao thức nào dưới đây đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh ?",
-      "choices": [
-        {
-          "text": "TCP",
-          "correct": true
-        },
-        {
-          "text": "ASP",
-          "correct": false
-        },
-        {
-          "text": "PHP",
-          "correct": false
-        },
-        {
-          "text": "UDP",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:19.845Z"
-    },
-    {
       "id": "1794495859856",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
