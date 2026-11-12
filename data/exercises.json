@@ -12,6 +12,162 @@
   ],
   "exercises": [
     {
+      "id": "1794470123874",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Điều khiển truy cập lớp Datalink không quy định yêu cầu nào sau đây?",
+      "choices": [
+        {
+          "text": "Chỉ có một trạm được phát tín hiệu tại một thời điểm",
+          "correct": false
+        },
+        {
+          "text": "Các trạm sẽ thay đổi trạng thái",
+          "correct": true
+        },
+        {
+          "text": "Các giao thức xây dựng phải đảm bảo tính công bằng cho các trạm",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:55:23.874Z"
+    },
+    {
+      "id": "1794470123876",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Đâu là một cách để điều khiển lỗi trong lớp Datalink?",
+      "choices": [
+        {
+          "text": "Dùng tín hiệu ACK, NAK",
+          "correct": true
+        },
+        {
+          "text": "TDM",
+          "correct": false
+        },
+        {
+          "text": "FDM",
+          "correct": false
+        },
+        {
+          "text": "ALOHA",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:55:23.875Z"
+    },
+    {
+      "id": "1794470123877",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Trong cách xây dựng frame bằng phương pháp các mẫu bit không hợp lệ, người ta không sử dụng cặp bit nào để biểu diễn data:",
+      "choices": [
+        {
+          "text": "high low",
+          "correct": false
+        },
+        {
+          "text": "low high",
+          "correct": false
+        },
+        {
+          "text": "low low",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:55:23.875Z"
+    },
+    {
+      "id": "1794470123878",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Mã hóa đường truyền Manchester Encoding so với mã hóa Binary Encoding, có đặc điểm khác nhau là…",
+      "choices": [
+        {
+          "text": "Tạo ra ít chuyển mức (transition) hơn",
+          "correct": false
+        },
+        {
+          "text": "Tạo ra nhiều chuyển mức (transition) hơn",
+          "correct": true
+        },
+        {
+          "text": "Kiểm soát lỗi kém hơn",
+          "correct": false
+        },
+        {
+          "text": "Kiểm soát lỗi tốt hơn",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:55:23.875Z"
+    },
+    {
+      "id": "1794470123879",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Wireless LAN là mạng thuộc chuẩn …",
+      "choices": [
+        {
+          "text": "IEEE 802.3",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.5",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.6",
+          "correct": false
+        },
+        {
+          "text": "IEEE 802.11",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:55:23.875Z"
+    },
+    {
+      "id": "1794470123880",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng liên kết dữ liệu",
+      "question": "Chuỗi số “00-08-ac-41-5d-9f” được hiểu như thế nào?",
+      "choices": [
+        {
+          "text": "Địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ port",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ MAC",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu trên đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T07:55:23.875Z"
+    },
+    {
       "id": "1794468898663",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
