@@ -1598,32 +1598,6 @@
       "createdAt": "2026-11-12T15:04:19.845Z"
     },
     {
-      "id": "1794495859847",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vận chuyển",
-      "question": "Các giao thức nào sau đây đều thuộc lớp vận chuyển",
-      "choices": [
-        {
-          "text": "TCP, HTTP",
-          "correct": false
-        },
-        {
-          "text": "UDP,TCP",
-          "correct": true
-        },
-        {
-          "text": "ICMP,TCP",
-          "correct": false
-        },
-        {
-          "text": "Câu b và c đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:19.845Z"
-    },
-    {
       "id": "1794495859848",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
