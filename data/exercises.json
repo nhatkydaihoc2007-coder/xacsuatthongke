@@ -12,6 +12,1150 @@
   ],
   "exercises": [
     {
+      "id": "1794494182957",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Baseband có tính năng nào sau đây?",
+      "choices": [
+        {
+          "text": "Toàn bộ khả năng của đường truyền được dành cho 1 kênh truyền duy nhất.",
+          "correct": true
+        },
+        {
+          "text": "Nhiều kênh truyền chia sẻ băng thông của đường truyền",
+          "correct": false
+        },
+        {
+          "text": "Tùy trường hợp mà đường truyền được dành cho 1 kênh truyền duy nhất hoặc được chia sẻ cho nhiều kênh truyền",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182958",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Broadband có tính năng nào sau đây?",
+      "choices": [
+        {
+          "text": "Toàn bộ khả năng của đường truyền được dành cho 1 kênh truyền duy nhất.",
+          "correct": false
+        },
+        {
+          "text": "Nhiều kênh truyền chia sẻ băng thông của đường truyền",
+          "correct": true
+        },
+        {
+          "text": "Tùy trường hợp mà đường truyền được dành cho 1 kênh truyền duy nhất hoặc được chia sẻ cho nhiều kênh truyền",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182959",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu loại cáp dùng để nối mạng?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "3.0",
+          "correct": true
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182960",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối trực tiếp hai switch với nhau?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": true
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": false
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182961",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng kết nối trực tiếp máy tính với switch?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": false
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": true
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182962",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối trực tiếp switch với router?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": false
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": true
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182963",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối hub với hub?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": true
+        },
+        {
+          "text": "Cáp thẳng (Straight Cable)",
+          "correct": false
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182964",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối trực tiếp hai router với nhau?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": true
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": false
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.957Z"
+    },
+    {
+      "id": "1794494182966",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối trực tiếp máy tính với máy tính?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": true
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": false
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182967",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối hub với máy tính?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": false
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": true
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182968",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được dùng để kết nối router với máy tính?",
+      "choices": [
+        {
+          "text": "Cáp chéo (Cross- Cable)",
+          "correct": false
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": true
+        },
+        {
+          "text": "Rollover Cable",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182969",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi nói về cáp STP?",
+      "choices": [
+        {
+          "text": "Là loại cáp xoắn có vỏ bọc",
+          "correct": true
+        },
+        {
+          "text": "Có tốc độ truyền qua khoảng cách xa thấp hơn cáp UTP",
+          "correct": false
+        },
+        {
+          "text": "Rẻ tiền hơn cáp UTP",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182970",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Cáp đồng trục 10base2 có chiều dài tối đa thực tế cho phép là bao nhiêu?",
+      "choices": [
+        {
+          "text": "185 m",
+          "correct": true
+        },
+        {
+          "text": "190 m",
+          "correct": false
+        },
+        {
+          "text": "200 m",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182971",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi nói về cáp UDP?",
+      "choices": [
+        {
+          "text": "Là loại cáp xoắn có vỏ bọc",
+          "correct": false
+        },
+        {
+          "text": "Thường được dùng để đi dây trong nhà",
+          "correct": true
+        },
+        {
+          "text": "Độ dài tối đa một đoạn cáp là 300m",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182972",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu chuẩn đầu cáp RJ45?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": true
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182973",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Chuẩn A của đầu cáp RJ45 được xếp theo thứ tự màu nào sau đây?",
+      "choices": [
+        {
+          "text": "Trắng nâu-nâu, trắng cam-xanh dương, trắng xanh dương-cam, trắng xanh lá-xanh lá",
+          "correct": false
+        },
+        {
+          "text": "Trắng xanh lá-xanh dương, trắng xanh dương-xanh lá, trắng cam-cam, trắng nâu-nâu",
+          "correct": false
+        },
+        {
+          "text": "Trắng nâu-nâu, trắng xanh lá-xanh lá, trắng cam-xanh dương, trắng xanh dương-cam",
+          "correct": false
+        },
+        {
+          "text": "Trắng xanh lá-xanh lá, trắng cam-xanh dương, trắng xanh dương-cam, trắng nâu-nâu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182974",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Chuẩn B của đầu cáp RJ45 được xếp theo thứ tự màu nào sau đây?",
+      "choices": [
+        {
+          "text": "Trắng nâu-nâu, trắng cam-xanh dương, trắng xanh dương-cam, trắng xanh lá-xanh lá",
+          "correct": false
+        },
+        {
+          "text": "Trắng xanh lá-xanh dương, trắng xanh dương-xanh lá, trắng cam-cam, trắng nâu-nâu",
+          "correct": false
+        },
+        {
+          "text": "Trắng cam-cam, trắng xanh lá-xanh dương, trắng xanh dương-xanh lá, trắng nâu-nâu",
+          "correct": true
+        },
+        {
+          "text": "Trắng xanh lá-xanh lá, trắng cam-xanh dương, trắng xanh dương-cam, trắng nâu-nâu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182975",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Modem dùng để làm gì?",
+      "choices": [
+        {
+          "text": "Điều chế và giải điều chế",
+          "correct": true
+        },
+        {
+          "text": "Truyền dữ liệu đi xa",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo nguồn điện cho máy tính",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182976",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Chuỗi số “00-08-ac-41-5d-9f” được hiểu như thế nào?",
+      "choices": [
+        {
+          "text": "Địa chỉ IP",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ port",
+          "correct": false
+        },
+        {
+          "text": "Địa chỉ MAC",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182977",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Địa chỉ IP nào sau đây là hợp lệ?",
+      "choices": [
+        {
+          "text": "192.168.1.2",
+          "correct": false
+        },
+        {
+          "text": "255.255.255.255",
+          "correct": false
+        },
+        {
+          "text": "230.20.30.40",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182978",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi nói về địa chỉ MAC?",
+      "choices": [
+        {
+          "text": "Do người quản trị mạng khai báo",
+          "correct": false
+        },
+        {
+          "text": "Được ghi sẳn trên card mạng (NIC)",
+          "correct": true
+        },
+        {
+          "text": "Được phân thành nhiều lớp địa chỉ con",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182979",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Độ dài của địa chỉ MAC là bao nhiêu?",
+      "choices": [
+        {
+          "text": "8 bits",
+          "correct": false
+        },
+        {
+          "text": "24 bits",
+          "correct": false
+        },
+        {
+          "text": "36 bits",
+          "correct": false
+        },
+        {
+          "text": "48 bits",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182980",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Thinnet là tên gọi khác của cáp đồng trục sử dụng chuẩn nào sau đây?",
+      "choices": [
+        {
+          "text": "10Base2",
+          "correct": true
+        },
+        {
+          "text": "10Base5",
+          "correct": false
+        },
+        {
+          "text": "10BaseT",
+          "correct": false
+        },
+        {
+          "text": "100BaseT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182981",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Thicknet là tên gọi khác của cáp đồng trục sử dụng chuẩn nào sau đây?",
+      "choices": [
+        {
+          "text": "10Base2",
+          "correct": false
+        },
+        {
+          "text": "10Base5",
+          "correct": true
+        },
+        {
+          "text": "10BaseT",
+          "correct": false
+        },
+        {
+          "text": "100BaseT",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182982",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Để kết nối trực tiếp các mạng với nhau ta chọn loại cáp nào?",
+      "choices": [
+        {
+          "text": "Thinnet",
+          "correct": false
+        },
+        {
+          "text": "Thicknet",
+          "correct": false
+        },
+        {
+          "text": "Cáp quang",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182983",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Loại cáp nào được sử dụng để tạo đường xương sống (backbone) cho hệ thống mạng?",
+      "choices": [
+        {
+          "text": "Thinnet",
+          "correct": false
+        },
+        {
+          "text": "Thicknet",
+          "correct": true
+        },
+        {
+          "text": "Cáp thẳng ( Straight Cable)",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182984",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Thiết bị nào được sử dụng để kết nối 2 loại thinnet và thicknet với nhau?",
+      "choices": [
+        {
+          "text": "Thinnet",
+          "correct": false
+        },
+        {
+          "text": "Thicknet",
+          "correct": false
+        },
+        {
+          "text": "Transceiver",
+          "correct": true
+        },
+        {
+          "text": "Receiver",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182985",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu loại cáp xoắn?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": true
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182986",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu CAT trong cáp xoắn?",
+      "choices": [
+        {
+          "text": "4.0",
+          "correct": false
+        },
+        {
+          "text": "5.0",
+          "correct": false
+        },
+        {
+          "text": "6.0",
+          "correct": false
+        },
+        {
+          "text": "7.0",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182987",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Tốc độ truyền nhận trên cáp quang tính bằng gì?",
+      "choices": [
+        {
+          "text": "Kbps",
+          "correct": false
+        },
+        {
+          "text": "Mbps",
+          "correct": false
+        },
+        {
+          "text": "Gbps",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182988",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu cặp màu trong cáp xoắn?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182989",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Có bao nhiêu chân đồng trong đầu nối RJ45?",
+      "choices": [
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        },
+        {
+          "text": "6.0",
+          "correct": false
+        },
+        {
+          "text": "8.0",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182990",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi nói về cáp quang?",
+      "choices": [
+        {
+          "text": "Sử dụng ánh sáng để truyền tín hiệu",
+          "correct": true
+        },
+        {
+          "text": "Dễ bị nhiễu",
+          "correct": false
+        },
+        {
+          "text": "Tốc độ truyền dữ liệu thấp",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182991",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "DTE là chữ viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Data Terminal Equipment",
+          "correct": true
+        },
+        {
+          "text": "Data Text Equipment",
+          "correct": false
+        },
+        {
+          "text": "Data Text Enhanced",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182992",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Trong việc bấm các loại dây cáp, NC là từ viết tắt của thuật ngữ nào?",
+      "choices": [
+        {
+          "text": "Not connect",
+          "correct": true
+        },
+        {
+          "text": "No connector",
+          "correct": false
+        },
+        {
+          "text": "Not count",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182993",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Trong kênh truyền Baseband, các tín hiệu Data, Voice, Video được truyền như thế nào?",
+      "choices": [
+        {
+          "text": "Trên 1 kênh",
+          "correct": true
+        },
+        {
+          "text": "Trên nhiều kênh",
+          "correct": false
+        },
+        {
+          "text": "A, B đều đúng",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182994",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Trong kênh truyền Broadband, các tín hiệu Data, Voice, Video được truyền như thế nào?",
+      "choices": [
+        {
+          "text": "Trên 1 kênh",
+          "correct": false
+        },
+        {
+          "text": "Trên từng kênh riêng biệt",
+          "correct": true
+        },
+        {
+          "text": "Trên nhiều kênh",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182995",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi nói về cáp xoắn đôi?",
+      "choices": [
+        {
+          "text": "Được sử dụng rộng rãi do giá thành thấp",
+          "correct": true
+        },
+        {
+          "text": "Cáp xoắn đôi không có vỏ bọc sử dụng chuẩn 10base2 hoặc 10base5",
+          "correct": false
+        },
+        {
+          "text": "Độ dài tối đa của cáp xoắn đôi không có vỏ bọc là 200m",
+          "correct": false
+        },
+        {
+          "text": "Cáp xoắn đôi có vỏ bọc có chi phí cao hơn cáp thicknet",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.958Z"
+    },
+    {
+      "id": "1794494182997",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Phát biểu nào sau đây là đúng khi so sánh cáp đồng trục với cáp quang?",
+      "choices": [
+        {
+          "text": "Độ suy giảm tín hiệu của cáp đồng trục thấp hơn",
+          "correct": false
+        },
+        {
+          "text": "Cáp đồng trục có tốc độ truyền dữ liệu cao hơn",
+          "correct": false
+        },
+        {
+          "text": "Cáp quang có tính bảo mật cao hơn",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.959Z"
+    },
+    {
+      "id": "1794494182998",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Băng thông của kết nối mạng với cáp đồng trục thông thường là bao nhiêu?",
+      "choices": [
+        {
+          "text": "1 Mbps",
+          "correct": false
+        },
+        {
+          "text": "10 Mbsps",
+          "correct": true
+        },
+        {
+          "text": "100 Mbps",
+          "correct": false
+        },
+        {
+          "text": "1000 Mbps",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.959Z"
+    },
+    {
+      "id": "1794494182999",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Cáp UTP là từ viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Unshielded Twisted Pair",
+          "correct": true
+        },
+        {
+          "text": "Unprotect Twisted Pair",
+          "correct": false
+        },
+        {
+          "text": "Unshielded Tie Pair",
+          "correct": false
+        },
+        {
+          "text": "Unprotect Twisted Pin",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.959Z"
+    },
+    {
+      "id": "1794494183000",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "Cáp STP là từ viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Share Twisted Pair",
+          "correct": false
+        },
+        {
+          "text": "Shielded Twisted Pair",
+          "correct": true
+        },
+        {
+          "text": "Short Twisted Pair",
+          "correct": false
+        },
+        {
+          "text": "Shielded Twisted Pin",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.959Z"
+    },
+    {
+      "id": "1794494183001",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "BNC là đầu nối được dùng với loại cáp nào sau đây?",
+      "choices": [
+        {
+          "text": "Thinnet",
+          "correct": true
+        },
+        {
+          "text": "Thicknet",
+          "correct": false
+        },
+        {
+          "text": "Cáp xoắn",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.959Z"
+    },
+    {
+      "id": "1794494183002",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vật lý",
+      "question": "AUI là đầu nối được dùng với loại cáp nào sau đây?",
+      "choices": [
+        {
+          "text": "Thinnet",
+          "correct": false
+        },
+        {
+          "text": "Thicknet",
+          "correct": true
+        },
+        {
+          "text": "Cáp xoắn",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:36:22.959Z"
+    },
+    {
       "id": "1794494126726",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "các thành phần trong mạng",
