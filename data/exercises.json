@@ -12,6 +12,1098 @@
   ],
   "exercises": [
     {
+      "id": "1794494126726",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Một hệ thống giao tiếp dữ liệu gồm những thành phần nào?",
+      "choices": [
+        {
+          "text": "Thông điệp, các phương tiện",
+          "correct": false
+        },
+        {
+          "text": "Các sender và receiver",
+          "correct": false
+        },
+        {
+          "text": "Các cách thức truyền nhận",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126727",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trường hợp nào sau đây sử dụng cách thức truyền half duplex?",
+      "choices": [
+        {
+          "text": "Trao đổi dữ liệu giữa hai máy tính có nối mạng",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi dữ liệu giữa máy tính và máy in",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi tiếng nói giữa phi công và đài kiểm soát không lưu",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126728",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trường hợp nào sau đây sử dụng cách thức truyền simplex?",
+      "choices": [
+        {
+          "text": "Tín hiệu tivi",
+          "correct": false
+        },
+        {
+          "text": "Tín hiệu chuông cửa",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi dữ liệu giữa máy tính và máy in",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126729",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trường hợp nào sau đây sử dụng cách thức truyền full-duplex?",
+      "choices": [
+        {
+          "text": "Trao đổi dữ liệu giữa hai máy tính có nối mạng",
+          "correct": true
+        },
+        {
+          "text": "Trao đổi dữ liệu giữa máy tính và máy in",
+          "correct": false
+        },
+        {
+          "text": "Trao đổi tiếng nói giữa phi công và đài kiểm soát không lưu",
+          "correct": false
+        },
+        {
+          "text": "A, C đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126730",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Bên gửi dữ liệu có thể là gì?",
+      "choices": [
+        {
+          "text": "Máy tính",
+          "correct": false
+        },
+        {
+          "text": "Điện thoại",
+          "correct": false
+        },
+        {
+          "text": "Máy fax",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126731",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về phương tiện truyền dẫn trong mạng máy tính?",
+      "choices": [
+        {
+          "text": "Ở dạng hữu tuyến như cáp đồng trục, cáp xoắn, cáp quang",
+          "correct": false
+        },
+        {
+          "text": "Ở dạng vô tuyến như sóng radion, sóng viba...",
+          "correct": false
+        },
+        {
+          "text": "Là môi trường dùng để truyền tín hiệu từ nơi này sang nơi khác",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126732",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Protocol là gì?",
+      "choices": [
+        {
+          "text": "Phương tiện giao tiếp",
+          "correct": false
+        },
+        {
+          "text": "Tập các quy tắc giao tiếp",
+          "correct": true
+        },
+        {
+          "text": "Chuẩn giao tiếp",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126733",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Dạng nào sau đây không phải là dữ liệu trong giao tiếp mạng?",
+      "choices": [
+        {
+          "text": "Văn bản",
+          "correct": false
+        },
+        {
+          "text": "Hình ảnh",
+          "correct": false
+        },
+        {
+          "text": "Con số",
+          "correct": false
+        },
+        {
+          "text": "Đĩa cứng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126734",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Tiêu chuẩn nào không được dùng để xem xét một mạng giao tiếp?",
+      "choices": [
+        {
+          "text": "Hiệu suất",
+          "correct": false
+        },
+        {
+          "text": "An toàn",
+          "correct": false
+        },
+        {
+          "text": "Tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Công suất",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126735",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Các chuẩn phổ biến nhất của Wireless LAN là các chuẩn nào sau đây?",
+      "choices": [
+        {
+          "text": "802.11a, 802.11c và 802.11e",
+          "correct": false
+        },
+        {
+          "text": "802.11a, 802.11b và 802.11g",
+          "correct": true
+        },
+        {
+          "text": "802.11b, 802.11g và 802.11e",
+          "correct": false
+        },
+        {
+          "text": "802.11b, 802.11c và 802.11n",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126736",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trong mạng WLAN, SSID là chữ viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "System Service Index Device",
+          "correct": false
+        },
+        {
+          "text": "Service Set Identification",
+          "correct": true
+        },
+        {
+          "text": "Service Setup Index Digital",
+          "correct": false
+        },
+        {
+          "text": "System Start Identification",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126737",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Tính tin cậy của một mạng giao tiếp dữ liệu thể hiện qua các tiêu chí nào sau đây?",
+      "choices": [
+        {
+          "text": "Tốc độ dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đảm bảo quyền truy xuất",
+          "correct": false
+        },
+        {
+          "text": "Tần suất lỗi và thời gian phục hồi mạng khi có lỗi",
+          "correct": true
+        },
+        {
+          "text": "Topology",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126738",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Phát biểu nào sau đây là đúng khi nói về kết nối đa điểm?",
+      "choices": [
+        {
+          "text": "Cung cấp một đường kết nối dành riêng giữa 2 thiết bị",
+          "correct": false
+        },
+        {
+          "text": "Nhiều hơn 2 thiết bị chia sẻ cùng một đường kết nối đơn",
+          "correct": true
+        },
+        {
+          "text": "Là kiểu kết nối không cần địa chỉ",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126739",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Phát biểu nào sau đây là sai khi nói về mục đích của việc phân lớp cho mô hình OSI?",
+      "choices": [
+        {
+          "text": "Giảm độ phức tạp",
+          "correct": false
+        },
+        {
+          "text": "Dễ học và nghiên cứu",
+          "correct": false
+        },
+        {
+          "text": "Tương thích với kỹ thuật package",
+          "correct": true
+        },
+        {
+          "text": "Dễ tiêu chuẩn hóa các giao tiếp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.726Z"
+    },
+    {
+      "id": "1794494126741",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Dịch vụ nào sau đây không phải là dịch vụ gốc?",
+      "choices": [
+        {
+          "text": "Connect",
+          "correct": false
+        },
+        {
+          "text": "Disconnect",
+          "correct": false
+        },
+        {
+          "text": "Reconnect",
+          "correct": true
+        },
+        {
+          "text": "Listen",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126742",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Chức năng của lớp vật lý (Physical) là gì?",
+      "choices": [
+        {
+          "text": "Bảo đảm truyền nhận đúng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Truyền nhận frame, kiểm tra và sửa lỗi",
+          "correct": false
+        },
+        {
+          "text": "Kết nối vật lý và truyền các bit",
+          "correct": true
+        },
+        {
+          "text": "Quản lý địa chỉ, tìm đường và truyền nhận các packet",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126743",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Chức năng của lớp Network là lớp gì?",
+      "choices": [
+        {
+          "text": "Bảo đảm truyền nhận đúng dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Truyền nhận frame, kiểm tra và sửa lỗi",
+          "correct": false
+        },
+        {
+          "text": "Kết nối vật lý và truyền các bit",
+          "correct": false
+        },
+        {
+          "text": "Quản lý địa chỉ, tìm đường và truyền nhận các packet",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126744",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Mô hình TCP/IP có bao nhiêu lớp?",
+      "choices": [
+        {
+          "text": "1.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126745",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Có bao nhiêu loại mạng theo phạm vi địa lý?",
+      "choices": [
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": true
+        },
+        {
+          "text": "5.0",
+          "correct": false
+        },
+        {
+          "text": "6.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126746",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Wireless PCI Card được sử dụng ở đâu?",
+      "choices": [
+        {
+          "text": "Sử dụng cho máy tính Laptop để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho máy tính Tablet để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho điện thoại để truy cập mạng Wifi",
+          "correct": false
+        },
+        {
+          "text": "Sử dụng cho máy tính PC để truy cập mạng Wifi",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126747",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "TCP/IP là gì?",
+      "choices": [
+        {
+          "text": "Bộ giao thức sử dụng trong mạng internet",
+          "correct": false
+        },
+        {
+          "text": "Giao thức truyền nhận trên internet",
+          "correct": false
+        },
+        {
+          "text": "A, B đều đúng",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126748",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Có bao nhiêu loại đường truyền vật lý?",
+      "choices": [
+        {
+          "text": "2.0",
+          "correct": true
+        },
+        {
+          "text": "3.0",
+          "correct": false
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        },
+        {
+          "text": "5.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126749",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Mô hình phân lớp OSI có bao nhiêu lớp?",
+      "choices": [
+        {
+          "text": "7.0",
+          "correct": true
+        },
+        {
+          "text": "4.0",
+          "correct": false
+        },
+        {
+          "text": "5.0",
+          "correct": false
+        },
+        {
+          "text": "2.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126750",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trong mô hình OSI, lớp nào thực hiện việc chọn đường và chuyển tiếp thông tin; thực hiện kiểm soát luồng dữ liệu và cắt/hợp dữ liệu?",
+      "choices": [
+        {
+          "text": "Session",
+          "correct": false
+        },
+        {
+          "text": "Network",
+          "correct": true
+        },
+        {
+          "text": "Transport",
+          "correct": false
+        },
+        {
+          "text": "Data link",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126751",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Giao thức nào sau đây cho phép truyền tải thư điện tử qua mạng Internet?",
+      "choices": [
+        {
+          "text": "IP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "SMTP",
+          "correct": true
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126752",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Phát biểu nào sau đây đúng cho hướng dòng dữ liệu full-duplex?",
+      "choices": [
+        {
+          "text": "Dữ liệu có thể truyền, nhận đồng thời",
+          "correct": true
+        },
+        {
+          "text": "Việc truyền dữ liệu chỉ một hướng",
+          "correct": false
+        },
+        {
+          "text": "Mỗi máy có thể truyền hoặc nhận nhưng không đồng thời",
+          "correct": false
+        },
+        {
+          "text": "Câu b, c đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126753",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "In ấn là một ví dụ của hướng dòng dữ liệu nào?",
+      "choices": [
+        {
+          "text": "Full-duplex",
+          "correct": false
+        },
+        {
+          "text": "Half-duplex",
+          "correct": false
+        },
+        {
+          "text": "Simplex",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126754",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Khi gói dữ liệu di chuyển từ lớp thấp đến lớp cao hơn thì các phần đầu (header) được xử lý như thế nào?",
+      "choices": [
+        {
+          "text": "Thêm vào dần",
+          "correct": false
+        },
+        {
+          "text": "Loại bỏ dân",
+          "correct": true
+        },
+        {
+          "text": "Sắp xếp lại",
+          "correct": false
+        },
+        {
+          "text": "Thay đổi vị trí",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126755",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Khi gói dữ liệu di chuyển từ lớp cao xuống lớp thấp hơn thì các phần đầu (header) được xử lý như thế nào?",
+      "choices": [
+        {
+          "text": "Thêm vào dần",
+          "correct": true
+        },
+        {
+          "text": "Loại bỏ dần",
+          "correct": false
+        },
+        {
+          "text": "Sắp xếp lại",
+          "correct": false
+        },
+        {
+          "text": "Thay đổi vị trí",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126756",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Mô hình TCP/IP không có lớp nào sau đây?",
+      "choices": [
+        {
+          "text": "Lớp truy cập mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": true
+        },
+        {
+          "text": "Lớp ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "Lớp internet",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126757",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Lớp ứng dụng của TCP/IP tương ứng với lớp nào trong mô hình OSI?",
+      "choices": [
+        {
+          "text": "Lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp vật lý và lớp liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lớp phiên,lớp trình bày và lớp ứng dụng",
+          "correct": true
+        },
+        {
+          "text": "Lớp trình bày và lớp ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126758",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Cho biết nét đặc trưng để phân biệt LAN, MAN, WAN là gì?",
+      "choices": [
+        {
+          "text": "Tốc độ truyền dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Công tác tổ chức quản lý",
+          "correct": false
+        },
+        {
+          "text": "Kích thước vùng địa lý",
+          "correct": true
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126759",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Phát biểu nào sau đây không thuộc nguyên tắc của kiến trúc phân tầng?",
+      "choices": [
+        {
+          "text": "Dữ liệu luôn được truyền trực tiếp từ tầng i của hệ thống này sang tầng i của hệ thống khác",
+          "correct": true
+        },
+        {
+          "text": "Dữ liệu được truyền từ hệ thống gửi sang hệ thống nhận bằng đường truyền vật lý và đi ngược lên tầng trên",
+          "correct": false
+        },
+        {
+          "text": "Tầng thấp nhất là các liên kết vật lý",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126760",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "OSI là viết tắt của thuật ngữ nào sau đây?",
+      "choices": [
+        {
+          "text": "Open Systems Internet",
+          "correct": false
+        },
+        {
+          "text": "Open Systems Interconnection",
+          "correct": true
+        },
+        {
+          "text": "Open Standard Internet",
+          "correct": false
+        },
+        {
+          "text": "Operation System International",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126761",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Lớp truy cập mạng trong mô hình TCP/IP là kết hợp của những lớp nào trong mô hình OSI?",
+      "choices": [
+        {
+          "text": "Lớp vật lý và lớp liên kết dữ liệu",
+          "correct": true
+        },
+        {
+          "text": "Lớp vật lý, lớp liên kết dữ liệu và lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng và lớp vận chuyển",
+          "correct": false
+        },
+        {
+          "text": "Không có câu nào đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126762",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Phát biểu nào sau đây là sai khi so sánh mô hình TCP/IP và mô hình OSI?",
+      "choices": [
+        {
+          "text": "TCP/IP kết hợp lớp phiên và lớp trình bày vào lớp ứng dụng",
+          "correct": false
+        },
+        {
+          "text": "TCP/IP phức tạp hơn",
+          "correct": true
+        },
+        {
+          "text": "Bộ giao thức TCP/IP là chuẩn trên Internet",
+          "correct": false
+        },
+        {
+          "text": "TCP/IP và OSI đều sử dụng kĩ thuật chuyển mạch gói",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126763",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Những lớp nào trong mô hình OSI là các lớp host-to-host?",
+      "choices": [
+        {
+          "text": "Lớp vận chuyển, lớp phiên, lớp trình bày, lớp ứng dụng",
+          "correct": true
+        },
+        {
+          "text": "Lớp mạng, lớp vận chuyển, lớp phiên, lớp trình bày",
+          "correct": false
+        },
+        {
+          "text": "Lớp liên kết dữ liệu, lớp mạng, lớp vận chuyển, lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp vật lý, lớp liên kết dữ liệu, lớp mạng, lớp vận chuyển",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126764",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Lớp nào sau đây trong mô hình OSI còn được gọi là lớp end-to-end?",
+      "choices": [
+        {
+          "text": "Lớp trình bày",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126765",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Lựa chọn nào sau đây không phải là thiết bị mạng?",
+      "choices": [
+        {
+          "text": "Gateways",
+          "correct": false
+        },
+        {
+          "text": "Linux",
+          "correct": true
+        },
+        {
+          "text": "Routers",
+          "correct": false
+        },
+        {
+          "text": "Firewalls",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126766",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Có bao nhiêu trường bắt buộc trong một gói tin TCP?",
+      "choices": [
+        {
+          "text": "9.0",
+          "correct": false
+        },
+        {
+          "text": "10.0",
+          "correct": true
+        },
+        {
+          "text": "11.0",
+          "correct": false
+        },
+        {
+          "text": "12.0",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126767",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Trong WLAN, Ad-Hoc là gì?",
+      "choices": [
+        {
+          "text": "Là mô hình kết nối các Wireless Client thông qua Wireless Server",
+          "correct": false
+        },
+        {
+          "text": "Là mô hình kết nối các Wireless Client thông qua Wireless AP",
+          "correct": false
+        },
+        {
+          "text": "Là mô hình kết nối các Wireless Client không thông qua Wireless AP",
+          "correct": true
+        },
+        {
+          "text": "Là mô hình kết nối các Wireless Client thông qua WPA2",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
+      "id": "1794494126768",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "các thành phần trong mạng",
+      "question": "Một trong những khuyết điểm của WLAN là gì?",
+      "choices": [
+        {
+          "text": "Chi phí đắt hơn so với việc sử dụng cáp",
+          "correct": false
+        },
+        {
+          "text": "Không có tính linh động",
+          "correct": false
+        },
+        {
+          "text": "Chỉ được sử dụng ở những nơi có tính chất tạm thời",
+          "correct": false
+        },
+        {
+          "text": "Độ ổn định không cao",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T14:35:26.727Z"
+    },
+    {
       "id": "1794494084709",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
