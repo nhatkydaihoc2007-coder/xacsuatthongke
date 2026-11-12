@@ -560,7 +560,7 @@
     {
       "id": "1794470165671",
       "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
+      "chapter": "các thành phần trong mạng",
       "question": "Người dùng không được phép (unauthorized user) có liên quan đến vấn đề nào sau đây?",
       "choices": [
         {
@@ -581,7 +581,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T07:56:05.671Z"
+      "createdAt": "2026-11-12T07:56:05.671Z",
+      "updatedAt": "2026-11-12T08:16:58.588Z"
     },
     {
       "id": "1794470165672",
