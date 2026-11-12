@@ -10360,32 +10360,6 @@
       "createdAt": "2026-11-12T07:58:43.512Z"
     },
     {
-      "id": "1794470308788",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Các ứng dụng mạng",
-      "question": "Giao thức DHCP sử dụng cổng UDP nào sau đây để gửi dữ liệu cho máy chủ?",
-      "choices": [
-        {
-          "text": "66",
-          "correct": false
-        },
-        {
-          "text": "67",
-          "correct": false
-        },
-        {
-          "text": "68",
-          "correct": true
-        },
-        {
-          "text": "69",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:58:28.788Z"
-    },
-    {
       "id": "1794470308789",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
