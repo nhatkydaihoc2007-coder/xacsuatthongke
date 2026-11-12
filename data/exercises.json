@@ -9763,32 +9763,6 @@
       "createdAt": "2026-11-12T09:02:14.359Z"
     },
     {
-      "id": "1794474119438",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Có bao nhiêu chân đồng trong đầu nối RJ45?",
-      "choices": [
-        {
-          "text": "2",
-          "correct": false
-        },
-        {
-          "text": "4",
-          "correct": false
-        },
-        {
-          "text": "6",
-          "correct": false
-        },
-        {
-          "text": "8",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:01:59.436Z"
-    },
-    {
       "id": "1794474119439",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
