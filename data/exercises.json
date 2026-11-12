@@ -9763,32 +9763,6 @@
       "createdAt": "2026-11-12T09:02:14.359Z"
     },
     {
-      "id": "1794474119436",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Phát biểu nào sau đây là đúng khi so sánh cáp đồng trục với cáp quang?",
-      "choices": [
-        {
-          "text": "Độ suy giảm tín hiệu của cáp đồng trục thấp hơn",
-          "correct": false
-        },
-        {
-          "text": "Cáp đồng trục có tốc độ truyền dữ liệu cao hơn",
-          "correct": false
-        },
-        {
-          "text": "Cáp quang có tính bảo mật cao hơn",
-          "correct": true
-        },
-        {
-          "text": "Cả ba câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:01:59.436Z"
-    },
-    {
       "id": "1794474119437",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
