@@ -3860,32 +3860,6 @@
       "createdAt": "2026-11-12T15:02:54.528Z"
     },
     {
-      "id": "1794495774530",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Quản trị mạng",
-      "question": "Phần mềm nào sau đây được sử dụng để thu thập thông tin các packet truyền trên hệ thống mạng?",
-      "choices": [
-        {
-          "text": "NetSurveyor",
-          "correct": false
-        },
-        {
-          "text": "Packet Tracer",
-          "correct": false
-        },
-        {
-          "text": "Wireshark",
-          "correct": true
-        },
-        {
-          "text": "PowerShell",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:02:54.528Z"
-    },
-    {
       "id": "1794495774532",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Quản trị mạng",
