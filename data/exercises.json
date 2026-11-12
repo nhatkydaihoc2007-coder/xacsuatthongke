@@ -9763,32 +9763,6 @@
       "createdAt": "2026-11-12T09:02:14.359Z"
     },
     {
-      "id": "1794474119437",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Thiết bị nào được sử dụng để kết nối 2 loại thinnet và thicknet với nhau?",
-      "choices": [
-        {
-          "text": "Thinnet",
-          "correct": false
-        },
-        {
-          "text": "Thicknet",
-          "correct": false
-        },
-        {
-          "text": "Transceiver",
-          "correct": true
-        },
-        {
-          "text": "Receiver",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:01:59.436Z"
-    },
-    {
       "id": "1794474119438",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
