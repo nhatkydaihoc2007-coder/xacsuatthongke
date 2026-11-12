@@ -3704,32 +3704,6 @@
       "createdAt": "2026-11-12T15:03:48.678Z"
     },
     {
-      "id": "1794495828723",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Các ứng dụng mạng",
-      "question": "Kênh điều khiển trong giao thức FTP có đặc điểm:",
-      "choices": [
-        {
-          "text": "Là kênh logic TCP được dùng để truyền file trong một phiên kết nối FTP",
-          "correct": false
-        },
-        {
-          "text": "Được sử dụng để truyền các thông tin điều khiển xuyên suốt phiên kết nối FTP",
-          "correct": true
-        },
-        {
-          "text": "Là kênh logic TCP được thiết lập khi cần truyền thông tin điều khiển trong phiên kết nối ftp",
-          "correct": false
-        },
-        {
-          "text": "Được sử dụng để truyền các thông tin điều khiển, dữ liệu xuyên suốt phiên kết nối FTP",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:03:48.678Z"
-    },
-    {
       "id": "1794495828724",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
