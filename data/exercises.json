@@ -9555,32 +9555,6 @@
       "createdAt": "2026-11-12T09:02:14.359Z"
     },
     {
-      "id": "1794474134363",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng liên kết dữ liệu",
-      "question": "Một trong những công việc của lớp Datalink là …",
-      "choices": [
-        {
-          "text": "Xây dựng segment",
-          "correct": false
-        },
-        {
-          "text": "Xây dựng frame",
-          "correct": true
-        },
-        {
-          "text": "Xây dựng packet",
-          "correct": false
-        },
-        {
-          "text": "Xây dựng bit",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:02:14.359Z"
-    },
-    {
       "id": "1794474134364",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
