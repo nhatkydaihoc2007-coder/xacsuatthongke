@@ -10856,32 +10856,6 @@
       "createdAt": "2026-11-12T07:55:23.875Z"
     },
     {
-      "id": "1794468898664",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vật lý",
-      "question": "Trong kênh truyền Baseband, các tín hiệu Data, Voice, Video được truyền như thế nào?",
-      "choices": [
-        {
-          "text": "Trên 1 kênh",
-          "correct": true
-        },
-        {
-          "text": "Trên nhiều kênh",
-          "correct": false
-        },
-        {
-          "text": "A, B đều đúng",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:34:58.663Z"
-    },
-    {
       "id": "1794468898665",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vật lý",
