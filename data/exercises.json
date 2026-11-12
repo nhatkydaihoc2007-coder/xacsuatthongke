@@ -2248,32 +2248,6 @@
       "createdAt": "2026-11-12T15:04:19.845Z"
     },
     {
-      "id": "1794495859872",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vận chuyển",
-      "question": "Giao thức nào dưới đây không đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh hay không?",
-      "choices": [
-        {
-          "text": "UDP",
-          "correct": true
-        },
-        {
-          "text": "ASP",
-          "correct": false
-        },
-        {
-          "text": "ARP",
-          "correct": false
-        },
-        {
-          "text": "TCP",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:19.845Z"
-    },
-    {
       "id": "1794495859873",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
