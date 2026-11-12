@@ -12,6 +12,1020 @@
   ],
   "exercises": [
     {
+      "id": "1794495859845",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Lớp nào tromg mô hình OSI cung cấp việc truyền dữ liệu trong suốt giữa các hệ thống đầu cuối",
+      "choices": [
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp mạng",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": true
+        },
+        {
+          "text": "Lớp liên kết dữ liệu",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859846",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Protocol nào sau đây được định nghĩa trong lớp vận chuyển",
+      "choices": [
+        {
+          "text": "FTP",
+          "correct": false
+        },
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "Câu b và c đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859847",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Các giao thức nào sau đây đều thuộc lớp vận chuyển",
+      "choices": [
+        {
+          "text": "TCP, HTTP",
+          "correct": false
+        },
+        {
+          "text": "UDP,TCP",
+          "correct": true
+        },
+        {
+          "text": "ICMP,TCP",
+          "correct": false
+        },
+        {
+          "text": "Câu b và c đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859848",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Lớp thứ 4 trong mô hình mạng OSI",
+      "choices": [
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": true
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859849",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong mô hình mạng OSI, lớp nằm liền trên lớp mạng là",
+      "choices": [
+        {
+          "text": "Lớp phiên",
+          "correct": false
+        },
+        {
+          "text": "Lớp liên kết dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Lớp trình bày",
+          "correct": false
+        },
+        {
+          "text": "Lớp vận chuyển",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859850",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Đặc điểm nào sau đây không thuộc giao thức UDP:",
+      "choices": [
+        {
+          "text": "Có khả năng phát hiện lỗi",
+          "correct": false
+        },
+        {
+          "text": "Là giao thức không kết nối",
+          "correct": false
+        },
+        {
+          "text": "Có điều khiển lỗi",
+          "correct": true
+        },
+        {
+          "text": "Cung cấp địa chỉ ứng dụng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859851",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Phát biểu nào sau đây là đặc điểm của giao thức TCP?",
+      "choices": [
+        {
+          "text": "Không điều khiển lỗi",
+          "correct": false
+        },
+        {
+          "text": "Là giao thức hướng kết nối",
+          "correct": true
+        },
+        {
+          "text": "Hoạt động hai chiều, bán song công",
+          "correct": false
+        },
+        {
+          "text": "Được chuẩn hóa trên RFC 768",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859852",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Phát biểu nào sau đây là đặc điểm của giao thức TCP?",
+      "choices": [
+        {
+          "text": "Khả năng phân mảnh thông điệp và ráp lại ở đích",
+          "correct": true
+        },
+        {
+          "text": "Tốc độ gửi dữ liệu nhanh",
+          "correct": false
+        },
+        {
+          "text": "Hoạt động hai chiều, bán song công",
+          "correct": false
+        },
+        {
+          "text": "Không có điều khiển lỗi",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859853",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Phát biểu nào sau đây là đặc điểm của giao thức UDP?",
+      "choices": [
+        {
+          "text": "Khả năng phân mảnh thông điệp và ráp lại ở đích",
+          "correct": false
+        },
+        {
+          "text": "Phân phối thông điệp đáng tin cậy",
+          "correct": false
+        },
+        {
+          "text": "Hoạt động hai chiều, bán song công",
+          "correct": false
+        },
+        {
+          "text": "Không có điều khiển lỗi",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859854",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức nào dưới đây không đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh hay không?",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "ASP",
+          "correct": false
+        },
+        {
+          "text": "ARP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859855",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức nào dưới đây đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh ?",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "ASP",
+          "correct": false
+        },
+        {
+          "text": "PHP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859856",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức TCP là viết tắt của:",
+      "choices": [
+        {
+          "text": "Transport Control Protocol",
+          "correct": false
+        },
+        {
+          "text": "Transmission Control Protocol",
+          "correct": true
+        },
+        {
+          "text": "Transport Connnection Protocol",
+          "correct": false
+        },
+        {
+          "text": "Transmission Connection Protocol",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859857",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức UDP là viết tắt của:",
+      "choices": [
+        {
+          "text": "Unix Datagram Protocol",
+          "correct": false
+        },
+        {
+          "text": "Uniform Datagram Protocol",
+          "correct": false
+        },
+        {
+          "text": "User Datagram Protocol",
+          "correct": true
+        },
+        {
+          "text": "Universal Datagram Protocol",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859858",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Để đóng một kết nối TCP, hai máy tính sẽ trao đổi với nhau:",
+      "choices": [
+        {
+          "text": "1 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "2 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "3 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "4 thông điệp",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859859",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Để đóng một kết nối TCP, hai máy tính sẽ trao đổi với nhau các thông điệp:",
+      "choices": [
+        {
+          "text": "ACK",
+          "correct": false
+        },
+        {
+          "text": "SYN và ACK",
+          "correct": false
+        },
+        {
+          "text": "FIN và ACK",
+          "correct": true
+        },
+        {
+          "text": "SYN và FIN",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859860",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Để mở một kết nối TCP, hai máy tính sẽ trao đổi với nhau:",
+      "choices": [
+        {
+          "text": "1 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "2 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "3 thông điệp",
+          "correct": true
+        },
+        {
+          "text": "4 thông điệp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859861",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Để mở một kết nối UDP, hai máy tính sẽ trao đổi với nhau:",
+      "choices": [
+        {
+          "text": "1 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "2 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "3 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859862",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Để đóng một kết nối UDP, hai máy tính sẽ trao đổi với nhau:",
+      "choices": [
+        {
+          "text": "1 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "2 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "3 thông điệp",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859863",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong kết nối TCP, thông điệp SYN dùng để:",
+      "choices": [
+        {
+          "text": "Đồng bộ trong việc thiết lập kết nối",
+          "correct": true
+        },
+        {
+          "text": "Đồng bộ trong việc truyền dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đồng bộ trong việc đóng kết nối",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859864",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Trong kết nối UDP, thông điệp SYN dùng để:",
+      "choices": [
+        {
+          "text": "Đồng bộ trong việc thiết lập kết nối",
+          "correct": false
+        },
+        {
+          "text": "Đồng bộ trong việc truyền dữ liệu",
+          "correct": false
+        },
+        {
+          "text": "Đồng bộ trong việc đóng kết nối",
+          "correct": false
+        },
+        {
+          "text": "Cả ba câu đều sai",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859865",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Header của TCP so với UDP thì",
+      "choices": [
+        {
+          "text": "Dài hơn",
+          "correct": true
+        },
+        {
+          "text": "Ngắn hơn",
+          "correct": false
+        },
+        {
+          "text": "Bằng nhau",
+          "correct": false
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859866",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Source Port trong header của TCP so với UDP thì có kích thước",
+      "choices": [
+        {
+          "text": "Dài hơn",
+          "correct": false
+        },
+        {
+          "text": "Ngắn hơn",
+          "correct": false
+        },
+        {
+          "text": "Bằng nhau",
+          "correct": true
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859867",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Destination Port trong header của TCP so với UDP thì có kích thước",
+      "choices": [
+        {
+          "text": "Dài hơn",
+          "correct": false
+        },
+        {
+          "text": "Ngắn hơn",
+          "correct": false
+        },
+        {
+          "text": "Bằng nhau",
+          "correct": true
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859868",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Mục nào chỉ có trong header của TCP mà không có trong header của UDP",
+      "choices": [
+        {
+          "text": "Source Port field",
+          "correct": false
+        },
+        {
+          "text": "Window size field",
+          "correct": true
+        },
+        {
+          "text": "Length field",
+          "correct": false
+        },
+        {
+          "text": "Checksum field",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859869",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Mục nào chỉ có trong header của TCP mà không có trong header của UDP",
+      "choices": [
+        {
+          "text": "Source Port field",
+          "correct": false
+        },
+        {
+          "text": "Sequence Number field",
+          "correct": true
+        },
+        {
+          "text": "Destination Port field",
+          "correct": false
+        },
+        {
+          "text": "Checksum field",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859870",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Sequence Number field luôn có trong header của",
+      "choices": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "TCP và UDP",
+          "correct": false
+        },
+        {
+          "text": "Tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859871",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Flag field trong header của TCP có các bit",
+      "choices": [
+        {
+          "text": "ACK, NACK, FIN, SYN",
+          "correct": false
+        },
+        {
+          "text": "FIN, ACK, HLEN, PORT",
+          "correct": false
+        },
+        {
+          "text": "FIN, ACK, RST, HLEN",
+          "correct": false
+        },
+        {
+          "text": "RST, PSH, FIN, URG",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859872",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Giao thức nào dưới đây không đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh hay không?",
+      "choices": [
+        {
+          "text": "UDP",
+          "correct": true
+        },
+        {
+          "text": "ASP",
+          "correct": false
+        },
+        {
+          "text": "ARP",
+          "correct": false
+        },
+        {
+          "text": "TCP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859873",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Chỉ số Port 21 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        },
+        {
+          "text": "SNMP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.845Z"
+    },
+    {
+      "id": "1794495859875",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Chỉ số Port 23 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "TELNET",
+          "correct": true
+        },
+        {
+          "text": "SNMP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859876",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Chỉ số Port 25 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": true
+        },
+        {
+          "text": "TELNET",
+          "correct": false
+        },
+        {
+          "text": "SNMP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859877",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Chỉ số Port 53 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "TELNET",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": true
+        },
+        {
+          "text": "ARP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859878",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Chỉ số Port 69 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "TFTP",
+          "correct": true
+        },
+        {
+          "text": "SNMP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859879",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Chỉ số Port 161 là một well-know port của giao thức:",
+      "choices": [
+        {
+          "text": "SMTP",
+          "correct": false
+        },
+        {
+          "text": "TFTP",
+          "correct": false
+        },
+        {
+          "text": "SNMP",
+          "correct": true
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859880",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "SMTP có chỉ số địa chỉ port ứng dụng là",
+      "choices": [
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "23",
+          "correct": false
+        },
+        {
+          "text": "25",
+          "correct": true
+        },
+        {
+          "text": "53",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859881",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "FTP có chỉ số địa chỉ port ứng dụng là",
+      "choices": [
+        {
+          "text": "21",
+          "correct": true
+        },
+        {
+          "text": "23",
+          "correct": false
+        },
+        {
+          "text": "25",
+          "correct": false
+        },
+        {
+          "text": "53",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859882",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "TELNET có chỉ số địa chỉ port ứng dụng là",
+      "choices": [
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "23",
+          "correct": true
+        },
+        {
+          "text": "25",
+          "correct": false
+        },
+        {
+          "text": "53",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859883",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "DNS có chỉ số địa chỉ port ứng dụng là",
+      "choices": [
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "23",
+          "correct": false
+        },
+        {
+          "text": "25",
+          "correct": false
+        },
+        {
+          "text": "53",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
+      "id": "1794495859884",
+      "subject": "Mạng máy tính và truyền thông",
+      "chapter": "Tầng vận chuyển",
+      "question": "Tấn công từ chối dịch vụ là dựa trên nguyên lý",
+      "choices": [
+        {
+          "text": "TCP ACK Flooding",
+          "correct": false
+        },
+        {
+          "text": "TCP Denial Attack",
+          "correct": false
+        },
+        {
+          "text": "TCP SYN Flooding",
+          "correct": true
+        },
+        {
+          "text": "TCP FIN Flooding",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-12T15:04:19.846Z"
+    },
+    {
       "id": "1794495828676",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
