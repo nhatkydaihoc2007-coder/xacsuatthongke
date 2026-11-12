@@ -9190,32 +9190,6 @@
       "createdAt": "2026-11-12T09:09:23.683Z"
     },
     {
-      "id": "1794474443348",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Các ứng dụng mạng",
-      "question": "Mô hình FTP chia quá trình truyền thông giữa Server với Client ra làm các kênh nào sau đây?",
-      "choices": [
-        {
-          "text": "Một kênh logic và một kênh vật lý",
-          "correct": false
-        },
-        {
-          "text": "Hai kênh vật lý",
-          "correct": false
-        },
-        {
-          "text": "Hai kênh logic",
-          "correct": true
-        },
-        {
-          "text": "Ba kênh logic và một kênh vật lý",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:07:23.348Z"
-    },
-    {
       "id": "1794474443350",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
