@@ -3886,32 +3886,6 @@
       "createdAt": "2026-11-12T15:02:54.528Z"
     },
     {
-      "id": "1794495774531",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Quản trị mạng",
-      "question": "Phần mềm nào sau đây được sử dụng để giúp phân tích và tối ưu hóa cài đặt trong mạng Wifi?",
-      "choices": [
-        {
-          "text": "Wireshark",
-          "correct": false
-        },
-        {
-          "text": "Ethereal",
-          "correct": false
-        },
-        {
-          "text": "NetSurveyor",
-          "correct": true
-        },
-        {
-          "text": "Cisco Packet Tracer",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:02:54.528Z"
-    },
-    {
       "id": "1794495774532",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Quản trị mạng",
