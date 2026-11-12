@@ -10153,32 +10153,6 @@
       "createdAt": "2026-11-12T07:57:51.749Z"
     },
     {
-      "id": "1794470271752",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng vận chuyển",
-      "question": "Giao thức nào dùng để gửi dữ liệu nhưng không đảm bảo dữ liệu gửi đi có tới máy nhận hoàn chỉnh",
-      "choices": [
-        {
-          "text": "TCP",
-          "correct": false
-        },
-        {
-          "text": "ASP",
-          "correct": false
-        },
-        {
-          "text": "ARP",
-          "correct": false
-        },
-        {
-          "text": "UDP",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:57:51.749Z"
-    },
-    {
       "id": "1794470271753",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng vận chuyển",
