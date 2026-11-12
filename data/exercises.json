@@ -2716,32 +2716,6 @@
       "createdAt": "2026-11-12T15:03:48.677Z"
     },
     {
-      "id": "1794495828683",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Các ứng dụng mạng",
-      "question": "dns là viết tắt của",
-      "choices": [
-        {
-          "text": "Dynamic Name System",
-          "correct": false
-        },
-        {
-          "text": "Domain Name Server",
-          "correct": false
-        },
-        {
-          "text": "Domain Name System",
-          "correct": true
-        },
-        {
-          "text": "Domain Network Service",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:03:48.677Z"
-    },
-    {
       "id": "1794495828684",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Các ứng dụng mạng",
