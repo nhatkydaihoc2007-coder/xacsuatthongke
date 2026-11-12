@@ -4432,32 +4432,6 @@
       "createdAt": "2026-11-12T14:36:50.521Z"
     },
     {
-      "id": "1794494210537",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng liên kết dữ liệu",
-      "question": "Gigabit Ethernet có tốc độ …",
-      "choices": [
-        {
-          "text": "10 Mbps",
-          "correct": false
-        },
-        {
-          "text": "100 Mbps",
-          "correct": false
-        },
-        {
-          "text": "1000 Mbps",
-          "correct": true
-        },
-        {
-          "text": "Không có câu nào đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:36:50.521Z"
-    },
-    {
       "id": "1794494210538",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
