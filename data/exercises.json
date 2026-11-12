@@ -9555,32 +9555,6 @@
       "createdAt": "2026-11-12T09:02:14.359Z"
     },
     {
-      "id": "1794474134362",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng liên kết dữ liệu",
-      "question": "Điều khiển liên kết luận lý trong lớp Datalink gồm:",
-      "choices": [
-        {
-          "text": "Điều khiển dòng dữ liệu, kiểm soát lỗi",
-          "correct": true
-        },
-        {
-          "text": "Điều khiển băng thông",
-          "correct": false
-        },
-        {
-          "text": "Điều khiển tạo frame",
-          "correct": false
-        },
-        {
-          "text": "Điều khiển việc tạo segment",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:02:14.359Z"
-    },
-    {
       "id": "1794474134363",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
