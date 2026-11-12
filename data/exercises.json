@@ -10190,7 +10190,7 @@
         },
         {
           "text": "Các điều kiện lưu thông mạng hiện hành",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Nhiều kết nối được mở đồng thời",
@@ -10198,11 +10198,12 @@
         },
         {
           "text": "Cả ba câu trên đều đúng",
-          "correct": false
+          "correct": true
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T07:57:51.749Z"
+      "createdAt": "2026-11-12T07:57:51.749Z",
+      "updatedAt": "2026-11-12T18:13:07.475Z"
     },
     {
       "id": "1794470165671",
