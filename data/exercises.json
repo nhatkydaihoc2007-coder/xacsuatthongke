@@ -10344,32 +10344,6 @@
       "createdAt": "2026-11-12T07:16:07.536Z"
     },
     {
-      "id": "1794467767538",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Hiệu suất của mạng Client-Server không phụ thuộc yếu tố nào sau đây?",
-      "choices": [
-        {
-          "text": "Băng thông",
-          "correct": false
-        },
-        {
-          "text": "Bộ nhớ dữ liệu thiết bị",
-          "correct": true
-        },
-        {
-          "text": "Độ trễ tín hiệu",
-          "correct": false
-        },
-        {
-          "text": "Số lượng máy Client trong mạng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:16:07.536Z"
-    },
-    {
       "id": "1794467767539",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
