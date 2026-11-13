@@ -9327,32 +9327,6 @@
       "createdAt": "2026-11-12T09:01:38.787Z"
     },
     {
-      "id": "1794474098789",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "các thành phần trong mạng",
-      "question": "Một hệ thống mạng giao tiếp dữ liệu gồm những thành phần nào?",
-      "choices": [
-        {
-          "text": "Thông điệp, các phương tiện",
-          "correct": false
-        },
-        {
-          "text": "Các sender và receiver",
-          "correct": false
-        },
-        {
-          "text": "Các cách thức truyền nhận",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều đúng",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:01:38.787Z"
-    },
-    {
       "id": "1794474084317",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
