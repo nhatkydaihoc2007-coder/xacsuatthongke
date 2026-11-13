@@ -9013,32 +9013,6 @@
       "createdAt": "2026-11-12T09:07:03.584Z"
     },
     {
-      "id": "1794474423587",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "Số bit dành cho Network trong địa chỉ IP lớp B là bao nhiêu?",
-      "choices": [
-        {
-          "text": "4 bit",
-          "correct": false
-        },
-        {
-          "text": "8 bit",
-          "correct": false
-        },
-        {
-          "text": "14 bit",
-          "correct": true
-        },
-        {
-          "text": "16 bit",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:07:03.584Z"
-    },
-    {
       "id": "1794474423588",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
