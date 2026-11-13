@@ -252,7 +252,7 @@
       "question": "Phát biểu nào sau đây đúng cho địa chỉ IP lớp B?",
       "choices": [
         {
-          "text": "Số bit dành cho Network-14, số bit dành cho Host-16",
+          "text": "Số bit dành cho Network-16, số bit dành cho Host-16",
           "correct": true
         },
         {
@@ -269,7 +269,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T15:04:54.360Z"
+      "createdAt": "2026-11-12T15:04:54.360Z",
+      "updatedAt": "2026-11-13T03:02:34.210Z"
     },
     {
       "id": "1794495894370",
