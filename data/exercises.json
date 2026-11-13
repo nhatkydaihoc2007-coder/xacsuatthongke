@@ -7299,32 +7299,6 @@
       "createdAt": "2026-11-12T14:34:44.710Z"
     },
     {
-      "id": "1794494084732",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Topo mạng nào cần các kết nối đa điểm?",
-      "choices": [
-        {
-          "text": "Mesh",
-          "correct": false
-        },
-        {
-          "text": "Star",
-          "correct": false
-        },
-        {
-          "text": "Bus",
-          "correct": true
-        },
-        {
-          "text": "Ring",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.710Z"
-    },
-    {
       "id": "1794494084734",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
