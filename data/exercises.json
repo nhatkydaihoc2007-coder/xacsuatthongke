@@ -5921,7 +5921,7 @@
     {
       "id": "1794494126735",
       "subject": "Mạng máy tính và truyền thông",
-      "chapter": "các thành phần trong mạng",
+      "chapter": "Tầng liên kết dữ liệu",
       "question": "Các chuẩn phổ biến nhất của Wireless LAN là các chuẩn nào sau đây?",
       "choices": [
         {
@@ -5942,7 +5942,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T14:35:26.726Z"
+      "createdAt": "2026-11-12T14:35:26.726Z",
+      "updatedAt": "2026-11-13T04:03:44.546Z"
     },
     {
       "id": "1794494126736",
