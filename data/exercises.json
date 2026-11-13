@@ -6165,11 +6165,11 @@
         },
         {
           "text": "4.0",
-          "correct": true
+          "correct": false
         },
         {
           "text": "5.0",
-          "correct": false
+          "correct": true
         },
         {
           "text": "6.0",
@@ -6177,7 +6177,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T14:35:26.727Z"
+      "createdAt": "2026-11-12T14:35:26.727Z",
+      "updatedAt": "2026-11-13T04:13:33.030Z"
     },
     {
       "id": "1794494126746",
