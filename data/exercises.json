@@ -950,32 +950,6 @@
       "updatedAt": "2026-11-13T03:36:37.690Z"
     },
     {
-      "id": "1794495894397",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "IP là giao thức …",
-      "choices": [
-        {
-          "text": "Đáng tin cậy",
-          "correct": false
-        },
-        {
-          "text": "Hướng kết nối",
-          "correct": false
-        },
-        {
-          "text": "Cả 2 câu trên đều đúng",
-          "correct": false
-        },
-        {
-          "text": "Tất cả các câu trên đều sai",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:54.361Z"
-    },
-    {
       "id": "1794495894398",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
