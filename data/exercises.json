@@ -9013,32 +9013,6 @@
       "createdAt": "2026-11-12T09:07:03.584Z"
     },
     {
-      "id": "1794474423589",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "Mỗi gói tin IP phải chứa thông tin nào sau đây?",
-      "choices": [
-        {
-          "text": "Địa chỉ nguồn",
-          "correct": false
-        },
-        {
-          "text": "Địa chỉ đích",
-          "correct": false
-        },
-        {
-          "text": "Địa chỉ nguồn hoặc địa chỉ đích",
-          "correct": false
-        },
-        {
-          "text": "Địa chỉ nguồn và địa chỉ đích",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:07:03.584Z"
-    },
-    {
       "id": "1794474423590",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
