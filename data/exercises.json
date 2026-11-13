@@ -1472,7 +1472,7 @@
     {
       "id": "1794495894418",
       "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
+      "chapter": "Tầng vận chuyển",
       "question": "UDP là một giao thức vận chuyển có đặc điểm",
       "choices": [
         {
@@ -1493,7 +1493,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T15:04:54.362Z"
+      "createdAt": "2026-11-12T15:04:54.362Z",
+      "updatedAt": "2026-11-13T03:45:30.355Z"
     },
     {
       "id": "1794495894419",
