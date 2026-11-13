@@ -925,7 +925,7 @@
     {
       "id": "1794495894396",
       "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
+      "chapter": "Tầng vận chuyển",
       "question": "Để gửi một thông điệp đến chính xác chương trình ứng dụng đang chạy trên một host thì địa chỉ nào được xem xét?",
       "choices": [
         {
@@ -946,7 +946,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T15:04:54.361Z"
+      "createdAt": "2026-11-12T15:04:54.361Z",
+      "updatedAt": "2026-11-13T03:36:37.690Z"
     },
     {
       "id": "1794495894397",
