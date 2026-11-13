@@ -1210,32 +1210,6 @@
       "createdAt": "2026-11-12T15:04:54.362Z"
     },
     {
-      "id": "1794495894410",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "Một yêu cầu ARP (ARP request) thường là",
-      "choices": [
-        {
-          "text": "Broadcast",
-          "correct": true
-        },
-        {
-          "text": "unicast",
-          "correct": false
-        },
-        {
-          "text": "Multicast",
-          "correct": false
-        },
-        {
-          "text": "Tất cả các câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:54.362Z"
-    },
-    {
       "id": "1794495894411",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
