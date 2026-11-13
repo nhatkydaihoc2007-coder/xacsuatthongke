@@ -10159,32 +10159,6 @@
       "createdAt": "2026-11-12T07:56:05.671Z"
     },
     {
-      "id": "1794470165677",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "OSPF là giao thức tìm đường dựa trên",
-      "choices": [
-        {
-          "text": "Distance Vector Routing",
-          "correct": false
-        },
-        {
-          "text": "Path Vector Routing",
-          "correct": false
-        },
-        {
-          "text": "Link State Routing",
-          "correct": true
-        },
-        {
-          "text": "Cả ba câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:56:05.671Z"
-    },
-    {
       "id": "1794470123874",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng liên kết dữ liệu",
