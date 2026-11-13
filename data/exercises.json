@@ -7872,32 +7872,6 @@
       "createdAt": "2026-11-12T14:34:44.711Z"
     },
     {
-      "id": "1794494084758",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Phát biểu nào sau đây là đúng cho Web Server?",
-      "choices": [
-        {
-          "text": "Web Server quản lý lưu lượng các thông điệp email của các user trong mạng",
-          "correct": false
-        },
-        {
-          "text": "Web Server phải hoạt động liên tục 24/24",
-          "correct": true
-        },
-        {
-          "text": "Web Server không nhất thiết phải có địa chỉ IP",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.711Z"
-    },
-    {
       "id": "1794494084759",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
