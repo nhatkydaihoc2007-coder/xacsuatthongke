@@ -9301,32 +9301,6 @@
       "createdAt": "2026-11-12T09:01:59.436Z"
     },
     {
-      "id": "1794474098787",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "các thành phần trong mạng",
-      "question": "OSI là viết tắt của thuật ngữ nào sau đây?",
-      "choices": [
-        {
-          "text": "Open Systems Internet",
-          "correct": false
-        },
-        {
-          "text": "Open Systems Interconnection",
-          "correct": true
-        },
-        {
-          "text": "Open Standard Internet",
-          "correct": false
-        },
-        {
-          "text": "Operation System International",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:01:38.787Z"
-    },
-    {
       "id": "1794474098788",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "các thành phần trong mạng",
