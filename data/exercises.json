@@ -7533,32 +7533,6 @@
       "createdAt": "2026-11-12T14:34:44.710Z"
     },
     {
-      "id": "1794494084742",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Dịch vụ mạng thông tin toàn cầu được viết tắt với các chữ nào sau đây?",
-      "choices": [
-        {
-          "text": "NETNEWS",
-          "correct": false
-        },
-        {
-          "text": "TELNET",
-          "correct": false
-        },
-        {
-          "text": "WWW",
-          "correct": true
-        },
-        {
-          "text": "FTP",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.710Z"
-    },
-    {
       "id": "1794494084743",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
