@@ -1497,32 +1497,6 @@
       "updatedAt": "2026-11-13T03:45:30.355Z"
     },
     {
-      "id": "1794495894419",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "UDP là viết tắt của …..",
-      "choices": [
-        {
-          "text": "User Delivery Protocol",
-          "correct": false
-        },
-        {
-          "text": "User Datagram Procedure",
-          "correct": false
-        },
-        {
-          "text": "User Datagram Protocol",
-          "correct": true
-        },
-        {
-          "text": "Tất cả các câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:54.362Z"
-    },
-    {
       "id": "1794495894420",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
