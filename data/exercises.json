@@ -10343,32 +10343,6 @@
       "createdAt": "2026-11-12T07:34:58.663Z"
     },
     {
-      "id": "1794468583132",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "các thành phần trong mạng",
-      "question": "Tiêu chuẩn nào không được dùng để xem xét một mạng giao tiếp?",
-      "choices": [
-        {
-          "text": "Hiệu suất",
-          "correct": false
-        },
-        {
-          "text": "An toàn",
-          "correct": false
-        },
-        {
-          "text": "Tin cậy",
-          "correct": false
-        },
-        {
-          "text": "Công suất",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:29:43.132Z"
-    },
-    {
       "id": "1794468583133",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "các thành phần trong mạng",
