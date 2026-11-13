@@ -1132,32 +1132,6 @@
       "createdAt": "2026-11-12T15:04:54.361Z"
     },
     {
-      "id": "1794495894404",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "Địa chỉ IPv4 191.1.2.3 thuộc lớp nào?",
-      "choices": [
-        {
-          "text": "Lớp A",
-          "correct": false
-        },
-        {
-          "text": "Lớp B",
-          "correct": true
-        },
-        {
-          "text": "Lớp C",
-          "correct": false
-        },
-        {
-          "text": "Tất cả các câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:54.361Z"
-    },
-    {
       "id": "1794495894405",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
