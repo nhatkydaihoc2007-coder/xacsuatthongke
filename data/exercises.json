@@ -7273,32 +7273,6 @@
       "createdAt": "2026-11-12T14:34:44.710Z"
     },
     {
-      "id": "1794494084729",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Tần suất xảy ra sự cố mạng và thời gian phục hồi mạng là độ đo tính …….. của mạng",
-      "choices": [
-        {
-          "text": "Hiệu quả",
-          "correct": false
-        },
-        {
-          "text": "Tin cậy",
-          "correct": true
-        },
-        {
-          "text": "Bảo mật",
-          "correct": false
-        },
-        {
-          "text": "Khả thi",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.710Z"
-    },
-    {
       "id": "1794494084730",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
