@@ -585,32 +585,6 @@
       "createdAt": "2026-11-12T15:04:54.361Z"
     },
     {
-      "id": "1794495894383",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "Lệnh Ping là một công cụ trong mạng máy tính để làm gì?",
-      "choices": [
-        {
-          "text": "Kiểm tra xem có thể kết nối tới một máy cụ thể nào đó trong mạng",
-          "correct": false
-        },
-        {
-          "text": "Dùng để ước lượng khoảng thời gian để gửi 1 gói dữ liệu đến máy đích",
-          "correct": false
-        },
-        {
-          "text": "Ước lượng tỉ lệ các gói dữ liệu có thể bị mất trong kết nối.",
-          "correct": false
-        },
-        {
-          "text": "Cả ba câu trên đều đúng",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T15:04:54.361Z"
-    },
-    {
       "id": "1794495894384",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
