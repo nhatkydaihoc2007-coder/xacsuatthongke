@@ -9013,32 +9013,6 @@
       "createdAt": "2026-11-12T09:07:03.584Z"
     },
     {
-      "id": "1794474423588",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tầng mạng",
-      "question": "Bảng tìm đường của Router lưu giữ",
-      "choices": [
-        {
-          "text": "Các địa chỉ MAC",
-          "correct": false
-        },
-        {
-          "text": "Các địa chỉ Port gán cho các thiết bị mạng",
-          "correct": false
-        },
-        {
-          "text": "Các địa chỉ IP phân phối cho các thiết bị mạng",
-          "correct": false
-        },
-        {
-          "text": "Các đường đi để sử dụng cho việc chuyển tiếp dữ liệu đến đích",
-          "correct": true
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T09:07:03.584Z"
-    },
-    {
       "id": "1794474423589",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
