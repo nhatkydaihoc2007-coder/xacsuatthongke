@@ -8002,32 +8002,6 @@
       "createdAt": "2026-11-12T14:34:44.711Z"
     },
     {
-      "id": "1794494084763",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Trong mô hình Client-Server, Server có chức năng là gì?",
-      "choices": [
-        {
-          "text": "Là máy tính truy xuất dữ liệu chia sẻ",
-          "correct": false
-        },
-        {
-          "text": "Yêu cầu dữ liệu và thông tin hệ thống",
-          "correct": false
-        },
-        {
-          "text": "Đáp ứng yêu cầu thông tin của các client",
-          "correct": true
-        },
-        {
-          "text": "Không có câu nào đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.711Z"
-    },
-    {
       "id": "1794494084764",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
