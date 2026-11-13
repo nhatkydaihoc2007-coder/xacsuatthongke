@@ -10369,32 +10369,6 @@
       "createdAt": "2026-11-12T07:29:43.132Z"
     },
     {
-      "id": "1794468583134",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "các thành phần trong mạng",
-      "question": "In ấn là một ví dụ của hướng dòng dữ liệu nào?",
-      "choices": [
-        {
-          "text": "Full-duplex",
-          "correct": false
-        },
-        {
-          "text": "Half-duplex",
-          "correct": false
-        },
-        {
-          "text": "Simplex",
-          "correct": true
-        },
-        {
-          "text": "Cả ba câu trên đều sai",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T07:29:43.132Z"
-    },
-    {
       "id": "1794468583135",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "các thành phần trong mạng",
