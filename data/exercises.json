@@ -7852,7 +7852,7 @@
       "choices": [
         {
           "text": "Nhỏ",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Vừa",
@@ -7860,7 +7860,7 @@
         },
         {
           "text": "Rộng",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Không có câu nào đúng",
@@ -7868,7 +7868,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T14:34:44.711Z"
+      "createdAt": "2026-11-12T14:34:44.711Z",
+      "updatedAt": "2026-11-13T04:45:21.703Z"
     },
     {
       "id": "1794494084757",
