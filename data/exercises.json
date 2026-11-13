@@ -8314,32 +8314,6 @@
       "createdAt": "2026-11-12T14:34:44.711Z"
     },
     {
-      "id": "1794494084774",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Trong mô hình Client-Server, điều gì xảy ra nếu có một máy mất nguồn?",
-      "choices": [
-        {
-          "text": "Hệ thống vẫn hoạt động",
-          "correct": false
-        },
-        {
-          "text": "Hệ thống ngừng hoạt động",
-          "correct": false
-        },
-        {
-          "text": "Tùy trường hợp mà hệ thống sẽ vẫn hoạt động hoặc ngưng hoạt động",
-          "correct": true
-        },
-        {
-          "text": "Không có câu nào đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.711Z"
-    },
-    {
       "id": "1794494084776",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
