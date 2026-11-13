@@ -9183,7 +9183,7 @@
         },
         {
           "text": "Sẽ có sự ùn tắc giao thông khi di chuyển dữ liệu với lưu lượng lớn",
-          "correct": true
+          "correct": false
         },
         {
           "text": "Không có máy tính nào có trách nhiệm cung cấp, chia sẻ các tài nguyên trong mạng cho các máy khác",
@@ -9191,11 +9191,12 @@
         },
         {
           "text": "Cả ba câu trên đều sai",
-          "correct": false
+          "correct": true
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-12T09:01:24.317Z"
+      "createdAt": "2026-11-12T09:01:24.317Z",
+      "updatedAt": "2026-11-13T05:00:15.368Z"
     },
     {
       "id": "1794474084319",
