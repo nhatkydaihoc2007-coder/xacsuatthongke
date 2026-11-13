@@ -7976,32 +7976,6 @@
       "createdAt": "2026-11-12T14:34:44.711Z"
     },
     {
-      "id": "1794494084761",
-      "subject": "Mạng máy tính và truyền thông",
-      "chapter": "Tổng quan về mạng",
-      "question": "Hiệu suất của mạng Client-Server phụ thuộc yếu tố nào sau đây?",
-      "choices": [
-        {
-          "text": "Độ trễ tín hiệu",
-          "correct": false
-        },
-        {
-          "text": "Băng thông, độ nhiễu tín hiệu",
-          "correct": false
-        },
-        {
-          "text": "Băng thông, độ trễ tín hiệu",
-          "correct": true
-        },
-        {
-          "text": "Không có câu nào đúng",
-          "correct": false
-        }
-      ],
-      "solution": "",
-      "createdAt": "2026-11-12T14:34:44.711Z"
-    },
-    {
       "id": "1794494084762",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tổng quan về mạng",
