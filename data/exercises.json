@@ -305,7 +305,7 @@
       "question": "Trong hình thức kế toán Nhật ký chung, tất cả các nghiệp vụ kinh tế phát sinh đều được phản ánh vào",
       "choices": [
         {
-          "text": "Nhật ký chung (sổ nhật ký chung mới đúng)",
+          "text": "Sổ nhật ký chung",
           "correct": true
         },
         {
@@ -322,7 +322,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-14T02:02:33.921Z"
+      "createdAt": "2026-11-14T02:02:33.921Z",
+      "updatedAt": "2026-11-14T03:02:30.987Z"
     },
     {
       "id": "1794621753933",
