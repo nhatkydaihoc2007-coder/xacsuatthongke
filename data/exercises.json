@@ -356,7 +356,7 @@
       "id": "1794644152724",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Sự việc nào sau đây ko phải là ngvụ ktế",
+      "question": "Sự việc nào sau đây không phải là nghiệp vụ kinh tế?",
       "choices": [
         {
           "text": "Thiệt hại do hoả hoạn",
@@ -376,7 +376,8 @@
         }
       ],
       "solution": "Phỏng vấn ứng viên tự nó không làm phát sinh thay đổi về tài sản hoặc nguồn hình thành tài sản của doanh nghiệp. Thiệt hại do hỏa hoạn, chi phí đã phát sinh chưa trả tiền, và khoản vay đều có thể làm thay đổi các yếu tố kế toán; giảm giá bán một sản phẩm cũng có thể là nghiệp vụ kế toán nếu đã phát sinh giao dịch bán.",
-      "createdAt": "2026-11-14T08:15:52.711Z"
+      "createdAt": "2026-11-14T08:15:52.711Z",
+      "updatedAt": "2026-11-14T08:30:21.305Z"
     },
     {
       "id": "1794644152725",
