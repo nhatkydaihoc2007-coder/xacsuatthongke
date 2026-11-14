@@ -13,6 +13,1046 @@
   ],
   "exercises": [
     {
+      "id": "1794621753920",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Trong các chứng từ sau, chứng từ nào được gọi là chứng từ mệnh lệnh",
+      "choices": [
+        {
+          "text": "Giấy thanh toán tiền tạm ứng",
+          "correct": false
+        },
+        {
+          "text": "Giấy đề nghị tạm ứng",
+          "correct": true
+        },
+        {
+          "text": "Phiếu chi",
+          "correct": false
+        },
+        {
+          "text": "Phiếu xuất kho",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.920Z"
+    },
+    {
+      "id": "1794621753921",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tài liệu về kết quả hoạt động kinh doanh của doanh nghiệp X tính đến ngày $31/12/N$ như sau: Tổng doanh thu- thu nhập là $100$ tỷ đồng, tổng chi phí là $110$ tỷ đồng. Trình bày thông tin về số dư của tài khoản Lợi nhuận sau thuế chưa phân phối trên Bảng Báo cáo tình hình tài chính:",
+      "choices": [
+        {
+          "text": "bên Nguồn vốn, ghi âm",
+          "correct": true
+        },
+        {
+          "text": "bên Tài sản, ghi dương",
+          "correct": false
+        },
+        {
+          "text": "bên Tài sản, ghi âm",
+          "correct": false
+        },
+        {
+          "text": "bên Nguồn vốn, ghi dương",
+          "correct": false
+        }
+      ],
+      "solution": "Lợi nhuận sau thuế trong kỳ là $100-110=-10$ tỷ đồng, tức doanh nghiệp bị lỗ $10$ tỷ đồng. Khoản lỗ làm giảm vốn chủ sở hữu, nên được trình bày bên Nguồn vốn (vốn chủ sở hữu) với giá trị âm.",
+      "createdAt": "2026-11-14T02:02:33.920Z"
+    },
+    {
+      "id": "1794621753923",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tính tiền lương phải trả cho nhân viên quản lý sản xuất ở phân xưởng, kế toán phản ánh:",
+      "choices": [
+        {
+          "text": "Nợ TK 622-Chi phí nhân công trực tiếp / Có TK 334 - Phải trả người lao động",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 627-Chi phí sản xuất chung/ Có TK 334 - Phải trả người lao động",
+          "correct": true
+        },
+        {
+          "text": "Nợ TK 642-Chi phí quản lý doanh nghiệp/ Có TK 334 - Phải trả người lao động",
+          "correct": false
+        },
+        {
+          "text": "a hoặc b đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753924",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Việc ghi chép trên tài khoản kế toán tổng hợp được sử dụng:",
+      "choices": [
+        {
+          "text": "Bằng thước đo tiền tệ",
+          "correct": true
+        },
+        {
+          "text": "Bằng thước đo tiền tệ, hiện vật",
+          "correct": false
+        },
+        {
+          "text": "Bằng thước đo tiền tệ, hiện vật, thời gian lao động",
+          "correct": false
+        },
+        {
+          "text": "Các câu trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753925",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Đối với doanh nghiệp thương mại, khi giá cả của hàng hóa trên thị trường không thay đổi hoặc có xu hướng giảm, nhằm đảm bảo ý nghĩa thông tin trình bày của hàng tồn kho trên báo cáo tài chính, doanh nghiệp nên áp dụng phương pháp tính giá xuất kho hàng tồn kho nào sau đây:",
+      "choices": [
+        {
+          "text": "Phương pháp bình quân gia quyền cả kỳ",
+          "correct": false
+        },
+        {
+          "text": "Phương pháp nhập sau-xuất trước",
+          "correct": false
+        },
+        {
+          "text": "Phương pháp nhập trước-xuất trước",
+          "correct": true
+        },
+        {
+          "text": "Tất cả đáp án trên đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753926",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tổ chức hệ thống chứng từ kế toán là",
+      "choices": [
+        {
+          "text": "Việc xác định danh mục chứng từ, thiết kế mẫu chứng từ, quy trình luân chuyển chứng từ và kiểm tra chứng từ.",
+          "correct": true
+        },
+        {
+          "text": "Việc kiểm tra tính hợp pháp, hợp lệ của chứng từ.",
+          "correct": false
+        },
+        {
+          "text": "Việc lập chứng từ, luân chuyển chứng từ và bảo quản chứng từ.",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều đúng.",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753927",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Cuối kỳ kế toán, các tài khoản giá vốn hàng bán, chi phí bán hàng, chi phí quản lý doanh nghiệp được kết chuyển về:",
+      "choices": [
+        {
+          "text": "Nợ TK 511 ``Doanh thu bán hàng và cung cấp dịch vụ''",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 421 ``Lợi nhuận chưa phân phối''",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 911 ``Xác định kết quả kinh doanh''",
+          "correct": true
+        },
+        {
+          "text": "Nợ TK 154 ``Chi phí sản xuất kinh doanh dở dang''",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753928",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Khách hàng chuyển khoản trả nợ cho doanh nghiệp 30 triệu đồng, kế toán ghi nhận:",
+      "choices": [
+        {
+          "text": "Nợ TK 112 -- Tiền gửi ngân hàng 30 triệu<br> Có TK 141 -- Tạm ứng 30 triệu",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 141 -- Tạm ứng 30 triệu<br> Có TK 112 -- Tiền gửi ngân hàng 30 triệu",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 131 -- Phải thu khách hàng 30 triệu<br> Có TK 112 -- Tiền gửi ngân hàng 30 triệu",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 112 -- Tiền gửi ngân hàng 30 triệu<br> Có TK 131 -- Phải thu khách hàng 30 triệu",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753929",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Các loại chứng từ nào sau đây không có tính pháp lý",
+      "choices": [
+        {
+          "text": "Chứng từ chấp hành",
+          "correct": false
+        },
+        {
+          "text": "Chứng từ tổng hợp",
+          "correct": true
+        },
+        {
+          "text": "Chứng từ gốc",
+          "correct": false
+        },
+        {
+          "text": "Các câu đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753930",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Doanh nghiệp thực hiện trích khấu hao định kỳ hàng tháng đối với tài sản cố định với số tiền là $4$ triệu đồng. Biết rằng tài sản cố định này có nguyên giá là $240$ triệu đồng, thời gian khấu hao là $5$ năm. Vậy doanh nghiệp trích khấu hao tài sản số định theo phương pháo nào sau đây?",
+      "choices": [
+        {
+          "text": "Phương pháp khấu hao đường thẳng",
+          "correct": true
+        },
+        {
+          "text": "Phương pháp khấu hao theo số lượng sản phẩm",
+          "correct": false
+        },
+        {
+          "text": "Phương pháp khấu hao nhanh",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các phương pháp",
+          "correct": false
+        }
+      ],
+      "solution": "Thời gian khấu hao là $5\\times12=60$ tháng. Mức khấu hao mỗi tháng theo phương pháp đường thẳng là $240\\div60=4$ triệu đồng, đúng bằng số tiền đề bài cho.",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753931",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Kế toán tổng hợp sử dụng thước đo",
+      "choices": [
+        {
+          "text": "Tiền tệ",
+          "correct": false
+        },
+        {
+          "text": "Giá trị",
+          "correct": true
+        },
+        {
+          "text": "Thời gian",
+          "correct": false
+        },
+        {
+          "text": "Hiện vật",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753932",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Trong hình thức kế toán Nhật ký chung, tất cả các nghiệp vụ kinh tế phát sinh đều được phản ánh vào",
+      "choices": [
+        {
+          "text": "Nhật ký chung (sổ nhật ký chung mới đúng)",
+          "correct": true
+        },
+        {
+          "text": "Nhật ký thu tiền, nhật ký chi tiền",
+          "correct": false
+        },
+        {
+          "text": "Nhật ký mua hàng, nhật ký bán hàng",
+          "correct": false
+        },
+        {
+          "text": "Các loại sổ kế toán tổng hợp khác",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753933",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Nếu ``Tháng 1, công ty Thịnh Khang chuyển khoản $60$ triệu đồng trả tiền thuê văn phòng $6$ tháng đầu năm và ghi nhận toàn bộ số tiền này vào chi phí tháng $1$'' thì nguyên tắc kế toán bị vi phạm là:",
+      "choices": [
+        {
+          "text": "Nguyên tắc nhất quán",
+          "correct": false
+        },
+        {
+          "text": "Nguyên tắc giá gốc",
+          "correct": false
+        },
+        {
+          "text": "Nguyên tắc phù hợp",
+          "correct": true
+        },
+        {
+          "text": "Nguyên tắc hoạt động liên tục",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753934",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Kế toán định khoản nghiệp vụ: ``Doanh nghiệp mua và nhập kho hàng hóa trị giá $20$ triệu đồng (đã bao gồm thuế giá trị gia tăng), thanh toán bằng tiền gửi ngân hàng (Ngân hàng đã báo Nợ)'' như sau: (Biết doanh nghiệp kê khai thuế giá trị gia tăng theo phương pháp trực tiếp)",
+      "choices": [
+        {
+          "text": "Nợ TK $111$ - Tiền mặt: $20$ triệu đồng <br> Có TK $156$ - Hàng hóa: $20$ triệu đồng",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK $112$ - Tiền gửi ngân hàng: $20$ triệu đồng <br> Có TK $156$ - Hàng hóa: $20$ triệu đồng",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK $156$ - Hàng hóa: $20$ triệu đồng <br> Có TK $112$ - Tiền gửi ngân hàng: $20$ triệu đồng",
+          "correct": true
+        },
+        {
+          "text": "Nợ TK $156$ - Hàng hóa: $20$ triệu đồng <br> Có TK $111$ - Tiền mặt: $20$ triệu đồng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753935",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Chỉ tiêu Đầu tư giữ đến ngày đáo hạn được trình bày trên báo cáo tình hình tài chính",
+      "choices": [
+        {
+          "text": "Nguồn vốn và ghi dương",
+          "correct": false
+        },
+        {
+          "text": "Tài sản và ghi dương",
+          "correct": true
+        },
+        {
+          "text": "Tài sản và ghi âm",
+          "correct": false
+        },
+        {
+          "text": "Nguồn vốn và ghi âm",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.921Z"
+    },
+    {
+      "id": "1794621753937",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Cho $2$ bút toán sau: (Đơn vị tính: đồng) <br> \na. Giá mua máy móc sử dụng tại bộ phận bán hàng:  <br> \nNợ tài khoản $211$ - Tài sản cố định hữu hình: $130.000.000$ <br> \nNợ tài khoản $133$ - Thuế giá trị gia tăng khấu trừ: $13.000.000$ <br> \nCó tài khoản $331$ - Phải trả cho người bán: $143.000.000$ <br> \nb. Chi phí lắp đặt, chạy thử máy móc: <br> \nNợ tài khoản $211$ - Tài sản cố định hữu hình: $20.000.000$ <br> \nNợ tài khoản $133$ - Thuế giá trị gia tăng khấu trừ: $2.000.000$ <br> \nCó tài khoản $112$ - Tiền gửi ngân hàng: $22.000.000$ <br> \nNguyên giá của tài sản cố định hữu hình này là",
+      "choices": [
+        {
+          "text": "$150.000.000$",
+          "correct": true
+        },
+        {
+          "text": "$130.000.000$",
+          "correct": false
+        },
+        {
+          "text": "$165.000.000$",
+          "correct": false
+        },
+        {
+          "text": "$143.000.000$",
+          "correct": false
+        }
+      ],
+      "solution": "Thuế GTGT đầu vào được khấu trừ (TK 133) không tính vào nguyên giá. Nguyên giá gồm giá mua chưa thuế và chi phí lắp đặt, chạy thử: $130.000.000+20.000.000=150.000.000$ đồng.",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753938",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Nội dung định khoản trên chứng từ",
+      "choices": [
+        {
+          "text": "Là yếu tố bổ sung của chứng từ",
+          "correct": true
+        },
+        {
+          "text": "Là yếu tố bắt buộc của chứng từ",
+          "correct": false
+        },
+        {
+          "text": "Là căn cứ để phân loại chứng từ",
+          "correct": false
+        },
+        {
+          "text": "a và c đều đúng",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753939",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "TK 155 - Thành phẩm thuộc nhóm;",
+      "choices": [
+        {
+          "text": "TK chủ yếu phản ánh tài sản",
+          "correct": true
+        },
+        {
+          "text": "TK chủ yếu phản ánh nguồn vốn",
+          "correct": false
+        },
+        {
+          "text": "TK vừa phản ánh tài sản vừa phản ánh nguồn vốn",
+          "correct": false
+        },
+        {
+          "text": "Cả A, B, C đều sai",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753940",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Chứng từ nào sau đây không phải là chứng từ gốc:",
+      "choices": [
+        {
+          "text": "Phiếu thu",
+          "correct": false
+        },
+        {
+          "text": "Hóa đơn bán hàng",
+          "correct": false
+        },
+        {
+          "text": "Phiếu xuất vật tư theo hạn mức",
+          "correct": false
+        },
+        {
+          "text": "Bảng kê chi tiền",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753941",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Các chi phí phát sinh trong kỳ đã tập hợp được gồm: <br> \nA. Nguyên vật liệu xuất dùng ở các bộ phận: Sản xuất: $450.000$, Bán hàng: $20.000$, Quản lý doanh nghiệp (QLDN): $18.000$\n\nB. Tiền lương ở các bộ phận: Sản xuất: $70.000$, Bán hàng: $15.000$, QLDN: $35.000$\n\nC. Các khoản trích theo lương ở các bộ phận được trích theo tỷ lệ $22\\%$\n\nD. Chi phí điện thoại của các bộ phận: Sản xuất: $2.000$, Bán hàng: $2.200$, QLDN: $2.500$\n\nE. Công cụ dụng cụ dùng ở các bộ phận: Sản xuất: $22.000$, Bán hàng: $1.500$, QLDN: $6.000$\n\nF. Khấu hao tài sản cố định ở các bộ phận: Sản xuất: $25.000$, Bán hàng: $10.000$, QLDN: $12.000$\n\nG. Đơn vị tính: nghìn đồng\n\nSố chi phí được kết chuyển sang TK $911$ \"Xác định kết quả kinh doanh\" cuối kỳ là:",
+      "choices": [
+        {
+          "text": "$106.800$",
+          "correct": false
+        },
+        {
+          "text": "$133.200$",
+          "correct": true
+        },
+        {
+          "text": "$691.200$",
+          "correct": false
+        },
+        {
+          "text": "$558.000$",
+          "correct": false
+        }
+      ],
+      "solution": "Đơn vị tính là nghìn đồng.<br>\nChi phí bán hàng: $20.000+15.000+15.000\\times22\\%+2.200+1.500+10.000=52.000$.<br>\nChi phí quản lý doanh nghiệp: $18.000+35.000+35.000\\times22\\%+2.500+6.000+12.000=81.200$.<br>\nTổng chi phí bán hàng và quản lý doanh nghiệp kết chuyển là $52.000+81.200=133.200$ nghìn đồng. Chi phí sản xuất được tập hợp vào TK 154, không kết chuyển thẳng sang TK 911 ở bước này.",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753942",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Đặc điểm của nguyên vật liệu:",
+      "choices": [
+        {
+          "text": "Đối tượng lao động do doanh nghiệp mua, dự trữ để phục vụ quá trình sản xuất, kinh doanh tạo ra sản phẩm",
+          "correct": false
+        },
+        {
+          "text": "Tham gia vào một chu kỳ sản xuất kinh doanh",
+          "correct": false
+        },
+        {
+          "text": "Sẽ thay đổi về hình thái, không giữ nguyên được trạng thái ban đầu khi đưa vào sản xuất",
+          "correct": false
+        },
+        {
+          "text": "Tất cả các câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "nguyên vật liệu thường tham gia vào một chu kỳ sản xuất và chuyển toàn bộ giá trị vào sản phẩm. <br> \ncông cụ dụng cụ tham gia tham gia vào nhiều chu kỳ sản xuất kinh doanh.",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753943",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Doanh nghiệp có thể chọn năm tài chính theo",
+      "choices": [
+        {
+          "text": "Năm dương lịch",
+          "correct": false
+        },
+        {
+          "text": "Năm 12 tháng khác với năm dương lịch, được Bộ Tài chính cho phép doanh nghiệp áp dụng",
+          "correct": false
+        },
+        {
+          "text": "Cả A và B đều sai",
+          "correct": false
+        },
+        {
+          "text": "Cả A và B đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753944",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Chi phí tổ chức nghỉ mát cho người lao động thanh toán bằng tiền mặt, số tiền này do quỹ phúc lợi đài thọ, kế toán định khoản",
+      "choices": [
+        {
+          "text": "Nợ tài khoản 353 -- Quỹ khen thưởng phúc lợi<br> Có tài khoản 334 -- Phải trả người lao động",
+          "correct": false
+        },
+        {
+          "text": "Nợ tài khoản 334 -- Phải trả người lao động<br> Có tài khoản 111 -- Tiền mặt",
+          "correct": false
+        },
+        {
+          "text": "Nợ tài khoản 353 -- Quỹ khen thưởng phúc lợi<br> Có tài khoản 111 -- Tiền mặt",
+          "correct": true
+        },
+        {
+          "text": "Nợ tài khoản 642 -- Chi phí quản lý doanh nghiệp<br> Có tài khoản 111 -- Tiền mặt",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753945",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Công ty ABC chuyển khoản mua hàng hóa M tổng trị giá $9.900.000đ$ bao gồm thuế GTGT (Ngân hàng đã báo Nợ). Số hàng hóa đã nhập kho đầy đủ. Công ty tính thuế GTGT theo phương pháp khấu trừ, thuế suất $10\\%$. Kế toán hàng tồn kho theo phương pháp kê khai thường xuyên. Nghiệp vụ mua hàng hóa M được định khoản như sau:",
+      "choices": [
+        {
+          "text": "Nợ TK 156- Hàng hóa (M) $9.000.000$/ Nợ TK 133- Thuế GTGT được khấu trừ $900.000$/ Có TK 112- Tiền gửi ngân hàng: $9.900.000$",
+          "correct": true
+        },
+        {
+          "text": "Nợ TK 611-Mua hàng: $9.900.000$/ Có TK 112- Tiền gửi ngân hàng: $9.900.000$",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 611-Mua hàng: $9.000.000$/ Nợ TK 133- Thuế GTGT được khấu trừ $900.000$/ Có TK 112- Tiền gửi ngân hàng: $9.900.000$",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 156- Hàng hóa (M) $9.900.000$/ Có TK 112- Tiền gửi ngân hàng: $9.900.000$",
+          "correct": false
+        }
+      ],
+      "solution": "Giá mua chưa thuế là $9.900.000\\div1{,}1=9.000.000$ đồng. Thuế GTGT được khấu trừ là $9.900.000-9.000.000=900.000$ đồng. Vì hàng đã nhập kho và doanh nghiệp kê khai thuế theo phương pháp khấu trừ, ghi Nợ TK 156: $9.000.000$, Nợ TK 133: $900.000$, Có TK 112: $9.900.000$.",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753946",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Chỉ tiêu nào sau đây được ghi giá trị dương ở phần tài sản của báo cáo tình hình tài chính",
+      "choices": [
+        {
+          "text": "Hao mòn tài sản cố định",
+          "correct": false
+        },
+        {
+          "text": "Góp vốn liên doanh",
+          "correct": false
+        },
+        {
+          "text": "Ký quỹ, ký cược",
+          "correct": false
+        },
+        {
+          "text": "Cả b và c đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753947",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Xuất kho công cụ dụng cụ thuộc loại phân bổ một lần được sử dụng ở phân xưởng sản xuất, kế toán ghi nhận",
+      "choices": [
+        {
+          "text": "Nợ TK 154 - Chi phí sản xuất kinh doanh dở dang / Có TK 153-Công cụ dụng cụ",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 627-Chi phí sản xuất chung/ Có TK 242 - Chi phí trả trước",
+          "correct": false
+        },
+        {
+          "text": "Nợ TK 153-Công cụ dụng cụ/ Nợ TK 133-Thuế GTGT được khấu trừ/ Có TK 621 - Chi phí nguyên vật liệu",
+          "correct": false
+        },
+        {
+          "text": "Tất cả đều sai (Nợ TK 627, Có TK 153) đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753948",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Theo Luật Kế toán Việt Nam 2015, kế toán là gì?",
+      "choices": [
+        {
+          "text": "Là việc dựa trên các số liệu, thông tin trong quá khứ để dự báo các sự kiện diễn ra trong tương lai",
+          "correct": false
+        },
+        {
+          "text": "Là công việc tính toán, ghi chép bằng con số biểu hiện giá trị kinh tế của các nghiệp vụ phát sinh",
+          "correct": false
+        },
+        {
+          "text": "Là việc thu thập, xử lý, kiểm tra, phân tích và cung cấp thông tin kinh tế, tài chính dưới hình thức giá trị, hiện vật và thời gian lao động",
+          "correct": true
+        },
+        {
+          "text": "Là việc ghi nhận có hệ thống quá trình hình thành và phát triển của các tổ chức kinh doanh",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753949",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Doanh nghiệp kê khai và nộp thuế giá trị gia tăng (GTGT) theo phương pháp khấu trừ, khi mua nguyên vật liệu nhập kho thì giá trị ghi sổ của số nguyên vật liệu này là:",
+      "choices": [
+        {
+          "text": "Giá vốn của bên bán",
+          "correct": false
+        },
+        {
+          "text": "Giá mua chưa thuế GTGT",
+          "correct": true
+        },
+        {
+          "text": "Giá mua bao gồm thuế GTGT",
+          "correct": false
+        },
+        {
+          "text": "Giá thanh toán",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753950",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Yếu tố nào KHÔNG phải là nội dung bắt buộc trên hóa đơn giá trị gia tăng",
+      "choices": [
+        {
+          "text": "Định khoản",
+          "correct": true
+        },
+        {
+          "text": "Ngày tháng năm của nghiệp vụ",
+          "correct": false
+        },
+        {
+          "text": "Số lượng, đơn giá, số tiền thuế, thành tiền",
+          "correct": false
+        },
+        {
+          "text": "Chữ ký của người mua, người bán",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753951",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tài khoản 214 \"Hao mòn tài sản cố định\" là tài khoản:",
+      "choices": [
+        {
+          "text": "Điều chỉnh giảm tài sản",
+          "correct": false
+        },
+        {
+          "text": "Có số dư bên Có",
+          "correct": false
+        },
+        {
+          "text": "Để bên phần tài sản và ghi số âm khi lên Bảng cân đối kế toán/ Báo cáo tình hình tài chính",
+          "correct": false
+        },
+        {
+          "text": "Các câu trên đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753952",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Theo địa điểm lập chứng từ, chứng từ kế toán có các loại",
+      "choices": [
+        {
+          "text": "Chứng từ bên trong",
+          "correct": false
+        },
+        {
+          "text": "Chứng từ bên ngoài",
+          "correct": false
+        },
+        {
+          "text": "Chứng từ lưu hành nội bộ",
+          "correct": false
+        },
+        {
+          "text": "A và B đều đúng",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.922Z"
+    },
+    {
+      "id": "1794621753954",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Theo VAS 21 - Trình bày báo cáo tài chính, báo cáo kết quả kinh doanh KHÔNG trình bày khoản mục:",
+      "choices": [
+        {
+          "text": "Chi phí thuế thu nhập doanh nghiệp hoãn lại",
+          "correct": true
+        },
+        {
+          "text": "Chi phí tài chính",
+          "correct": false
+        },
+        {
+          "text": "Doanh thu hoạt động tài chính",
+          "correct": false
+        },
+        {
+          "text": "Lợi nhuận gộp",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753955",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Khi ghi nhận một khoản doanh thu thì phải ghi nhận một khoản chi phí tương ứng có liên quan đến việc tạo ra doanh thu đó là nội dung của nguyên tắc:",
+      "choices": [
+        {
+          "text": "Hoạt động liên tục",
+          "correct": false
+        },
+        {
+          "text": "Phù hợp",
+          "correct": true
+        },
+        {
+          "text": "Nhất quán",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở dồn tích",
+          "correct": false
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753956",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tài sản cố định theo thông tư 45/2013 là tài sản có giá trị",
+      "choices": [
+        {
+          "text": "Dưới 30 triệu",
+          "correct": false
+        },
+        {
+          "text": "Dưới 20 triệu",
+          "correct": false
+        },
+        {
+          "text": "Từ 20 triệu trở lên",
+          "correct": false
+        },
+        {
+          "text": "Từ 30 triệu trở lên",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753957",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Mọi nghiệp vụ kinh tế tài chính của doanh nghiệp được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền là nội dung của nguyên tắc:",
+      "choices": [
+        {
+          "text": "Hoạt động liên tục",
+          "correct": false
+        },
+        {
+          "text": "Phù hợp",
+          "correct": false
+        },
+        {
+          "text": "Thận trọng",
+          "correct": false
+        },
+        {
+          "text": "Cơ sở dồn tích",
+          "correct": true
+        }
+      ],
+      "solution": "",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753958",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tính giá thành sản phẩm hoàn thành:",
+      "choices": [
+        {
+          "text": "$23.402.500$ đồng",
+          "correct": false
+        },
+        {
+          "text": "$20.402.500$ đồng",
+          "correct": false
+        },
+        {
+          "text": "$21.702.000$ đồng",
+          "correct": true
+        },
+        {
+          "text": "$22.402.500$ đồng",
+          "correct": false
+        }
+      ],
+      "solution": "Chi phí sản xuất phát sinh trong kỳ gồm: nguyên vật liệu trực tiếp $14.500.000$; nhân công trực tiếp $3.000.000+3.000.000\\times23\\%=3.690.000$; chi phí sản xuất chung $500.000+1.500.000+1.500.000\\times23\\%+400.000+500.000=3.245.000$ đồng. Tổng chi phí phát sinh là $14.500.000+3.690.000+3.245.000=21.435.000$ đồng. Giá thành sản phẩm hoàn thành $=300.000+21.435.000-33.000=21.702.000$ đồng.",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753959",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Định khoản 27/05:",
+      "choices": [
+        {
+          "text": "Nợ 621-Chi phí nguyên vật liệu trực tiếp: 200.000<br> Có 214- Khấu hao tài sản cố định :200.000",
+          "correct": false
+        },
+        {
+          "text": "Nợ 621-Chi phí nguyên vật liệu trực tiếp: 400.000<br> Có 214- Khấu hao tài sản cố định :400.000",
+          "correct": false
+        },
+        {
+          "text": "Nợ 627-Chi phí sản xuất chung: 400.000<br> Có 214- Khấu hao tài sản cố định :400.000",
+          "correct": true
+        },
+        {
+          "text": "Nợ 621-Chi phí nguyên vật liệu trực tiếp: 400.000<br> Có 241- Xây dựng cơ bản dở dang :400.000",
+          "correct": false
+        }
+      ],
+      "solution": "Tài sản được khấu hao dùng tại phân xưởng sản xuất nên khoản khấu hao là chi phí sản xuất chung: ghi Nợ TK 627 $400.000$ đồng, Có TK 214 $400.000$ đồng.",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753960",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Định khoản ngày 03/05:",
+      "choices": [
+        {
+          "text": "Nợ Tài khoản 627-Chi phí sản xuất chung: 15.000.000<br> Có Tài khoản 152- Nguyên vật liệu: 15.000.000",
+          "correct": false
+        },
+        {
+          "text": "Nợ Tài khoản 621-Chi phí nguyên vật liệu trực tiếp: 14.500.000<br> Nợ Tài khoản 627-Chi phí sản xuất chung: 500.000<br> Có Tài khoản 152- Nguyên vật liệu: 15.000.000",
+          "correct": true
+        },
+        {
+          "text": "Nợ Tài khoản 621-Chi phí nguyên vật liệu trực tiếp: 15.000.000<br> Có Tài khoản 152- Nguyên vật liệu: 15.000.000",
+          "correct": false
+        },
+        {
+          "text": "Nợ Tài khoản 621-Chi phí nguyên vật liệu trực tiếp: 500.000<br> Nợ Tài khoản 627-Chi phí sản xuất chung: 14.500.000<br> Có Tài khoản 152- Nguyên vật liệu: 15.000.000",
+          "correct": false
+        }
+      ],
+      "solution": "Vật liệu dùng trực tiếp để sản xuất sản phẩm được ghi Nợ TK 621: $14.500.000$ đồng; vật liệu dùng chung ở phân xưởng được ghi Nợ TK 627: $500.000$ đồng. Tổng giá trị xuất kho là $15.000.000$ đồng, ghi Có TK 152.",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753961",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Định khoản ngày 26/05:",
+      "choices": [
+        {
+          "text": "Nợ 627- Chi phí sản xuất chung: 1.035.000<br> Nợ 334-Phải trả người lao động: 472.500<br> Có 338(2) )-Phải trả nộp (Bảo hiểm xã hội): 1.507.500",
+          "correct": false
+        },
+        {
+          "text": "Nợ 622 -- Chi phí nhân công trực tiếp: $690.000$<br> Nợ 627 -- Chi phí sản xuất chung: $345.000$<br> Nợ 334 -- Phải trả người lao động: $472.500$<br> Có 338 -- Phải trả, phải nộp khác: $1.507.500$",
+          "correct": true
+        },
+        {
+          "text": "Nợ 622 -- Chi phí nhân công trực tiếp: $690.000$<br> Nợ 627 -- Chi phí sản xuất chung: $345.000$<br> Nợ 334 -- Phải trả người lao động: $472.500$<br> Có 338(2): $1.507.500$",
+          "correct": false
+        },
+        {
+          "text": "Nợ 622 -- Chi phí nhân công trực tiếp: $690.000$<br> Nợ 627 -- Chi phí sản xuất chung: $345.000$<br> Nợ 334 -- Phải trả người lao động: $472.500$<br> Có 338 -- Phải trả, phải nộp khác: $1.507.000$",
+          "correct": false
+        }
+      ],
+      "solution": "Phần doanh nghiệp chịu là $(3.000.000+1.500.000)\\times23\\%=1.035.000$ đồng, gồm $690.000$ đồng tính vào chi phí nhân công trực tiếp (TK 622) và $345.000$ đồng tính vào chi phí sản xuất chung (TK 627). Phần người lao động chịu là $4.500.000\\times10{,}5\\%=472.500$ đồng, ghi giảm khoản phải trả người lao động (Nợ TK 334). Tổng Có TK 338 là $1.035.000+472.500=1.507.500$ đồng; tổng Nợ cũng bằng $690.000+345.000+472.500=1.507.500$ đồng.",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
+      "id": "1794621753962",
+      "subject": "Nguyên lý kế toán",
+      "chapter": "",
+      "question": "Tính giá thành đơn vị sản phẩm hoàn thành",
+      "choices": [
+        {
+          "text": "$43.404$ đồng/sản phẩm",
+          "correct": true
+        },
+        {
+          "text": "$40.805$ đồng/sản phẩm",
+          "correct": false
+        },
+        {
+          "text": "$41.805$ đồng/sản phẩm",
+          "correct": false
+        },
+        {
+          "text": "$42.805$ đồng/sản phẩm",
+          "correct": false
+        }
+      ],
+      "solution": "Giá thành đơn vị $=$ tổng giá thành sản phẩm hoàn thành $\\div$ số lượng sản phẩm hoàn thành $=21.702.000\\div500=43.404$ đồng/sản phẩm. Dữ kiện chỉ nêu 500 thành phẩm, không nêu đơn vị kg, nên đáp án được ghi theo đồng/sản phẩm.",
+      "createdAt": "2026-11-14T02:02:33.923Z"
+    },
+    {
       "id": "1794495894360",
       "subject": "Mạng máy tính và truyền thông",
       "chapter": "Tầng mạng",
