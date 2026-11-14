@@ -1034,7 +1034,7 @@
       "id": "1794621753962",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Tính giá thành đơn vị sản phẩm hoàn thành",
+      "question": "[40] Tính giá thành đơn vị sản phẩm hoàn thành",
       "choices": [
         {
           "text": "$43.404$ đồng/sản phẩm",
@@ -1054,7 +1054,8 @@
         }
       ],
       "solution": "Giá thành đơn vị $=$ tổng giá thành sản phẩm hoàn thành $\\div$ số lượng sản phẩm hoàn thành $=21.702.000\\div500=43.404$ đồng/sản phẩm. Dữ kiện chỉ nêu 500 thành phẩm, không nêu đơn vị kg, nên đáp án được ghi theo đồng/sản phẩm.",
-      "createdAt": "2026-11-14T02:02:33.923Z"
+      "createdAt": "2026-11-14T02:02:33.923Z",
+      "updatedAt": "2026-11-14T02:08:26.863Z"
     },
     {
       "id": "1794495894360",
