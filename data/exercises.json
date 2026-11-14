@@ -926,7 +926,7 @@
       "id": "1794621753958",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Tính giá thành sản phẩm hoàn thành:",
+      "question": "(Dữ kiện cho nhóm câu 37,38,39,40) <br> \nDoanh nghiệp hạch toán hàng tồn kho theo phương pháp kê khai thường xuyên, tổ chức sản xuất một loại sản phẩm có các tài liệu (đơn vị tính: đồng):<br>\n1. Số dư đầu tháng 05/N của TK 154 -- Chi phí sản xuất, kinh doanh dở dang: $300.000$.<br>\n2. Tình hình phát sinh trong tháng:<br>\nNgày 03/05: Xuất kho vật liệu trị giá $15.000.000$, dùng để sản xuất sản phẩm $14.500.000$, phục vụ ở phân xưởng sản xuất $500.000$.<br>\nNgày 25/05: Tiền lương phải thanh toán cho công nhân sản xuất sản phẩm $3.000.000$, nhân viên quản lý phân xưởng sản xuất $1.500.000$.<br>\nNgày 26/05: Trích bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp và kinh phí công đoàn theo tỷ lệ quy định (phần doanh nghiệp chịu là $23\\%$, người lao động chịu $10{,}5\\%$ trên mức lương làm căn cứ đóng bảo hiểm xã hội).<br>\nNgày 27/05: Khấu hao tài sản cố định tính cho phân xưởng sản xuất là $400.000$.<br>\nNgày 29/05: Chi phí khác bằng tiền mặt phát sinh tại phân xưởng là $500.000$. <br> \nCuối kỳ kết chuyển chi phí nguyên vật liệu trực tiếp, chi phí nhân công trực tiếp và chi phí sản xuất chung sang tài khoản $154$ – Chi phí sản xuất kinh doanh dở dang.<br>\nBiết chi phí sản xuất kinh doanh dở dang chuyển sang kì sau là: $33.000$ và doanh nghiệp sản xuất được $500$ thành phẩm trong kỳ.\nTính giá thành sản phẩm hoàn thành:",
       "choices": [
         {
           "text": "$23.402.500$ đồng",
@@ -945,8 +945,9 @@
           "correct": false
         }
       ],
-      "solution": "Chi phí sản xuất phát sinh trong kỳ gồm: nguyên vật liệu trực tiếp $14.500.000$; nhân công trực tiếp $3.000.000+3.000.000\\times23\\%=3.690.000$; chi phí sản xuất chung $500.000+1.500.000+1.500.000\\times23\\%+400.000+500.000=3.245.000$ đồng. Tổng chi phí phát sinh là $14.500.000+3.690.000+3.245.000=21.435.000$ đồng. Giá thành sản phẩm hoàn thành $=300.000+21.435.000-33.000=21.702.000$ đồng.",
-      "createdAt": "2026-11-14T02:02:33.923Z"
+      "solution": "Chi phí sản xuất phát sinh trong kỳ gồm: nguyên vật liệu trực tiếp $14.500.000$; nhân công trực tiếp $3.000.000+3.000.000\\times23\\%=3.690.000$; chi phí sản xuất chung $500.000+1.500.000+1.500.000\\times23\\%+400.000+500.000=3.245.000$ đồng. <br> Tổng chi phí phát sinh là $14.500.000+3.690.000+3.245.000=21.435.000$ đồng. Giá thành sản phẩm hoàn thành $=300.000+21.435.000-33.000=21.702.000$ đồng.",
+      "createdAt": "2026-11-14T02:02:33.923Z",
+      "updatedAt": "2026-11-14T02:07:22.481Z"
     },
     {
       "id": "1794621753959",
