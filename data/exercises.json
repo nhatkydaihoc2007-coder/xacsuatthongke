@@ -303,7 +303,7 @@
       "id": "1794644152722",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Trong tháng 4, DN bán sp thu tiền mặt 20tr, thu bằng = TGNH 30tr, cung cấp sp dvụ cho KH chưa thu tiền 10tr, KH trả nợ 5tr, KH ứng tiền trc 20tr chưa nhận hàng. Vậy danh thu tháng 4 của DN là",
+      "question": "Trong tháng 4, Doanh Nghiệp bán sản phẩm thu tiền mặt 20tr, thu bằng Tiền gửi ngân hàng 30tr, cung cấp sản phẩm dịch vụ cho Khách hàng chưa thu tiền 10tr, Khách hàng trả nợ 5tr, Khách hàng ứng tiền trước 20tr chưa nhận hàng. Vậy danh thu tháng 4 của Doanh nghiệp là",
       "choices": [
         {
           "text": "85tr",
@@ -323,7 +323,8 @@
         }
       ],
       "solution": "Doanh thu tháng 4 gồm tiền bán sản phẩm đã giao: $20+30+10=60$ triệu đồng. Khoản khách trả nợ $5$ triệu chỉ thu hồi khoản phải thu đã ghi nhận trước đó; tiền ứng trước $20$ triệu chưa giao hàng nên chưa phải doanh thu tháng này.",
-      "createdAt": "2026-11-14T08:15:52.711Z"
+      "createdAt": "2026-11-14T08:15:52.711Z",
+      "updatedAt": "2026-11-14T08:27:03.371Z"
     },
     {
       "id": "1794644152723",
