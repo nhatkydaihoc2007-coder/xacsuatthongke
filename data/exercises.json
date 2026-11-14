@@ -172,7 +172,7 @@
       "id": "1794644152716",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Người sử dụng thông tin KT gián tiếp: cơ quan thuế",
+      "question": "Người sử dụng thông tin KT gián tiếp:",
       "choices": [
         {
           "text": "Nhà quản lý",
@@ -192,7 +192,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-14T08:15:52.710Z"
+      "createdAt": "2026-11-14T08:15:52.710Z",
+      "updatedAt": "2026-11-14T08:18:21.674Z"
     },
     {
       "id": "1794644152717",
