@@ -436,7 +436,7 @@
       "id": "1794644152727",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Khoản mục nào ko thể hiện trên BC KQ HĐKD",
+      "question": "Khoản mục nào ko thể hiện trên Báo cáo kết quả hoạt động kinh doanh",
       "choices": [
         {
           "text": "Thuế nhập khẩu",
@@ -455,8 +455,9 @@
           "correct": false
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-14T08:15:52.711Z"
+      "solution": "Chi phí phải trả là khoản chi phí chưa phát sinh thực tế nhưng được ghi nhận trước vào chi phí sản xuất, kinh doanh trong kỳ để đảm bảo nguyên tắc phù hợp; khoản mục này nằm trên Bảng cân đối kế toán, không nằm trên Báo cáo kết quả hoạt động kinh doanh",
+      "createdAt": "2026-11-14T08:15:52.711Z",
+      "updatedAt": "2026-11-14T08:43:25.638Z"
     },
     {
       "id": "1794644152728",
