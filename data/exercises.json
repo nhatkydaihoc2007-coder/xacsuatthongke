@@ -682,12 +682,13 @@
           "correct": false
         },
         {
-          "text": "Tất cả đều sai (Nợ TK 627, Có TK 153) đúng",
+          "text": "Tất cả đều sai",
           "correct": true
         }
       ],
-      "solution": "",
-      "createdAt": "2026-11-14T02:02:33.922Z"
+      "solution": "Nợ TK 627, Có TK 153",
+      "createdAt": "2026-11-14T02:02:33.922Z",
+      "updatedAt": "2026-11-14T03:26:17.805Z"
     },
     {
       "id": "1794621753948",
