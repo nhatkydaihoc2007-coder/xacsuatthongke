@@ -888,19 +888,20 @@
         },
         {
           "text": "Tổng Nguồn vốn trừ đi Nguồn vốn chủ sở hữu",
-          "correct": false
+          "correct": true
         },
         {
-          "text": "Tổng Tài sản trừ đi Vốn chủ sở hữu",
+          "text": "Tổng Tài sản trừ đi Nguồn vốn kinh doanh",
           "correct": false
         },
         {
           "text": "b hoặc c",
-          "correct": true
+          "correct": false
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-14T08:15:52.712Z"
+      "createdAt": "2026-11-14T08:15:52.712Z",
+      "updatedAt": "2026-11-14T09:29:44.740Z"
     },
     {
       "id": "1794644152746",
