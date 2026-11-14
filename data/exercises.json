@@ -631,15 +631,16 @@
         },
         {
           "text": "12.5 triệu đồng",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Các số trên đều sai",
-          "correct": true
+          "correct": false
         }
       ],
-      "solution": "Doanh thu của $25$ máy đã bán là $25\\times2{,}5=62{,}5$ triệu đồng; giá vốn của chúng là $25\\times2=50$ triệu đồng. Năm cuối kỳ, $5$ máy còn lại có giá gốc $10$ triệu nhưng giá trị thuần có thể thực hiện được là $9$ triệu, nên phải ghi giảm hàng tồn kho $1$ triệu đồng. Khoản giảm giá này được tính vào giá vốn, nên lợi nhuận gộp là $62{,}5-50-1=11{,}5$ triệu đồng. Số này không có trong ba lựa chọn đầu, vì vậy chọn “Các số trên đều sai”.",
-      "createdAt": "2026-11-14T08:15:52.711Z"
+      "solution": "",
+      "createdAt": "2026-11-14T08:15:52.711Z",
+      "updatedAt": "2026-11-14T09:19:42.387Z"
     },
     {
       "id": "1794644152735",
