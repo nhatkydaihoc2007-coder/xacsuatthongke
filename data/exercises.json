@@ -1007,7 +1007,7 @@
       "id": "1794621753961",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Định khoản ngày 26/05:",
+      "question": "[39] Định khoản ngày 26/05:",
       "choices": [
         {
           "text": "Nợ 627- Chi phí sản xuất chung: 1.035.000<br> Nợ 334-Phải trả người lao động: 472.500<br> Có 338(2) )-Phải trả nộp (Bảo hiểm xã hội): 1.507.500",
@@ -1027,7 +1027,8 @@
         }
       ],
       "solution": "Phần doanh nghiệp chịu là $(3.000.000+1.500.000)\\times23\\%=1.035.000$ đồng, gồm $690.000$ đồng tính vào chi phí nhân công trực tiếp (TK 622) và $345.000$ đồng tính vào chi phí sản xuất chung (TK 627). Phần người lao động chịu là $4.500.000\\times10{,}5\\%=472.500$ đồng, ghi giảm khoản phải trả người lao động (Nợ TK 334). Tổng Có TK 338 là $1.035.000+472.500=1.507.500$ đồng; tổng Nợ cũng bằng $690.000+345.000+472.500=1.507.500$ đồng.",
-      "createdAt": "2026-11-14T02:02:33.923Z"
+      "createdAt": "2026-11-14T02:02:33.923Z",
+      "updatedAt": "2026-11-14T02:08:12.221Z"
     },
     {
       "id": "1794621753962",
