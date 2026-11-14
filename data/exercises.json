@@ -933,7 +933,7 @@
       "id": "1794644152747",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Số thuế giá trị gia tăng đầu được khấu trừ cuối tháng của doanh nghiệp thuộc các yếu tố về:",
+      "question": "Số thuế giá trị gia tăng đầu vào được khấu trừ cuối tháng của doanh nghiệp thuộc các yếu tố về:",
       "choices": [
         {
           "text": "Tình hình tài chính",
@@ -953,7 +953,8 @@
         }
       ],
       "solution": "",
-      "createdAt": "2026-11-14T08:15:52.712Z"
+      "createdAt": "2026-11-14T08:15:52.712Z",
+      "updatedAt": "2026-11-14T09:33:35.760Z"
     },
     {
       "id": "1794644152748",
