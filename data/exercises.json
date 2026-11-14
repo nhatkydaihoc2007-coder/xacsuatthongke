@@ -953,7 +953,7 @@
       "id": "1794621753959",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Định khoản 27/05:",
+      "question": "[37] Định khoản 27/05:",
       "choices": [
         {
           "text": "Nợ 621-Chi phí nguyên vật liệu trực tiếp: 200.000<br> Có 214- Khấu hao tài sản cố định :200.000",
@@ -973,7 +973,8 @@
         }
       ],
       "solution": "Tài sản được khấu hao dùng tại phân xưởng sản xuất nên khoản khấu hao là chi phí sản xuất chung: ghi Nợ TK 627 $400.000$ đồng, Có TK 214 $400.000$ đồng.",
-      "createdAt": "2026-11-14T02:02:33.923Z"
+      "createdAt": "2026-11-14T02:02:33.923Z",
+      "updatedAt": "2026-11-14T02:07:42.678Z"
     },
     {
       "id": "1794621753960",
