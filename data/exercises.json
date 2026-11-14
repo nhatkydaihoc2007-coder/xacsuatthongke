@@ -980,7 +980,7 @@
       "id": "1794621753960",
       "subject": "Nguyên lý kế toán",
       "chapter": "",
-      "question": "Định khoản ngày 03/05:",
+      "question": "[38] Định khoản ngày 03/05:",
       "choices": [
         {
           "text": "Nợ Tài khoản 627-Chi phí sản xuất chung: 15.000.000<br> Có Tài khoản 152- Nguyên vật liệu: 15.000.000",
@@ -1000,7 +1000,8 @@
         }
       ],
       "solution": "Vật liệu dùng trực tiếp để sản xuất sản phẩm được ghi Nợ TK 621: $14.500.000$ đồng; vật liệu dùng chung ở phân xưởng được ghi Nợ TK 627: $500.000$ đồng. Tổng giá trị xuất kho là $15.000.000$ đồng, ghi Có TK 152.",
-      "createdAt": "2026-11-14T02:02:33.923Z"
+      "createdAt": "2026-11-14T02:02:33.923Z",
+      "updatedAt": "2026-11-14T02:07:56.450Z"
     },
     {
       "id": "1794621753961",
